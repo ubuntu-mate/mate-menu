@@ -1,8 +1,12 @@
-matemenu (5.5.9~utopic1) utopic; urgency=medium
+matemenu (5.5.9~utopic2) utopic; urgency=medium
 
   * Initial fork to mateMenu.
   * Added https://github.com/linuxmint/mintmenu/pull/103.
   * Added https://github.com/linuxmint/mintmenu/pull/111.
+  * Removed Linux Mint specific search options.
+  * Removed execution via gksu and sudo.
+  * If Synaptic is installed the easy uninstall is enabled.
+  * Ubuntu Software Center is preferred with a fallback to Synaptic.
 
  -- Martin Wimpress <code@ubuntu-mate.org>  Sat, 01 Nov 2014 11:23:21 +0100
  
