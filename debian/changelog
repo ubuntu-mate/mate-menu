@@ -1,6 +1,8 @@
 matemenu (5.5.9~utopic1) utopic; urgency=medium
 
   * Initial fork to mateMenu.
+  * Added https://github.com/linuxmint/mintmenu/pull/103.
+  * Added https://github.com/linuxmint/mintmenu/pull/111.
 
  -- Martin Wimpress <code@ubuntu-mate.org>  Sat, 01 Nov 2014 11:23:21 +0100
  
