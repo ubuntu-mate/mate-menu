@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python2
 
 from gi.repository import Gtk, Gio
 import os
@@ -18,13 +18,13 @@ from urllib import unquote
 gtk = CDLL("libgtk-x11-2.0.so.0")
 
 # i18n
-gettext.install("mintmenu", "/usr/share/linuxmint/locale")
+gettext.install("matemenu", "/usr/share/ubuntu-mate/locale")
 
 class pluginclass( object ):
 
-    def __init__( self, mintMenuWin, toggleButton, de ):
+    def __init__( self, mateMenuWin, toggleButton, de ):
 
-        self.mintMenuWin = mintMenuWin
+        self.mateMenuWin = mateMenuWin
         self.toggleButton = toggleButton
         self.de = de
 
@@ -50,7 +50,7 @@ class pluginclass( object ):
         self.itemstocolor = [ builder.get_object( "viewport2" ) ]
 
         # Settings        
-        self.settings = EasyGSettings("com.linuxmint.mintmenu.plugins.places")
+        self.settings = EasyGSettings("org.ubuntu-mate.matemenu.plugins.places")
 
         self.settings.notifyAdd( "icon-size", self.RegenPlugin )
         self.settings.notifyAdd( "show-computer", self.RegenPlugin )
@@ -145,7 +145,7 @@ class pluginclass( object ):
                 Button1.connect( "clicked", self.ButtonClicked, "xdg-open /" )
             Button1.show()
             self.placesBtnHolder.pack_start( Button1, False, False, 0)
-            self.mintMenuWin.setTooltip( Button1, _("Browse all local and remote disks and folders accessible from this computer") )
+            self.mateMenuWin.setTooltip( Button1, _("Browse all local and remote disks and folders accessible from this computer") )
 
         if ( self.showhomefolder == True ):
             Button2 = easyButton( "user-home", self.iconsize, [_("Home Folder")], -1, -1 )
@@ -155,7 +155,7 @@ class pluginclass( object ):
                 Button2.connect( "clicked", self.ButtonClicked, "xdg-open %s " % home )
             Button2.show()
             self.placesBtnHolder.pack_start( Button2, False, False, 0)
-            self.mintMenuWin.setTooltip( Button2, _("Open your personal folder") )
+            self.mateMenuWin.setTooltip( Button2, _("Open your personal folder") )
 
         if ( self.shownetwork == True and self.de == "mate"):
             mate_settings = Gio.Settings.new("org.mate.interface")
@@ -170,14 +170,14 @@ class pluginclass( object ):
                 Button3.connect( "clicked", self.ButtonClicked, "xdg-open network:" )
             Button3.show()
             self.placesBtnHolder.pack_start( Button3, False, False, 0)
-            self.mintMenuWin.setTooltip( Button3, _("Browse bookmarked and local network locations") )
+            self.mateMenuWin.setTooltip( Button3, _("Browse bookmarked and local network locations") )
 
         if ( self.showdesktop == True ):
             # Determine where the Desktop folder is (could be localized)
             desktopDir = home + "/Desktop"
             try:
                 import sys
-                sys.path.append('/usr/lib/linuxmint/common')
+                sys.path.append('/usr/lib/ubuntu-mate/common')
                 from configobj import ConfigObj
                 config = ConfigObj(home + "/.config/user-dirs.dirs")
                 tmpdesktopDir = config['XDG_DESKTOP_DIR']
@@ -193,7 +193,7 @@ class pluginclass( object ):
                 Button4.connect( "clicked", self.ButtonClicked, "xdg-open \"" + desktopDir + "\"")
             Button4.show()
             self.placesBtnHolder.pack_start( Button4, False, False, 0)
-            self.mintMenuWin.setTooltip( Button4, _("Browse items placed on the desktop") )
+            self.mateMenuWin.setTooltip( Button4, _("Browse items placed on the desktop") )
 
         if ( self.showtrash == True ):
             self.trashButton = easyButton( "user-trash", self.iconsize, [_("Trash")], -1, -1 )
@@ -207,7 +207,7 @@ class pluginclass( object ):
             self.trashButton.connect( "button-release-event", self.trashPopup )
             self.refreshTrash()
             self.placesBtnHolder.pack_start( self.trashButton, False, False, 0)
-            self.mintMenuWin.setTooltip( self.trashButton, _("Browse deleted files") )
+            self.mateMenuWin.setTooltip( self.trashButton, _("Browse deleted files") )
 
     def do_custom_places( self ):
         for index in range( len(self.custompaths) ):
@@ -250,7 +250,7 @@ class pluginclass( object ):
                 self.placesBtnHolder.pack_start( currentbutton, False, False, 0)
                 
     def launch_gtk_bookmark (self, widget, path):
-        self.mintMenuWin.hide()
+        self.mateMenuWin.hide()
         if self.de == "mate":
             os.system("caja %s &" % path)        
         else:
@@ -263,7 +263,7 @@ class pluginclass( object ):
             trashMenu.append(emptyTrashMenuItem)
             trashMenu.show_all()
             emptyTrashMenuItem.connect ( "activate", self.emptyTrash, widget )
-            self.mintMenuWin.stopHiding()
+            self.mateMenuWin.stopHiding()
             gtk.gtk_menu_popup(hash(trashMenu), None, None, None, None, 3, 0)
 
     def emptyTrash( self, menu, widget):
@@ -272,7 +272,7 @@ class pluginclass( object ):
         self.trashButton.setIcon("user-trash")
 
     def ButtonClicked( self, widget, Exec ):
-        self.mintMenuWin.hide()
+        self.mateMenuWin.hide()
         if Exec:
             Execute( Exec )
 

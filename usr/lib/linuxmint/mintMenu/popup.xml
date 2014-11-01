@@ -1,4 +1,0 @@
-<menuitem name="Prefs" action="MintMenuPrefs"/>
-<menuitem name="Edit" action="MintMenuEdit"/>
-<menuitem name="Reload" action="MintMenuReload"/>
-<menuitem name="About" action="MintMenuAbout"/>

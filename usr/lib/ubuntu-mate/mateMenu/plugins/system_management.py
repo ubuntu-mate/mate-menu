@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python2
 
 import gi
 gi.require_version("Gtk", "2.0")
@@ -13,13 +13,13 @@ from execute import Execute
 from easygsettings import EasyGSettings
 
 # i18n
-gettext.install("mintmenu", "/usr/share/linuxmint/locale")
+gettext.install("matemenu", "/usr/share/ubuntu-mate/locale")
 
 class pluginclass( object ):
 
-    def __init__( self, mintMenuWin, toggleButton, de ):
+    def __init__( self, mateMenuWin, toggleButton, de ):
 
-        self.mintMenuWin = mintMenuWin
+        self.mateMenuWin = mateMenuWin
         self.toggleButton = toggleButton
         self.de = de
 
@@ -46,7 +46,7 @@ class pluginclass( object ):
         self.itemstocolor = [ self.builder.get_object( "viewport2" ) ]
 
         # Gconf stuff
-        self.settings = EasyGSettings( "com.linuxmint.mintmenu.plugins.system_management" )
+        self.settings = EasyGSettings( "org.ubuntu-mate.matemenu.plugins.system_management" )
 
         self.settings.notifyAdd( "icon-size", self.RegenPlugin )
         self.settings.notifyAdd( "show-control-center", self.RegenPlugin )
@@ -132,19 +132,23 @@ class pluginclass( object ):
     def do_standard_items( self ):
 
         if ( self.showSoftwareManager == True ):
-            if os.path.exists("/usr/lib/linuxmint/mintInstall/icon.svg"):
-                Button1 = easyButton( "/usr/lib/linuxmint/mintInstall/icon.svg", self.iconsize, [_("Software Manager")], -1, -1 )
-                Button1.connect( "clicked", self.ButtonClicked, "gksu mintinstall" )
+            if os.path.exists("/usr/lib/ubuntu-mate/mateInstall/icon.svg"):
+                Button1 = easyButton( "/usr/lib/ubuntu-mate/mateInstall/icon.svg", self.iconsize, [_("Software Manager")], -1, -1 )
+                Button1.connect( "clicked", self.ButtonClicked, "gksu mateinstall" )
                 Button1.show()
                 self.systemBtnHolder.pack_start( Button1, False, False, 0)
-                self.mintMenuWin.setTooltip( Button1, _("Browse and install available software") )
+                self.mateMenuWin.setTooltip( Button1, _("Browse and install available software") )
 
-        if ( self.showPackageManager == True ):
-            Button2 = easyButton( "applications-system", self.iconsize, [_("Package Manager")], -1, -1 )
-            Button2.connect( "clicked", self.ButtonClicked, "gksu /usr/sbin/synaptic" )
-            Button2.show()
-            self.systemBtnHolder.pack_start( Button2, False, False, 0 )
-            self.mintMenuWin.setTooltip( Button2, _("Install, remove and upgrade software packages") )
+        if ( self.showPackageManager == True ):           
+            if os.path.exists("/usr/bin/software-center") or os.path.exists("/usr/bin/synaptic-pkexec"):
+                Button2 = easyButton( "applications-system", self.iconsize, [_("Package Manager")], -1, -1 )
+                if os.path.exists("/usr/bin/software-center"):
+                    Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/software-center" )
+                elif os.path.exists("/usr/bin/synaptic-pkexec"):
+                    Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/synaptic-pkexec" )
+                Button2.show()
+                self.systemBtnHolder.pack_start( Button2, False, False, 0 )
+                self.mateMenuWin.setTooltip( Button2, _("Install, remove and upgrade software packages") )
 
         if ( self.showControlCenter == True ):
             Button3 = easyButton( "gtk-preferences", self.iconsize, [_("Control Center")], -1, -1 )
@@ -154,7 +158,7 @@ class pluginclass( object ):
                 Button3.connect( "clicked", self.ButtonClicked, "mate-control-center" )
             Button3.show()
             self.systemBtnHolder.pack_start( Button3, False, False, 0 )
-            self.mintMenuWin.setTooltip( Button3, _("Configure your system") )
+            self.mateMenuWin.setTooltip( Button3, _("Configure your system") )
 
         if ( self.showTerminal == True ):
             Button4 = easyButton( "terminal", self.iconsize, [_("Terminal")], -1, -1 )
@@ -164,14 +168,14 @@ class pluginclass( object ):
                 Button4.connect( "clicked", self.ButtonClicked, "x-terminal-emulator" )
             Button4.show()
             self.systemBtnHolder.pack_start( Button4, False, False, 0 )
-            self.mintMenuWin.setTooltip( Button4, _("Use the command line") )
+            self.mateMenuWin.setTooltip( Button4, _("Use the command line") )
 
         if self.de == "xfce":
                 Button6 = easyButton( "system-log-out", self.iconsize, [_("Logout")], -1, -1 )
                 Button6.connect( "clicked", self.ButtonClicked, "xfce4-session-logout" )
                 Button6.show()
                 self.systemBtnHolder.pack_start( Button6, False, False, 0 )
-                self.mintMenuWin.setTooltip( Button6, _("Log out or switch user") )
+                self.mateMenuWin.setTooltip( Button6, _("Log out or switch user") )
         else:
             if ( self.showLockScreen == True ):
                 Button5 = easyButton( "system-lock-screen", self.iconsize, [_("Lock Screen")], -1, -1 )
@@ -181,24 +185,24 @@ class pluginclass( object ):
                     Button5.connect( "clicked", self.ButtonClicked, "xdg-screensaver lock" )
                 Button5.show()
                 self.systemBtnHolder.pack_start( Button5, False, False, 0 )
-                self.mintMenuWin.setTooltip( Button5, _("Requires password to unlock") )
+                self.mateMenuWin.setTooltip( Button5, _("Requires password to unlock") )
 
             if ( self.showLogout == True ):
                 Button6 = easyButton( "system-log-out", self.iconsize, [_("Logout")], -1, -1 )
                 Button6.connect( "clicked", self.ButtonClicked, "mate-session-save --logout-dialog" )
                 Button6.show()
                 self.systemBtnHolder.pack_start( Button6, False, False, 0 )
-                self.mintMenuWin.setTooltip( Button6, _("Log out or switch user") )
+                self.mateMenuWin.setTooltip( Button6, _("Log out or switch user") )
 
             if ( self.showQuit == True ):
                 Button7 = easyButton( "system-shutdown", self.iconsize, [_("Quit")], -1, -1 )
                 Button7.connect( "clicked", self.ButtonClicked, "mate-session-save --shutdown-dialog" )
                 Button7.show()
                 self.systemBtnHolder.pack_start( Button7, False, False, 0 )
-                self.mintMenuWin.setTooltip( Button7, _("Shutdown, restart, suspend or hibernate") )
+                self.mateMenuWin.setTooltip( Button7, _("Shutdown, restart, suspend or hibernate") )
 
     def ButtonClicked( self, widget, Exec ):
-        self.mintMenuWin.hide()
+        self.mateMenuWin.hide()
         if Exec:
             Execute( Exec )
 

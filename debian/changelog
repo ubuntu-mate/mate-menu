@@ -1,3 +1,9 @@
+matemenu (5.5.9~utopic1) utopic; urgency=medium
+
+  * Initial fork to mateMenu.
+
+ -- Martin Wimpress <code@ubuntu-mate.org>  Sat, 01 Nov 2014 11:23:21 +0100
+ 
 mintmenu (5.5.9) rebecca; urgency=medium
 
   * Use /usr/bin/python always

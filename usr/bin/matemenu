@@ -1,0 +1,15 @@
+#!/usr/bin/env python2
+
+import sys, os
+
+if len(sys.argv) > 1:
+    if (sys.argv[1] in ["clean", "clear", "reset", "--clean", "--clear", "--reset"]):
+        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu")
+        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.places")
+        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.applications")
+        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.recent")
+        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.system_management")
+        os.system("rm -rf ~/.ubuntu-mate/mateMenu")
+        print "All mateMenu settings are now restored to default"
+else:
+    os.system("/usr/lib/ubuntu-mate/mateMenu/mateMenu.py")

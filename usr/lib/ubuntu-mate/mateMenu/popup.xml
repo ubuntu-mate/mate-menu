@@ -1,0 +1,4 @@
+<menuitem name="Prefs" action="MateMenuPrefs"/>
+<menuitem name="Edit" action="MateMenuEdit"/>
+<menuitem name="Reload" action="MateMenuReload"/>
+<menuitem name="About" action="MateMenuAbout"/>

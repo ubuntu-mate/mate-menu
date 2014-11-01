@@ -1,0 +1,13 @@
+[Applet Factory]
+Id=MateMenuAppletFactory
+InProcess=false
+Location=/usr/lib/ubuntu-mate/mateMenu/mateMenu.py
+Name=MateMenu Applet Factory
+Description=Advanced Menu
+ 
+[MateMenuApplet]
+Name=mateMenu
+Description=Advanced Menu
+Icon=/usr/lib/ubuntu-mate/mateMenu/mate-logo.svg
+MateComponentId=OAFIID:MATE_MateMenuApplet;
+

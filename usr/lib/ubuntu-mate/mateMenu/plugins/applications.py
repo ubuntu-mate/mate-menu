@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python2
 
 import gi
 gi.require_version("Gtk", "2.0")
@@ -31,7 +31,7 @@ import matemenu
 from user import home
 
 # i18n
-gettext.install("mintmenu", "/usr/share/linuxmint/locale")
+gettext.install("matemenu", "/usr/share/ubuntu-mate/locale")
 
 class PackageDescriptor():
     def __init__(self, name, summary, description):
@@ -220,8 +220,8 @@ class pluginclass( object ):
     fromFav = array1( ("FAVORITES", Gtk.TargetFlags.SAME_APP, 81), ("FAVORITES", Gtk.TargetFlags.SAME_APP, 81) )
 
     @print_timing
-    def __init__( self, mintMenuWin, toggleButton, de ):
-        self.mintMenuWin = mintMenuWin
+    def __init__( self, mateMenuWin, toggleButton, de ):
+        self.mateMenuWin = mateMenuWin
 
         self.mainMenus = [ ]
 
@@ -282,7 +282,7 @@ class pluginclass( object ):
        # self.searchButton.connect( "button_release_event", self.SearchWithButton )
         try:
         # GSettings stuff
-            self.settings = EasyGSettings( "com.linuxmint.mintmenu.plugins.applications" )
+            self.settings = EasyGSettings( "org.ubuntu-mate.matemenu.plugins.applications" )
             self.GetGSettingsEntries()
             self.settings.notifyAdd( "icon-size", self.changeIconSize )
             self.settings.notifyAdd( "favicon-size", self.changeFavIconSize )
@@ -342,8 +342,8 @@ class pluginclass( object ):
 
     def refresh_apt_cache(self):
         if self.useAPT:
-            os.system("mkdir -p %s/.linuxmint/mintMenu/" % home)
-            os.system("/usr/lib/linuxmint/mintMenu/plugins/get_apt_cache.py > %s/.linuxmint/mintMenu/apt.cache &" % home)            
+            os.system("mkdir -p %s/.ubuntu-mate/mateMenu/" % home)
+            os.system("/usr/lib/ubuntu-mate/mateMenu/plugins/get_apt_cache.py > %s/.ubuntu-mate/mateMenu/apt.cache &" % home)            
 
     def get_panel(self):
         panelsettings = Gio.Settings.new("org.mate.panel")
@@ -353,7 +353,7 @@ class pluginclass( object ):
             keys = object_schema.list_keys()
             if "applet-iid" in keys:
                 iid = object_schema.get_string("applet-iid")
-                if iid is not None and iid.find("MintMenu") != -1:
+                if iid is not None and iid.find("MateMenu") != -1:
                     self.panel = object_schema.get_string("toplevel-id")
                     self.panel_position = object_schema.get_int("position") + 1
 
@@ -362,7 +362,7 @@ class pluginclass( object ):
 			os.system("/usr/bin/apturl apt://%s &" % pkg_name)
 		else:
 			os.system("xdg-open apt://" + pkg_name + " &")    
-		self.mintMenuWin.hide()
+		self.mateMenuWin.hide()
     
     def __del__( self ):
         print u"Applications plugin deleted"
@@ -534,11 +534,11 @@ class pluginclass( object ):
     def RebuildPlugin(self):
         self.content_holder.set_size_request( self.width, self.height )
 
-    def checkMintMenuFolder( self ):
-        if os.path.exists( os.path.join( os.path.expanduser( "~" ), ".linuxmint", "mintMenu", "applications" ) ):
+    def checkMateMenuFolder( self ):
+        if os.path.exists( os.path.join( os.path.expanduser( "~" ), ".ubuntu-mate", "mateMenu", "applications" ) ):
             return True
         try:
-            os.makedirs( os.path.join( os.path.expanduser( "~" ), ".linuxmint", "mintMenu", "applications" ) )
+            os.makedirs( os.path.join( os.path.expanduser( "~" ), ".ubuntu-mate", "mateMenu", "applications" ) )
             return True
         except:
             pass
@@ -582,12 +582,12 @@ class pluginclass( object ):
         self.buildButtonList()
         
     def blockOnPopup( self, *args ):
-        self.mintMenuWin.stopHiding()
+        self.mateMenuWin.stopHiding()
         return False
         
     def blockOnRightPress( self, widget, event ):
         if event.button == 3:
-            self.mintMenuWin.stopHiding()
+            self.mateMenuWin.stopHiding()
         return False
 
     def focusSearchEntry( self, clear = True ):
@@ -632,14 +632,14 @@ class pluginclass( object ):
         suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
         suggestionButton.connect("clicked", self.search_google)
         suggestionButton.set_text(_("Search Google for %s") % text)
-        suggestionButton.set_image("/usr/lib/linuxmint/mintMenu/search_engines/google.ico")
+        suggestionButton.set_image("/usr/lib/ubuntu-mate/mateMenu/search_engines/google.ico")
         self.applicationsBox.add(suggestionButton)
         self.suggestions.append(suggestionButton)
         
         suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
         suggestionButton.connect("clicked", self.search_wikipedia)
         suggestionButton.set_text(_("Search Wikipedia for %s") % text)
-        suggestionButton.set_image("/usr/lib/linuxmint/mintMenu/search_engines/wikipedia.ico")
+        suggestionButton.set_image("/usr/lib/ubuntu-mate/mateMenu/search_engines/wikipedia.ico")
         self.applicationsBox.add(suggestionButton)
         self.suggestions.append(suggestionButton)
                 
@@ -655,7 +655,7 @@ class pluginclass( object ):
         suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
         suggestionButton.connect("clicked", self.search_dictionary)
         suggestionButton.set_text(_("Lookup %s in Dictionary") % text)
-        suggestionButton.set_image("/usr/lib/linuxmint/mintMenu/search_engines/dictionary.png")
+        suggestionButton.set_image("/usr/lib/ubuntu-mate/mateMenu/search_engines/dictionary.png")
         self.applicationsBox.add(suggestionButton)
         self.suggestions.append(suggestionButton)  
         
@@ -669,7 +669,7 @@ class pluginclass( object ):
         #self.last_separator.add(gtk.HSeparator())
         #self.last_separator.set_size_request(-1, 20)       
         #self.last_separator.type = "separator"   
-        #self.mintMenuWin.SetPaneColors( [  self.last_separator ] )     
+        #self.mateMenuWin.SetPaneColors( [  self.last_separator ] )     
         #self.last_separator.show_all()
         #self.applicationsBox.add(self.last_separator)
         #self.suggestions.append(self.last_separator)            
@@ -685,7 +685,7 @@ class pluginclass( object ):
             found_in_name = []
             found_elsewhere = []
             keywords = keyword.split(" ")
-            command = "cat %(home)s/.linuxmint/mintMenu/apt.cache" % {'home':home}
+            command = "cat %(home)s/.ubuntumate/mateMenu/apt.cache" % {'home':home}
             for word in keywords:
                 command = "%(command)s | grep %(word)s" % {'command':command, 'word':word}            
             pkgs = commands.getoutput(command)
@@ -834,7 +834,7 @@ class pluginclass( object ):
                         else:
                             shownList.append(i)
                             showns = True
-                if (not showns and os.path.exists("/usr/lib/linuxmint/mintInstall/icon.svg")):
+                if (not showns and os.path.exists("/usr/lib/ubuntu-mate/mateInstall/icon.svg")):
                     if len(text) >= 3:
                         if self.current_suggestion is not None and self.current_suggestion in text:
                             # We're restricting our search... 
@@ -957,7 +957,7 @@ class pluginclass( object ):
                 mTree.append(propsMenuItem)
 
                 mTree.show_all()
-                self.mintMenuWin.stopHiding()
+                self.mateMenuWin.stopHiding()
                 gtk.gtk_menu_popup(hash(mTree), None, None, None, None, ev.button, ev.time)
             else:
                 mTree = Gtk.Menu()
@@ -976,7 +976,7 @@ class pluginclass( object ):
                 removeMenuItem.connect( "activate", self.onFavoritesRemove, widget )
                 insertSpaceMenuItem.connect( "activate", self.onFavoritesInsertSpace, widget, insertBefore )
                 insertSeparatorMenuItem.connect( "activate", self.onFavoritesInsertSeparator, widget, insertBefore )
-                self.mintMenuWin.stopHiding()
+                self.mateMenuWin.stopHiding()
                 gtk.gtk_menu_popup(hash(mTree), None, None, None, None, ev.button, ev.time)
 
     def menuPopup( self, widget, event ):
@@ -1038,7 +1038,7 @@ class pluginclass( object ):
                 startupMenuItem.set_active( False )
                 startupMenuItem.connect( "toggled", self.onAddToStartup, widget )
 
-            self.mintMenuWin.stopHiding()
+            self.mateMenuWin.stopHiding()
             gtk.gtk_menu_popup(hash(mTree), None, None, None, None, event.button, event.time)
 
     
@@ -1047,14 +1047,14 @@ class pluginclass( object ):
 
         menuItem = Gtk.ImageMenuItem(_("Search Google"))
         img = Gtk.Image()
-        img.set_from_file('/usr/lib/linuxmint/mintMenu/search_engines/google.ico')
+        img.set_from_file('/usr/lib/ubuntu-mate/mateMenu/search_engines/google.ico')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_google)
         menu.append(menuItem)
         
         menuItem = Gtk.ImageMenuItem(_("Search Wikipedia"))
         img = Gtk.Image()
-        img.set_from_file('/usr/lib/linuxmint/mintMenu/search_engines/wikipedia.ico')
+        img.set_from_file('/usr/lib/ubuntu-mate/mateMenu/search_engines/wikipedia.ico')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_wikipedia)
         menu.append(menuItem)
@@ -1064,7 +1064,7 @@ class pluginclass( object ):
         
         menuItem = Gtk.ImageMenuItem(_("Lookup Dictionary"))
         img = Gtk.Image()
-        img.set_from_file('/usr/lib/linuxmint/mintMenu/search_engines/dictionary.png')
+        img.set_from_file('/usr/lib/ubuntu-mate/mateMenu/search_engines/dictionary.png')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_dictionary)
         menu.append(menuItem)
@@ -1076,53 +1076,15 @@ class pluginclass( object ):
         menuItem.connect("activate", self.Search)
         menu.append(menuItem)
         
-        menuItem = Gtk.SeparatorMenuItem()
-        menu.append(menuItem)
-        
-        menuItem = Gtk.ImageMenuItem(_("Find Software"))
-        img = Gtk.Image()
-        img.set_from_file('/usr/lib/linuxmint/mintMenu/search_engines/software.png')
-        menuItem.set_image(img)
-        menuItem.connect("activate", self.search_mint_software)
-        menu.append(menuItem)
-        
-        menuItem = Gtk.ImageMenuItem(_("Find Tutorials"))
-        img = Gtk.Image()
-        img.set_from_file('/usr/lib/linuxmint/mintMenu/search_engines/tutorials.png')
-        menuItem.set_image(img)
-        menuItem.connect("activate", self.search_mint_tutorials)
-        menu.append(menuItem)
-        
-        menuItem = Gtk.ImageMenuItem(_("Find Hardware"))
-        img = Gtk.Image()
-        img.set_from_file('/usr/lib/linuxmint/mintMenu/search_engines/hardware.png')
-        menuItem.set_image(img)
-        menuItem.connect("activate", self.search_mint_hardware)
-        menu.append(menuItem)
-        
-        menuItem =Gtk.ImageMenuItem(_("Find Ideas"))
-        img = Gtk.Image()
-        img.set_from_file('/usr/lib/linuxmint/mintMenu/search_engines/ideas.png')
-        menuItem.set_image(img)
-        menuItem.connect("activate", self.search_mint_ideas)
-        menu.append(menuItem)
-        
-        menuItem = Gtk.ImageMenuItem(_("Find Users"))
-        img = Gtk.Image()
-        img.set_from_file('/usr/lib/linuxmint/mintMenu/search_engines/users.png')
-        menuItem.set_image(img)
-        menuItem.connect("activate", self.search_mint_users)
-        menu.append(menuItem)
-        
         menu.show_all()
 
-        self.mintMenuWin.stopHiding()
+        self.mateMenuWin.stopHiding()
         gtk.gtk_menu_popup(hash(menu), None, None, None, None, event.button, event.time)
 
         #menu.attach_to_widget(self.searchButton, None)
         #menu.reposition()
         #menu.reposition()
-        #self.mintMenuWin.grab()
+        #self.mateMenuWin.grab()
         self.focusSearchEntry(clear = False)
         return True
         
@@ -1135,56 +1097,25 @@ class pluginclass( object ):
     def search_google(self, widget):
         text = self.searchEntry.get_text()
         text = text.replace(" ", "+")
-        os.system("xdg-open \"http://www.google.com/cse?cx=002683415331144861350%3Atsq8didf9x0&ie=utf-8&sa=Search&q=" + text + "\" &")     
-        self.mintMenuWin.hide()
+        os.system("xdg-open \"http://www.google.com/?ie=utf-8&sa=Search&q=" + text + "\" &")     
+        self.mateMenuWin.hide()
         
     def search_wikipedia(self, widget):
         text = self.searchEntry.get_text()
         text = text.replace(" ", "+")
         os.system("xdg-open \"http://en.wikipedia.org/wiki/Special:Search?search=" + text + "\" &")    
-        self.mintMenuWin.hide()    
+        self.mateMenuWin.hide()    
         
     def search_dictionary(self, widget):
         text = self.searchEntry.get_text()
         os.system("mate-dictionary \"" + text + "\" &")
-        self.mintMenuWin.hide()
+        self.mateMenuWin.hide()
         
-    def search_mint_tutorials(self, widget):
-        text = self.searchEntry.get_text()
-        text = text.replace(" ", "%20")
-        os.system("xdg-open \"http://community.linuxmint.com/index.php/tutorial/search/0/" + text + "\" &")     
-        self.mintMenuWin.hide()
-    
-    def search_mint_ideas(self, widget):
-        text = self.searchEntry.get_text()
-        text = text.replace(" ", "%20")
-        os.system("xdg-open \"http://community.linuxmint.com/index.php/idea/search/0/" + text + "\" &")     
-        self.mintMenuWin.hide()
-    
-    def search_mint_users(self, widget):
-        text = self.searchEntry.get_text()
-        text = text.replace(" ", "%20")
-        os.system("xdg-open \"http://community.linuxmint.com/index.php/user/search/0/" + text + "\" &")     
-        self.mintMenuWin.hide()
-    
-    def search_mint_hardware(self, widget):
-        text = self.searchEntry.get_text()
-        text = text.replace(" ", "%20")
-        os.system("xdg-open \"http://community.linuxmint.com/index.php/hardware/search/0/" + text + "\" &")     
-        self.mintMenuWin.hide()
-        
-    def search_mint_software(self, widget):
-        text = self.searchEntry.get_text()
-        text = text.replace(" ", "%20")
-        os.system("xdg-open \"http://community.linuxmint.com/index.php/software/search/0/" + text + "\" &")     
-        self.mintMenuWin.hide()
-        
-
     def add_to_desktop(self, widget, desktopEntry):
         try:
             # Determine where the Desktop folder is (could be localized)
             import sys, commands
-            sys.path.append('/usr/lib/linuxmint/common')
+            sys.path.append('/usr/lib/ubuntu-mate/common')
             from configobj import ConfigObj
             config = ConfigObj(home + "/.config/user-dirs.dirs")
             desktopDir = home + "/Desktop"
@@ -1228,7 +1159,7 @@ class pluginclass( object ):
 
     def onLaunchApp( self, menu, widget ):         
         widget.execute()
-        self.mintMenuWin.hide()
+        self.mateMenuWin.hide()
 
     def onPropsApp( self, menu, widget ):
 
@@ -1258,7 +1189,7 @@ class pluginclass( object ):
             else:
                 filePath = widget.desktopFile
 
-        self.mintMenuWin.hide()
+        self.mateMenuWin.hide()
         Gdk.flush()
 
         editProcess = subprocess.Popen(["/usr/bin/mate-desktop-item-edit", filePath])
@@ -1288,7 +1219,7 @@ class pluginclass( object ):
 
     def onUninstallApp( self, menu, widget ):
         widget.uninstall()
-        self.mintMenuWin.hide()
+        self.mateMenuWin.hide()
 
     def onFavoritesInsertSpace( self, menu, widget, insertBefore ):
         if insertBefore:
@@ -1325,7 +1256,7 @@ class pluginclass( object ):
     def Search( self, widget ):
         text = self.searchEntry.get_text().strip()
         if text != "":            
-            self.mintMenuWin.hide()
+            self.mateMenuWin.hide()
             fullstring = self.searchtool.replace( "%s", text )
             os.system(fullstring + " &")          
 
@@ -1407,9 +1338,9 @@ class pluginclass( object ):
                 favButton.connect( "popup-menu", self.favPopup )
                 favButton.connect( "button-press-event", self.favPopup )
                 favButton.connect( "focus-in-event", self.scrollItemIntoView )
-                favButton.connect( "clicked", lambda w: self.mintMenuWin.hide() )
+                favButton.connect( "clicked", lambda w: self.mateMenuWin.hide() )
 
-                self.mintMenuWin.setTooltip( favButton, favButton.getTooltip() )
+                self.mateMenuWin.setTooltip( favButton, favButton.getTooltip() )
                 favButton.type = "location"
                 return favButton
         except Exception, e:
@@ -1420,11 +1351,11 @@ class pluginclass( object ):
     def buildFavorites( self ):
         try:
             from user import home
-            if (not os.path.exists(home + "/.linuxmint/mintMenu/applications.list")):
-                os.system("mkdir -p " + home + "/.linuxmint/mintMenu/applications")
-                os.system("cp /usr/lib/linuxmint/mintMenu/applications.list " + home + "/.linuxmint/mintMenu/applications.list")
+            if (not os.path.exists(home + "/.ubuntu-mate/mateMenu/applications.list")):
+                os.system("mkdir -p " + home + "/.ubuntu-mate/mateMenu/applications")
+                os.system("cp /usr/lib/ubuntu-mate/mateMenu/applications.list " + home + "/.ubuntu-mate/mateMenu/applications.list")
 
-            applicationsFile = open ( os.path.join( os.path.expanduser( "~" ), ".linuxmint", "mintMenu", "applications.list" ), "r" )
+            applicationsFile = open ( os.path.join( os.path.expanduser( "~" ), ".ubuntu-mate", "mateMenu", "applications.list" ), "r" )
             applicationsList = applicationsFile.readlines()
 
             self.favorites =  []
@@ -1563,8 +1494,8 @@ class pluginclass( object ):
 
     def favoritesSave( self ):
         try:
-            self.checkMintMenuFolder()
-            appListFile = open( os.path.join( os.path.expanduser( "~"), ".linuxmint", "mintMenu", "applications.list" ) , "w" )
+            self.checkMateMenuFolder()
+            appListFile = open( os.path.join( os.path.expanduser( "~"), ".ubuntu-mate", "mateMenu", "applications.list" ) , "w" )
 
             for favorite in self.favorites:
                 if favorite.type == "location":
@@ -1574,7 +1505,7 @@ class pluginclass( object ):
 
             appListFile.close( )
         except Exception, e:
-            msgDlg = Gtk.MessageDialog( None, gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR, Gtk.ButtonsType.OK, _("Couldn't save favorites. Check if you have write access to ~/.linuxmint/mintMenu")+"\n(" + e.__str__() + ")" )
+            msgDlg = Gtk.MessageDialog( None, gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR, Gtk.ButtonsType.OK, _("Couldn't save favorites. Check if you have write access to ~/.ubuntu-mate/mateMenu")+"\n(" + e.__str__() + ")" )
             msgDlg.run();
             msgDlg.destroy();
 
@@ -1668,7 +1599,7 @@ class pluginclass( object ):
             for item in addedCategories:
                 try:
                     item["button"] = CategoryButton( item["icon"], categoryIconSize, [ item["name"] ], item["filter"] )
-                    self.mintMenuWin.setTooltip( item["button"], item["tooltip"] )
+                    self.mateMenuWin.setTooltip( item["button"], item["tooltip"] )
 
                     if self.categories_mouse_over:
                         startId = item["button"].connect( "enter", self.StartFilter, item["filter"] )
@@ -1739,10 +1670,10 @@ class pluginclass( object ):
             for item in addedApplications:
                 item["button"] = MenuApplicationLauncher( item["entry"].get_desktop_file_path(), self.iconSize, item["category"], self.showapplicationcomments, highlight=(True and menu_has_changed) )                
                 if item["button"].appExec:
-                    self.mintMenuWin.setTooltip( item["button"], item["button"].getTooltip() )
+                    self.mateMenuWin.setTooltip( item["button"], item["button"].getTooltip() )
                     item["button"].connect( "button-press-event", self.menuPopup )
                     item["button"].connect( "focus-in-event", self.scrollItemIntoView )
-                    item["button"].connect( "clicked", lambda w: self.mintMenuWin.hide() )                    
+                    item["button"].connect( "clicked", lambda w: self.mateMenuWin.hide() )                    
                     if self.activeFilter[0] == 0:
                         item["button"].filterText( self.activeFilter[1] )
                     else:

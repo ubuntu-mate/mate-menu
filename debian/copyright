@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mintmenu
-Upstream-Contact: Clement Lefebvre <root@linuxmint.com>
-Source: https://github.com/linuxmint/mintmenu
+Upstream-Name: matemenu
+Upstream-Contact: Martin Wimpress <code@ubuntu-mate.org>
+Source: https://bitbucket.org/flexiondotorg/mate-menu/
 
 Files: *
 Copyright: 2007-2014 Clement Lefebvre <root@linuxmint.com>

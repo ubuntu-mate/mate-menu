@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python2
 
 import gi
 gi.require_version("Gtk", "2.0")
@@ -32,18 +32,18 @@ gdk = CDLL("libgdk-x11-2.0.so.0")
 architecture = commands.getoutput("uname -a")
 if (architecture.find("x86_64") >= 0):
     libc = CDLL('libc.so.6')
-    libc.prctl(15, 'mintmenu', 0, 0, 0)
+    libc.prctl(15, 'matemenu', 0, 0, 0)
 else:
     import dl
     if os.path.exists('/lib/libc.so.6'):
         libc = dl.open('/lib/libc.so.6')
-        libc.call('prctl', 15, 'mintmenu', 0, 0, 0)
+        libc.call('prctl', 15, 'matemenu', 0, 0, 0)
     elif os.path.exists('/lib/i386-linux-gnu/libc.so.6'):
         libc = dl.open('/lib/i386-linux-gnu/libc.so.6')
-        libc.call('prctl', 15, 'mintmenu', 0, 0, 0)
+        libc.call('prctl', 15, 'matemenu', 0, 0, 0)
 
 # i18n
-gettext.install("mintmenu", "/usr/share/linuxmint/locale")
+gettext.install("matemenu", "/usr/share/ubuntu-mate/locale")
 
 NAME = _("Menu")
 PATH = os.path.abspath( os.path.dirname( sys.argv[0] ) )
@@ -69,12 +69,12 @@ class MainWindow( object ):
 
         self.detect_desktop_environment()
 
-        self.icon = "/usr/lib/linuxmint/mintMenu/visualisation-logo.png"
+        self.icon = "/usr/lib/ubuntu-mate/mateMenu/visualisation-logo.png"
 
         self.toggle = toggleButton
         # Load UI file and extract widgets   
         builder = Gtk.Builder()
-        builder.add_from_file(os.path.join( self.path, "mintMenu.glade" ))
+        builder.add_from_file(os.path.join( self.path, "mateMenu.glade" ))
         self.window     = builder.get_object( "mainWindow" )
         self.paneholder = builder.get_object( "paneholder" )
         self.border     = builder.get_object( "border" )
@@ -91,7 +91,7 @@ class MainWindow( object ):
 
         self.window.stick()
 
-        plugindir = os.path.join( os.path.expanduser( "~" ), ".linuxmint/mintMenu/plugins" )
+        plugindir = os.path.join( os.path.expanduser( "~" ), ".ubuntu-mate/mateMenu/plugins" )
         sys.path.append( plugindir )
 
         self.panelSettings = Gio.Settings.new("org.mate.panel")
@@ -144,11 +144,11 @@ class MainWindow( object ):
 
     def toggleBorderWidth( self, settings, key,  args = None ):
         self.borderwidth = settings.get_int(key)
-        self.SetupMintMenuBorder()
+        self.SetupMateMenuBorder()
 
     def toggleOpacity( self, settings, key, args = None ):
         self.opacity = settings.get_int(key)
-        self.SetupMintMenuOpacity()
+        self.SetupMateMenuOpacity()
 
     def toggleUseCustomColor( self, settings, key, args = None ):
         self.usecustomcolor = settings.get_boolean(key)
@@ -156,7 +156,7 @@ class MainWindow( object ):
 
     def toggleCustomBorderColor( self, settings, key, args = None ):
         self.custombordercolor = settings.get_string(key)
-        self.SetupMintMenuBorder()
+        self.SetupMateMenuBorder()
 
     def toggleCustomBackgroundColor( self, settings, key, args = None):
         self.customcolor = settings.get_string(key)
@@ -182,14 +182,14 @@ class MainWindow( object ):
         
         self.globalEnableTooltips = self.panelSettings.get_boolean( "tooltips-enabled" )
 
-    def SetupMintMenuBorder( self, defaultStyle = None ):
+    def SetupMateMenuBorder( self, defaultStyle = None ):
         if self.usecustomcolor:
             self.window.modify_bg( Gtk.StateType.NORMAL, Gdk.color_parse( self.custombordercolor ) )
         elif defaultStyle is not None:
             self.window.modify_bg( Gtk.StateType.NORMAL, defaultStyle.lookup_color('bg_color')[1] )
         self.border.set_padding( self.borderwidth, self.borderwidth, self.borderwidth, self.borderwidth )        
 
-    def SetupMintMenuOpacity( self ):
+    def SetupMateMenuOpacity( self ):
         print "Opacity is: " + str(self.opacity)
         opacity = float(self.opacity) / float(100)
         print "Setting opacity to: " + str(opacity)
@@ -237,7 +237,7 @@ class MainWindow( object ):
                     if X.pluginclass.__init__.func_code.co_argcount == 1:
                         MyPlugin = X.pluginclass()
                     else:
-                        # pass mintMenu and togglebutton instance so that the plugin can use it
+                        # pass mateMenu and togglebutton instance so that the plugin can use it
                         MyPlugin = X.pluginclass( self, self.toggle, self.de )
 
                     if not MyPlugin.icon:
@@ -370,7 +370,7 @@ class MainWindow( object ):
     def loadTheme( self ):
         defaultStyle = self.getDefaultStyle()
         self.SetPaneColors( self.panesToColor, defaultStyle )
-        self.SetupMintMenuBorder( defaultStyle )
+        self.SetupMateMenuBorder( defaultStyle )
         self.SetHeadingStyle( self.headingsToColor )
         
     def SetPaneColors( self, items, defaultStyle = None ):
@@ -442,7 +442,7 @@ class MainWindow( object ):
         # Hack for opacity not showing on first composited draw
         if self.firstTime:
             self.firstTime = False
-            self.SetupMintMenuOpacity()
+            self.SetupMateMenuOpacity()
 
         self.window.window.focus( Gdk.CURRENT_TIME )
             
@@ -482,7 +482,7 @@ class MainWindow( object ):
 class MenuWin( object ):
     def __init__( self, applet, iid ):
         self.applet = applet        
-        self.settings = Gio.Settings.new("com.linuxmint.mintmenu")
+        self.settings = Gio.Settings.new("org.ubuntu-mate.matemenu")
         self.keybinder = keybinding.GlobalKeyBinding()
         self.settings.connect( "changed::applet-text", self.reloadSettings )
         self.settings.connect( "changed::theme-name", self.changeTheme )
@@ -509,7 +509,7 @@ class MenuWin( object ):
         self.mainwin.window.connect( "realize", self.onRealize )
         self.mainwin.window.connect( "size-allocate", lambda *args: self.positionMenu() )
 
-        self.mainwin.window.set_name("mintmenu") # Name used in Gtk RC files
+        self.mainwin.window.set_name("matemenu") # Name used in Gtk RC files
         self.applyTheme()
         self.mainwin.loadTheme()
 
@@ -714,9 +714,9 @@ class MenuWin( object ):
     def showAboutDialog( self, action, userdata = None ):
 
         about = Gtk.AboutDialog()
-        about.set_name("mintMenu")
+        about.set_name("mateMenu")
         import commands
-        version = commands.getoutput("/usr/lib/linuxmint/common/version.py mintmenu")
+        version = commands.getoutput("/usr/lib/ubuntu-mate/common/version.py matemenu")
         about.set_version(version)
         try:
             h = open('/usr/share/common-licenses/GPL','r')
@@ -732,14 +732,14 @@ class MenuWin( object ):
       #  about.set_authors( ["Clement Lefebvre <clem@linuxmint.com>", "Lars-Peter Clausen <lars@laprican.de>"] )
         about.set_translator_credits(("translator-credits") )
         #about.set_copyright( _("Based on USP from S.Chanderbally") )
-        about.set_logo( GdkPixbuf.Pixbuf.new_from_file("/usr/lib/linuxmint/mintMenu/icon.svg") )
+        about.set_logo( GdkPixbuf.Pixbuf.new_from_file("/usr/lib/ubuntu-mate/mateMenu/icon.svg") )
         about.connect( "response", lambda dialog, r: dialog.destroy() )
         about.show()
 
 
     def showPreferences( self, action, userdata = None ):
-#               Execute( "mateconf-editor /apps/mintMenu" )
-        Execute( os.path.join( PATH, "mintMenuConfig.py" ) )
+#               Execute( "mateconf-editor /apps/mateMenu" )
+        Execute( os.path.join( PATH, "mateMenuConfig.py" ) )
 
     def showMenuEditor( self, action, userdata = None ):
         Execute( "mozo" )
@@ -815,19 +815,19 @@ class MenuWin( object ):
     # this callback is to create a context menu
     def create_menu(self):
         action_group = Gtk.ActionGroup("context-menu")
-        action = Gtk.Action("MintMenuPrefs", _("Preferences"), None, "gtk-preferences")
+        action = Gtk.Action("MateMenuPrefs", _("Preferences"), None, "gtk-preferences")
         action.connect("activate", self.showPreferences)
         action_group.add_action(action)
-        action = Gtk.Action("MintMenuEdit", _("Edit menu"), None, "gtk-edit")
+        action = Gtk.Action("MateMenuEdit", _("Edit menu"), None, "gtk-edit")
         action.connect("activate", self.showMenuEditor)
         action_group.add_action(action)
-        action = Gtk.Action("MintMenuReload", _("Reload plugins"), None, "gtk-refresh")
+        action = Gtk.Action("MateMenuReload", _("Reload plugins"), None, "gtk-refresh")
         action.connect("activate", self.mainwin.RegenPlugins)
         action_group.add_action(action)
-        action = Gtk.Action("MintMenuAbout", _("About"), None, "gtk-about")
+        action = Gtk.Action("MateMenuAbout", _("About"), None, "gtk-about")
         action.connect("activate", self.showAboutDialog)
         action_group.add_action(action)
-        action_group.set_translation_domain ("mintmenu")
+        action_group.set_translation_domain ("matemenu")
 
         xml = os.path.join( os.path.join( os.path.dirname( __file__ )), "popup.xml" )
         self.applet.setup_menu_from_file(xml, action_group)
@@ -841,7 +841,7 @@ def quit_all(widget):
     Gtk.main_quit()
     sys.exit(0)
 
-MatePanelApplet.Applet.factory_main("MintMenuAppletFactory", True,
+MatePanelApplet.Applet.factory_main("MateMenuAppletFactory", True,
                                     MatePanelApplet.Applet.__gtype__,
                                     applet_factory, None)
                                     

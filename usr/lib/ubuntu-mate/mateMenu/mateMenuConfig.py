@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python2
 
 import sys
 
@@ -22,11 +22,11 @@ PATH = os.path.abspath( os.path.dirname( sys.argv[0] ) )
 sys.path.append( os.path.join( PATH , "plugins") )
 
 # i18n
-gettext.install("mintmenu", "/usr/share/linuxmint/locale")
+gettext.install("matemenu", "/usr/share/ubuntu-mate/locale")
 
 from easygsettings import EasyGSettings
 
-class mintMenuConfig( object ):
+class mateMenuConfig( object ):
 
     def __init__( self ):
 
@@ -35,12 +35,12 @@ class mintMenuConfig( object ):
         # Load glade file and extract widgets
         self.builder = Gtk.Builder()
 
-        self.builder.add_from_file (os.path.join(self.path, "mintMenuConfig.glade" ))
+        self.builder.add_from_file (os.path.join(self.path, "mateMenuConfig.glade" ))
         self.mainWindow=self.builder.get_object("mainWindow")
 
         #i18n
         self.mainWindow.set_title(_("Menu preferences"))
-        self.mainWindow.set_icon_from_file("/usr/lib/linuxmint/mintMenu/icon.svg")
+        self.mainWindow.set_icon_from_file("/usr/lib/ubuntu-mate/mateMenu/icon.svg")
 
         self.builder.get_object("startWithFavorites").set_label(_("Always start with favorites pane"))
         self.builder.get_object("showButtonIcon").set_label(_("Show button icon"))
@@ -184,7 +184,7 @@ class mintMenuConfig( object ):
         self.systemHeightButton = self.builder.get_object( "systemHeightSpinButton" )
         if (self.allowSystemScrollbarToggle.get_active() == False): self.systemHeightButton.set_sensitive(False)
         self.allowSystemScrollbarToggle.connect("toggled", self.toggleSystemHeightEnabled )
-        if os.path.exists("/usr/lib/linuxmint/mintInstall/icon.svg"):
+        if os.path.exists("/usr/lib/ubuntu-mate/mateInstall/icon.svg"):
             self.builder.get_object( "softwaremanagercheckbutton" ).show()
         else:
             self.builder.get_object( "softwaremanagercheckbutton" ).hide()
@@ -192,10 +192,10 @@ class mintMenuConfig( object ):
         self.builder.get_object( "closeButton" ).connect("clicked", Gtk.main_quit )
 
 
-        self.settings = EasyGSettings( "com.linuxmint.mintmenu" )
-        self.settingsApplications = EasyGSettings( "com.linuxmint.mintmenu.plugins.applications" )
-        self.settingsPlaces = EasyGSettings( "com.linuxmint.mintmenu.plugins.places" )
-        self.settingsSystem = EasyGSettings( "com.linuxmint.mintmenu.plugins.system_management" )
+        self.settings = EasyGSettings( "org.ubuntu-mate.matemenu" )
+        self.settingsApplications = EasyGSettings( "org.ubuntu-mate.matemenu.plugins.applications" )
+        self.settingsPlaces = EasyGSettings( "org.ubuntu-mate.matemenu.plugins.places" )
+        self.settingsSystem = EasyGSettings( "org.ubuntu-mate.matemenu.plugins.system_management" )
 
         self.useCustomColors.connect( "toggled", self.toggleUseCustomColors )
 
@@ -427,7 +427,7 @@ class mintMenuConfig( object ):
         newPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         newPlaceDialog.set_transient_for(self.mainWindow)
-        newPlaceDialog.set_icon_from_file("/usr/lib/linuxmint/mintMenu/icon.svg")
+        newPlaceDialog.set_icon_from_file("/usr/lib/ubuntu-mate/mateMenu/icon.svg")
         newPlaceDialog.set_title(self.newPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         newPlaceDialog.set_default_response(Gtk.ResponseType.OK)
@@ -458,7 +458,7 @@ class mintMenuConfig( object ):
         editPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         editPlaceDialog.set_transient_for(self.mainWindow)
-        editPlaceDialog.set_icon_from_file("/usr/lib/linuxmint/mintMenu/icon.svg")
+        editPlaceDialog.set_icon_from_file("/usr/lib/ubuntu-mate/mateMenu/icon.svg")
         editPlaceDialog.set_title(self.editPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         editPlaceDialog.set_default_response(Gtk.ResponseType.OK)
@@ -542,5 +542,5 @@ class mintMenuConfig( object ):
             self.settingsPlaces.set( "list-string", "custom-names", customplacenames)
 
 
-window = mintMenuConfig()
+window = mateMenuConfig()
 Gtk.main()

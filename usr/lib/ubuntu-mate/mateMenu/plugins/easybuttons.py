@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python2
 
 from gi.repository import Gtk, Gdk, GLib
 from gi.repository import Pango
@@ -40,7 +40,7 @@ class IconManager(GObject.GObject):
 
         # Setup and clean up the temp icon dir
         configDir = GLib.get_user_config_dir()
-        self.iconDir = os.path.join(configDir, "mintmenu")
+        self.iconDir = os.path.join(configDir, "matemenu")
         if not os.path.exists(self.iconDir):
             os.makedirs(self.iconDir)
         contents = os.listdir(self.iconDir)
@@ -387,7 +387,7 @@ class ApplicationLauncher( easyButton ):
                 Execute(self.appExec, self.appPath)
 
     def uninstall (self, *args ):
-        Execute("gksu /usr/lib/linuxmint/common/mint-remove-application.py " + self.desktopFile)
+        Execute("gksu /usr/lib/ubuntu-mate/common/mate-remove-application.py " + self.desktopFile)
 
     # IconTheme changed, setup new icons for button and drag 'n drop
     def iconChanged( self ):
@@ -422,7 +422,7 @@ class ApplicationLauncher( easyButton ):
             os.remove( self.startupFilePath )
 
     def addToFavourites( self ):
-        favouritesDir = os.path.join( os.path.expanduser("~"), ".linuxmint", "mintMenu", "applications" );
+        favouritesDir = os.path.join( os.path.expanduser("~"), ".ubuntu-mate", "mateMenu", "applications" );
         if not os.path.exists( favouritesDir ):
             os.makedirs( favouritesDir )
 

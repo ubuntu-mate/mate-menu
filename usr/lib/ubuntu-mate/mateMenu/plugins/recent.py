@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python2
 
 import gi
 gi.require_version("Gtk", "2.0")
@@ -14,9 +14,9 @@ class pluginclass:
     """This is the main class for the plugin"""
     """It MUST be named pluginclass"""
 
-    def __init__( self, mintMenuWin, toggleButton, de ):
+    def __init__( self, mateMenuWin, toggleButton, de ):
 
-        self.Win = mintMenuWin
+        self.Win = mateMenuWin
         self.toggleButton = toggleButton
         self.de = de
 
@@ -42,7 +42,7 @@ class pluginclass:
         #Plugin icon
         self.icon = 'mate-folder.png'
 
-        self.settings = EasyGSettings ("com.linuxmint.mintmenu.plugins.recent")
+        self.settings = EasyGSettings ("org.ubuntu-mate.matemenu.plugins.recent")
 
         self.settings.notifyAdd( 'height', self.RegenPlugin )
         self.settings.notifyAdd( 'width', self.RegenPlugin )
