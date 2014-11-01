@@ -1006,7 +1006,8 @@ class pluginclass( object ):
             mTree.append(separator2)
 
             mTree.append(launchMenuItem)
-            mTree.append(uninstallMenuItem)
+            if os.path.exists("/usr/bin/synaptic-pkexec"):
+                mTree.append(uninstallMenuItem)
             if home in widget.desktopFile:
                 mTree.append(deleteMenuItem)
                 deleteMenuItem.connect("activate", self.delete_from_menu, widget)
@@ -1022,7 +1023,8 @@ class pluginclass( object ):
 
             launchMenuItem.connect( "activate", self.onLaunchApp, widget )
             propsMenuItem.connect( "activate", self.onPropsApp, widget)
-            uninstallMenuItem.connect ( "activate", self.onUninstallApp, widget )
+            if os.path.exists("/usr/bin/synaptic-pkexec"):
+                uninstallMenuItem.connect ( "activate", self.onUninstallApp, widget )
 
             if self.isLocationInFavorites( widget.desktopFile ):
                 favoriteMenuItem.set_active( True )

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-01 13:05+0000\n"
+"POT-Creation-Date: 2014-11-01 13:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -521,4 +521,26 @@ msgstr ""
 
 #: usr/lib/ubuntu-mate/mateMenu/plugins/places.py:262
 msgid "Empty trash"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/common/mate-remove-application.py:36
+msgid "Please wait, this can take some time"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/common/mate-remove-application.py:38
+msgid "Application removed successfully"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/common/mate-remove-application.py:57
+msgid ""
+"This menu item is not associated to any package. Do you want to remove it "
+"from the menu anyway?"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/common/mate-remove-application.py:67
+msgid "The following packages will be removed:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/common/mate-remove-application.py:71
+msgid "Packages to be removed"
 msgstr ""

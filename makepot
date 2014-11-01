@@ -7,4 +7,5 @@ usr/lib/ubuntu-mate/mateMenu/keybinding.py \
 usr/lib/ubuntu-mate/mateMenu/plugins/recent.py \
 usr/lib/ubuntu-mate/mateMenu/plugins/applications.py \
 usr/lib/ubuntu-mate/mateMenu/plugins/system_management.py \
-usr/lib/ubuntu-mate/mateMenu/plugins/places.py
+usr/lib/ubuntu-mate/mateMenu/plugins/places.py \
+usr/lib/ubuntu-mate/common/mate-remove-application.py
