@@ -8,8 +8,7 @@ Standards-Version: 3.9.5
 Package: matemenu
 Architecture: all
 Depends:
- ${python:Depends},
- ${misc:Depends},
+ ${python:Depends}, ${misc:Depends},
  python (>= 2.4), python (<< 3),
  python-gtk2, python-glade2,
  python-mate-menu, python-xdg,
@@ -19,6 +18,8 @@ Depends:
  python-xlib,
  gir1.2-mate-panel, gir1.2-gtk-2.0,
  mozo
+Suggests:
+ synaptic
 Description: Advanced MATE menu
- One of the most advanced menus under Linux. MateMenu supports filtering,
+ One of the most advanced menus available for MATE. Supports filtering,
  favorites, easy-uninstallation, autosession, and many other features.
