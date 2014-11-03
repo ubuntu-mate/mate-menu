@@ -20,12 +20,12 @@ except Exception, detail:
 from subprocess import Popen
 
 # i18n
-gettext.install("matemenu", "/usr/share/ubuntu-mate/locale")
+gettext.install("mate-menu", "/usr/share/ubuntu-mate/locale")
 
 class RemoveExecuter(threading.Thread):
 
     def __init__(self, package):
-        threading.Thread.__init__(self)        
+        threading.Thread.__init__(self)
         self.package = package
 
     def run(self):  

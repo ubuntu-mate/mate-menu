@@ -69,7 +69,7 @@
     </key>
     
     <key type="s" name="applet-icon">
-      <default>"/usr/lib/ubuntu-mate/mateMenu/visualisation-logo.png"</default>
+      <default>"/usr/lib/ubuntu-mate/mate-menu/visualisation-logo.png"</default>
       <summary></summary>
       <description></description>
     </key>

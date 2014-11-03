@@ -31,7 +31,7 @@ import matemenu
 from user import home
 
 # i18n
-gettext.install("matemenu", "/usr/share/ubuntu-mate/locale")
+gettext.install("mate-menu", "/usr/share/ubuntu-mate/locale")
 
 class PackageDescriptor():
     def __init__(self, name, summary, description):
@@ -169,8 +169,8 @@ class Menu:
 
 class SuggestionButton ( Gtk.Button ):
 
-    def __init__( self, iconName, iconSize, label ):                
-        Gtk.Button.__init__( self )                    
+    def __init__( self, iconName, iconSize, label ):
+        Gtk.Button.__init__( self )
         self.iconName = iconName
         self.set_relief( Gtk.ReliefStyle.NONE )
         self.set_size_request( -1, -1 )
@@ -201,7 +201,7 @@ class SuggestionButton ( Gtk.Button ):
     def set_text( self, text):
         self.label.set_markup(text)
 
-    def set_icon_size (self, size):        
+    def set_icon_size (self, size):
         self.image.set_from_stock( self.iconName, size )
 
 class TargetEntry(Structure):
@@ -342,8 +342,8 @@ class pluginclass( object ):
 
     def refresh_apt_cache(self):
         if self.useAPT:
-            os.system("mkdir -p %s/.ubuntu-mate/mateMenu/" % home)
-            os.system("/usr/lib/ubuntu-mate/mateMenu/plugins/get_apt_cache.py > %s/.ubuntu-mate/mateMenu/apt.cache &" % home)            
+            os.system("mkdir -p %s/.config/mate-menu/" % home)
+            os.system("/usr/lib/ubuntu-mate/mate-menu/plugins/get_apt_cache.py > %s/.config/mate-menu/apt.cache &" % home)
 
     def get_panel(self):
         panelsettings = Gio.Settings.new("org.mate.panel")
@@ -358,12 +358,12 @@ class pluginclass( object ):
                     self.panel_position = object_schema.get_int("position") + 1
 
     def apturl_install(self, widget, pkg_name):
-		if os.path.exists("/usr/bin/apturl"):
-			os.system("/usr/bin/apturl apt://%s &" % pkg_name)
-		else:
-			os.system("xdg-open apt://" + pkg_name + " &")    
-		self.mateMenuWin.hide()
-    
+        if os.path.exists("/usr/bin/apturl"):
+            os.system("/usr/bin/apturl apt://%s &" % pkg_name)
+        else:
+            os.system("xdg-open apt://" + pkg_name + " &")
+        self.mateMenuWin.hide()
+
     def __del__( self ):
         print u"Applications plugin deleted"
 
@@ -467,7 +467,7 @@ class pluginclass( object ):
             self.favoritesBox.remove( fav )
             self.favoritesPositionOnGrid( fav )
 
-    def RegenPlugin( self, *args, **kargs ):            
+    def RegenPlugin( self, *args, **kargs ):
         self.refresh_apt_cache()
         
         # save old config - this is necessary because the app will notified when it sets the default values and you don't want the to reload itself several times
@@ -535,10 +535,10 @@ class pluginclass( object ):
         self.content_holder.set_size_request( self.width, self.height )
 
     def checkMateMenuFolder( self ):
-        if os.path.exists( os.path.join( os.path.expanduser( "~" ), ".ubuntu-mate", "mateMenu", "applications" ) ):
+        if os.path.exists( os.path.join( os.path.expanduser( "~" ), ".config", "mate-menu", "applications" ) ):
             return True
         try:
-            os.makedirs( os.path.join( os.path.expanduser( "~" ), ".ubuntu-mate", "mateMenu", "applications" ) )
+            os.makedirs( os.path.join( os.path.expanduser( "~" ), ".config", "mate-menu", "applications" ) )
             return True
         except:
             pass
@@ -632,14 +632,14 @@ class pluginclass( object ):
         suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
         suggestionButton.connect("clicked", self.search_google)
         suggestionButton.set_text(_("Search Google for %s") % text)
-        suggestionButton.set_image("/usr/lib/ubuntu-mate/mateMenu/search_engines/google.ico")
+        suggestionButton.set_image("/usr/lib/ubuntu-mate/mate-menu/search_engines/google.ico")
         self.applicationsBox.add(suggestionButton)
         self.suggestions.append(suggestionButton)
         
         suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
         suggestionButton.connect("clicked", self.search_wikipedia)
         suggestionButton.set_text(_("Search Wikipedia for %s") % text)
-        suggestionButton.set_image("/usr/lib/ubuntu-mate/mateMenu/search_engines/wikipedia.ico")
+        suggestionButton.set_image("/usr/lib/ubuntu-mate/mate-menu/search_engines/wikipedia.ico")
         self.applicationsBox.add(suggestionButton)
         self.suggestions.append(suggestionButton)
                 
@@ -655,13 +655,13 @@ class pluginclass( object ):
         suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
         suggestionButton.connect("clicked", self.search_dictionary)
         suggestionButton.set_text(_("Lookup %s in Dictionary") % text)
-        suggestionButton.set_image("/usr/lib/ubuntu-mate/mateMenu/search_engines/dictionary.png")
+        suggestionButton.set_image("/usr/lib/ubuntu-mate/mate-menu/search_engines/dictionary.png")
         self.applicationsBox.add(suggestionButton)
         self.suggestions.append(suggestionButton)  
         
         suggestionButton = SuggestionButton(Gtk.STOCK_FIND, self.iconSize, "")
         suggestionButton.connect("clicked", self.Search)
-        suggestionButton.set_text(_("Search Computer for %s") % text)                        
+        suggestionButton.set_text(_("Search Computer for %s") % text)
         self.applicationsBox.add(suggestionButton)
         self.suggestions.append(suggestionButton)  
         
@@ -685,9 +685,9 @@ class pluginclass( object ):
             found_in_name = []
             found_elsewhere = []
             keywords = keyword.split(" ")
-            command = "cat %(home)s/.ubuntumate/mateMenu/apt.cache" % {'home':home}
+            command = "cat %(home)s/.config/mate-menu/apt.cache" % {'home':home}
             for word in keywords:
-                command = "%(command)s | grep %(word)s" % {'command':command, 'word':word}            
+                command = "%(command)s | grep %(word)s" % {'command':command, 'word':word}
             pkgs = commands.getoutput(command)
             pkgs = pkgs.split("\n")
             num_pkg_found = 0
@@ -1049,14 +1049,14 @@ class pluginclass( object ):
 
         menuItem = Gtk.ImageMenuItem(_("Search Google"))
         img = Gtk.Image()
-        img.set_from_file('/usr/lib/ubuntu-mate/mateMenu/search_engines/google.ico')
+        img.set_from_file('/usr/lib/ubuntu-mate/mate-menu/search_engines/google.ico')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_google)
         menu.append(menuItem)
         
         menuItem = Gtk.ImageMenuItem(_("Search Wikipedia"))
         img = Gtk.Image()
-        img.set_from_file('/usr/lib/ubuntu-mate/mateMenu/search_engines/wikipedia.ico')
+        img.set_from_file('/usr/lib/ubuntu-mate/mate-menu/search_engines/wikipedia.ico')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_wikipedia)
         menu.append(menuItem)
@@ -1066,7 +1066,7 @@ class pluginclass( object ):
         
         menuItem = Gtk.ImageMenuItem(_("Lookup Dictionary"))
         img = Gtk.Image()
-        img.set_from_file('/usr/lib/ubuntu-mate/mateMenu/search_engines/dictionary.png')
+        img.set_from_file('/usr/lib/ubuntu-mate/mate-menu/search_engines/dictionary.png')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_dictionary)
         menu.append(menuItem)
@@ -1099,14 +1099,14 @@ class pluginclass( object ):
     def search_google(self, widget):
         text = self.searchEntry.get_text()
         text = text.replace(" ", "+")
-        os.system("xdg-open \"http://www.google.com/?ie=utf-8&sa=Search&q=" + text + "\" &")     
+        os.system("xdg-open \"http://www.google.com/?ie=utf-8&sa=Search&q=" + text + "\" &")
         self.mateMenuWin.hide()
         
     def search_wikipedia(self, widget):
         text = self.searchEntry.get_text()
         text = text.replace(" ", "+")
-        os.system("xdg-open \"http://en.wikipedia.org/wiki/Special:Search?search=" + text + "\" &")    
-        self.mateMenuWin.hide()    
+        os.system("xdg-open \"http://en.wikipedia.org/wiki/Special:Search?search=" + text + "\" &")
+        self.mateMenuWin.hide()
         
     def search_dictionary(self, widget):
         text = self.searchEntry.get_text()
@@ -1159,7 +1159,7 @@ class pluginclass( object ):
         except Exception, detail:
             print detail
 
-    def onLaunchApp( self, menu, widget ):         
+    def onLaunchApp( self, menu, widget ):
         widget.execute()
         self.mateMenuWin.hide()
 
@@ -1260,14 +1260,14 @@ class pluginclass( object ):
         if text != "":            
             self.mateMenuWin.hide()
             fullstring = self.searchtool.replace( "%s", text )
-            os.system(fullstring + " &")          
+            os.system(fullstring + " &")
 
     def SearchWithButton( self, widget, event ):
         self.Search( widget )
 
     def do_plugin( self ):
         self.Todos()
-        self.buildFavorites()        
+        self.buildFavorites()
 
     # Scroll button into view
     def scrollItemIntoView( self, widget, event = None ):
@@ -1353,11 +1353,11 @@ class pluginclass( object ):
     def buildFavorites( self ):
         try:
             from user import home
-            if (not os.path.exists(home + "/.ubuntu-mate/mateMenu/applications.list")):
-                os.system("mkdir -p " + home + "/.ubuntu-mate/mateMenu/applications")
-                os.system("cp /usr/lib/ubuntu-mate/mateMenu/applications.list " + home + "/.ubuntu-mate/mateMenu/applications.list")
+            if (not os.path.exists(home + "/.config/mate-menu/applications.list")):
+                os.system("mkdir -p " + home + "/.config/mate-menu/applications")
+                os.system("cp /usr/lib/ubuntu-mate/mate-menu/applications.list " + home + "/.config/mate-menu/applications.list")
 
-            applicationsFile = open ( os.path.join( os.path.expanduser( "~" ), ".ubuntu-mate", "mateMenu", "applications.list" ), "r" )
+            applicationsFile = open ( os.path.join( os.path.expanduser( "~" ), ".config", "mate-menu", "applications.list" ), "r" )
             applicationsList = applicationsFile.readlines()
 
             self.favorites =  []
@@ -1497,7 +1497,7 @@ class pluginclass( object ):
     def favoritesSave( self ):
         try:
             self.checkMateMenuFolder()
-            appListFile = open( os.path.join( os.path.expanduser( "~"), ".ubuntu-mate", "mateMenu", "applications.list" ) , "w" )
+            appListFile = open( os.path.join( os.path.expanduser( "~"), ".config", "mate-menu", "applications.list" ) , "w" )
 
             for favorite in self.favorites:
                 if favorite.type == "location":
@@ -1507,7 +1507,7 @@ class pluginclass( object ):
 
             appListFile.close( )
         except Exception, e:
-            msgDlg = Gtk.MessageDialog( None, gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR, Gtk.ButtonsType.OK, _("Couldn't save favorites. Check if you have write access to ~/.ubuntu-mate/mateMenu")+"\n(" + e.__str__() + ")" )
+            msgDlg = Gtk.MessageDialog( None, gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR, Gtk.ButtonsType.OK, _("Couldn't save favorites. Check if you have write access to ~/.config/mate-menu")+"\n(" + e.__str__() + ")" )
             msgDlg.run();
             msgDlg.destroy();
 
@@ -1535,9 +1535,9 @@ class pluginclass( object ):
 
         self.menuChangedTimer = GLib.timeout_add( 100, self.updateBoxes, True )
 
-    def updateBoxes( self, menu_has_changed ):        
+    def updateBoxes( self, menu_has_changed ):
         # FIXME: This is really bad!
-        if self.rebuildLock:            
+        if self.rebuildLock:
             return
 
         self.rebuildLock = True
@@ -1581,7 +1581,7 @@ class pluginclass( object ):
         
         for item in removedCategories:
             try:
-                button = item["button"]            
+                button = item["button"]
                 self.categoryList.remove(item)
                 button.destroy()
                 del item
@@ -1627,7 +1627,6 @@ class pluginclass( object ):
                 except Exception, e:
                     print e
 
-
         # Find added and removed applications add update the application list
         newApplicationList = self.buildApplicationList()
         addedApplications = []
@@ -1663,7 +1662,8 @@ class pluginclass( object ):
         
         for key in removedApplications:
             self.applicationList[key]["button"].destroy()
-            del self.applicationList[key]        
+            del self.applicationList[key]
+
         if addedApplications:
             sortedApplicationList = []
             for item in self.applicationList:
@@ -1675,7 +1675,7 @@ class pluginclass( object ):
                     self.mateMenuWin.setTooltip( item["button"], item["button"].getTooltip() )
                     item["button"].connect( "button-press-event", self.menuPopup )
                     item["button"].connect( "focus-in-event", self.scrollItemIntoView )
-                    item["button"].connect( "clicked", lambda w: self.mateMenuWin.hide() )                    
+                    item["button"].connect( "clicked", lambda w: self.mateMenuWin.hide() )
                     if self.activeFilter[0] == 0:
                         item["button"].filterText( self.activeFilter[1] )
                     else:
@@ -1686,9 +1686,8 @@ class pluginclass( object ):
                 else:
                     item["button"].destroy()
 
-
-            sortedApplicationList.sort()      
-            launcherNames = [] # Keep track of launcher names so we don't add them twice in the list..      
+            sortedApplicationList.sort()
+            launcherNames = [] # Keep track of launcher names so we don't add them twice in the list.
             for item in sortedApplicationList:
                 launcherName = item[0]
                 button = item[1]
@@ -1698,7 +1697,7 @@ class pluginclass( object ):
                 else:
                     launcherNames.append(launcherName)
                       
-        self.rebuildLock = False        
+        self.rebuildLock = False
 
     # Reload the menufiles from the filesystem
     def loadMenuFiles( self ):

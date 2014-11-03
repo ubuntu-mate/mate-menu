@@ -40,7 +40,7 @@ class IconManager(GObject.GObject):
 
         # Setup and clean up the temp icon dir
         configDir = GLib.get_user_config_dir()
-        self.iconDir = os.path.join(configDir, "matemenu")
+        self.iconDir = os.path.join(configDir, "mate-menu")
         if not os.path.exists(self.iconDir):
             os.makedirs(self.iconDir)
         contents = os.listdir(self.iconDir)
@@ -422,7 +422,7 @@ class ApplicationLauncher( easyButton ):
             os.remove( self.startupFilePath )
 
     def addToFavourites( self ):
-        favouritesDir = os.path.join( os.path.expanduser("~"), ".ubuntu-mate", "mateMenu", "applications" );
+        favouritesDir = os.path.join( os.path.expanduser("~"), ".config", "mate-menu", "applications" );
         if not os.path.exists( favouritesDir ):
             os.makedirs( favouritesDir )
 

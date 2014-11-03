@@ -9,7 +9,7 @@ if len(sys.argv) > 1:
         os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.applications")
         os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.recent")
         os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.system_management")
-        os.system("rm -rf ~/.ubuntu-mate/mateMenu")
+        os.system("rm -rf ~/.config/mate-menu")
         print "All mateMenu settings are now restored to default"
 else:
-    os.system("/usr/lib/ubuntu-mate/mateMenu/mateMenu.py")
+    os.system("/usr/lib/ubuntu-mate/mate-menu/mate-menu.py")

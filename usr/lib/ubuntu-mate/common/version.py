@@ -1,9 +1,10 @@
 #!/usr/bin/env python2
 
-import apt
+
 import sys
 
 try:
+    import apt
 	cache = apt.Cache()	
 	pkg = cache[sys.argv[1]]
 	if pkg.installed is not None:

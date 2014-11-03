@@ -22,7 +22,7 @@ PATH = os.path.abspath( os.path.dirname( sys.argv[0] ) )
 sys.path.append( os.path.join( PATH , "plugins") )
 
 # i18n
-gettext.install("matemenu", "/usr/share/ubuntu-mate/locale")
+gettext.install("mate-menu", "/usr/share/ubuntu-mate/locale")
 
 from easygsettings import EasyGSettings
 
@@ -35,12 +35,12 @@ class mateMenuConfig( object ):
         # Load glade file and extract widgets
         self.builder = Gtk.Builder()
 
-        self.builder.add_from_file (os.path.join(self.path, "mateMenuConfig.glade" ))
+        self.builder.add_from_file (os.path.join(self.path, "mate-menu-config.glade" ))
         self.mainWindow=self.builder.get_object("mainWindow")
 
         #i18n
         self.mainWindow.set_title(_("Menu preferences"))
-        self.mainWindow.set_icon_from_file("/usr/lib/ubuntu-mate/mateMenu/icon.svg")
+        self.mainWindow.set_icon_from_file("/usr/lib/ubuntu-mate/mate-menu/icon.svg")
 
         self.builder.get_object("startWithFavorites").set_label(_("Always start with favorites pane"))
         self.builder.get_object("showButtonIcon").set_label(_("Show button icon"))
@@ -427,7 +427,7 @@ class mateMenuConfig( object ):
         newPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         newPlaceDialog.set_transient_for(self.mainWindow)
-        newPlaceDialog.set_icon_from_file("/usr/lib/ubuntu-mate/mateMenu/icon.svg")
+        newPlaceDialog.set_icon_from_file("/usr/lib/ubuntu-mate/mate-menu/icon.svg")
         newPlaceDialog.set_title(self.newPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         newPlaceDialog.set_default_response(Gtk.ResponseType.OK)
@@ -458,7 +458,7 @@ class mateMenuConfig( object ):
         editPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         editPlaceDialog.set_transient_for(self.mainWindow)
-        editPlaceDialog.set_icon_from_file("/usr/lib/ubuntu-mate/mateMenu/icon.svg")
+        editPlaceDialog.set_icon_from_file("/usr/lib/ubuntu-mate/mate-menu/icon.svg")
         editPlaceDialog.set_title(self.editPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         editPlaceDialog.set_default_response(Gtk.ResponseType.OK)

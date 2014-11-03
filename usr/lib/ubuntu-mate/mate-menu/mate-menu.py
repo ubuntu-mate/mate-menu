@@ -32,18 +32,18 @@ gdk = CDLL("libgdk-x11-2.0.so.0")
 architecture = commands.getoutput("uname -a")
 if (architecture.find("x86_64") >= 0):
     libc = CDLL('libc.so.6')
-    libc.prctl(15, 'matemenu', 0, 0, 0)
+    libc.prctl(15, 'mate-menu', 0, 0, 0)
 else:
     import dl
     if os.path.exists('/lib/libc.so.6'):
         libc = dl.open('/lib/libc.so.6')
-        libc.call('prctl', 15, 'matemenu', 0, 0, 0)
+        libc.call('prctl', 15, 'mate-menu', 0, 0, 0)
     elif os.path.exists('/lib/i386-linux-gnu/libc.so.6'):
         libc = dl.open('/lib/i386-linux-gnu/libc.so.6')
-        libc.call('prctl', 15, 'matemenu', 0, 0, 0)
+        libc.call('prctl', 15, 'mate-menu', 0, 0, 0)
 
 # i18n
-gettext.install("matemenu", "/usr/share/ubuntu-mate/locale")
+gettext.install("mate-menu", "/usr/share/ubuntu-mate/locale")
 
 NAME = _("Menu")
 PATH = os.path.abspath( os.path.dirname( sys.argv[0] ) )
@@ -69,12 +69,12 @@ class MainWindow( object ):
 
         self.detect_desktop_environment()
 
-        self.icon = "/usr/lib/ubuntu-mate/mateMenu/visualisation-logo.png"
+        self.icon = "/usr/lib/ubuntu-mate/mate-menu/visualisation-logo.png"
 
         self.toggle = toggleButton
         # Load UI file and extract widgets   
         builder = Gtk.Builder()
-        builder.add_from_file(os.path.join( self.path, "mateMenu.glade" ))
+        builder.add_from_file(os.path.join( self.path, "mate-menu.glade" ))
         self.window     = builder.get_object( "mainWindow" )
         self.paneholder = builder.get_object( "paneholder" )
         self.border     = builder.get_object( "border" )
@@ -91,7 +91,7 @@ class MainWindow( object ):
 
         self.window.stick()
 
-        plugindir = os.path.join( os.path.expanduser( "~" ), ".ubuntu-mate/mateMenu/plugins" )
+        plugindir = os.path.join( os.path.expanduser( "~" ), ".config/mate-menu/plugins" )
         sys.path.append( plugindir )
 
         self.panelSettings = Gio.Settings.new("org.mate.panel")
@@ -177,7 +177,7 @@ class MainWindow( object ):
         self.borderwidth          = self.settings.get_int( "border-width" )
         self.opacity              = self.settings.get_int( "opacity" )
         self.offset               = self.settings.get_int( "offset" )        
-        self.enableTooltips       = self.settings.get_boolean( "tooltips-enabled" )        
+        self.enableTooltips       = self.settings.get_boolean( "tooltips-enabled" )
         self.startWithFavorites   = self.settings.get_boolean( "start-with-favorites" )
         
         self.globalEnableTooltips = self.panelSettings.get_boolean( "tooltips-enabled" )
@@ -187,14 +187,15 @@ class MainWindow( object ):
             self.window.modify_bg( Gtk.StateType.NORMAL, Gdk.color_parse( self.custombordercolor ) )
         elif defaultStyle is not None:
             self.window.modify_bg( Gtk.StateType.NORMAL, defaultStyle.lookup_color('bg_color')[1] )
-        self.border.set_padding( self.borderwidth, self.borderwidth, self.borderwidth, self.borderwidth )        
+        self.border.set_padding( self.borderwidth, self.borderwidth, self.borderwidth, self.borderwidth )
 
     def SetupMateMenuOpacity( self ):
         print "Opacity is: " + str(self.opacity)
         opacity = float(self.opacity) / float(100)
         print "Setting opacity to: " + str(opacity)
-        self.window.set_opacity(opacity)
-        
+        if opacity is not 1:
+            self.window.set_opacity(opacity)
+
     def detect_desktop_environment (self):
         self.de = "mate"
         try:
@@ -225,7 +226,7 @@ class MainWindow( object ):
 
         self.plugins = {}
 
-        for plugin in self.pluginlist:            
+        for plugin in self.pluginlist:
             if plugin in self.plugins:
                 print u"Duplicate plugin in list: ", plugin
                 continue
@@ -277,7 +278,7 @@ class MainWindow( object ):
                 MyPlugin.content_holder.show()
 
                 VBox1 = Gtk.VBox( False, 0 )
-                if MyPlugin.heading != "":                    
+                if MyPlugin.heading != "":
                     Label1 = Gtk.Label(label= MyPlugin.heading )
                     Align1 = Gtk.Alignment.new( 0, 0, 0, 0 )
                     Align1.set_padding( 10, 5, 10, 0 )
@@ -509,7 +510,7 @@ class MenuWin( object ):
         self.mainwin.window.connect( "realize", self.onRealize )
         self.mainwin.window.connect( "size-allocate", lambda *args: self.positionMenu() )
 
-        self.mainwin.window.set_name("matemenu") # Name used in Gtk RC files
+        self.mainwin.window.set_name("mate-menu") # Name used in Gtk RC files
         self.applyTheme()
         self.mainwin.loadTheme()
 
@@ -714,9 +715,9 @@ class MenuWin( object ):
     def showAboutDialog( self, action, userdata = None ):
 
         about = Gtk.AboutDialog()
-        about.set_name("mateMenu")
+        about.set_name("MATE Menu")
         import commands
-        version = commands.getoutput("/usr/lib/ubuntu-mate/common/version.py matemenu")
+        version = commands.getoutput("/usr/lib/ubuntu-mate/common/version.py mate-menu")
         about.set_version(version)
         try:
             h = open('/usr/share/common-licenses/GPL','r')
@@ -732,14 +733,14 @@ class MenuWin( object ):
       #  about.set_authors( ["Clement Lefebvre <clem@linuxmint.com>", "Lars-Peter Clausen <lars@laprican.de>"] )
         about.set_translator_credits(("translator-credits") )
         #about.set_copyright( _("Based on USP from S.Chanderbally") )
-        about.set_logo( GdkPixbuf.Pixbuf.new_from_file("/usr/lib/ubuntu-mate/mateMenu/icon.svg") )
+        about.set_logo( GdkPixbuf.Pixbuf.new_from_file("/usr/lib/ubuntu-mate/mate-menu/icon.svg") )
         about.connect( "response", lambda dialog, r: dialog.destroy() )
         about.show()
 
 
     def showPreferences( self, action, userdata = None ):
 #               Execute( "mateconf-editor /apps/mateMenu" )
-        Execute( os.path.join( PATH, "mateMenuConfig.py" ) )
+        Execute( os.path.join( PATH, "mate-menu-config.py" ) )
 
     def showMenuEditor( self, action, userdata = None ):
         Execute( "mozo" )
@@ -827,7 +828,7 @@ class MenuWin( object ):
         action = Gtk.Action("MateMenuAbout", _("About"), None, "gtk-about")
         action.connect("activate", self.showAboutDialog)
         action_group.add_action(action)
-        action_group.set_translation_domain ("matemenu")
+        action_group.set_translation_domain ("mate-menu")
 
         xml = os.path.join( os.path.join( os.path.dirname( __file__ )), "popup.xml" )
         self.applet.setup_menu_from_file(xml, action_group)
@@ -844,4 +845,3 @@ def quit_all(widget):
 MatePanelApplet.Applet.factory_main("MateMenuAppletFactory", True,
                                     MatePanelApplet.Applet.__gtype__,
                                     applet_factory, None)
-                                    

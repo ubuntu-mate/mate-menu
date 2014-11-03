@@ -13,7 +13,7 @@ from execute import Execute
 from easygsettings import EasyGSettings
 
 # i18n
-gettext.install("matemenu", "/usr/share/ubuntu-mate/locale")
+gettext.install("mate-menu", "/usr/share/ubuntu-mate/locale")
 
 class pluginclass( object ):
 

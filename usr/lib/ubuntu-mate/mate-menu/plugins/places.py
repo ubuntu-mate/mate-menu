@@ -18,7 +18,7 @@ from urllib import unquote
 gtk = CDLL("libgtk-x11-2.0.so.0")
 
 # i18n
-gettext.install("matemenu", "/usr/share/ubuntu-mate/locale")
+gettext.install("mate-menu", "/usr/share/ubuntu-mate/locale")
 
 class pluginclass( object ):
 
@@ -222,7 +222,7 @@ class pluginclass( object ):
             currentbutton.show()
             self.placesBtnHolder.pack_start( currentbutton, False, False, 0)
 
-    def do_gtk_bookmarks( self ):        
+    def do_gtk_bookmarks( self ):
         if self.showGTKBookmarks:
             if not os.path.exists(os.path.expanduser('~/.gtk-bookmarks')):
                 return
@@ -252,9 +252,9 @@ class pluginclass( object ):
     def launch_gtk_bookmark (self, widget, path):
         self.mateMenuWin.hide()
         if self.de == "mate":
-            os.system("caja \"" + path + "\"")        
+            os.system("caja \"" + path + "\"")
         else:
-            os.system("xdg-open \"" + path + "\"")        
+            os.system("xdg-open \"" + path + "\"")
 
     def trashPopup( self, widget, event ):
         if event.button == 3:

@@ -1,0 +1,546 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-03 17:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu.py:48
+msgid "Menu"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu.py:257
+msgid "Couldn't load plugin:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu.py:329
+msgid "Couldn't initialize plugin"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu.py:732
+msgid "Advanced MATE Menu"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu.py:819
+msgid "Preferences"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu.py:822
+msgid "Edit menu"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu.py:825
+msgid "Reload plugins"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu.py:828
+msgid "About"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:42
+msgid "Menu preferences"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:45
+msgid "Always start with favorites pane"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:46
+msgid "Show button icon"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:47
+msgid "Use custom colors"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:48
+msgid "Show recent documents plugin"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:49
+msgid "Show applications plugin"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:50
+msgid "Show system plugin"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:51
+msgid "Show places plugin"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:53
+msgid "Show application comments"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:54
+msgid "Show category icons"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:55
+msgid "Hover"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:56
+msgid "Remember the last category or search"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:57
+msgid "Search for packages to install"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:58
+msgid "Swap name and generic name"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:60
+msgid "Border width:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:61
+msgid "pixels"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:63
+msgid "Opacity:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:66
+msgid "Button text:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:67
+msgid "Options"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:68
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:251
+msgid "Applications"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:70
+msgid "Theme"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:71
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:248
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:249
+msgid "Favorites"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:72
+msgid "Main button"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:74
+msgid "Background:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:75
+msgid "Headings:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:76
+msgid "Borders:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:77
+msgid "Theme:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:81
+msgid "Number of columns:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:82
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:83
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:84
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:85
+msgid "Icon size:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:86
+msgid "Hover delay (ms):"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:87
+msgid "Button icon:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:88
+msgid "Search command:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:90
+#: usr/lib/ubuntu-mate/mate-menu/plugins/places.py:44
+msgid "Places"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:91
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:103
+msgid "Allow Scrollbar"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:92
+msgid "Show GTK Bookmarks"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:93
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:104
+msgid "Height:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:94
+msgid "Toggle Default Places:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:95
+#: usr/lib/ubuntu-mate/mate-menu/plugins/places.py:141
+msgid "Computer"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:96
+#: usr/lib/ubuntu-mate/mate-menu/plugins/places.py:151
+msgid "Home Folder"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:97
+#: usr/lib/ubuntu-mate/mate-menu/plugins/places.py:164
+#: usr/lib/ubuntu-mate/mate-menu/plugins/places.py:166
+msgid "Network"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:98
+#: usr/lib/ubuntu-mate/mate-menu/plugins/places.py:189
+msgid "Desktop"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:99
+#: usr/lib/ubuntu-mate/mate-menu/plugins/places.py:199
+msgid "Trash"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:100
+msgid "Custom Places:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:102
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:40
+msgid "System"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:105
+msgid "Toggle Default Items:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:106
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:136
+msgid "Software Manager"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:107
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:144
+msgid "Package Manager"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:108
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:154
+msgid "Control Center"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:109
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:164
+msgid "Terminal"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:110
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:181
+msgid "Lock Screen"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:111
+msgid "Log Out"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:112
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:198
+msgid "Quit"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:114
+msgid "Edit Place"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:115
+msgid "New Place"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:116
+msgid "Select a folder"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:146
+msgid "Keyboard shortcut:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:152
+msgid "Images"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:270
+msgid "Name"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:271
+msgid "Path"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:286
+msgid "Desktop theme"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:425
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:456
+msgid "Name:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:426
+#: usr/lib/ubuntu-mate/mate-menu/mate-menu-config.py:457
+msgid "Path:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/keybinding.py:197
+msgid "Click to set a new accelerator key for opening and closing the menu.  "
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/keybinding.py:198
+msgid "Press Escape or click again to cancel the operation.  "
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/keybinding.py:199
+msgid "Press Backspace to clear the existing keybinding."
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/keybinding.py:212
+msgid "Pick an accelerator"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/keybinding.py:265
+msgid "<not set>"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/recent.py:31
+msgid "Recent documents"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:246
+msgid "Search:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:250
+msgid "All applications"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:634
+#, python-format
+msgid "Search Google for %s"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:641
+#, python-format
+msgid "Search Wikipedia for %s"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:657
+#, python-format
+msgid "Lookup %s in Dictionary"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:664
+#, python-format
+msgid "Search Computer for %s"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:742
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:795
+#, python-format
+msgid "Install package '%s'"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:918
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:986
+msgid "Add to desktop"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:919
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:987
+msgid "Add to panel"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:921
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:969
+msgid "Insert space"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:922
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:970
+msgid "Insert separator"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:924
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:990
+msgid "Launch when I log in"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:926
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:992
+msgid "Launch"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:927
+msgid "Remove from favorites"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:929
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:996
+msgid "Edit properties"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:968
+msgid "Remove"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:989
+msgid "Show in my favorites"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:993
+msgid "Uninstall"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:994
+msgid "Delete from menu"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:1050
+msgid "Search Google"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:1057
+msgid "Search Wikipedia"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:1067
+msgid "Lookup Dictionary"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:1074
+msgid "Search Computer"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:1510
+msgid ""
+"Couldn't save favorites. Check if you have write access to ~/.config/mate-"
+"menu"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:1710
+msgid "All"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/applications.py:1710
+msgid "Show all applications"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:140
+msgid "Browse and install available software"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:151
+msgid "Install, remove and upgrade software packages"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:161
+msgid "Configure your system"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:171
+msgid "Use the command line"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:174
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:191
+msgid "Logout"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:178
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:195
+msgid "Log out or switch user"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:188
+msgid "Requires password to unlock"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/system_management.py:202
+msgid "Shutdown, restart, suspend or hibernate"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/places.py:148
+msgid ""
+"Browse all local and remote disks and folders accessible from this computer"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/places.py:158
+msgid "Open your personal folder"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/places.py:173
+msgid "Browse bookmarked and local network locations"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/places.py:196
+msgid "Browse items placed on the desktop"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/places.py:210
+msgid "Browse deleted files"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/mate-menu/plugins/places.py:262
+msgid "Empty trash"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/common/mate-remove-application.py:36
+msgid "Please wait, this can take some time"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/common/mate-remove-application.py:38
+msgid "Application removed successfully"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/common/mate-remove-application.py:57
+msgid ""
+"This menu item is not associated to any package. Do you want to remove it "
+"from the menu anyway?"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/common/mate-remove-application.py:67
+msgid "The following packages will be removed:"
+msgstr ""
+
+#: usr/lib/ubuntu-mate/common/mate-remove-application.py:71
+msgid "Packages to be removed"
+msgstr ""
