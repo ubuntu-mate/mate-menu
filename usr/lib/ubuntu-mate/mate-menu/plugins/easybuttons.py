@@ -45,7 +45,10 @@ class IconManager(GObject.GObject):
             os.makedirs(self.iconDir)
         contents = os.listdir(self.iconDir)
         for fn in contents:
-            os.remove(os.path.join(self.iconDir, fn))
+            try:
+                os.remove(os.path.join(self.iconDir, fn))
+            except:
+                pass
 
         self.defaultTheme.append_search_path(self.iconDir)
 
