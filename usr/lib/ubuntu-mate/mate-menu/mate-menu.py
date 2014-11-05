@@ -61,7 +61,7 @@ class MainWindow( object ):
     """This is the main class for the application"""
 
     def __init__( self, toggleButton, settings, keybinder ):
-		
+
         self.settings = settings
         self.keybinder = keybinder
         self.path = PATH
