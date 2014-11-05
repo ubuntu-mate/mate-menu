@@ -1,11 +1,11 @@
-Source: matemenu
+Source: mate-menu
 Section: admin
 Priority: optional
 Maintainer: Martin Wimpress <code@ubuntu-mate.org>
 Build-Depends: debhelper (>= 9), python
 Standards-Version: 3.9.5
 
-Package: matemenu
+Package: mate-menu
 Architecture: all
 Depends:
  ${python:Depends},
@@ -24,8 +24,9 @@ Depends:
  python-mate-menu,
  python-xdg,
  python-xlib
+Replaces: matemenu
 Suggests:
  software-center, synaptic
 Description: Advanced MATE menu
- One of the most advanced menus available for MATE. Supports filtering,
- favorites, easy-uninstallation, autosession, and many other features.
+ An advanced menu for MATE. Supports filtering, favorites, 
+ easy-uninstallation, autosession, and many other features.
