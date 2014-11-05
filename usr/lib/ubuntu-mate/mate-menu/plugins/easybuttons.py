@@ -45,10 +45,11 @@ class IconManager(GObject.GObject):
             os.makedirs(self.iconDir)
         contents = os.listdir(self.iconDir)
         for fn in contents:
-            try:
+            if os.path.isfile(os.path.join(self.iconDir, fn)):
+                print "Removing file : " + os.path.join(self.iconDir, fn)
                 os.remove(os.path.join(self.iconDir, fn))
-            except:
-                pass
+            else:
+                print os.path.join(self.iconDir, fn) + " is not a file, skipping delete."
 
         self.defaultTheme.append_search_path(self.iconDir)
 
@@ -352,7 +353,7 @@ class ApplicationLauncher( easyButton ):
         self.show()
         return True
 
-    def strip_accents(self, string):        
+    def strip_accents(self, string):
         value = string
         if isinstance(string, unicode):
             try:
