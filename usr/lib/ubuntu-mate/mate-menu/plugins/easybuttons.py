@@ -43,7 +43,8 @@ class IconManager(GObject.GObject):
         self.iconDir = os.path.join(configDir, "mate-menu")
         if not os.path.exists(self.iconDir):
             os.makedirs(self.iconDir)
-        contents = os.listdir(self.iconDir)
+        # Skip over files and dirs belonging to the applications plugin
+        contents = frozenset(os.listdir(self.iconDir)) - frozenset(('applications', 'applications.list'))
         for fn in contents:
             try:
                 os.remove(os.path.join(self.iconDir, fn))
