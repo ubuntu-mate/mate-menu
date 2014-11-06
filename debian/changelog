@@ -1,4 +1,4 @@
-matemenu (5.5.9~utopic2) utopic; urgency=medium
+matemenu (5.5.9~utopic4) utopic; urgency=medium
 
   * Initial fork to mateMenu.
   * Added https://github.com/linuxmint/mintmenu/pull/103.
