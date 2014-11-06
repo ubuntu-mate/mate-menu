@@ -7,6 +7,7 @@ from gi.repository import Gtk, Pango, Gdk, Gio, GLib
 
 import os
 import time
+import shutil
 import string
 import gettext
 import threading
@@ -304,6 +305,8 @@ class pluginclass( object ):
             print detail
         self.currentFavCol = 0
         self.favorites = []
+
+        self.favoritesPath = os.path.join(home, ".config", "mate-menu", "applications.list")
 
         self.content_holder.set_size_request( self.width, self.height )
         self.categoriesBox.set_size_request( self.width / 3, -1 )
@@ -1352,13 +1355,14 @@ class pluginclass( object ):
 
     def buildFavorites( self ):
         try:
-            from user import home
-            if (not os.path.exists(home + "/.config/mate-menu/applications.list")):
-                os.system("mkdir -p " + home + "/.config/mate-menu/applications")
-                os.system("cp /usr/lib/ubuntu-mate/mate-menu/applications.list " + home + "/.config/mate-menu/applications.list")
+            self.checkMateMenuFolder()
+            if not os.path.isfile(self.favoritesPath):
+                # XXX: should the hardcoded path be removed?
+                shutil.copyfile("/usr/lib/ubuntu-mate/mate-menu/applications.list", self.favoritesPath)
 
-            applicationsFile = open ( os.path.join( os.path.expanduser( "~" ), ".config", "mate-menu", "applications.list" ), "r" )
+            applicationsFile = open(self.favoritesPath, "r")
             applicationsList = applicationsFile.readlines()
+            applicationsFile.close()
 
             self.favorites =  []
 
@@ -1497,7 +1501,7 @@ class pluginclass( object ):
     def favoritesSave( self ):
         try:
             self.checkMateMenuFolder()
-            appListFile = open( os.path.join( os.path.expanduser( "~"), ".config", "mate-menu", "applications.list" ) , "w" )
+            appListFile = open(self.favoritesPath, "w")
 
             for favorite in self.favorites:
                 if favorite.type == "location":
