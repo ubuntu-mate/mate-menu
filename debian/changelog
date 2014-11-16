@@ -1,6 +1,6 @@
-mate-menu (5.5.9~trusty3) trusty; urgency=medium
+mate-menu (5.5.9) vivid; urgency=medium
 
-  * Initial fork to mateMenu.
+  * Initial fork to MATE Menu.
   * Added https://github.com/linuxmint/mintmenu/pull/103.
   * Added https://github.com/linuxmint/mintmenu/pull/111.
   * Removed Linux Mint specific search options.
