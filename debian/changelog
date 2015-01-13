@@ -1,3 +1,13 @@
+mate-menu (5.6.0) vivid; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Bookmarks with quotes noe open properly.
+
+  [ Vlad Orlov ]
+  * Plugins tab title is now translatable.
+
+ -- Martin Wimpress <code@flexion.org>  Mon, 12 Jan 2015 01:55:32 +0100
+
 mate-menu (5.5.9) vivid; urgency=medium
 
   * Initial fork to MATE Menu.

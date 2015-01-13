@@ -1,5 +1,5 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: matemenu
+Upstream-Name: mate-menu
 Upstream-Contact: Martin Wimpress <code@ubuntu-mate.org>
 Source: https://bitbucket.org/flexiondotorg/mate-menu/
 
