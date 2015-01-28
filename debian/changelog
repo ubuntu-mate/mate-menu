@@ -5,6 +5,7 @@ mate-menu (5.6.0) vivid; urgency=medium
 
   [ Vlad Orlov ]
   * Plugins tab title is now translatable.
+  * Small fixes - https://github.com/linuxmint/mintmenu/pull/114/
 
  -- Martin Wimpress <code@flexion.org>  Mon, 12 Jan 2015 01:55:32 +0100
 

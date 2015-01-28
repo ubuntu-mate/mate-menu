@@ -171,11 +171,11 @@ class pluginclass( object ):
             self.mateMenuWin.setTooltip( Button4, _("Use the command line") )
 
         if self.de == "xfce":
-                Button6 = easyButton( "system-log-out", self.iconsize, [_("Logout")], -1, -1 )
-                Button6.connect( "clicked", self.ButtonClicked, "xfce4-session-logout" )
-                Button6.show()
-                self.systemBtnHolder.pack_start( Button6, False, False, 0 )
-                self.mateMenuWin.setTooltip( Button6, _("Log out or switch user") )
+            Button6 = easyButton( "system-log-out", self.iconsize, [_("Logout")], -1, -1 )
+            Button6.connect( "clicked", self.ButtonClicked, "xfce4-session-logout" )
+            Button6.show()
+            self.systemBtnHolder.pack_start( Button6, False, False, 0 )
+            self.mateMenuWin.setTooltip( Button6, _("Log out or switch user") )
         else:
             if ( self.showLockScreen == True ):
                 Button5 = easyButton( "system-lock-screen", self.iconsize, [_("Lock Screen")], -1, -1 )
