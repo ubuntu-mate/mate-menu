@@ -197,9 +197,7 @@ class pluginclass( object ):
 
         if ( self.showtrash == True ):
             self.trashButton = easyButton( "user-trash", self.iconsize, [_("Trash")], -1, -1 )
-            if self.de == "xfce":
-                self.trashButton.connect( "clicked", self.ButtonClicked, "thunar trash:" )
-            elif self.de == "mate":
+            if self.de == "mate":
                 self.trashButton.connect( "clicked", self.ButtonClicked, "caja trash:" )
             else:
                 self.trashButton.connect( "clicked", self.ButtonClicked, "xdg-open trash:" )
