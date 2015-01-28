@@ -23,7 +23,8 @@ Depends:
  python-gtk2,
  python-mate-menu,
  python-xdg,
- python-xlib
+ python-xlib,
+ xdg-utils
 Replaces: matemenu
 Suggests:
  software-center, synaptic
