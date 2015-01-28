@@ -529,9 +529,6 @@ class pluginclass( object ):
         # Plugin icon
         self.icon = self.settings.get( "string", "icon" )
 
-        # Hide vertical dotted separator
-        self.hideseparator = self.settings.get( "bool", "hide-separator")
-
     def SetHidden( self, state ):
         if state == True:
             self.settings.set( "bool", "minimized", True )

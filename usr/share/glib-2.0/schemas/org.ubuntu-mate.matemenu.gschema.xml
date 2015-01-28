@@ -125,12 +125,6 @@
       <description></description>
     </key>
     
-    <key type="b" name="hide-separator">
-      <default>false</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
     <key type="i" name="height">
       <default>180</default>
       <summary></summary>
@@ -231,7 +225,7 @@
     </key>
 
     <key type="i" name="favicon-size">
-      <default>48</default>
+      <default>24</default>
       <summary></summary>
       <description></description>
     </key>
@@ -304,12 +298,6 @@
 
     <key type="s" name="icon">
       <default>"applications-accessories"</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="b" name="hide-separator">
-      <default>false</default>
       <summary></summary>
       <description></description>
     </key>
@@ -389,12 +377,6 @@
       <description></description>
     </key>
 
-    <key type="b" name="hide-separator">
-      <default>false</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
     <key type="b" name="sticky">
       <default>false</default>
       <summary></summary>
@@ -436,12 +418,6 @@
 
     <key type="i" name="recent-font-size">
       <default>9</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="b" name="hide-separator">
-      <default>false</default>
       <summary></summary>
       <description></description>
     </key>

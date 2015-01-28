@@ -81,8 +81,6 @@ class pluginclass:
         self.numentries = self.settings.get( 'int', 'num-recent-docs' )
         self.recentfontsize = self.settings.get( 'int', 'recent-font-size' )
 
-        # Hide vertical dotted separator
-        self.hideseparator = self.settings.get( "bool", "hide-separator" )
         # Plugin icon
         self.icon = self.settings.get( "string", 'icon' )
         # Allow plugin to be minimized to the left plugin pane

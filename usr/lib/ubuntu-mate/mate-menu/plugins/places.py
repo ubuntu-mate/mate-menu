@@ -120,8 +120,6 @@ class pluginclass( object ):
         # Get names for custom items
         self.customnames = self.settings.get( "list-string", "custom-names" )
 
-        # Hide vertical dotted separator
-        self.hideseparator = self.settings.get( "bool", "hide-separator" )
         # Plugin icon
         self.icon = self.settings.get( "string", "icon" )
         # Allow plugin to be minimized to the left plugin pane

@@ -114,8 +114,6 @@ class pluginclass( object ):
         self.showLogout = self.settings.get( "bool", "show-logout")
         self.showQuit = self.settings.get( "bool", "show-quit")
 
-        # Hide vertical dotted separator
-        self.hideseparator = self.settings.get( "bool", "hide-separator")
         # Plugin icon
         self.icon = self.settings.get( "string", "icon" )
         # Allow plugin to be minimized to the left plugin pane

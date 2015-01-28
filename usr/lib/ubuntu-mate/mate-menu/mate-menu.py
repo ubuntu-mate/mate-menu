@@ -167,8 +167,6 @@ class MainWindow( object ):
         self.SetHeadingStyle( self.headingsToColor )
 
     def getSetGSettingEntries( self ):        
-        self.dottedfile          = os.path.join( self.path, "dotted.png")
-
         self.pluginlist           = self.settings.get_strv( "plugins-list" )
         self.usecustomcolor       = self.settings.get_boolean( "use-custom-color" )
         self.customcolor          = self.settings.get_string( "custom-color" )
@@ -221,8 +219,6 @@ class MainWindow( object ):
         ImageBox = Gtk.EventBox()
         ImageBox.show()
         self.panesToColor.extend( [ PluginPane, ImageBox ] )
-
-        seperatorImage = GdkPixbuf.Pixbuf.new_from_file( self.dottedfile )
 
         self.plugins = {}
 
