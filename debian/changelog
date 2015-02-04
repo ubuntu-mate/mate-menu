@@ -1,7 +1,7 @@
 mate-menu (5.6.0) vivid; urgency=medium
 
   [ Clement Lefebvre ]
-  * Bookmarks with quotes noe open properly.
+  * Bookmarks with quotes now open properly.
 
   [ Vlad Orlov ]
   * Plugins tab title is now translatable.
@@ -9,6 +9,9 @@ mate-menu (5.6.0) vivid; urgency=medium
 
   [ darealshinji ]
   * Added man page - https://github.com/linuxmint/mintmenu/pull/118
+
+  [ Martin Wimpress ]
+  * Removed dotted lines from the vertical separators.
 
  -- Martin Wimpress <code@flexion.org>  Mon, 12 Jan 2015 01:55:32 +0100
 
