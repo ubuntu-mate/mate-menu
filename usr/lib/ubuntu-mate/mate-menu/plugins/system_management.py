@@ -140,10 +140,10 @@ class pluginclass( object ):
         if ( self.showPackageManager == True ):           
             if os.path.exists("/usr/bin/software-center") or os.path.exists("/usr/bin/synaptic-pkexec"):
                 Button2 = easyButton( "applications-system", self.iconsize, [_("Package Manager")], -1, -1 )
-                if os.path.exists("/usr/bin/software-center"):
-                    Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/software-center" )
-                elif os.path.exists("/usr/bin/synaptic-pkexec"):
-                    Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/synaptic-pkexec" )
+                if os.path.exists("/usr/bin/synaptic-pkexec"):
+                    Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/synaptic-pkexec" )                
+                elif os.path.exists("/usr/bin/software-center"):
+                    Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/software-center" )                
                 Button2.show()
                 self.systemBtnHolder.pack_start( Button2, False, False, 0 )
                 self.mateMenuWin.setTooltip( Button2, _("Install, remove and upgrade software packages") )
