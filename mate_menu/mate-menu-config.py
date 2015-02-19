@@ -211,10 +211,10 @@ class mateMenuConfig( object ):
         self.builder.get_object( "closeButton" ).connect("clicked", Gtk.main_quit )
 
 
-        self.settings = EasyGSettings( "org.ubuntu-mate.matemenu" )
-        self.settingsApplications = EasyGSettings( "org.ubuntu-mate.matemenu.plugins.applications" )
-        self.settingsPlaces = EasyGSettings( "org.ubuntu-mate.matemenu.plugins.places" )
-        self.settingsSystem = EasyGSettings( "org.ubuntu-mate.matemenu.plugins.system_management" )
+        self.settings = EasyGSettings( "org.mate.mate-menu" )
+        self.settingsApplications = EasyGSettings( "org.mate.mate-menu.plugins.applications" )
+        self.settingsPlaces = EasyGSettings( "org.mate.mate-menu.plugins.places" )
+        self.settingsSystem = EasyGSettings( "org.mate.mate-menu.plugins.system_management" )
 
         self.useCustomColors.connect( "toggled", self.toggleUseCustomColors )
 

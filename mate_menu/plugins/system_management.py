@@ -64,7 +64,7 @@ class pluginclass( object ):
         self.itemstocolor = [ self.builder.get_object( "viewport2" ) ]
 
         # Gconf stuff
-        self.settings = EasyGSettings( "org.ubuntu-mate.matemenu.plugins.system_management" )
+        self.settings = EasyGSettings( "org.mate.mate-menu.plugins.system_management" )
 
         self.settings.notifyAdd( "icon-size", self.RegenPlugin )
         self.settings.notifyAdd( "show-control-center", self.RegenPlugin )

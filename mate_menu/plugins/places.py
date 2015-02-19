@@ -68,7 +68,7 @@ class pluginclass( object ):
         self.itemstocolor = [ builder.get_object( "viewport2" ) ]
 
         # Settings        
-        self.settings = EasyGSettings("org.ubuntu-mate.matemenu.plugins.places")
+        self.settings = EasyGSettings("org.mate.mate-menu.plugins.places")
 
         self.settings.notifyAdd( "icon-size", self.RegenPlugin )
         self.settings.notifyAdd( "show-computer", self.RegenPlugin )

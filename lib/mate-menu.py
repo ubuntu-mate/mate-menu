@@ -497,7 +497,7 @@ class MainWindow( object ):
 class MenuWin( object ):
     def __init__( self, applet, iid ):
         self.applet = applet        
-        self.settings = Gio.Settings.new("org.ubuntu-mate.matemenu")
+        self.settings = Gio.Settings.new("org.mate.mate-menu")
         self.keybinder = keybinding.GlobalKeyBinding()
         self.settings.connect( "changed::applet-text", self.reloadSettings )
         self.settings.connect( "changed::theme-name", self.changeTheme )

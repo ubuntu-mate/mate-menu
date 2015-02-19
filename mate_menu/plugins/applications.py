@@ -301,7 +301,7 @@ class pluginclass( object ):
        # self.searchButton.connect( "button_release_event", self.SearchWithButton )
         try:
         # GSettings stuff
-            self.settings = EasyGSettings( "org.ubuntu-mate.matemenu.plugins.applications" )
+            self.settings = EasyGSettings( "org.mate.mate-menu.plugins.applications" )
             self.GetGSettingsEntries()
             self.settings.notifyAdd( "icon-size", self.changeIconSize )
             self.settings.notifyAdd( "favicon-size", self.changeFavIconSize )

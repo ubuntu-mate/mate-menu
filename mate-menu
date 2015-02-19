@@ -29,11 +29,11 @@ if len(sys.argv) > 1:
         print " [--]help, [-]h Display this help."
         print " [--]clean, [--]clear, [--]reset Restore settings to default.\n"
     elif (sys.argv[1] in ["clean", "clear", "reset", "--clean", "--clear", "--reset"]):
-        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu")
-        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.places")
-        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.applications")
-        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.recent")
-        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.system_management")
+        os.system("gsettings reset-recursively org.mate.mate-menu")
+        os.system("gsettings reset-recursively org.mate.mate-menu.plugins.places")
+        os.system("gsettings reset-recursively org.mate.mate-menu.plugins.applications")
+        os.system("gsettings reset-recursively org.mate.mate-menu.plugins.recent")
+        os.system("gsettings reset-recursively org.mate.mate-menu.plugins.system_management")
         os.system("rm -rf ~/.config/mate-menu")
         print "All MATE Menu settings are now restored to default"
 else:

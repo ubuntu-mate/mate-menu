@@ -60,7 +60,7 @@ class pluginclass:
         #Plugin icon
         self.icon = 'mate-folder.png'
 
-        self.settings = EasyGSettings ("org.ubuntu-mate.matemenu.plugins.recent")
+        self.settings = EasyGSettings ("org.mate.mate-menu.plugins.recent")
 
         self.settings.notifyAdd( 'height', self.RegenPlugin )
         self.settings.notifyAdd( 'width', self.RegenPlugin )
