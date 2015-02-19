@@ -26,12 +26,6 @@
       <description></description>
     </key>
 
-    <key type="b" name="show-software-manager">
-      <default>true</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
     <key type="b" name="show-package-manager">
       <default>true</default>
       <summary></summary>

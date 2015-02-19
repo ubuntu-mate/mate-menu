@@ -119,7 +119,6 @@ class mateMenuConfig( object ):
         self.builder.get_object("allowscrollbarcheckbutton1").set_label(_("Allow Scrollbar"))
         self.builder.get_object("systemHeightEntryLabel").set_text(_("Height:"))
         self.builder.get_object("defaultItemsFrameLabel").set_text(_("Toggle Default Items:"))
-        self.builder.get_object("softwaremanagercheckbutton").set_label(_("Software Manager"))
         self.builder.get_object("packagemanagercheckbutton").set_label(_("Package Manager"))
         self.builder.get_object("controlcentercheckbutton").set_label(_("Control Center"))
         self.builder.get_object("terminalcheckbutton").set_label(_("Terminal"))
@@ -189,7 +188,6 @@ class mateMenuConfig( object ):
         if (self.allowPlacesScrollbarToggle.get_active() == False):
             self.placesHeightButton.set_sensitive(False)
         self.allowPlacesScrollbarToggle.connect("toggled", self.togglePlacesHeightEnabled )
-        self.softwareManagerToggle = self.builder.get_object( "softwaremanagercheckbutton" )
         self.packageManagerToggle = self.builder.get_object( "packagemanagercheckbutton" )
         self.controlCenterToggle = self.builder.get_object( "controlcentercheckbutton" )
         self.terminalToggle = self.builder.get_object( "terminalcheckbutton" )
@@ -200,11 +198,6 @@ class mateMenuConfig( object ):
         self.systemHeightButton = self.builder.get_object( "systemHeightSpinButton" )
         if (self.allowSystemScrollbarToggle.get_active() == False): self.systemHeightButton.set_sensitive(False)
         self.allowSystemScrollbarToggle.connect("toggled", self.toggleSystemHeightEnabled )
-        if os.path.exists("/usr/share/mate-menu/icons/icon.svg"):
-            self.builder.get_object( "softwaremanagercheckbutton" ).show()
-        else:
-            self.builder.get_object( "softwaremanagercheckbutton" ).hide()
-
         self.builder.get_object( "closeButton" ).connect("clicked", Gtk.main_quit )
 
 
@@ -258,8 +251,6 @@ class mateMenuConfig( object ):
         self.bindGSettingsValueToWidget( self.settingsPlaces, "int", "height", self.placesHeightButton, "value-changed", self.placesHeightButton.set_value, self.placesHeightButton.get_value_as_int )
         self.bindGSettingsValueToWidget( self.settingsPlaces, "bool", "allow-scrollbar", self.allowPlacesScrollbarToggle, "toggled", self.allowPlacesScrollbarToggle.set_active, self.allowPlacesScrollbarToggle.get_active )
         self.bindGSettingsValueToWidget( self.settingsPlaces, "bool", "show-gtk-bookmarks", self.showgtkbookmarksToggle, "toggled", self.showgtkbookmarksToggle.set_active, self.showgtkbookmarksToggle.get_active )
-
-        self.bindGSettingsValueToWidget( self.settingsSystem, "bool", "show-software-manager", self.softwareManagerToggle, "toggled", self.softwareManagerToggle.set_active, self.softwareManagerToggle.get_active )
         self.bindGSettingsValueToWidget( self.settingsSystem, "bool", "show-package-manager", self.packageManagerToggle, "toggled", self.packageManagerToggle.set_active, self.packageManagerToggle.get_active )
         self.bindGSettingsValueToWidget( self.settingsSystem, "bool", "show-control-center", self.controlCenterToggle, "toggled", self.controlCenterToggle.set_active, self.controlCenterToggle.get_active )
         self.bindGSettingsValueToWidget( self.settingsSystem, "bool", "show-terminal", self.terminalToggle, "toggled", self.terminalToggle.set_active, self.terminalToggle.get_active )

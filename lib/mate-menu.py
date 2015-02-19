@@ -494,6 +494,7 @@ class MainWindow( object ):
 
 class MenuWin( object ):
     def __init__( self, applet, iid ):
+        self.data_path = os.path.join('/','usr','share','mate-menu')
         self.applet = applet        
         self.settings = Gio.Settings.new("org.mate.mate-menu")
         self.keybinder = keybinding.GlobalKeyBinding()

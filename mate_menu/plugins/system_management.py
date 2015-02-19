@@ -71,7 +71,6 @@ class pluginclass( object ):
         self.settings.notifyAdd( "show-lock-screen", self.RegenPlugin )
         self.settings.notifyAdd( "show-logout", self.RegenPlugin )
         self.settings.notifyAdd( "show-package-manager", self.RegenPlugin )
-        self.settings.notifyAdd( "show-software-manager", self.RegenPlugin )
         self.settings.notifyAdd( "show-terminal", self.RegenPlugin )
         self.settings.notifyAdd( "show-quit", self.RegenPlugin )
         self.settings.notifyAdd( "allow-scrollbar", self.RegenPlugin )
@@ -123,8 +122,6 @@ class pluginclass( object ):
         self.iconsize = self.settings.get( "int","icon-size")
 
         # Check toggles
-
-        self.showSoftwareManager = self.settings.get( "bool", "show-software-manager")
         self.showPackageManager = self.settings.get( "bool", "show-package-manager")
         self.showControlCenter = self.settings.get( "bool", "show-control-center")
         self.showTerminal = self.settings.get( "bool", "show-terminal")
@@ -147,20 +144,13 @@ class pluginclass( object ):
     #Add standard items
     def do_standard_items( self ):
 
-        if ( self.showSoftwareManager == True ):
-            if os.path.exists("/usr/share/mate-menu/icons/icon.svg"):
-                Button1 = easyButton( "/usr/share/mate-menu/icons/icon.svg", self.iconsize, [_("Software Manager")], -1, -1 )
-                Button1.connect( "clicked", self.ButtonClicked, "gksu mateinstall" )
-                Button1.show()
-                self.systemBtnHolder.pack_start( Button1, False, False, 0)
-                self.mateMenuWin.setTooltip( Button1, _("Browse and install available software") )
-
         if ( self.showPackageManager == True ):           
             if os.path.exists("/usr/bin/software-center") or os.path.exists("/usr/bin/synaptic-pkexec"):
-                Button2 = easyButton( "applications-system", self.iconsize, [_("Package Manager")], -1, -1 )                
                 if os.path.exists("/usr/bin/synaptic-pkexec"):
+                    Button2 = easyButton("synaptic", self.iconsize, [_("Package Manager")], -1, -1 )
                     Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/synaptic-pkexec" )
                 elif os.path.exists("/usr/bin/software-center"):
+                    Button2 = easyButton("softwarecenter", self.iconsize, [_("Package Manager")], -1, -1 )
                     Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/software-center" )
                 Button2.show()
                 self.systemBtnHolder.pack_start( Button2, False, False, 0 )
