@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # Copyright (C) 2007-2014 Clement Lefebvre <root@linuxmint.com>
 # Copyright (C) 2015 Martin Wimpress <code@ubuntu-mate.org>
@@ -27,16 +27,16 @@ import time
 import ctypes
 from ctypes import *
 
-from easybuttons import *
-from easygsettings import EasyGSettings
-from execute import Execute
+from mate_menu.easybuttons import *
+from mate_menu.easygsettings import EasyGSettings
+from mate_menu.execute import Execute
 from user import home
 from urllib import unquote
 
 gtk = CDLL("libgtk-x11-2.0.so.0")
 
 # i18n
-gettext.install("mate-menu", "/usr/share/ubuntu-mate/locale")
+gettext.install("mate-menu", "/usr/share/locale")
 
 class pluginclass( object ):
 
@@ -48,7 +48,7 @@ class pluginclass( object ):
 
         # Read UI file        
         builder = Gtk.Builder()
-        builder.add_from_file(os.path.join( os.path.dirname( __file__ ), "places.glade" ))        
+        builder.add_from_file( os.path.join( '/', 'usr', 'share', 'mate-menu',  'plugins', 'places.glade' ))
                
         self.placesBtnHolder    = builder.get_object( "places_button_holder" )
         self.editableBtnHolder  = builder.get_object( "editable_button_holder" )
@@ -192,8 +192,6 @@ class pluginclass( object ):
             # Determine where the Desktop folder is (could be localized)
             desktopDir = home + "/Desktop"
             try:
-                import sys
-                sys.path.append('/usr/lib/ubuntu-mate/common')
                 from configobj import ConfigObj
                 config = ConfigObj(home + "/.config/user-dirs.dirs")
                 tmpdesktopDir = config['XDG_DESKTOP_DIR']

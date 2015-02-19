@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # Copyright (C) 2007-2014 Clement Lefebvre <root@linuxmint.com>
 # Copyright (C) 2015 Martin Wimpress <code@ubuntu-mate.org>
@@ -23,10 +23,10 @@ gi.require_version("Gtk", "2.0")
 
 from gi.repository import Gtk, Pango
 import os
-from easygsettings import EasyGSettings
-from execute import Execute
-from easyfiles import *
-from easybuttons import *
+from mate_menu.easygsettings import EasyGSettings
+from mate_menu.execute import Execute
+from mate_menu.easyfiles import *
+from mate_menu.easybuttons import *
 
 class pluginclass:
     """This is the main class for the plugin"""
@@ -40,7 +40,7 @@ class pluginclass:
 
         self.builder = Gtk.Builder()
         #The Glade file for the plugin
-        self.builder.add_from_file (os.path.join( os.path.dirname( __file__ ), "recent.glade" ))
+        self.builder.add_from_file (os.path.join( '/', 'usr', 'share', 'mate-menu',  'plugins', 'recent.glade' ))
 
         #Set 'window' property for the plugin (Must be the root widget)
         self.window = self.builder.get_object( "window1" )

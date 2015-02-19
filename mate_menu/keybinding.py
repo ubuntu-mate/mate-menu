@@ -1,6 +1,5 @@
-#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-# -*- coding: utf-8; -*-
 # Copyright (C) 2013  Ozcan Esen <ozcanesen@gmail.com>
 # Copyright (C) 2008  Luca Bruno <lethalman88@gmail.com>
 #

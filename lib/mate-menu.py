@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # Copyright (C) 2007-2014 Clement Lefebvre <root@linuxmint.com>
 # Copyright (C) 2015 Martin Wimpress <code@ubuntu-mate.org>
@@ -36,8 +37,8 @@ try:
     import ctypes
     from ctypes import *
     import xdg.Config
-    import keybinding
-    import pointerMonitor
+    import mate_menu.keybinding as keybinding
+    import mate_menu.pointerMonitor as pointerMonitor
 except Exception, e:
     print e
     sys.exit( 1 )
@@ -64,16 +65,13 @@ else:
 gettext.install("mate-menu", "/usr/share/locale")
 
 NAME = _("Menu")
-PATH = os.path.abspath( os.path.dirname( sys.argv[0] ) )
-
-sys.path.append( os.path.join( PATH , "plugins") )
 
 windowManager = os.getenv("DESKTOP_SESSION")
 if not windowManager:
     windowManager = "MATE"
 xdg.Config.setWindowManager( windowManager.upper() )
 
-from execute import *
+from mate_menu.execute import *
 
 class MainWindow( object ):
     """This is the main class for the application"""
@@ -82,17 +80,16 @@ class MainWindow( object ):
 
         self.settings = settings
         self.keybinder = keybinder
-        self.path = PATH
-        sys.path.append( os.path.join( self.path, "plugins") )
+        self.data_path = os.path.join( '/', 'usr', 'share', 'mate-menu' )
 
         self.detect_desktop_environment()
 
-        self.icon = "/usr/lib/ubuntu-mate/mate-menu/visualisation-logo.png"
+        self.icon = "/usr/share/mate-menu/icons/visualisation-logo.png"
 
         self.toggle = toggleButton
         # Load UI file and extract widgets   
         builder = Gtk.Builder()
-        builder.add_from_file(os.path.join( self.path, "mate-menu.glade" ))
+        builder.add_from_file(os.path.join( self.data_path, "mate-menu.glade" ))
         self.window     = builder.get_object( "mainWindow" )
         self.paneholder = builder.get_object( "paneholder" )
         self.border     = builder.get_object( "border" )
@@ -247,13 +244,14 @@ class MainWindow( object ):
 
             if plugin != "newpane":
                 try:
-                    X = __import__( plugin )
+                    plugin_module = 'mate_menu.plugins.{plugin}'.format(plugin=plugin)
+                    exec("from {plugin_module} import pluginclass".format(plugin_module=plugin_module))
                     # If no parameter passed to plugin it is autonomous
-                    if X.pluginclass.__init__.func_code.co_argcount == 1:
-                        MyPlugin = X.pluginclass()
+                    if pluginclass.__init__.func_code.co_argcount == 1:
+                        MyPlugin = pluginclass()
                     else:
                         # pass mateMenu and togglebutton instance so that the plugin can use it
-                        MyPlugin = X.pluginclass( self, self.toggle, self.de )
+                        MyPlugin = pluginclass( self, self.toggle, self.de )
 
                     if not MyPlugin.icon:
                         MyPlugin.icon = "mate-logo-icon.png"
@@ -731,10 +729,10 @@ class MenuWin( object ):
         about = Gtk.AboutDialog()
         about.set_name("MATE Menu")
         import commands
-        version = commands.getoutput("/usr/lib/ubuntu-mate/common/version.py mate-menu")
+        version = commands.getoutput("/usr/lib/mate-menu/version.py mate-menu")
         about.set_version(version)
         try:
-            h = open('/usr/share/common-licenses/GPL','r')
+            h = open('/usr/share/common-licenses/GPL-2','r')
             s = h.readlines()
             gpl = ""
             for line in s:
@@ -747,14 +745,13 @@ class MenuWin( object ):
       #  about.set_authors( ["Clement Lefebvre <clem@linuxmint.com>", "Lars-Peter Clausen <lars@laprican.de>"] )
         about.set_translator_credits(("translator-credits") )
         #about.set_copyright( _("Based on USP from S.Chanderbally") )
-        about.set_logo( GdkPixbuf.Pixbuf.new_from_file("/usr/lib/ubuntu-mate/mate-menu/icon.svg") )
+        about.set_logo( GdkPixbuf.Pixbuf.new_from_file("/usr/share/mate-menu/icons/icon.svg") )
         about.connect( "response", lambda dialog, r: dialog.destroy() )
         about.show()
 
 
     def showPreferences( self, action, userdata = None ):
-#               Execute( "mateconf-editor /apps/mateMenu" )
-        Execute( os.path.join( PATH, "mate-menu-config.py" ) )
+        Execute( os.path.join( "/", "usr", "lib", "mate-menu", "mate-menu-config.py" ) )
 
     def showMenuEditor( self, action, userdata = None ):
         Execute( "mozo" )
@@ -844,7 +841,7 @@ class MenuWin( object ):
         action_group.add_action(action)
         action_group.set_translation_domain ("mate-menu")
 
-        xml = os.path.join( os.path.join( os.path.dirname( __file__ )), "popup.xml" )
+        xml = os.path.join( self.data_path, "popup.xml" )
         self.applet.setup_menu_from_file(xml, action_group)
 
 def applet_factory( applet, iid, data ):

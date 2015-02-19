@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # Copyright (C) 2007-2014 Clement Lefebvre <root@linuxmint.com>
 # Copyright (C) 2015 Martin Wimpress <code@ubuntu-mate.org>
@@ -24,7 +25,7 @@ import gi
 gi.require_version("Gtk", "2.0")
 
 from gi.repository import Gtk, Gdk
-import keybinding
+import mate_menu.keybinding as keybinding
 
 
 try:
@@ -35,30 +36,26 @@ except Exception, e:
     print e
     sys.exit( 1 )
 
-PATH = os.path.abspath( os.path.dirname( sys.argv[0] ) )
-
-sys.path.append( os.path.join( PATH , "plugins") )
-
 # i18n
-gettext.install("mate-menu", "/usr/share/ubuntu-mate/locale")
+gettext.install("mate-menu", "/usr/share/locale")
 
-from easygsettings import EasyGSettings
+from mate_menu.easygsettings import EasyGSettings
 
 class mateMenuConfig( object ):
 
     def __init__( self ):
 
-        self.path = os.path.abspath( os.path.dirname( sys.argv[0] ) )
+        self.data_path =  os.path.join('/', 'usr', 'share', 'mate-menu' )
 
         # Load glade file and extract widgets
         self.builder = Gtk.Builder()
 
-        self.builder.add_from_file (os.path.join(self.path, "mate-menu-config.glade" ))
+        self.builder.add_from_file (os.path.join(self.data_path, "mate-menu-config.glade" ))
         self.mainWindow=self.builder.get_object("mainWindow")
 
         #i18n
         self.mainWindow.set_title(_("Menu preferences"))
-        self.mainWindow.set_icon_from_file("/usr/lib/ubuntu-mate/mate-menu/icon.svg")
+        self.mainWindow.set_icon_from_file("/usr/share/mate-menu/icons/icon.svg")
 
         self.builder.get_object("startWithFavorites").set_label(_("Always start with favorites pane"))
         self.builder.get_object("showButtonIcon").set_label(_("Show button icon"))
@@ -203,7 +200,7 @@ class mateMenuConfig( object ):
         self.systemHeightButton = self.builder.get_object( "systemHeightSpinButton" )
         if (self.allowSystemScrollbarToggle.get_active() == False): self.systemHeightButton.set_sensitive(False)
         self.allowSystemScrollbarToggle.connect("toggled", self.toggleSystemHeightEnabled )
-        if os.path.exists("/usr/lib/ubuntu-mate/mateInstall/icon.svg"):
+        if os.path.exists("/usr/share/mate-menu/icons/icon.svg"):
             self.builder.get_object( "softwaremanagercheckbutton" ).show()
         else:
             self.builder.get_object( "softwaremanagercheckbutton" ).hide()
@@ -446,7 +443,7 @@ class mateMenuConfig( object ):
         newPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         newPlaceDialog.set_transient_for(self.mainWindow)
-        newPlaceDialog.set_icon_from_file("/usr/lib/ubuntu-mate/mate-menu/icon.svg")
+        newPlaceDialog.set_icon_from_file("/usr/share/mate-menu/icons/icon.svg")
         newPlaceDialog.set_title(self.newPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         newPlaceDialog.set_default_response(Gtk.ResponseType.OK)
@@ -477,7 +474,7 @@ class mateMenuConfig( object ):
         editPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         editPlaceDialog.set_transient_for(self.mainWindow)
-        editPlaceDialog.set_icon_from_file("/usr/lib/ubuntu-mate/mate-menu/icon.svg")
+        editPlaceDialog.set_icon_from_file("/usr/share/mate-menu/icons/icon.svg")
         editPlaceDialog.set_title(self.editPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         editPlaceDialog.set_default_response(Gtk.ResponseType.OK)
@@ -548,7 +545,8 @@ class mateMenuConfig( object ):
             self.systemHeightButton.set_sensitive(False)
 
     def updatePlacesGSettings(self, treemodel, path, iter = None, new_order = None):
-# Do only if not partway though an append operation; Append = insert+change+change and each creates a signal
+
+        # Do only if not partway though an append operation; Append = insert+change+change and each creates a signal
         if ((iter == None) or (self.customplacestreemodel.get_value(iter, 1) != None)):
             treeiter = self.customplacestreemodel.get_iter_first()
             customplacenames = [ ]

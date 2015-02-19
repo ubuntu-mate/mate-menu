@@ -3,24 +3,24 @@ Upstream-Name: mate-menu
 Upstream-Contact: Martin Wimpress <code@ubuntu-mate.org>
 Source: https://bitbucket.org/flexiondotorg/mate-menu/
 
-Files: lib/mate-menu.py
+Files: lib/get_apt_cache.py
+       lib/mate-menu.py
+       lib/mate-menu-config.py
        lib/mate-remove-application.py
        lib/version.py
-       mate-menu
-       mate_menu/capi.py
-       mate_menu/compile.py
-       mate_menu/mate-menu-config.py
        mate_menu/plugins/applications.py
-       mate_menu/plugins/easybuttons.py
-       mate_menu/plugins/easyfiles.py
-       mate_menu/plugins/easygsettings.py
-       mate_menu/plugins/execute.py
-       mate_menu/plugins/filemonitor.py
-       mate_menu/plugins/get_apt_cache.py
        mate_menu/plugins/places.py
        mate_menu/plugins/recent.py
        mate_menu/plugins/system_management.py
+       mate_menu/capi.py
+       mate_menu/compile.py
+       mate_menu/easybuttons.py
+       mate_menu/easyfiles.py
+       mate_menu/easygsettings.py
+       mate_menu/execute.py
+       mate_menu/filemonitor.py
        mate_menu/pointerMonitor.py
+       mate-menu
        po/*.po
 Copyright: 2007-2014, Clement Lefebvre <root@linuxmint.com>
            2015, Martin Wimpress <code@ubuntu-mate.org>

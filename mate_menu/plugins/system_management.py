@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # Copyright (C) 2007-2014 Clement Lefebvre <root@linuxmint.com>
 # Copyright (C) 2015 Martin Wimpress <code@ubuntu-mate.org>
@@ -26,12 +26,12 @@ import os
 import string
 import gettext
 
-from easybuttons import *
-from execute import Execute
-from easygsettings import EasyGSettings
+from mate_menu.easybuttons import *
+from mate_menu.execute import Execute
+from mate_menu.easygsettings import EasyGSettings
 
 # i18n
-gettext.install("mate-menu", "/usr/share/ubuntu-mate/locale")
+gettext.install("mate-menu", "/usr/share/locale")
 
 class pluginclass( object ):
 
@@ -43,7 +43,7 @@ class pluginclass( object ):
 
 
         self.builder = Gtk.Builder()
-        self.builder.add_from_file (os.path.join( os.path.dirname( __file__ ), "system_management.glade" ))
+        self.builder.add_from_file( os.path.join( '/', 'usr', 'share', 'mate-menu',  'plugins', 'system_management.glade' ))
 
         self.systemBtnHolder    = self.builder.get_object( "system_button_holder" )
         self.editableBtnHolder  = self.builder.get_object( "editable_button_holder" )
@@ -148,8 +148,8 @@ class pluginclass( object ):
     def do_standard_items( self ):
 
         if ( self.showSoftwareManager == True ):
-            if os.path.exists("/usr/lib/ubuntu-mate/mateInstall/icon.svg"):
-                Button1 = easyButton( "/usr/lib/ubuntu-mate/mateInstall/icon.svg", self.iconsize, [_("Software Manager")], -1, -1 )
+            if os.path.exists("/usr/share/mate-menu/icons/icon.svg"):
+                Button1 = easyButton( "/usr/share/mate-menu/icons/icon.svg", self.iconsize, [_("Software Manager")], -1, -1 )
                 Button1.connect( "clicked", self.ButtonClicked, "gksu mateinstall" )
                 Button1.show()
                 self.systemBtnHolder.pack_start( Button1, False, False, 0)

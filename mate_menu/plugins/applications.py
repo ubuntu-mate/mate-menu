@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # Copyright (C) 2007-2014 Clement Lefebvre <root@linuxmint.com>
 # Copyright (C) 2015 Martin Wimpress <code@ubuntu-mate.org>
@@ -34,15 +34,15 @@ import subprocess
 import filecmp
 import ctypes
 from ctypes import *
-from easybuttons import *
-from execute import Execute
-from easygsettings import EasyGSettings
-from easyfiles import *
+from mate_menu.easybuttons import *
+from mate_menu.execute import Execute
+from mate_menu.easygsettings import EasyGSettings
+from mate_menu.easyfiles import *
 
 gtk = CDLL("libgtk-x11-2.0.so.0")
 
 
-from filemonitor import monitor as filemonitor
+from mate_menu.filemonitor import monitor as filemonitor
 
 #import xdg.Menu
 import matemenu
@@ -50,7 +50,7 @@ import matemenu
 from user import home
 
 # i18n
-gettext.install("mate-menu", "/usr/share/ubuntu-mate/locale")
+gettext.install("mate-menu", "/usr/share/locale")
 
 class PackageDescriptor():
     def __init__(self, name, summary, description):
@@ -246,10 +246,10 @@ class pluginclass( object ):
 
         self.toggleButton = toggleButton
         self.de = de
-        
+
         self.builder = Gtk.Builder()
         # The Glade file for the plugin
-        self.builder.add_from_file (os.path.join( os.path.dirname( __file__ ), "applications.glade" ))
+        self.builder.add_from_file ( os.path.join( '/', 'usr', 'share', 'mate-menu',  'plugins', 'applications.glade' ))
 
         # Read GLADE file
         self.searchEntry =self.builder.get_object( "searchEntry" )
@@ -364,7 +364,7 @@ class pluginclass( object ):
     def refresh_apt_cache(self):
         if self.useAPT:
             os.system("mkdir -p %s/.config/mate-menu/" % home)
-            os.system("/usr/lib/ubuntu-mate/mate-menu/plugins/get_apt_cache.py > %s/.config/mate-menu/apt.cache &" % home)
+            os.system("/usr/lib/mate-menu/get_apt_cache.py > %s/.config/mate-menu/apt.cache &" % home)
 
     def get_panel(self):
         panelsettings = Gio.Settings.new("org.mate.panel")
@@ -654,14 +654,14 @@ class pluginclass( object ):
         suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
         suggestionButton.connect("clicked", self.search_google)
         suggestionButton.set_text(_("Search Google for %s") % text)
-        suggestionButton.set_image("/usr/lib/ubuntu-mate/mate-menu/search_engines/google.ico")
+        suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/google.ico")
         self.applicationsBox.add(suggestionButton)
         self.suggestions.append(suggestionButton)
         
         suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
         suggestionButton.connect("clicked", self.search_wikipedia)
         suggestionButton.set_text(_("Search Wikipedia for %s") % text)
-        suggestionButton.set_image("/usr/lib/ubuntu-mate/mate-menu/search_engines/wikipedia.ico")
+        suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/wikipedia.ico")
         self.applicationsBox.add(suggestionButton)
         self.suggestions.append(suggestionButton)
                 
@@ -677,7 +677,7 @@ class pluginclass( object ):
         suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
         suggestionButton.connect("clicked", self.search_dictionary)
         suggestionButton.set_text(_("Lookup %s in Dictionary") % text)
-        suggestionButton.set_image("/usr/lib/ubuntu-mate/mate-menu/search_engines/dictionary.png")
+        suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/dictionary.png")
         self.applicationsBox.add(suggestionButton)
         self.suggestions.append(suggestionButton)  
         
@@ -856,7 +856,7 @@ class pluginclass( object ):
                         else:
                             shownList.append(i)
                             showns = True
-                if (not showns and os.path.exists("/usr/lib/ubuntu-mate/mateInstall/icon.svg")):
+                if (not showns and os.path.exists("/usr/share/mate-menu/icons/icon.svg")):
                     if len(text) >= 3:
                         if self.current_suggestion is not None and self.current_suggestion in text:
                             # We're restricting our search... 
@@ -1071,14 +1071,14 @@ class pluginclass( object ):
 
         menuItem = Gtk.ImageMenuItem(_("Search Google"))
         img = Gtk.Image()
-        img.set_from_file('/usr/lib/ubuntu-mate/mate-menu/search_engines/google.ico')
+        img.set_from_file('/usr/share/mate-menu/icons/search_engines/google.ico')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_google)
         menu.append(menuItem)
         
         menuItem = Gtk.ImageMenuItem(_("Search Wikipedia"))
         img = Gtk.Image()
-        img.set_from_file('/usr/lib/ubuntu-mate/mate-menu/search_engines/wikipedia.ico')
+        img.set_from_file('/usr/share/mate-menu/icons/search_engines/wikipedia.ico')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_wikipedia)
         menu.append(menuItem)
@@ -1088,7 +1088,7 @@ class pluginclass( object ):
         
         menuItem = Gtk.ImageMenuItem(_("Lookup Dictionary"))
         img = Gtk.Image()
-        img.set_from_file('/usr/lib/ubuntu-mate/mate-menu/search_engines/dictionary.png')
+        img.set_from_file('/usr/share/mate-menu/icons/search_engines/dictionary.png')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_dictionary)
         menu.append(menuItem)
@@ -1362,7 +1362,7 @@ class pluginclass( object ):
             self.checkMateMenuFolder()
             if not os.path.isfile(self.favoritesPath):
                 # XXX: should the hardcoded path be removed?
-                shutil.copyfile("/usr/lib/ubuntu-mate/mate-menu/applications.list", self.favoritesPath)
+                shutil.copyfile("/usr/share/mate-menu/applications.list", self.favoritesPath)
 
             applicationsFile = open(self.favoritesPath, "r")
             applicationsList = applicationsFile.readlines()
