@@ -38,7 +38,7 @@ except Exception, detail:
 from subprocess import Popen
 
 # i18n
-gettext.install("mate-menu", "/usr/share/ubuntu-mate/locale")
+gettext.install("mate-menu", "/usr/share/locale")
 
 class RemoveExecuter(threading.Thread):
 

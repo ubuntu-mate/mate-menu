@@ -61,7 +61,7 @@ else:
         libc.call('prctl', 15, 'mate-menu', 0, 0, 0)
 
 # i18n
-gettext.install("mate-menu", "/usr/share/ubuntu-mate/locale")
+gettext.install("mate-menu", "/usr/share/locale")
 
 NAME = _("Menu")
 PATH = os.path.abspath( os.path.dirname( sys.argv[0] ) )
