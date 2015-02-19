@@ -157,11 +157,11 @@ class pluginclass( object ):
 
         if ( self.showPackageManager == True ):           
             if os.path.exists("/usr/bin/software-center") or os.path.exists("/usr/bin/synaptic-pkexec"):
-                Button2 = easyButton( "applications-system", self.iconsize, [_("Package Manager")], -1, -1 )
-                if os.path.exists("/usr/bin/software-center"):
-                    Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/software-center" )
-                elif os.path.exists("/usr/bin/synaptic-pkexec"):
+                Button2 = easyButton( "applications-system", self.iconsize, [_("Package Manager")], -1, -1 )                
+                if os.path.exists("/usr/bin/synaptic-pkexec"):
                     Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/synaptic-pkexec" )
+                elif os.path.exists("/usr/bin/software-center"):
+                    Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/software-center" )
                 Button2.show()
                 self.systemBtnHolder.pack_start( Button2, False, False, 0 )
                 self.mateMenuWin.setTooltip( Button2, _("Install, remove and upgrade software packages") )
@@ -193,19 +193,19 @@ class pluginclass( object ):
                 self.systemBtnHolder.pack_start( Button5, False, False, 0 )
                 self.mateMenuWin.setTooltip( Button5, _("Requires password to unlock") )
 
-            if ( self.showLogout == True ):
-                Button6 = easyButton( "system-log-out", self.iconsize, [_("Logout")], -1, -1 )
-                Button6.connect( "clicked", self.ButtonClicked, "mate-session-save --logout-dialog" )
-                Button6.show()
-                self.systemBtnHolder.pack_start( Button6, False, False, 0 )
-                self.mateMenuWin.setTooltip( Button6, _("Log out or switch user") )
+        if ( self.showLogout == True ):
+            Button6 = easyButton( "system-log-out", self.iconsize, [_("Logout")], -1, -1 )
+            Button6.connect( "clicked", self.ButtonClicked, "mate-session-save --logout-dialog" )
+            Button6.show()
+            self.systemBtnHolder.pack_start( Button6, False, False, 0 )
+            self.mateMenuWin.setTooltip( Button6, _("Log out or switch user") )
 
-            if ( self.showQuit == True ):
-                Button7 = easyButton( "system-shutdown", self.iconsize, [_("Quit")], -1, -1 )
-                Button7.connect( "clicked", self.ButtonClicked, "mate-session-save --shutdown-dialog" )
-                Button7.show()
-                self.systemBtnHolder.pack_start( Button7, False, False, 0 )
-                self.mateMenuWin.setTooltip( Button7, _("Shutdown, restart, suspend or hibernate") )
+        if ( self.showQuit == True ):
+            Button7 = easyButton( "system-shutdown", self.iconsize, [_("Quit")], -1, -1 )
+            Button7.connect( "clicked", self.ButtonClicked, "mate-session-save --shutdown-dialog" )
+            Button7.show()
+            self.systemBtnHolder.pack_start( Button7, False, False, 0 )
+            self.mateMenuWin.setTooltip( Button7, _("Shutdown, restart, suspend or hibernate") )
 
     def ButtonClicked( self, widget, Exec ):
         self.mateMenuWin.hide()
