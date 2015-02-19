@@ -1,4 +1,0 @@
-#!/bin/sh
-
-echo Compiling glib schemas in /usr/share/glib-2.0/schemas
-[ -f /usr/bin/glib-compile-schemas ] && /usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas

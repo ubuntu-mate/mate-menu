@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-sudo rm -rf /usr/lib/ubuntu-mate/{mate-menu,common}
-sudo cp -R usr /
-sudo glib-compile-schemas /usr/share/glib-2.0/schemas
-python2 /usr/lib/ubuntu-mate/mate-menu/mate-menu.py

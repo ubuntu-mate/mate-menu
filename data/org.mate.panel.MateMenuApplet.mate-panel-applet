@@ -1,0 +1,12 @@
+[Applet Factory]
+Id=MateMenuAppletFactory
+InProcess=false
+Location=/usr/lib/mate-menu/mate-menu.py
+Name=MATE Menu Applet Factory
+Description=Advanced MATE Menu
+
+[MateMenuApplet]
+Name=MATE Menu
+Description=Advanced MATE Menu
+Icon=/usr/share/mate-menu/icons/mate-logo.svg
+MateComponentId=OAFIID:MATE_MateMenuApplet;
