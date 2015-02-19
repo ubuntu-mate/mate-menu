@@ -3,18 +3,76 @@ Upstream-Name: mate-menu
 Upstream-Contact: Martin Wimpress <code@ubuntu-mate.org>
 Source: https://bitbucket.org/flexiondotorg/mate-menu/
 
-Files: usr/*
-Copyright: 2007-2014 Clement Lefebvre <root@linuxmint.com>
-           2015 Martin Wimpress <code@ubuntu-mate.org>
+Files: lib/mate-menu.py
+       lib/mate-remove-application.py
+       lib/version.py
+       mate-menu
+       mate_menu/capi.py
+       mate_menu/compile.py
+       mate_menu/mate-menu-config.py
+       mate_menu/plugins/applications.py
+       mate_menu/plugins/easybuttons.py
+       mate_menu/plugins/easyfiles.py
+       mate_menu/plugins/easygsettings.py
+       mate_menu/plugins/execute.py
+       mate_menu/plugins/filemonitor.py
+       mate_menu/plugins/get_apt_cache.py
+       mate_menu/plugins/places.py
+       mate_menu/plugins/recent.py
+       mate_menu/plugins/system_management.py
+       mate_menu/pointerMonitor.py
+       po/*.po
+Copyright: 2007-2014, Clement Lefebvre <root@linuxmint.com>
+           2015, Martin Wimpress <code@ubuntu-mate.org>
 License: GPL-2+
 
-Files: usr/lib/ubuntu-mate/mate-menu/keybinding.py
-Copyright: 2013 Ozcan Esen <ozcanesen@gmail.com>
-           2008 Luca Bruno <lethalman88@gmail.com>
+Files: COPYING
+       README.md
+       data/applications.list
+       data/icons/dictionary.png
+       data/icons/google.ico
+       data/icons/icon.png
+       data/icons/icon.svg
+       data/icons/mate-logo.svg
+       data/icons/mate-menu.png
+       data/icons/visualisation-logo.png
+       data/icons/wikipedia.ico
+       data/mate-menu-config.glade
+       data/mate-menu.1
+       data/mate-menu.glade
+       data/org.mate.mate-menu.gschema.xml
+       data/org.mate.panel.MateMenuApplet.mate-panel-applet
+       data/org.mate.panel.applet.MateMenuAppletFactory.service
+       data/plugins/applications.glade
+       data/plugins/org.mate.mate-menu.plugins.applications.gschema.xml
+       data/plugins/org.mate.mate-menu.plugins.places.gschema.xml
+       data/plugins/org.mate.mate-menu.plugins.recent.gschema.xml
+       data/plugins/org.mate.mate-menu.plugins.system_management.gschema.xml
+       data/plugins/places.glade
+       data/plugins/recent.glade
+       data/plugins/system_management.glade
+       data/popup.xml
+       mate_menu/__init__.py
+       mate_menu/plugins/__init__.py
+       po/POTFILES.in
+       po/mate-menu.pot
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Assuming license as found in COPYING file.
+
+Files: setup.py
+Copyright: 2015, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+License: GPL-2+
+
+Files: mate_menu/keybinding.py
+Copyright: 2013, Ozcan Esen <ozcanesen@gmail.com>
+           2008, Luca Bruno <lethalman88@gmail.com>
 License: MIT
 
 Files: debian/*
-Copyright: 2015 Martin Wimpress <code@ubuntu-mate.org>
+Copyright: 2015, Martin Wimpress <code@ubuntu-mate.org>
+           2015, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 License: GPL-2+
 
 License: GPL-2+
@@ -29,7 +87,7 @@ License: GPL-2+
  GNU General Public License for more details.
  .
  On Debian systems, the complete text of the GNU General
- Public License can be found in `/usr/share/common-licenses/GPL'.
+ Public License can be found in `/usr/share/common-licenses/GPL-2'.
 
 License: MIT
  Permission is hereby granted, free of charge, to any person obtaining a copy

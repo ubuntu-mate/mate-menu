@@ -2,3 +2,16 @@
 
 %:
 	dh ${@} --with python2
+
+override_dh_auto_build:
+	cp po/mate-menu.pot po/mate-menu.pot.bak
+	dh_auto_build
+
+override_dh_auto_clean:
+	test -f po/mate-menu.pot.bak && mv po/mate-menu.pot.bak po/mate-menu.pot || true
+	rm -Rf mate_menu.egg-info/
+	dh_auto_clean
+
+get-orig-source:
+	uscan --nonconf --force-download --rename --download-current-version --destdir=..
+

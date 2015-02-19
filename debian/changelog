@@ -1,3 +1,9 @@
+mate-menu (5.6.0-0build1) UNRELEASED; urgency=medium
+
+  * Turn into non-native package.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 19 Feb 2015 06:02:03 +0100
+
 mate-menu (5.6.0) vivid; urgency=medium
 
   [ Clement Lefebvre ]

@@ -1,0 +1,40 @@
+#!/usr/bin/env python
+
+# Copyright (C) 2007-2014 Clement Lefebvre <root@linuxmint.com>
+# Copyright (C) 2015 Martin Wimpress <code@ubuntu-mate.org>
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the
+# Free Software Foundation, Inc.,
+# 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+
+import sys, os
+
+__VERSION__='5.6.0'
+
+if len(sys.argv) > 1:
+    if (sys.argv[1] in ["help", "h", "-?", "--help", "-h", "?"]):
+        print "MATE Menu - advanced MATE menu\n"
+        print "options:"
+        print " [--]help, [-]h Display this help."
+        print " [--]clean, [--]clear, [--]reset Restore settings to default.\n"
+    elif (sys.argv[1] in ["clean", "clear", "reset", "--clean", "--clear", "--reset"]):
+        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu")
+        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.places")
+        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.applications")
+        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.recent")
+        os.system("gsettings reset-recursively org.ubuntu-mate.matemenu.plugins.system_management")
+        os.system("rm -rf ~/.config/mate-menu")
+        print "All MATE Menu settings are now restored to default"
+else:
+    os.system("/usr/lib/ubuntu-mate/mate-menu/mate-menu.py")

@@ -1,0 +1,2 @@
+version=3
+https://bitbucket.org/flexiondotorg/mate-menu/downloads .*/(\d\S*)\.tar\.gz

@@ -1,9 +1,17 @@
 Source: mate-menu
-Section: admin
+Section: x11
 Priority: optional
 Maintainer: Martin Wimpress <code@ubuntu-mate.org>
-Build-Depends: debhelper (>= 9), python
+Uploaders: Mike Gabriel <sunweaver@debian.org>,
+Build-Depends: debhelper (>= 9),
+               python,
+               python-setuptools,
+               python-distutils-extra,
 Standards-Version: 3.9.6
+X-Python-Version: >= 2.6
+Homepage: http://bitbucket.com/flexiondotorg/mate-menu/
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-menu.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-menu.git
 
 Package: mate-menu
 Architecture: all
@@ -31,3 +39,7 @@ Suggests:
 Description: Advanced MATE menu
  An advanced menu for MATE. Supports filtering, favorites, 
  easy-uninstallation, autosession, and many other features.
+ .
+ This menu originated in the Linux Mint distribution and has
+ been ported to other distros that ship the MATE Desktop
+ Environment.

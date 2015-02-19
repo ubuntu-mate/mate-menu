@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.mate.panel.applet.MateMenuAppletFactory
+Exec=/usr/lib/mate-menu/mate-menu.py
