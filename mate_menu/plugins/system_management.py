@@ -179,9 +179,10 @@ class pluginclass( object ):
                 Button5.connect( "clicked", self.ButtonClicked, "mate-screensaver-command -l" )
             else:
                 Button5.connect( "clicked", self.ButtonClicked, "xdg-screensaver lock" )
-                Button5.show()
-                self.systemBtnHolder.pack_start( Button5, False, False, 0 )
-                self.mateMenuWin.setTooltip( Button5, _("Requires password to unlock") )
+
+            Button5.show()
+            self.systemBtnHolder.pack_start( Button5, False, False, 0 )
+            self.mateMenuWin.setTooltip( Button5, _("Requires password to unlock") )
 
         if ( self.showLogout == True ):
             Button6 = easyButton( "system-log-out", self.iconsize, [_("Logout")], -1, -1 )
