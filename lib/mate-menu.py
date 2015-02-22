@@ -19,23 +19,25 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
+import commands
+import ctypes
+import gc
 import gi
+import gettext
+import os
+import platform
+import sys
+import time
+import traceback
+
 gi.require_version("Gtk", "2.0")
 
+from ctypes import *
 from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
 from gi.repository import MatePanelApplet
 from gi.repository import Gio
 
 try:
-    import sys
-    import os
-    import commands
-    import gettext
-    import traceback
-    import time
-    import gc
-    import ctypes
-    from ctypes import *
     import xdg.Config
     import mate_menu.keybinding as keybinding
     import mate_menu.pointerMonitor as pointerMonitor
@@ -48,8 +50,8 @@ GObject.threads_init()
 gdk = CDLL("libgdk-x11-2.0.so.0")
 
 # Rename the process
-architecture = commands.getoutput("uname -a")
-if (architecture.find("x86_64") >= 0):
+architecture = platform.uname()[4]
+if architecture i 'x86_64':
     libc = CDLL('libc.so.6')
     libc.prctl(15, 'mate-menu', 0, 0, 0)
 else:
@@ -582,14 +584,11 @@ class MenuWin( object ):
     def createPanelButton( self ):
         self.button_icon = Gtk.Image.new_from_file( self.buttonIcon )
         self.systemlabel = Gtk.Label(label= self.buttonText )
-        if os.path.exists("/etc/linuxmint/info"):
-            import commands
-            tooltip = commands.getoutput("cat /etc/linuxmint/info | grep DESCRIPTION")
-            tooltip = tooltip.replace("DESCRIPTION", "")
-            tooltip = tooltip.replace("=", "")
-            tooltip = tooltip.replace("\"", "")
-            self.systemlabel.set_tooltip_text(tooltip)
-            self.button_icon.set_tooltip_text(tooltip)
+        process = subprocess.Popen(['lsb_release', '-d'], stdout=subprocess.PIPE)
+        out, err = process.communicate()
+        tooltip = out.replace('Description:', '').strip()
+        self.systemlabel.set_tooltip_text(tooltip)
+        self.button_icon.set_tooltip_text(tooltip)
         if self.applet.get_orient() == MatePanelApplet.AppletOrient.UP or self.applet.get_orient() == MatePanelApplet.AppletOrient.DOWN:
             self.button_box = Gtk.HBox()
             self.button_box.pack_start( self.button_icon, False, False, 0 )
