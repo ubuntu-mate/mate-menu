@@ -74,7 +74,6 @@ data_files = [
     ),
     ('{prefix}/share/mate-menu/icons'.format(prefix=sys.prefix), ['data/icons/icon.svg',
                                                                   'data/icons/mate-logo.svg',
-                                                                  'data/icons/mate-menu.png',
                                                                   'data/icons/dictionary.png',
                                                                   'data/icons/visualisation-logo.png'
                                                                  ],
