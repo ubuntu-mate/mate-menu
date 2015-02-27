@@ -19,6 +19,7 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
+import apt
 import commands
 import ctypes
 import gc
@@ -26,6 +27,7 @@ import gi
 import gettext
 import os
 import platform
+import subprocess
 import sys
 import time
 import traceback
@@ -51,7 +53,7 @@ gdk = CDLL("libgdk-x11-2.0.so.0")
 
 # Rename the process
 architecture = platform.uname()[4]
-if architecture i 'x86_64':
+if architecture in 'x86_64':
     libc = CDLL('libc.so.6')
     libc.prctl(15, 'mate-menu', 0, 0, 0)
 else:
@@ -724,31 +726,25 @@ class MenuWin( object ):
         self.loadSettings()
         self.updateButton()        
 
-    def showAboutDialog( self, action, userdata = None ):
+    def getVersion(self):
+        try:
+            cache = apt.Cache()
+            pkg = cache['mate-menu']
+            if pkg.installed is not None:
+                version = str(pkg.installed.version)
+        except:
+            version = ''
 
+        return version
+
+    def showAboutDialog( self, action, userdata = None ):
         about = Gtk.AboutDialog()
         about.set_name("MATE Menu")
-        import commands
-        version = commands.getoutput("/usr/lib/mate-menu/version.py mate-menu")
-        about.set_version(version)
-        try:
-            h = open('/usr/share/common-licenses/GPL-2','r')
-            s = h.readlines()
-            gpl = ""
-            for line in s:
-                gpl += line
-            h.close()
-            about.set_license(gpl)
-        except Exception, detail:
-            print detail
+        about.set_version(self.getVersion())
         about.set_comments( _("Advanced MATE Menu") )
-      #  about.set_authors( ["Clement Lefebvre <clem@linuxmint.com>", "Lars-Peter Clausen <lars@laprican.de>"] )
-        about.set_translator_credits(("translator-credits") )
-        #about.set_copyright( _("Based on USP from S.Chanderbally") )
         about.set_logo( GdkPixbuf.Pixbuf.new_from_file("/usr/share/mate-menu/icons/icon.svg") )
         about.connect( "response", lambda dialog, r: dialog.destroy() )
         about.show()
-
 
     def showPreferences( self, action, userdata = None ):
         Execute( os.path.join( "/", "usr", "lib", "mate-menu", "mate-menu-config.py" ) )
