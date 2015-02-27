@@ -2,7 +2,6 @@ lib/get_apt_cache.py
 lib/mate-menu.py
 lib/mate-menu-config.py
 lib/mate-remove-application.py
-lib/version.py
 mate_menu/__init__.py
 mate_menu/plugins/__init__.py
 mate_menu/plugins/applications.py
