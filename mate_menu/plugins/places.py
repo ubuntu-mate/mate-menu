@@ -19,12 +19,13 @@
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 from gi.repository import Gtk, Gio
+import ctypes
+import commands
+import gettext
 import os
 import string
-import gettext
-import commands
+import shutil
 import time
-import ctypes
 from ctypes import *
 
 from mate_menu.easybuttons import *
@@ -278,9 +279,11 @@ class pluginclass( object ):
             gtk.gtk_menu_popup(hash(trashMenu), None, None, None, None, 3, 0)
 
     def emptyTrash( self, menu, widget):
-        os.system("rm -rf " + home + "/.local/share/Trash/info/*")
-        os.system("rm -rf " + home + "/.local/share/Trash/files/*")
-        self.trashButton.setIcon("user-trash")
+        trash_info = os.path.join(os.path.expanduser('~'), '.local','share','Trash','info')
+        trash_files = os.path.join(os.path.expanduser('~'), '.local','share','Trash','files')
+        shutil.rmtree(trash_info)
+        shutil.rmtree(trash_files)
+        self.trashButton.setIcon('user-trash')
 
     def ButtonClicked( self, widget, Exec ):
         self.mateMenuWin.hide()
@@ -293,9 +296,11 @@ class pluginclass( object ):
         self.do_gtk_bookmarks()
 
     def refreshTrash (self):
-        iconName = "user-trash"
-        if (os.path.exists(home + "/.local/share/Trash/info")):
-            infoFiles = commands.getoutput("ls " + home + "/.local/share/Trash/info/ | wc -l")
-            if (int(infoFiles) > 0):
-                iconName = "user-trash-full"
+        trash_info = os.path.join(os.path.expanduser('~'), '.local','share','Trash','info')
+        if os.path.exists(trash_info):
+            if os.listdir(trash_info):            
+                iconName = 'user-trash-full'
+        else:
+            iconName = 'user-trash'
+
         self.trashButton.setIcon(iconName)
