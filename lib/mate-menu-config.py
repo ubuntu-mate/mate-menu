@@ -55,7 +55,7 @@ class mateMenuConfig( object ):
 
         #i18n
         self.mainWindow.set_title(_("Menu preferences"))
-        self.mainWindow.set_icon_from_file("/usr/share/mate-menu/icons/icon.svg")
+        self.mainWindow.set_icon_from_file("/usr/share/mate-menu/icons/mate-logo.svg")
 
         self.builder.get_object("startWithFavorites").set_label(_("Always start with favorites pane"))
         self.builder.get_object("showButtonIcon").set_label(_("Show button icon"))
@@ -434,7 +434,7 @@ class mateMenuConfig( object ):
         newPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         newPlaceDialog.set_transient_for(self.mainWindow)
-        newPlaceDialog.set_icon_from_file("/usr/share/mate-menu/icons/icon.svg")
+        newPlaceDialog.set_icon_from_file("/usr/share/mate-menu/icons/mate-logo.svg")
         newPlaceDialog.set_title(self.newPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         newPlaceDialog.set_default_response(Gtk.ResponseType.OK)
@@ -465,7 +465,7 @@ class mateMenuConfig( object ):
         editPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         editPlaceDialog.set_transient_for(self.mainWindow)
-        editPlaceDialog.set_icon_from_file("/usr/share/mate-menu/icons/icon.svg")
+        editPlaceDialog.set_icon_from_file("/usr/share/mate-menu/icons/mate-logo.svg")
         editPlaceDialog.set_title(self.editPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         editPlaceDialog.set_default_response(Gtk.ResponseType.OK)

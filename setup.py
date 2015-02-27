@@ -72,10 +72,8 @@ data_files = [
                                                                     'mate_menu/plugins/recent.py',
                                                                    ],
     ),
-    ('{prefix}/share/mate-menu/icons'.format(prefix=sys.prefix), ['data/icons/icon.svg',
-                                                                  'data/icons/mate-logo.svg',
+    ('{prefix}/share/mate-menu/icons'.format(prefix=sys.prefix), ['data/icons/mate-logo.svg',
                                                                   'data/icons/dictionary.png',
-                                                                  'data/icons/visualisation-logo.png'
                                                                  ],
     ),
     ('{prefix}/share/mate-menu/icons/search_engines'.format(prefix=sys.prefix), ['data/icons/google.ico','data/icons/wikipedia.ico']),

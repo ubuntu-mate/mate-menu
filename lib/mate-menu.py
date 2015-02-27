@@ -88,7 +88,7 @@ class MainWindow( object ):
 
         self.detect_desktop_environment()
 
-        self.icon = "/usr/share/mate-menu/icons/visualisation-logo.png"
+        self.icon = "/usr/share/mate-menu/icons/mate-logo.svg"
 
         self.toggle = toggleButton
         # Load UI file and extract widgets   
@@ -742,7 +742,7 @@ class MenuWin( object ):
         about.set_name("MATE Menu")
         about.set_version(self.getVersion())
         about.set_comments( _("Advanced MATE Menu") )
-        about.set_logo( GdkPixbuf.Pixbuf.new_from_file("/usr/share/mate-menu/icons/icon.svg") )
+        about.set_logo( GdkPixbuf.Pixbuf.new_from_file("/usr/share/mate-menu/icons/mate-logo.svg") )
         about.connect( "response", lambda dialog, r: dialog.destroy() )
         about.show()
 

@@ -856,7 +856,7 @@ class pluginclass( object ):
                         else:
                             shownList.append(i)
                             showns = True
-                if (not showns and os.path.exists("/usr/share/mate-menu/icons/icon.svg")):
+                if (not showns and os.path.exists("/usr/share/mate-menu/icons/mate-logo.svg")):
                     if len(text) >= 3:
                         if self.current_suggestion is not None and self.current_suggestion in text:
                             # We're restricting our search... 
