@@ -20,7 +20,6 @@
 
 from gi.repository import Gtk, Gio
 import ctypes
-import commands
 import gettext
 import os
 import string
