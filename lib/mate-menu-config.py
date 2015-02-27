@@ -19,22 +19,16 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
+import gettext
+import gi
+import os
+import subprocess
 import sys
 
-import gi
 gi.require_version("Gtk", "2.0")
 
 from gi.repository import Gtk, Gdk
 import mate_menu.keybinding as keybinding
-
-
-try:
-    import gettext
-    import os
-    import commands
-except Exception, e:
-    print e
-    sys.exit( 1 )
 
 # i18n
 gettext.install("mate-menu", "/usr/share/locale")
@@ -286,8 +280,9 @@ class mateMenuConfig( object ):
 
         #Detect themes and show theme here
         theme_name = self.settings.get ("string", "theme-name")
-        themes = commands.getoutput("find /usr/share/themes -name gtkrc")
-        themes = themes.split("\n")
+        process = subprocess.Popen(['find', '/usr/share/themes', '-name', 'gtkrc'], stdout=subprocess.PIPE)
+        out, err = process.communicate()
+        themes = out.split("\n")
         model = Gtk.ListStore(str, str)
         self.builder.get_object("themesCombo").set_model(model)
         selected_theme = model.append([_("Desktop theme"), "default"])
