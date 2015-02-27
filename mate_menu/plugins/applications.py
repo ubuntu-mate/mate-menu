@@ -779,53 +779,6 @@ class pluginclass( object ):
                 
         except Exception, detail:
             print detail           
-
-            
-    def add_apt_filter_results_sync(self, cache, keyword):
-        try:           
-            found_packages = []           
-            keywords = keyword.split(" ")
-            if cache is not None:
-                for pkg in cache:                      
-                    some_found = False
-                    some_not_found = False
-                    for word in keywords:
-                        if word in pkg.name:
-                            some_found = True
-                        else:
-                            some_not_found = True
-                    if some_found and not some_not_found:
-                        found_packages.append(pkg)                     
-                                                           
-            if len(found_packages) > 0:         
-                last_separator = Gtk.EventBox()
-                last_separator.add(Gtk.HSeparator())
-                last_separator.set_visible_window(False)
-                last_separator.set_size_request(-1, 20)
-                last_separator.type = "separator"
-                last_separator.show_all()
-                self.applicationsBox.add(last_separator)
-                self.suggestions.append(last_separator)
-            
-            for pkg in found_packages:
-                name = pkg.name
-                for word in keywords:
-                    if word != "":                    
-                        name = name.replace(word, "<b>%s</b>" % word);
-                suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
-                suggestionButton.connect("clicked", self.apturl_install, pkg.name)
-                suggestionButton.set_text(_("Install package '%s'") % name)
-                suggestionButton.set_tooltip_text("%s\n\n%s\n\n%s" % (pkg.name, pkg.summary.capitalize(), pkg.description))
-                suggestionButton.set_icon_size(self.iconSize)
-                self.applicationsBox.add(suggestionButton)
-                self.suggestions.append(suggestionButton)
-                        
-            #if len(found_packages) == 0:
-            #    self.applicationsBox.remove(self.last_separator)
-            #    self.suggestions.remove(self.last_separator)
-                
-        except Exception, detail:
-            print detail
             
     def Filter( self, widget, category = None ):
         self.filterTimer = None
@@ -858,18 +811,8 @@ class pluginclass( object ):
                             showns = True
                 if (not showns and os.path.exists("/usr/share/mate-menu/icons/mate-logo.svg")):
                     if len(text) >= 3:
-                        if self.current_suggestion is not None and self.current_suggestion in text:
-                            # We're restricting our search... 
-                            self.add_search_suggestions(text)
-                            #if (len(self.current_results) > 0):
-                                #self.add_apt_filter_results_sync(self.current_results, text)
-                            #else:
-                            GLib.timeout_add (300, self.add_apt_filter_results, text)
-                        else:
-                            self.current_results = []  
-                            self.add_search_suggestions(text)
-                            GLib.timeout_add (300, self.add_apt_filter_results, text)
-
+                        self.add_search_suggestions(text)
+                        GLib.timeout_add (300, self.add_apt_filter_results, text)
                         self.current_suggestion = text
                     else:
                         self.current_suggestion = None
