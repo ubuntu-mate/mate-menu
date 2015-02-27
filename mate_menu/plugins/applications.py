@@ -677,7 +677,7 @@ class pluginclass( object ):
         suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
         suggestionButton.connect("clicked", self.search_dictionary)
         suggestionButton.set_text(_("Lookup %s in Dictionary") % text)
-        suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/dictionary.png")
+        suggestionButton.set_image("/usr/share/mate-menu/icons/dictionary.png")
         self.applicationsBox.add(suggestionButton)
         self.suggestions.append(suggestionButton)  
         
@@ -1088,7 +1088,7 @@ class pluginclass( object ):
         
         menuItem = Gtk.ImageMenuItem(_("Lookup Dictionary"))
         img = Gtk.Image()
-        img.set_from_file('/usr/share/mate-menu/icons/search_engines/dictionary.png')
+        img.set_from_file('/usr/share/mate-menu/icons/dictionary.png')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_dictionary)
         menu.append(menuItem)
