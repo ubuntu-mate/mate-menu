@@ -81,9 +81,6 @@ class MainWindow( object ):
         self.settings = settings
         self.keybinder = keybinder
         self.data_path = os.path.join( '/', 'usr', 'share', 'mate-menu' )
-
-        self.detect_desktop_environment()
-
         self.icon = "/usr/share/mate-menu/icons/mate-logo.svg"
 
         self.toggle = toggleButton
@@ -209,20 +206,6 @@ class MainWindow( object ):
         if opacity is not 1:
             self.window.set_opacity(opacity)
 
-    def detect_desktop_environment (self):
-        self.de = "mate"
-        try:
-            de = os.environ["DESKTOP_SESSION"]
-            if de in ["gnome", "gnome-shell", "mate", "kde", "xfce"]:
-                self.de = de
-            else:
-                if os.path.exists("/usr/bin/caja"):
-                    self.de = "mate"
-                elif os.path.exists("/usr/bin/thunar"):
-                    self.de = "xfce"
-        except Exception, detail:
-            print detail
-
     def PopulatePlugins( self ):
         self.panesToColor = [ ]
         self.headingsToColor = [ ]
@@ -251,7 +234,7 @@ class MainWindow( object ):
                         MyPlugin = pluginclass()
                     else:
                         # pass mateMenu and togglebutton instance so that the plugin can use it
-                        MyPlugin = pluginclass( self, self.toggle, self.de )
+                        MyPlugin = pluginclass(self, self.toggle)
 
                     if not MyPlugin.icon:
                         MyPlugin.icon = "mate-logo-icon.png"

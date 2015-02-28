@@ -35,12 +35,10 @@ gettext.install("mate-menu", "/usr/share/locale")
 
 class pluginclass( object ):
 
-    def __init__( self, mateMenuWin, toggleButton, de ):
+    def __init__(self, mateMenuWin, toggleButton):
 
         self.mateMenuWin = mateMenuWin
         self.toggleButton = toggleButton
-        self.de = de
-
 
         self.builder = Gtk.Builder()
         self.builder.add_from_file( os.path.join( '/', 'usr', 'share', 'mate-menu',  'plugins', 'system_management.glade' ))

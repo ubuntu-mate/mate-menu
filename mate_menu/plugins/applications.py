@@ -239,13 +239,12 @@ class pluginclass( object ):
     fromFav = array1( ("FAVORITES", Gtk.TargetFlags.SAME_APP, 81), ("FAVORITES", Gtk.TargetFlags.SAME_APP, 81) )
 
     @print_timing
-    def __init__( self, mateMenuWin, toggleButton, de ):
+    def __init__(self, mateMenuWin, toggleButton):
         self.mateMenuWin = mateMenuWin
 
         self.mainMenus = [ ]
 
         self.toggleButton = toggleButton
-        self.de = de
 
         self.builder = Gtk.Builder()
         # The Glade file for the plugin
@@ -907,10 +906,9 @@ class pluginclass( object ):
                 removeFromFavMenuItem.connect( "activate", self.onFavoritesRemove, widget )
                 propsMenuItem.connect( "activate", self.onPropsApp, widget)
 
-                if self.de == "mate":
-                    mTree.append(desktopMenuItem)
-                    mTree.append(panelMenuItem)
-                    mTree.append(separator1)
+                mTree.append(desktopMenuItem)
+                mTree.append(panelMenuItem)
+                mTree.append(separator1)
                 mTree.append(insertSpaceMenuItem)
                 mTree.append(insertSeparatorMenuItem)
                 mTree.append(separator2)
@@ -960,10 +958,9 @@ class pluginclass( object ):
             separator3 = Gtk.SeparatorMenuItem()
             propsMenuItem = Gtk.MenuItem(_("Edit properties"))
 
-            if self.de == "mate":
-                mTree.append(desktopMenuItem)
-                mTree.append(panelMenuItem)
-                mTree.append(separator1)
+            mTree.append(desktopMenuItem)
+            mTree.append(panelMenuItem)
+            mTree.append(separator1)
 
             mTree.append(favoriteMenuItem)
             mTree.append(startupMenuItem)

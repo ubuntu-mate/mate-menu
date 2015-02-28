@@ -32,11 +32,10 @@ class pluginclass:
     """This is the main class for the plugin"""
     """It MUST be named pluginclass"""
 
-    def __init__( self, mateMenuWin, toggleButton, de ):
+    def __init__(self, mateMenuWin, toggleButton):
 
         self.Win = mateMenuWin
         self.toggleButton = toggleButton
-        self.de = de
 
         self.builder = Gtk.Builder()
         #The Glade file for the plugin
