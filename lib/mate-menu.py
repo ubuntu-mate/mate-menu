@@ -69,10 +69,7 @@ gettext.install("mate-menu", "/usr/share/locale")
 
 NAME = _("Menu")
 
-windowManager = os.getenv("DESKTOP_SESSION")
-if not windowManager:
-    windowManager = "MATE"
-xdg.Config.setWindowManager( windowManager.upper() )
+xdg.Config.setWindowManager('MATE')
 
 from mate_menu.execute import *
 
