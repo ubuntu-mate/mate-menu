@@ -54,7 +54,6 @@ class IconManager(GObject.GObject):
         #self.themes = map(  createTheme, [ d for d in os.listdir( "/usr/share/icons" ) if os.path.isdir( os.path.join( "/usr/share/icons", d ) ) ] )
 
         self.defaultTheme = Gtk.IconTheme.get_default()
-        defaultKdeTheme = createTheme( "kde.default" )
 
         # Setup and clean up the temp icon dir
         configDir = GLib.get_user_config_dir()
@@ -75,7 +74,7 @@ class IconManager(GObject.GObject):
         # Themes with the same content as the default them aren't needed
         #self.themes = [ theme for theme in self.themes if  theme.list_icons() != defaultTheme.list_icons() ]
 
-        self.themes = [ self.defaultTheme, defaultKdeTheme ]
+        self.themes = [ self.defaultTheme ]
 
         # Listen for changes in the themes
         for theme in self.themes:
@@ -321,10 +320,6 @@ class ApplicationLauncher( easyButton ):
             self.appMateDocPath = desktopItem.get( "X-MATE-DocPath" ) or ""
             self.useTerminal = desktopItem.getTerminal()
             self.appPath = desktopItem.getPath()
-
-            if not self.appMateDocPath:
-                self.appKdeDocPath      = desktopItem.getDocPath() or ""
-
             self.appName            = self.appName.strip()
             self.appGenericName     = self.appGenericName.strip()
             self.appComment         = self.appComment.strip()
@@ -342,7 +337,7 @@ class ApplicationLauncher( easyButton ):
             self.appGenericName     = ""
             self.appComment         = ""
             self.appExec            = ""
-            self.appIconName                = ""
+            self.appIconName        = ""
             self.appCategories      = ""
             self.appDocPath         = ""
             self.startupMonitorId   = 0
