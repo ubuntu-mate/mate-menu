@@ -1,11 +1,11 @@
-# Gaelic; Scottish translation for linuxmint
+# Gaelic; Scottish translation for MATE Menu
 # Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
-# This file is distributed under the same license as the linuxmint package.
+# This file is distributed under the same license as the package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
 # alasdair caimbeul <alexd@garrit.freeserve.co.uk>, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: linuxmint\n"
+"Project-Id-Version: mate-menu\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-11-27 15:05+0300\n"
 "PO-Revision-Date: 2014-11-07 01:17+0000\n"

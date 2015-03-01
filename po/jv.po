@@ -1,11 +1,11 @@
-# Javanese translation for linuxmint
+# Javanese translation for MATE Menu
 # Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
-# This file is distributed under the same license as the linuxmint package.
+# This file is distributed under the same license as the package.
 # FIRST AUTHOR <www.pilihankedua@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: linuxmint\n"
+"Project-Id-Version: mate-menu\n"
 "Report-Msgid-Bugs-To: zaenal arifin <www.pilihankedua@gmail.com>\n"
 "POT-Creation-Date: 2014-11-27 15:05+0300\n"
 "PO-Revision-Date: 2013-02-26 09:46+0000\n"

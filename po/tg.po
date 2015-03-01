@@ -1,11 +1,11 @@
-# Tajik translation for linuxmint
+# Tajik translation for MATE Menu
 # Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
-# This file is distributed under the same license as the linuxmint package.
+# This file is distributed under the same license as the package.
 # Victor Ibragimov <victor.ibragimov@gmail.com>, 2014.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: linuxmint\n"
+"Project-Id-Version: mate-menu\n"
 "Report-Msgid-Bugs-To: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "POT-Creation-Date: 2014-11-27 15:05+0300\n"
 "PO-Revision-Date: 2014-01-15 20:26+0000\n"
