@@ -19,7 +19,6 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
-import apt
 import ctypes
 import gc
 import gi
@@ -706,14 +705,8 @@ class MenuWin( object ):
         self.updateButton()        
 
     def getVersion(self):
-        try:
-            cache = apt.Cache()
-            pkg = cache['mate-menu']
-            if pkg.installed is not None:
-                version = str(pkg.installed.version)
-        except:
-            version = ''
-
+		#FIXME - Get this from a sane location
+        version = '5.6.2'
         return version
 
     def showAboutDialog( self, action, userdata = None ):

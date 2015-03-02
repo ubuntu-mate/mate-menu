@@ -63,7 +63,6 @@ class mateMenuConfig( object ):
         self.builder.get_object("showCategoryIcons").set_label(_("Show category icons"))
         self.builder.get_object("hover").set_label(_("Hover"))
         self.builder.get_object("remember_filter").set_label(_("Remember the last category or search"))
-        self.builder.get_object("use_apt").set_label(_("Search for packages to install"))
         self.builder.get_object("swapGeneric").set_label(_("Swap name and generic name"))
 
         self.builder.get_object("label11").set_text(_("Border width:"))
@@ -125,8 +124,7 @@ class mateMenuConfig( object ):
         self.folderChooserDialogTitle = (_("Select a folder"))
 
         self.startWithFavorites = self.builder.get_object( "startWithFavorites" )
-        self.showAppComments = self.builder.get_object( "showAppComments" )
-        self.useAPT = self.builder.get_object( "use_apt" )
+        self.showAppComments = self.builder.get_object( "showAppComments" )        
         self.showCategoryIcons = self.builder.get_object( "showCategoryIcons" )
         self.showRecentPlugin = self.builder.get_object( "showRecentPlugin" )
         self.showApplicationsPlugin = self.builder.get_object( "showApplicationsPlugin" )
@@ -204,7 +202,6 @@ class mateMenuConfig( object ):
 
         self.bindGSettingsValueToWidget( self.settings, "bool", "start-with-favorites", self.startWithFavorites, "toggled", self.startWithFavorites.set_active, self.startWithFavorites.get_active )
         self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "show-application-comments", self.showAppComments, "toggled", self.showAppComments.set_active, self.showAppComments.get_active )
-        self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "use-apt", self.useAPT, "toggled", self.useAPT.set_active, self.useAPT.get_active )
         self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "show-category-icons", self.showCategoryIcons, "toggled", self.showCategoryIcons.set_active, self.showCategoryIcons.get_active )
         self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "categories-mouse-over", self.hover, "toggled", self.hover.set_active, self.hover.get_active )
         self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "swap-generic-name", self.swapGeneric, "toggled", self.swapGeneric.set_active, self.swapGeneric.get_active )

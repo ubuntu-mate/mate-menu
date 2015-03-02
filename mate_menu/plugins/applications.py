@@ -58,15 +58,6 @@ class PackageDescriptor():
         self.summary = summary
         self.description = description
 
-def print_timing(func):
-    def wrapper(*arg):
-        t1 = time.time()
-        res = func(*arg)
-        t2 = time.time()
-        print '%s took %0.3f ms' % (func.func_name, (t2-t1)*1000.0)
-        return res
-    return wrapper
-
 # Evil patching
 #def xdgParsePatched(filename=None):
 #       # conver to absolute path
@@ -238,7 +229,6 @@ class pluginclass( object ):
     array1 = TargetEntry * 2
     fromFav = array1( ("FAVORITES", Gtk.TargetFlags.SAME_APP, 81), ("FAVORITES", Gtk.TargetFlags.SAME_APP, 81) )
 
-    @print_timing
     def __init__(self, mateMenuWin, toggleButton):
         self.mateMenuWin = mateMenuWin
 
@@ -310,7 +300,6 @@ class pluginclass( object ):
             self.settings.notifyAdd( "swap-generic-name", self.changeSwapGenericName )
             self.settings.notifyAdd( "show-category-icons", self.changeShowCategoryIcons )
             self.settings.notifyAdd( "show-application-comments", self.changeShowApplicationComments )
-            self.settings.notifyAdd( "use-apt", self.switchAPTUsage)
             self.settings.notifyAdd( "fav-cols", self.changeFavCols )
             self.settings.notifyAdd( "remember-filter", self.changeRememberFilter)
 
@@ -352,18 +341,12 @@ class pluginclass( object ):
             #for f in mymenu.directory.AppDirs:
             #       self.menuFileMonitors.append( filemonitor.addMonitor(f, self.onMenuChanged, mymenu.directory.Filename ) )
                         
-        self.refresh_apt_cache()        
         self.suggestions = []
         self.current_suggestion = None
         self.panel = "top"
         self.panel_position = -1
 
         self.builder.get_object("searchButton").connect( "button-press-event", self.searchPopup )
-
-    def refresh_apt_cache(self):
-        if self.useAPT:
-            os.system("mkdir -p %s/.config/mate-menu/" % home)
-            os.system("/usr/lib/mate-menu/get_apt_cache.py > %s/.config/mate-menu/apt.cache &" % home)
 
     def get_panel(self):
         panelsettings = Gio.Settings.new("org.mate.panel")
@@ -376,13 +359,6 @@ class pluginclass( object ):
                 if iid is not None and iid.find("MateMenu") != -1:
                     self.panel = object_schema.get_string("toplevel-id")
                     self.panel_position = object_schema.get_int("position") + 1
-
-    def apturl_install(self, widget, pkg_name):
-        if os.path.exists("/usr/bin/apturl"):
-            os.system("/usr/bin/apturl apt://%s &" % pkg_name)
-        else:
-            os.system("xdg-open apt://" + pkg_name + " &")
-        self.mateMenuWin.hide()
 
     def __del__( self ):
         print u"Applications plugin deleted"
@@ -457,10 +433,6 @@ class pluginclass( object ):
             if isinstance( child, FavApplicationLauncher):
                 child.setIconSize( self.faviconsize )
                 
-    def switchAPTUsage( self, settings, key, args ):
-        self.useAPT = settings.get_boolean(key)
-        self.refresh_apt_cache()
-
     def changeRememberFilter( self, settings, key, args):
         self.rememberFilter = settings.get_boolean(key)
 
@@ -488,7 +460,6 @@ class pluginclass( object ):
             self.favoritesPositionOnGrid( fav )
 
     def RegenPlugin( self, *args, **kargs ):
-        self.refresh_apt_cache()
         
         # save old config - this is necessary because the app will notified when it sets the default values and you don't want the to reload itself several times
         oldcategories_mouse_over = self.categories_mouse_over
@@ -526,7 +497,6 @@ class pluginclass( object ):
         self.showcategoryicons = self.settings.get( "bool", "show-category-icons")
         self.categoryhoverdelay = self.settings.get( "int", "category-hover-delay")
         self.showapplicationcomments = self.settings.get( "bool", "show-application-comments")
-        self.useAPT = self.settings.get( "bool", "use-apt")
         self.rememberFilter = self.settings.get( "bool", "remember-filter")
 
         self.lastActiveTab =  self.settings.get( "int", "last-active-tab")
@@ -694,90 +664,6 @@ class pluginclass( object ):
         #self.last_separator.show_all()
         #self.applicationsBox.add(self.last_separator)
         #self.suggestions.append(self.last_separator)            
-
-    def add_apt_filter_results(self, keyword):
-        try:   
-            # Wait to see if the keyword has changed.. before doing anything
-            current_keyword = keyword
-            current_keyword = self.searchEntry.get_text()
-            if keyword != current_keyword:
-                return            
-            found_packages = []
-            found_in_name = []
-            found_elsewhere = []
-            keywords = keyword.split(" ")
-            command = "cat %(home)s/.config/mate-menu/apt.cache" % {'home':home}
-            for word in keywords:
-                command = "%(command)s | grep %(word)s" % {'command':command, 'word':word}
-            pkgs = commands.getoutput(command)
-            pkgs = pkgs.split("\n")
-            num_pkg_found = 0
-            for pkg in pkgs:
-                values = string.split(pkg, "###")
-                if len(values) == 4:
-                    status = values[0]
-                    if (status == "ERROR"):
-                        print "Could not refresh APT cache"
-                    elif (status == "CACHE"):
-                        name = values[1]
-                        summary = values[2]
-                        description = values[3].replace("~~~", "\n")
-                        package = PackageDescriptor(name, summary, description)
-                        #See if all keywords are in the name (so we put these results at the top of the list)
-                        some_found = False
-                        some_not_found = False
-                        for word in keywords:
-                            if word in package.name:
-                                some_found = True
-                            else:
-                                some_not_found = True
-                        if some_found and not some_not_found:
-                            found_in_name.append(package)
-                        else:                        
-                            found_elsewhere.append(package)                                        
-                        num_pkg_found+=1
-                    else:
-                        print "Invalid status code: " + status
-                
-            found_packages.extend(found_in_name)
-            found_packages.extend(found_elsewhere)
-            if keyword == self.searchEntry.get_text() and len(found_packages) > 0:         
-                last_separator = Gtk.EventBox()
-                last_separator.add(Gtk.HSeparator())
-                last_separator.set_visible_window(False)
-                last_separator.set_size_request(-1, 20)       
-                last_separator.type = "separator"       
-                last_separator.show_all()
-                self.applicationsBox.add(last_separator)
-                self.suggestions.append(last_separator)
-                #Reduce the number of results to 10 max... it takes a HUGE amount of time to add the GTK box in the menu otherwise..
-                if len(found_packages) > 10:
-                    found_packages = found_packages[:10]
-                for pkg in found_packages:                        
-                    name = pkg.name
-                    for word in keywords: 
-                        if word != "":             
-                            name = name.replace(word, "<b>%s</b>" % word);
-                    suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
-                    suggestionButton.connect("clicked", self.apturl_install, pkg.name)
-                    suggestionButton.set_text(_("Install package '%s'") % name)
-                    suggestionButton.set_tooltip_text("%s\n\n%s\n\n%s" % (pkg.name, pkg.summary, pkg.description))
-                    suggestionButton.set_icon_size(self.iconSize)
-                    self.applicationsBox.add(suggestionButton)
-                    self.suggestions.append(suggestionButton)
-                    #if cache != self.current_results:
-                    #    self.current_results.append(pkg)
-
-            #if len(found_packages) == 0:
-            #    gtk.gdk.threads_enter()
-            #    try:
-            #        self.applicationsBox.remove(self.last_separator)
-            #        self.suggestions.remove(self.last_separator)
-            #    finally:
-            #        gtk.gdk.threads_leave()           
-                
-        except Exception, detail:
-            print detail           
             
     def Filter( self, widget, category = None ):
         self.filterTimer = None
@@ -811,7 +697,6 @@ class pluginclass( object ):
                 if (not showns and os.path.exists("/usr/share/mate-menu/icons/mate-logo.svg")):
                     if len(text) >= 3:
                         self.add_search_suggestions(text)
-                        GLib.timeout_add (300, self.add_apt_filter_results, text)
                         self.current_suggestion = text
                     else:
                         self.current_suggestion = None
@@ -953,7 +838,6 @@ class pluginclass( object ):
             startupMenuItem = Gtk.CheckMenuItem(_("Launch when I log in"))
             separator2 = Gtk.SeparatorMenuItem()
             launchMenuItem = Gtk.MenuItem(_("Launch"))
-            uninstallMenuItem = Gtk.MenuItem(_("Uninstall"))
             deleteMenuItem = Gtk.MenuItem(_("Delete from menu"))
             separator3 = Gtk.SeparatorMenuItem()
             propsMenuItem = Gtk.MenuItem(_("Edit properties"))
@@ -968,8 +852,6 @@ class pluginclass( object ):
             mTree.append(separator2)
 
             mTree.append(launchMenuItem)
-            if os.path.exists("/usr/bin/synaptic-pkexec"):
-                mTree.append(uninstallMenuItem)
             if home in widget.desktopFile:
                 mTree.append(deleteMenuItem)
                 deleteMenuItem.connect("activate", self.delete_from_menu, widget)
@@ -985,8 +867,6 @@ class pluginclass( object ):
 
             launchMenuItem.connect( "activate", self.onLaunchApp, widget )
             propsMenuItem.connect( "activate", self.onPropsApp, widget)
-            if os.path.exists("/usr/bin/synaptic-pkexec"):
-                uninstallMenuItem.connect ( "activate", self.onUninstallApp, widget )
 
             if self.isLocationInFavorites( widget.desktopFile ):
                 favoriteMenuItem.set_active( True )
@@ -1164,11 +1044,6 @@ class pluginclass( object ):
 
         else:
             self.buildFavorites()
-
-
-    def onUninstallApp( self, menu, widget ):
-        widget.uninstall()
-        self.mateMenuWin.hide()
 
     def onFavoritesInsertSpace( self, menu, widget, insertBefore ):
         if insertBefore:

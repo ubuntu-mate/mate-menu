@@ -404,9 +404,6 @@ class ApplicationLauncher( easyButton ):
             else:
                 Execute(self.appExec, self.appPath)
 
-    def uninstall (self, *args ):
-        Execute("/usr/lib/mate-menu/mate-remove-application.py " + self.desktopFile)
-
     # IconTheme changed, setup new icons for button and drag 'n drop
     def iconChanged( self ):
         easyButton.iconChanged( self )

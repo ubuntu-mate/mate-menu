@@ -90,7 +90,7 @@ cmdclass ={
 setup(
     name = "mate-menu",
     version = PROGRAM_VERSION,
-    description = "An advanced menu for MATE. Supports filtering, favorites, easy-uninstallation, autosession, and many other features.",
+    description = "An advanced menu for MATE. Supports filtering, favorites, autosession, and many other features.",
     license = 'GPLv2+',
     author = 'Martin Wimpress',
     url = 'https://bitbucket.org/flexiondotorg/mate-tweak/',
