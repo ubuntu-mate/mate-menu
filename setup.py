@@ -34,9 +34,11 @@ import DistUtilsExtra.command.clean_i18n
 
 # silence pyflakes, __VERSION__ is properly assigned below...
 __VERSION__ = '0.0.0.0'
-for line in file('mate-menu').readlines():
+for line in file('lib/mate-menu.py').readlines():
     if (line.startswith('__VERSION__')):
         exec(line.strip())
+        break
+
 PROGRAM_VERSION = __VERSION__
 
 def datafilelist(installbase, sourcebase):

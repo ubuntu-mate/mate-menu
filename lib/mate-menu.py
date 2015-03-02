@@ -19,6 +19,8 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
+__VERSION__='5.6.3'
+
 import ctypes
 import gc
 import gi
@@ -701,15 +703,10 @@ class MenuWin( object ):
         self.loadSettings()
         self.updateButton()        
 
-    def getVersion(self):
-		#FIXME - Get this from a sane location
-        version = '5.6.2'
-        return version
-
     def showAboutDialog( self, action, userdata = None ):
         about = Gtk.AboutDialog()
         about.set_name("MATE Menu")
-        about.set_version(self.getVersion())
+        about.set_version(__VERSION__)
         about.set_comments( _("Advanced MATE Menu") )
         about.set_logo( GdkPixbuf.Pixbuf.new_from_file("/usr/share/mate-menu/icons/mate-logo.svg") )
         about.connect( "response", lambda dialog, r: dialog.destroy() )
