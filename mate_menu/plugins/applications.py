@@ -24,12 +24,9 @@ gi.require_version("Gtk", "2.0")
 from gi.repository import Gtk, Pango, Gdk, Gio, GLib
 
 import os
-import time
 import shutil
 import string
 import gettext
-import threading
-import commands
 import subprocess
 import filecmp
 import ctypes
@@ -40,7 +37,6 @@ from mate_menu.easygsettings import EasyGSettings
 from mate_menu.easyfiles import *
 
 gtk = CDLL("libgtk-x11-2.0.so.0")
-
 
 from mate_menu.filemonitor import monitor as filemonitor
 

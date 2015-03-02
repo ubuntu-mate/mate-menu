@@ -18,15 +18,12 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
-from gi.repository import Gtk, Gio
 import ctypes
 import gettext
 import os
-import string
 import shutil
-import time
 from ctypes import *
-
+from gi.repository import Gtk, Gio
 from mate_menu.easybuttons import *
 from mate_menu.easygsettings import EasyGSettings
 from mate_menu.execute import Execute

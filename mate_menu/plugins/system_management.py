@@ -18,14 +18,13 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
+import gettext
 import gi
+import os
+
 gi.require_version("Gtk", "2.0")
 
 from gi.repository import Gtk
-import os
-import string
-import gettext
-
 from mate_menu.easybuttons import *
 from mate_menu.execute import Execute
 from mate_menu.easygsettings import EasyGSettings

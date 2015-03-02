@@ -18,16 +18,18 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
+import os
+import re
+import shutil
+import xdg.DesktopEntry
+import xdg.Menu
+
+from execute import *
+from filemonitor import monitor as filemonitor
 from gi.repository import Gtk, Gdk, GLib
 from gi.repository import Pango
 from gi.repository import GObject
-import os.path
-import shutil
-import re
-from execute import *
-import xdg.DesktopEntry
-import xdg.Menu
-from filemonitor import monitor as filemonitor
+
 import ctypes
 from ctypes import *
 

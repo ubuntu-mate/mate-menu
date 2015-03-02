@@ -19,17 +19,17 @@
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 import gi
+import threading
 gi.require_version("Gtk", "2.0")
 
 from Xlib.display import Display
 from Xlib import X, error
 from gi.repository import Gtk, Gdk, GObject, GLib
-import threading
+
 import ctypes
 from ctypes import *
 
 gdk = CDLL("libgdk-x11-2.0.so.0")
-gtk = CDLL("libgtk-x11-2.0.so.0")
 
 class PointerMonitor(GObject.GObject, threading.Thread):
     __gsignals__ = {

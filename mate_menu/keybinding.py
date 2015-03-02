@@ -23,16 +23,17 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER    
 # DEALINGS IN THE SOFTWARE.
 
+import capi
 import gi
+import threading
 gi.require_version("Gtk", "2.0")
 
+from gi.repository import Gtk, Gdk, GObject, GLib
 from Xlib.display import Display
 from Xlib import X, error
-from gi.repository import Gtk, Gdk, GObject, GLib
-import threading
+
 import ctypes
 from ctypes import *
-import capi
 
 gdk = CDLL("libgdk-x11-2.0.so.0")
 gtk = CDLL("libgtk-x11-2.0.so.0")

@@ -23,7 +23,6 @@ import gettext
 import gi
 import os
 import subprocess
-import sys
 
 gi.require_version("Gtk", "2.0")
 

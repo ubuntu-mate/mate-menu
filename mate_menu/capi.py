@@ -22,8 +22,6 @@ import gi
 import ctypes
 from ctypes import *
 
-libgobject = CDLL('libgobject-2.0.so.0')
-
 class _PyGObject_Functions(ctypes.Structure):
    _fields_ = [
        ('register_class',

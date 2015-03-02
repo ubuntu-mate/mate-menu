@@ -27,7 +27,6 @@ import os
 import platform
 import subprocess
 import sys
-import time
 import traceback
 
 gi.require_version("Gtk", "2.0")
@@ -208,7 +207,6 @@ class MainWindow( object ):
     def PopulatePlugins( self ):
         self.panesToColor = [ ]
         self.headingsToColor = [ ]
-        start = time.time()
         PluginPane = Gtk.EventBox()
         PluginPane.show()
         PaneLadder = Gtk.VBox( False, 0 )
@@ -354,7 +352,6 @@ class MainWindow( object ):
         self.paneholder.pack_start( ImageBox, False, False, 0 )
         self.paneholder.pack_start( PluginPane, False, False, 0 )
         self.tooltips.disable()
-        #print u"Loading", (time.time() - start), "s"
 
     # A little hacky but works
     def getDefaultStyle( self ):
