@@ -294,11 +294,9 @@ class pluginclass( object ):
         self.do_gtk_bookmarks()
 
     def refreshTrash (self):
+        iconName = 'user-trash'
         trash_info = os.path.join(os.path.expanduser('~'), '.local','share','Trash','info')
-        if os.path.exists(trash_info):
-            if os.listdir(trash_info):            
-                iconName = 'user-trash-full'
-        else:
-            iconName = 'user-trash'
+        if os.path.exists(trash_info) and os.listdir(trash_info):
+            iconName = 'user-trash-full'
 
         self.trashButton.setIcon(iconName)
