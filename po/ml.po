@@ -6,557 +6,534 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-menu\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-11-27 15:05+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
 "PO-Revision-Date: 2012-11-09 23:10+0000\n"
 "Last-Translator: praveenp <Unknown>\n"
 "Language-Team: Malayalam <ml@li.org>\n"
+"Language: ml\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
 "X-Generator: Launchpad (build 17355)\n"
 
-#: ../lib/mate-menu.py:48
+#: ../lib/mate-menu.py:70
 msgid "Menu"
 msgstr "മെനു"
 
-#: ../lib/mate-menu.py:256
+#. Fake class for MyPlugin
+#: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
 msgstr "പ്ലഗിന്‍ ലോഡ് ചെയ്യാന്‍ കഴിഞ്ഞില്ല:"
 
-#: ../lib/mate-menu.py:328
+#: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
 msgstr "പ്ലുഗിന്‍ ഇനിഷ്യലൈസ് ചെയ്യാന്‍ കഴിഞ്ഞില്ല"
 
-#: ../lib/mate-menu.py:731
+#: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
 msgstr ""
 
-#: ../lib/mate-menu.py:818
+#: ../lib/mate-menu.py:792
 msgid "Preferences"
 msgstr "മുന്‍ഗണനകള്‍"
 
-#: ../lib/mate-menu.py:821
+#: ../lib/mate-menu.py:795
 msgid "Edit menu"
 msgstr "മെനു തിരുത്തുക"
 
-#: ../lib/mate-menu.py:824
+#: ../lib/mate-menu.py:798
 msgid "Reload plugins"
 msgstr "പ്ലഗിനുകൾ വീണ്ടും എടുക്കുക"
 
-#: ../lib/mate-menu.py:827
+#: ../lib/mate-menu.py:801
 msgid "About"
 msgstr "വിവരണം"
 
-#: ../mate_menu/mate-menu-config.py:42
+#. i18n
+#: ../lib/mate-menu-config.py:50
 msgid "Menu preferences"
 msgstr "മെനു മുന്‍ഗണന"
 
-#: ../mate_menu/mate-menu-config.py:45
+#: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
 msgstr "എപ്പോഴും പ്രിയപ്പെട്ടവ ഉള്‍പ്പെടുന്ന പാളി ദ്രിശ്യമാം വിധം ആരംഭിക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:46
+#: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
 msgstr "ബട്ടണ്‍ ഐക്കണ്‍ കാണിക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:47
+#: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
 msgstr "ഇശ്ചാനുസരണമുള്ള നിറങ്ങള്‍ ഉപയോഗിക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:48
+#: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
 msgstr "സമീപകാല പ്രമാണങ്ങൾ പ്ലഗിൻ പ്രദർശിപ്പിക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:49
+#: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
 msgstr "ആപ്ലിക്കേഷൻസ് പ്ലഗിൻ പ്രദർശിപ്പിക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:50
+#: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
 msgstr "സിസ്റ്റം പ്ലഗിൻ പ്രദർശിപ്പിക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:51
+#: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
 msgstr "സ്ഥാനങ്ങൾ പ്ലഗിൻ പ്രദർശിപ്പിക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:53
+#: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
 msgstr "ആപ്പ്ലിക്കെഷനെ കുറിച്ചുള്ള അഭിപ്രായങ്ങള്‍ കാണിക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:54
+#: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
 msgstr "വര്‍ഗ്ഗങ്ങളുടെ ഐക്കണുകള്‍ കാണിക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:55
+#: ../lib/mate-menu-config.py:63
 msgid "Hover"
 msgstr "വട്ടമിട്ട് പറക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:56
+#: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
 msgstr ""
 
-#: ../mate_menu/mate-menu-config.py:57
-msgid "Search for packages to install"
-msgstr "ഇൻസ്റ്റോൾ ചെയ്യാനുള്ള പാക്കേജുകൾ തിരയുക"
-
-#: ../mate_menu/mate-menu-config.py:58
+#: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
 msgstr "നാമവും, സാമാന്യ നാമവും കൈമാറുക"
 
-#: ../mate_menu/mate-menu-config.py:60
+#: ../lib/mate-menu-config.py:67
 msgid "Border width:"
 msgstr "അതിരിന്റെ വലുപ്പം:"
 
-#: ../mate_menu/mate-menu-config.py:61
+#: ../lib/mate-menu-config.py:68
 msgid "pixels"
 msgstr "പിക്സലുകള്‍"
 
-#: ../mate_menu/mate-menu-config.py:63
+#: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
 msgstr "ഒപാസിറ്റി"
 
-#: ../mate_menu/mate-menu-config.py:66
+#: ../lib/mate-menu-config.py:73
 msgid "Button text:"
 msgstr "ബട്ടണ്‍ പദാവലി:"
 
-#: ../mate_menu/mate-menu-config.py:67
+#: ../lib/mate-menu-config.py:74
 msgid "Options"
 msgstr "ഐച്ഛികങ്ങള്‍"
 
-#: ../mate_menu/mate-menu-config.py:68
-#: ../mate_menu/plugins/applications.py:251
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
 msgid "Applications"
 msgstr "ആപ്ലിക്കേഷനുകള്‍"
 
-#: ../mate_menu/mate-menu-config.py:70
+#: ../lib/mate-menu-config.py:77
 msgid "Theme"
 msgstr "ദൃശ്യരൂപം"
 
-#: ../mate_menu/mate-menu-config.py:71
-#: ../mate_menu/plugins/applications.py:248
-#: ../mate_menu/plugins/applications.py:249
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
+#: ../mate_menu/plugins/applications.py:253
 msgid "Favorites"
 msgstr "പ്രിയപ്പെട്ടവ"
 
-#: ../mate_menu/mate-menu-config.py:72
+#: ../lib/mate-menu-config.py:79
 msgid "Main button"
 msgstr "പ്രധാന ബട്ടണ്‍"
 
-#: ../mate_menu/mate-menu-config.py:73
+#: ../lib/mate-menu-config.py:80
 msgid "Plugins"
 msgstr ""
 
-#: ../mate_menu/mate-menu-config.py:75
+#: ../lib/mate-menu-config.py:82
 msgid "Background:"
 msgstr "പശ്ചാത്തലം:"
 
-#: ../mate_menu/mate-menu-config.py:76
+#: ../lib/mate-menu-config.py:83
 msgid "Headings:"
 msgstr "മുഖവുര:"
 
-#: ../mate_menu/mate-menu-config.py:77
+#: ../lib/mate-menu-config.py:84
 msgid "Borders:"
 msgstr "അതിരുകള്‍:"
 
-#: ../mate_menu/mate-menu-config.py:78
+#: ../lib/mate-menu-config.py:85
 msgid "Theme:"
 msgstr "ദൃശ്യരൂപം:"
 
-#: ../mate_menu/mate-menu-config.py:82
+#. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
+#. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
+#: ../lib/mate-menu-config.py:89
 msgid "Number of columns:"
 msgstr "നിരകളുടെ എണ്ണം:"
 
-#: ../mate_menu/mate-menu-config.py:83
-#: ../mate_menu/mate-menu-config.py:84
-#: ../mate_menu/mate-menu-config.py:85
-#: ../mate_menu/mate-menu-config.py:86
+#: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
+#: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
 msgid "Icon size:"
 msgstr "ചിഹ്നത്തിന്റെ വലിപ്പം:"
 
-#: ../mate_menu/mate-menu-config.py:87
+#: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
 msgstr "വട്ടമിട്ട് പറക്കുന്നതിന്റെ കാലവിളംബം (ms):"
 
-#: ../mate_menu/mate-menu-config.py:88
+#: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
 msgstr "ബട്ടണ്‍ ഐക്കണ്‍:"
 
-#: ../mate_menu/mate-menu-config.py:89
+#: ../lib/mate-menu-config.py:96
 msgid "Search command:"
 msgstr "അന്വേഷണത്തിനുള്ള ആജ്ജ:"
 
-#: ../mate_menu/mate-menu-config.py:91
-#: ../mate_menu/plugins/places.py:44
+#. Set 'heading' property for plugin
+#: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
 msgid "Places"
 msgstr "സ്ഥലങ്ങള്‍"
 
-#: ../mate_menu/mate-menu-config.py:92
-#: ../mate_menu/mate-menu-config.py:104
+#: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
 msgstr "സ്ക്രോള്‍ബാര്‍ അനുവദിക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:93
+#: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
 msgstr "ജിറ്റികെ ബുക്ക്‌മാർക്കുകൾ പ്രദർശിപ്പിക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:94
-#: ../mate_menu/mate-menu-config.py:105
+#: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
 msgstr "ഉയരം:"
 
-#: ../mate_menu/mate-menu-config.py:95
+#: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
 msgstr "തനതായ സ്ഥലങ്ങള്‍ അന്യോന്യം മാറ്റുക:"
 
-#: ../mate_menu/mate-menu-config.py:96
-#: ../mate_menu/plugins/places.py:141
+#: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
 msgstr "കമ്പ്യൂട്ടര്‍"
 
-#: ../mate_menu/mate-menu-config.py:97
-#: ../mate_menu/plugins/places.py:151
+#: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:164
 msgid "Home Folder"
 msgstr "ഹോം ഫോള്‍ഡര്‍"
 
-#: ../mate_menu/mate-menu-config.py:98
-#: ../mate_menu/plugins/places.py:164
-#: ../mate_menu/plugins/places.py:166
+#: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
 msgstr "നെറ്റ്‍വര്‍ക്ക്"
 
-#: ../mate_menu/mate-menu-config.py:99
-#: ../mate_menu/plugins/places.py:189
+#: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:198
 msgid "Desktop"
 msgstr "ഡെസ്ക്ടോപ്പ്"
 
-#: ../mate_menu/mate-menu-config.py:100
-#: ../mate_menu/plugins/places.py:199
+#: ../lib/mate-menu-config.py:107 ../mate_menu/plugins/places.py:209
 msgid "Trash"
 msgstr "ചവറ്റുകൊട്ട"
 
-#: ../mate_menu/mate-menu-config.py:101
+#: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
 msgstr "ഇശ്ചാനുസരണമുള്ള സ്ഥലങ്ങള്‍:"
 
-#: ../mate_menu/mate-menu-config.py:103
-#: ../mate_menu/plugins/system_management.py:40
+#. Set 'heading' property for plugin
+#: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
 msgid "System"
 msgstr "സിസ്റ്റം"
 
-#: ../mate_menu/mate-menu-config.py:106
+#: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
 msgstr "തനതായ ഇനങ്ങള്‍ അന്യോന്യം മാറ്റുക:"
 
-#: ../mate_menu/mate-menu-config.py:107
-#: ../mate_menu/plugins/system_management.py:136
-msgid "Software Manager"
-msgstr "സോഫ്റ്റ്‌വേര്‍ മാനേജര്‍"
-
-#: ../mate_menu/mate-menu-config.py:108
-#: ../mate_menu/plugins/system_management.py:143
+#: ../lib/mate-menu-config.py:114
+#: ../mate_menu/plugins/system_management.py:147
+#: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
 msgstr "പാക്കേജ് മാനേജര്‍"
 
-#: ../mate_menu/mate-menu-config.py:109
-#: ../mate_menu/plugins/system_management.py:150
+#: ../lib/mate-menu-config.py:115
+#: ../mate_menu/plugins/system_management.py:157
 msgid "Control Center"
 msgstr "നിയന്ത്രണ കേന്ദ്രം"
 
-#: ../mate_menu/mate-menu-config.py:110
-#: ../mate_menu/plugins/system_management.py:160
+#: ../lib/mate-menu-config.py:116
+#: ../mate_menu/plugins/system_management.py:164
 msgid "Terminal"
 msgstr "ടെര്‍മിനല്‍"
 
-#: ../mate_menu/mate-menu-config.py:111
-#: ../mate_menu/plugins/system_management.py:177
+#: ../lib/mate-menu-config.py:117
+#: ../mate_menu/plugins/system_management.py:174
 msgid "Lock Screen"
 msgstr "സ്ക്രീന്‍ പൂട്ടുക"
 
-#: ../mate_menu/mate-menu-config.py:112
+#: ../lib/mate-menu-config.py:118
 msgid "Log Out"
 msgstr "ലോഗ് ഔട്ട് ചെയ്യുക"
 
-#: ../mate_menu/mate-menu-config.py:113
-#: ../mate_menu/plugins/system_management.py:194
+#: ../lib/mate-menu-config.py:119
+#: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
 msgstr "പുറത്തു് കടക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:115
+#: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
 msgstr "സ്ഥലത്തിന് മാറ്റം വരുത്തുക"
 
-#: ../mate_menu/mate-menu-config.py:116
+#: ../lib/mate-menu-config.py:122
 msgid "New Place"
 msgstr "പുതിയ സ്ഥലം"
 
-#: ../mate_menu/mate-menu-config.py:117
+#: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
 msgstr "ഒരു ഫോള്‍ഡര്‍ തിരഞ്ഞടുക്കുക"
 
-#: ../mate_menu/mate-menu-config.py:147
+#: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
 msgstr "കീബോര്‍ഡ്‌ എളുപ്പവഴി:"
 
-#: ../mate_menu/mate-menu-config.py:153
+#: ../lib/mate-menu-config.py:158
 msgid "Images"
 msgstr "ചിത്രങ്ങൾ"
 
-#: ../mate_menu/mate-menu-config.py:271
+#: ../lib/mate-menu-config.py:267
 msgid "Name"
 msgstr "നാമം"
 
-#: ../mate_menu/mate-menu-config.py:272
+#: ../lib/mate-menu-config.py:268
 msgid "Path"
 msgstr "വഴി"
 
-#: ../mate_menu/mate-menu-config.py:287
+#: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
 msgstr "ഡെസ്ക്ടോപ്പ് ദൃശ്യരൂപം"
 
-#: ../mate_menu/mate-menu-config.py:426
-#: ../mate_menu/mate-menu-config.py:457
+#: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
 msgid "Name:"
 msgstr "നാമം:"
 
-#: ../mate_menu/mate-menu-config.py:427
-#: ../mate_menu/mate-menu-config.py:458
+#: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
 msgid "Path:"
 msgstr "വഴി:"
 
-#: ../mate_menu/keybinding.py:197
-msgid ""
-"Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-
-#: ../mate_menu/keybinding.py:198
-msgid "Press Escape or click again to cancel the operation.  "
-msgstr ""
-
-#: ../mate_menu/keybinding.py:199
-msgid "Press Backspace to clear the existing keybinding."
-msgstr ""
-
-#: ../mate_menu/keybinding.py:212
-msgid "Pick an accelerator"
-msgstr ""
-
-#: ../mate_menu/keybinding.py:265
-msgid "<not set>"
-msgstr ""
-
-#: ../mate_menu/plugins/recent.py:31
-msgid "Recent documents"
-msgstr "കാലികമായ പ്രമാണങ്ങള്‍"
-
-#: ../mate_menu/plugins/applications.py:246
+#. i18n
+#: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
 msgstr "തിരയുക:"
 
-#: ../mate_menu/plugins/applications.py:250
+#: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
 msgstr "എല്ലാ അപ്പ്ളിക്കേഷനുകളും"
 
-#: ../mate_menu/plugins/applications.py:634
+#: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
 msgstr "%s ഗൂഗിളിൽ തിരയുക"
 
-#: ../mate_menu/plugins/applications.py:641
+#: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "%s വിക്കിപീഡിയയിൽ തിരയുക"
 
-#: ../mate_menu/plugins/applications.py:657
+#: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "%s നിഘണ്ടുവിൽ നോക്കുക"
 
-#: ../mate_menu/plugins/applications.py:664
+#: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
 msgstr "%s കമ്പ്യൂട്ടറിൽ തിരയുക"
 
-#: ../mate_menu/plugins/applications.py:742
-#: ../mate_menu/plugins/applications.py:795
-#, python-format
-msgid "Install package '%s'"
-msgstr "'%s' പാക്കേജ് ഇന്‍സ്റ്റോള്‍ ചെയ്യുക"
-
-#: ../mate_menu/plugins/applications.py:918
-#: ../mate_menu/plugins/applications.py:986
+#. i18n
+#: ../mate_menu/plugins/applications.py:763
+#: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
 msgstr "ടെസ്ക്ടോപിലേക്ക് ചേര്‍ക്കുക"
 
-#: ../mate_menu/plugins/applications.py:919
-#: ../mate_menu/plugins/applications.py:987
+#: ../mate_menu/plugins/applications.py:764
+#: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
 msgstr "പാളിയിലേക്ക് ചേര്‍ക്കുക"
 
-#: ../mate_menu/plugins/applications.py:921
-#: ../mate_menu/plugins/applications.py:969
+#: ../mate_menu/plugins/applications.py:766
+#: ../mate_menu/plugins/applications.py:813
 msgid "Insert space"
 msgstr "സ്ഥലം തിരുകി വയ്ക്കുക"
 
-#: ../mate_menu/plugins/applications.py:922
-#: ../mate_menu/plugins/applications.py:970
+#: ../mate_menu/plugins/applications.py:767
+#: ../mate_menu/plugins/applications.py:814
 msgid "Insert separator"
 msgstr "ബന്ധ-മോചകനെ(separator) തിരുകി വയ്ക്കുക"
 
-#: ../mate_menu/plugins/applications.py:924
-#: ../mate_menu/plugins/applications.py:990
+#: ../mate_menu/plugins/applications.py:769
+#: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
 msgstr "ഞാന്‍ ലോഗിന്‍ ചെയ്യുന്ന സമയം ആരംഭിക്കുക"
 
-#: ../mate_menu/plugins/applications.py:926
-#: ../mate_menu/plugins/applications.py:992
+#: ../mate_menu/plugins/applications.py:771
+#: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
 msgstr "തുടങ്ങുക"
 
-#: ../mate_menu/plugins/applications.py:927
+#: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
 msgstr "ഇഷ്ടപെട്ടവയില്‍ നിന്നും നീക്കം ചെയ്യുക"
 
-#: ../mate_menu/plugins/applications.py:929
-#: ../mate_menu/plugins/applications.py:996
+#: ../mate_menu/plugins/applications.py:774
+#: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
 msgstr "ഗുണഗണങ്ങള്‍ ചിട്ടപ്പെടുത്തുക"
 
-#: ../mate_menu/plugins/applications.py:968
+#. i18n
+#: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
 msgstr "നീക്കം ചെയ്യുക"
 
-#: ../mate_menu/plugins/applications.py:989
+#: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
 msgstr "എനിക്ക് പ്രിയപ്പെട്ടവയുടെ കൂടെ കാണിക്കുക"
 
-#: ../mate_menu/plugins/applications.py:993
-msgid "Uninstall"
-msgstr "അണ്‍ഇന്‍സ്റ്റോള്‍ ചെയ്യുക"
-
-#: ../mate_menu/plugins/applications.py:994
+#: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
 msgstr "മെനുവില്‍ നിന്നും നീക്കം ചെയ്യുക"
 
-#: ../mate_menu/plugins/applications.py:1048
+#: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
 msgstr "ഗൂഗിളിൽ തിരയുക"
 
-#: ../mate_menu/plugins/applications.py:1055
+#: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
 msgstr "വിക്കിപീഡിയയിൽ തിരയുക"
 
-#: ../mate_menu/plugins/applications.py:1065
+#: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
 msgstr "നിഘണ്ടുവിൽ നോക്കുക"
 
-#: ../mate_menu/plugins/applications.py:1072
+#: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
 msgstr "കമ്പ്യൂട്ടറിൽ തിരയുക"
 
-#: ../mate_menu/plugins/applications.py:1082
-msgid "Find Software"
-msgstr "സോഫ്റ്റ്‌വേർ കണ്ടെത്തുക"
-
-#: ../mate_menu/plugins/applications.py:1089
-msgid "Find Tutorials"
-msgstr "പഠനസഹായികൾ കണ്ടെത്തുക"
-
-#: ../mate_menu/plugins/applications.py:1096
-msgid "Find Hardware"
-msgstr "ഹാർഡ്‌വേർ കണ്ടെത്തുക"
-
-#: ../mate_menu/plugins/applications.py:1103
-msgid "Find Ideas"
-msgstr "ആശയങ്ങൾ കണ്ടെത്തുക"
-
-#: ../mate_menu/plugins/applications.py:1110
-msgid "Find Users"
-msgstr "ഉപയോക്താക്കളെ കണ്ടെത്തുക"
-
-#: ../mate_menu/plugins/applications.py:1577
+#: ../mate_menu/plugins/applications.py:1329
+#, fuzzy
 msgid ""
-"Couldn't save favorites. Check if you have write access to "
-"~/.linuxmint/mintMenu"
+"Couldn't save favorites. Check if you have write access to ~/.config/mate-"
+"menu"
 msgstr ""
-"പ്രിയപ്പെട്ടവയെ സംരക്ഷിക്കാന്‍ കഴിഞ്ഞില്ല. ~/.linuxmint/mintMenu -ല്‍ "
-"നിങ്ങള്‍ക്ക് എഴുതുവാന്‍ തക്കതായ സാമീപ്യം ഉണ്ടോ എന്ന് പരിശോധിക്കുക"
+"പ്രിയപ്പെട്ടവയെ സംരക്ഷിക്കാന്‍ കഴിഞ്ഞില്ല. ~/.linuxmint/mintMenu -ല്‍ നിങ്ങള്‍ക്ക് എഴുതുവാന്‍ "
+"തക്കതായ സാമീപ്യം ഉണ്ടോ എന്ന് പരിശോധിക്കുക"
 
-#: ../mate_menu/plugins/applications.py:1778
+#: ../mate_menu/plugins/applications.py:1529
 msgid "All"
 msgstr "എല്ലാം"
 
-#: ../mate_menu/plugins/applications.py:1778
+#: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
 msgstr "എല്ലാ ആപ്പ്ലിക്കേഷനുകളും കാണിക്കുക"
 
-#: ../mate_menu/plugins/system_management.py:140
-msgid "Browse and install available software"
-msgstr "ലഭ്യമായ സോഫ്റ്റ്‌വെയര്‍-കളിലൂടെ പരതി ഇന്‍സ്റ്റോള്‍ ചെയ്യുക"
-
-#: ../mate_menu/plugins/system_management.py:147
+#: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr ""
-"സോഫ്റ്റ്‌വെയര്‍ പാക്കേജുകള്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യുകയോ, നീക്കം ചെയ്യുകയോ, "
-"നവീകരിക്കുകയോ ചെയ്യുക"
+msgstr "സോഫ്റ്റ്‌വെയര്‍ പാക്കേജുകള്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യുകയോ, നീക്കം ചെയ്യുകയോ, നവീകരിക്കുകയോ ചെയ്യുക"
 
-#: ../mate_menu/plugins/system_management.py:157
+#: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
 msgstr "നിങ്ങളുടെ സിസ്റ്റം ക്രമീകരിയ്ക്കുക"
 
-#: ../mate_menu/plugins/system_management.py:167
+#: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
 msgstr "കമാന്‍ഡ് ലൈന്‍ ഉപയോഗിക്കുക"
 
-#: ../mate_menu/plugins/system_management.py:170
-#: ../mate_menu/plugins/system_management.py:187
-msgid "Logout"
-msgstr "പുറത്ത്‌ കടക്കുക"
-
-#: ../mate_menu/plugins/system_management.py:174
-#: ../mate_menu/plugins/system_management.py:191
-msgid "Log out or switch user"
-msgstr "പുറത്തു കടക്കുക അല്ലെങ്കില്‍ ഉപഭോക്താവിനെ മാറ്റുക"
-
-#: ../mate_menu/plugins/system_management.py:184
+#: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
 msgstr "പൂട്ട്‌ തുറക്കാന്‍ അടയാളവാക്ക് ആവശ്യമാണ്"
 
-#: ../mate_menu/plugins/system_management.py:198
+#: ../mate_menu/plugins/system_management.py:185
+msgid "Logout"
+msgstr "പുറത്ത്‌ കടക്കുക"
+
+#: ../mate_menu/plugins/system_management.py:189
+msgid "Log out or switch user"
+msgstr "പുറത്തു കടക്കുക അല്ലെങ്കില്‍ ഉപഭോക്താവിനെ മാറ്റുക"
+
+#: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "അടക്കുക, വീണ്ടും തുറക്കുക, മയങ്ങുക അല്ലെങ്കില്‍ ഗാഡനിദ്രയിലാവുക"
 
-#: ../mate_menu/plugins/places.py:148
+#: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr "ലഭ്യമായ പ്രാദേശികവും വിദൂരവുമായ എല്ലാ ഡിസ്ക്കുകളും അറകളും പരതുക."
 
-#: ../mate_menu/plugins/places.py:158
+#: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
 msgstr "നിങ്ങളുടെ സ്വകാര്യ ഫോള്‍ഡറ്‍ തുറക്കുക"
 
-#: ../mate_menu/plugins/places.py:173
+#: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr ""
-"അടയാളപ്പെടുത്തിയ വെബ് പേജുകളും ലോക്കല്‍ നെറ്റ്‌വര്‍ക്ക്​ സ്ഥാനങ്ങളും തിരയുക"
+msgstr "അടയാളപ്പെടുത്തിയ വെബ് പേജുകളും ലോക്കല്‍ നെറ്റ്‌വര്‍ക്ക്​ സ്ഥാനങ്ങളും തിരയുക"
 
-#: ../mate_menu/plugins/places.py:196
+#: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
 msgstr "ടെസ്ക്ടോപില്‍ ഉള്ള വസ്തുക്കള്‍ പരതുക"
 
-#: ../mate_menu/plugins/places.py:210
+#: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
 msgstr "നീക്കം ചെയ്യപ്പെട്ട ഫയലുകള്‍ പരതുക"
 
-#: ../mate_menu/plugins/places.py:262
+#: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
 msgstr "ചവറ്റുകൊട്ട കാലിയാക്കുക"
+
+#. Set 'heading' property for plugin
+#: ../mate_menu/plugins/recent.py:48
+msgid "Recent documents"
+msgstr "കാലികമായ പ്രമാണങ്ങള്‍"
+
+#: ../mate_menu/keybinding.py:196
+msgid "Click to set a new accelerator key for opening and closing the menu.  "
+msgstr ""
+
+#: ../mate_menu/keybinding.py:197
+msgid "Press Escape or click again to cancel the operation.  "
+msgstr ""
+
+#: ../mate_menu/keybinding.py:198
+msgid "Press Backspace to clear the existing keybinding."
+msgstr ""
+
+#: ../mate_menu/keybinding.py:211
+msgid "Pick an accelerator"
+msgstr ""
+
+#: ../mate_menu/keybinding.py:264
+msgid "<not set>"
+msgstr ""
+
+#~ msgid "Search for packages to install"
+#~ msgstr "ഇൻസ്റ്റോൾ ചെയ്യാനുള്ള പാക്കേജുകൾ തിരയുക"
+
+#~ msgid "Software Manager"
+#~ msgstr "സോഫ്റ്റ്‌വേര്‍ മാനേജര്‍"
+
+#~ msgid "Install package '%s'"
+#~ msgstr "'%s' പാക്കേജ് ഇന്‍സ്റ്റോള്‍ ചെയ്യുക"
+
+#~ msgid "Uninstall"
+#~ msgstr "അണ്‍ഇന്‍സ്റ്റോള്‍ ചെയ്യുക"
+
+#~ msgid "Find Software"
+#~ msgstr "സോഫ്റ്റ്‌വേർ കണ്ടെത്തുക"
+
+#~ msgid "Find Tutorials"
+#~ msgstr "പഠനസഹായികൾ കണ്ടെത്തുക"
+
+#~ msgid "Find Hardware"
+#~ msgstr "ഹാർഡ്‌വേർ കണ്ടെത്തുക"
+
+#~ msgid "Find Ideas"
+#~ msgstr "ആശയങ്ങൾ കണ്ടെത്തുക"
+
+#~ msgid "Find Users"
+#~ msgstr "ഉപയോക്താക്കളെ കണ്ടെത്തുക"
+
+#~ msgid "Browse and install available software"
+#~ msgstr "ലഭ്യമായ സോഫ്റ്റ്‌വെയര്‍-കളിലൂടെ പരതി ഇന്‍സ്റ്റോള്‍ ചെയ്യുക"
 
 #~ msgid "Please wait, this can take some time"
 #~ msgstr "ദയവായി കാത്തിരിക്കൂ. ഇത്‌ കുറച്ച്‌ സമയം എടുത്തേക്കും"
 
-#, python-format
 #~ msgid "Remove %s?"
 #~ msgstr "%s നീക്കം ചെയ്യണോ?"
 
@@ -587,15 +564,12 @@ msgstr "ചവറ്റുകൊട്ട കാലിയാക്കുക"
 #~ msgid "Filter:"
 #~ msgstr "അരിപ്പ:"
 
-#, python-format
 #~ msgid "Search repositories for '%s'"
 #~ msgstr "'%s' - നെ repositories ഇല്‍ തിരയുക"
 
-#, python-format
 #~ msgid "Search portal for '%s'"
 #~ msgstr "'%s' - നെ പോര്‍ട്ടലില്‍ തിരയുക"
 
-#, python-format
 #~ msgid "Show package '%s'"
 #~ msgstr "'%s' പാക്കേജ് കാണിക്കുക"
 

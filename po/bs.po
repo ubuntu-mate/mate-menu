@@ -6,558 +6,538 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mate-menu\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-11-27 15:05+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
 "PO-Revision-Date: 2014-07-11 14:08+0000\n"
 "Last-Translator: Almir Zulic <zalmir@yahoo.com>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
+"Language: bs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
 "X-Generator: Launchpad (build 17355)\n"
 
-#: ../lib/mate-menu.py:48
+#: ../lib/mate-menu.py:70
 msgid "Menu"
 msgstr "Meni"
 
-#: ../lib/mate-menu.py:256
+#. Fake class for MyPlugin
+#: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
 msgstr "Nije moguće učitati plugin:"
 
-#: ../lib/mate-menu.py:328
+#: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
 msgstr "Nije moguće inicijalizirati plugin"
 
-#: ../lib/mate-menu.py:731
+#: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
 msgstr "Napredni MATE meni"
 
-#: ../lib/mate-menu.py:818
+#: ../lib/mate-menu.py:792
 msgid "Preferences"
 msgstr "Opcije"
 
-#: ../lib/mate-menu.py:821
+#: ../lib/mate-menu.py:795
 msgid "Edit menu"
 msgstr "Uredi meni"
 
-#: ../lib/mate-menu.py:824
+#: ../lib/mate-menu.py:798
 msgid "Reload plugins"
 msgstr "Ponovo učitaj plugine"
 
-#: ../lib/mate-menu.py:827
+#: ../lib/mate-menu.py:801
 msgid "About"
 msgstr "O programu"
 
-#: ../mate_menu/mate-menu-config.py:42
+#. i18n
+#: ../lib/mate-menu-config.py:50
 msgid "Menu preferences"
 msgstr "Opcije menija"
 
-#: ../mate_menu/mate-menu-config.py:45
+#: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
 msgstr "Uvijek pokreći sa omiljenom pločom"
 
-#: ../mate_menu/mate-menu-config.py:46
+#: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
 msgstr "Prikaži ikone za dugmad"
 
-#: ../mate_menu/mate-menu-config.py:47
+#: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
 msgstr "Koristi podešene boje"
 
-#: ../mate_menu/mate-menu-config.py:48
+#: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
 msgstr "Prikaži plugin sa nedavno korištenim dokumentima"
 
-#: ../mate_menu/mate-menu-config.py:49
+#: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
 msgstr "Prikaži aplikacijski plugin"
 
-#: ../mate_menu/mate-menu-config.py:50
+#: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
 msgstr "Prikaži sistemski plugin"
 
-#: ../mate_menu/mate-menu-config.py:51
+#: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
 msgstr "Prikaži plugin sa mjestima"
 
-#: ../mate_menu/mate-menu-config.py:53
+#: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
 msgstr "Prikaži komentare aplikacije"
 
-#: ../mate_menu/mate-menu-config.py:54
+#: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
 msgstr "Pokaži ikone kategorije"
 
-#: ../mate_menu/mate-menu-config.py:55
+#: ../lib/mate-menu-config.py:63
 msgid "Hover"
 msgstr "Naciljano mišem"
 
-#: ../mate_menu/mate-menu-config.py:56
+#: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
 msgstr "Zapamti zadnju kategoriju ili pretraživanje"
 
-#: ../mate_menu/mate-menu-config.py:57
-msgid "Search for packages to install"
-msgstr "Pretraga paketa za instalaciju"
-
-#: ../mate_menu/mate-menu-config.py:58
+#: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
 msgstr "Zamijeni ime i generičko ime"
 
-#: ../mate_menu/mate-menu-config.py:60
+#: ../lib/mate-menu-config.py:67
 msgid "Border width:"
 msgstr "Širina ivice:"
 
-#: ../mate_menu/mate-menu-config.py:61
+#: ../lib/mate-menu-config.py:68
 msgid "pixels"
 msgstr "piksela"
 
-#: ../mate_menu/mate-menu-config.py:63
+#: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
 msgstr "Providnost:"
 
-#: ../mate_menu/mate-menu-config.py:66
+#: ../lib/mate-menu-config.py:73
 msgid "Button text:"
 msgstr "Tekst dugmeta:"
 
-#: ../mate_menu/mate-menu-config.py:67
+#: ../lib/mate-menu-config.py:74
 msgid "Options"
 msgstr "Opcije"
 
-#: ../mate_menu/mate-menu-config.py:68
-#: ../mate_menu/plugins/applications.py:251
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
 msgid "Applications"
 msgstr "Aplikacije"
 
-#: ../mate_menu/mate-menu-config.py:70
+#: ../lib/mate-menu-config.py:77
 msgid "Theme"
 msgstr "Tema"
 
-#: ../mate_menu/mate-menu-config.py:71
-#: ../mate_menu/plugins/applications.py:248
-#: ../mate_menu/plugins/applications.py:249
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
+#: ../mate_menu/plugins/applications.py:253
 msgid "Favorites"
 msgstr "Omiljeni"
 
-#: ../mate_menu/mate-menu-config.py:72
+#: ../lib/mate-menu-config.py:79
 msgid "Main button"
 msgstr "Glavno dugme"
 
-#: ../mate_menu/mate-menu-config.py:73
+#: ../lib/mate-menu-config.py:80
 msgid "Plugins"
 msgstr ""
 
-#: ../mate_menu/mate-menu-config.py:75
+#: ../lib/mate-menu-config.py:82
 msgid "Background:"
 msgstr "Pozadina:"
 
-#: ../mate_menu/mate-menu-config.py:76
+#: ../lib/mate-menu-config.py:83
 msgid "Headings:"
 msgstr "Zaglavlja:"
 
-#: ../mate_menu/mate-menu-config.py:77
+#: ../lib/mate-menu-config.py:84
 msgid "Borders:"
 msgstr "Ivice:"
 
-#: ../mate_menu/mate-menu-config.py:78
+#: ../lib/mate-menu-config.py:85
 msgid "Theme:"
 msgstr "Tema:"
 
-#: ../mate_menu/mate-menu-config.py:82
+#. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
+#. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
+#: ../lib/mate-menu-config.py:89
 msgid "Number of columns:"
 msgstr "Broj kolona:"
 
-#: ../mate_menu/mate-menu-config.py:83
-#: ../mate_menu/mate-menu-config.py:84
-#: ../mate_menu/mate-menu-config.py:85
-#: ../mate_menu/mate-menu-config.py:86
+#: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
+#: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
 msgid "Icon size:"
 msgstr "Veličina ikone:"
 
-#: ../mate_menu/mate-menu-config.py:87
+#: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
 msgstr "Kašnjenje prelaska mišem (ms):"
 
-#: ../mate_menu/mate-menu-config.py:88
+#: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
 msgstr "Ikona dugmeta:"
 
-#: ../mate_menu/mate-menu-config.py:89
+#: ../lib/mate-menu-config.py:96
 msgid "Search command:"
 msgstr "Komanda za pretragu:"
 
-#: ../mate_menu/mate-menu-config.py:91
-#: ../mate_menu/plugins/places.py:44
+#. Set 'heading' property for plugin
+#: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
 msgid "Places"
 msgstr "Mjesta"
 
-#: ../mate_menu/mate-menu-config.py:92
-#: ../mate_menu/mate-menu-config.py:104
+#: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
 msgstr "Dopusti traku za pregled"
 
-#: ../mate_menu/mate-menu-config.py:93
+#: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
 msgstr "Prikaži GTK oznake"
 
-#: ../mate_menu/mate-menu-config.py:94
-#: ../mate_menu/mate-menu-config.py:105
+#: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
 msgstr "Visina:"
 
-#: ../mate_menu/mate-menu-config.py:95
+#: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
 msgstr "Zadana mjesta:"
 
-#: ../mate_menu/mate-menu-config.py:96
-#: ../mate_menu/plugins/places.py:141
+#: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
 msgstr "Računar"
 
-#: ../mate_menu/mate-menu-config.py:97
-#: ../mate_menu/plugins/places.py:151
+#: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:164
 msgid "Home Folder"
 msgstr "Početni direktorij"
 
-#: ../mate_menu/mate-menu-config.py:98
-#: ../mate_menu/plugins/places.py:164
-#: ../mate_menu/plugins/places.py:166
+#: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
 msgstr "Mreža"
 
-#: ../mate_menu/mate-menu-config.py:99
-#: ../mate_menu/plugins/places.py:189
+#: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:198
 msgid "Desktop"
 msgstr "Desktop"
 
-#: ../mate_menu/mate-menu-config.py:100
-#: ../mate_menu/plugins/places.py:199
+#: ../lib/mate-menu-config.py:107 ../mate_menu/plugins/places.py:209
 msgid "Trash"
 msgstr "Smeće"
 
-#: ../mate_menu/mate-menu-config.py:101
+#: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
 msgstr "Podešena mjesta:"
 
-#: ../mate_menu/mate-menu-config.py:103
-#: ../mate_menu/plugins/system_management.py:40
+#. Set 'heading' property for plugin
+#: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
 msgid "System"
 msgstr "Sistem"
 
-#: ../mate_menu/mate-menu-config.py:106
+#: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
 msgstr "Zadane stavke:"
 
-#: ../mate_menu/mate-menu-config.py:107
-#: ../mate_menu/plugins/system_management.py:136
-msgid "Software Manager"
-msgstr "Upravljanje aplikacijama"
-
-#: ../mate_menu/mate-menu-config.py:108
-#: ../mate_menu/plugins/system_management.py:143
+#: ../lib/mate-menu-config.py:114
+#: ../mate_menu/plugins/system_management.py:147
+#: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
 msgstr "Upravljanje paketima"
 
-#: ../mate_menu/mate-menu-config.py:109
-#: ../mate_menu/plugins/system_management.py:150
+#: ../lib/mate-menu-config.py:115
+#: ../mate_menu/plugins/system_management.py:157
 msgid "Control Center"
 msgstr "Upravljački centar"
 
-#: ../mate_menu/mate-menu-config.py:110
-#: ../mate_menu/plugins/system_management.py:160
+#: ../lib/mate-menu-config.py:116
+#: ../mate_menu/plugins/system_management.py:164
 msgid "Terminal"
 msgstr "Terminal"
 
-#: ../mate_menu/mate-menu-config.py:111
-#: ../mate_menu/plugins/system_management.py:177
+#: ../lib/mate-menu-config.py:117
+#: ../mate_menu/plugins/system_management.py:174
 msgid "Lock Screen"
 msgstr "Zaključaj ekran"
 
-#: ../mate_menu/mate-menu-config.py:112
+#: ../lib/mate-menu-config.py:118
 msgid "Log Out"
 msgstr "Odjava"
 
-#: ../mate_menu/mate-menu-config.py:113
-#: ../mate_menu/plugins/system_management.py:194
+#: ../lib/mate-menu-config.py:119
+#: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
 msgstr "Zatvori"
 
-#: ../mate_menu/mate-menu-config.py:115
+#: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
 msgstr "Uredi mjesto"
 
-#: ../mate_menu/mate-menu-config.py:116
+#: ../lib/mate-menu-config.py:122
 msgid "New Place"
 msgstr "Novo mjesto"
 
-#: ../mate_menu/mate-menu-config.py:117
+#: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
 msgstr "Odaberite direktorij"
 
-#: ../mate_menu/mate-menu-config.py:147
+#: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
 msgstr "Prečica na tastaturi:"
 
-#: ../mate_menu/mate-menu-config.py:153
+#: ../lib/mate-menu-config.py:158
 msgid "Images"
 msgstr "Slike"
 
-#: ../mate_menu/mate-menu-config.py:271
+#: ../lib/mate-menu-config.py:267
 msgid "Name"
 msgstr "Naziv"
 
-#: ../mate_menu/mate-menu-config.py:272
+#: ../lib/mate-menu-config.py:268
 msgid "Path"
 msgstr "Putanja"
 
-#: ../mate_menu/mate-menu-config.py:287
+#: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
 msgstr "Desktop tema"
 
-#: ../mate_menu/mate-menu-config.py:426
-#: ../mate_menu/mate-menu-config.py:457
+#: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
 msgid "Name:"
 msgstr "Naziv:"
 
-#: ../mate_menu/mate-menu-config.py:427
-#: ../mate_menu/mate-menu-config.py:458
+#: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
 msgid "Path:"
 msgstr "Putanja:"
 
-#: ../mate_menu/keybinding.py:197
-msgid ""
-"Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"Kliknite da postavite novu ubrzivačku tipku za otvaranje i zatvaranje "
-"menija.  "
-
-#: ../mate_menu/keybinding.py:198
-msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Pritisnite Escape ili kliknite ponovo da prekinete operaciju.  "
-
-#: ../mate_menu/keybinding.py:199
-msgid "Press Backspace to clear the existing keybinding."
-msgstr ""
-"Pritisnite Backspace da obrišete postojeće povezivanje tipki na tastaturi."
-
-#: ../mate_menu/keybinding.py:212
-msgid "Pick an accelerator"
-msgstr "Izaberite ubrzivač"
-
-#: ../mate_menu/keybinding.py:265
-msgid "<not set>"
-msgstr "<nije postavljeno>"
-
-#: ../mate_menu/plugins/recent.py:31
-msgid "Recent documents"
-msgstr "Nedavno korišteni dokumenti"
-
-#: ../mate_menu/plugins/applications.py:246
+#. i18n
+#: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
 msgstr "Traži:"
 
-#: ../mate_menu/plugins/applications.py:250
+#: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
 msgstr "Sve aplikacije"
 
-#: ../mate_menu/plugins/applications.py:634
+#: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
 msgstr "Traži %s na Googleu"
 
-#: ../mate_menu/plugins/applications.py:641
+#: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "Traži %s na Wikipedia"
 
-#: ../mate_menu/plugins/applications.py:657
+#: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "Traži %s u rječniku"
 
-#: ../mate_menu/plugins/applications.py:664
+#: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
 msgstr "Traži %s na računaru"
 
-#: ../mate_menu/plugins/applications.py:742
-#: ../mate_menu/plugins/applications.py:795
-#, python-format
-msgid "Install package '%s'"
-msgstr "Instaliraj paket '%s'"
-
-#: ../mate_menu/plugins/applications.py:918
-#: ../mate_menu/plugins/applications.py:986
+#. i18n
+#: ../mate_menu/plugins/applications.py:763
+#: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
 msgstr "Dodaj na desktop"
 
-#: ../mate_menu/plugins/applications.py:919
-#: ../mate_menu/plugins/applications.py:987
+#: ../mate_menu/plugins/applications.py:764
+#: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
 msgstr "Dodaj na ploču"
 
-#: ../mate_menu/plugins/applications.py:921
-#: ../mate_menu/plugins/applications.py:969
+#: ../mate_menu/plugins/applications.py:766
+#: ../mate_menu/plugins/applications.py:813
 msgid "Insert space"
 msgstr "Umetni razmak"
 
-#: ../mate_menu/plugins/applications.py:922
-#: ../mate_menu/plugins/applications.py:970
+#: ../mate_menu/plugins/applications.py:767
+#: ../mate_menu/plugins/applications.py:814
 msgid "Insert separator"
 msgstr "Umetni separator"
 
-#: ../mate_menu/plugins/applications.py:924
-#: ../mate_menu/plugins/applications.py:990
+#: ../mate_menu/plugins/applications.py:769
+#: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
 msgstr "Pokreni kad se prijavim"
 
-#: ../mate_menu/plugins/applications.py:926
-#: ../mate_menu/plugins/applications.py:992
+#: ../mate_menu/plugins/applications.py:771
+#: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
 msgstr "Pokreni"
 
-#: ../mate_menu/plugins/applications.py:927
+#: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
 msgstr "Ukloni iz omiljenih"
 
-#: ../mate_menu/plugins/applications.py:929
-#: ../mate_menu/plugins/applications.py:996
+#: ../mate_menu/plugins/applications.py:774
+#: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
 msgstr "Izmijeni svojstva"
 
-#: ../mate_menu/plugins/applications.py:968
+#. i18n
+#: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
 msgstr "Ukloni"
 
-#: ../mate_menu/plugins/applications.py:989
+#: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
 msgstr "Prikaži u mojim omiljenim"
 
-#: ../mate_menu/plugins/applications.py:993
-msgid "Uninstall"
-msgstr "Deinstaliraj"
-
-#: ../mate_menu/plugins/applications.py:994
+#: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
 msgstr "Izbriši iz menija"
 
-#: ../mate_menu/plugins/applications.py:1048
+#: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
 msgstr "Pretraži Google"
 
-#: ../mate_menu/plugins/applications.py:1055
+#: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
 msgstr "Pretraži Wikipediu"
 
-#: ../mate_menu/plugins/applications.py:1065
+#: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
 msgstr "Pretraži rječnik"
 
-#: ../mate_menu/plugins/applications.py:1072
+#: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
 msgstr "Pretraži računar"
 
-#: ../mate_menu/plugins/applications.py:1082
-msgid "Find Software"
-msgstr "Pronađi softver"
-
-#: ../mate_menu/plugins/applications.py:1089
-msgid "Find Tutorials"
-msgstr "Pronađi uputstva"
-
-#: ../mate_menu/plugins/applications.py:1096
-msgid "Find Hardware"
-msgstr "Pronađi hardver"
-
-#: ../mate_menu/plugins/applications.py:1103
-msgid "Find Ideas"
-msgstr "Pronađi ideje"
-
-#: ../mate_menu/plugins/applications.py:1110
-msgid "Find Users"
-msgstr "Pronađi korisnike"
-
-#: ../mate_menu/plugins/applications.py:1577
+#: ../mate_menu/plugins/applications.py:1329
+#, fuzzy
 msgid ""
-"Couldn't save favorites. Check if you have write access to "
-"~/.linuxmint/mintMenu"
+"Couldn't save favorites. Check if you have write access to ~/.config/mate-"
+"menu"
 msgstr ""
 "Nije moguće sačuvati omiljene postavke. Provjerite da li imate dozvolu za "
 "pisanje u ~/.linuxmint/mintMenu"
 
-#: ../mate_menu/plugins/applications.py:1778
+#: ../mate_menu/plugins/applications.py:1529
 msgid "All"
 msgstr "Sve"
 
-#: ../mate_menu/plugins/applications.py:1778
+#: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
 msgstr "Prikaži sve aplikacije"
 
-#: ../mate_menu/plugins/system_management.py:140
-msgid "Browse and install available software"
-msgstr "Pretraži i instaliraj dostupni softver"
-
-#: ../mate_menu/plugins/system_management.py:147
+#: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
 msgstr "Instalacija, nadogradnja i uklanjanje programskih paketa"
 
-#: ../mate_menu/plugins/system_management.py:157
+#: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
 msgstr "Podesite vaš sistem"
 
-#: ../mate_menu/plugins/system_management.py:167
+#: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
 msgstr "Koristite komandnu liniju"
 
-#: ../mate_menu/plugins/system_management.py:170
-#: ../mate_menu/plugins/system_management.py:187
-msgid "Logout"
-msgstr "Odjava"
-
-#: ../mate_menu/plugins/system_management.py:174
-#: ../mate_menu/plugins/system_management.py:191
-msgid "Log out or switch user"
-msgstr "Odjavite se ili zamijenite korisnika"
-
-#: ../mate_menu/plugins/system_management.py:184
+#: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
 msgstr "Potrebna je šifra za otključavanje"
 
-#: ../mate_menu/plugins/system_management.py:198
+#: ../mate_menu/plugins/system_management.py:185
+msgid "Logout"
+msgstr "Odjava"
+
+#: ../mate_menu/plugins/system_management.py:189
+msgid "Log out or switch user"
+msgstr "Odjavite se ili zamijenite korisnika"
+
+#: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Gašenje, ponovno pokretanje, suspendovanje ili hibernacija"
 
-#: ../mate_menu/plugins/places.py:148
+#: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
 "Pretraži sve lokalne i udaljene diskove i direktorije dostupne ovom računaru"
 
-#: ../mate_menu/plugins/places.py:158
+#: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
 msgstr "Otvorite lični direktorij"
 
-#: ../mate_menu/plugins/places.py:173
+#: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
 msgstr "Pretraži zabilježene i lokalne mrežne lokacije"
 
-#: ../mate_menu/plugins/places.py:196
+#: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
 msgstr "Pretraži stavke na desktopu"
 
-#: ../mate_menu/plugins/places.py:210
+#: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
 msgstr "Pretraži obrisane datoteke"
 
-#: ../mate_menu/plugins/places.py:262
+#: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
 msgstr "Isprazni smeće"
+
+#. Set 'heading' property for plugin
+#: ../mate_menu/plugins/recent.py:48
+msgid "Recent documents"
+msgstr "Nedavno korišteni dokumenti"
+
+#: ../mate_menu/keybinding.py:196
+msgid "Click to set a new accelerator key for opening and closing the menu.  "
+msgstr ""
+"Kliknite da postavite novu ubrzivačku tipku za otvaranje i zatvaranje "
+"menija.  "
+
+#: ../mate_menu/keybinding.py:197
+msgid "Press Escape or click again to cancel the operation.  "
+msgstr "Pritisnite Escape ili kliknite ponovo da prekinete operaciju.  "
+
+#: ../mate_menu/keybinding.py:198
+msgid "Press Backspace to clear the existing keybinding."
+msgstr ""
+"Pritisnite Backspace da obrišete postojeće povezivanje tipki na tastaturi."
+
+#: ../mate_menu/keybinding.py:211
+msgid "Pick an accelerator"
+msgstr "Izaberite ubrzivač"
+
+#: ../mate_menu/keybinding.py:264
+msgid "<not set>"
+msgstr "<nije postavljeno>"
+
+#~ msgid "Search for packages to install"
+#~ msgstr "Pretraga paketa za instalaciju"
+
+#~ msgid "Software Manager"
+#~ msgstr "Upravljanje aplikacijama"
+
+#~ msgid "Install package '%s'"
+#~ msgstr "Instaliraj paket '%s'"
+
+#~ msgid "Uninstall"
+#~ msgstr "Deinstaliraj"
+
+#~ msgid "Find Software"
+#~ msgstr "Pronađi softver"
+
+#~ msgid "Find Tutorials"
+#~ msgstr "Pronađi uputstva"
+
+#~ msgid "Find Hardware"
+#~ msgstr "Pronađi hardver"
+
+#~ msgid "Find Ideas"
+#~ msgstr "Pronađi ideje"
+
+#~ msgid "Find Users"
+#~ msgstr "Pronađi korisnike"
+
+#~ msgid "Browse and install available software"
+#~ msgstr "Pretraži i instaliraj dostupni softver"
 
 #~ msgid "Based on USP from S.Chanderbally"
 #~ msgstr "Bazirano na USP od S.Chanderbally"
 
-#, python-format
 #~ msgid "Remove %s?"
 #~ msgstr "Ukloni %s?"
 
@@ -579,18 +559,15 @@ msgstr "Isprazni smeće"
 #~ msgid "Filter:"
 #~ msgstr "Filter:"
 
-#, python-format
 #~ msgid "Show package '%s'"
 #~ msgstr "Pokaži paket '%s'"
 
 #~ msgid "No matching package found"
 #~ msgstr "Odgovarajući paket nije pronađen"
 
-#, python-format
 #~ msgid "Search repositories for '%s'"
 #~ msgstr "Pretraži spremišta za '%s'"
 
-#, python-format
 #~ msgid "Search portal for '%s'"
 #~ msgstr "Pretraži portal za '%s'"
 
