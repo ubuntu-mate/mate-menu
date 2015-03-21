@@ -95,7 +95,7 @@ setup(
     description = "An advanced menu for MATE. Supports filtering, favorites, autosession, and many other features.",
     license = 'GPLv2+',
     author = 'Martin Wimpress',
-    url = 'https://bitbucket.org/flexiondotorg/mate-tweak/',
+    url = 'https://bitbucket.org/ubuntu-mate/mate-menu/',
     packages = [ 'mate_menu', 'mate_menu.plugins', ],
     package_dir = {
         '': '.',
