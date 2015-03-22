@@ -1,22 +1,22 @@
-# Hungarian translation of mintmenu.
-# Copyright (C) 2013 Free Software Foundation, Inc.
-# This file is distributed under the same license as the mintmenu package.
-# KAMI <kami911@gmail.com>, 2013-2014.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Rezső Páder <rezso@rezso.net>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: mintmenu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-17 17:04+0000\n"
-"PO-Revision-Date: 2014-11-28 13:33+0000\n"
-"Last-Translator: KAMI <kami911@gmail.com>\n"
-"Language-Team: Hungarian\n"
-"Language: hu\n"
+"PO-Revision-Date: 2015-03-22 13:52+0000\n"
+"Last-Translator: Rezső Páder <rezso@rezso.net>\n"
+"Language-Team: Hungarian (http://www.transifex.com/projects/p/MATE/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
@@ -407,13 +407,10 @@ msgid "Search Computer"
 msgstr "Keresés a számítógépen"
 
 #: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"Nem sikerült menteni a kedvenceket. Ellenőrizze a ~/.linuxmint/mintMenu "
-"mappa írási jogosultságait."
+msgstr "Nem sikerült menteni a kedvenceket. Ellenőrizze a ~/.config/mate-menu mappa írási jogosultságait."
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
@@ -454,8 +451,7 @@ msgstr "Leállítás, újraindítás, felfüggesztés vagy hibernálás"
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"A számítógépről elérhető összes helyi és távoli lemez és mappa tallózása"
+msgstr "A számítógépről elérhető összes helyi és távoli lemez és mappa tallózása"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
@@ -484,20 +480,15 @@ msgstr "Legutóbbi dokumentumok"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"Kattintson egy új gyorsbillentyű beállításához a menü megnyitásához és "
-"bezárásához.  "
+msgstr "Kattintson egy új gyorsbillentyű beállításához a menü megnyitásához és bezárásához.  "
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr ""
-"Nyomja meg az ESC gombot vagy kattintson újra a művelet megszakításához.  "
+msgstr "Nyomja meg az ESC gombot vagy kattintson újra a művelet megszakításához.  "
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr ""
-"Nyomja meg a Backspace gombot a már létező billentyű összerendelés "
-"törléséhez."
+msgstr "Nyomja meg a Backspace gombot a már létező billentyű összerendelés törléséhez."
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
@@ -506,90 +497,3 @@ msgstr "Gyorsbillentyű választása"
 #: ../mate_menu/keybinding.py:264
 msgid "<not set>"
 msgstr "<nincs beállítva>"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Telepítendő csomagok keresése"
-
-#~ msgid "Software Manager"
-#~ msgstr "Szoftverkezelő"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "A(z) „%s” csomag telepítése"
-
-#~ msgid "Uninstall"
-#~ msgstr "Eltávolítás"
-
-#~ msgid "Find Software"
-#~ msgstr "Alkalmazás keresése"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Útmutató keresése"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Hardver keresése"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Ötletek keresése"
-
-#~ msgid "Find Users"
-#~ msgstr "Felhasználók keresése"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Elérhető alkalmazások tallózása és telepítése"
-
-#~ msgid "Show sidepane"
-#~ msgstr "Oldalpanel megjelenítése"
-
-#~ msgid "Show recent documents"
-#~ msgstr "Legutóbbi dokumentumok megjelenítése"
-
-#~ msgid "Colors"
-#~ msgstr "Színek"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Kis türelmet, ez eltarthat egy ideig"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Az alkalmazás sikeresen eltávolítva"
-
-#~ msgid "No matching package found"
-#~ msgstr "Nem található megfelelő csomag"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Szeretné eltávolítani ezt a menübejegyzést?"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Eltávolítandó csomagok"
-
-#~ msgid "File not found"
-#~ msgstr "A fájl nem található"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "Nem .menu fájl"
-
-#~ msgid "Filter:"
-#~ msgstr "Szűrő:"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "'%s' keresése a csomagtárolókban"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "'%s' keresése a Szoftverportálon"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "A(z) '%s' csomag megjelenítése"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "S.Chanderbally USP-je alapján"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "A következő csomagok lesznek eltávolítva:"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "Érvénytelen .menu fájl"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Továbbfejlesztett Gnome menü"
-
-#~ msgid "Remove %s?"
-#~ msgstr "„%s” eltávolítása?"
