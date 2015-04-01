@@ -68,7 +68,7 @@ data_files = [
                                                                     'data/plugins/system_management.glade',
                                                                     'data/plugins/places.glade',
                                                                     'data/plugins/recent.glade',
-								    'mate_menu/plugins/applications.py',
+                                                                    'mate_menu/plugins/applications.py',
                                                                     'mate_menu/plugins/system_management.py',
                                                                     'mate_menu/plugins/places.py',
                                                                     'mate_menu/plugins/recent.py',

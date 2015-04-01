@@ -1,22 +1,22 @@
-# Romanian translation for MATE Menu
-# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Daniel <danny34ever@yahoo.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-17 17:04+0000\n"
-"PO-Revision-Date: 2014-12-04 21:15+0000\n"
-"Last-Translator: Flaviu <flaviu@gmx.com>\n"
-"Language-Team: Romanian <ro@li.org>\n"
-"Language: ro\n"
+"PO-Revision-Date: 2015-03-18 14:17+0000\n"
+"Last-Translator: Daniel <danny34ever@yahoo.com>\n"
+"Language-Team: Romanian (http://www.transifex.com/projects/p/MATE/language/ro/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
@@ -25,11 +25,11 @@ msgstr "Meniu"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
-msgstr "Nu s-a putut încărca modulul:"
+msgstr "Modulul nu a putut fi încărcat:"
 
 #: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
-msgstr "Nu s-a putut iniţializa modulul:"
+msgstr "Modulul nu a putut fi inițializat"
 
 #: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
@@ -37,15 +37,15 @@ msgstr "Meniu MATE avansat"
 
 #: ../lib/mate-menu.py:792
 msgid "Preferences"
-msgstr "Preferinţe"
+msgstr "Preferințe"
 
 #: ../lib/mate-menu.py:795
 msgid "Edit menu"
-msgstr "Modifică meniul"
+msgstr "Modificare meniu"
 
 #: ../lib/mate-menu.py:798
 msgid "Reload plugins"
-msgstr "Reîncarcă modulele"
+msgstr "Reîncarcă module"
 
 #: ../lib/mate-menu.py:801
 msgid "About"
@@ -54,59 +54,59 @@ msgstr "Despre"
 #. i18n
 #: ../lib/mate-menu-config.py:50
 msgid "Menu preferences"
-msgstr "Preferinţe meniu"
+msgstr "Preferințe meniu"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr "Încep întotdeauna cu panoul favorite"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
-msgstr "Arată pictograma butonului"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr "Foloseşte culori personalizate"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr "Modulul \"Documente utilizate recent\""
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr "Modulul \"Aplicații\""
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr "Modulul \"Sistem\""
+msgstr "Arată modul sistem"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr "Modulul \"Locații\""
+msgstr ""
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr "Arată comentariile aplicației"
+msgstr "Arată comentarii aplicații"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
-msgstr "Arată pictogramele categoriilor"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr "Hover"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr "Ține minte ultima categorie sau ultima căutare"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr "Schimbă numele și numele generic"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr "Lățime margine:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
@@ -122,7 +122,7 @@ msgstr "Text buton:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "Opţiuni"
+msgstr "Opțiuni"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
 msgid "Applications"
@@ -139,11 +139,11 @@ msgstr "Favorite"
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "Butonul principal"
+msgstr "Buton principal"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr "Plugin-uri"
+msgstr "Module"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Background:"
@@ -151,11 +151,11 @@ msgstr "Fundal:"
 
 #: ../lib/mate-menu-config.py:83
 msgid "Headings:"
-msgstr "Titluri:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "Borders:"
-msgstr "Margini:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
@@ -165,7 +165,7 @@ msgstr "Temă:"
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:89
 msgid "Number of columns:"
-msgstr "Număr de coloane:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
 #: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
@@ -174,15 +174,15 @@ msgstr "Dimensiune pictogramă:"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr "Întârziere hover (ms):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
-msgstr "Pictogramă buton:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr "Comandă de căutare:"
+msgstr "Comandă căutare:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
@@ -191,11 +191,11 @@ msgstr "Locuri"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr "Permite derularea"
+msgstr "Permite bară de derulare"
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
-msgstr "Afişează semnele de carte GTK"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
@@ -203,15 +203,15 @@ msgstr "Înălțime:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "Comută locurile implicite:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
-msgstr "Calculator"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:164
 msgid "Home Folder"
-msgstr "Dosar Acasă"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
@@ -227,7 +227,7 @@ msgstr "Coș de gunoi"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr "Locuri personalizate:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
@@ -236,13 +236,13 @@ msgstr "Sistem"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "Comută obiectele implicite:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
 #: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
-msgstr "Manager de pachete"
+msgstr "Administrator de pachete"
 
 #: ../lib/mate-menu-config.py:115
 #: ../mate_menu/plugins/system_management.py:157
@@ -257,32 +257,32 @@ msgstr "Terminal"
 #: ../lib/mate-menu-config.py:117
 #: ../mate_menu/plugins/system_management.py:174
 msgid "Lock Screen"
-msgstr "Blocare ecran"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
-msgstr "Ieşire din cont"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:119
 #: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
-msgstr "Ieșire"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr "Modifică locaţie"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr "Locație nouă"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr "Alege un dosar"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
-msgstr "Scurtături tastatură:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:158
 msgid "Images"
@@ -311,57 +311,57 @@ msgstr "Cale:"
 #. i18n
 #: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
-msgstr "Caută:"
+msgstr "Căutare:"
 
 #: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
-msgstr "Toate aplicațiile"
+msgstr "Toate aplicațile"
 
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
-msgstr "Caută cu Google %s"
+msgstr "Caută %s pe Google"
 
 #: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Caută cu Wikipedia %s"
+msgstr "Caută %s pe Wikipedia"
 
 #: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Caută %s în Dicționar"
+msgstr "Caută %s  în Dicționar"
 
 #: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Caută în Calculator după %s"
+msgstr "Caută %s în calculator"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:763
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
-msgstr "Adaugă pe spaţiul de lucru"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:764
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
-msgstr "Adaugă în panou"
+msgstr "Adaugă la panou"
 
 #: ../mate_menu/plugins/applications.py:766
 #: ../mate_menu/plugins/applications.py:813
 msgid "Insert space"
-msgstr "Introdu spațiu"
+msgstr "Inserează spațiu"
 
 #: ../mate_menu/plugins/applications.py:767
 #: ../mate_menu/plugins/applications.py:814
 msgid "Insert separator"
-msgstr "Introdu separator"
+msgstr "Inserează separator"
 
 #: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr "Porneşte când mă conectez"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
@@ -370,29 +370,29 @@ msgstr "Lansează"
 
 #: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
-msgstr "Șterge din favorite"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
-msgstr "Editează proprietățile"
+msgstr "Modificare proprietăți"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
-msgstr "Șterge"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr "Arată în favoritele mele"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
-msgstr "Şterge din meniu"
+msgstr "Șterge din meniu"
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr "Caută cu Google"
+msgstr "Caută pe Google"
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
@@ -400,40 +400,37 @@ msgstr "Caută pe Wikipedia"
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr "Caută în dicționar"
+msgstr "Caută în Dicționar"
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
 msgstr "Caută în calculator"
 
 #: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Nu s-au putut salva favoritele. Verifică dacă ai drept de scriere în ~/."
-"linuxmint/mintMenu"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
-msgstr "Toate"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
-msgstr "Arată toate aplicaţiile"
+msgstr "Arată toate aplicațiile"
 
 #: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr "Instalează, dezinstalează şi actualizează pachete software"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
-msgstr "Configurează sistemul"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
-msgstr "Folosește linia de comandă"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
@@ -441,11 +438,11 @@ msgstr "Necesită parolă pentru deblocare"
 
 #: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
-msgstr "Deconectare"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:189
 msgid "Log out or switch user"
-msgstr "Deconectare sau schimbare utilizator"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
@@ -455,28 +452,26 @@ msgstr "Oprire, repornire, suspendare sau hibernare"
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Navighează toate discurile locale şi la distanţă şi dosarele accesibile de "
-"pe acest calculator"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
-msgstr "Deschide dosarul personal"
+msgstr "Deschide dosarul dumneavoastră personal"
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr "Navighează prin locațiile favorite sau din rețeaua locală"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr "Răsfoieşte obiectele de pe spaţiul de lucru"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr "Răsfoieşte fișierele șterse"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
-msgstr "Goleşte coșul de gunoi"
+msgstr "Golește coșul de gunoi"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
@@ -486,108 +481,19 @@ msgstr "Documente recente"
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
-"Faceți clic pentru a stabili o nouă cheie accelerator pentru deschiderea și "
-"închiderea meniului.  "
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Apăsă tasta ESC sau fă clic din nou pentru renunțarea la operație.  "
+msgstr ""
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Apăsă tasta Backspace pentru ștergerea asocierii curente."
+msgstr ""
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
-msgstr "Alege un accelerator"
+msgstr "Alegeți un accelerator"
 
 #: ../mate_menu/keybinding.py:264
 msgid "<not set>"
-msgstr "<neconfigurat>"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Caută pachete de instalat"
-
-#~ msgid "Software Manager"
-#~ msgstr "Manager de programe"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Instalează pachetul '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "Dezinstalează"
-
-#~ msgid "Find Software"
-#~ msgstr "Caută software"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Caută tutoriale"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Caută hardware"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Caută idei"
-
-#~ msgid "Find Users"
-#~ msgstr "Caută utilizatori"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Caută şi instalează software disponibil"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Bazat pe USP - al lui S.Chanderbally"
-
-#~ msgid "No matching package found"
-#~ msgstr "Nu s-a găsit pachetul potrivt"
-
-#~ msgid "Show sidepane"
-#~ msgstr "Arată panou lateral"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "Nu este un fișier .menu"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "Nu este un fișier .menu valid"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "Arată pachetul '%s'"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Doriți să ștergeți această înregistrare din meniu?"
-
-#~ msgid "Colors"
-#~ msgstr "Culori"
-
-#~ msgid "File not found"
-#~ msgstr "Fișierul nu a fost găsit"
-
-#~ msgid "Filter:"
-#~ msgstr "Filtru:"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Următoarele pachete vor fi dezinstalate:"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Te rog aşteaptă; operaţiunea poate dura mai mult"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Aplicaţia s-a dezinstalat cu succes"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Pachete pentru dezinstalare"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Dezinstalez %s?"
-
-#~ msgid "Show recent documents"
-#~ msgstr "Arată documentele recente"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "Caută în depozite: '%s'"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "Caută în portal: '%s'"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Meniu Avansat Gnome"
+msgstr ""

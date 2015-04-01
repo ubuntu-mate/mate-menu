@@ -1,22 +1,22 @@
-# Malay translation for MATE Menu
-# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# abuyop <abuyop@gmail.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-17 17:04+0000\n"
-"PO-Revision-Date: 2014-12-07 07:46+0000\n"
-"Last-Translator: Fazwan Fazil <takaizu91@gmail.com>\n"
-"Language-Team: Malay <ms@li.org>\n"
-"Language: ms\n"
+"PO-Revision-Date: 2015-03-20 23:34+0000\n"
+"Last-Translator: abuyop <abuyop@gmail.com>\n"
+"Language-Team: Malay (http://www.transifex.com/projects/p/MATE/language/ms/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Language: ms\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
@@ -25,27 +25,27 @@ msgstr "Menu"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
-msgstr "Tidak boleh memuatkan plugin:"
+msgstr "Tidak dapat muatkan pemalam:"
 
 #: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
-msgstr "Tidak dapat menganalisi plugin"
+msgstr "Tidak dapat awalkan pemalam"
 
 #: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
-msgstr "Menu lanjut MATE"
+msgstr "Menu MATE Lanjutan"
 
 #: ../lib/mate-menu.py:792
 msgid "Preferences"
-msgstr "Tetapan"
+msgstr "Keutamaan"
 
 #: ../lib/mate-menu.py:795
 msgid "Edit menu"
-msgstr "Ubah menu"
+msgstr "Sunting menu"
 
 #: ../lib/mate-menu.py:798
 msgid "Reload plugins"
-msgstr "Muat semula plugin-plugin"
+msgstr "Muat semula pemalam"
 
 #: ../lib/mate-menu.py:801
 msgid "About"
@@ -54,59 +54,59 @@ msgstr "Perihal"
 #. i18n
 #: ../lib/mate-menu-config.py:50
 msgid "Menu preferences"
-msgstr "Pengaturan menu"
+msgstr "Keutamaan menu"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr "Sentiasa memulai dengan kegemaran tetingkap"
+msgstr "Sentiasa mula dengan anak tetingkap kegemaran"
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
-msgstr "Tunjukkan tombol ikon"
+msgstr "Tunjuk ikon butang"
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr "Menggunakan warna sendiri"
+msgstr "Guna warna suai"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr "Tunjukkan dokumen-dokumen baru plugin"
+msgstr "Tunjuk pemalam dokumen baru-baru ini"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr "Tunjukkan aplikasi plugin"
+msgstr "Tunjuk pemalam aplikasi"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr "Tunjukkan sistem plugin"
+msgstr "Tunjuk pemalam sistem"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr "Tunjukkan tempat plugin"
+msgstr "Tunjuk pemalam tempat"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr "Menunjukkan permohonan mengulas"
+msgstr "Tunjuk ulasan aplikasi"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
-msgstr "Tunjukkan kategori ikon"
+msgstr "Tunjuk ikon kategori"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr "Terapung (Hover)"
+msgstr "Apung"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr "Ingat kategori atau gelintar yang terakhir"
+msgstr "Ingat kategori terakhir atau gelintar"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr "Tukar nama dan nama generik"
+msgstr "Silih nama dan nama generik"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr "Lebar border"
+msgstr "Lebar sempadan:"
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
@@ -118,15 +118,15 @@ msgstr "Kelegapan:"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Tombol teks"
+msgstr "Teks butang:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "Opsyen"
+msgstr "Pilihan"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
 msgid "Applications"
-msgstr "Aplikasi-Aplikasi"
+msgstr "Aplikasi"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
@@ -143,7 +143,7 @@ msgstr "Butang utama"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr "Plugin"
+msgstr "Pemalam"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Background:"
@@ -151,11 +151,11 @@ msgstr "Latar belakang:"
 
 #: ../lib/mate-menu-config.py:83
 msgid "Headings:"
-msgstr "Judul:"
+msgstr "Kepala:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "Borders:"
-msgstr "Batas:"
+msgstr "Sempadan:"
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
@@ -174,36 +174,36 @@ msgstr "Saiz ikon:"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr "Jeda hover"
+msgstr "Lengah apung (ms):"
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
-msgstr "Ikon Butang:"
+msgstr "Ikon butang:"
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr "Cari perintah:"
+msgstr "Perintah gelintar:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
 msgid "Places"
-msgstr "Lokasi"
+msgstr "Tempat"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr "Membenarkan scrollbar"
+msgstr "Benarkan Palang Tatal"
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
-msgstr "Tunjukkan Penanda buku GTK"
+msgstr "Tunjuk Tanda Buku GTK"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
-msgstr "Ketinggian:"
+msgstr "Tinggi:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "Tukar Tempat Utama:"
+msgstr "Togol Tempat Lalai:"
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -211,7 +211,7 @@ msgstr "Komputer"
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:164
 msgid "Home Folder"
-msgstr "Folder Utama"
+msgstr "Folder Rumah"
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
@@ -227,7 +227,7 @@ msgstr "Tong Sampah"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr "Tempat sendiri:"
+msgstr "Tempat Suai:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
@@ -236,13 +236,13 @@ msgstr "Sistem"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "Tukar Item Utama:"
+msgstr "Togol Item Lalai;"
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
 #: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
-msgstr "Pengurusan Pakej"
+msgstr "Pengurus Pakej"
 
 #: ../lib/mate-menu-config.py:115
 #: ../mate_menu/plugins/system_management.py:157
@@ -270,19 +270,19 @@ msgstr "Keluar"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr "Ubah Tempat"
+msgstr "Sunting Tempat"
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr "Tempat Baru"
+msgstr "Tempat Baharu"
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr "Pilih satu folder"
+msgstr "Pilih folder"
 
 #: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
-msgstr "Jalan pintas keyboard:"
+msgstr "Pintasan papan kekunci:"
 
 #: ../lib/mate-menu-config.py:158
 msgid "Images"
@@ -290,11 +290,11 @@ msgstr "Imej"
 
 #: ../lib/mate-menu-config.py:267
 msgid "Name"
-msgstr "Nama:"
+msgstr "Nama"
 
 #: ../lib/mate-menu-config.py:268
 msgid "Path"
-msgstr "Lokasi"
+msgstr "Laluan"
 
 #: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
@@ -311,7 +311,7 @@ msgstr "Laluan:"
 #. i18n
 #: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
-msgstr "Carian:"
+msgstr "Gelintar:"
 
 #: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
@@ -320,53 +320,53 @@ msgstr "Semua aplikasi"
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
-msgstr "Carian Google untuk %s"
+msgstr "Gelintar Google untuk %s"
 
 #: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Carian Wikipedia untuk %s"
+msgstr "Gelintar Wikipedia untuk %s"
 
 #: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Cari %s dalam Kamus"
+msgstr "Cari %s di dalam Kamus"
 
 #: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Mencari Komputer untuk %s"
+msgstr "Gelintar Komputer untuk %s"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:763
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
-msgstr "Tambahkan ke desktop"
+msgstr "Tambah ke desktop"
 
 #: ../mate_menu/plugins/applications.py:764
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
-msgstr "Tambahkan ke panel"
+msgstr "Tambah ke panel"
 
 #: ../mate_menu/plugins/applications.py:766
 #: ../mate_menu/plugins/applications.py:813
 msgid "Insert space"
-msgstr "Memasukan ruang"
+msgstr "Sisip jarak"
 
 #: ../mate_menu/plugins/applications.py:767
 #: ../mate_menu/plugins/applications.py:814
 msgid "Insert separator"
-msgstr "Memasukan pemisah"
+msgstr "Sisip pemisah"
 
 #: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr "Lancarkan apabila saya log masuk"
+msgstr "Lancar bila saya mendaftar masuk"
 
 #: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
-msgstr "Lancarkan"
+msgstr "Lancar"
 
 #: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
@@ -375,28 +375,28 @@ msgstr "Buang dari kegemaran"
 #: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
-msgstr "Ubah properties"
+msgstr "Sunting sifat"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
-msgstr "Keluarkan"
+msgstr "Buang"
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr "Tunjukan dalam kegemaran saya"
+msgstr "Tunjuk dalam kegemaran saya"
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
-msgstr "Buang dari menu"
+msgstr "Padam dari menu"
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr "Carian Google"
+msgstr "Gelintar Google"
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr "Carian Wikipedia"
+msgstr "Gelintar Wikipedia"
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
@@ -404,16 +404,13 @@ msgstr "Carian Kamus"
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr "Carian komputer"
+msgstr "Gelintar Komputer"
 
 #: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"Tidak boleh menyelamatkan kegemaran. Semakan jika anda mempunyai hak tulis "
-"akses untuk ~/.linuxmint/mintMenu"
+msgstr "Tidak dapat simpan kegemaran. Periksa sama ada anda telah membuat capaian tulis kepada  ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
@@ -421,58 +418,56 @@ msgstr "Semua"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
-msgstr "Tunjukan semua aplikasi"
+msgstr "Tunjuk semua aplikasi"
 
 #: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr "Memasang, membuang dan meningkatkan pakej-pakej perisian"
+msgstr "Pasang, buang dan tatar pakej perisian"
 
 #: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
-msgstr "Mengkonfigurasi sistem anda"
+msgstr "Konfigur sistem anda"
 
 #: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
-msgstr "Menggunakan baris arahan"
+msgstr "Guna baris perintah"
 
 #: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
-msgstr "Memerlukan kata laluan untuk membuka"
+msgstr "Perlukan kata laluan utuk dibuka"
 
 #: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
-msgstr "Log keluar"
+msgstr "Daftar keluar"
 
 #: ../mate_menu/plugins/system_management.py:189
 msgid "Log out or switch user"
-msgstr "Log keluar atau menukar pengguna"
+msgstr "Daftar keluar atau tukar pengguna"
 
 #: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Penutupan, permulaan semula, menggantung atau hibernat"
+msgstr "Matikan, mula semula, tangguh atau hibernasi"
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"Semak imbas semua cakera jauh dan tempatan serta folder-folder yang boleh "
-"dicapai dari komputer"
+msgstr "Layar semua cakera dan folder setempat atau jauh yang boleh dicapai dari komputer ini"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
-msgstr "Buka fail peribadi anda"
+msgstr "Buka folder peribadi anda"
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr "Melayari bookmarked dan lokasi rangkaian tempatan"
+msgstr "Layar lokasi rangkaian setempat dan bertanda buku"
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr "Mencari item-item dan meletakkan di desktop"
+msgstr "Layar item yang ditempatkan pada dekstop"
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr "Mencari file yang telah dibuang"
+msgstr "Layar fail dipadam"
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
@@ -481,20 +476,19 @@ msgstr "Kosongkan tong sampah"
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Dokumen-dokumen baru"
+msgstr "Dokumen baru-baru ini"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"Klik untuk tetapkan kunci pemecut baru untuk membuka dan menutup menu.  "
+msgstr "Klik untuk tetapkan kekunci pemecut baharu untuk membuka dan menutup menu."
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Tekan Escape atau klik sekali lagi untuk batalkan operasi.  "
+msgstr "Tekan Escape atau klik sekali lagi untuk batalkan operasi."
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Tekan Backspace untuk kosongkan pengikatan kunci sedia ada."
+msgstr "Tekan Backspace untuk kosongkan pengikatan kekunci sedia ada."
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
@@ -503,90 +497,3 @@ msgstr "Ambil satu pemecut"
 #: ../mate_menu/keybinding.py:264
 msgid "<not set>"
 msgstr "<tidak ditetapkan>"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Gelintar pakej untuk dipasang"
-
-#~ msgid "Software Manager"
-#~ msgstr "Pengurus Perisian"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Pasang pakej '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "Nyah pasang"
-
-#~ msgid "Find Software"
-#~ msgstr "Cari Perisian"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Cari Tutorial"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Cari Perkakasan"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Cari Idea"
-
-#~ msgid "Find Users"
-#~ msgstr "Cari Pengguna"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Mencari dan memasang semua perisian yang ada"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Sila tunggu, ini akan mengambil sedikit masa"
-
-#~ msgid "Show sidepane"
-#~ msgstr "Tunjukkan sidepane"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Aplikasi berjaya dihapuskan"
-
-#~ msgid "No matching package found"
-#~ msgstr "Tiada pakej sesuai ditemui"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Adakah anda mahu membuang kemasukan menu (menu entry) ini?"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Pakej-pakej yang dibuang"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Hapus %s?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Pakej-pakej berikut akan dibuang"
-
-#~ msgid "Show recent documents"
-#~ msgstr "Tunjukan dokumen terakhir"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Berdasarkan UPS dari S.Chanderbally"
-
-#~ msgid "Colors"
-#~ msgstr "Warna"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Menu Gnome lebih lanjut"
-
-#~ msgid "Filter:"
-#~ msgstr "Tapis:"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "Mencari portal '%s'"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "Tunjukan pakej '%s'"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "Mencari repositori '%s'"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "Tidak sah .menu fail"
-
-#~ msgid "File not found"
-#~ msgstr "Fail tidak dijumpai"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "Bukan .menu fail"

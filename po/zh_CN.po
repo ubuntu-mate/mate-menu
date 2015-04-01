@@ -1,22 +1,21 @@
-# Simplified Chinese translation for MATE Menu
-# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-17 17:04+0000\n"
-"PO-Revision-Date: 2014-12-28 08:46+0000\n"
-"Last-Translator: AlephAlpha <alephalpha911@gmail.com>\n"
-"Language-Team: Simplified Chinese <zh_CN@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2015-03-25 05:13+0000\n"
+"Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/MATE/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
@@ -45,7 +44,7 @@ msgstr "编辑菜单"
 
 #: ../lib/mate-menu.py:798
 msgid "Reload plugins"
-msgstr "重新加载插件"
+msgstr "重载插件"
 
 #: ../lib/mate-menu.py:801
 msgid "About"
@@ -58,7 +57,7 @@ msgstr "菜单首选项"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr "启动时总是显示收藏面板"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
@@ -70,39 +69,39 @@ msgstr "使用自定义颜色"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr "显示最近使用的文件"
+msgstr "显示最近使用文档插件"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr "显示程序列表"
+msgstr "显示应用程序插件"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr "显示系统工具"
+msgstr "显示系统插件"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr "显示位置书签"
+msgstr "显示位置插件"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr "显示程序注释"
+msgstr "显示应用程序描述"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
-msgstr "显示分类图标"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr "悬停"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr "记住上一分类或搜索"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr "在程序名称和通用名称之间切换"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
@@ -118,7 +117,7 @@ msgstr "不透明度："
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "按钮文字："
+msgstr "按钮文本："
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
@@ -135,11 +134,11 @@ msgstr "主题"
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
 #: ../mate_menu/plugins/applications.py:253
 msgid "Favorites"
-msgstr "收藏"
+msgstr "收藏夹"
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "主按键"
+msgstr "主按钮"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
@@ -174,7 +173,7 @@ msgstr "图标大小："
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr "悬停延时(毫秒)："
+msgstr "悬停延迟（毫秒）："
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
@@ -182,7 +181,7 @@ msgstr "按钮图标："
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr "查找命令："
+msgstr "搜索命令："
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
@@ -191,7 +190,7 @@ msgstr "位置"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr "允许使用滚动条"
+msgstr "允许滚动条"
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
@@ -203,7 +202,7 @@ msgstr "高度："
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "默认显示的位置："
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -211,7 +210,7 @@ msgstr "计算机"
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:164
 msgid "Home Folder"
-msgstr "主目录"
+msgstr "主文件夹"
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
@@ -236,13 +235,13 @@ msgstr "系统"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "默认显示的项目："
+msgstr ""
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
 #: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
-msgstr "软件包管理器"
+msgstr "包管理器"
 
 #: ../lib/mate-menu-config.py:115
 #: ../mate_menu/plugins/system_management.py:157
@@ -257,7 +256,7 @@ msgstr "终端"
 #: ../lib/mate-menu-config.py:117
 #: ../mate_menu/plugins/system_management.py:174
 msgid "Lock Screen"
-msgstr "锁住屏幕"
+msgstr "锁定屏幕"
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
@@ -286,7 +285,7 @@ msgstr "键盘快捷键："
 
 #: ../lib/mate-menu-config.py:158
 msgid "Images"
-msgstr "图片"
+msgstr "图像"
 
 #: ../lib/mate-menu-config.py:267
 msgid "Name"
@@ -311,47 +310,47 @@ msgstr "路径："
 #. i18n
 #: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
-msgstr "搜索："
+msgstr "查找："
 
 #: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
-msgstr "全部程序"
+msgstr "所有应用程序"
 
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
-msgstr "用 Google 搜索 %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "在 Wikipedia 上搜索 %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "在词典中查找 %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr "在计算机中搜索 %s"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:763
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
-msgstr "添加到桌面"
+msgstr "添加至桌面"
 
 #: ../mate_menu/plugins/applications.py:764
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
-msgstr "添加到面板"
+msgstr "添加至面板"
 
 #: ../mate_menu/plugins/applications.py:766
 #: ../mate_menu/plugins/applications.py:813
 msgid "Insert space"
-msgstr "插入空白"
+msgstr "插入空格"
 
 #: ../mate_menu/plugins/applications.py:767
 #: ../mate_menu/plugins/applications.py:814
@@ -361,7 +360,7 @@ msgstr "插入分隔符"
 #: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr "登陆系统时启动"
+msgstr "登录时启动"
 
 #: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
@@ -370,7 +369,7 @@ msgstr "启动"
 
 #: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
-msgstr "从收藏中删除"
+msgstr "从收藏夹移除"
 
 #: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
@@ -380,11 +379,11 @@ msgstr "编辑属性"
 #. i18n
 #: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
-msgstr "删除"
+msgstr "移除"
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr "添加到我的收藏"
+msgstr "显示在我的收藏夹"
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
@@ -392,38 +391,37 @@ msgstr "从菜单中删除"
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr "用 Google 搜索"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr "在 Wikipedia 上搜索"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr "查阅字典"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr "在计算机中搜索"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr "不能保存个人设置，请检查是否对 ~/.linuxmint/mintMenu 有写入的权限"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
-msgstr "全部"
+msgstr "所有"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
-msgstr "显示所有程序"
+msgstr "显示所有应用程序"
 
 #: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr "安装，移除，或者升级软件包"
+msgstr "安装，移除和更新软件包"
 
 #: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
@@ -447,28 +445,28 @@ msgstr "注销或切换用户"
 
 #: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "关机，重新启动，挂起或休眠"
+msgstr "关机，重启，挂起或休眠"
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr "查看所有可访问的本地和远程的磁盘与目录"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
-msgstr "打开个人主目录"
+msgstr "打开您的个人文件夹"
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr "浏览收藏过的位置与本地网络位置"
+msgstr "浏览收藏和本地网络位置"
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr "浏览桌面上的项目"
+msgstr "浏览放置在桌面上的项目"
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr "查看已删除的文件"
+msgstr "浏览删除的文件"
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
@@ -477,111 +475,24 @@ msgstr "清空回收站"
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "最近打开的文件"
+msgstr "最近文档"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr "点击设置打开/关闭菜单的新快捷键。  "
+msgstr ""
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "按下 Escape 键或再次点击来取消操作。  "
+msgstr ""
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "按下 Backspace 键来清除现有的按键绑定。"
+msgstr ""
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
-msgstr "选择快捷键"
+msgstr "选择一个加速器"
 
 #: ../mate_menu/keybinding.py:264
 msgid "<not set>"
-msgstr "<未设置>"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "搜索要安装的软件包"
-
-#~ msgid "Software Manager"
-#~ msgstr "软件管理器"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "安装软件包 “%s”"
-
-#~ msgid "Uninstall"
-#~ msgstr "移除"
-
-#~ msgid "Find Software"
-#~ msgstr "查找软件"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "查找教程"
-
-#~ msgid "Find Hardware"
-#~ msgstr "查找硬件"
-
-#~ msgid "Find Ideas"
-#~ msgstr "查找 Ideas"
-
-#~ msgid "Find Users"
-#~ msgstr "查找用户"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "浏览和安装可用软件"
-
-#~ msgid "Show recent documents"
-#~ msgstr "显示最近的文档"
-
-#~ msgid "Show sidepane"
-#~ msgstr "显示侧边栏"
-
-#~ msgid "Colors"
-#~ msgstr "颜色"
-
-#~ msgid "File not found"
-#~ msgstr "文件未找到"
-
-#~ msgid "Filter:"
-#~ msgstr "过滤器:"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "在软件仓库内查找 '%s'"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "在所有软件仓库内查找 '%s'"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "显示软件包 '%s'"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "请稍候，这将花费一些时间"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "下列软件包将被移除："
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "高级 Gnome 菜单"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "不是一个有效的菜单文件（.menu）"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "不是一个菜单文件（.menu）"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "基于 S.Chanderbally 的 USP"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "您确定要删除这个菜单项吗?"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "成功卸载应用程序"
-
-#~ msgid "No matching package found"
-#~ msgstr "未找到匹配的软件包"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "将被卸载的软件包"
-
-#~ msgid "Remove %s?"
-#~ msgstr "是否卸载 %s？"
+msgstr "<没有设置>"

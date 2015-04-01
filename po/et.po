@@ -1,22 +1,22 @@
-# Estonian translation for MATE Menu
-# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Ivar Smolin <okul@linux.ee>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-17 17:04+0000\n"
-"PO-Revision-Date: 2014-12-03 21:49+0000\n"
-"Last-Translator: lyyser <Unknown>\n"
-"Language-Team: Estonian <et@li.org>\n"
-"Language: et\n"
+"PO-Revision-Date: 2015-03-19 06:34+0000\n"
+"Last-Translator: Ivar Smolin <okul@linux.ee>\n"
+"Language-Team: Estonian (http://www.transifex.com/projects/p/MATE/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Language: et\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
@@ -25,15 +25,15 @@ msgstr "Menüü"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
-msgstr "Pole võimalik laadida pluginat:"
+msgstr "Pluginat pole võimalik laadida:"
 
 #: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
-msgstr "Pole võimalik lähtestada pluginat"
+msgstr "Pluginat pole võimalk lähtestada"
 
 #: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
-msgstr "Täpsem MATE Menüü"
+msgstr ""
 
 #: ../lib/mate-menu.py:792
 msgid "Preferences"
@@ -41,15 +41,15 @@ msgstr "Eelistused"
 
 #: ../lib/mate-menu.py:795
 msgid "Edit menu"
-msgstr "Muuda menüüd"
+msgstr "Redigeeri menüüd"
 
 #: ../lib/mate-menu.py:798
 msgid "Reload plugins"
-msgstr "Värskenda pluginad"
+msgstr ""
 
 #: ../lib/mate-menu.py:801
 msgid "About"
-msgstr "Teave"
+msgstr "Programmist lähemalt"
 
 #. i18n
 #: ../lib/mate-menu-config.py:50
@@ -58,7 +58,7 @@ msgstr "Menüü eelistused"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr "Alati alusta lemmikute paneeliga"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
@@ -66,11 +66,11 @@ msgstr "Näita nupu ikooni"
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr "Kohandatud värvide kasutamine"
+msgstr "Kastuta kohandatud värve"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr "Näita hiljutiste dokumentide pluginat"
+msgstr "Näisa viimati kasutatud dokumentide pluginat"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
@@ -86,7 +86,7 @@ msgstr "Näita asukohtade pluginat"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr "Näita rakenduste kommentaare"
+msgstr "Näita rakenduse kommentaare"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
@@ -94,7 +94,7 @@ msgstr "Näita kategooriate ikoone"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr "Hõljuma"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
@@ -102,11 +102,11 @@ msgstr "Mäleta viimast kategooriat või otsingut"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr "Nime ja üldnimetuse vahetamine"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr "Raami laius:"
+msgstr "Äärise laius"
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
@@ -114,7 +114,7 @@ msgstr "pikslit"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
-msgstr "Katvus:"
+msgstr "Läbipaistmatus:"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
@@ -155,7 +155,7 @@ msgstr "Pealkirjad:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "Borders:"
-msgstr "Raamid:"
+msgstr "Äärised:"
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
@@ -174,7 +174,7 @@ msgstr "Ikooni suurus:"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr "Hõljumise viivitus (ms):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
@@ -182,7 +182,7 @@ msgstr "Nupu ikoon:"
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr "Otsingu käsklus:"
+msgstr "Otsimise käsk:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
@@ -203,7 +203,7 @@ msgstr "Kõrgus:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "Lülita vaikmisi kohad:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -227,7 +227,7 @@ msgstr "Prügi"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr "Valitud kohad:"
+msgstr "Kohandatud asukohad:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
@@ -236,13 +236,13 @@ msgstr "Süsteem"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "Lülita vaikimisi esemed:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
 #: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
-msgstr "Paketihaldur"
+msgstr "Pakihaldur"
 
 #: ../lib/mate-menu-config.py:115
 #: ../mate_menu/plugins/system_management.py:157
@@ -266,7 +266,7 @@ msgstr "Logi välja"
 #: ../lib/mate-menu-config.py:119
 #: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
-msgstr "Lülita välja"
+msgstr "Lõpeta"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
@@ -274,15 +274,15 @@ msgstr "Muuda asukohta"
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr "Uus koht"
+msgstr "Uus asukoht"
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr "Kataloogi valimine"
+msgstr "Vali kataloog"
 
 #: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
-msgstr "Klaviatuuri otsetee:"
+msgstr "Kiirklahv:"
 
 #: ../lib/mate-menu-config.py:158
 msgid "Images"
@@ -294,7 +294,7 @@ msgstr "Nimi"
 
 #: ../lib/mate-menu-config.py:268
 msgid "Path"
-msgstr "Asukoht"
+msgstr "Rada"
 
 #: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
@@ -306,12 +306,12 @@ msgstr "Nimi:"
 
 #: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
 msgid "Path:"
-msgstr "Asukoht:"
+msgstr "Rada:"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
-msgstr "Otsi:"
+msgstr "Otsing:"
 
 #: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
@@ -320,22 +320,22 @@ msgstr "Kõik rakendused"
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
-msgstr "Otsi Google'ist %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Otsi vikipeediast %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Otsi sõnaraamatust %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Otsi arvutist %s"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:763
@@ -351,7 +351,7 @@ msgstr "Lisa paneelile"
 #: ../mate_menu/plugins/applications.py:766
 #: ../mate_menu/plugins/applications.py:813
 msgid "Insert space"
-msgstr "Lisa tühik"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:767
 #: ../mate_menu/plugins/applications.py:814
@@ -361,12 +361,12 @@ msgstr "Lisa eraldaja"
 #: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr "Käivita sisselogimisel"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
-msgstr "Käivita"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
@@ -384,7 +384,7 @@ msgstr "Eemalda"
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr "Näita lemmikutes"
+msgstr "Näita minu lemmikutes"
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
@@ -392,28 +392,25 @@ msgstr "Kustuta menüüst"
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr "Otsi Google'ist"
+msgstr "Otsi Googlest"
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr "Otsi vikipeediast"
+msgstr "Otsi Vikipeedaist"
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr "Otsing sõnaraamatust"
+msgstr "Otsi sõnastikust"
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr "Otsi arvutist"
+msgstr "Otsi arvutit"
 
 #: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Lemmikute salvestamine ebaõnnestus. Kontrolli, kas sul on kirjutamise "
-"juurdepääs asukohale ~/.linuxmint/mintMenu"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
@@ -425,19 +422,19 @@ msgstr "Näita kõiki rakendusi"
 
 #: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr "Paigalda, eemalda ja uuenda tarkvarapakette"
+msgstr "Tarkvarapakkide paigaldus, eemaldus ja uuendus"
 
 #: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
-msgstr "Süsteemi seadistamine"
+msgstr "Seadista süsteemi"
 
 #: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
-msgstr "Käsurea kasutamine"
+msgstr "Kasuta käsurida"
 
 #: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
-msgstr "Nõuab avamiseks parooli"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
@@ -449,24 +446,24 @@ msgstr "Logi välja või vaheta kasutajat"
 
 #: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Lülita välja, taaskäivita, seiska või pane puhkama"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr "Ligipääsetavate kohalike ja välisvõrgu ketaste sirvimine"
+msgstr "Kõigi kohalike ja võrgus asuvate ketaste sirvimine"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
-msgstr "Isikliku kataloogi avamine"
+msgstr "Sinu isikliku kataloogi avamine"
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr "Järjehoidjates leiduvate või kohaliku võrgu asukohtade sirvimine"
+msgstr "Järjehoidjates või kohalikus võrgus asuvate asukohtade sirvimine"
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr "Töölauale asetatud esemete sirvimine"
+msgstr "Töölaual olevate kirjete sirvimine"
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
@@ -474,117 +471,29 @@ msgstr "Kustutatud failide sirvimine"
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
-msgstr "Tühjenda prügikast"
+msgstr "Prügikasti tühjendamine"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Viimatised dokumendid"
+msgstr "Viimati kasutatud dokumendid"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"Klõpsa et paigaldada uus võti kiirendi menüü avamiseks ja sulgemiseks  "
+msgstr "Klõpsa menüü avamiseks ja sulgemiseks mõeldud uue kiirklahvi määramiseks"
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Vajutage Escape või klõpsake uuesti toimingu tühistamiseks.  "
+msgstr "Tegevuse tühistamiseks vajuta Escape või klõpsa uuesti"
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Vajuta Backspace et tühjendada olemasolev klahvikombinatsioon."
+msgstr "Olemasoleva kiirklahvi tühistamiseks vajuta Backspace klahvi."
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
-msgstr "Vali kiirendi"
+msgstr ""
 
 #: ../mate_menu/keybinding.py:264
 msgid "<not set>"
-msgstr "<pole valitud>"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Otsi pakette paigaldamiseks"
-
-#~ msgid "Software Manager"
-#~ msgstr "Tarkvara haldur"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Paigalda pakett '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "Eemalda"
-
-#~ msgid "Find Software"
-#~ msgstr "Leia tarkvara"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Leia õpetusi"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Leia riistvara"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Leia ideid"
-
-#~ msgid "Find Users"
-#~ msgstr "Leia kasutajaid"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Sirvi ja paigalda saadaolevat tarkvara"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Palun oota, selleks kulub natuke aega"
-
-#~ msgid "Colors"
-#~ msgstr "Värvid"
-
-#~ msgid "File not found"
-#~ msgstr "Faili ei leitud"
-
-#~ msgid "Filter:"
-#~ msgstr "Filter:"
-
-#~ msgid "No matching package found"
-#~ msgstr "Sobivaid pakette ei leitud"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Eemaldatavad paketid"
-
-#~ msgid "Show recent documents"
-#~ msgstr "Näita viimaseid dokumente"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "Otsi hoidlaid '% s'"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Järgmised paketid eemaldatakse:"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Põhineb S. Chanderbally USP-l"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Laiendatud Gnome'i menüü"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "Ei ole korrektne .menu faili"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "Pole .menu fail"
-
-#~ msgid "Show sidepane"
-#~ msgstr "Näita külgpaneeli"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Rakendus eemaldati edukalt"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "Otsi portaalist '%s'"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "Näita paketti %s'"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Kas sa soovid eemaldada selle menüükirje?"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Kas eemaldada %s?"
+msgstr "<määramata>"

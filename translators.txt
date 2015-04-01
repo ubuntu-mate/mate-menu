@@ -1,91 +1,63 @@
-Adriano Torres Azevedo <adrianotorres78@gmail.com>
-Akerbeltz <fios@akerbeltz.org>
-Alan Mortensen <alanmortensen.am@gmail.com>
-AlephAlpha <alephalpha911@gmail.com>
-Almir Zulic <zalmir@yahoo.com>
-Ari Ervasti <ari.ervasti87@gmail.com>
-Ashutosh Kumar Singh 
-Asier Iturralde Sarasola 
-Babak Alizadeh <alizadeh.babak@gmail.com>
-BALLOON a.k.a. Fu-sen. <balloon@shigakeiichi.com>
-Bjørn Vidar Dahle <xenoph@linux.com>
-Cédric VALMARY (Tot en òc) <cvalmary@yahoo.fr>
-chyngyz 
-Clement Lefebvre <root@linuxmint.com>
-Cyril Weller <cyril.yc.weller@gmail.com>
-Damir Jerovšek 
-Dejan Noveski 
-Digvijay Patankar <dbpatankar@gmail.com>
-Erieck Saputra <erick.1383@gmail.com>
-Ernest Mashele 
-Faissal Chamekh 
-Fajar Ichwan Noor 
-Fazwan Fazil <takaizu91@gmail.com>
-Fernando Romay <ferocrom_32.9@live.com>
-Flaviu <flaviu@gmx.com>
-FULL NAME <EMAIL@ADDRESS>
-Gearóid  Ó Maelearcaidh <gearoid@omaelearcaidh.com>
-gogo <trebelnik2@gmail.com>
-gudeta <gudbog@gmail.com>
-Gunleif Joensen 
-Iftekhar Mohammad 
-Imyirtseshem 
-Isidro Pisa <isidro@utils.info>
-Ismael Omar <ismaelhssn@gmail.com>
-Izumi 
-James Lin 
-Janis Elmeris 
-Jan-Olof Svensson <jan-olof.svensson@abc.se>
-Jim Spentzos 
-jmb_kz 
-Jon Stevenson <jon.stevenson@gmail.com>
-Jorge Hinz <jh02777@googlemail.com>
-박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>
-KAMI <kami911@gmail.com>
-kelebek333 
-Khaleel Jageer <jskcse4@gmail.com>
-KOSAL (David Salvo) <slinkeepy@gmail.com>
-lang-it 
-Libni Pacheco 
-Liel Fridman 
-Louis <louis77@mac.com>
-lyyser 
-Mark Kwidzińsczi 
-Mathieu Corbett <mathieu.corbett@gmail.com>
-Miguel Anxo Bouzada <mbouzada@gmail.com>
-Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
-Mobody 
-Monsta 
-mzs.112000 <mzs.112000@gmail.com>
-Navdeep Singh 
-Nicat Məmmədov <n1c4t97@gmail.com>
-Niroj Bista <nirooj56@outlook.com>
-Ondřej Kolín <ondrej.kolin@gmail.com>
-Piotr Strębski <strebski@o2.pl>
-Pjotr12345 
-Praveen Illa <mail2ipn@gmail.com>
-praveenp 
-Reuben Potts 
-Rhoslyn Prys <rprys@yahoo.com>
-Robin van der Vliet <info@robinvandervliet.nl>
-Rockworld <sumoisrock@gmail.com>
-Saki <a4e484b@hotmail.com>
-samson 
-Sebastien Cornec 
-segray <segray@tut.by>
-Shoaib Mirza 
-Sipan Roj <sipanroj@live.com>
-spacy01 
-Sveinn í Felli <sv1@fellsnet.is>
-Tiago S. 
-tibbi <tibbbi2@gmail.com>
-Tobias Bannert 
-tomoe_musashi <hkg.musashi@gmail.com>
-Tornike Batavani 
-Victor Ibragimov <victor.ibragimov@gmail.com>
-Yngve Spjeld Landro <l10n@landro.net>
-Иван Старчевић <ivanstar61@gmail.com>
-Микола Ткач <Stuartlittle1970@gmail.com>
-Саша Петровић <salepetronije@gmail.com>
-ಸುಭಾಸ್ ಭಟ್(Subhas Bhat) 
-පසිඳු කාවින්ද <pkavinda@gmail.com>
+Files: po/*
+Copyright:
+ abuyop <abuyop@gmail.com>
+ Adriano Torres Azevedo <adrianotorres78@gmail.com>
+ Akerbeltz <fios@akerbeltz.org>
+ Almir Zulic <zalmir@yahoo.com>
+ Ari Ervasti <ari.ervasti87@gmail.com>
+ AWASHIRO Ikuya <ikunya@gmail.com>
+ Babak Alizadeh <alizadeh.babak@gmail.com>
+ Bjørn Vidar Dahle <xenoph@linux.com>
+ Cédric VALMARY (Tot en òc) <cvalmary@yahoo.fr>
+ Clement Lefebvre <root@linuxmint.com>
+ Cyril Weller <cyril.yc.weller@gmail.com>
+ Daniel <danny34ever@yahoo.com>
+ Digvijay Patankar <dbpatankar@gmail.com>
+ Diogo Oliveira <diogodesigns@gmail.com>
+ dragnadh <dragnadh@gmail.com>
+ Efstathios Iosifidis <iefstathios@gmail.com>
+ Erieck Saputra <erick.1383@gmail.com>
+ Fernando Romay <ferocrom_32.9@live.com>
+ Gearóid  Ó Maelearcaidh <gearoid@omaelearcaidh.com>
+ gudeta <gudbog@gmail.com>
+ Isidro Pisa <isidro@utils.info>
+ Ismael Omar <ismaelhssn@gmail.com>
+ Ivar Smolin <okul@linux.ee>
+ Ivica  Kolić <ikoli@yahoo.com>
+ Jan-Olof Svensson <jan-olof.svensson@abc.se>
+ Joe Hansen <joedalton2@yahoo.dk>
+ Jon Stevenson <jon.stevenson@gmail.com>
+ Jorge Hinz <jh02777@googlemail.com>
+ 박정규(Jung Kyu Park) <bagjunggyu@gmail.com>
+ Khaleel Jageer <jskcse4@gmail.com>
+ KOSAL (David Salvo) <slinkeepy@gmail.com>
+ Louis <louis77@mac.com>
+ Martin Wimpress <code@flexion.org>
+ Mathieu Corbett <mathieu.corbett@gmail.com>
+ Miguel Anxo Bouzada <mbouzada@gmail.com>
+ Mihail Varantsou <meequz@gmail.com>
+ Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+ mzs.112000 <mzs.112000@gmail.com>
+ Nicat Məmmədov <n1c4t97@gmail.com>
+ Niroj Bista <nirooj56@outlook.com>
+ Ondřej Kolín <ondrej.kolin@gmail.com>
+ Piotr Strębski <strebski@o2.pl>
+ Praveen Illa <mail2ipn@gmail.com>
+ Rezső Páder <rezso@rezso.net>
+ Rhoslyn Prys <rprys@yahoo.com>
+ Robin van der Vliet <info@robinvandervliet.nl>
+ Rockworld <sumoisrock@gmail.com>
+ Saki <a4e484b@hotmail.com>
+ samson <sambelet@yahoo.com>
+ Sipan Roj <sipanroj@live.com>
+ Sveinn í Felli <sv1@fellsnet.is>
+ tibbi <tibbbi2@gmail.com>
+ tomoe_musashi <hkg.musashi@gmail.com>
+ Victor Ibragimov <victor.ibragimov@gmail.com>
+ Yngve Spjeld Landro <l10n@landro.net>
+ مهدي السطيفي <chinoune.mehdi@gmail.com>
+ Иван Старчевић <ivanstar61@gmail.com>
+ Микола Ткач <Stuartlittle1970@gmail.com>
+ Саша Петровић <salepetronije@gmail.com>
+ පසිඳු කාවින්ද <pkavinda@gmail.com>
+ 玉堂白鹤 <yjwork@qq.com>
