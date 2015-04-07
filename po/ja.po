@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # AWASHIRO Ikuya <ikunya@gmail.com>, 2015
 # Satoru SATOH <ss@gnome.gr.jp>, 2004
@@ -9,14 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"POT-Creation-Date: 2015-04-07 11:10+0100\n"
 "PO-Revision-Date: 2015-03-18 09:41+0000\n"
 "Last-Translator: AWASHIRO Ikuya <ikunya@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/MATE/language/ja/)\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/MATE/language/"
+"ja/)\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:70
@@ -411,7 +412,9 @@ msgstr "コンピューターを検索"
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr "お気に入りを保存できませんでした。~/.config/mate-menuに書き込めるか確認してください"
+msgstr ""
+"お気に入りを保存できませんでした。~/.config/mate-menuに書き込めるか確認してく"
+"ださい"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
@@ -452,7 +455,9 @@ msgstr "終了、再起動、サスペンドまたはハイバネート"
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr "このコンピューターからアクセスできるすべてのローカルとリモートにあるディスクとフォルダーを閲覧する"
+msgstr ""
+"このコンピューターからアクセスできるすべてのローカルとリモートにあるディスク"
+"とフォルダーを閲覧する"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
@@ -481,11 +486,13 @@ msgstr "最近のドキュメント"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr "クリックしてメニューの開閉に使用する新しいアクセラレーターを設定します。"
+msgstr ""
+"クリックしてメニューの開閉に使用する新しいアクセラレーターを設定します。"
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "エスケープキーを押すかもう一度クリックするとこの操作をキャンセルできます。"
+msgstr ""
+"エスケープキーを押すかもう一度クリックするとこの操作をキャンセルできます。"
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."

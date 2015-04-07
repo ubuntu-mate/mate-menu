@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Carlos Moreira <crolidge@gmail.com>, 2015
 # Diogo Oliveira <diogodesigns@gmail.com>, 2015
@@ -9,14 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"POT-Creation-Date: 2015-04-07 11:10+0100\n"
 "PO-Revision-Date: 2015-03-27 22:34+0000\n"
 "Last-Translator: Diogo Oliveira <diogodesigns@gmail.com>\n"
-"Language-Team: Portuguese (http://www.transifex.com/projects/p/MATE/language/pt/)\n"
+"Language-Team: Portuguese (http://www.transifex.com/projects/p/MATE/language/"
+"pt/)\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:70
@@ -411,7 +412,9 @@ msgstr "Procurar no Computador"
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr "Impossível de guardar os favoritos. Verifica se tens acesso de escrito para ~/.config/mate-menu"
+msgstr ""
+"Impossível de guardar os favoritos. Verifica se tens acesso de escrito para "
+"~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
@@ -452,7 +455,9 @@ msgstr "Desligar, reiniciar, suspender ou hibernar"
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr "Navegar em todos os discos e pastas locais e remotos acessíveis deste computador"
+msgstr ""
+"Navegar em todos os discos e pastas locais e remotos acessíveis deste "
+"computador"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
@@ -481,7 +486,8 @@ msgstr "Documentos Recentes"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr "Clica para configurar uma nova tecla de atalho para abrir e fechar o menu."
+msgstr ""
+"Clica para configurar uma nova tecla de atalho para abrir e fechar o menu."
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "

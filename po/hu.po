@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Rezső Páder <rezso@rezso.net>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"POT-Creation-Date: 2015-04-07 11:10+0100\n"
 "PO-Revision-Date: 2015-03-22 13:52+0000\n"
 "Last-Translator: Rezső Páder <rezso@rezso.net>\n"
-"Language-Team: Hungarian (http://www.transifex.com/projects/p/MATE/language/hu/)\n"
+"Language-Team: Hungarian (http://www.transifex.com/projects/p/MATE/language/"
+"hu/)\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:70
@@ -410,7 +411,9 @@ msgstr "Keresés a számítógépen"
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr "Nem sikerült menteni a kedvenceket. Ellenőrizze a ~/.config/mate-menu mappa írási jogosultságait."
+msgstr ""
+"Nem sikerült menteni a kedvenceket. Ellenőrizze a ~/.config/mate-menu mappa "
+"írási jogosultságait."
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
@@ -451,7 +454,8 @@ msgstr "Leállítás, újraindítás, felfüggesztés vagy hibernálás"
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr "A számítógépről elérhető összes helyi és távoli lemez és mappa tallózása"
+msgstr ""
+"A számítógépről elérhető összes helyi és távoli lemez és mappa tallózása"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
@@ -480,15 +484,20 @@ msgstr "Legutóbbi dokumentumok"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr "Kattintson egy új gyorsbillentyű beállításához a menü megnyitásához és bezárásához.  "
+msgstr ""
+"Kattintson egy új gyorsbillentyű beállításához a menü megnyitásához és "
+"bezárásához.  "
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Nyomja meg az ESC gombot vagy kattintson újra a művelet megszakításához.  "
+msgstr ""
+"Nyomja meg az ESC gombot vagy kattintson újra a művelet megszakításához.  "
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Nyomja meg a Backspace gombot a már létező billentyű összerendelés törléséhez."
+msgstr ""
+"Nyomja meg a Backspace gombot a már létező billentyű összerendelés "
+"törléséhez."
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
