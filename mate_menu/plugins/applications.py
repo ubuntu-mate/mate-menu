@@ -937,22 +937,22 @@ class pluginclass( object ):
     def search_google(self, widget):
         text = self.searchEntry.get_text()
         text = text.replace(" ", "+")
-        os.system("xdg-open \"http://www.google.com/?ie=utf-8&sa=Search&q=" + text + "\" &")
+        subprocess.call(['xdg-open', 'http://www.google.com/?ie=utf-8&sa=Search&q=' + text])
         self.mateMenuWin.hide()
         
     def search_wikipedia(self, widget):
         text = self.searchEntry.get_text()
         text = text.replace(" ", "+")
-        os.system("xdg-open \"http://en.wikipedia.org/wiki/Special:Search?search=" + text + "\" &")
+        subprocess.call(['xdg-open', 'http://en.wikipedia.org/wiki/Special:Search?search=' + text])
         self.mateMenuWin.hide()
         
     def search_dictionary(self, widget):
         text = self.searchEntry.get_text()
-        os.system("mate-dictionary \"" + text + "\" &")
+        subprocess.call(['mate-dictionary', '"'+text+'"'])
         self.mateMenuWin.hide()
         
     def add_to_desktop(self, widget, desktopEntry):
-        os.system("xdg-desktop-icon install --novendor %s" % desktopEntry.desktopFile)
+        subprocess.call(['xdg-desktop-icon', 'install', '--novendor', desktopEntry.desktopFile])
 
     def add_to_panel(self, widget, desktopEntry):
         self.get_panel()
