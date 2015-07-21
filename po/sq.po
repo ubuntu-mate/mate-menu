@@ -1,51 +1,51 @@
-# Albanian translation for MATE Menu
-# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Indrit Bashkimi <indrit.bashkimi@gmail.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2015-01-07 20:19+0000\n"
-"Last-Translator: mzs.112000 <mzs.112000@gmail.com>\n"
-"Language-Team: Albanian <sq@li.org>\n"
-"Language: sq\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2015-07-08 10:25+0000\n"
+"Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
+"Language-Team: Albanian (http://www.transifex.com/projects/p/MATE/language/sq/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Language: sq\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
-msgstr "Menu"
+msgstr ""
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
-msgstr "Nuk mund te ngarkohen plugin:"
+msgstr ""
 
 #: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
-msgstr "Nuk mund të nisja plugin"
+msgstr ""
 
 #: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
-msgstr "Avancuar MATE Menu"
+msgstr ""
 
 #: ../lib/mate-menu.py:792
 msgid "Preferences"
-msgstr "Preferencat"
+msgstr "Parapëlqimet"
 
 #: ../lib/mate-menu.py:795
 msgid "Edit menu"
-msgstr "Ndrysho menunë"
+msgstr ""
 
 #: ../lib/mate-menu.py:798
 msgid "Reload plugins"
-msgstr "Ringarko plugin-ët"
+msgstr ""
 
 #: ../lib/mate-menu.py:801
 msgid "About"
@@ -54,39 +54,39 @@ msgstr "Rreth"
 #. i18n
 #: ../lib/mate-menu-config.py:50
 msgid "Menu preferences"
-msgstr "Preferencat e menusë"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr "Gjithmonë nise me panelin e të favorizuarave"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
-msgstr "Shfaq ikonën e butonave"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr "Përdor ngjyra të përgjedhura"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr "Shfaq pluginët e dokumenteve të fundit"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr "Shfaq pluginët e programeve"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr "Shfaq pluginët e sistemit"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr "Shfaq pluginët e vendeve"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr "Shfaq komentet rreth programit"
+msgstr "Shfaq komentet e programeve"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
@@ -94,31 +94,31 @@ msgstr "Shfaq ikonat e kategorisë"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr "Rri pezull"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr "Mos harroni kategorinë e fundit ose kërko"
+msgstr "Kujto kategorinë ose kërkimin e fundit"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr "Ndrysho emrin me emrin e përgjithshëm"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr "Gjerësia e kufirit:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
-msgstr "pikselët"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
-msgstr "Tejdukshmëria:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Teksti i butonit:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
@@ -126,7 +126,7 @@ msgstr "Opsionet"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
 msgid "Applications"
-msgstr "Programet"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
@@ -135,15 +135,15 @@ msgstr "Tema"
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
 #: ../mate_menu/plugins/applications.py:253
 msgid "Favorites"
-msgstr "Të Preferuara"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "Butoni kryesor"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr "Pluginat"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:82
 msgid "Background:"
@@ -151,11 +151,11 @@ msgstr "Sfondi:"
 
 #: ../lib/mate-menu-config.py:83
 msgid "Headings:"
-msgstr "Kryeartikujt:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "Borders:"
-msgstr "Kufijtë:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
@@ -165,37 +165,37 @@ msgstr "Tema:"
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:89
 msgid "Number of columns:"
-msgstr "Numri i shtyllave:"
+msgstr "Numri i kolonave:"
 
 #: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
 #: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
 msgid "Icon size:"
-msgstr "Madhësia e ikonës"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr "Devijimet e pezullimit (ms):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
-msgstr "Ikona e Butonit:"
+msgstr "Ikona e butonit:"
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr "Komanda e kërkimit:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
 msgid "Places"
-msgstr "Vendet"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr "Lejo Lëvizjen në Shinë"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
-msgstr "Shfaq libërshënuesit GTK"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
@@ -203,7 +203,7 @@ msgstr "Lartësia:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "Ndrysho Vendet e Parazgjedhura:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -211,15 +211,15 @@ msgstr "Kompjuteri"
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:164
 msgid "Home Folder"
-msgstr "Kartela e Shtëpisë"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
-msgstr "Rrjeti"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:198
 msgid "Desktop"
-msgstr "Desktopi"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:107 ../mate_menu/plugins/places.py:209
 msgid "Trash"
@@ -227,7 +227,7 @@ msgstr "Koshi"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr "Vende të Vetëzgjedhura:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
@@ -236,18 +236,18 @@ msgstr "Sistemi"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "Ndrysho Temat e Parazgjedhura:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
 #: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
-msgstr "Menaxheri i Paketave"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:115
 #: ../mate_menu/plugins/system_management.py:157
 msgid "Control Center"
-msgstr "Qendra e Kontrollit"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:116
 #: ../mate_menu/plugins/system_management.py:164
@@ -257,36 +257,36 @@ msgstr "Terminali"
 #: ../lib/mate-menu-config.py:117
 #: ../mate_menu/plugins/system_management.py:174
 msgid "Lock Screen"
-msgstr "Blloko Ekranin"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
-msgstr "Dil"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:119
 #: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
-msgstr "Dil"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr "Modifiko Vendin"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr "Vend i Ri"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr "Zgjidhe një Dosje"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
-msgstr "Shkurtore e tastierës:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:158
 msgid "Images"
-msgstr "Imazhet"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:267
 msgid "Name"
@@ -294,11 +294,11 @@ msgstr "Emri"
 
 #: ../lib/mate-menu-config.py:268
 msgid "Path"
-msgstr "Shtegu"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
-msgstr "Tema e desktopit"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
 msgid "Name:"
@@ -306,12 +306,12 @@ msgstr "Emri:"
 
 #: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
 msgid "Path:"
-msgstr "Shtegu:"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
-msgstr "Kërko:"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
@@ -320,275 +320,180 @@ msgstr "Të gjithë programet"
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
-msgstr "Kërko Google për %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Kërko Wikipedia për %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Kërko %s në Fjalor"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Kërko kompjuterin për %s"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:763
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
-msgstr "Shtoja desktopit"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:764
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
-msgstr "Shtoja panelit"
+msgstr "Shto në panel"
 
 #: ../mate_menu/plugins/applications.py:766
 #: ../mate_menu/plugins/applications.py:813
 msgid "Insert space"
-msgstr "Vendos hapësirë"
+msgstr "Fut hapësirë"
 
 #: ../mate_menu/plugins/applications.py:767
 #: ../mate_menu/plugins/applications.py:814
 msgid "Insert separator"
-msgstr "Vendos ndarës"
+msgstr "Fut ndarës"
 
 #: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr "Nise kur unë hyj"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
-msgstr "Nise"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
-msgstr "Hiqe nga të favorizuarat"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
-msgstr "Modifiko parametrat"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
-msgstr "Hiqe"
+msgstr "Hiq"
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr "Shfaqe në favoritet e mija"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
-msgstr "Fshiji nga menuja"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr "Kërko Google"
+msgstr "Kërko në Google"
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr "Kërko Wikipedia"
+msgstr "Kërko në Wikipedia"
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr "Kontrollo Fjalorin"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr "Kërko Kompjuterin"
+msgstr "Kërko në kompjuter"
 
 #: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Nuk mund të ruaj të favorizuarat. Kontrolloni nëse ju lejohet të shkruani "
-"tek ~/.linuxmint/mintMenu"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
-msgstr "Të Gjitha"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
-msgstr "Shfaqi të gjitha programet"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr "Instalo, hiq dhe aktualizo paketat e programeve"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
-msgstr "Konfiguroni sistemin tuaj"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
-msgstr "Përdor rreshtin e komandave"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
-msgstr "kërkon fjalëkalim për tu zhbllokuar"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
-msgstr "Dil"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:189
 msgid "Log out or switch user"
-msgstr "Dil ose ndrysho përdoruesin"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Fike, rindize, pezulloje apo hibernoje"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Shfleton të gjithë disqet dhe kartelat lokale dhe në distancë të arritshme "
-"nga ky kompjuter"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
-msgstr "Hapni kartelën tuaj personale"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr "Shfleton pozicionet e rrjetit lokal dhe në libërshënues"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr "Shfletoni temat e vendosura në desktop"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr "Shfletoni skedarët e fshirë"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
-msgstr "Zbraze koshin"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Dokumentet e fundit"
+msgstr ""
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
-"Klikoni për të vendosur një çelës të ri përshpejtues për hapjen dhe mbylljen "
-"e menu.  "
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Shtypni arratisjes ose klikoni përsëri për të anulluar operacionin.  "
+msgstr ""
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
-"Shtypni Backspace për të pastruar pulsantët e rrugëshkurtimit ekzistuese."
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
-msgstr "Pick një përshpejtues"
+msgstr ""
 
 #: ../mate_menu/keybinding.py:264
 msgid "<not set>"
-msgstr "<Nuk është caktuar>"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Kërko për paketa për ti instaluar"
-
-#~ msgid "Software Manager"
-#~ msgstr "Menaxhuesi i Programeve"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Instalo paketën '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "Çinstalo"
-
-#~ msgid "Find Software"
-#~ msgstr "Kërko Programe"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Gjej Tutoriale"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Gjej Hardware"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Gjej Ide"
-
-#~ msgid "Find Users"
-#~ msgstr "Gjej Përdorues"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Shfleto dhe instalo programet e disponueshme"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Ju lutemi të prisni, kjo mund të zgjasë pak"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Programi u hoq me sukses"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Bazuar në USP nga S.Chanderbally"
-
-#~ msgid "Show sidepane"
-#~ msgstr "Shfaq panelin anësor"
-
-#~ msgid "No matching package found"
-#~ msgstr "Nuk u gjet asnjë paketë që të përputhet"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Dëshironi ta hiqni këtë hyrje?"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Paketat që do të hiqen"
-
-#~ msgid "Show recent documents"
-#~ msgstr "Shfaq dokumentat e fundit"
-
-#~ msgid "Colors"
-#~ msgstr "Ngjyrat"
-
-#~ msgid "File not found"
-#~ msgstr "Skedari nuk u gjet"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "Kërko magazinat për '%s'"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "Nuk është një skedar i vlefshëm .menu"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "Nuk është një skedar .menu"
-
-#~ msgid "Filter:"
-#~ msgstr "Filtri:"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "Kërko portalin për '%s'"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "Shfaq paketat '%s'"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Menu e Avancuar Gnome"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Ta heq %s?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Paketat që vijojnë do të hiqen:"
+msgstr ""

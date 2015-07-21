@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
+# alexandros_ <alexandros.venn@gmail.com>, 2015
 # Efstathios Iosifidis <iefstathios@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2015-03-19 23:30+0000\n"
-"Last-Translator: Efstathios Iosifidis <iefstathios@gmail.com>\n"
-"Language-Team: Greek (http://www.transifex.com/projects/p/MATE/language/"
-"el/)\n"
-"Language: el\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2015-07-20 06:35+0000\n"
+"Last-Translator: alexandros_ <alexandros.venn@gmail.com>\n"
+"Language-Team: Greek (http://www.transifex.com/projects/p/MATE/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:70
@@ -34,7 +34,7 @@ msgstr "Αδυναμία αρχικοποίησης προσθέτου"
 
 #: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
-msgstr ""
+msgstr "Μενού του MATE για προχωρημένους"
 
 #: ../lib/mate-menu.py:792
 msgid "Preferences"
@@ -46,7 +46,7 @@ msgstr "Επεξεργασία μενού"
 
 #: ../lib/mate-menu.py:798
 msgid "Reload plugins"
-msgstr ""
+msgstr "Επαναφόρτωση προσθέτων"
 
 #: ../lib/mate-menu.py:801
 msgid "About"
@@ -91,7 +91,7 @@ msgstr "Εμφάνιση σχολίων εφαρμογής"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
-msgstr ""
+msgstr "Εμφάνιση εικονιδίων κατηγορίας"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
@@ -267,7 +267,7 @@ msgstr "Έξοδος"
 #: ../lib/mate-menu-config.py:119
 #: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
-msgstr ""
+msgstr "Έξοδος"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
@@ -295,7 +295,7 @@ msgstr "Όνομα"
 
 #: ../lib/mate-menu-config.py:268
 msgid "Path"
-msgstr ""
+msgstr "Διαδρομή"
 
 #: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
@@ -472,12 +472,12 @@ msgstr ""
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
-msgstr ""
+msgstr "Άδειασμα κάδου"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr ""
+msgstr "Πρόσφατα έγγραφα"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "

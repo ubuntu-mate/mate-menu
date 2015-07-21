@@ -1,22 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # samson <sambelet@yahoo.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2015-03-23 22:19+0000\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2015-07-21 13:53+0000\n"
 "Last-Translator: samson <sambelet@yahoo.com>\n"
-"Language-Team: Amharic (http://www.transifex.com/projects/p/MATE/language/"
-"am/)\n"
-"Language: am\n"
+"Language-Team: Amharic (http://www.transifex.com/projects/p/MATE/language/am/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: am\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../lib/mate-menu.py:70
@@ -34,7 +33,7 @@ msgstr "ተሰኪውን ማስነሳት አልተቻለም"
 
 #: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
-msgstr ""
+msgstr "የ ረቀቀ የ ሜት ዝርዝር"
 
 #: ../lib/mate-menu.py:792
 msgid "Preferences"
@@ -59,7 +58,7 @@ msgstr "የ ዝርዝር ምርጫዎች "
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr ""
+msgstr "ሁልጊዜ በምወዳቸው ክፍል ማስጀመሪያ"
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
@@ -67,39 +66,39 @@ msgstr "የ ምልክት ቁልፍ ማሳያ"
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr ""
+msgstr "custom ቀለም ይጠቀሙ"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr ""
+msgstr "የቅርብ ጊዜ ሰነድ ተሰኪ ማሳያ"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr ""
+msgstr "የመተግበሪያዎች ተሰኪ ማሳያ"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr ""
+msgstr "የስርአት ተሰኪ ማሳያ"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr ""
+msgstr "የቦታዎች ተሰኪ ማሳያ"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr ""
+msgstr "የ መተግበሪያዎች አስተያየት ማሳያ"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
-msgstr ""
+msgstr "የ ምድብ ምልክቶች ማሳያ"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr ""
+msgstr "ማንሳፈፊያ"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr ""
+msgstr "የ መጨረሻውን ምድብ ወይንም መፈለጊያ አስታውስ"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
@@ -115,11 +114,11 @@ msgstr "ፒክስሎች "
 
 #: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
-msgstr ""
+msgstr "ግልጽነት:"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr ""
+msgstr "ቁልፍ ጽሁፍ:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
@@ -131,7 +130,7 @@ msgstr "መተግበሪያዎች "
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr ""
+msgstr "ገጽታ"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
 #: ../mate_menu/plugins/applications.py:253
@@ -160,7 +159,7 @@ msgstr "ድንበሮች:"
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
-msgstr ""
+msgstr "ገጽታ"
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
@@ -175,11 +174,11 @@ msgstr "የ ምልክት መጠን:"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr ""
+msgstr "ማንሳፈፊያ ማዘግያ (ማ/ሰ):"
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
-msgstr ""
+msgstr "ቁልፍ ምልክት:"
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
@@ -192,7 +191,7 @@ msgstr "ቦታዎች"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr ""
+msgstr "መሸብለያ ማስቻያ"
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
@@ -204,7 +203,7 @@ msgstr "እርዝመት:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr ""
+msgstr "ነባር ቦታዎችን መቃያየሪያ:"
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -237,13 +236,13 @@ msgstr "ስርአት"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr ""
+msgstr "ነባር እቃዎችን መቃያየሪያ:"
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
 #: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
-msgstr ""
+msgstr "የጥቅል አስተዳዳሪ "
 
 #: ../lib/mate-menu-config.py:115
 #: ../mate_menu/plugins/system_management.py:157
@@ -299,7 +298,7 @@ msgstr "መንገድ"
 
 #: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
-msgstr ""
+msgstr "የዴስክቶፕ ገጽታ"
 
 #: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
 msgid "Name:"
@@ -321,22 +320,22 @@ msgstr "ሁሉንም መተግበሪያዎች"
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
-msgstr ""
+msgstr "ጉግል ውስጥ መፈለጊያ %s"
 
 #: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr ""
+msgstr "ዊኪፒዲያ ውስጥ መፈለጊያ %s"
 
 #: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr ""
+msgstr "መፈለጊያ %s መዝገበ ቃላት ውስጥ"
 
 #: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr ""
+msgstr "ኮምፒዩተር ውስጥ መፈለጊያ %s"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:763
@@ -362,16 +361,16 @@ msgstr "መለያያ ማስገቢያ "
 #: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr ""
+msgstr "በምገባ ጊዜ ማስጀመሪያ"
 
 #: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
-msgstr ""
+msgstr "ማስጀመሪያ"
 
 #: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
-msgstr ""
+msgstr "ከ ምወዳቸው ውስጥ ማስወገጃ"
 
 #: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
@@ -385,33 +384,33 @@ msgstr "ማስወገጃ"
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr ""
+msgstr "በምወዳቸው ውስጥ ማሳያ"
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
-msgstr ""
+msgstr "ከ ዝርዝር ውስጥ ማጥፊያ"
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr ""
+msgstr "ጉግል ውስጥ መፈለጊያ"
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr ""
+msgstr "ዊኪፒዲያ ውስጥ መፈለጊያ"
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr ""
+msgstr "መዝገበ ቃላት ውስጥ መፈለጊያ"
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr ""
+msgstr "ኮምፒዩተር ውስጥ መፈለጊያ"
 
 #: ../mate_menu/plugins/applications.py:1329
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
+msgstr "የ ምወዳቸውን ማስቀመጥ አልተቻለም ፍቃድ እንዳለዎት ይመርምሩ ወደ ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
@@ -423,19 +422,19 @@ msgstr "ሁሉንም መተግበሪያዎች ማሳያ"
 
 #: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr ""
+msgstr "የ ሶፍትዌር ጥቅሎችን መግጠሚያ: ማሻሻያ እና ማስወገጃ"
 
 #: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
-msgstr ""
+msgstr "የ እርስዎን ስርአት ማዋቀሪያ"
 
 #: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
-msgstr ""
+msgstr "የ ትእዛዝ መስመር መጠቀሚያ "
 
 #: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
-msgstr ""
+msgstr "ለመክፈት የመግቢያ ቃል ያስፈልጋል"
 
 #: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
@@ -447,7 +446,7 @@ msgstr "መውጫ ወይንም ተጠቃሚ መቀየሪያ"
 
 #: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr ""
+msgstr "ማጥፊያ: እንደገና ማስጀመሪያ: ማገጃ ወይንም ማስተኛ"
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
@@ -456,7 +455,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
-msgstr ""
+msgstr "የ እርስዎን የግል ፎልደር መክፈቻ"
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
@@ -464,20 +463,20 @@ msgstr ""
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr ""
+msgstr "በ ዴስክቶፕ ላይ ያሉ እቃዎችን መቃኛ"
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr ""
+msgstr "የጠፉ ፋይሎችን መቃኛ"
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
-msgstr ""
+msgstr "ቆሻሻውን ባዶ ማድረጊያ"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr ""
+msgstr "የቅርብ ጊዜ ሰነዶች"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
@@ -485,16 +484,16 @@ msgstr ""
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr ""
+msgstr "ይጫኑ መዝለያውን ወይንም ይጫኑ እንደገና ተግባሩን ለመሰረዝ "
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr ""
+msgstr "ይጫኑ የ ኋሊዮሽ መደምሰሻውን የነበረውን ቁልፍ ማጣመሪያ ለመሰረዝ "
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
-msgstr ""
+msgstr "አፍጣኝ ይምረጡ"
 
 #: ../mate_menu/keybinding.py:264
 msgid "<not set>"
-msgstr ""
+msgstr "<አልተሰናዳም set>"
