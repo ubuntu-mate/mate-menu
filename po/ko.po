@@ -1,22 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # 박정규(Jung Kyu Park) <bagjunggyu@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2015-03-26 13:01+0000\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2015-11-09 18:42+0000\n"
 "Last-Translator: 박정규(Jung Kyu Park) <bagjunggyu@gmail.com>\n"
-"Language-Team: Korean (http://www.transifex.com/projects/p/MATE/language/"
-"ko/)\n"
-"Language: ko\n"
+"Language-Team: Korean (http://www.transifex.com/mate/MATE/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:70
@@ -411,9 +410,7 @@ msgstr "컴퓨터에서 검색"
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"즐겨찾기를 저장할 수 없습니다. ~/.config/mate-menu의 접근 권한이 있나 확인해 "
-"주세요"
+msgstr "즐겨찾기를 저장할 수 없습니다. ~/.config/mate-menu의 접근 권한이 있나 확인해 주세요"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
@@ -454,8 +451,7 @@ msgstr "끄기, 다시 시작, 대기 또는 휴면"
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"이 컴퓨터에서 접근할 수 있는 모든 로컬 및 원격 디스크와 폴더를 살펴봅니다"
+msgstr "이 컴퓨터에서 접근할 수 있는 모든 로컬 및 원격 디스크와 폴더를 살펴봅니다"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"

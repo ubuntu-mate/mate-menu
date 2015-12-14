@@ -1,22 +1,22 @@
-# Kazakh translation for MATE Menu
-# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2010-10-03 12:20+0000\n"
-"Last-Translator: jmb_kz <Unknown>\n"
-"Language-Team: Kazakh <kk@li.org>\n"
-"Language: kk\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2015-12-04 05:51+0000\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+"Language-Team: Kazakh (http://www.transifex.com/mate/MATE/language/kk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Language: kk\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
@@ -25,11 +25,11 @@ msgstr "Мәзір"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
-msgstr "Кеңейтуді жүктеу мүмкін емес:"
+msgstr ""
 
 #: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
-msgstr "Кеңейтуді инициализация жасау мүмкін емес:"
+msgstr ""
 
 #: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
@@ -37,64 +37,64 @@ msgstr ""
 
 #: ../lib/mate-menu.py:792
 msgid "Preferences"
-msgstr "Баптаулар"
+msgstr ""
 
 #: ../lib/mate-menu.py:795
 msgid "Edit menu"
-msgstr "Мәзірді өзгерту"
+msgstr ""
 
 #: ../lib/mate-menu.py:798
 msgid "Reload plugins"
-msgstr "Кеңейтуді қайта жүктеу"
+msgstr ""
 
 #: ../lib/mate-menu.py:801
 msgid "About"
-msgstr "Бағдарлама туралы"
+msgstr ""
 
 #. i18n
 #: ../lib/mate-menu-config.py:50
 msgid "Menu preferences"
-msgstr "Мәзірдің баптаулары"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr "Әрқашан сүйікті терезелер көркемдеу баптауларын қолдану"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
-msgstr "Батырманың суреттемесін көрсету"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr "Қалаған түстер қолдану"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr "\"Соңғы ашылған құжаттар\" кеңейтуін көрсету"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr "\"Бағдарламалар\" кеңейтуін көрсету"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr "\"Жүйе\" кеңейтуін көрсету"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr "\"Орындар\" кеңейтуін көрсету"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr "Бағдарламаға қатысты пікірлерді көрсету"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
-msgstr "Топтардың суреттемелерін көрсету"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr "Тышқан мәзірі біразға ілінгенде мәзірді толық көрсету"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
@@ -102,48 +102,48 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr "Атын мен жалпы атын орынменен ауыстыру"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr "Шегінің ені:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
-msgstr "пиксел"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
-msgstr "Мөлдірлігі (прозрачность):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Батырма үстіндегі жазу:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "Баптаулар"
+msgstr "Опциялар"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
 msgid "Applications"
-msgstr "Бағдарламалар"
+msgstr "Қолданбалар"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr "Әсемдеу тақырыбы"
+msgstr "Тема"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
 #: ../mate_menu/plugins/applications.py:253
 msgid "Favorites"
-msgstr "Таңдаулылар"
+msgstr "Таңдамалылар"
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "Негізгі батырма"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "Плагиндер"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Background:"
@@ -151,7 +151,7 @@ msgstr "Фон:"
 
 #: ../lib/mate-menu-config.py:83
 msgid "Headings:"
-msgstr "Тақырыптар:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "Borders:"
@@ -159,51 +159,51 @@ msgstr "Шектер:"
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
-msgstr "Әсемдеу тақырыбы:"
+msgstr "Тема:"
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:89
 msgid "Number of columns:"
-msgstr "Бағаналар саны:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
 #: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
 msgid "Icon size:"
-msgstr "Суреттеме өлшемі:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr "Тышқан мәзірі іліну уақыты (мс):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
-msgstr "Батырманың суреттемесі:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr "Командаларды іздеу:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
 msgid "Places"
-msgstr "Орындар"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr "Жылжыту жолағын қолдануға рұқсат беру"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
-msgstr ".gtk-bookmarks бетбелгілерін көрсету"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
-msgstr "Биіктік:"
+msgstr "Биіктігі:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "Қалыпты орындарды ауыстыру:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -227,7 +227,7 @@ msgstr "Қоқыс шелегі"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr "Пайдалану қалағанша орналасуы:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
@@ -236,18 +236,18 @@ msgstr "Жүйе"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "Қалыпты элементтерді ауыстыру:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
 #: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
-msgstr "Пакеттер менеджері"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:115
 #: ../mate_menu/plugins/system_management.py:157
 msgid "Control Center"
-msgstr "Басқару орталығы"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:116
 #: ../mate_menu/plugins/system_management.py:164
@@ -257,32 +257,32 @@ msgstr "Терминал"
 #: ../lib/mate-menu-config.py:117
 #: ../mate_menu/plugins/system_management.py:174
 msgid "Lock Screen"
-msgstr "Экранды бөгеттеу"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
-msgstr "Сеанстан шығу"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:119
 #: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
-msgstr "Шығу"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr "Орынды өзгерту"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr "Жаңа орынды құру"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr "Буманы таңдаңыз"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
-msgstr "Пернелердің үйлесімі:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:158
 msgid "Images"
@@ -290,113 +290,113 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:267
 msgid "Name"
-msgstr "Аты"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:268
 msgid "Path"
-msgstr "Орналасу жері"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
-msgstr "Жұмыс үстел әсемдеу тақырыбы"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
 msgid "Name:"
-msgstr "Аты:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
 msgid "Path:"
-msgstr "Орналасу жері:"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
-msgstr "Іздеу:"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
-msgstr "Барлық бағдарламалар"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
-msgstr "%s Google-да іздеу"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "%s Wikipedia -да іздеу"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "%s сөздікте (Dictionary) қарау"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr "%s компьютерде іздеу"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:763
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
-msgstr "Жұмыс үстелге шығару"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:764
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
-msgstr "Панельге шығару"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:766
 #: ../mate_menu/plugins/applications.py:813
 msgid "Insert space"
-msgstr "Бос орын енгізу"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:767
 #: ../mate_menu/plugins/applications.py:814
 msgid "Insert separator"
-msgstr "Бөлгішті енгізу"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr "Жүйеге кірген кезде ашу"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
-msgstr "Ашу"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
-msgstr "Таңдаулыдан алып тастау"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
-msgstr "Қасиеттерін өзгерту"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
-msgstr "Жою"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr "Таңдаулыда көрсету"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
-msgstr "Мәзірден жою"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr "Google-да іздеу"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr "Wikipedia-да іздеу"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
@@ -404,84 +404,79 @@ msgstr ""
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr "Компьютерде іздеу"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Таңдаулыларды сақтау мүмкін емес. ~/.linuxmint/mintMenu жазу құқығының бар "
-"болуын тексеріңіз."
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
-msgstr "Барлығы"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
-msgstr "Барлық бағдарламаларды көрсету"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr "Бағдарламалардың пакеттерін орнату, жою және жаңарту"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
-msgstr "Жүйеңізді қалыпқа келтіру"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
-msgstr "Коммандалық жолды қолдану"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
-msgstr "Бекітуден босату үшін құпия сөзді енгізу қажет"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
-msgstr "Жүйеден шығу"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:189
 msgid "Log out or switch user"
-msgstr "Жүйеден шығу немесе пайдаланушы ауыстыру"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Сөндіру, қайта жүктеу, қалқыту немесе ұйықтату"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Осы компьютерден қол жетімді барлық локальды барлық дискілер мен бумаларды "
-"қарап шығу"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
-msgstr "Өзіңіздің жеке бумаңызды ашу"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr "Сақталған және локальды желілік орындарды қарап шығу"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr "Жұмыс үстелінде орналасқан элементтерді қарап шығу"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr "Өшірілген файлдарды қарап шығу"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
-msgstr "Корзинаны тазарту"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Жақында ашылған құжаттар"
+msgstr ""
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
@@ -502,87 +497,3 @@ msgstr ""
 #: ../mate_menu/keybinding.py:264
 msgid "<not set>"
 msgstr ""
-
-#~ msgid "Software Manager"
-#~ msgstr "Бағдарламалар менеджері"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "'%s' пакетін орнату"
-
-#~ msgid "Uninstall"
-#~ msgstr "Жою"
-
-#~ msgid "Find Software"
-#~ msgstr "Бағдарламаларды табу"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Оқулықтарды табу"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Құрылғыларды табу"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Ойларды табу"
-
-#~ msgid "Find Users"
-#~ msgstr "Пайдаланушыларды табу"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Жетімді бағдарламаларды қарап шығып, қажеттісін орнатыңыз"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Күтіңіз, бұл біраз уақыт алатын болады"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Кеңейтілген Gnome мәзірі"
-
-#~ msgid "Show sidepane"
-#~ msgstr "Шеткі панельді көрсету"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Бағдарлама сәтті жойылды"
-
-#~ msgid "No matching package found"
-#~ msgstr "Сәйкес пакеттер табылмады"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Мәзірден осы жазуды жояйын ба?"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Жойылатын пакеттер"
-
-#~ msgid "Remove %s?"
-#~ msgstr "%s жояйын ба?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Келесі пакеттер жойылады:"
-
-#~ msgid "Show recent documents"
-#~ msgstr "Жақында ашылған құжаттарды көрсету"
-
-#~ msgid "Colors"
-#~ msgstr "Түстер"
-
-#~ msgid "File not found"
-#~ msgstr "Файл табылмады"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "'%s' порталда іздеу"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr ".menu бұрыс файлы"
-
-#~ msgid "Not a .menu file"
-#~ msgstr ".menu файлы емес"
-
-#~ msgid "Filter:"
-#~ msgstr "Сүзгі:"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "'%s' репозиторийда іздеу"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "'%s' пакетін көрсету"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "S.Chanderbally ұсынған USP жүйесінде негізделген"

@@ -1,22 +1,22 @@
-# Lithuanian translation for MATE Menu
-# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Moo, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2015-01-23 08:30+0000\n"
-"Last-Translator: Izumi <Unknown>\n"
-"Language-Team: Lithuanian <lt@li.org>\n"
-"Language: lt\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2015-12-12 21:31+0000\n"
+"Last-Translator: Moo\n"
+"Language-Team: Lithuanian (http://www.transifex.com/mate/MATE/language/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Language: lt\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
@@ -25,23 +25,23 @@ msgstr "Meniu"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
-msgstr "Nepavyko įkelti įskiepio"
+msgstr "Nepavyko įkelti įskiepio:"
 
 #: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
-msgstr "Nepavyko paruošti įskiepio"
+msgstr "Nepavyko inicijuoti įskiepio"
 
 #: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
-msgstr "Išplėstinis MATE meniu"
+msgstr "Išplėstinis MATE Meniu"
 
 #: ../lib/mate-menu.py:792
 msgid "Preferences"
-msgstr "Nustatymai"
+msgstr "Nuostatos"
 
 #: ../lib/mate-menu.py:795
 msgid "Edit menu"
-msgstr "Redaguoti meniu"
+msgstr "Keisti meniu"
 
 #: ../lib/mate-menu.py:798
 msgid "Reload plugins"
@@ -54,11 +54,11 @@ msgstr "Apie"
 #. i18n
 #: ../lib/mate-menu-config.py:50
 msgid "Menu preferences"
-msgstr "Meniu nustatymai"
+msgstr "Meniu nuostatos"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr "Pradžioje visada rodyti žymų polangį"
+msgstr "Atvėrus meniu, rodyti mėgiamiausiųjų polangį"
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
@@ -66,11 +66,11 @@ msgstr "Rodyti mygtuko piktogramą"
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr "Naudoti kitokias spalvas"
+msgstr "Naudoti pasirinktines spalvas"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr "Rodyti atvertų dokumentų įskiepį"
+msgstr "Rodyti paskutiniųjų dokumentų įskiepį"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
@@ -78,7 +78,7 @@ msgstr "Rodyti programų įskiepį"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr "Rodyti sisteminį įskiepį"
+msgstr "Rodyti sistemos įskiepį"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
@@ -86,7 +86,7 @@ msgstr "Rodyti vietų įskiepį"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr "Rodyti programų komentarus"
+msgstr "Rodyti programos komentarus"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
@@ -94,15 +94,15 @@ msgstr "Rodyti kategorijų piktogramas"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr "Užvedus pelės rodyklę"
+msgstr "Užvedant pelę"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr "Prisiminti paskutinę kategoriją ar paiešką"
+msgstr "Prisiminti vėliausiąją kategoriją ar paiešką"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr "Sukeisti pavadinimą su bendriniu pavadinimu"
+msgstr "Apkeisti vietomis pavadinimus ir bendrinius pavadinimus"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
@@ -110,11 +110,11 @@ msgstr "Rėmelio plotis:"
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
-msgstr "pikseliai"
+msgstr "taškų"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
-msgstr "Permatomumas:"
+msgstr "Nepermatomumas:"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
@@ -130,12 +130,12 @@ msgstr "Programos"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr "Stilius"
+msgstr "Tema"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
 #: ../mate_menu/plugins/applications.py:253
 msgid "Favorites"
-msgstr "Žymos"
+msgstr "Mėgiamiausieji"
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
@@ -159,7 +159,7 @@ msgstr "Rėmeliai:"
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
-msgstr "Stilius:"
+msgstr "Tema:"
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
@@ -170,11 +170,11 @@ msgstr "Stulpelių skaičius:"
 #: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
 #: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
 msgid "Icon size:"
-msgstr "Piktogramų dydis:"
+msgstr "Piktogramos dydis:"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr "Pelės užvedimo delsa (ms):"
+msgstr "Delsa, užvedus pelę (ms):"
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
@@ -191,11 +191,11 @@ msgstr "Vietos"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr "Leisti rodyti slinkties juostą"
+msgstr "Leisti Slinkties Juostą"
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
-msgstr "Rodyti GTK žymas"
+msgstr "Rodyti GTK Žymeles"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
@@ -203,7 +203,7 @@ msgstr "Aukštis:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "(Ne)rodyti pagrindinių vietų"
+msgstr "Perjungti Numatytąsias Vietas:"
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -211,7 +211,7 @@ msgstr "Kompiuteris"
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:164
 msgid "Home Folder"
-msgstr "Namų aplankas"
+msgstr "Namų Aplankas"
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
@@ -219,7 +219,7 @@ msgstr "Tinklas"
 
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:198
 msgid "Desktop"
-msgstr "Darbastalis"
+msgstr "Darbalaukis"
 
 #: ../lib/mate-menu-config.py:107 ../mate_menu/plugins/places.py:209
 msgid "Trash"
@@ -227,7 +227,7 @@ msgstr "Šiukšlinė"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr "Kitos vietos:"
+msgstr "Pasirinktinės Vietos:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
@@ -236,18 +236,18 @@ msgstr "Sistema"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "(Ne)rodyti kitų vietų:"
+msgstr "Perjungti Numatytuosius Elementus:"
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
 #: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
-msgstr "Paketų tvarkyklė"
+msgstr "Paketų tvarkytuvė"
 
 #: ../lib/mate-menu-config.py:115
 #: ../mate_menu/plugins/system_management.py:157
 msgid "Control Center"
-msgstr "Valdymo centras"
+msgstr "Valdymo Centras"
 
 #: ../lib/mate-menu-config.py:116
 #: ../mate_menu/plugins/system_management.py:164
@@ -257,7 +257,7 @@ msgstr "Terminalas"
 #: ../lib/mate-menu-config.py:117
 #: ../mate_menu/plugins/system_management.py:174
 msgid "Lock Screen"
-msgstr "Užrakinti ekraną"
+msgstr "Užrakinti Ekraną"
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
@@ -266,15 +266,15 @@ msgstr "Atsijungti"
 #: ../lib/mate-menu-config.py:119
 #: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
-msgstr "Baigti"
+msgstr "Išeiti"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr "Tvarkyti vietą"
+msgstr "Keisti Vietą"
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr "Nauja vieta"
+msgstr "Nauja Vieta"
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
@@ -282,11 +282,11 @@ msgstr "Pasirinkite aplanką"
 
 #: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
-msgstr "Spartusis klavišas:"
+msgstr "Klavišų susiejimas:"
 
 #: ../lib/mate-menu-config.py:158
 msgid "Images"
-msgstr "Atvaizdai"
+msgstr "Paveikslėliai"
 
 #: ../lib/mate-menu-config.py:267
 msgid "Name"
@@ -298,7 +298,7 @@ msgstr "Kelias"
 
 #: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
-msgstr "Darbastalio stilius"
+msgstr "Darbalaukio tema"
 
 #: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
 msgid "Name:"
@@ -320,28 +320,28 @@ msgstr "Visos programos"
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
-msgstr "Ieškoti %s Google"
+msgstr "Ieškoti %s per Google"
 
 #: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Ieškoti %s Wikipedijoje"
+msgstr "Ieškoti %s per Vikipediją"
 
 #: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Ieškoti %s žodyne"
+msgstr "Pažiūrėti %s Žodyne"
 
 #: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Ieškoti %s kompiuteryje"
+msgstr "Ieškoti %s Kompiuteryje"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:763
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
-msgstr "Įdėti į darbastalį"
+msgstr "Padėti ant darbalaukio"
 
 #: ../mate_menu/plugins/applications.py:764
 #: ../mate_menu/plugins/applications.py:831
@@ -361,7 +361,7 @@ msgstr "Įterpti skirtuką"
 #: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr "Paleisti, kuomet prisijungiu"
+msgstr "Paleisti, man prisijungus"
 
 #: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
@@ -370,7 +370,7 @@ msgstr "Paleisti"
 
 #: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
-msgstr "Pašalinti iš žymų"
+msgstr "Šalinti iš mėgiamiausiųjų"
 
 #: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
@@ -380,11 +380,11 @@ msgstr "Keisti savybes"
 #. i18n
 #: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
-msgstr "Pašalinti"
+msgstr "Šalinti"
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr "Rodyti mano žymose"
+msgstr "Rodyti mano mėgiamiausiuosiuose"
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
@@ -396,28 +396,25 @@ msgstr "Ieškoti Google"
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr "Ieškoti Wikipedijoje"
+msgstr "Ieškoti Vikipedijoje"
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr "Paieškos žodynas"
+msgstr "Pažiūrėti Žodyne"
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr "Ieškoti kompiuteryje"
+msgstr "Ieškoti Kompiuteryje"
 
 #: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"Nepavyko išsaugoti žymų. Patikrinkite, ar turite suteiktą teisę rašyti į ~/."
-"linuxmint/mintMenu"
+msgstr "Nepavyko irašyti mėgiamiausiuosius. Patikrinkite ar turite ~/.config/mate-menu kūrimo leidimą"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
-msgstr "Viskas"
+msgstr "Visos"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
@@ -425,7 +422,7 @@ msgstr "Rodyti visas programas"
 
 #: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr "Diegti, šalinti ir atnaujinti programinės įrangos paketus"
+msgstr "Įdiegti, šalinti ir atnaujinti programinės įrangos paketus"
 
 #: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
@@ -433,11 +430,11 @@ msgstr "Konfigūruoti sistemą"
 
 #: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
-msgstr "Naudoti komandinę eilutę"
+msgstr "Naudoti komandų eilutę"
 
 #: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
-msgstr "Atrakinimui reikia įvesti slaptažodį"
+msgstr "Norint atrakinti, bus reikalaujama slaptažodžio"
 
 #: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
@@ -445,18 +442,16 @@ msgstr "Atsijungti"
 
 #: ../mate_menu/plugins/system_management.py:189
 msgid "Log out or switch user"
-msgstr "Atsijungti arba pakeisti naudotoją"
+msgstr "Atsijungti arba perjungti naudotoją"
 
 #: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Išjungti, perkrauti, užmigdyti arba hibernuoti"
+msgstr "Išjungti, paleisti iš naujo, pristabdyti ar užmigdyti"
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"Naršyti po visus vietinius ir nutolusius diskus ir aplankus, prieinamus iš "
-"šio kompiuterio"
+msgstr "Naršyti visus vietinius ir nutolusius diskus ir aplankus, prieinamus iš šio kompiuterio"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
@@ -468,33 +463,32 @@ msgstr "Naršyti pažymėtas ir vietines tinklo vietas"
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr "Naršyti po darbastalyje esančius objektus"
+msgstr "Naršyti darbalaukyje patalpintus elementus"
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr "Naršyti po ištrintus failus"
+msgstr "Naršyti ištrintus failus"
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
-msgstr "Valyti šiukšles"
+msgstr "Išvalyti šiukšlinę"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Vėliausi dokumentai"
+msgstr "Paskutinieji dokumentai"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr "Spustelėkite naujam meniu atidarymo ir uždarymo mygtukui nustatyti.  "
+msgstr "Spustelėkite, norėdami pasirinkti naują, šio meniu atvėrimo ir užvėrimo, spartųjį klavišą."
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr ""
-"Paspauskite Escape ar spustelėkite dar kartą pele operacijai atšaukti.  "
+msgstr "Nuspauskite Escape arba spustelėkite dar kartą, kad atšauktumėte operaciją."
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Paspauskite Backspace išvalyti esamą mygtukų susiejimą."
+msgstr "Nuspauskite Backspace, kad išvalytumėte dabartinį susiejimą."
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
@@ -503,90 +497,3 @@ msgstr "Pasirinkite spartųjį klavišą"
 #: ../mate_menu/keybinding.py:264
 msgid "<not set>"
 msgstr "<nenustatyta>"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Ieškoti diegtinų paketų"
-
-#~ msgid "Software Manager"
-#~ msgstr "Programų tvarkyklė"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Įdiegti „%s“ paketą"
-
-#~ msgid "Uninstall"
-#~ msgstr "Pašalinti"
-
-#~ msgid "Find Software"
-#~ msgstr "Ieškoti programinės įrangos"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Ieškoti pamokų"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Ieškoti aparatinės įrangos"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Ieškoti idėjų"
-
-#~ msgid "Find Users"
-#~ msgstr "Ieškoti vartotojų"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Naršyti ir įdiegti prieinamą programinę įrangą"
-
-#~ msgid "Show sidepane"
-#~ msgstr "Rodyti šoninį skydelį"
-
-#~ msgid "Show recent documents"
-#~ msgstr "Rodyti vėliausius dokumentus"
-
-#~ msgid "Colors"
-#~ msgstr "Spalvos"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Kaip pagrindas panaudota USP, sukurta S.Chanderbally"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Palaukite, tai gali šiek tiek užtrukti"
-
-#~ msgid "Filter:"
-#~ msgstr "Filtras:"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Paketai, kurie bus pašalinti"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Programa sėkmingai pašalinta"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Pašalinti %s?"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Išplėstinis Gnome meniu"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Bus pašalinti šie paketai:"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "Ne .menu byla"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "Ieškoti „%s“ šaltiniuose"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "Iekšoti „%s“ svetainėje"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "Rodyti „%s“ paketą"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "Netinkama .menu byla"
-
-#~ msgid "File not found"
-#~ msgstr "Byla nerasta"
-
-#~ msgid "No matching package found"
-#~ msgstr "Nerastas atitinkantis paketas"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Ar norite pašalinti šį meniu punktą?"

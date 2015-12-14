@@ -1,21 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
+# 玉堂白鹤 <yjwork@qq.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2015-03-25 05:13+0000\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2015-11-13 01:08+0000\n"
 "Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/MATE/"
-"language/zh_CN/)\n"
-"Language: zh_CN\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/mate/MATE/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:70
@@ -58,7 +58,7 @@ msgstr "菜单首选项"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr ""
+msgstr "总是带收藏面板启动"
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
@@ -90,19 +90,19 @@ msgstr "显示应用程序描述"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
-msgstr ""
+msgstr "显示分类图标"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr ""
+msgstr "停留"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr ""
+msgstr "记住最后的分类或搜索"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr ""
+msgstr "交换名和通用名"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
@@ -203,7 +203,7 @@ msgstr "高度："
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr ""
+msgstr "切换默认位置："
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -236,7 +236,7 @@ msgstr "系统"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr ""
+msgstr "切换默认项目："
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
@@ -320,22 +320,22 @@ msgstr "所有应用程序"
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
-msgstr ""
+msgstr "在谷歌上搜索 %s"
 
 #: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr ""
+msgstr "在维基百科上搜索 %s"
 
 #: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr ""
+msgstr "在字典里查找 %s "
 
 #: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr ""
+msgstr "在电脑里搜索 %s"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:763
@@ -392,25 +392,25 @@ msgstr "从菜单中删除"
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr ""
+msgstr "搜索谷歌"
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr ""
+msgstr "搜索维基百科"
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr ""
+msgstr "查询字典"
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr ""
+msgstr "搜索计算机"
 
 #: ../mate_menu/plugins/applications.py:1329
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
+msgstr "无法保存收藏。请检查您是否有 ~/.config/mate-menu 的写入权限"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
@@ -451,7 +451,7 @@ msgstr "关机，重启，挂起或休眠"
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
+msgstr "浏览可从本计算机访问的所有本地和远程磁盘和文件夹"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
@@ -480,15 +480,15 @@ msgstr "最近文档"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
+msgstr "点击已设置一个新的加速器来打开和关闭菜单。"
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr ""
+msgstr "按下 Esc 键或再次点击以取消操作。"
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr ""
+msgstr "按下 Backspace 键以清除已存在的组合键"
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"

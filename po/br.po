@@ -1,22 +1,22 @@
-# Breton translation for MATE Menu
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Alan Monfort <alan.monfort@free.fr>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2012-06-25 10:47+0000\n"
-"Last-Translator: Sebastien Cornec <Unknown>\n"
-"Language-Team: Breton <br@li.org>\n"
-"Language: br\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2015-11-08 12:58+0000\n"
+"Last-Translator: Alan Monfort <alan.monfort@free.fr>\n"
+"Language-Team: Breton (http://www.transifex.com/mate/MATE/language/br/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Language: br\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
@@ -25,15 +25,15 @@ msgstr "Lañser"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
-msgstr ""
+msgstr "N'hall ket kargañ an enlugellad :"
 
 #: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
-msgstr ""
+msgstr "N'hall ket deraouekaat an enlugellad"
 
 #: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
-msgstr ""
+msgstr "Lañser kempleshoc'h MATE"
 
 #: ../lib/mate-menu.py:792
 msgid "Preferences"
@@ -41,56 +41,56 @@ msgstr "Gwellvezioù"
 
 #: ../lib/mate-menu.py:795
 msgid "Edit menu"
-msgstr ""
+msgstr "Embann al lañser"
 
 #: ../lib/mate-menu.py:798
 msgid "Reload plugins"
-msgstr ""
+msgstr "Adkargañ an enlugelladoù"
 
 #: ../lib/mate-menu.py:801
 msgid "About"
-msgstr ""
+msgstr "Diwar-benn"
 
 #. i18n
 #: ../lib/mate-menu-config.py:50
 msgid "Menu preferences"
-msgstr ""
+msgstr "Gwellvezioù al lañser"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr ""
+msgstr "Loc'hañ bewech gant penel ar gwellvezioù"
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
-msgstr ""
+msgstr "Diskouez arlun an afell"
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr ""
+msgstr "Arverañ al livioù personelaet"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr ""
+msgstr "Diskouez enlugelladoù nevesañ an teulioù"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr ""
+msgstr "Diskouez enlugelladoù an arloadoù"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr ""
+msgstr "Diskouez enlugelladoù ar reizhiad"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr ""
+msgstr "Diskouez enlugelladoù al lec'hioù"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr ""
+msgstr "Diskouez askelennoù an arload"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
-msgstr ""
+msgstr "Diskouez arlunioù ar rummadoù"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
@@ -98,79 +98,79 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr ""
+msgstr "Derc'hel soñj eus ar rummad pe ar c'hlask diwezhañ"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr ""
+msgstr "Kevamsaviñ an anv ouzh an anv rumm"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr ""
+msgstr "Tevder ar riblenn :"
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
-msgstr ""
+msgstr "a bikselioù"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
-msgstr ""
+msgstr "Demerez :"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr ""
+msgstr "Testenn an afell :"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr ""
+msgstr "Dibarzhioù"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
 msgid "Applications"
-msgstr ""
+msgstr "Arloadoù"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr ""
+msgstr "Neuz"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
 #: ../mate_menu/plugins/applications.py:253
 msgid "Favorites"
-msgstr ""
+msgstr "Ho re well"
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr ""
+msgstr "Afell bennañ"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "Enlugelladoù"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Background:"
-msgstr ""
+msgstr "Drekleur :"
 
 #: ../lib/mate-menu-config.py:83
 msgid "Headings:"
-msgstr ""
+msgstr "Titloù :"
 
 #: ../lib/mate-menu-config.py:84
 msgid "Borders:"
-msgstr ""
+msgstr "Riblennoù :"
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
-msgstr ""
+msgstr "Neuz :"
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:89
 msgid "Number of columns:"
-msgstr ""
+msgstr "Niver a vannoù :"
 
 #: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
 #: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
 msgid "Icon size:"
-msgstr ""
+msgstr "Ment an arlun :"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
@@ -178,322 +178,322 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
-msgstr ""
+msgstr "Arlun an afell :"
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr ""
+msgstr "Arc'had klsk :"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
 msgid "Places"
-msgstr ""
+msgstr "Lec'hioù"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr ""
+msgstr "Aotren ar varrenn dibuniñ"
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
-msgstr ""
+msgstr "Diskouez ar sinedoù mod GTK"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
-msgstr ""
+msgstr "Sav :"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr ""
+msgstr "Trec'haoliñ al lec'hioù dre ziouer :"
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
-msgstr ""
+msgstr "Urzhiataer"
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:164
 msgid "Home Folder"
-msgstr ""
+msgstr "Teuliad personel"
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
-msgstr ""
+msgstr "Rouedad"
 
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:198
 msgid "Desktop"
-msgstr ""
+msgstr "Burev"
 
 #: ../lib/mate-menu-config.py:107 ../mate_menu/plugins/places.py:209
 msgid "Trash"
-msgstr ""
+msgstr "Lastez"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr ""
+msgstr "Lec'hioù personelaet :"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
 msgid "System"
-msgstr ""
+msgstr "Reizhiad"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr ""
+msgstr "Trec'haoliñ an elfennoù dre ziouer :"
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
 #: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
-msgstr ""
+msgstr "Ardoer ar pakadoù"
 
 #: ../lib/mate-menu-config.py:115
 #: ../mate_menu/plugins/system_management.py:157
 msgid "Control Center"
-msgstr ""
+msgstr "Kreizenn reoliñ"
 
 #: ../lib/mate-menu-config.py:116
 #: ../mate_menu/plugins/system_management.py:164
 msgid "Terminal"
-msgstr ""
+msgstr "Termenell"
 
 #: ../lib/mate-menu-config.py:117
 #: ../mate_menu/plugins/system_management.py:174
 msgid "Lock Screen"
-msgstr ""
+msgstr "Prennañ ar skramm"
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
-msgstr ""
+msgstr "Digennaskañ"
 
 #: ../lib/mate-menu-config.py:119
 #: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
-msgstr ""
+msgstr "Kuitaat"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr ""
+msgstr "Embann al lec'h"
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr ""
+msgstr "Lec'h nevez"
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr ""
+msgstr "Diuzañ un teuliad"
 
 #: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
-msgstr ""
+msgstr "Berradennoù klavier :"
 
 #: ../lib/mate-menu-config.py:158
 msgid "Images"
-msgstr ""
+msgstr "Skeudennoù"
 
 #: ../lib/mate-menu-config.py:267
 msgid "Name"
-msgstr ""
+msgstr "Anv"
 
 #: ../lib/mate-menu-config.py:268
 msgid "Path"
-msgstr ""
+msgstr "Treug"
 
 #: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
-msgstr ""
+msgstr "Neuz ar burev"
 
 #: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
 msgid "Name:"
-msgstr ""
+msgstr "Anv :"
 
 #: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
 msgid "Path:"
-msgstr ""
+msgstr "Treug :"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
-msgstr ""
+msgstr "Klask :"
 
 #: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
-msgstr ""
+msgstr "An holl arloadoù"
 
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
-msgstr ""
+msgstr "Klask dre c'hGoogle evit %s"
 
 #: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr ""
+msgstr "Klask dre Wikipedia evit %s"
 
 #: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr ""
+msgstr "Klask %s er geriadur"
 
 #: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr ""
+msgstr "Klask dre an urzhiataer evit %s"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:763
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
-msgstr ""
+msgstr "Ouzhpennañ d'ar burev"
 
 #: ../mate_menu/plugins/applications.py:764
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
-msgstr ""
+msgstr "Ouzhpennañ d'ar penel"
 
 #: ../mate_menu/plugins/applications.py:766
 #: ../mate_menu/plugins/applications.py:813
 msgid "Insert space"
-msgstr ""
+msgstr "Enlakaat un esaouenn"
 
 #: ../mate_menu/plugins/applications.py:767
 #: ../mate_menu/plugins/applications.py:814
 msgid "Insert separator"
-msgstr ""
+msgstr "Enlakaat ur c'hefarz"
 
 #: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr ""
+msgstr "Lañsañ p'en em gennaskan outi"
 
 #: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
-msgstr ""
+msgstr "Lañsañ"
 
 #: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
-msgstr ""
+msgstr "Dilemel diouzh ar gwellvezioù"
 
 #: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
-msgstr ""
+msgstr "Embann ar perzhioù"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
-msgstr ""
+msgstr "Dilemel"
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr ""
+msgstr "Diskouez e'm re well"
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
-msgstr ""
+msgstr "Dilemel diwar al lañser"
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr ""
+msgstr "Klask dre c'hGoogle"
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr ""
+msgstr "Klask dre Wikipedia"
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr ""
+msgstr "Klask er geriadur"
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr ""
+msgstr "Klask dre an urzhiataer"
 
 #: ../mate_menu/plugins/applications.py:1329
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
+msgstr "N'hall ket enrollañ ar re well. Gwiriit hag-eñ hoc'h eus ar gwirioù da skrivañ war ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
-msgstr ""
+msgstr "An holl anezho"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
-msgstr ""
+msgstr "Diskouez an holl arloadoù"
 
 #: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr ""
+msgstr "Staliañ, dilemel hag hizivaat pakadoù ar meziantoù"
 
 #: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
-msgstr ""
+msgstr "Kefluniañ ho reizhiad"
 
 #: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
-msgstr ""
+msgstr "Arverañ an arc'hadoù"
 
 #: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
-msgstr ""
+msgstr "Azgoulenn a ra ur ger-tremen da zibrennañ"
 
 #: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
-msgstr ""
+msgstr "Digennaskañ"
 
 #: ../mate_menu/plugins/system_management.py:189
 msgid "Log out or switch user"
-msgstr ""
+msgstr "Digennaskañ pe kevamsaviñ gant un arveriad all"
 
 #: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr ""
+msgstr "Lazhañ, adloc'hañ, arsaviñ, goañviñ"
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
+msgstr "Merdeiñ dre an holl gantennoù ha teuliadoù lec'hel pe a-bell a vez tizhet diouzh an urzhiataer-mañ"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
-msgstr ""
+msgstr "Digeriñ ho teuliad personel"
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr ""
+msgstr "Merdeiñ dre lec'hiadurioù ar rouedad lec'hel ha lakaet ur sined warno"
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr ""
+msgstr "Merdeiñ e-touez an elfennoù lec'hiet war ar burev"
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr ""
+msgstr "Merdeiñ e-touez ar restroù diverket"
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
-msgstr ""
+msgstr "Goullonderiñ al lastez"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr ""
+msgstr "Teulioù a-nevez"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
+msgstr "Klikañ evit erspizañ ur stokell herrekaat evit digeriñ pe serriñ al lañser."
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr ""
+msgstr "Pouezañ war Achap pe glikañ ur wec'h c'hoazh da nullañ ar gwezhiadur."
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr ""
+msgstr "Pouezañ war kilesaouiñ da skarzhañ ar verradenn glavier a zo anezhi."
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
-msgstr ""
+msgstr "Tapout un herrekaell"
 
 #: ../mate_menu/keybinding.py:264
 msgid "<not set>"
-msgstr ""
+msgstr "<n'eo ket despizet>"

@@ -5,15 +5,17 @@
 # Translators:
 # dragnadh <dragnadh@gmail.com>, 2015
 # Mathijn Jonker <mathijnjonker@hotmail.com>, 2015
+# Michael Steenbeek <m.o.steenbeek@gmail.com>, 2015
 # Nathan Follens, 2015
+# René Devers <rene.devers@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-17 17:04+0000\n"
-"PO-Revision-Date: 2015-07-02 16:36+0000\n"
-"Last-Translator: dragnadh <dragnadh@gmail.com>\n"
-"Language-Team: Dutch (http://www.transifex.com/projects/p/MATE/language/nl/)\n"
+"PO-Revision-Date: 2015-11-10 18:26+0000\n"
+"Last-Translator: Michael Steenbeek <m.o.steenbeek@gmail.com>\n"
+"Language-Team: Dutch (http://www.transifex.com/mate/MATE/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -60,7 +62,7 @@ msgstr "Menuvoorkeuren"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr ""
+msgstr "Start altijd met het favorieten paneel"
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
@@ -72,7 +74,7 @@ msgstr "Aangepaste kleuren gebruiken"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr ""
+msgstr "Toon recente documenten invoegtoepassing"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
@@ -84,7 +86,7 @@ msgstr "Toon systeem invoegtoepassing"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr ""
+msgstr "Locaties-plugin tonen"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
@@ -96,7 +98,7 @@ msgstr "Toon categoriepictogrammen"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr ""
+msgstr "Zweven"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
@@ -104,7 +106,7 @@ msgstr "Herinner de laatste categorie of zoekterm"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr ""
+msgstr "Naam en generieke naam omwisselen"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
@@ -176,7 +178,7 @@ msgstr "Pictogramomvang:"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr ""
+msgstr "Zweefvertraging (ms):"
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
@@ -205,7 +207,7 @@ msgstr "Hoogte:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr ""
+msgstr "Standaardlocaties schakelen:"
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -238,7 +240,7 @@ msgstr "Systeem"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr ""
+msgstr "Standaarditems schakelen:"
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
@@ -412,7 +414,7 @@ msgstr "Zoeken op computer"
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
+msgstr "Kon favorieten niet opslaan. Controleer of u schrijftoegang hebt tot ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
@@ -448,12 +450,12 @@ msgstr "Afmelden of van gebruiker wisselen"
 
 #: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr ""
+msgstr "Afsluiten, herstarten, sluimerstand of slaapstand"
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
+msgstr "Door lokale schijven en schijven op afstand bladeren"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
@@ -482,7 +484,7 @@ msgstr "Recente documenten"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
+msgstr "Klik om een nieuwe sneltoets voor het openen en sluiten van het menu in te stellen."
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "

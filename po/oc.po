@@ -1,22 +1,22 @@
-# Occitan (post 1500) translation for MATE Menu
-# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Cédric Valmary <cvalmary@yahoo.fr>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2013-11-29 12:31+0000\n"
-"Last-Translator: Cédric VALMARY (Tot en òc) <cvalmary@yahoo.fr>\n"
-"Language-Team: Occitan (post 1500) <oc@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2015-12-12 07:02+0000\n"
+"Last-Translator: Cédric Valmary <cvalmary@yahoo.fr>\n"
+"Language-Team: Occitan (post 1500) (http://www.transifex.com/mate/MATE/language/oc/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Language: oc\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
@@ -25,11 +25,11 @@ msgstr "Menú"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
-msgstr "Pas possible de cargar l'empeuton"
+msgstr ""
 
 #: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
-msgstr "Pas possible d'inicializar l'empeuton"
+msgstr ""
 
 #: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
@@ -41,11 +41,11 @@ msgstr "Preferéncias"
 
 #: ../lib/mate-menu.py:795
 msgid "Edit menu"
-msgstr "Editar lo menú"
+msgstr ""
 
 #: ../lib/mate-menu.py:798
 msgid "Reload plugins"
-msgstr "Actualizar los empeutons"
+msgstr ""
 
 #: ../lib/mate-menu.py:801
 msgid "About"
@@ -54,59 +54,59 @@ msgstr "A prepaus"
 #. i18n
 #: ../lib/mate-menu-config.py:50
 msgid "Menu preferences"
-msgstr "Preferéncias del menú"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr "Totjorn començar amb los favorits"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
-msgstr "Afichar l'icòna del boton"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr "Utilizar de colors personalizadas"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr "Activar lo plugin dels documents recents"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr "Activar lo plugin de las aplicacions"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr "Activar lo plugin sistèma"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr "Activar lo plugin emplaçaments"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr "Afichar los comentaris de l'aplicacion"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
-msgstr "Afichar las icònas de categoria"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr "Susvolar"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr "Remenbratz-vos de la darrièra categoria o recèrca"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr "Escambiar lo nom e lo nom generic"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr "Largor de la bordadura"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
@@ -114,11 +114,11 @@ msgstr "pixèls"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
-msgstr "Opacitat :"
+msgstr "Opacitat :"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Tèxte del boton :"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
@@ -135,11 +135,11 @@ msgstr "Tèma"
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
 #: ../mate_menu/plugins/applications.py:253
 msgid "Favorites"
-msgstr "Marcapaginas"
+msgstr "Favorits"
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "Boton principal"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
@@ -147,25 +147,25 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:82
 msgid "Background:"
-msgstr "Rèire plan :"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:83
 msgid "Headings:"
-msgstr "Títols :"
+msgstr "Entèstas :"
 
 #: ../lib/mate-menu-config.py:84
 msgid "Borders:"
-msgstr "Bordaduras :"
+msgstr "Bordaduras :"
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
-msgstr "Tèma :"
+msgstr "Tèma :"
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:89
 msgid "Number of columns:"
-msgstr "Nombre de colomnas :"
+msgstr "Nombre de colomnas :"
 
 #: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
 #: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
@@ -174,36 +174,36 @@ msgstr "Talha de l'icòna :"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr "Relambi de susvòl (ms) :"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
-msgstr "Icòna del boton :"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr "Foncion recèrca :"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
 msgid "Places"
-msgstr "Emplaçaments"
+msgstr "Acorchis"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr "Autorizar la barra de desfilament"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
-msgstr "Far veire los signets de Nautilus"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
-msgstr "Nautor :"
+msgstr "Nautor :"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "Alternar los emplaçaments per defaut"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -227,7 +227,7 @@ msgstr "Escobilhièr"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr "Emplaçaments personalizats :"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
@@ -236,13 +236,13 @@ msgstr "Sistèma"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "Alternar los elements per defaut :"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
 #: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
-msgstr "Gestionari de paquets"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:115
 #: ../mate_menu/plugins/system_management.py:157
@@ -261,7 +261,7 @@ msgstr "Varrolhar l'ecran"
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
-msgstr "Tampar la sesilha"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:119
 #: ../mate_menu/plugins/system_management.py:192
@@ -270,19 +270,19 @@ msgstr "Quitar"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr "Editar l'emplaçament"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr "Emplaçament novèl"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr "Seleccionar un dorsièr"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
-msgstr "Acorchi de clavièr :"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:158
 msgid "Images"
@@ -302,16 +302,16 @@ msgstr "Tèma del burèu"
 
 #: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
 msgid "Name:"
-msgstr "Nom :"
+msgstr "Nom :"
 
 #: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
 msgid "Path:"
-msgstr "Camin :"
+msgstr "Camin :"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
-msgstr "Recercar :"
+msgstr "Recercar :"
 
 #: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
@@ -320,22 +320,22 @@ msgstr "Totas las aplicacions"
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
-msgstr "Cercar %s sus Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Cercar %s sus Wikipèdia"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Cercar %s dins lo diccionari"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Cercar %s dins l'ordenador"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:763
@@ -346,7 +346,7 @@ msgstr "Apondre al burèu"
 #: ../mate_menu/plugins/applications.py:764
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
-msgstr "Apondre al tablèu de bòrd"
+msgstr "Apondre al panèl"
 
 #: ../mate_menu/plugins/applications.py:766
 #: ../mate_menu/plugins/applications.py:813
@@ -361,7 +361,7 @@ msgstr "Inserir un separador"
 #: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr "Aviar quand me connècti"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
@@ -370,12 +370,12 @@ msgstr "Aviar"
 
 #: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
-msgstr "Suprimir dels preferits"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
-msgstr "Modificar las proprietats"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:812
@@ -384,52 +384,49 @@ msgstr "Suprimir"
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr "Afichar dins mos favorits"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
-msgstr "Levar del menú"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr "Recèrca Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr "Recèrca Wikipédia"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr "Cercar dins lo diccionari"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr "Cercar dins l'ordenador"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Impossible de salvar los favorits. Verificatz se avètz lo drech d'escritura "
-"sul fichièr ~/.linuxmint/mintMenu"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
-msgstr "Tot"
+msgstr "Totes"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
-msgstr "Afichar totas las aplicacions"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr "Installar, suprimir e metre a nivèl los paquets informatics"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
-msgstr "Configurar vòstre sistèma"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
@@ -437,42 +434,40 @@ msgstr "Utilizar la linha de comanda"
 
 #: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
-msgstr "Senhal requesit"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
-msgstr "Se desconnectar"
+msgstr "Desconnexion"
 
 #: ../mate_menu/plugins/system_management.py:189
 msgid "Log out or switch user"
-msgstr "Se desconnectar o cambiar d'utilizaire"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Atudar, reamodar, metre en velha o ivernar"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Percórrer totes los disques locals e distants emai los dorsièrs que son "
-"accessibles a partir d'aqueste ordenador"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
-msgstr "Dobrir vòstre dorsièr personal"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr "Percórrer los emplaçaments meses en signets e la ret locala"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr "Percórrer los elements dispausats sul burèu"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr "Percórrer los fichièrs suprimits"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
@@ -481,111 +476,24 @@ msgstr "Voidar l'escobilhièr"
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Documents recents"
+msgstr ""
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr "Clicatz per definir un novèl acorchi per dobrir e tampar lo menú  "
+msgstr ""
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Quichatz sus espaci o clicatz per anullar l'operacion  "
+msgstr ""
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Quichatz sus Retorn arrièr per escafar l'acorchi de clavièr."
+msgstr ""
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
-msgstr "Causissètz un acorchi de clavièr"
+msgstr ""
 
 #: ../mate_menu/keybinding.py:264
 msgid "<not set>"
-msgstr "<pas configurat>"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Recercar los paquets d'installar"
-
-#~ msgid "Software Manager"
-#~ msgstr "Gestionari de logicials"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Installar lo paquet '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "Desinstallar"
-
-#~ msgid "Find Software"
-#~ msgstr "Trobar de logicials"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Trobar de tutorials"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Trobar de material"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Trobar d'idèas"
-
-#~ msgid "Find Users"
-#~ msgstr "Trobar d'utilizaires"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Percórrer e installar los logicials disponibles"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Basat sus USP de S.Chanderbally"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Paquets de suprimir"
-
-#~ msgid "Show sidepane"
-#~ msgstr "Afichar lo paneu laterau"
-
-#~ msgid "Show recent documents"
-#~ msgstr "Afichar los documents recents"
-
-#~ msgid "Colors"
-#~ msgstr "Colors"
-
-#~ msgid "File not found"
-#~ msgstr "Pas de fichièr trobat"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "Afichar los paquets '%s'"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "Qu'es pas un fichier .menu valide"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "Qu'es pas un fichier .menu"
-
-#~ msgid "Filter:"
-#~ msgstr "Filtre :"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "Cherchar '%s' dins los graniers"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "Cherchar '%s' sus lo portaneu"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Menú GNOME avançat"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "L'aplicacion es estada suprimida amb succès"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Suprimir %s ?"
-
-#~ msgid "No matching package found"
-#~ msgstr "Pas cap de paquet correspondent es pas estat trobat"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Volètz suprimir aquesta entrada del menú ?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Los paquets seguents seràn suprimits :"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Esperatz se vos plai, aquò pòt durar"
+msgstr ""

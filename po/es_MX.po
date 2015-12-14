@@ -1,21 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2015-03-17 07:52+0000\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2015-11-05 17:33+0000\n"
 "Last-Translator: Martin Wimpress <code@flexion.org>\n"
-"Language-Team: Spanish (Mexico) (http://www.transifex.com/projects/p/MATE/"
-"language/es_MX/)\n"
-"Language: es_MX\n"
+"Language-Team: Spanish (Mexico) (http://www.transifex.com/mate/MATE/language/es_MX/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_MX\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:70
@@ -215,7 +214,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
-msgstr ""
+msgstr "Red"
 
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:198
 msgid "Desktop"
@@ -380,7 +379,7 @@ msgstr ""
 #. i18n
 #: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
-msgstr ""
+msgstr "Eliminar"
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"

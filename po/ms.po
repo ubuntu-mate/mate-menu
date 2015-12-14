@@ -1,22 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # abuyop <abuyop@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2015-03-20 23:34+0000\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2015-12-03 17:53+0000\n"
 "Last-Translator: abuyop <abuyop@gmail.com>\n"
-"Language-Team: Malay (http://www.transifex.com/projects/p/MATE/language/"
-"ms/)\n"
-"Language: ms\n"
+"Language-Team: Malay (http://www.transifex.com/mate/MATE/language/ms/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ms\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:70
@@ -411,9 +410,7 @@ msgstr "Gelintar Komputer"
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"Tidak dapat simpan kegemaran. Periksa sama ada anda telah membuat capaian "
-"tulis kepada  ~/.config/mate-menu"
+msgstr "Tidak dapat simpan kegemaran. Periksa sama ada anda telah membuat capaian tulis kepada  ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
@@ -454,9 +451,7 @@ msgstr "Matikan, mula semula, tangguh atau hibernasi"
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"Layar semua cakera dan folder setempat atau jauh yang boleh dicapai dari "
-"komputer ini"
+msgstr "Layar semua cakera dan folder setempat atau jauh yang boleh dicapai dari komputer ini"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
@@ -485,8 +480,7 @@ msgstr "Dokumen baru-baru ini"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"Klik untuk tetapkan kekunci pemecut baharu untuk membuka dan menutup menu."
+msgstr "Klik untuk tetapkan kekunci pemecut baharu untuk membuka dan menutup menu."
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "

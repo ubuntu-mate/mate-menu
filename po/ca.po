@@ -1,22 +1,23 @@
-# Catalan translation for MATE Menu
-# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Francesc <kiski97@gmail.com>, 2015
+# Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2014-11-27 13:46+0000\n"
-"Last-Translator: Isidro Pisa <isidro@utils.info>\n"
-"Language-Team: Catalan <ca@li.org>\n"
-"Language: ca\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2015-12-10 11:56+0000\n"
+"Last-Translator: Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>\n"
+"Language-Team: Catalan (http://www.transifex.com/mate/MATE/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Language: ca\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
@@ -25,11 +26,11 @@ msgstr "Menú"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
-msgstr "No s'ha pogut carregar el plugin:"
+msgstr "No s'ha pogut carregar el connector:"
 
 #: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
-msgstr "No s'ha pogut inicialitzar el plugin"
+msgstr "No s'ha pogut inicialitzar el connector:"
 
 #: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
@@ -45,11 +46,11 @@ msgstr "Edita el menú"
 
 #: ../lib/mate-menu.py:798
 msgid "Reload plugins"
-msgstr "Recarrega els plugins"
+msgstr "Torna a carregar els connectors"
 
 #: ../lib/mate-menu.py:801
 msgid "About"
-msgstr "Quant a..."
+msgstr "Quant a"
 
 #. i18n
 #: ../lib/mate-menu-config.py:50
@@ -58,7 +59,7 @@ msgstr "Preferències del menú"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr "Inicia sempre amb la subfinestra dels preferits"
+msgstr "Inicia sempre amb el plafó de preferits"
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
@@ -66,47 +67,47 @@ msgstr "Mostra la icona del botó"
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr "Utilitza colors personalitzats"
+msgstr "Utilitza els colors personalitzats"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr "Mostra el connector de documents recents"
+msgstr "Mostra el connector dels documents recents"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr "Mostra el connector d'aplicacions"
+msgstr "Mostra el connector de les aplicacions"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr "Mostra el connector de sistema"
+msgstr "Mostra el connector del sistema"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr "Mostra el connector de llocs"
+msgstr "Mostra el connector dels llocs"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr "Mostra els comentaris de l'aplicació"
+msgstr "Mostra els comentaris de les aplicacions"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
-msgstr "Mostra les icones per categories"
+msgstr "Mostra les icones de les categories"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr "Manteniment"
+msgstr "En passar per sobre"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr "Recordar l'ultima categoria o busca"
+msgstr "Recorda l'última categoria o cerca"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr "Intercanviar nom i nom genèric"
+msgstr "Intercanvia el nom i el nom genèric"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr "Amplada de la vora:"
+msgstr "Amplada del contorn:"
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
@@ -143,7 +144,7 @@ msgstr "Botó principal"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr "Plugins"
+msgstr "Connectors"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Background:"
@@ -174,15 +175,15 @@ msgstr "Mida de la icona:"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr "Retard del manteniment (ms):"
+msgstr "Retard en passar per sobre (ms):"
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
-msgstr "Icona del botó"
+msgstr "Icona del botó:"
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr "Ordre de cerca"
+msgstr "Ordre de cerca:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
@@ -195,7 +196,7 @@ msgstr "Permet la barra de desplaçament"
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
-msgstr "Mostra els preferits de GTK"
+msgstr "Mostra els marcadors del GTK"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
@@ -203,7 +204,7 @@ msgstr "Alçada:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "Commuta Emplaçaments Predeterminats:"
+msgstr "Alterna els llocs per defecte:"
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -211,7 +212,7 @@ msgstr "Ordinador"
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:164
 msgid "Home Folder"
-msgstr "Carpeta d'Inici"
+msgstr "Carpeta d'inici"
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
@@ -227,7 +228,7 @@ msgstr "Paperera"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr "Emplaçaments personalitzats:"
+msgstr "Llocs personalitzats:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
@@ -236,7 +237,7 @@ msgstr "Sistema"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "Commuta elements predeterminats:"
+msgstr "Alterna els elements per defecte:"
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
@@ -252,33 +253,33 @@ msgstr "Centre de control"
 #: ../lib/mate-menu-config.py:116
 #: ../mate_menu/plugins/system_management.py:164
 msgid "Terminal"
-msgstr "Consola"
+msgstr "Terminal"
 
 #: ../lib/mate-menu-config.py:117
 #: ../mate_menu/plugins/system_management.py:174
 msgid "Lock Screen"
-msgstr "Bloca la pantalla"
+msgstr "Bloqueja la pantalla"
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
-msgstr "Surt de la Sessió"
+msgstr "Tanca la sessió"
 
 #: ../lib/mate-menu-config.py:119
 #: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
-msgstr "Atura l'Ordinador"
+msgstr "Surt"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr "Edita l'emplaçament"
+msgstr "Edita el lloc"
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr "Nou emplaçament"
+msgstr "Nou lloc"
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr "Selecciona un directori"
+msgstr "Selecciona una carpeta"
 
 #: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
@@ -325,52 +326,52 @@ msgstr "Cerca %s a Google"
 #: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Cerca %s a la Wikipèdia"
+msgstr "Cerca %s a Wikipedia"
 
 #: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Cerca %s al Diccionari"
+msgstr "Cerca %s al diccionari"
 
 #: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Cerca %s a l'ordinador"
+msgstr "Cerca l'ordinador %s"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:763
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
-msgstr "Afegix a l'escriptori"
+msgstr "Afegeix-ho a l'escriptori"
 
 #: ../mate_menu/plugins/applications.py:764
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
-msgstr "Afegix al tauler"
+msgstr "Afegeix-ho al taulell"
 
 #: ../mate_menu/plugins/applications.py:766
 #: ../mate_menu/plugins/applications.py:813
 msgid "Insert space"
-msgstr "Afegeix un espai"
+msgstr "Posa un espai"
 
 #: ../mate_menu/plugins/applications.py:767
 #: ../mate_menu/plugins/applications.py:814
 msgid "Insert separator"
-msgstr "Afegeix un separador"
+msgstr "Posa un separador"
 
 #: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr "Executa quan s'iniciï la sessió"
+msgstr "Llança quan iniciï la sessió"
 
 #: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
-msgstr "Executa"
+msgstr "Llança"
 
 #: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
-msgstr "Eliminar dels preferits"
+msgstr "Elimina-ho dels preferits"
 
 #: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
@@ -380,40 +381,37 @@ msgstr "Edita les propietats"
 #. i18n
 #: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
-msgstr "Elimina"
+msgstr "Suprimeix"
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr "Mostra als meus preferits"
+msgstr "Mostra-ho als meus preferits"
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
-msgstr "Elimina del menú"
+msgstr "Elimina-ho del menú"
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr "Cerca a Google"
+msgstr "Cerca-ho al Google"
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr "Cerca a la Viquipèdia"
+msgstr "Cerca-ho a la Wikipedia"
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr "Diccionari de Consulta"
+msgstr "diccionari de recerca"
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr "Cerca a l’ordinador"
+msgstr "Cerca-ho a l'ordinador"
 
 #: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"No s'han pogut guardar els preferits. Comproveu si teniu accés d'escriptura "
-"a ~/.linuxmint/mintMenu"
+msgstr "No s'ha pogut desar els preferits. Comproveu que teniu l'accés d'escriptura a ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
@@ -421,58 +419,56 @@ msgstr "Tot"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
-msgstr "Mostrar totes les aplicacions"
+msgstr "Mostra totes les notificacions"
 
 #: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr "Instal·la, elimina i actualitza els paquets de programari"
+msgstr "Instal·la, actualitza i elimina els paquets de programari"
 
 #: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
-msgstr "Configureu el sistema"
+msgstr "Configura el vostre sistema"
 
 #: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
-msgstr "Obriu la línia d'ordres"
+msgstr "Utilitza la línia d'ordres"
 
 #: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
-msgstr "Requereix la contrasenya per desbloquejar"
+msgstr "Cal una contrasenya per desbloquejar"
 
 #: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
-msgstr "Surt de la Sessió"
+msgstr "Tanca la sessió"
 
 #: ../mate_menu/plugins/system_management.py:189
 msgid "Log out or switch user"
-msgstr "Surt de la Sessió o Canvia l'Usuari"
+msgstr "Tanca la sessió o canvia d'usuari"
 
 #: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Atura, reinicia, suspèn o hiberna"
+msgstr "Apaga, reinicia, suspèn o hiverna"
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"Navegueu tots els discs i carpetes locals o remotes accessibles des d'aquest "
-"ordinador"
+msgstr "Navegueu per tots els discs i carpetes, locals o remots, que es poden accedir des d'aquest ordinador"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
-msgstr "Obriu la Carpeta d'Inici"
+msgstr "Obriu la vostra carpeta personal"
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr "Navegueu per ubicacions de les adreces d'interés i de xarxa local"
+msgstr "Navegueu pels marcadors i les ubicacions de la xarxa local"
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr "Examina els elements ubicats a l'escriptori"
+msgstr "Navega pels elements a l'escriptori"
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr "Examina els arxius eliminats"
+msgstr "Navega pels elements eliminats"
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
@@ -485,109 +481,20 @@ msgstr "Documents recents"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"Feu clic per crear una nova drecera de teclat per obrir i tancar el menú.  "
+msgstr "Feu clic per establir una nova tecla acceleradora per obrir i tancar el menú."
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Prem 'Escape' o torna a clicar per cancelar l'operació.  "
+msgstr "Premeu la tecla d'escapament o feu clic de nou per cancel·lar l'operació."
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr ""
-"Prem la tecla de retrocés per desactivar la combinació de tecles existents"
+msgstr "Premeu la tecla de retrocés per netejar la vinculació de tecles existent."
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
-msgstr "Trieu una drecera de teclat"
+msgstr "Tria un accelerador"
 
 #: ../mate_menu/keybinding.py:264
 msgid "<not set>"
-msgstr "<no definit>"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Buscar els paquets per a instal·lar"
-
-#~ msgid "Software Manager"
-#~ msgstr "Gestor de programari"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Instal·la el paquet '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "Desinstal·la"
-
-#~ msgid "Find Software"
-#~ msgstr "Troba Programari"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Cerca Tutorials"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Cerca Maquinari"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Busca Idees"
-
-#~ msgid "Find Users"
-#~ msgstr "Cerca Usuaris"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Navega i instal·la el programari disponible"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Basat en USP de S.Chanderbally"
-
-#~ msgid "Show recent documents"
-#~ msgstr "Mostra els documents recents"
-
-#~ msgid "Colors"
-#~ msgstr "Colors"
-
-#~ msgid "Filter:"
-#~ msgstr "Filtre:"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "Mostra el paquet '%s'"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "Cerca '%s' al portal"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Aplicació eliminada amb èxit"
-
-#~ msgid "No matching package found"
-#~ msgstr "No s'han trobat paquets coincidents"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Paquets per eliminar"
-
-#~ msgid "File not found"
-#~ msgstr "No s'ha trobat el fitxer"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "Cerca '%s' als dipòsits"
-
-#~ msgid "Show sidepane"
-#~ msgstr "Mostra la subfinestra lateral"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "No és un fitxer .menu vàlid"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "No és un fitxer .menu"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "S'eliminaran els paquets següents:"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Voleu eliminar %s?"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Menú avançat de Gnome"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Si us plau, espereu, això pot trigar un temps"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Voleu eliminar aquesta entrada?"
+msgstr "<sense establir>"

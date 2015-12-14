@@ -1,22 +1,24 @@
-# Turkish translation for MATE Menu
-# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Atilla Öntaş <tarakbumba@gmail.com>, 2015
+# mauron, 2015
+# mauron, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2014-11-27 15:08+0000\n"
-"Last-Translator: kelebek333 <Unknown>\n"
-"Language-Team: Turkish <tr@li.org>\n"
-"Language: tr\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2015-11-10 20:25+0000\n"
+"Last-Translator: Atilla Öntaş <tarakbumba@gmail.com>\n"
+"Language-Team: Turkish (http://www.transifex.com/mate/MATE/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
@@ -45,7 +47,7 @@ msgstr "Menüyü düzenle"
 
 #: ../lib/mate-menu.py:798
 msgid "Reload plugins"
-msgstr "Eklentileri yeniden yükle"
+msgstr "Eklentileri tekrar yükle"
 
 #: ../lib/mate-menu.py:801
 msgid "About"
@@ -58,15 +60,15 @@ msgstr "Menü tercihleri"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr "Her zaman sık kullanılanlar paneliyle başla"
+msgstr "Daima favoriler sekmesi ile başla"
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
-msgstr "Buton simgesini göster"
+msgstr "Düğme simgesini göster"
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr "Özel renkler kullan"
+msgstr "Özel renk kullan"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
@@ -94,19 +96,19 @@ msgstr "Kategori simgelerini göster"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr "Üzerinde dur"
+msgstr "Üzerinde tut"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr "Son kategori veya arama'yı hatırla"
+msgstr "Son kategori ya da aramayı hatırla"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr "Takas adı ve cins ismi"
+msgstr "İsim ile alelade ismi değiştir"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr "Kenarlık genişliği:"
+msgstr "Kenarlık kalınlığı:"
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
@@ -114,11 +116,11 @@ msgstr "piksel"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
-msgstr "Matlık:"
+msgstr "Donukluk:"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Buton yazısı:"
+msgstr "Düğme metni:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
@@ -135,7 +137,7 @@ msgstr "Tema"
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
 #: ../mate_menu/plugins/applications.py:253
 msgid "Favorites"
-msgstr "Sık Kullanılanlar"
+msgstr "Favoriler"
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
@@ -147,15 +149,15 @@ msgstr "Eklentiler"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Background:"
-msgstr "Arkaplan:"
+msgstr "Arka plan:"
 
 #: ../lib/mate-menu-config.py:83
 msgid "Headings:"
-msgstr "Başlıklar"
+msgstr "Başlıklar:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "Borders:"
-msgstr "Kenarlıklar"
+msgstr "Kenarlıklar:"
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
@@ -170,15 +172,15 @@ msgstr "Sütun sayısı:"
 #: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
 #: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
 msgid "Icon size:"
-msgstr "Simge boyutu:"
+msgstr "İkon boyutu:"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr "Asılı kalma gecikmesi (ms):"
+msgstr "Üzerinde tutma süresi (ms):"
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
-msgstr "Buton simgesi:"
+msgstr "Düğme simgesi:"
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
@@ -191,7 +193,7 @@ msgstr "Yerler"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr "Oynatma Çubuğuna İzin Ver"
+msgstr "Kaydıma Çubuğuna Müsaade Et"
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
@@ -199,11 +201,11 @@ msgstr "GTK Yer İmlerini Göster"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
-msgstr "Yükseklik :"
+msgstr "Yükseklik:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "Varsayılan Konumları Göster"
+msgstr "Varsayılan Yerleri Değiştir:"
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -211,7 +213,7 @@ msgstr "Bilgisayar"
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:164
 msgid "Home Folder"
-msgstr "Ev Dizini"
+msgstr "Ev Klasörü"
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
@@ -223,11 +225,11 @@ msgstr "Masaüstü"
 
 #: ../lib/mate-menu-config.py:107 ../mate_menu/plugins/places.py:209
 msgid "Trash"
-msgstr "Çöp Kutusu"
+msgstr "Çöp kutusu"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr "Özel Konumlar:"
+msgstr "Özel Yerler:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
@@ -236,7 +238,7 @@ msgstr "Sistem"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "Varsayılan Öğeleri Göster:"
+msgstr "Varsayılan Unsurları Değiştir:"
 
 #: ../lib/mate-menu-config.py:114
 #: ../mate_menu/plugins/system_management.py:147
@@ -247,7 +249,7 @@ msgstr "Paket Yöneticisi"
 #: ../lib/mate-menu-config.py:115
 #: ../mate_menu/plugins/system_management.py:157
 msgid "Control Center"
-msgstr "Denetim Merkezi"
+msgstr "Kontrol Merkezi"
 
 #: ../lib/mate-menu-config.py:116
 #: ../mate_menu/plugins/system_management.py:164
@@ -261,24 +263,24 @@ msgstr "Ekranı Kilitle"
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
-msgstr "Oturumu Kapat"
+msgstr "Çıkış"
 
 #: ../lib/mate-menu-config.py:119
 #: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
-msgstr "Çıkış"
+msgstr "Çık"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr "Konumu Düzenle"
+msgstr "Yeri Düzenle"
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr "Yeni Konum"
+msgstr "Yeni Yer"
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr "Bir klasör seçin"
+msgstr "Klasör seç"
 
 #: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
@@ -286,7 +288,7 @@ msgstr "Klavye kısayolu:"
 
 #: ../lib/mate-menu-config.py:158
 msgid "Images"
-msgstr "Görseller"
+msgstr "Resimler"
 
 #: ../lib/mate-menu-config.py:267
 msgid "Name"
@@ -294,7 +296,7 @@ msgstr "İsim"
 
 #: ../lib/mate-menu-config.py:268
 msgid "Path"
-msgstr "Dosya yolu"
+msgstr "Yol"
 
 #: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
@@ -306,7 +308,7 @@ msgstr "İsim:"
 
 #: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
 msgid "Path:"
-msgstr "Dosya yolu:"
+msgstr "Yol:"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:250
@@ -320,22 +322,22 @@ msgstr "Tüm uygulamalar"
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
-msgstr "Google'da %s ara"
+msgstr "Google'da %s unsurunu ara"
 
 #: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Wikipedia'da %s ara"
+msgstr "Vikipedi'de %s unsurunu ara"
 
 #: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Sözlükten %s sözcüğüne bak"
+msgstr "Sözlükte %s unsurunu ara"
 
 #: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Bilgisayarda %s ara"
+msgstr "Bilgisayarda %s unsurunu ara"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:763
@@ -351,17 +353,17 @@ msgstr "Panele ekle"
 #: ../mate_menu/plugins/applications.py:766
 #: ../mate_menu/plugins/applications.py:813
 msgid "Insert space"
-msgstr "Boşluk koy"
+msgstr "Boşluk ekle"
 
 #: ../mate_menu/plugins/applications.py:767
 #: ../mate_menu/plugins/applications.py:814
 msgid "Insert separator"
-msgstr "Ayraç koy"
+msgstr "Ayırıcı ekle"
 
 #: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr "Giriş yapınca başlat"
+msgstr "Giriş yaptığımda başlat"
 
 #: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
@@ -370,7 +372,7 @@ msgstr "Başlat"
 
 #: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
-msgstr "Sık kullanılanlardan kaldır"
+msgstr "Favorilerden kaldır"
 
 #: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
@@ -384,7 +386,7 @@ msgstr "Kaldır"
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr "Sık kullanılanlarda göster"
+msgstr "Favorilerimde göster"
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
@@ -392,32 +394,29 @@ msgstr "Menüden sil"
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr "Google'da Ara"
+msgstr "Google'da ara"
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr "Wikipedia'da Ara"
+msgstr "Vikipedi'de ara"
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr "Sözlükte Ara"
+msgstr "Sözlükte ara"
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr "Bilgisayarda Ara"
+msgstr "Bilgisayarda ara"
 
 #: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"Sık kullanılanlar kaydedilemedi. ~/.linuxmint/mintMenu 'ye yazma izninizin "
-"olup olmadığını kontrol edin"
+msgstr "Favoriler kaydedilemedi. ~/.config/mate-menu dosyasına yazma iziniz olup olmadığını kontrol edin."
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "All"
-msgstr "Tümü"
+msgstr "Hepsi"
 
 #: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
@@ -425,7 +424,7 @@ msgstr "Tüm uygulamaları göster"
 
 #: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr "Paketleri kur, kaldır ve yükselt"
+msgstr "Yazılım paketlerini kur, kaldır ve güncelle"
 
 #: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
@@ -437,41 +436,40 @@ msgstr "Komut satırını kullan"
 
 #: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
-msgstr "Kilidi açmak için şifre gerekir"
+msgstr "Kilidi açmak için parola gerekir"
 
 #: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
-msgstr "Oturumu kapat"
+msgstr "Çıkış"
 
 #: ../mate_menu/plugins/system_management.py:189
 msgid "Log out or switch user"
-msgstr "Oturumu kapat ya da kullanıcı değiştir"
+msgstr "Çıkış yap ya da kullanıcı değiştir"
 
 #: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Bilgisayarı kapat, yeniden başlat, askıya al ya da uyku moduna al"
+msgstr "Kapat, yeniden başlat, askıya al ya da uyku kipine al"
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"Bu bilgisayardan erişilebilen tüm yerel ve uzak disk ve dizinlere gözat"
+msgstr "Bu bilgisayardan tüm yerel ve uzaktaki disklere ve klasörlere göz atın"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
-msgstr "Kişisel dizininizi açın"
+msgstr "Kişisel klasörünüzü açın"
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr "Yer imi eklenmiş konumlara ve yerel ağ konumlarına gözat"
+msgstr "Yer imi oluşturulmuş ve yerel ağ konumlarını göz at"
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr "Masaüstündeki öğelere gözat"
+msgstr "Masaüstüne konmuş unsurları tara"
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr "Silinmiş dosyalara gözat"
+msgstr "Silinmiş dosyaları tara"
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
@@ -480,113 +478,24 @@ msgstr "Çöp kutusunu boşalt"
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Son kullanılanlar"
+msgstr "Son kullanılan belgeler"
 
 #: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"Menünün açarken ya da kapatırken yeni bir hızlandırıcı anahtar belirlemek "
-"için tıkla.  "
+msgstr "Menüyü açıp kapatacak için yeni bir hızlandırıcı tuş seçmek için tıklayın."
 
 #: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "İşlemi iptal etmek için tekrar tıkla ya da Escape tuşuna bas.  "
+msgstr "İşlemi iptal etmek için Escape tuşuna basın ya da tekrar tıklayın."
 
 #: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Geçerli anahtarı temizlemek için Backspace tuşuna basınız."
+msgstr "Mevcut kısayolu silmek için geri silme tuşuna basın."
 
 #: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
-msgstr "Bir hızlandırıcı seç"
+msgstr "Bir hızlandırıcı seçin"
 
 #: ../mate_menu/keybinding.py:264
 msgid "<not set>"
 msgstr "<ayarlanmamış>"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Yüklenecek Paketleri Ara"
-
-#~ msgid "Software Manager"
-#~ msgstr "Yazılım Yöneticisi"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "'%s' paketini yükle"
-
-#~ msgid "Uninstall"
-#~ msgstr "Kaldır"
-
-#~ msgid "Find Software"
-#~ msgstr "Yazılım Bul"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Öğretici Belgeler Bul"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Donanım Bul"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Fikirler Bul"
-
-#~ msgid "Find Users"
-#~ msgstr "Kullanıcılar Bul"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Mevcut yazılımlara gözat ve kur"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Lütfen bekleyin, bu işlem biraz zaman alabilir"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Uygulama başarıyla kaldırıldı"
-
-#~ msgid "Colors"
-#~ msgstr "Renkler"
-
-#~ msgid "File not found"
-#~ msgstr "Dosya bulunamadı"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "Geçerli bir .menu dosyası değil"
-
-#~ msgid "Not a .menu file"
-#~ msgstr ".menu dosyası değil"
-
-#~ msgid "Filter:"
-#~ msgstr "Filtre:"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "S.Chanderbally'nin USP'sini temel alır"
-
-#~ msgid "Show sidepane"
-#~ msgstr "Kenar panelini göster"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "'%s' Paketini göster"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Gelişmiş Gnome Menüsü"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Bu menü girdisini kaldırmak istiyor musunuz?"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Kaldırılacak paketler"
-
-#~ msgid "Remove %s?"
-#~ msgstr "%s kaldırılsın mı?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Aşağıdaki paketler kaldırılacak:"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "Depolarda '%s' ara"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "Portalda '%s' i ara"
-
-#~ msgid "Show recent documents"
-#~ msgstr "Son kullanılan belgeleri göster"
-
-#~ msgid "No matching package found"
-#~ msgstr "Hiç eşleşen paket bulunamadı"
