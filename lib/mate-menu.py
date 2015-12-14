@@ -84,7 +84,7 @@ class MainWindow( object ):
         self.icon = "/usr/share/mate-menu/icons/mate-logo.svg"
 
         self.toggle = toggleButton
-        # Load UI file and extract widgets   
+        # Load UI file and extract widgets
         builder = Gtk.Builder()
         builder.add_from_file(os.path.join( self.data_path, "mate-menu.glade" ))
         self.window     = builder.get_object( "mainWindow" )
@@ -180,7 +180,7 @@ class MainWindow( object ):
         self.customheadingcolor = settings.get_string(key)
         self.SetHeadingStyle( self.headingsToColor )
 
-    def getSetGSettingEntries( self ):        
+    def getSetGSettingEntries( self ):
         self.pluginlist           = self.settings.get_strv( "plugins-list" )
         self.usecustomcolor       = self.settings.get_boolean( "use-custom-color" )
         self.customcolor          = self.settings.get_string( "custom-color" )
@@ -188,7 +188,7 @@ class MainWindow( object ):
         self.custombordercolor    = self.settings.get_string( "custom-border-color" )
         self.borderwidth          = self.settings.get_int( "border-width" )
         self.opacity              = self.settings.get_int( "opacity" )
-        self.offset               = self.settings.get_int( "offset" )        
+        self.offset               = self.settings.get_int( "offset" )
         self.enableTooltips       = self.settings.get_boolean( "tooltips-enabled" )
         self.startWithFavorites   = self.settings.get_boolean( "start-with-favorites" )
 
@@ -297,7 +297,7 @@ class MainWindow( object ):
 
                     heading.add( Align1 )
                     heading.show()
-                    VBox1.pack_start( heading, False, False, 0 )                    
+                    VBox1.pack_start( heading, False, False, 0 )
                 VBox1.show()
                 #Add plugin to Plugin Box under heading button
                 MyPlugin.content_holder.reparent( VBox1 )
@@ -463,9 +463,9 @@ class MainWindow( object ):
             self.window.handler_unblock( self.loseFocusId )
             self.loseFocusBlocked = False
 
-        return False  
+        return False
 
-    def onFocusOut( self, *args):            
+    def onFocusOut( self, *args):
         if self.window.get_visible():
             self.hide()
         return False
@@ -478,7 +478,7 @@ class MainWindow( object ):
 class MenuWin( object ):
     def __init__( self, applet, iid ):
         self.data_path = os.path.join('/','usr','share','mate-menu')
-        self.applet = applet        
+        self.applet = applet
         self.settings = Gio.Settings.new("org.mate.mate-menu")
         self.keybinder = keybinding.GlobalKeyBinding()
         self.settings.connect( "changed::applet-text", self.reloadSettings )
@@ -497,7 +497,7 @@ class MenuWin( object ):
 
         self.applet.set_flags( MatePanelApplet.AppletFlags.EXPAND_MINOR )
         self.applet.connect( "button-press-event", self.showMenu )
-        self.applet.connect( "change-orient", self.changeOrientation )        
+        self.applet.connect( "change-orient", self.changeOrientation )
         self.applet.connect("enter-notify-event", self.enter_notify)
         self.applet.connect("leave-notify-event", self.leave_notify)
         self.mainwin = MainWindow( self.button_box, self.settings, self.keybinder )
@@ -526,7 +526,7 @@ class MenuWin( object ):
 
     def onWindowUnmap( self, *args ):
         self.applet.set_state( Gtk.StateType.NORMAL )
-        self.keybinder.set_focus_window()        
+        self.keybinder.set_focus_window()
         return False
 
     def onRealize( self, *args):
@@ -601,9 +601,9 @@ class MenuWin( object ):
         self.theme_name =  self.settings.get_string( "theme-name" )
         self.hotkeyText =  self.settings.get_string( "hot-key" )
         self.buttonIcon =  self.settings.get_string( "applet-icon" )
-        self.iconSize = self.settings.get_int( "applet-icon-size" )    
+        self.iconSize = self.settings.get_int( "applet-icon-size" )
 
-    def changeTheme(self, *args):        
+    def changeTheme(self, *args):
         self.reloadSettings()
         self.applyTheme()
         self.mainwin.loadTheme()
@@ -612,12 +612,12 @@ class MenuWin( object ):
         style_settings = Gtk.Settings.get_default()
         desktop_theme = self.mate_settings.get_string('gtk-theme')
         if self.theme_name == "default":
-            style_settings.set_property("gtk-theme-name", desktop_theme)        
+            style_settings.set_property("gtk-theme-name", desktop_theme)
         else:
             try:
                 style_settings.set_property("gtk-theme-name", self.theme_name)
             except:
-                style_settings.set_property("gtk-theme-name", desktop_theme)            
+                style_settings.set_property("gtk-theme-name", desktop_theme)
 
     def changeOrientation( self, *args, **kargs ):
 
@@ -701,7 +701,7 @@ class MenuWin( object ):
 
     def reloadSettings( self, *args ):
         self.loadSettings()
-        self.updateButton()        
+        self.updateButton()
 
     def showAboutDialog( self, action, userdata = None ):
         about = Gtk.AboutDialog()

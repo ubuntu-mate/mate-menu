@@ -39,7 +39,7 @@ def Execute( cmd , commandCwd=None):
 		tmpCwd = os.path.expanduser( commandCwd );
 		if (os.path.exists(tmpCwd)):
 			cwd = tmpCwd
-	
+
 	if isinstance( cmd, str ) or isinstance( cmd, unicode):
 		if (cmd.find("/home/") >= 0) or (cmd.find("su-to-root") >= 0) or (cmd.find("\"") >= 0):
 			print "running manually..."
@@ -52,14 +52,14 @@ def Execute( cmd , commandCwd=None):
 				return False
 		cmd = cmd.split()
 	cmd = RemoveArgs(cmd)
-	
+
 	try:
 		os.chdir( cwd )
 		string = ' '.join(cmd)
 		string = string + " &"
-		os.system(string)		
+		os.system(string)
 		return True
 	except Exception, detail:
 		print detail
 		return False
-		
+

@@ -141,7 +141,7 @@ class pluginclass( object ):
     #Add standard items
     def do_standard_items( self ):
 
-        if ( self.showPackageManager == True ):           
+        if ( self.showPackageManager == True ):
             if os.path.exists("/usr/bin/software-center") or os.path.exists("/usr/bin/synaptic-pkexec"):
                 if os.path.exists("/usr/bin/synaptic-pkexec"):
                     Button2 = easyButton("synaptic", self.iconsize, [_("Package Manager")], -1, -1 )

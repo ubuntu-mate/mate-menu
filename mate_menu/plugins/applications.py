@@ -197,10 +197,10 @@ class SuggestionButton ( Gtk.Button ):
         Align1.show()
         self.add( Align1 )
         self.show()
-        
+
     def set_image(self, path):
         self.image.set_from_file(path)
-                        		            
+
     def set_text( self, text):
         self.label.set_markup(text)
 
@@ -249,8 +249,8 @@ class pluginclass( object ):
         self.builder.get_object("label6").set_text(_("Favorites"))
         self.builder.get_object("label3").set_text(_("Favorites"))
         self.builder.get_object("label7").set_text(_("All applications"))
-        self.builder.get_object("label2").set_text(_("Applications"))                
-        
+        self.builder.get_object("label2").set_text(_("Applications"))
+
         self.headingstocolor = [self.builder.get_object("label6"),self.builder.get_object("label2")]
 
         self.numApps = 0
@@ -334,7 +334,7 @@ class pluginclass( object ):
             #       self.menuFileMonitors.append( filemonitor.addMonitor(f, self.onMenuChanged, mymenu.directory.Filename ) )
             #for f in mymenu.directory.AppDirs:
             #       self.menuFileMonitors.append( filemonitor.addMonitor(f, self.onMenuChanged, mymenu.directory.Filename ) )
-                        
+
         self.suggestions = []
         self.current_suggestion = None
         self.panel = "top"
@@ -418,7 +418,7 @@ class pluginclass( object ):
             try:
                 child.setIconSize( self.iconSize )
             except:
-                pass        
+                pass
 
     def changeFavIconSize( self, settings, key, args ):
         self.faviconsize = settings.get_int(key)
@@ -426,7 +426,7 @@ class pluginclass( object ):
         for child in self.favoritesBox:
             if isinstance( child, FavApplicationLauncher):
                 child.setIconSize( self.faviconsize )
-                
+
     def changeRememberFilter( self, settings, key, args):
         self.rememberFilter = settings.get_boolean(key)
 
@@ -454,7 +454,6 @@ class pluginclass( object ):
             self.favoritesPositionOnGrid( fav )
 
     def RegenPlugin( self, *args, **kargs ):
-        
         # save old config - this is necessary because the app will notified when it sets the default values and you don't want the to reload itself several times
         oldcategories_mouse_over = self.categories_mouse_over
         oldiconsize = self.iconSize
@@ -556,7 +555,6 @@ class pluginclass( object ):
         self.focusSearchEntry(clear)
         self.lastActiveTab = tabNum
 
-
     def Todos( self ):
         self.searchEntry.connect( "popup-menu", self.blockOnPopup )
         self.searchEntry.connect( "button-press-event", self.blockOnRightPress )
@@ -565,11 +563,11 @@ class pluginclass( object ):
         self.showAllAppsButton.connect( "clicked", lambda widget: self.changeTab( 1 ) )
         self.showFavoritesButton.connect( "clicked", lambda widget: self.changeTab( 0 ) )
         self.buildButtonList()
-        
+
     def blockOnPopup( self, *args ):
         self.mateMenuWin.stopHiding()
         return False
-        
+
     def blockOnRightPress( self, widget, event ):
         if event.button == 3:
             self.mateMenuWin.stopHiding()
@@ -586,7 +584,7 @@ class pluginclass( object ):
         else:
             self.searchEntry.set_text("")
 
-    def buildButtonList( self ):         
+    def buildButtonList( self ):
         if self.buildingButtonList:
             self.stopBuildingButtonList = True
             GLib.timeout_add( 100, self.buildButtonList )
@@ -612,64 +610,64 @@ class pluginclass( object ):
             self.filterTimer = None
 
     def add_search_suggestions(self, text):
-        
+
         text = "<b>%s</b>" % text
-        
+
         suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
         suggestionButton.connect("clicked", self.search_google)
         suggestionButton.set_text(_("Search Google for %s") % text)
         suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/google.ico")
         self.applicationsBox.add(suggestionButton)
         self.suggestions.append(suggestionButton)
-        
+
         suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
         suggestionButton.connect("clicked", self.search_wikipedia)
         suggestionButton.set_text(_("Search Wikipedia for %s") % text)
         suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/wikipedia.ico")
         self.applicationsBox.add(suggestionButton)
         self.suggestions.append(suggestionButton)
-                
+
         separator = Gtk.EventBox()
         separator.add(Gtk.HSeparator())
         separator.set_visible_window(False)
-        separator.set_size_request(-1, 20)       
-        separator.type = "separator"        
+        separator.set_size_request(-1, 20)
+        separator.type = "separator"
         separator.show_all()
         self.applicationsBox.add(separator)
-        self.suggestions.append(separator)        
-        
+        self.suggestions.append(separator)
+
         suggestionButton = SuggestionButton(Gtk.STOCK_ADD, self.iconSize, "")
         suggestionButton.connect("clicked", self.search_dictionary)
         suggestionButton.set_text(_("Lookup %s in Dictionary") % text)
         suggestionButton.set_image("/usr/share/mate-menu/icons/dictionary.png")
         self.applicationsBox.add(suggestionButton)
-        self.suggestions.append(suggestionButton)  
-        
+        self.suggestions.append(suggestionButton)
+
         suggestionButton = SuggestionButton(Gtk.STOCK_FIND, self.iconSize, "")
         suggestionButton.connect("clicked", self.Search)
         suggestionButton.set_text(_("Search Computer for %s") % text)
         self.applicationsBox.add(suggestionButton)
-        self.suggestions.append(suggestionButton)  
-        
+        self.suggestions.append(suggestionButton)
+
         #self.last_separator = gtk.EventBox()
         #self.last_separator.add(gtk.HSeparator())
-        #self.last_separator.set_size_request(-1, 20)       
-        #self.last_separator.type = "separator"   
-        #self.mateMenuWin.SetPaneColors( [  self.last_separator ] )     
+        #self.last_separator.set_size_request(-1, 20)
+        #self.last_separator.type = "separator"
+        #self.mateMenuWin.SetPaneColors( [  self.last_separator ] )
         #self.last_separator.show_all()
         #self.applicationsBox.add(self.last_separator)
-        #self.suggestions.append(self.last_separator)            
-            
+        #self.suggestions.append(self.last_separator)
+
     def Filter( self, widget, category = None ):
         self.filterTimer = None
-       
+
         for suggestion in self.suggestions:
             self.applicationsBox.remove(suggestion)
         self.suggestions = []
 
         if widget == self.searchEntry:
             if self.donotfilterapps:
-                widget.set_text( "" )    
+                widget.set_text( "" )
             else:
                 text = widget.get_text()
                 if self.lastActiveTab != 1:
@@ -726,13 +724,13 @@ class pluginclass( object ):
                 i.released()
                 i.set_relief( Gtk.ReliefStyle.NONE )
             widget.set_relief( Gtk.ReliefStyle.HALF )
-   
+
         self.applicationsScrolledWindow.get_vadjustment().set_value( 0 )
 
     def FilterAndClear( self, widget, category = None ):
         self.searchEntry.set_text( "" )
         self.Filter( widget, category )
-        
+
     # Forward all text to the search box
     def keyPress( self, widget, event ):
         if event.string.strip() != "" or event.keyval == Gdk.KEY_BackSpace:
@@ -883,8 +881,7 @@ class pluginclass( object ):
             self.mateMenuWin.stopHiding()
             gtk.gtk_menu_popup(hash(mTree), None, None, None, None, event.button, event.time)
 
-    
-    def searchPopup( self, widget=None, event=None ):    
+    def searchPopup( self, widget=None, event=None ):
         menu = Gtk.Menu()
 
         menuItem = Gtk.ImageMenuItem(_("Search Google"))
@@ -893,31 +890,31 @@ class pluginclass( object ):
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_google)
         menu.append(menuItem)
-        
+
         menuItem = Gtk.ImageMenuItem(_("Search Wikipedia"))
         img = Gtk.Image()
         img.set_from_file('/usr/share/mate-menu/icons/search_engines/wikipedia.ico')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_wikipedia)
         menu.append(menuItem)
-        
+
         menuItem = Gtk.SeparatorMenuItem()
         menu.append(menuItem)
-        
+
         menuItem = Gtk.ImageMenuItem(_("Lookup Dictionary"))
         img = Gtk.Image()
         img.set_from_file('/usr/share/mate-menu/icons/dictionary.png')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_dictionary)
         menu.append(menuItem)
-        
+
         menuItem = Gtk.ImageMenuItem(_("Search Computer"))
         img = Gtk.Image()
         img.set_from_stock(Gtk.STOCK_FIND, self.iconSize)
         menuItem.set_image(img)
         menuItem.connect("activate", self.Search)
         menu.append(menuItem)
-        
+
         menu.show_all()
 
         self.mateMenuWin.stopHiding()
@@ -930,30 +927,30 @@ class pluginclass( object ):
         #self.mateMenuWin.grab()
         self.focusSearchEntry(clear = False)
         return True
-        
+
     def pos_func(self, menu=None):
         rect = self.searchButton.get_allocation()
         x = rect.x + rect.width
         y = rect.y + rect.height
         return (x, y, False)
-        
+
     def search_google(self, widget):
         text = self.searchEntry.get_text()
         text = text.replace(" ", "+")
         subprocess.call(['xdg-open', 'http://www.google.com/?ie=utf-8&sa=Search&q=' + text])
         self.mateMenuWin.hide()
-        
+
     def search_wikipedia(self, widget):
         text = self.searchEntry.get_text()
         text = text.replace(" ", "+")
         subprocess.call(['xdg-open', 'http://en.wikipedia.org/wiki/Special:Search?search=' + text])
         self.mateMenuWin.hide()
-        
+
     def search_dictionary(self, widget):
         text = self.searchEntry.get_text()
         subprocess.call(['mate-dictionary', '"'+text+'"'])
         self.mateMenuWin.hide()
-        
+
     def add_to_desktop(self, widget, desktopEntry):
         subprocess.call(['xdg-desktop-icon', 'install', '--novendor', desktopEntry.desktopFile])
 
@@ -1076,7 +1073,7 @@ class pluginclass( object ):
 
     def Search( self, widget ):
         text = self.searchEntry.get_text().strip()
-        if text != "":            
+        if text != "":
             self.mateMenuWin.hide()
             fullstring = self.searchtool.replace( "%s", text )
             os.system(fullstring + " &")
@@ -1367,7 +1364,7 @@ class pluginclass( object ):
         self.rebuildLock = True
 
         self.menuChangedTimer = None
-        
+
         self.loadMenuFiles()
 
         # Find added and removed categories than update the category list
@@ -1388,7 +1385,7 @@ class pluginclass( object ):
                         break
                 if not found:
                     addedCategories.append(item)
-            
+
             for item in self.categoryList:
                 found = False
                 for item2 in newCategoryList:
@@ -1402,7 +1399,7 @@ class pluginclass( object ):
             categoryIconSize = self.iconSize
         else:
             categoryIconSize = 0
-        
+
         for item in removedCategories:
             try:
                 button = item["button"]
@@ -1455,7 +1452,7 @@ class pluginclass( object ):
         newApplicationList = self.buildApplicationList()
         addedApplications = []
         removedApplications = []
-        
+
         # TODO: optimize this!!!
         if not self.applicationList:
             addedApplications = newApplicationList
@@ -1483,7 +1480,7 @@ class pluginclass( object ):
                     # because when it is removed the index of all later items is
                     # going to be decreased
                     key += 1
-        
+
         for key in removedApplications:
             self.applicationList[key]["button"].destroy()
             del self.applicationList[key]
@@ -1520,7 +1517,7 @@ class pluginclass( object ):
                     button.hide()
                 else:
                     launcherNames.append(launcherName)
-                      
+
         self.rebuildLock = False
 
     # Reload the menufiles from the filesystem

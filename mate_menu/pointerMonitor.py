@@ -81,7 +81,7 @@ class PointerMonitor(GObject.GObject, threading.Thread):
                         # Is outside, so activate
                         GLib.idle_add(self.idle)
                     self.display.allow_events(X.ReplayPointer, event.time)
-                else:        
+                else:
                     self.display.allow_events(X.ReplayPointer, X.CurrentTime)
             except Exception as e:
                 print "Unexpected error: " + str(e)

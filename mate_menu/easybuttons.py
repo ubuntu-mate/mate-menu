@@ -84,7 +84,7 @@ class IconManager(GObject.GObject):
 
 
     def getIcon( self, iconName, iconSize ):
-        
+
         if not iconName:
             return None
 
@@ -167,7 +167,7 @@ class easyButton( Gtk.Button ):
         if labels:
             for label in labels:
                 if isinstance( label, basestring ):
-                    self.addLabel( label )                   
+                    self.addLabel( label )
                 elif isinstance( label, list ):
                     self.addLabel( label[0], label[1] )
 
@@ -221,7 +221,7 @@ class easyButton( Gtk.Button ):
             return None
 
         icon = iconManager.getIcon( self.iconName, iconSize )
-        if icon is None:           
+        if icon is None:
             icon = iconManager.getIcon( "application-default-icon", iconSize )
 
         return icon
@@ -355,7 +355,7 @@ class ApplicationLauncher( easyButton ):
 
     def setupLabels( self ):
         self.addLabel( self.appName )
-            
+
     def filterText( self, text ):
         keywords = text.lower().split()
         appName = self.appName.lower()
@@ -375,10 +375,10 @@ class ApplicationLauncher( easyButton ):
         value = string
         if isinstance(string, unicode):
             try:
-                value = string.encode('UTF8', 'ignore') 
+                value = string.encode('UTF8', 'ignore')
             except:
                 pass
-        return value    
+        return value
 
     def getTooltip( self ):
         tooltip = self.appName
@@ -386,8 +386,6 @@ class ApplicationLauncher( easyButton ):
             tooltip = tooltip + "\n" + self.appComment
 
         return tooltip
-
-
 
     def dragDataGet( self, widget, context, selection, targetType, eventTime ):
         if targetType == 100: # text/plain
@@ -505,12 +503,12 @@ class MenuApplicationLauncher( ApplicationLauncher ):
         else:
             self.hide()
 
-    def setupLabels( self ):        
+    def setupLabels( self ):
         appName = self.appName
         appComment = self.appComment
-        if self.highlight: 
+        if self.highlight:
             try:
-                #color = self.labelBox.rc_get_style().fg[ Gtk.StateType.SELECTED ].to_string()                
+                #color = self.labelBox.rc_get_style().fg[ Gtk.StateType.SELECTED ].to_string()
                 #if len(color) > 0 and color[0] == "#":
                     #appName = "<span foreground=\"%s\"><b>%s</b></span>" % (color, appName);
                     #appComment = "<span foreground=\"%s\"><b>%s</b></span>" % (color, appComment);
@@ -524,7 +522,7 @@ class MenuApplicationLauncher( ApplicationLauncher ):
             except Exception, detail:
                 print detail
                 pass
-        
+
         if self.showComment and self.appComment != "":
             if self.iconSize <= 2:
                 self.addLabel( '<span size="small">%s</span>' % appName)
@@ -534,8 +532,8 @@ class MenuApplicationLauncher( ApplicationLauncher ):
                 self.addLabel( '<span size="small">%s</span>' % appComment)
         else:
             self.addLabel( appName )
-    
-    def execute( self, *args ):        
+
+    def execute( self, *args ):
         self.highlight = False
         for child in self.labelBox:
             child.destroy()
@@ -570,7 +568,7 @@ class FavApplicationLauncher( ApplicationLauncher ):
                 self.addLabel( self.appComment )
             else:
                 self.addLabel ( "" )
-                
+
     def setSwapGeneric( self, swapGeneric ):
         self.swapGeneric = swapGeneric
         for child in self.labelBox:

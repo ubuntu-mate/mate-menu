@@ -49,7 +49,7 @@ if hasInotify:
                 if mId >= 0:
                     self.callbacks[mId] = ( callback, args )
             except Exception, detail:
-                mId = 0                
+                mId = 0
             return mId
 
         def removeMonitor( self, monitorId ):
@@ -59,14 +59,11 @@ if hasInotify:
 
         def fileChanged(self, event ):
             if event.wd in self.callbacks:
-    #                       print event.path
                 callback = self.callbacks[event.wd]
                 if callback[1]:
                     GLib.idle_add( callback[0], callback[1] )
                 else:
                     GLib.idle_add( callback[0] )
-
-
 else:
 
     class _MonitoredFile( object ):
@@ -109,8 +106,6 @@ else:
                 self.monitor.checkFiles()
                 time.sleep(1)
 
-
-
     class FileMonitor(object):
         def __init__( self ):
             self.monitorId = 0
@@ -137,6 +132,5 @@ else:
                         GLib.idle_add( monitored.callback, monitored.args )
                     else:
                         GLib.idle_add( monitored.callback )
-
 
 monitor = FileMonitor()
