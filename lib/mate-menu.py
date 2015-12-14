@@ -88,6 +88,8 @@ class MainWindow( object ):
         builder = Gtk.Builder()
         builder.add_from_file(os.path.join( self.data_path, "mate-menu.glade" ))
         self.window     = builder.get_object( "mainWindow" )
+        self.window.realize()
+        self.window.window.set_decorations(Gdk.WMDecoration.BORDER)
         self.paneholder = builder.get_object( "paneholder" )
         self.border     = builder.get_object( "border" )
 
@@ -520,13 +522,11 @@ class MenuWin( object ):
     def onWindowMap( self, *args ):
         self.applet.set_state( Gtk.StateType.SELECTED )
         self.keybinder.set_focus_window( self.mainwin.window.window )
-        self.pointerMonitor.grabPointer()
         return False
 
     def onWindowUnmap( self, *args ):
         self.applet.set_state( Gtk.StateType.NORMAL )
-        self.keybinder.set_focus_window()
-        self.pointerMonitor.ungrabPointer()
+        self.keybinder.set_focus_window()        
         return False
 
     def onRealize( self, *args):
@@ -562,7 +562,7 @@ class MenuWin( object ):
 
     def createPanelButton( self ):
         self.button_icon = Gtk.Image.new_from_file( self.buttonIcon )
-        self.systemlabel = Gtk.Label(label= self.buttonText )
+        self.systemlabel = Gtk.Label(label= "%s " % self.buttonText )
         process = subprocess.Popen(['lsb_release', '-d'], stdout=subprocess.PIPE)
         out, err = process.communicate()
         tooltip = out.replace('Description:', '').strip()
