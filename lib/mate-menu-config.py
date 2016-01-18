@@ -383,8 +383,11 @@ class mateMenuConfig( object ):
         self.headingColorLabel.set_sensitive(  widget.get_active() )
 
     def getBackgroundColor( self ):
-        color = Gdk.Color(0,0,0)
-        self.backgroundColor.get_color(color)
+        try:
+            color = self.backgroundColor.get_color()
+        except TypeError:
+            color = Gdk.Color(0, 0, 0)
+            self.backgroundColor.get_color(color)
         return self.gdkColorToString( color )
 
     def getBorderColor( self ):

@@ -50,7 +50,7 @@ def Execute( cmd , commandCwd=None):
 			except Exception, detail:
 				print detail
 				return False
-		cmd = cmd.split()
+	cmd = cmd.split()
 	cmd = RemoveArgs(cmd)
 
 	try:

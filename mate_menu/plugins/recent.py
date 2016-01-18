@@ -57,7 +57,7 @@ class pluginclass:
         self.width = 250
 
         #Plugin icon
-        self.icon = 'mate-folder.png'
+        self.icon = 'folder.png'
 
         self.settings = EasyGSettings ("org.mate.mate-menu.plugins.recent")
 
