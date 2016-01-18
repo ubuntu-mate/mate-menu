@@ -392,12 +392,12 @@ class mateMenuConfig( object ):
 
     def getBorderColor( self ):
         color = Gdk.Color(0,0,0)
-        color = self.borderColor.get_color()
+        self.borderColor.get_color(color)
         return self.gdkColorToString( color )
 
     def getHeadingColor( self ):
         color = Gdk.Color(0,0,0)
-        color = self.headingColor.get_color()
+        self.headingColor.get_color(color)
         return self.gdkColorToString( color )
 
     def gdkColorToString( self, gdkColor ):
