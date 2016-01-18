@@ -879,6 +879,7 @@ class pluginclass( object ):
                 startupMenuItem.connect( "toggled", self.onAddToStartup, widget )
 
             self.mateMenuWin.stopHiding()
+            gtk.gtk_menu_popup.argtypes = [c_void_p, c_void_p, c_void_p, c_void_p, c_void_p, c_uint, c_uint]
             gtk.gtk_menu_popup(hash(mTree), None, None, None, None, event.button, event.time)
 
     def searchPopup( self, widget=None, event=None ):
