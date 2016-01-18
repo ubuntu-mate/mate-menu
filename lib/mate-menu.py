@@ -73,6 +73,19 @@ xdg.Config.setWindowManager('MATE')
 
 from mate_menu.execute import *
 
+def find_on_path(self, command):
+    """Is command on the executable search path?"""
+    if 'PATH' not in os.environ:
+        return False
+    path = os.environ['PATH']
+    for element in path.split(os.pathsep):
+        if not element:
+            continue
+        filename = os.path.join(element, command)
+        if os.path.isfile(filename) and os.access(filename, os.X_OK):
+            return True
+    return False
+
 class MainWindow( object ):
     """This is the main class for the application"""
 
@@ -563,7 +576,7 @@ class MenuWin( object ):
     def createPanelButton( self ):
         self.button_icon = Gtk.Image.new_from_file( self.buttonIcon )
         self.systemlabel = Gtk.Label(label= "%s " % self.buttonText )
-        if os.path.exists("/usr/bin/lsb_release"):
+        if find_on_path('lsb_release'):
             process = subprocess.Popen(['lsb_release', '-d'], stdout=subprocess.PIPE)
             out, err = process.communicate()
             tooltip = out.replace('Description:', '').strip()
