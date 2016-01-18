@@ -563,11 +563,13 @@ class MenuWin( object ):
     def createPanelButton( self ):
         self.button_icon = Gtk.Image.new_from_file( self.buttonIcon )
         self.systemlabel = Gtk.Label(label= "%s " % self.buttonText )
-        process = subprocess.Popen(['lsb_release', '-d'], stdout=subprocess.PIPE)
-        out, err = process.communicate()
-        tooltip = out.replace('Description:', '').strip()
-        self.systemlabel.set_tooltip_text(tooltip)
-        self.button_icon.set_tooltip_text(tooltip)
+        if os.path.exists("/usr/bin/lsb_release"):
+            process = subprocess.Popen(['lsb_release', '-d'], stdout=subprocess.PIPE)
+            out, err = process.communicate()
+            tooltip = out.replace('Description:', '').strip()
+            self.systemlabel.set_tooltip_text(tooltip)
+            self.button_icon.set_tooltip_text(tooltip)
+
         if self.applet.get_orient() == MatePanelApplet.AppletOrient.UP or self.applet.get_orient() == MatePanelApplet.AppletOrient.DOWN:
             self.button_box = Gtk.HBox()
             self.button_box.pack_start( self.button_icon, False, False, 0 )
