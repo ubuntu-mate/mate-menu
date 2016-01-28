@@ -569,7 +569,7 @@ class MenuWin( object ):
             tooltip = out.replace('Description:', '').strip()
             self.systemlabel.set_tooltip_text(tooltip)
             self.button_icon.set_tooltip_text(tooltip)
-        except FileNotFoundError:
+        except OSError:
             pass
 
         if self.applet.get_orient() == MatePanelApplet.AppletOrient.UP or self.applet.get_orient() == MatePanelApplet.AppletOrient.DOWN:
