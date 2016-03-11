@@ -686,6 +686,11 @@ class pluginclass( object ):
                             i.hide()
                         else:
                             shownList.append(i)
+                            
+                            #if this is the first matching item focus it
+                            if not showns:
+                                i.grab_focus()
+
                             showns = True
                 if (not showns and os.path.exists("/usr/share/mate-menu/icons/mate-logo.svg")):
                     if len(text) >= 3:
@@ -738,6 +743,10 @@ class pluginclass( object ):
             gtk.gtk_editable_set_position.argtypes = [c_void_p, c_int]
             gtk.gtk_editable_set_position(hash(self.searchEntry), -1)
             self.searchEntry.event( event )
+            return True
+
+        if event.keyval == Gdk.KEY_space:
+            self.searchEntry.event(event)
             return True
 
         if event.keyval == Gdk.KEY_Down and self.searchEntry.is_focus():
@@ -1075,6 +1084,12 @@ class pluginclass( object ):
     def Search( self, widget ):
         text = self.searchEntry.get_text().strip()
         if text != "":
+            for app_button in self.applicationsBox.get_children():
+                if( isinstance(app_button, ApplicationLauncher) and app_button.filterText( text ) ):
+                    app_button.execute()
+                    self.mateMenuWin.hide()
+                    return
+            
             self.mateMenuWin.hide()
             fullstring = self.searchtool.replace( "%s", text )
             os.system(fullstring + " &")
