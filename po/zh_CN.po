@@ -1,21 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # 玉堂白鹤 <yjwork@qq.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"POT-Creation-Date: 2016-03-11 22:31+0000\n"
 "PO-Revision-Date: 2015-11-13 01:08+0000\n"
 "Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/mate/MATE/language/zh_CN/)\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/mate/MATE/language/"
+"zh_CN/)\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:70
@@ -23,31 +24,31 @@ msgid "Menu"
 msgstr "菜单"
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:251
+#: ../lib/mate-menu.py:254
 msgid "Couldn't load plugin:"
 msgstr "无法加载插件："
 
-#: ../lib/mate-menu.py:323
+#: ../lib/mate-menu.py:326
 msgid "Couldn't initialize plugin"
 msgstr "无法初始化插件"
 
-#: ../lib/mate-menu.py:710
+#: ../lib/mate-menu.py:715
 msgid "Advanced MATE Menu"
 msgstr "高级 MATE 菜单"
 
-#: ../lib/mate-menu.py:792
+#: ../lib/mate-menu.py:798
 msgid "Preferences"
 msgstr "首选项"
 
-#: ../lib/mate-menu.py:795
+#: ../lib/mate-menu.py:801
 msgid "Edit menu"
 msgstr "编辑菜单"
 
-#: ../lib/mate-menu.py:798
+#: ../lib/mate-menu.py:804
 msgid "Reload plugins"
 msgstr "重载插件"
 
-#: ../lib/mate-menu.py:801
+#: ../lib/mate-menu.py:807
 msgid "About"
 msgstr "关于"
 
@@ -124,7 +125,7 @@ msgstr "按钮文本："
 msgid "Options"
 msgstr "选项"
 
-#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:252
 msgid "Applications"
 msgstr "应用程序"
 
@@ -132,8 +133,8 @@ msgstr "应用程序"
 msgid "Theme"
 msgstr "主题"
 
-#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
-#: ../mate_menu/plugins/applications.py:253
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:249
+#: ../mate_menu/plugins/applications.py:250
 msgid "Favorites"
 msgstr "收藏夹"
 
@@ -239,23 +240,24 @@ msgid "Toggle Default Items:"
 msgstr "切换默认项目："
 
 #: ../lib/mate-menu-config.py:114
-#: ../mate_menu/plugins/system_management.py:147
-#: ../mate_menu/plugins/system_management.py:150
+#: ../mate_menu/plugins/system_management.py:149
+#: ../mate_menu/plugins/system_management.py:152
+#: ../mate_menu/plugins/system_management.py:155
 msgid "Package Manager"
 msgstr "包管理器"
 
 #: ../lib/mate-menu-config.py:115
-#: ../mate_menu/plugins/system_management.py:157
+#: ../mate_menu/plugins/system_management.py:162
 msgid "Control Center"
 msgstr "控制中心"
 
 #: ../lib/mate-menu-config.py:116
-#: ../mate_menu/plugins/system_management.py:164
+#: ../mate_menu/plugins/system_management.py:169
 msgid "Terminal"
 msgstr "终端"
 
 #: ../lib/mate-menu-config.py:117
-#: ../mate_menu/plugins/system_management.py:174
+#: ../mate_menu/plugins/system_management.py:179
 msgid "Lock Screen"
 msgstr "锁定屏幕"
 
@@ -264,7 +266,7 @@ msgid "Log Out"
 msgstr "注销"
 
 #: ../lib/mate-menu-config.py:119
-#: ../mate_menu/plugins/system_management.py:192
+#: ../mate_menu/plugins/system_management.py:197
 msgid "Quit"
 msgstr "退出"
 
@@ -300,85 +302,85 @@ msgstr "路径"
 msgid "Desktop theme"
 msgstr "桌面主题"
 
-#: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
+#: ../lib/mate-menu-config.py:432 ../lib/mate-menu-config.py:463
 msgid "Name:"
 msgstr "名称："
 
-#: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
+#: ../lib/mate-menu-config.py:433 ../lib/mate-menu-config.py:464
 msgid "Path:"
 msgstr "路径："
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:250
+#: ../mate_menu/plugins/applications.py:247
 msgid "Search:"
 msgstr "查找："
 
-#: ../mate_menu/plugins/applications.py:254
+#: ../mate_menu/plugins/applications.py:251
 msgid "All applications"
 msgstr "所有应用程序"
 
-#: ../mate_menu/plugins/applications.py:621
+#: ../mate_menu/plugins/applications.py:618
 #, python-format
 msgid "Search Google for %s"
 msgstr "在谷歌上搜索 %s"
 
-#: ../mate_menu/plugins/applications.py:628
+#: ../mate_menu/plugins/applications.py:625
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "在维基百科上搜索 %s"
 
-#: ../mate_menu/plugins/applications.py:644
+#: ../mate_menu/plugins/applications.py:641
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "在字典里查找 %s "
 
-#: ../mate_menu/plugins/applications.py:651
+#: ../mate_menu/plugins/applications.py:648
 #, python-format
 msgid "Search Computer for %s"
 msgstr "在电脑里搜索 %s"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:763
+#: ../mate_menu/plugins/applications.py:761
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
 msgstr "添加至桌面"
 
-#: ../mate_menu/plugins/applications.py:764
+#: ../mate_menu/plugins/applications.py:762
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
 msgstr "添加至面板"
 
-#: ../mate_menu/plugins/applications.py:766
-#: ../mate_menu/plugins/applications.py:813
+#: ../mate_menu/plugins/applications.py:764
+#: ../mate_menu/plugins/applications.py:812
 msgid "Insert space"
 msgstr "插入空格"
 
-#: ../mate_menu/plugins/applications.py:767
-#: ../mate_menu/plugins/applications.py:814
+#: ../mate_menu/plugins/applications.py:765
+#: ../mate_menu/plugins/applications.py:813
 msgid "Insert separator"
 msgstr "插入分隔符"
 
-#: ../mate_menu/plugins/applications.py:769
+#: ../mate_menu/plugins/applications.py:767
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
 msgstr "登录时启动"
 
-#: ../mate_menu/plugins/applications.py:771
+#: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
 msgstr "启动"
 
-#: ../mate_menu/plugins/applications.py:772
+#: ../mate_menu/plugins/applications.py:770
 msgid "Remove from favorites"
 msgstr "从收藏夹移除"
 
-#: ../mate_menu/plugins/applications.py:774
+#: ../mate_menu/plugins/applications.py:772
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
 msgstr "编辑属性"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:811
 msgid "Remove"
 msgstr "移除"
 
@@ -406,45 +408,45 @@ msgstr "查询字典"
 msgid "Search Computer"
 msgstr "搜索计算机"
 
-#: ../mate_menu/plugins/applications.py:1329
+#: ../mate_menu/plugins/applications.py:1332
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr "无法保存收藏。请检查您是否有 ~/.config/mate-menu 的写入权限"
 
-#: ../mate_menu/plugins/applications.py:1529
+#: ../mate_menu/plugins/applications.py:1532
 msgid "All"
 msgstr "所有"
 
-#: ../mate_menu/plugins/applications.py:1529
+#: ../mate_menu/plugins/applications.py:1532
 msgid "Show all applications"
 msgstr "显示所有应用程序"
 
-#: ../mate_menu/plugins/system_management.py:154
+#: ../mate_menu/plugins/system_management.py:159
 msgid "Install, remove and upgrade software packages"
 msgstr "安装，移除和更新软件包"
 
-#: ../mate_menu/plugins/system_management.py:161
+#: ../mate_menu/plugins/system_management.py:166
 msgid "Configure your system"
 msgstr "配置您的系统"
 
-#: ../mate_menu/plugins/system_management.py:171
+#: ../mate_menu/plugins/system_management.py:176
 msgid "Use the command line"
 msgstr "使用命令行"
 
-#: ../mate_menu/plugins/system_management.py:182
+#: ../mate_menu/plugins/system_management.py:187
 msgid "Requires password to unlock"
 msgstr "需要密码来解锁"
 
-#: ../mate_menu/plugins/system_management.py:185
+#: ../mate_menu/plugins/system_management.py:190
 msgid "Logout"
 msgstr "注销"
 
-#: ../mate_menu/plugins/system_management.py:189
+#: ../mate_menu/plugins/system_management.py:194
 msgid "Log out or switch user"
 msgstr "注销或切换用户"
 
-#: ../mate_menu/plugins/system_management.py:196
+#: ../mate_menu/plugins/system_management.py:201
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "关机，重启，挂起或休眠"
 
@@ -478,22 +480,22 @@ msgstr "清空回收站"
 msgid "Recent documents"
 msgstr "最近文档"
 
-#: ../mate_menu/keybinding.py:196
+#: ../mate_menu/keybinding.py:199
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr "点击已设置一个新的加速器来打开和关闭菜单。"
 
-#: ../mate_menu/keybinding.py:197
+#: ../mate_menu/keybinding.py:200
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "按下 Esc 键或再次点击以取消操作。"
 
-#: ../mate_menu/keybinding.py:198
+#: ../mate_menu/keybinding.py:201
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "按下 Backspace 键以清除已存在的组合键"
 
-#: ../mate_menu/keybinding.py:211
+#: ../mate_menu/keybinding.py:214
 msgid "Pick an accelerator"
 msgstr "选择一个加速器"
 
-#: ../mate_menu/keybinding.py:264
+#: ../mate_menu/keybinding.py:267
 msgid "<not set>"
 msgstr "<没有设置>"

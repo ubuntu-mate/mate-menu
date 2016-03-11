@@ -1,112 +1,114 @@
-# Norwegian Bokmal translation for MATE Menu
-# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
+# Allan Nordhøy <epost@anotheragency.no>, 2016
+# Kenneth Jenssen <kennethjenssen@yahoo.com>, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2014-09-27 09:20+0000\n"
-"Last-Translator: Bjørn Vidar Dahle <xenoph@linux.com>\n"
-"Language-Team: Norwegian Bokmal <nb@li.org>\n"
+"POT-Creation-Date: 2016-03-11 22:31+0000\n"
+"PO-Revision-Date: 2016-02-24 12:39+0000\n"
+"Last-Translator: Kenneth Jenssen <kennethjenssen@yahoo.com>\n"
+"Language-Team: Norwegian Bokmål (http://www.transifex.com/mate/MATE/language/"
+"nb/)\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
 msgstr "Meny"
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:251
+#: ../lib/mate-menu.py:254
 msgid "Couldn't load plugin:"
-msgstr "Kunne ikke laste programtillegg"
+msgstr ""
 
-#: ../lib/mate-menu.py:323
+#: ../lib/mate-menu.py:326
 msgid "Couldn't initialize plugin"
-msgstr "Kunne ikke starte programtillegg"
+msgstr ""
 
-#: ../lib/mate-menu.py:710
+#: ../lib/mate-menu.py:715
 msgid "Advanced MATE Menu"
-msgstr "Avansert MATE Meny"
+msgstr "Avansert MATE meny"
 
-#: ../lib/mate-menu.py:792
+#: ../lib/mate-menu.py:798
 msgid "Preferences"
 msgstr "Innstillinger"
 
-#: ../lib/mate-menu.py:795
+#: ../lib/mate-menu.py:801
 msgid "Edit menu"
 msgstr "Rediger meny"
 
-#: ../lib/mate-menu.py:798
+#: ../lib/mate-menu.py:804
 msgid "Reload plugins"
-msgstr "Last programtillegg på nytt"
+msgstr "Gjeninnlast programtillegg"
 
-#: ../lib/mate-menu.py:801
+#: ../lib/mate-menu.py:807
 msgid "About"
 msgstr "Om"
 
 #. i18n
 #: ../lib/mate-menu-config.py:50
 msgid "Menu preferences"
-msgstr "Menyinstillinger"
+msgstr "Menyinnstillinger"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr "Start alltid med favorittoversikten"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
-msgstr "Vis knappeikon"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr "Bruk egne farger"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr "Vis utvidelse for nylige dokumenter"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr "Vis utvidelse for applikasjoner"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr "Vis utvidelse for system"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr "Vis utvidelsen steder"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr "Vis programkommentarer"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
-msgstr "Vis ikoner for kategorier"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr "Svev"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr "Husk siste kategori eller søk"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr "Bytt mellom navn og generisk navn"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr "Kantbredde:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
@@ -114,26 +116,26 @@ msgstr "piksler"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
-msgstr "Ugjennomsiktighet:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Knappetekst:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "Alternativer"
+msgstr "Valg"
 
-#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:252
 msgid "Applications"
 msgstr "Programmer"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr "Tema"
+msgstr "Drakt"
 
-#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
-#: ../mate_menu/plugins/applications.py:253
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:249
+#: ../mate_menu/plugins/applications.py:250
 msgid "Favorites"
 msgstr "Favoritter"
 
@@ -143,7 +145,7 @@ msgstr "Hovedknapp"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "Programtillegg"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Background:"
@@ -151,15 +153,15 @@ msgstr "Bakgrunn:"
 
 #: ../lib/mate-menu-config.py:83
 msgid "Headings:"
-msgstr "Overskrifter:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "Borders:"
-msgstr "Kanter"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
-msgstr "Tema:"
+msgstr "Drakt:"
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
@@ -170,32 +172,32 @@ msgstr "Antall kolonner:"
 #: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
 #: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
 msgid "Icon size:"
-msgstr "Ikonstørrelse:"
+msgstr "Miniatyrbildestørrelse:"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr "Sveveforsinkelse (ms):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
-msgstr "Knappeikon"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr "Søkekommando:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
 msgid "Places"
-msgstr "Områder"
+msgstr "Steder"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr "tillat rullefelt"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
-msgstr "Vis GTK-bokmerker"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
@@ -203,7 +205,7 @@ msgstr "Høyde:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "Slå på Standardområder:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -223,11 +225,11 @@ msgstr "Skrivebord"
 
 #: ../lib/mate-menu-config.py:107 ../mate_menu/plugins/places.py:209
 msgid "Trash"
-msgstr "Papirkurv"
+msgstr "Søppelkurv"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr "Standardområder:"
+msgstr "Mine steder:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
@@ -236,41 +238,42 @@ msgstr "System"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "Slå på Standardelementer"
+msgstr "Veksle forvalgte elementer:"
 
 #: ../lib/mate-menu-config.py:114
-#: ../mate_menu/plugins/system_management.py:147
-#: ../mate_menu/plugins/system_management.py:150
+#: ../mate_menu/plugins/system_management.py:149
+#: ../mate_menu/plugins/system_management.py:152
+#: ../mate_menu/plugins/system_management.py:155
 msgid "Package Manager"
 msgstr "Pakkebehandler"
 
 #: ../lib/mate-menu-config.py:115
-#: ../mate_menu/plugins/system_management.py:157
+#: ../mate_menu/plugins/system_management.py:162
 msgid "Control Center"
 msgstr "Kontrollpanel"
 
 #: ../lib/mate-menu-config.py:116
-#: ../mate_menu/plugins/system_management.py:164
+#: ../mate_menu/plugins/system_management.py:169
 msgid "Terminal"
-msgstr "Terminal"
+msgstr "Terminalemulator"
 
 #: ../lib/mate-menu-config.py:117
-#: ../mate_menu/plugins/system_management.py:174
+#: ../mate_menu/plugins/system_management.py:179
 msgid "Lock Screen"
 msgstr "Lås skjerm"
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
-msgstr "Logg av"
+msgstr "Logg ut"
 
 #: ../lib/mate-menu-config.py:119
-#: ../mate_menu/plugins/system_management.py:192
+#: ../mate_menu/plugins/system_management.py:197
 msgid "Quit"
 msgstr "Avslutt"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr "Rediger plass"
+msgstr "Rediger sted"
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
@@ -278,11 +281,11 @@ msgstr "Nytt sted"
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr "Velg en mappe"
+msgstr "Velg ei mappe"
 
 #: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
-msgstr "Tastatursnarveier"
+msgstr "Skrivebordssnarvei"
 
 #: ../lib/mate-menu-config.py:158
 msgid "Images"
@@ -298,87 +301,87 @@ msgstr "Sti"
 
 #: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
-msgstr "Skrivebordstema"
+msgstr "Skrivebordsdrakt"
 
-#: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
+#: ../lib/mate-menu-config.py:432 ../lib/mate-menu-config.py:463
 msgid "Name:"
 msgstr "Navn:"
 
-#: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
+#: ../lib/mate-menu-config.py:433 ../lib/mate-menu-config.py:464
 msgid "Path:"
 msgstr "Sti:"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:250
+#: ../mate_menu/plugins/applications.py:247
 msgid "Search:"
 msgstr "Søk:"
 
-#: ../mate_menu/plugins/applications.py:254
+#: ../mate_menu/plugins/applications.py:251
 msgid "All applications"
-msgstr "All programvare"
+msgstr "Alle programmene"
 
-#: ../mate_menu/plugins/applications.py:621
+#: ../mate_menu/plugins/applications.py:618
 #, python-format
 msgid "Search Google for %s"
 msgstr "Søk på Google etter %s"
 
-#: ../mate_menu/plugins/applications.py:628
+#: ../mate_menu/plugins/applications.py:625
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Søk på Wikipedia etter %s"
+msgstr "Søk i WIkipedia etter %s"
 
-#: ../mate_menu/plugins/applications.py:644
+#: ../mate_menu/plugins/applications.py:641
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Slå opp %s i ordboka"
+msgstr "Slå opp %s i ordboken"
 
-#: ../mate_menu/plugins/applications.py:651
+#: ../mate_menu/plugins/applications.py:648
 #, python-format
 msgid "Search Computer for %s"
 msgstr "Søk på datamaskinen etter %s"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:763
+#: ../mate_menu/plugins/applications.py:761
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
 msgstr "Legg til på skrivebordet"
 
-#: ../mate_menu/plugins/applications.py:764
+#: ../mate_menu/plugins/applications.py:762
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
-msgstr "Legg til på panelet"
+msgstr "Legg til i panel"
 
-#: ../mate_menu/plugins/applications.py:766
-#: ../mate_menu/plugins/applications.py:813
+#: ../mate_menu/plugins/applications.py:764
+#: ../mate_menu/plugins/applications.py:812
 msgid "Insert space"
 msgstr "Sett inn mellomrom"
 
-#: ../mate_menu/plugins/applications.py:767
-#: ../mate_menu/plugins/applications.py:814
+#: ../mate_menu/plugins/applications.py:765
+#: ../mate_menu/plugins/applications.py:813
 msgid "Insert separator"
-msgstr "Sett inn separator"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:769
+#: ../mate_menu/plugins/applications.py:767
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr "Start når jeg logger inn"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:771
+#: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
-msgstr "Start"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:772
+#: ../mate_menu/plugins/applications.py:770
 msgid "Remove from favorites"
 msgstr "Fjern fra favoritter"
 
-#: ../mate_menu/plugins/applications.py:774
+#: ../mate_menu/plugins/applications.py:772
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
-msgstr "Rediger egenskaper"
+msgstr "Rediger innstillinger"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:811
 msgid "Remove"
 msgstr "Fjern"
 
@@ -388,7 +391,7 @@ msgstr "Vis i mine favoritter"
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
-msgstr "Fjern fra meny"
+msgstr "Slett fra menyen"
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
@@ -396,67 +399,62 @@ msgstr "Søk på Google"
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr "Søk på Wikipedia"
+msgstr "Søk på WIkipedia"
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr "Slå opp i ordboka"
+msgstr "Slå opp i ordbok"
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
 msgstr "Søk på datamaskinen"
 
-#: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
+#: ../mate_menu/plugins/applications.py:1332
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Kunne ikke lagre favoritter. Sjekk om du har skriverettigheter til ~/."
-"linuxmint/mintMenu"
 
-#: ../mate_menu/plugins/applications.py:1529
+#: ../mate_menu/plugins/applications.py:1532
 msgid "All"
 msgstr "Alle"
 
-#: ../mate_menu/plugins/applications.py:1529
+#: ../mate_menu/plugins/applications.py:1532
 msgid "Show all applications"
-msgstr "Vis all programvare"
+msgstr "Vis alle programmer"
 
-#: ../mate_menu/plugins/system_management.py:154
+#: ../mate_menu/plugins/system_management.py:159
 msgid "Install, remove and upgrade software packages"
-msgstr "Installer, fjern eller oppgrader programpakker"
+msgstr "Installer, fjern og oppgrader programvarepakker"
 
-#: ../mate_menu/plugins/system_management.py:161
+#: ../mate_menu/plugins/system_management.py:166
 msgid "Configure your system"
-msgstr "Konfigurer systemet"
+msgstr "Sett opp systemet ditt"
 
-#: ../mate_menu/plugins/system_management.py:171
+#: ../mate_menu/plugins/system_management.py:176
 msgid "Use the command line"
 msgstr "Bruk kommandolinjen"
 
-#: ../mate_menu/plugins/system_management.py:182
+#: ../mate_menu/plugins/system_management.py:187
 msgid "Requires password to unlock"
-msgstr "Krev passord for å låse opp"
+msgstr "Krever passord for å låse opp"
 
-#: ../mate_menu/plugins/system_management.py:185
+#: ../mate_menu/plugins/system_management.py:190
 msgid "Logout"
-msgstr "Logg ut"
+msgstr "Utlogging"
 
-#: ../mate_menu/plugins/system_management.py:189
+#: ../mate_menu/plugins/system_management.py:194
 msgid "Log out or switch user"
 msgstr "Logg ut eller bytt bruker"
 
-#: ../mate_menu/plugins/system_management.py:196
+#: ../mate_menu/plugins/system_management.py:201
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Avslutt, omstart, hvile- eller dvalemodus"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Bla gjennom alle lokale og eksterne disker og mapper som kan nås fra denne "
-"datamaskinen"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
@@ -464,15 +462,15 @@ msgstr "Åpne din personlige mappe"
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr "Se gjennom nettverkslokasjoner i bokmerker og lokalt"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr "Se gjennom elementer på skrivebordet"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr "Se gjennom slettede filer"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
@@ -481,112 +479,24 @@ msgstr "Tøm papirkurv"
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Nylig brukte dokumenter"
+msgstr "Nylige dokumenter"
 
-#: ../mate_menu/keybinding.py:196
+#: ../mate_menu/keybinding.py:199
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr "Trykk for å sette en ny hurtigtast for åpning og lukking av menyen.  "
+msgstr ""
 
-#: ../mate_menu/keybinding.py:197
+#: ../mate_menu/keybinding.py:200
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Trykk ESC eller trykk igjen for å avbryte handlingen.  "
+msgstr ""
 
-#: ../mate_menu/keybinding.py:198
+#: ../mate_menu/keybinding.py:201
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
-"Trykk tilbaketast (slett bakover) for å fjerne eksisterende tast-tilknytning."
 
-#: ../mate_menu/keybinding.py:211
+#: ../mate_menu/keybinding.py:214
 msgid "Pick an accelerator"
-msgstr "Velg hurtigtast"
+msgstr ""
 
-#: ../mate_menu/keybinding.py:264
+#: ../mate_menu/keybinding.py:267
 msgid "<not set>"
-msgstr "<ikke definert>"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Søk etter installasjons-pakker"
-
-#~ msgid "Software Manager"
-#~ msgstr "Programvarebehandler"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Installer pakken '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "Avinstaller"
-
-#~ msgid "Find Software"
-#~ msgstr "Finn programvare"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Finn veiledinger"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Finn maskinvare"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Få idéer"
-
-#~ msgid "Find Users"
-#~ msgstr "Finn brukere"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Se gjennom og installer tilgjengelig programvare"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Basert på USP av S.Chanderbally"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Applikasjonen ble fjernet uten problemer"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Vennligst vent, dette kan ta litt tid"
-
-#~ msgid "Show sidepane"
-#~ msgstr "Vis sidepanel"
-
-#~ msgid "No matching package found"
-#~ msgstr "Ingen samsvarende pakke ble funnet"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Ønsker du å fjerne dette menyvalget fullstendig?"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Pakker som vil bli fjernet"
-
-#~ msgid "Colors"
-#~ msgstr "Farger"
-
-#~ msgid "Show recent documents"
-#~ msgstr "vis nylig brukte dokumenter"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "Ikke gyldig .menyfil"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "Vis pakke '%s'"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "Ikke en .menyfil"
-
-#~ msgid "Filter:"
-#~ msgstr "Filter:"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "Søke-repositories for '%s'"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "Søkeportal for '%s'"
-
-#~ msgid "File not found"
-#~ msgstr "Filen ble ikke funnet"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Avansert Gnome-meny"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Fjern %s?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Følgende pakker vil bli fjernet:"
+msgstr ""

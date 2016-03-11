@@ -1,55 +1,55 @@
-# Finnish translation for MATE Menu
-# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
+# Riku Viitanen <riisseli4@gmail.com>, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2014-12-28 20:39+0000\n"
-"Last-Translator: Ari Ervasti <ari.ervasti87@gmail.com>\n"
-"Language-Team: Finnish <fi@li.org>\n"
+"POT-Creation-Date: 2016-03-11 22:31+0000\n"
+"PO-Revision-Date: 2016-02-20 10:04+0000\n"
+"Last-Translator: Riku Viitanen <riisseli4@gmail.com>\n"
+"Language-Team: Finnish (http://www.transifex.com/mate/MATE/language/fi/)\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
 msgstr "Valikko"
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:251
+#: ../lib/mate-menu.py:254
 msgid "Couldn't load plugin:"
-msgstr "Liitännäistä ei voitu ladata:"
+msgstr ""
 
-#: ../lib/mate-menu.py:323
+#: ../lib/mate-menu.py:326
 msgid "Couldn't initialize plugin"
-msgstr "Liitännäistä ei voitu alustaa"
+msgstr ""
 
-#: ../lib/mate-menu.py:710
+#: ../lib/mate-menu.py:715
 msgid "Advanced MATE Menu"
-msgstr "Edistyksellinen MATE-valikko"
+msgstr "Edistynyt MATE-valikko"
 
-#: ../lib/mate-menu.py:792
+#: ../lib/mate-menu.py:798
 msgid "Preferences"
 msgstr "Asetukset"
 
-#: ../lib/mate-menu.py:795
+#: ../lib/mate-menu.py:801
 msgid "Edit menu"
 msgstr "Muokkaa valikkoa"
 
-#: ../lib/mate-menu.py:798
+#: ../lib/mate-menu.py:804
 msgid "Reload plugins"
-msgstr "Uudelleenlataa liitännäiset"
+msgstr ""
 
-#: ../lib/mate-menu.py:801
+#: ../lib/mate-menu.py:807
 msgid "About"
-msgstr "Tietoa"
+msgstr "Tietoja"
 
 #. i18n
 #: ../lib/mate-menu-config.py:50
@@ -58,82 +58,82 @@ msgstr "Valikon asetukset"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr "Avaa aina suosikit-paneelissa"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
-msgstr "Näytä painikkeen kuvake"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr "Käytä omia värejä"
+msgstr "Käytä muita värejä"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr "Näytä viimeisten asiakorjojen liitännäiset"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr "Näytä sovellusten liitännäiset"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr "Näytä järjestelmän liitännäiset"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr "Näytä aseman liitännäiset"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr "Näytä sovelluksen kommentit"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
-msgstr "Näytä kategorian kuvakkeet"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr "Osoitus"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr "Muista edellinen kategoria tai haku"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr "Vaihda nimi ja yleisnimi"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr "Reunuksen paksuus:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
-msgstr "pikseliä"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
-msgstr "Läpikuultamattomuus:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Painikkeen teksti"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "Vaihtoehtoja"
+msgstr ""
 
-#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:252
 msgid "Applications"
-msgstr "Sovellukset"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
 msgstr "Teema"
 
-#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
-#: ../mate_menu/plugins/applications.py:253
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:249
+#: ../mate_menu/plugins/applications.py:250
 msgid "Favorites"
 msgstr "Suosikit"
 
@@ -147,7 +147,7 @@ msgstr "Liitännäiset"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Background:"
-msgstr "Tausta:"
+msgstr "Taustakuva:"
 
 #: ../lib/mate-menu-config.py:83
 msgid "Headings:"
@@ -155,7 +155,7 @@ msgstr "Otsikot:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "Borders:"
-msgstr "Reunukset:"
+msgstr "Reunat:"
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
@@ -170,19 +170,19 @@ msgstr "Sarakkeiden määrä:"
 #: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
 #: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
 msgid "Icon size:"
-msgstr "Kuvakkeen koko:"
+msgstr "Kuvakkeen koko"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr "Osoituksen viive (ms):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
-msgstr "Painikkeen kuvake:"
+msgstr "Napin kuvake"
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr "Etsi-komento:"
+msgstr "Hakukomento"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
@@ -191,11 +191,11 @@ msgstr "Sijainnit"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr "Hyväksy vierityspalkki"
+msgstr "Salli vierityspalkki"
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK Bookmarks"
-msgstr "Näytä GTK kirjainmerkit"
+msgstr "Näytä GTK-kirjanmerkit"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
@@ -203,7 +203,7 @@ msgstr "Korkeus:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "Vaihda oletussijainnit:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -215,11 +215,11 @@ msgstr "Kotikansio"
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
-msgstr "Verkko"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:198
 msgid "Desktop"
-msgstr "Työpöytä"
+msgstr "öpöytä"
 
 #: ../lib/mate-menu-config.py:107 ../mate_menu/plugins/places.py:209
 msgid "Trash"
@@ -227,7 +227,7 @@ msgstr "Roskakori"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr "Omat sijainnit:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
@@ -236,35 +236,36 @@ msgstr "Järjestelmä"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "Säädä oletusosia:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:114
-#: ../mate_menu/plugins/system_management.py:147
-#: ../mate_menu/plugins/system_management.py:150
+#: ../mate_menu/plugins/system_management.py:149
+#: ../mate_menu/plugins/system_management.py:152
+#: ../mate_menu/plugins/system_management.py:155
 msgid "Package Manager"
-msgstr "Pakettienhallinta"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:115
-#: ../mate_menu/plugins/system_management.py:157
+#: ../mate_menu/plugins/system_management.py:162
 msgid "Control Center"
-msgstr "Ohjauskeskus"
+msgstr "Hallintakeskus"
 
 #: ../lib/mate-menu-config.py:116
-#: ../mate_menu/plugins/system_management.py:164
+#: ../mate_menu/plugins/system_management.py:169
 msgid "Terminal"
 msgstr "Pääte"
 
 #: ../lib/mate-menu-config.py:117
-#: ../mate_menu/plugins/system_management.py:174
+#: ../mate_menu/plugins/system_management.py:179
 msgid "Lock Screen"
-msgstr "Lukitse näyttö"
+msgstr "Lukitusnäyttö"
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
 msgstr "Kirjaudu ulos"
 
 #: ../lib/mate-menu-config.py:119
-#: ../mate_menu/plugins/system_management.py:192
+#: ../mate_menu/plugins/system_management.py:197
 msgid "Quit"
 msgstr "Lopeta"
 
@@ -298,87 +299,87 @@ msgstr "Polku"
 
 #: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
-msgstr "Työpöydän teema"
+msgstr "Työpöytäteema"
 
-#: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
+#: ../lib/mate-menu-config.py:432 ../lib/mate-menu-config.py:463
 msgid "Name:"
 msgstr "Nimi:"
 
-#: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
+#: ../lib/mate-menu-config.py:433 ../lib/mate-menu-config.py:464
 msgid "Path:"
 msgstr "Polku:"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:250
+#: ../mate_menu/plugins/applications.py:247
 msgid "Search:"
-msgstr "Etsi:"
+msgstr "Haku:"
 
-#: ../mate_menu/plugins/applications.py:254
+#: ../mate_menu/plugins/applications.py:251
 msgid "All applications"
 msgstr "Kaikki sovellukset"
 
-#: ../mate_menu/plugins/applications.py:621
+#: ../mate_menu/plugins/applications.py:618
 #, python-format
 msgid "Search Google for %s"
-msgstr "Etsi Googlesta %s"
+msgstr "Google-haku: %s"
 
-#: ../mate_menu/plugins/applications.py:628
+#: ../mate_menu/plugins/applications.py:625
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Etsi Wikipediasta %s"
+msgstr "Wikipedia-haku: %s"
 
-#: ../mate_menu/plugins/applications.py:644
+#: ../mate_menu/plugins/applications.py:641
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Etsi %s sanakirjasta"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:651
+#: ../mate_menu/plugins/applications.py:648
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Etsi tältä koneelta %s"
+msgstr ""
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:763
+#: ../mate_menu/plugins/applications.py:761
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
 msgstr "Lisää työpöydälle"
 
-#: ../mate_menu/plugins/applications.py:764
+#: ../mate_menu/plugins/applications.py:762
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
 msgstr "Lisää paneeliin"
 
-#: ../mate_menu/plugins/applications.py:766
-#: ../mate_menu/plugins/applications.py:813
+#: ../mate_menu/plugins/applications.py:764
+#: ../mate_menu/plugins/applications.py:812
 msgid "Insert space"
 msgstr "Lisää välilyönti"
 
-#: ../mate_menu/plugins/applications.py:767
-#: ../mate_menu/plugins/applications.py:814
+#: ../mate_menu/plugins/applications.py:765
+#: ../mate_menu/plugins/applications.py:813
 msgid "Insert separator"
 msgstr "Lisää erotin"
 
-#: ../mate_menu/plugins/applications.py:769
+#: ../mate_menu/plugins/applications.py:767
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
-msgstr "Käynnistä, kun kirjaudun sisään"
+msgstr "Käynnistä kun kirjaudun sisään"
 
-#: ../mate_menu/plugins/applications.py:771
+#: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
 msgstr "Käynnistä"
 
-#: ../mate_menu/plugins/applications.py:772
+#: ../mate_menu/plugins/applications.py:770
 msgid "Remove from favorites"
 msgstr "Poista suosikeista"
 
-#: ../mate_menu/plugins/applications.py:774
+#: ../mate_menu/plugins/applications.py:772
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
 msgstr "Muokkaa ominaisuuksia"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:811
 msgid "Remove"
 msgstr "Poista"
 
@@ -392,201 +393,108 @@ msgstr "Poista valikosta"
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr "Etsi Googlella"
+msgstr "Hae Googlesta"
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr "Etsi Wikipediasta"
+msgstr "Hae Wikipediasta"
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr "Tarkistussanakirja"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr "Etsi koneeltasi"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
+#: ../mate_menu/plugins/applications.py:1332
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Suosikkeja ei voitu tallentaa. Tarkista onko sinulla kirjoitusoikeus "
-"sijaintiin ~/.linuxmint/mintMenu"
 
-#: ../mate_menu/plugins/applications.py:1529
+#: ../mate_menu/plugins/applications.py:1532
 msgid "All"
 msgstr "Kaikki"
 
-#: ../mate_menu/plugins/applications.py:1529
+#: ../mate_menu/plugins/applications.py:1532
 msgid "Show all applications"
-msgstr "Näytä kaikki sovellukset"
+msgstr "Näytä kaikki ohjelmat"
 
-#: ../mate_menu/plugins/system_management.py:154
+#: ../mate_menu/plugins/system_management.py:159
 msgid "Install, remove and upgrade software packages"
-msgstr "Asenna, poista ja päivitä ohjelmistopaketteja"
+msgstr "Asenna, poista ja päivitä ohjelmapaketteja"
 
-#: ../mate_menu/plugins/system_management.py:161
+#: ../mate_menu/plugins/system_management.py:166
 msgid "Configure your system"
-msgstr "Määritä järjestelmäsi"
+msgstr "Määrittele järjestelmäsi"
 
-#: ../mate_menu/plugins/system_management.py:171
+#: ../mate_menu/plugins/system_management.py:176
 msgid "Use the command line"
 msgstr "Käytä komentoriviä"
 
-#: ../mate_menu/plugins/system_management.py:182
+#: ../mate_menu/plugins/system_management.py:187
 msgid "Requires password to unlock"
-msgstr "Avaamiseen tarvitset salasanan"
+msgstr ""
 
-#: ../mate_menu/plugins/system_management.py:185
+#: ../mate_menu/plugins/system_management.py:190
 msgid "Logout"
-msgstr "Kirjaudu ulos"
+msgstr ""
 
-#: ../mate_menu/plugins/system_management.py:189
+#: ../mate_menu/plugins/system_management.py:194
 msgid "Log out or switch user"
-msgstr "Kirjaudu ulos tai vaihda käyttäjää"
+msgstr ""
 
-#: ../mate_menu/plugins/system_management.py:196
+#: ../mate_menu/plugins/system_management.py:201
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Sammuta, käynnistä uudelleen, keskeytä tai aseta lepotilaan"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Selaa tältä tietokoneelta käytettävissä olevia paikallisia ja etäkansioita"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
-msgstr "Avaa oma kansiosi"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr "Selaa kirjanmerkittyjä ja paikallisia verkkosijainteja"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr "Selaa työpöydälle asetettuja kohteita"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr "Selaa poistettuja tiedostoja"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
-msgstr "Tyhjennä roskakori"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Viimeaikaiset asiakirjat"
+msgstr ""
 
-#: ../mate_menu/keybinding.py:196
+#: ../mate_menu/keybinding.py:199
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
-"Klikkaa asettaaksesi uuden pikanäppäimen valikon aukaisemiseen ja "
-"sulkemiseen.  "
 
-#: ../mate_menu/keybinding.py:197
+#: ../mate_menu/keybinding.py:200
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Paina Esc-näppäintä tai klikkaa uudelleen peruaksesi toimenpiteen.  "
+msgstr ""
 
-#: ../mate_menu/keybinding.py:198
+#: ../mate_menu/keybinding.py:201
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Paina askelpalautinta pyyhkiäksesi olemassaolevan pikanäppäimen."
+msgstr ""
 
-#: ../mate_menu/keybinding.py:211
+#: ../mate_menu/keybinding.py:214
 msgid "Pick an accelerator"
-msgstr "Valitse pikanäppäin"
+msgstr ""
 
-#: ../mate_menu/keybinding.py:264
+#: ../mate_menu/keybinding.py:267
 msgid "<not set>"
-msgstr "<Ei asetettu>"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Etsi asennettavia paketteja"
-
-#~ msgid "Software Manager"
-#~ msgstr "Ohjelmistohallinta"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Asenna paketti '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "Poista asennettu ohjelma"
-
-#~ msgid "Find Software"
-#~ msgstr "Etsi ohjelmia"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Etsi ohjeita"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Etsi laitteistoja"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Etsi ideoita"
-
-#~ msgid "Find Users"
-#~ msgstr "Etsi käyttäjiä"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Selaa ja asenna saatavilla olevia ohjelmia"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Perustuu USP projektiin S.Chanderballylta."
-
-#~ msgid "Show sidepane"
-#~ msgstr "Näytä sivupaneeli"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Haluatko poistaa tämän Valikosta?"
-
-#~ msgid "Show recent documents"
-#~ msgstr "Näytä viimeisimmät tiedostot"
-
-#~ msgid "Colors"
-#~ msgstr "Värit"
-
-#~ msgid "File not found"
-#~ msgstr "Tiedostoa ei löytynyt"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "Ei ole kelvollinen .menu tiedosto"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "Ei ole .menu tiedosto"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "Etsi portaalista '%s'"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Seuraavat paketit poistetaan:"
-
-#~ msgid "Filter:"
-#~ msgstr "Suodatin:"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "Näytä paketti '%s'"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Poistetaanko %s?"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Kehittynyt Gnome Menu"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Sovellus poistettu"
-
-#~ msgid "No matching package found"
-#~ msgstr "Vastaavia paketteja ei löytynyt"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Poistettavia paketteja"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "Etsi pakettivarastosta '%s'"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Ole hyvä ja odota, tämä voi kestää hetken"
+msgstr ""

@@ -1,54 +1,53 @@
-# Icelandic translation for MATE Menu
-# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the package.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
-# Sveinn í Felli <sveinki@nett.is>, 2013.
+# Translators:
+# Sveinn í Felli <sv1@fellsnet.is>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-07 11:10+0100\n"
-"PO-Revision-Date: 2014-12-02 11:41+0000\n"
+"POT-Creation-Date: 2016-03-11 22:31+0000\n"
+"PO-Revision-Date: 2015-12-29 16:20+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
-"Language-Team: Icelandic <is@li.org>\n"
+"Language-Team: Icelandic (http://www.transifex.com/mate/MATE/language/is/)\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Plural-Forms: nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
 msgstr "Valmynd"
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:251
+#: ../lib/mate-menu.py:254
 msgid "Couldn't load plugin:"
-msgstr "Gat ekki hlaðið inn íforriti"
+msgstr "Gat ekki hlaðið inn viðbót:"
 
-#: ../lib/mate-menu.py:323
+#: ../lib/mate-menu.py:326
 msgid "Couldn't initialize plugin"
-msgstr "Gat ekki vakið upp íforrit"
+msgstr "Gat ekki vakið upp viðbót"
 
-#: ../lib/mate-menu.py:710
+#: ../lib/mate-menu.py:715
 msgid "Advanced MATE Menu"
-msgstr "Ítarleg MATE valmynd"
+msgstr "Ítarlegri MATE valmynd"
 
-#: ../lib/mate-menu.py:792
+#: ../lib/mate-menu.py:798
 msgid "Preferences"
 msgstr "Stillingar"
 
-#: ../lib/mate-menu.py:795
+#: ../lib/mate-menu.py:801
 msgid "Edit menu"
 msgstr "Breytingavalmynd"
 
-#: ../lib/mate-menu.py:798
+#: ../lib/mate-menu.py:804
 msgid "Reload plugins"
-msgstr "Endurhlaða íforrit"
+msgstr "Endurhlaða viðbætur"
 
-#: ../lib/mate-menu.py:801
+#: ../lib/mate-menu.py:807
 msgid "About"
 msgstr "Um"
 
@@ -71,19 +70,19 @@ msgstr "Nota sérsniðna liti"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr "Sýna íforrit fyrir 'Nýleg skjöl'"
+msgstr "Sýna viðbót fyrir 'Nýleg skjöl'"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr "Sýna íforrit fyrir 'Forrit'"
+msgstr "Sýna viðbót fyrir 'Forrit'"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr "Sýna íforrit fyrir 'Kerfið'"
+msgstr "Sýna viðbót fyrir 'Kerfið'"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr "Sýna íforrit fyrir 'Staðir'"
+msgstr "Sýna viðbót fyrir 'Staðir'"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
@@ -125,7 +124,7 @@ msgstr "Texti á hnappi:"
 msgid "Options"
 msgstr "Valkostir"
 
-#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:252
 msgid "Applications"
 msgstr "Forrit"
 
@@ -133,8 +132,8 @@ msgstr "Forrit"
 msgid "Theme"
 msgstr "Útlit"
 
-#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
-#: ../mate_menu/plugins/applications.py:253
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:249
+#: ../mate_menu/plugins/applications.py:250
 msgid "Favorites"
 msgstr "Eftirlæti"
 
@@ -240,23 +239,24 @@ msgid "Toggle Default Items:"
 msgstr "Víxla sjálfgefnum hlutum:"
 
 #: ../lib/mate-menu-config.py:114
-#: ../mate_menu/plugins/system_management.py:147
-#: ../mate_menu/plugins/system_management.py:150
+#: ../mate_menu/plugins/system_management.py:149
+#: ../mate_menu/plugins/system_management.py:152
+#: ../mate_menu/plugins/system_management.py:155
 msgid "Package Manager"
 msgstr "Pakkastjórnandi"
 
 #: ../lib/mate-menu-config.py:115
-#: ../mate_menu/plugins/system_management.py:157
+#: ../mate_menu/plugins/system_management.py:162
 msgid "Control Center"
 msgstr "Stjórnborð"
 
 #: ../lib/mate-menu-config.py:116
-#: ../mate_menu/plugins/system_management.py:164
+#: ../mate_menu/plugins/system_management.py:169
 msgid "Terminal"
 msgstr "Skjáhermir"
 
 #: ../lib/mate-menu-config.py:117
-#: ../mate_menu/plugins/system_management.py:174
+#: ../mate_menu/plugins/system_management.py:179
 msgid "Lock Screen"
 msgstr "Læsa skjá"
 
@@ -265,7 +265,7 @@ msgid "Log Out"
 msgstr "Skrá út"
 
 #: ../lib/mate-menu-config.py:119
-#: ../mate_menu/plugins/system_management.py:192
+#: ../mate_menu/plugins/system_management.py:197
 msgid "Quit"
 msgstr "Hætta"
 
@@ -301,85 +301,85 @@ msgstr "Slóð"
 msgid "Desktop theme"
 msgstr "Skjáborðsþema"
 
-#: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
+#: ../lib/mate-menu-config.py:432 ../lib/mate-menu-config.py:463
 msgid "Name:"
 msgstr "Heiti:"
 
-#: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
+#: ../lib/mate-menu-config.py:433 ../lib/mate-menu-config.py:464
 msgid "Path:"
 msgstr "Slóð:"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:250
+#: ../mate_menu/plugins/applications.py:247
 msgid "Search:"
 msgstr "Leita:"
 
-#: ../mate_menu/plugins/applications.py:254
+#: ../mate_menu/plugins/applications.py:251
 msgid "All applications"
 msgstr "Öll forrit"
 
-#: ../mate_menu/plugins/applications.py:621
+#: ../mate_menu/plugins/applications.py:618
 #, python-format
 msgid "Search Google for %s"
 msgstr "Leita með Google að %s"
 
-#: ../mate_menu/plugins/applications.py:628
+#: ../mate_menu/plugins/applications.py:625
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "Leita á Wikipedia að %s"
 
-#: ../mate_menu/plugins/applications.py:644
+#: ../mate_menu/plugins/applications.py:641
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "Fletta %s upp í orðabók"
 
-#: ../mate_menu/plugins/applications.py:651
+#: ../mate_menu/plugins/applications.py:648
 #, python-format
 msgid "Search Computer for %s"
 msgstr "Leita á tölvunni að %s"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:763
+#: ../mate_menu/plugins/applications.py:761
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
 msgstr "Bæta á skjáborð"
 
-#: ../mate_menu/plugins/applications.py:764
+#: ../mate_menu/plugins/applications.py:762
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
 msgstr "Bæta á spjald"
 
-#: ../mate_menu/plugins/applications.py:766
-#: ../mate_menu/plugins/applications.py:813
+#: ../mate_menu/plugins/applications.py:764
+#: ../mate_menu/plugins/applications.py:812
 msgid "Insert space"
 msgstr "Setja inn bil"
 
-#: ../mate_menu/plugins/applications.py:767
-#: ../mate_menu/plugins/applications.py:814
+#: ../mate_menu/plugins/applications.py:765
+#: ../mate_menu/plugins/applications.py:813
 msgid "Insert separator"
 msgstr "Setja inn aðgreini"
 
-#: ../mate_menu/plugins/applications.py:769
+#: ../mate_menu/plugins/applications.py:767
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
 msgstr "Ræsa við innskráningu"
 
-#: ../mate_menu/plugins/applications.py:771
+#: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
 msgstr "Ræsa"
 
-#: ../mate_menu/plugins/applications.py:772
+#: ../mate_menu/plugins/applications.py:770
 msgid "Remove from favorites"
 msgstr "Fjarlægja úr Eftirlæti"
 
-#: ../mate_menu/plugins/applications.py:774
+#: ../mate_menu/plugins/applications.py:772
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
 msgstr "Breyta eiginleikum"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:811
 msgid "Remove"
 msgstr "Fjarlægja"
 
@@ -407,48 +407,47 @@ msgstr "Uppflettiorðabók"
 msgid "Search Computer"
 msgstr "Leita á tölvunni"
 
-#: ../mate_menu/plugins/applications.py:1329
-#, fuzzy
+#: ../mate_menu/plugins/applications.py:1332
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Gat ekki vistað Eftirlæti. Athugaðu hvort þú hafir aðgangsheimildir að ~/."
-"linuxmint/mintMenu"
+"Gat ekki vistað Eftirlæti. Athugaðu hvort þú hafir aðgangsheimildir að  ~/."
+"config/mate-menu"
 
-#: ../mate_menu/plugins/applications.py:1529
+#: ../mate_menu/plugins/applications.py:1532
 msgid "All"
 msgstr "Öll"
 
-#: ../mate_menu/plugins/applications.py:1529
+#: ../mate_menu/plugins/applications.py:1532
 msgid "Show all applications"
 msgstr "Sýna öll forrit"
 
-#: ../mate_menu/plugins/system_management.py:154
+#: ../mate_menu/plugins/system_management.py:159
 msgid "Install, remove and upgrade software packages"
 msgstr "Setja upp, fjarlægja og uppfæra hugbúnaðarpakka"
 
-#: ../mate_menu/plugins/system_management.py:161
+#: ../mate_menu/plugins/system_management.py:166
 msgid "Configure your system"
 msgstr "Stilla kerfið"
 
-#: ../mate_menu/plugins/system_management.py:171
+#: ../mate_menu/plugins/system_management.py:176
 msgid "Use the command line"
 msgstr "Nota skipanalínu"
 
-#: ../mate_menu/plugins/system_management.py:182
+#: ../mate_menu/plugins/system_management.py:187
 msgid "Requires password to unlock"
 msgstr "Krefst lykilorðs til að aflæsa"
 
-#: ../mate_menu/plugins/system_management.py:185
+#: ../mate_menu/plugins/system_management.py:190
 msgid "Logout"
 msgstr "Útskráning"
 
-#: ../mate_menu/plugins/system_management.py:189
+#: ../mate_menu/plugins/system_management.py:194
 msgid "Log out or switch user"
 msgstr "Skrá út eða skipta um notanda"
 
-#: ../mate_menu/plugins/system_management.py:196
+#: ../mate_menu/plugins/system_management.py:201
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Slökkva, endurræsa, svæfa eða setja í dvala"
 
@@ -484,110 +483,23 @@ msgstr "Tæma ruslafötu"
 msgid "Recent documents"
 msgstr "Nýleg skjöl"
 
-#: ../mate_menu/keybinding.py:196
+#: ../mate_menu/keybinding.py:199
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 "Smella til að setja nýjan flýtilykil fyrir að opnao og loka valmyndinni.  "
 
-#: ../mate_menu/keybinding.py:197
+#: ../mate_menu/keybinding.py:200
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "Smelltu á ESC-lykil eða smelltu aftur til að hætta við aðgerðina.  "
 
-#: ../mate_menu/keybinding.py:198
+#: ../mate_menu/keybinding.py:201
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "Smelltu á Backspace-lykil til að hreinsa út núverandi lyklabindingu."
 
-#: ../mate_menu/keybinding.py:211
+#: ../mate_menu/keybinding.py:214
 msgid "Pick an accelerator"
 msgstr "Veldu flýtilykil"
 
-#: ../mate_menu/keybinding.py:264
+#: ../mate_menu/keybinding.py:267
 msgid "<not set>"
 msgstr "<ekki stillt>"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Leita að pökkum til uppsetningar"
-
-#~ msgid "Software Manager"
-#~ msgstr "Hugbúnaðarstjórnun"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Setja upp pakkann '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "Taka út"
-
-#~ msgid "Find Software"
-#~ msgstr "Finna hugbúnað"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Finna kennsluefni"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Finna vélbúnað"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Finna hugmyndir"
-
-#~ msgid "Find Users"
-#~ msgstr "Finna notendur"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Skoða og setja upp tiltækan hugbúnað"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Byggt á USP frá S.Chanderbally"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Bíddu aðeins, þetta getur tekið dálítinn tíma"
-
-#~ msgid "Colors"
-#~ msgstr "Litir"
-
-#~ msgid "File not found"
-#~ msgstr "Skrá fannst ekki"
-
-#~ msgid "Filter:"
-#~ msgstr "Sía:"
-
-#~ msgid "Show sidepane"
-#~ msgstr "Sýna hliðarspjald"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Forritið var fjarlægt"
-
-#~ msgid "No matching package found"
-#~ msgstr "Enginn samsvarandi pakki fannst"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Viltu fjarlægja þessa færslu úr valmyndinni?"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Pakkar sem verða fjarlægðir"
-
-#~ msgid "Show recent documents"
-#~ msgstr "Sýna nýleg skjöl"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "Leita á gáttinni eftir '%s'"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "Er ekki gild .menu skrá"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "Er ekki .menu skrá"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "Leita í hugbúnaðarsöfnum eftir '%s'"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "Sýna '%s' pakka"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Fjarlægja %s?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Eftirfarandi pakkar verða fjarlægðir:"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Ítarlegri GNOME valmynd"
