@@ -142,13 +142,18 @@ class pluginclass( object ):
     def do_standard_items( self ):
 
         if ( self.showPackageManager == True ):
-            if os.path.exists("/usr/bin/software-center") or os.path.exists("/usr/bin/synaptic-pkexec"):
+            if os.path.exists("/usr/bin/software-center") or \
+               os.path.exists("/usr/bin/synaptic-pkexec") or \
+               os.path.exists("/usr/share/applications/ubuntu-mate-software.desktop"):
                 if os.path.exists("/usr/bin/synaptic-pkexec"):
                     Button2 = easyButton("synaptic", self.iconsize, [_("Package Manager")], -1, -1 )
                     Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/synaptic-pkexec" )
                 elif os.path.exists("/usr/bin/software-center"):
                     Button2 = easyButton("softwarecenter", self.iconsize, [_("Package Manager")], -1, -1 )
                     Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/software-center" )
+                elif os.path.exists("/usr/share/applications/ubuntu-mate-software.desktop"):
+                    Button2 = easyButton("system-software-install", self.iconsize, [_("Package Manager")], -1, -1 )
+                    Button2.connect("clicked", self.ButtonClicked, "/usr/bin/ubuntu-mate-welcome --software-only")                    
                 Button2.show()
                 self.systemBtnHolder.pack_start( Button2, False, False, 0 )
                 self.mateMenuWin.setTooltip( Button2, _("Install, remove and upgrade software packages") )
