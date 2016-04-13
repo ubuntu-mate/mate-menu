@@ -400,10 +400,10 @@ class mateMenuConfig( object ):
 
     def getHeadingColor( self ):
         try:
-            color = self.borderColor.get_color()
+            color = self.headingColor.get_color()
         except TypeError:
             color = Gdk.Color(0, 0, 0)
-            self.borderColor.get_color(color)
+            self.headingColor.get_color(color)
         return self.gdkColorToString( color )
 
     def gdkColorToString( self, gdkColor ):
