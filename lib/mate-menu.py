@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Copyright (C) 2007-2014 Clement Lefebvre <root@linuxmint.com>
-# Copyright (C) 2015 Martin Wimpress <code@ubuntu-mate.org>
+# Copyright (C) 2015-2016 Martin Wimpress <code@ubuntu-mate.org>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -19,7 +19,7 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
-__VERSION__='5.7.0'
+__VERSION__='5.7.1'
 
 import ctypes
 import gc
