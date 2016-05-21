@@ -330,6 +330,9 @@ class pluginclass( object ):
 
         self.builder.get_object("searchButton").connect( "button-press-event", self.searchPopup )
 
+        self.icon_theme = Gtk.IconTheme.get_default();
+        self.icon_theme.connect("changed", self.on_icon_theme_changed)
+
     def get_panel(self):
         panelsettings = Gio.Settings.new("org.mate.panel")
         applet_list = panelsettings.get_strv("object-id-list")
@@ -1304,6 +1307,9 @@ class pluginclass( object ):
         if targetType == self.TARGET_TYPE_FAV:
             #self.favoritesReorder( int(selection.data), widget.position )
             self.favoritesReorder( self.drag_origin, widget.position )
+
+    def on_icon_theme_changed(self, theme):
+        self.menuChanged (0, 0)
 
     def menuChanged( self, x, y ):
         # wait some miliseconds because there a multiple events send at the same time and we don't want to rebuild the menu for each
