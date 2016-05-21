@@ -32,6 +32,7 @@ import traceback
 import signal
 
 gi.require_version("Gtk", "3.0")
+gi.require_version('MatePanelApplet', '4.0')
 
 from ctypes import *
 from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
