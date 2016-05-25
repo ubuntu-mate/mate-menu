@@ -30,8 +30,6 @@ from mate_menu.execute import Execute
 from user import home
 from urllib import unquote
 
-gtk = CDLL("libgtk-x11-2.0.so.0")
-
 # i18n
 gettext.install("mate-menu", "/usr/share/locale")
 
@@ -274,8 +272,7 @@ class pluginclass( object ):
             trashMenu.show_all()
             emptyTrashMenuItem.connect ( "activate", self.emptyTrash, widget )
             self.mateMenuWin.stopHiding()
-            gtk.gtk_menu_popup.argtypes = [c_void_p, c_void_p, c_void_p, c_void_p, c_void_p, c_uint, c_uint]
-            gtk.gtk_menu_popup(hash(trashMenu), None, None, None, None, 3, 0)
+            trashMenu.popup(None, None, None, None, 3, 0)
 
     def emptyTrash( self, menu, widget):
         trash_info = os.path.join(os.path.expanduser('~'), '.local','share','Trash','info')
