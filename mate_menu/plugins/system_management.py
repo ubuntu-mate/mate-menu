@@ -150,10 +150,12 @@ class pluginclass( object ):
                 Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/software-center" )
             elif os.path.exists("/usr/share/applications/ubuntu-mate-software.desktop"):
                 Button2 = easyButton("system-software-install", self.iconsize, [_("Package Manager")], -1, -1 )
-                Button2.connect("clicked", self.ButtonClicked, "/usr/bin/ubuntu-mate-welcome --software-only")                    
-            Button2.show()
-            self.systemBtnHolder.pack_start( Button2, False, False, 0 )
-            self.mateMenuWin.setTooltip( Button2, _("Install, remove and upgrade software packages") )
+            try:
+                Button2.show()
+                self.systemBtnHolder.pack_start( Button2, False, False, 0 )
+                self.mateMenuWin.setTooltip( Button2, _("Install, remove and upgrade software packages") )
+            except UnboundLocalError:
+                pass
 
         if ( self.showControlCenter == True ):
             Button3 = easyButton( "gtk-preferences", self.iconsize, [_("Control Center")], -1, -1 )
