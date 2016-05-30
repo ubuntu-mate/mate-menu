@@ -766,23 +766,15 @@ class pluginclass( object ):
                 insertSpaceMenuItem = Gtk.MenuItem(_("Insert space"))
                 insertSeparatorMenuItem = Gtk.MenuItem(_("Insert separator"))
                 separator2 = Gtk.SeparatorMenuItem()
-                startupMenuItem = Gtk.CheckMenuItem(_("Launch when I log in"))
-                separator3 = Gtk.SeparatorMenuItem()
                 launchMenuItem = Gtk.MenuItem(_("Launch"))
                 removeFromFavMenuItem = Gtk.MenuItem(_("Remove from favorites"))
-                separator4 = Gtk.SeparatorMenuItem()
+                separator3 = Gtk.SeparatorMenuItem()
                 propsMenuItem = Gtk.MenuItem(_("Edit properties"))
 
                 desktopMenuItem.connect("activate", self.add_to_desktop, widget)
                 panelMenuItem.connect("activate", self.add_to_panel, widget)
                 insertSpaceMenuItem.connect( "activate", self.onFavoritesInsertSpace, widget, insertBefore )
                 insertSeparatorMenuItem.connect( "activate", self.onFavoritesInsertSeparator, widget, insertBefore )
-                if widget.isInStartup():
-                    startupMenuItem.set_active( True )
-                    startupMenuItem.connect( "toggled", self.onRemoveFromStartup, widget )
-                else:
-                    startupMenuItem.set_active( False )
-                    startupMenuItem.connect( "toggled", self.onAddToStartup, widget )
                 launchMenuItem.connect( "activate", self.onLaunchApp, widget)
                 removeFromFavMenuItem.connect( "activate", self.onFavoritesRemove, widget )
                 propsMenuItem.connect( "activate", self.onPropsApp, widget)
@@ -793,11 +785,9 @@ class pluginclass( object ):
                 mTree.append(insertSpaceMenuItem)
                 mTree.append(insertSeparatorMenuItem)
                 mTree.append(separator2)
-                mTree.append(startupMenuItem)
-                mTree.append(separator3)
                 mTree.append(launchMenuItem)
                 mTree.append(removeFromFavMenuItem)
-                mTree.append(separator4)
+                mTree.append(separator3)
                 mTree.append(propsMenuItem)
 
                 mTree.show_all()
@@ -831,11 +821,9 @@ class pluginclass( object ):
             panelMenuItem = Gtk.MenuItem(_("Add to panel"))
             separator1 = Gtk.SeparatorMenuItem()
             favoriteMenuItem = Gtk.CheckMenuItem(_("Show in my favorites"))
-            startupMenuItem = Gtk.CheckMenuItem(_("Launch when I log in"))
-            separator2 = Gtk.SeparatorMenuItem()
             launchMenuItem = Gtk.MenuItem(_("Launch"))
             deleteMenuItem = Gtk.MenuItem(_("Delete from menu"))
-            separator3 = Gtk.SeparatorMenuItem()
+            separator2 = Gtk.SeparatorMenuItem()
             propsMenuItem = Gtk.MenuItem(_("Edit properties"))
 
             mTree.append(desktopMenuItem)
@@ -843,16 +831,13 @@ class pluginclass( object ):
             mTree.append(separator1)
 
             mTree.append(favoriteMenuItem)
-            mTree.append(startupMenuItem)
-
-            mTree.append(separator2)
 
             mTree.append(launchMenuItem)
             if home in widget.desktopFile:
                 mTree.append(deleteMenuItem)
                 deleteMenuItem.connect("activate", self.delete_from_menu, widget)
 
-            mTree.append(separator3)
+            mTree.append(separator2)
 
             mTree.append(propsMenuItem)
 
@@ -870,13 +855,6 @@ class pluginclass( object ):
             else:
                 favoriteMenuItem.set_active( False )
                 favoriteMenuItem.connect( "toggled", self.onAddToFavorites, widget )
-
-            if widget.isInStartup():
-                startupMenuItem.set_active( True )
-                startupMenuItem.connect( "toggled", self.onRemoveFromStartup, widget )
-            else:
-                startupMenuItem.set_active( False )
-                startupMenuItem.connect( "toggled", self.onAddToStartup, widget )
 
             self.mateMenuWin.stopHiding()
             mTree.popup(None, None, None, None, ev.button, ev.time)
@@ -1053,9 +1031,6 @@ class pluginclass( object ):
 
     def onFavoritesRemove( self, menu, widget ):
         self.favoritesRemove( widget.position )
-
-    def onAddToStartup( self, menu, widget ):
-        widget.addToStartup()
 
     def onRemoveFromStartup( self, menu, widget ):
         widget.removeFromStartup()

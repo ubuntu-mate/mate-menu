@@ -413,21 +413,6 @@ class ApplicationLauncher( easyButton ):
     def startupFileChanged( self, *args ):
         self.inStartup = os.path.exists( self.startupFilePath )
 
-    def addToStartup( self ):
-        startupDir = os.path.join( os.path.expanduser("~"), ".config", "autostart" );
-        if not os.path.exists( startupDir ):
-            os.makedirs( startupDir )
-
-        shutil.copyfile( self.desktopFile, self.startupFilePath )
-
-        # Remove %u, etc. from Exec entry, because MATE will not replace them when it starts the app
-        item = matedesktop.item_new_from_uri( self.startupFilePath, matedesktop.LOAD_ONLY_IF_EXISTS )
-        if item:
-            r = re.compile("%[A-Za-z]");
-            tmp = r.sub("", item.get_string( matedesktop.KEY_EXEC ) ).strip()
-            item.set_string( matedesktop.KEY_EXEC, tmp )
-            item.save( self.startupFilePath, 0 )
-
     def removeFromStartup( self ):
         if os.path.exists( self.startupFilePath ):
             os.remove( self.startupFilePath )
