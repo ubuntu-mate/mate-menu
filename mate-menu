@@ -29,14 +29,15 @@ if len(sys.argv) > 1:
         print(" [--]clean, [--]clear, [--]reset Restore settings to default.\n")
     elif (sys.argv[1] in ["clean", "clear", "reset",
           "--clean", "--clear", "--reset"]):
+        configPath = os.environ.get("XDG_CONFIG_HOME",
+                                    os.path.join(os.environ["HOME"], ".config"))
+
         for path in ("org.mate.mate-menu", "org.mate.mate-menu.plugins.places",
                      "org.mate.mate-menu.plugins.applications",
                      "org.mate.mate-menu.plugins.recent",
                      "org.mate.mate-menu.plugins.system_management"):
             os.system("gsettings reset-recursively " + path)
-        os.system("rm -rf \"" +
-                  os.path.join(os.environ["HOME"], ".config", "mate-menu") +
-                  "\"")
+        os.system("rm -rf \"" + os.path.join(configPath, "mate-menu") + "\"")
         print("All MATE Menu settings are now restored to default")
 else:
     os.system("/usr/lib/mate-menu/mate-menu.py")

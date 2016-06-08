@@ -41,8 +41,6 @@ from mate_menu.filemonitor import monitor as filemonitor
 #import xdg.Menu
 import matemenu
 
-from user import home
-
 # i18n
 gettext.install("mate-menu", "/usr/share/locale")
 
@@ -301,7 +299,9 @@ class pluginclass( object ):
         self.currentFavCol = 0
         self.favorites = []
 
-        self.favoritesPath = os.path.join(home, ".config", "mate-menu", "applications.list")
+        configPath = os.environ.get("XDG_CONFIG_HOME",
+                                    os.path.join(os.environ["HOME"], ".config"))
+        self.favoritesPath = os.path.join(configPath, "mate-menu", "applications.list")
 
         self.content_holder.set_size_request( self.width, self.height )
         self.categoriesBox.set_size_request( self.width / 3, -1 )
@@ -514,10 +514,12 @@ class pluginclass( object ):
         self.content_holder.set_size_request( self.width, self.height )
 
     def checkMateMenuFolder( self ):
-        if os.path.exists( os.path.join( os.path.expanduser( "~" ), ".config", "mate-menu", "applications" ) ):
+        configPath = os.environ.get( "XDG_CONFIG_HOME",
+                                     os.path.join( os.environ["HOME"], ".config" ) )
+        if os.path.exists( os.path.join( configPath, "mate-menu", "applications" ) ):
             return True
         try:
-            os.makedirs( os.path.join( os.path.expanduser( "~" ), ".config", "mate-menu", "applications" ) )
+            os.makedirs( os.path.join( configPath, "mate-menu", "applications" ) )
             return True
         except:
             pass
@@ -833,7 +835,7 @@ class pluginclass( object ):
             mTree.append(favoriteMenuItem)
 
             mTree.append(launchMenuItem)
-            if home in widget.desktopFile:
+            if os.environ["HOME"] in widget.desktopFile:
                 mTree.append(deleteMenuItem)
                 deleteMenuItem.connect("activate", self.delete_from_menu, widget)
 

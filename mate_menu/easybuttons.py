@@ -323,8 +323,10 @@ class ApplicationLauncher( easyButton ):
             self.appGenericName     = self.appGenericName.strip()
             self.appComment         = self.appComment.strip()
 
+            configPath = os.environ.get( "XDG_CONFIG_HOME",
+                                         os.path.join( os.environ["HOME"], ".config" ) )
             basename = os.path.basename( self.desktopFile )
-            self.startupFilePath = os.path.join( os.path.expanduser("~"), ".config", "autostart", basename )
+            self.startupFilePath = os.path.join( configPath, "autostart", basename )
             if self.startupMonitorId:
                 filemonitor.removeMonitor( self.startupMonitorId  )
             if os.path.exists (self.startupFilePath):
@@ -418,7 +420,9 @@ class ApplicationLauncher( easyButton ):
             os.remove( self.startupFilePath )
 
     def addToFavourites( self ):
-        favouritesDir = os.path.join( os.path.expanduser("~"), ".config", "mate-menu", "applications" );
+        configPath = os.environ.get( "XDG_CONFIG_HOME",
+                                     os.path.join( os.environ["HOME"], ".config" ) )
+        favouritesDir = os.path.join( configPath, "mate-menu", "applications" );
         if not os.path.exists( favouritesDir ):
             os.makedirs( favouritesDir )
 

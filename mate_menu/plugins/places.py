@@ -27,7 +27,6 @@ from gi.repository import Gtk, Gio
 from mate_menu.easybuttons import *
 from mate_menu.easygsettings import EasyGSettings
 from mate_menu.execute import Execute
-from user import home
 from urllib import unquote
 
 # i18n
@@ -162,8 +161,8 @@ class pluginclass( object ):
             Button2 = easyButton( "user-home", self.iconsize, [_("Home Folder")], -1, -1 )
 
             #FIXME: Check for caja on the path and fall back to xdg-open
-            Button2.connect( "clicked", self.ButtonClicked, "caja %s " % home )
-            #Button2.connect( "clicked", self.ButtonClicked, "xdg-open %s " % home )
+            Button2.connect( "clicked", self.ButtonClicked, "caja %s " % os.environ["HOME"] )
+            #Button2.connect( "clicked", self.ButtonClicked, "xdg-open %s " % os.environ["HOME"] )
 
             Button2.show()
             self.placesBtnHolder.pack_start( Button2, False, False, 0)
@@ -184,10 +183,12 @@ class pluginclass( object ):
 
         if ( self.showdesktop == True ):
             # Determine where the Desktop folder is (could be localized)
-            desktopDir = home + "/Desktop"
+            desktopDir = os.path.join(os.environ["HOME"] + "Desktop")
             try:
                 from configobj import ConfigObj
-                config = ConfigObj(home + "/.config/user-dirs.dirs")
+                configPath = os.environ.get("XDG_CONFIG_HOME",
+                                            os.path.join( os.environ["HOME"], ".config"))
+                config = ConfigObj(os.path.join(configPath, "user-dirs.dirs"))
                 tmpdesktopDir = config['XDG_DESKTOP_DIR']
                 if os.path.exists(os.path.expandvars(tmpdesktopDir)):
                     desktopDir = tmpdesktopDir
@@ -219,7 +220,7 @@ class pluginclass( object ):
     def do_custom_places( self ):
         for index in range( len(self.custompaths) ):
             path = self.custompaths[index]
-            path = path.replace("~", home)
+            path = path.replace("~", os.environ["HOME"])
 
             #FIXME: Check for caja on the path and fall back to xdg-open
             command = ( "caja \"" + path + "\"")
