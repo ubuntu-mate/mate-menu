@@ -8,5 +8,5 @@ Description=Advanced MATE Menu
 [MateMenuApplet]
 Name=MATE Menu
 Description=Advanced MATE Menu
-Icon=/usr/share/mate-menu/icons/mate-logo.svg
+Icon=start-here
 MateComponentId=OAFIID:MATE_MateMenuApplet;
