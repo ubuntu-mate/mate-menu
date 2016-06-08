@@ -150,6 +150,7 @@ class pluginclass( object ):
                 Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/software-center" )
             elif os.path.exists("/usr/share/applications/ubuntu-mate-software.desktop"):
                 Button2 = easyButton("system-software-install", self.iconsize, [_("Package Manager")], -1, -1 )
+                Button2.connect("clicked", self.ButtonClicked, "/usr/bin/ubuntu-mate-welcome --software-only")
             try:
                 Button2.show()
                 self.systemBtnHolder.pack_start( Button2, False, False, 0 )
