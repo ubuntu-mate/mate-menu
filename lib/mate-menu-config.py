@@ -23,11 +23,14 @@ import gettext
 import gi
 import os
 import subprocess
+import signal
 
 gi.require_version("Gtk", "3.0")
 
 from gi.repository import Gtk, Gdk
 import mate_menu.keybinding as keybinding
+
+signal.signal(signal.SIGINT, signal.SIG_DFL)
 
 # i18n
 gettext.install("mate-menu", "/usr/share/locale")

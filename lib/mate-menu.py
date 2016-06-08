@@ -30,6 +30,7 @@ import platform
 import subprocess
 import sys
 import traceback
+import signal
 
 gi.require_version("Gtk", "3.0")
 
@@ -46,6 +47,7 @@ except Exception, e:
     print e
     sys.exit( 1 )
 
+signal.signal(signal.SIGINT, signal.SIG_DFL)
 GObject.threads_init()
 
 # Rename the process
