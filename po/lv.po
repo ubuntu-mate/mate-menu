@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "Atļaut ritjoslu"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Rādīt GTK  grāmatzīmes"
+msgid "Show GTK+ Bookmarks"
+msgstr "Rādīt GTK+  grāmatzīmes"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

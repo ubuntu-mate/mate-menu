@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "Tillat rullefelt"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Vis GTK-bokmerke"
+msgid "Show GTK+ Bookmarks"
+msgstr "Vis GTK+-bokmerke"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

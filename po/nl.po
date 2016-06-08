@@ -198,8 +198,8 @@ msgid "Allow Scrollbar"
 msgstr "Schuifbalk toestaan"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Toon GTK bladwijzers"
+msgid "Show GTK+ Bookmarks"
+msgstr "Toon GTK+ bladwijzers"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

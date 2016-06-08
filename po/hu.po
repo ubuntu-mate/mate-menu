@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "Görgetés engedélyezése"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "GTK könyvjelzők megjelenítése"
+msgid "Show GTK+ Bookmarks"
+msgstr "GTK+ könyvjelzők megjelenítése"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

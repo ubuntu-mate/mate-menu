@@ -196,8 +196,8 @@ msgid "Allow Scrollbar"
 msgstr "Permitir barra de rolagem"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Mostrar GTK Favorito"
+msgid "Show GTK+ Bookmarks"
+msgstr "Mostrar GTK+ Favorito"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

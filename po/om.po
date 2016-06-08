@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "kabala maraa hayyami"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "toorbarruu GTK agarsiisi"
+msgid "Show GTK+ Bookmarks"
+msgstr "toorbarruu GTK+ agarsiisi"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

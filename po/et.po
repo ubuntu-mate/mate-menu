@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "Luba kerimisriba"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Näita GTK järjehoidjaid"
+msgid "Show GTK+ Bookmarks"
+msgstr "Näita GTK+ järjehoidjaid"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

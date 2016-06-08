@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "Ngolehno bar-ngGulir"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Nampilno GTK Pratondo-buku"
+msgid "Show GTK+ Bookmarks"
+msgstr "Nampilno GTK+ Pratondo-buku"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

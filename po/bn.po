@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "স্ক্রোলবার অনুমোদন"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "GTK বুকমার্কগুলো প্রদর্শন কর"
+msgid "Show GTK+ Bookmarks"
+msgstr "GTK+ বুকমার্কগুলো প্রদর্শন কর"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

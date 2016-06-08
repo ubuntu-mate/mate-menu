@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "Autoriser la barre de défilement"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Montrer les signets GTK"
+msgid "Show GTK+ Bookmarks"
+msgstr "Montrer les signets GTK+"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

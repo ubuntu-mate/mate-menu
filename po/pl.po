@@ -196,8 +196,8 @@ msgid "Allow Scrollbar"
 msgstr "Zezwól na pasek przewijania"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Pokaż zakładki GTK"
+msgid "Show GTK+ Bookmarks"
+msgstr "Pokaż zakładki GTK+"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

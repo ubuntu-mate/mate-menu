@@ -198,8 +198,8 @@ msgid "Allow Scrollbar"
 msgstr "Дазволіць пракрутку"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Паказваць закладкі GTK"
+msgid "Show GTK+ Bookmarks"
+msgstr "Паказваць закладкі GTK+"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

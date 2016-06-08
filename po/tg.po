@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "Иҷозати навори ҳаракат"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Намоиш додани хатбаракҳои GTK"
+msgid "Show GTK+ Bookmarks"
+msgstr "Намоиш додани хатбаракҳои GTK+"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

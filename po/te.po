@@ -194,7 +194,7 @@ msgid "Allow Scrollbar"
 msgstr "స్క్రోల్ పట్టీని అనుమతించు"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
+msgid "Show GTK+ Bookmarks"
 msgstr "జిటికె ఇష్టాంశాలను చూపించు"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112

@@ -97,7 +97,7 @@ class mateMenuConfig( object ):
 
         self.builder.get_object("placesLabel").set_text(_("Places"))
         self.builder.get_object("allowscrollbarcheckbutton").set_label(_("Allow Scrollbar"))
-        self.builder.get_object("showgtkbookmarkscheckbutton").set_label(_("Show GTK Bookmarks"))
+        self.builder.get_object("showgtkbookmarkscheckbutton").set_label(_("Show GTK+ Bookmarks"))
         self.builder.get_object("placesHeightEntryLabel").set_text(_("Height:"))
         self.builder.get_object("defaultPlacesFrameLabel").set_text(_("Toggle Default Places:"))
         self.builder.get_object("computercheckbutton").set_label(_("Computer"))

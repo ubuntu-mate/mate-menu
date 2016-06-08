@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "Lhiggey dy barr scrolley"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Soilshaghey lioaryn vark GTK"
+msgid "Show GTK+ Bookmarks"
+msgstr "Soilshaghey lioaryn vark GTK+"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

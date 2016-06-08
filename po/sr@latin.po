@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "Omogući kliznu traku"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Prikaži GTK obeleživače"
+msgid "Show GTK+ Bookmarks"
+msgstr "Prikaži GTK+ obeleživače"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

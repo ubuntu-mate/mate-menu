@@ -194,7 +194,7 @@ msgid "Allow Scrollbar"
 msgstr "உருள்பட்டையை அனுமதி"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
+msgid "Show GTK+ Bookmarks"
 msgstr "ஜிடிகே புத்தகக்குறிகளைக் காட்டு"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112

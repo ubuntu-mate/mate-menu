@@ -195,8 +195,8 @@ msgid "Allow Scrollbar"
 msgstr "อนุญาตให้ใช้แถบเลื่อนได้"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "แสดงที่คั่นหน้า GTK"
+msgid "Show GTK+ Bookmarks"
+msgstr "แสดงที่คั่นหน้า GTK+"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

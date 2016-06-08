@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "Aotren ar varrenn dibuniñ"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Diskouez ar sinedoù mod GTK"
+msgid "Show GTK+ Bookmarks"
+msgstr "Diskouez ar sinedoù mod GTK+"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

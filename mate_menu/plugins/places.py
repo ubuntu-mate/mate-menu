@@ -108,7 +108,7 @@ class pluginclass( object ):
     def loadSettings( self ):
         self.width = self.settings.get( "int", "width" )
         self.allowScrollbar = self.settings.get( "bool", "allow-scrollbar" )
-        self.showGTKBookmarks = self.settings.get( "bool", "show-gtk-bookmarks" )
+        self.showGtkBookmarks = self.settings.get( "bool", "show-gtk-bookmarks" )
         self.scrolledWindow.set_policy( Gtk.PolicyType.AUTOMATIC, Gtk.PolicyType.AUTOMATIC )
         self.height = self.settings.get( "int", "height" )
         self.content_holder.set_size_request( self.width, self.height )
@@ -231,7 +231,7 @@ class pluginclass( object ):
             self.placesBtnHolder.pack_start( currentbutton, False, False, 0)
 
     def do_gtk_bookmarks( self ):
-        if self.showGTKBookmarks:
+        if self.showGtkBookmarks:
             if not os.path.exists(os.path.expanduser('~/.gtk-bookmarks')):
                 return
             bookmarks = []

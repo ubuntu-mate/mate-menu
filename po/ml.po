@@ -194,7 +194,7 @@ msgid "Allow Scrollbar"
 msgstr "സ്ക്രോള്‍ബാര്‍ അനുവദിക്കുക"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
+msgid "Show GTK+ Bookmarks"
 msgstr "ജിറ്റികെ ബുക്ക്‌മാർക്കുകൾ പ്രദർശിപ്പിക്കുക"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112

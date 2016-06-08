@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "Cho phép hiện thanh cuộn"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "Hiện các mục đánh dấu GTK"
+msgid "Show GTK+ Bookmarks"
+msgstr "Hiện các mục đánh dấu GTK+"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"

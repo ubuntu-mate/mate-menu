@@ -195,8 +195,8 @@ msgid "Allow Scrollbar"
 msgstr "Bildlaufleiste erlauben"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK Bookmarks"
-msgstr "GTK-Lesezeichen anzeigen"
+msgid "Show GTK+ Bookmarks"
+msgstr "GTK+-Lesezeichen anzeigen"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
