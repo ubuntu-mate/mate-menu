@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 
 # Copyright (C) 2007-2014 Clement Lefebvre <root@linuxmint.com>
-# Copyright (C) 2015 Martin Wimpress <code@ubuntu-mate.org>
+# Copyright (C) 2015-2016 Martin Wimpress <code@ubuntu-mate.org>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -23,17 +23,20 @@ import sys
 
 if len(sys.argv) > 1:
     if (sys.argv[1] in ["help", "h", "-?", "--help", "-h", "?"]):
-        print "MATE Menu - Advanced MATE Menu\n"
-        print "options:"
-        print " [--]help, [-]h Display this help."
-        print " [--]clean, [--]clear, [--]reset Restore settings to default.\n"
-    elif (sys.argv[1] in ["clean", "clear", "reset", "--clean", "--clear", "--reset"]):
-        os.system("gsettings reset-recursively org.mate.mate-menu")
-        os.system("gsettings reset-recursively org.mate.mate-menu.plugins.places")
-        os.system("gsettings reset-recursively org.mate.mate-menu.plugins.applications")
-        os.system("gsettings reset-recursively org.mate.mate-menu.plugins.recent")
-        os.system("gsettings reset-recursively org.mate.mate-menu.plugins.system_management")
-        os.system("rm -rf ~/.config/mate-menu")
-        print "All MATE Menu settings are now restored to default"
+        print("MATE Menu - Advanced MATE Menu\n")
+        print("options:")
+        print(" [--]help, [-]h Display this help.")
+        print(" [--]clean, [--]clear, [--]reset Restore settings to default.\n")
+    elif (sys.argv[1] in ["clean", "clear", "reset",
+          "--clean", "--clear", "--reset"]):
+        for path in ("org.mate.mate-menu", "org.mate.mate-menu.plugins.places",
+                     "org.mate.mate-menu.plugins.applications",
+                     "org.mate.mate-menu.plugins.recent",
+                     "org.mate.mate-menu.plugins.system_management"):
+            os.system("gsettings reset-recursively " + path)
+        os.system("rm -rf \"" +
+                  os.path.join(os.environ["HOME"], ".config", "mate-menu") +
+                  "\"")
+        print("All MATE Menu settings are now restored to default")
 else:
     os.system("/usr/lib/mate-menu/mate-menu.py")
