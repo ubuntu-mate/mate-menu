@@ -619,7 +619,8 @@ class pluginclass( object ):
         separator = Gtk.EventBox()
         separator.add(Gtk.Separator( orientation=Gtk.Orientation.HORIZONTAL ))
         separator.set_visible_window(False)
-        separator.set_size_request(-1, 20)
+        separator.set_margin_top( 5 )
+        separator.set_margin_bottom( 5 )
         separator.type = "separator"
         separator.show_all()
         self.applicationsBox.add(separator)
@@ -640,7 +641,8 @@ class pluginclass( object ):
 
         #self.last_separator = Gtk.EventBox()
         #self.last_separator.add(Gtk.Separator( orientation=Gtk.Orientation.HORIZONTAL ))
-        #self.last_separator.set_size_request(-1, 20)
+        #self.last_separator.set_margin_top( 5 )
+        #self.last_separator.set_margin_bottom( 5 )
         #self.last_separator.type = "separator"
         #self.mateMenuWin.SetPaneColors( [  self.last_separator ] )
         #self.last_separator.show_all()
