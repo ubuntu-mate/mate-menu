@@ -21,7 +21,6 @@
 
 __VERSION__='16.10.0'
 
-import ctypes
 import gc
 import gi
 import gettext
@@ -767,8 +766,6 @@ class MenuWin( object ):
         ourWidth  = self.mainwin.window.get_size()[0]
         ourHeight = self.mainwin.window.get_size()[1] + self.mainwin.offset
 
-        x = c_int()
-        y = c_int()
         # Get the dimensions/position of the widgetToAlignWith
         entryX = self.applet.get_window().get_origin().x
         entryY = self.applet.get_window().get_origin().y

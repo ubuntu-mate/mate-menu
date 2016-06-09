@@ -31,9 +31,6 @@ from gi.repository import Gtk, Gdk, GdkX11, GObject, GLib
 from Xlib.display import Display
 from Xlib import X, error
 
-import ctypes
-from ctypes import *
-
 SPECIAL_MODS = (["Super_L",    "<Super>"],
                 ["Super_R",    "<Super>"],
                 ["Alt_L",      "<Alt>"],
@@ -168,11 +165,6 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         self.running = False
         self.ungrab()
         self.display.close()
-
-class KeymapKey(Structure):
-    _fields_ = [("keycode", c_uint),
-                ("group", c_int),
-                ("level", c_int)]
 
 class KeybindingWidget(Gtk.Box):
     __gsignals__ = {

@@ -30,9 +30,6 @@ from gi.repository import Gtk, Gdk, GLib
 from gi.repository import Pango
 from gi.repository import GObject
 
-import ctypes
-from ctypes import *
-
 class IconManager(GObject.GObject):
 
     __gsignals__ = {
@@ -255,11 +252,6 @@ class easyButton( Gtk.Button ):
         elif self.iconSize:
             #[ iW, iH ] = iconManager.getIconSize( self.iconSize )
             self.buttonImage.set_size_request( self.iconSize, self.iconSize  )
-
-class TargetEntry(Structure):
-     _fields_ = [("target", c_char_p),
-                 ("flags", c_int),
-                 ("info", c_int)]
 
 class ApplicationLauncher( easyButton ):
 

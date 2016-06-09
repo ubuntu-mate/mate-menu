@@ -22,7 +22,6 @@ import ctypes
 import gettext
 import os
 import shutil
-from ctypes import *
 from gi.repository import Gtk, Gio
 from mate_menu.easybuttons import *
 from mate_menu.easygsettings import EasyGSettings
