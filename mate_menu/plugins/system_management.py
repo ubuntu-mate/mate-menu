@@ -141,16 +141,23 @@ class pluginclass( object ):
     #Add standard items
     def do_standard_items( self ):
 
+        def pathExists(file):
+            if os.path.exists(file):
+                return True
+            for path in os.environ["PATH"].split(os.pathsep):
+                if os.path.exists(os.path.join(path, file)):
+                    return True
+
         if ( self.showPackageManager == True ):
-            if os.path.exists("/usr/bin/synaptic-pkexec"):
+            if pathExists("synaptic-pkexec"):
                 Button2 = easyButton("synaptic", self.iconsize, [_("Package Manager")], -1, -1 )
-                Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/synaptic-pkexec" )
-            elif os.path.exists("/usr/bin/software-center"):
+                Button2.connect( "clicked", self.ButtonClicked, "synaptic-pkexec" )
+            elif pathExists("software-center"):
                 Button2 = easyButton("softwarecenter", self.iconsize, [_("Package Manager")], -1, -1 )
-                Button2.connect( "clicked", self.ButtonClicked, "/usr/bin/software-center" )
-            elif os.path.exists("/usr/share/applications/ubuntu-mate-software.desktop"):
+                Button2.connect( "clicked", self.ButtonClicked, "software-center" )
+            elif pathExists("ubuntu-mate-welcome"):
                 Button2 = easyButton("system-software-install", self.iconsize, [_("Package Manager")], -1, -1 )
-                Button2.connect("clicked", self.ButtonClicked, "/usr/bin/ubuntu-mate-welcome --software-only")
+                Button2.connect("clicked", self.ButtonClicked, "ubuntu-mate-welcome --software-only")
             try:
                 Button2.show()
                 self.systemBtnHolder.pack_start( Button2, False, False, 0 )
@@ -167,17 +174,21 @@ class pluginclass( object ):
 
         if ( self.showTerminal == True ):
             Button4 = easyButton( "terminal", self.iconsize, [_("Terminal")], -1, -1 )
-            if os.path.exists("/usr/bin/mate-terminal"):
+            if pathExists("mate-terminal"):
                 Button4.connect( "clicked", self.ButtonClicked, "mate-terminal" )
-            else:
+            elif pathExists("xdg-terminal"):
+                Button4.connect( "clicked", self.ButtonClicked, "xdg-terminal" )
+            elif pathExists("x-terminal-emulator"):
                 Button4.connect( "clicked", self.ButtonClicked, "x-terminal-emulator" )
+            else:
+                Button4.connect( "clicked", self.ButtonClicked, "xterm" )
             Button4.show()
             self.systemBtnHolder.pack_start( Button4, False, False, 0 )
             self.mateMenuWin.setTooltip( Button4, _("Use the command line") )
 
         if ( self.showLockScreen == True ):
             Button5 = easyButton( "system-lock-screen", self.iconsize, [_("Lock Screen")], -1, -1 )
-            if os.path.exists("/usr/bin/mate-screensaver-command"):
+            if pathExists("mate-screensaver-command"):
                 Button5.connect( "clicked", self.ButtonClicked, "mate-screensaver-command -l" )
             else:
                 Button5.connect( "clicked", self.ButtonClicked, "xdg-screensaver lock" )

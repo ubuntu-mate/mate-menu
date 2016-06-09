@@ -394,11 +394,22 @@ class ApplicationLauncher( easyButton ):
                 selection.set_uris( [ "file://" + self.desktopFile ] )
 
     def execute( self, *args ):
+
+        def pathExists(file):
+            if os.path.exists(file):
+                return True
+            for path in os.environ["PATH"].split(os.pathsep):
+                if os.path.exists(os.path.join(path, file)):
+                    return True
+
         if self.appExec:
             if self.useTerminal:
-                cmd = "x-terminal-emulator -e \"" + self.appExec + "\""
-                if os.path.exists("/usr/bin/mate-terminal"):
+                if pathExists("mate-terminal"):
                     cmd = "mate-terminal -e \"" + self.appExec + "\""
+                elif pathExists("x-terminal-emulator"):
+                    cmd = "x-terminal-emulator -e \"" + self.appExec + "\""
+                else:
+                    cmd = "xterm -e \"" + self.appExec + "\""
                 Execute(cmd, self.appPath)
             else:
                 Execute(self.appExec, self.appPath)
