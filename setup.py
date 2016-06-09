@@ -97,12 +97,15 @@ data_files = [
     "data/icons/wikipedia.ico",
    ]),
   ("lib/mate-menu",
-   glob("lib/*.py"),
+   glob("lib/*.py*"),
   ),
 ]
 data_files.extend(datafilelist("share/locale", 'build/mo'))
 
-if sys.argv[1] in ("install", "uninstall"):
+if sys.argv[1] == "build":
+    import compileall
+    compileall.compile_dir("lib")
+elif sys.argv[1] in ("install", "uninstall"):
     # Enforce "/usr" prefix.
     sys.argv += ["--prefix", "/usr"]
 
