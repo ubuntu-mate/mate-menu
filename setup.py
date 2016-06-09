@@ -83,6 +83,10 @@ data_files = [
 ]
 data_files.extend(datafilelist('{prefix}/share/locale'.format(prefix=sys.prefix), 'build/mo'))
 
+if sys.argv[1] in ("install", "uninstall"):
+    # Enforce "/usr" prefix.
+    sys.argv += ["--prefix", "/usr"]
+
 cmdclass ={
             "build" : DistUtilsExtra.command.build_extra.build_extra,
             "build_i18n" :  DistUtilsExtra.command.build_i18n.build_i18n,
