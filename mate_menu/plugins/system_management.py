@@ -152,6 +152,9 @@ class pluginclass( object ):
             if pathExists("synaptic-pkexec"):
                 Button2 = easyButton("synaptic", self.iconsize, [_("Package Manager")], -1, -1 )
                 Button2.connect( "clicked", self.ButtonClicked, "synaptic-pkexec" )
+            elif pathExists("gnome-software"):
+                Button2 = easyButton("org.gnome.Software", self.iconsize, [_("Package Manager")], -1, -1 )
+                Button2.connect( "clicked", self.ButtonClicked, "gnome-software" )
             elif pathExists("software-center"):
                 Button2 = easyButton("softwarecenter", self.iconsize, [_("Package Manager")], -1, -1 )
                 Button2.connect( "clicked", self.ButtonClicked, "software-center" )
