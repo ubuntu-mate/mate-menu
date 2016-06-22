@@ -576,13 +576,17 @@ class MenuWin( object ):
         self.do_image(self.buttonIcon, False)
 
     def do_image(self, image_file, saturate):
-        pixbuf = GdkPixbuf.Pixbuf.new_from_file(image_file)
+        if image_file.endswith(".svg"):
+            pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(image_file, -1, 22)
+        else:
+            pixbuf = GdkPixbuf.Pixbuf.new_from_file(image_file)
         if saturate:
             GdkPixbuf.Pixbuf.saturate_and_pixelate(pixbuf, pixbuf, 1.5, False)
         self.button_icon.set_from_pixbuf(pixbuf)
 
     def createPanelButton( self ):
-        self.button_icon = Gtk.Image.new_from_file( self.buttonIcon )
+        self.button_icon = Gtk.Image()
+        self.do_image(self.buttonIcon, False)
         self.systemlabel = Gtk.Label(label= "%s " % self.buttonText )
         try:
             process = subprocess.Popen(['lsb_release', '-d'], stdout=subprocess.PIPE)
@@ -681,7 +685,7 @@ class MenuWin( object ):
     def updateButton( self ):
         self.systemlabel.set_text( self.buttonText )
         self.button_icon.clear()
-        self.button_icon.set_from_file( self.buttonIcon )
+        self.do_image(self.buttonIcon, False)
         self.sizeButton()
 
     def bind_hot_key (self):

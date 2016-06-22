@@ -27,7 +27,7 @@ import signal
 
 gi.require_version("Gtk", "3.0")
 
-from gi.repository import Gtk, Gdk
+from gi.repository import Gtk, Gdk, GdkPixbuf
 import mate_menu.keybinding as keybinding
 
 signal.signal(signal.SIGINT, signal.SIG_DFL)
@@ -348,7 +348,8 @@ class mateMenuConfig( object ):
 
     def setButtonIcon( self, value ):
         self.buttonIconChooser.set_filename(value)
-        self.buttonIconImage.set_from_file(value)
+        pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(value, -1, 22)
+        self.buttonIconImage.set_from_pixbuf(pixbuf)
 
     def getShowButtonIcon( self ):
         return not self.showButtonIcon.get_active()
