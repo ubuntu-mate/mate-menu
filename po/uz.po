@@ -1,176 +1,176 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
+# muzaffar habibullayev <muzaffarlearner@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-11 22:31+0000\n"
-"PO-Revision-Date: 2015-03-17 07:52+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
-"Language-Team: Uzbek (http://www.transifex.com/projects/p/MATE/language/"
-"uz/)\n"
-"Language: uz\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2016-10-14 14:41+0000\n"
+"Last-Translator: muzaffar habibullayev <muzaffarlearner@gmail.com>\n"
+"Language-Team: Uzbek (http://www.transifex.com/mate/MATE/language/uz/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: uz\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
-msgstr ""
+msgstr "Menyu"
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:254
+#: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
-msgstr ""
+msgstr "Plaginni yuklab bo'lmadi:"
 
-#: ../lib/mate-menu.py:326
+#: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
-msgstr ""
+msgstr "Plaginni boshlab bo'lmadi"
 
-#: ../lib/mate-menu.py:715
+#: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
-msgstr ""
+msgstr "Ilg'or MATE Menyusi"
+
+#: ../lib/mate-menu.py:792
+msgid "Preferences"
+msgstr "Afzalliklar"
+
+#: ../lib/mate-menu.py:795
+msgid "Edit menu"
+msgstr "Menyuni tahrirlash"
 
 #: ../lib/mate-menu.py:798
-msgid "Preferences"
-msgstr ""
+msgid "Reload plugins"
+msgstr "Plaginlarni qayta yuklash"
 
 #: ../lib/mate-menu.py:801
-msgid "Edit menu"
-msgstr ""
-
-#: ../lib/mate-menu.py:804
-msgid "Reload plugins"
-msgstr ""
-
-#: ../lib/mate-menu.py:807
 msgid "About"
-msgstr ""
+msgstr "Haqida"
 
 #. i18n
 #: ../lib/mate-menu-config.py:50
 msgid "Menu preferences"
-msgstr ""
+msgstr "Menyu xususiyatlari"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr ""
+msgstr "Doim sevimlilar qismi bilan boshlash"
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
-msgstr ""
+msgstr "Tugma nishonchasini ko'rsatish"
 
 #: ../lib/mate-menu-config.py:55
 msgid "Use custom colors"
-msgstr ""
+msgstr "O'zgargan ranglardan foydalanish"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr ""
+msgstr "Yaqindagi hujjatlar plaginini ko'rsatish"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr ""
+msgstr "Dasturlar plaginini ko'rsatish"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr ""
+msgstr "Tizim plaginini ko'rsatish"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
-msgstr ""
+msgstr "Joylar plaginini ko'rsatish"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show application comments"
-msgstr ""
+msgstr "Dastur izohlarini ko'rsatish"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show category icons"
-msgstr ""
+msgstr "Bo'lim nishonchalarini ko'rsatish"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr ""
+msgstr "Ustiga olib kelish"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr ""
+msgstr "So'nggi bo'lim yoki qidiruvni eslash"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr ""
+msgstr "Swam nomi va umumiy nom"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr ""
+msgstr "Chegara qalinligi:"
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
-msgstr ""
+msgstr "piksellar"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
-msgstr ""
+msgstr "Xiralik:"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr ""
+msgstr "Tugma matni:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr ""
+msgstr "Parametrlar"
 
-#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:252
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
 msgid "Applications"
-msgstr ""
+msgstr "Dasturlar"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr ""
+msgstr "Mavzu"
 
-#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:249
-#: ../mate_menu/plugins/applications.py:250
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
+#: ../mate_menu/plugins/applications.py:253
 msgid "Favorites"
-msgstr ""
+msgstr "Sevimlilar"
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr ""
+msgstr "Asosiy tugma"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "Plaginlar"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Background:"
-msgstr ""
+msgstr "Orqa fon:"
 
 #: ../lib/mate-menu-config.py:83
 msgid "Headings:"
-msgstr ""
+msgstr "Sarlavhalar:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "Borders:"
-msgstr ""
+msgstr "Chegaralar:"
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
-msgstr ""
+msgstr "Mavzu:"
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:89
 msgid "Number of columns:"
-msgstr ""
+msgstr "Ustunlar soni:"
 
 #: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
 #: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
 msgid "Icon size:"
-msgstr ""
+msgstr "Nishoncha hajmi:"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
@@ -178,276 +178,275 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
-msgstr ""
+msgstr "Tugma nishonchasi:"
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr ""
+msgstr "Qidiruv buyrug'i:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
 msgid "Places"
-msgstr ""
+msgstr "Joylar"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK+ Bookmarks"
-msgstr ""
+msgid "Show GTK Bookmarks"
+msgstr "GTK Xatcho'plarini Ko'rsatish"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
-msgstr ""
+msgstr "Bo'yi:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr ""
+msgstr "Standart Joylarni Qaytarish:"
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
-msgstr ""
+msgstr "Kompyuter"
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:164
 msgid "Home Folder"
-msgstr ""
+msgstr "Uy jildi"
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
-msgstr ""
+msgstr "Tarmoq"
 
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:198
 msgid "Desktop"
-msgstr ""
+msgstr "Ish stoli"
 
 #: ../lib/mate-menu-config.py:107 ../mate_menu/plugins/places.py:209
 msgid "Trash"
-msgstr ""
+msgstr "Chiqindilar qutisi"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr ""
+msgstr "Moslangan Joylar:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
 msgid "System"
-msgstr ""
+msgstr "Tizim"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr ""
+msgstr "Standart Narsalarga O'tkazish:"
 
 #: ../lib/mate-menu-config.py:114
-#: ../mate_menu/plugins/system_management.py:149
-#: ../mate_menu/plugins/system_management.py:152
-#: ../mate_menu/plugins/system_management.py:155
+#: ../mate_menu/plugins/system_management.py:147
+#: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
-msgstr ""
+msgstr "Paket Boshqaruvchisi"
 
 #: ../lib/mate-menu-config.py:115
-#: ../mate_menu/plugins/system_management.py:162
+#: ../mate_menu/plugins/system_management.py:157
 msgid "Control Center"
-msgstr ""
+msgstr "Boshqaruv markazi"
 
 #: ../lib/mate-menu-config.py:116
-#: ../mate_menu/plugins/system_management.py:169
+#: ../mate_menu/plugins/system_management.py:164
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: ../lib/mate-menu-config.py:117
-#: ../mate_menu/plugins/system_management.py:179
+#: ../mate_menu/plugins/system_management.py:174
 msgid "Lock Screen"
-msgstr ""
+msgstr "Ekranni qulflash"
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
-msgstr ""
+msgstr "Tizimdan chiqish"
 
 #: ../lib/mate-menu-config.py:119
-#: ../mate_menu/plugins/system_management.py:197
+#: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
-msgstr ""
+msgstr "Chiqish"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr ""
+msgstr "Joyni Tahrirlash"
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr ""
+msgstr "Yangi Joy"
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr ""
+msgstr "Jildni tanlang"
 
 #: ../lib/mate-menu-config.py:152
 msgid "Keyboard shortcut:"
-msgstr ""
+msgstr "Klaviatura tugmalar birikmasi:"
 
 #: ../lib/mate-menu-config.py:158
 msgid "Images"
-msgstr ""
+msgstr "Rasmlar"
 
 #: ../lib/mate-menu-config.py:267
 msgid "Name"
-msgstr ""
+msgstr "Nomi"
 
 #: ../lib/mate-menu-config.py:268
 msgid "Path"
-msgstr ""
+msgstr "Yo'l"
 
 #: ../lib/mate-menu-config.py:284
 msgid "Desktop theme"
-msgstr ""
+msgstr "Ish stoli mavzusi"
 
-#: ../lib/mate-menu-config.py:432 ../lib/mate-menu-config.py:463
+#: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
 msgid "Name:"
-msgstr ""
+msgstr "Nomi:"
 
-#: ../lib/mate-menu-config.py:433 ../lib/mate-menu-config.py:464
+#: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
 msgid "Path:"
-msgstr ""
+msgstr "Yo'l:"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:247
+#: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
-msgstr ""
+msgstr "Qidirish:"
 
-#: ../mate_menu/plugins/applications.py:251
+#: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
-msgstr ""
+msgstr "Barcha Dasturlar"
 
-#: ../mate_menu/plugins/applications.py:618
+#: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
-msgstr ""
+msgstr "Google dan %s ni qidirish"
 
-#: ../mate_menu/plugins/applications.py:625
+#: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr ""
+msgstr "Wikipedia dan %s ni qidirish"
 
-#: ../mate_menu/plugins/applications.py:641
+#: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr ""
+msgstr "Lu'gatdan %s ni qidirish"
 
-#: ../mate_menu/plugins/applications.py:648
+#: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
-msgstr ""
+msgstr "Kompyuterdan %s ni Qidirish"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:761
+#: ../mate_menu/plugins/applications.py:763
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
-msgstr ""
-
-#: ../mate_menu/plugins/applications.py:762
-#: ../mate_menu/plugins/applications.py:831
-msgid "Add to panel"
-msgstr ""
+msgstr "Ish stoliga qo'shish"
 
 #: ../mate_menu/plugins/applications.py:764
-#: ../mate_menu/plugins/applications.py:812
-msgid "Insert space"
-msgstr ""
+#: ../mate_menu/plugins/applications.py:831
+msgid "Add to panel"
+msgstr "Panelga qoʻshish"
 
-#: ../mate_menu/plugins/applications.py:765
+#: ../mate_menu/plugins/applications.py:766
 #: ../mate_menu/plugins/applications.py:813
-msgid "Insert separator"
-msgstr ""
+msgid "Insert space"
+msgstr "Boʻsh joy qo'shish"
 
 #: ../mate_menu/plugins/applications.py:767
-#: ../mate_menu/plugins/applications.py:834
-msgid "Launch when I log in"
-msgstr ""
+#: ../mate_menu/plugins/applications.py:814
+msgid "Insert separator"
+msgstr "Ajratuvchi qo'shish"
 
 #: ../mate_menu/plugins/applications.py:769
+#: ../mate_menu/plugins/applications.py:834
+msgid "Launch when I log in"
+msgstr "Tizimga kirganimda ishga tushirish"
+
+#: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
-msgstr ""
-
-#: ../mate_menu/plugins/applications.py:770
-msgid "Remove from favorites"
-msgstr ""
+msgstr "Ishga tushirish"
 
 #: ../mate_menu/plugins/applications.py:772
+msgid "Remove from favorites"
+msgstr "Sevimlilardan olib tashlash "
+
+#: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
-msgstr ""
+msgstr "Xususiyatlarni tahrirlash"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:811
+#: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
-msgstr ""
+msgstr "Olib tashlash"
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr ""
+msgstr "Sevimlilarimda ko'rsatish"
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
-msgstr ""
+msgstr "Menyudan o'chrish"
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
-msgstr ""
+msgstr "Google dan qidirish"
 
 #: ../mate_menu/plugins/applications.py:895
 msgid "Search Wikipedia"
-msgstr ""
+msgstr "Wikipedia dan qidirish"
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr ""
+msgstr "Lu'gatdan qidirish"
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
-msgstr ""
+msgstr "Kompyuterdan Qidirish"
 
-#: ../mate_menu/plugins/applications.py:1332
+#: ../mate_menu/plugins/applications.py:1329
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
+msgstr "Sevimlilarda saqlab bo'lmadi.~/.config/mate-menu ga yozish huquqiga ega ekanligizni tekshiring."
 
-#: ../mate_menu/plugins/applications.py:1532
+#: ../mate_menu/plugins/applications.py:1529
 msgid "All"
-msgstr ""
+msgstr "Barchasi"
 
-#: ../mate_menu/plugins/applications.py:1532
+#: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
-msgstr ""
+msgstr "Barcha dasturlarni ko'rsatish"
 
-#: ../mate_menu/plugins/system_management.py:159
+#: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr ""
+msgstr "Dastur paketlarini o'rnatish, olib tashlash va yangilash"
 
-#: ../mate_menu/plugins/system_management.py:166
+#: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
-msgstr ""
+msgstr "Tizimni sozlash"
 
-#: ../mate_menu/plugins/system_management.py:176
+#: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
-msgstr ""
+msgstr "Buyruq satridan foydalanish"
 
-#: ../mate_menu/plugins/system_management.py:187
+#: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
-msgstr ""
+msgstr "Qulfdan chiqarish uchun maxfiy so'z zarur"
 
-#: ../mate_menu/plugins/system_management.py:190
+#: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
-msgstr ""
+msgstr "Chiqish"
 
-#: ../mate_menu/plugins/system_management.py:194
+#: ../mate_menu/plugins/system_management.py:189
 msgid "Log out or switch user"
-msgstr ""
+msgstr "Chiqish yoki foydalanuvchini o'zgartirish"
 
-#: ../mate_menu/plugins/system_management.py:201
+#: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr ""
+msgstr "O'chirish, o'chirib-yoqish, kutish yoki uyqu rejimi"
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
@@ -456,45 +455,45 @@ msgstr ""
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
-msgstr ""
+msgstr "Shaxsiy jildni ochish"
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr ""
+msgstr "Xatcho'plangan va mahalliy tarmoq joylashuvlarini ko'rish"
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr ""
+msgstr "Ish stoliga qo'yilgan narsalarini koʻrish"
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr ""
+msgstr "O'chirilgan fayllarni ko'rish"
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
-msgstr ""
+msgstr "Chiqindilar qutisini boʻshatish"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr ""
+msgstr "Yaqindagi hujjatlar"
 
-#: ../mate_menu/keybinding.py:199
+#: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:200
+#: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr ""
+msgstr "Amalni bekor qilish uchun Escape ni yoki yana bir bor ustiga bosing."
 
-#: ../mate_menu/keybinding.py:201
+#: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr ""
+msgstr "Mavjud tugmalar bog'lanmasini tozalash uchun Backspace ni bosing."
 
-#: ../mate_menu/keybinding.py:214
+#: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:267
+#: ../mate_menu/keybinding.py:264
 msgid "<not set>"
-msgstr ""
+msgstr "<not set>"

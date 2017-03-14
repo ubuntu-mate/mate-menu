@@ -1,60 +1,61 @@
-# Kannada translation for MATE Menu
-# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# karthik holla <karthikholla87@gmail.com>, 2017
+# Yogesh K S <yogesh@karnatakaeducation.org.in>, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-11 22:31+0000\n"
-"PO-Revision-Date: 2010-06-15 14:38+0000\n"
-"Last-Translator: ಸುಭಾಸ್ ಭಟ್(Subhas Bhat) <Unknown>\n"
-"Language-Team: Kannada <kn@li.org>\n"
-"Language: kn\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2017-01-06 09:48+0000\n"
+"Last-Translator: karthik holla <karthikholla87@gmail.com>\n"
+"Language-Team: Kannada (http://www.transifex.com/mate/MATE/language/kn/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Language: kn\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:70
 msgid "Menu"
-msgstr "ಮೆನು"
+msgstr "ಪರಿವಿಡಿ(ಮೆನ್ಯು)"
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:254
+#: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
 msgstr ""
 
-#: ../lib/mate-menu.py:326
+#: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
 msgstr ""
 
-#: ../lib/mate-menu.py:715
+#: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
 msgstr ""
 
-#: ../lib/mate-menu.py:798
+#: ../lib/mate-menu.py:792
 msgid "Preferences"
-msgstr "ಆಯ್ಕೆಗಳು"
+msgstr "ಆದ್ಯತೆಗಳು"
 
-#: ../lib/mate-menu.py:801
+#: ../lib/mate-menu.py:795
 msgid "Edit menu"
-msgstr "ಪರಿವಿಡಿ ಸಂಪಾದಿಸು"
+msgstr "ಪರಿವಿಡಿಯನ್ನು ಸಂಪಾದಿಸು"
 
-#: ../lib/mate-menu.py:804
+#: ../lib/mate-menu.py:798
 msgid "Reload plugins"
 msgstr ""
 
-#: ../lib/mate-menu.py:807
+#: ../lib/mate-menu.py:801
 msgid "About"
-msgstr "ಇದರ ಬಗ್ಗೆ"
+msgstr "ಕುರಿತು"
 
 #. i18n
 #: ../lib/mate-menu-config.py:50
 msgid "Menu preferences"
-msgstr ""
+msgstr "ಪರಿವಿಡಿ ಆದ್ಯತೆಗಳು"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
@@ -106,11 +107,11 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr "ಅಂಚಿನ ಅಗಲ:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
-msgstr "ಪಿಕ್ಸೆಲ್‍ಗಳು"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
@@ -122,24 +123,24 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "ಆದ್ಯತೆಗಳು"
+msgstr "ಆಯ್ಕೆಗಳು"
 
-#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:252
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
 msgid "Applications"
-msgstr "ಅನ್ವಯಿಕಗಳು (applications)"
+msgstr "ಅನ್ವಯಗಳು"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
 msgstr ""
 
-#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:249
-#: ../mate_menu/plugins/applications.py:250
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
+#: ../mate_menu/plugins/applications.py:253
 msgid "Favorites"
-msgstr "ಅಚ್ಚುಮೆಚ್ಚಿನವು"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr ""
+msgstr "ಮುಖ್ಯ ಗುಂಡಿ"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
@@ -147,15 +148,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:82
 msgid "Background:"
-msgstr "ಹಿನ್ನೆಲೆ:"
+msgstr "ಹಿನ್ನಲೆ :"
 
 #: ../lib/mate-menu-config.py:83
 msgid "Headings:"
-msgstr "ತಲೆಬರಹ"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "Borders:"
-msgstr "ಅಂಚು"
+msgstr "ಅಂಚುಗಳು:"
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
@@ -165,12 +166,12 @@ msgstr ""
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:89
 msgid "Number of columns:"
-msgstr "ಕಾಲಂಗಳ ಸಂಖ್ಯೆ:"
+msgstr "ಲಂಬಸಾಲುಗಳ ಸಂಖ್ಯೆ"
 
 #: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
 #: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
 msgid "Icon size:"
-msgstr "ಚಿಹ್ನೆಯ ಗಾತ್ರ:"
+msgstr "ಲಾಂಛನ ಗಾತ್ರ:"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
@@ -182,7 +183,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr ""
+msgstr "ಆಜ್ಞೆಯನ್ನು ಶೋಧಸು"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:58
@@ -191,11 +192,11 @@ msgstr "ಸ್ಥಳಗಳು"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr ""
+msgstr "ಚಲನ ಪಟ್ಟಿಕೆಯನ್ನು ಅನುಮತಿಸು"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK+ Bookmarks"
-msgstr ""
+msgid "Show GTK Bookmarks"
+msgstr "GTK ಬುಕ್‌ಮಾರ್ಕುಗಳನ್ನು ತೋರಿಸು"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
@@ -211,7 +212,7 @@ msgstr "ಗಣಕ"
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:164
 msgid "Home Folder"
-msgstr "ನೆಲೆ (ಹೋಮ್) ಕಡತಕೋಶ"
+msgstr "ನೆಲೆ (Home) ಕಡತಕೋಶ"
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:177
 msgid "Network"
@@ -219,11 +220,11 @@ msgstr "ಜಾಲಬಂಧ"
 
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:198
 msgid "Desktop"
-msgstr "ಡೆಸ್ಕ್ ಟಾಪ್"
+msgstr "ಗಣಕತೆರೆ"
 
 #: ../lib/mate-menu-config.py:107 ../mate_menu/plugins/places.py:209
 msgid "Trash"
-msgstr "ಕಸಬುಟ್ಟಿ"
+msgstr "ಕಸದ ಬುಟ್ಟಿ"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
@@ -239,43 +240,42 @@ msgid "Toggle Default Items:"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:114
-#: ../mate_menu/plugins/system_management.py:149
-#: ../mate_menu/plugins/system_management.py:152
-#: ../mate_menu/plugins/system_management.py:155
+#: ../mate_menu/plugins/system_management.py:147
+#: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
-msgstr "ಪ್ಯಾಕೇಜ್ ವ್ಯವಸ್ಥಾಪಕ"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:115
-#: ../mate_menu/plugins/system_management.py:162
+#: ../mate_menu/plugins/system_management.py:157
 msgid "Control Center"
 msgstr "ನಿಯಂತ್ರಣ ಕೇಂದ್ರ"
 
 #: ../lib/mate-menu-config.py:116
-#: ../mate_menu/plugins/system_management.py:169
+#: ../mate_menu/plugins/system_management.py:164
 msgid "Terminal"
-msgstr "ಟರ್ಮಿನಲ್"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:117
-#: ../mate_menu/plugins/system_management.py:179
+#: ../mate_menu/plugins/system_management.py:174
 msgid "Lock Screen"
-msgstr "ತೆರೆಯನ್ನು ಲಾಕ್ ಮಾಡು"
+msgstr "ತೆರೆಯನ್ನು ಬಂಧಿಸು"
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
-msgstr "ನಿರ್ಗಮಿಸು"
+msgstr "ಹೊರ ನಡೆ"
 
 #: ../lib/mate-menu-config.py:119
-#: ../mate_menu/plugins/system_management.py:197
+#: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
 msgstr "ನಿರ್ಗಮಿಸು"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr "ಸ್ಥಳ ಸಂಪಾದಿಸು"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr "ಹೊಸ ಸ್ಥಳ"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
@@ -287,7 +287,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:158
 msgid "Images"
-msgstr ""
+msgstr "ಚಿತ್ರಗಳು"
 
 #: ../lib/mate-menu-config.py:267
 msgid "Name"
@@ -301,95 +301,95 @@ msgstr "ಮಾರ್ಗ"
 msgid "Desktop theme"
 msgstr ""
 
-#: ../lib/mate-menu-config.py:432 ../lib/mate-menu-config.py:463
+#: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
 msgid "Name:"
 msgstr "ಹೆಸರು:"
 
-#: ../lib/mate-menu-config.py:433 ../lib/mate-menu-config.py:464
+#: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
 msgid "Path:"
 msgstr "ಮಾರ್ಗ:"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:247
+#: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
-msgstr ""
+msgstr "ಶೋಧಿಸು:"
 
-#: ../mate_menu/plugins/applications.py:251
+#: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
-msgstr "ಎಲ್ಲ ಅನ್ವಯಿಕಗಳು"
+msgstr "ಎಲ್ಲಾ ಅನ್ವಯಗಳು"
 
-#: ../mate_menu/plugins/applications.py:618
+#: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:625
+#: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:641
+#: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:648
+#: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
 msgstr ""
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:761
+#: ../mate_menu/plugins/applications.py:763
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
 msgstr "ಗಣಕತೆರೆಗೆ ಸೇರಿಸು"
 
-#: ../mate_menu/plugins/applications.py:762
+#: ../mate_menu/plugins/applications.py:764
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
-msgstr ""
+msgstr "ಫಲಕಕ್ಕೆ ಸೇರಿಸು"
 
-#: ../mate_menu/plugins/applications.py:764
-#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:766
+#: ../mate_menu/plugins/applications.py:813
 msgid "Insert space"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:765
-#: ../mate_menu/plugins/applications.py:813
-msgid "Insert separator"
-msgstr "ವಿಭಾಜಕವನ್ನು ಸೇರಿಸು"
-
 #: ../mate_menu/plugins/applications.py:767
+#: ../mate_menu/plugins/applications.py:814
+msgid "Insert separator"
+msgstr "ವಿಭಜಕವನ್ನು ಸೇರಿಸು"
+
+#: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:769
+#: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
 msgstr "ಆರಂಭಿಸು"
 
-#: ../mate_menu/plugins/applications.py:770
-msgid "Remove from favorites"
-msgstr ""
-
 #: ../mate_menu/plugins/applications.py:772
+msgid "Remove from favorites"
+msgstr "ನೆಚ್ಚಿನವುಗಳಿಂದ ತೆಗೆದು ಹಾಕು"
+
+#: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
 msgstr ""
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:811
+#: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
-msgstr "ತೆಗೆದುಹಾಕು"
+msgstr "ತೆಗೆದು ಹಾಕು"
 
 #: ../mate_menu/plugins/applications.py:833
 msgid "Show in my favorites"
-msgstr "ನನ್ನ ನೆಚ್ಚಿನವುಗಳಲ್ಲಿ ತೋರಿಸು"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:837
 msgid "Delete from menu"
-msgstr ""
+msgstr "ಪರಿವಿಡಿಯಿಂದ ಅಳಿಸು"
 
 #: ../mate_menu/plugins/applications.py:888
 msgid "Search Google"
@@ -401,51 +401,51 @@ msgstr ""
 
 #: ../mate_menu/plugins/applications.py:905
 msgid "Lookup Dictionary"
-msgstr ""
+msgstr "ಶಬ್ಧಕೋಶದಲ್ಲಿ ಹುಡುಕು"
 
 #: ../mate_menu/plugins/applications.py:912
 msgid "Search Computer"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:1332
+#: ../mate_menu/plugins/applications.py:1329
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:1532
+#: ../mate_menu/plugins/applications.py:1529
 msgid "All"
-msgstr "ಎಲ್ಲವೂ"
+msgstr "ಎಲ್ಲಾ"
 
-#: ../mate_menu/plugins/applications.py:1532
+#: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
-msgstr "ಎಲ್ಲ ಅನ್ವಯಿಕಗಳನ್ನು ತೋರಿಸು."
+msgstr "ಎಲ್ಲಾ ಅನ್ವಯಗಳನ್ನು ತೋರಿಸು"
 
-#: ../mate_menu/plugins/system_management.py:159
+#: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
 msgstr ""
 
-#: ../mate_menu/plugins/system_management.py:166
+#: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
-msgstr ""
+msgstr "ನಿಮ್ಮ ವ್ಯವಸ್ಥೆಯನ್ನು ಸಂರಚಿಸಿ"
 
-#: ../mate_menu/plugins/system_management.py:176
+#: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
 msgstr "ಆಜ್ಞಾ ಸಾಲನ್ನು ಬಳಸು"
 
-#: ../mate_menu/plugins/system_management.py:187
+#: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
 msgstr ""
 
-#: ../mate_menu/plugins/system_management.py:190
+#: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
-msgstr "ನಿರ್ಗಮಿಸು"
+msgstr "ನಿರ್ಗಮನ"
 
-#: ../mate_menu/plugins/system_management.py:194
+#: ../mate_menu/plugins/system_management.py:189
 msgid "Log out or switch user"
-msgstr ""
+msgstr "ನಿರ್ಗಮನ ಅಥವಾ ಬಳಕೆದಾರರನ್ನು ಬದಲಾಯಿಸು"
 
-#: ../mate_menu/plugins/system_management.py:201
+#: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr ""
 
@@ -453,8 +453,6 @@ msgstr ""
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"ಈ ಗಣಕಿದಿಂದ ನಿಲುಕಿಸಿಕೊಳ್ಳಬಹುದಾದಂತಹ ಸ್ಥಳೀಯ ಹಾಗು ದೂರಸ್ಥ ಡಿಸ್ಕುಗಳನ್ನು ಮತ್ತು "
-"ಕಡತಕೋಶಗಳನ್ನು ವೀಕ್ಷಿಸು"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
@@ -466,70 +464,37 @@ msgstr "ಬುಕ್‍ಮಾರ್ಕ್ ಮಾಡಲಾದ ಹಾಗು ಸ್
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr ""
+msgstr "ಗಣಕತೆರೆಯ ಮೇಲೆ ಇರುವ ವಸ್ತುಗಳನ್ನು ವೀಕ್ಷಿಸು"
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr ""
+msgstr "ಅಳಿಸಲಾದ ಕಡತಗಳನ್ನು ವೀಕ್ಷಸು"
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
-msgstr "ಕಸದಬುಟ್ಟಿ ಖಾಲಿಮಾಡು"
+msgstr "ಕಸದಬುಟ್ಟಿಯನ್ನು ಖಾಲಿಮಾಡು"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "ಇತ್ತೀಚಿಗಿನ ದಸ್ತಾವೇಜುಗಳು"
+msgstr "ಇತ್ತೀಚಿನ ದಸ್ತಾವೇಜುಗಳು"
 
-#: ../mate_menu/keybinding.py:199
+#: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:200
+#: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:201
+#: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:214
+#: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:267
+#: ../mate_menu/keybinding.py:264
 msgid "<not set>"
 msgstr ""
-
-#~ msgid "Software Manager"
-#~ msgstr "ತಂತ್ರಾಂಶ ವ್ಯವಸ್ಥಾಪಕ"
-
-#~ msgid "Uninstall"
-#~ msgstr "ಅನುಸ್ಥಾಪಿಸಿದ್ದನ್ನು ತೆಗೆದುಹಾಕು"
-
-#~ msgid "Show recent documents"
-#~ msgstr "ಇತ್ತೀಚಿಗಿನ ದಸ್ತಾವೇಜುಗಳು"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "ದಯವಿಟ್ಟು ನಿರೀಕ್ಷಿಸಿ, ಇದು ಕೆಲ ಕಾಲ ತೆಗೆದುಕೊಳ್ಳಬಹುದು"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "ಅನ್ವಯಿಕವನ್ನು ಯಶಸ್ವಿಯಾಗಿ ತೆಗೆಯಲಾಯಿತು"
-
-#~ msgid "Remove %s?"
-#~ msgstr "%s ನ್ನು ತೆಗೆಯಲೇ?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "ಈ ಕೆಳಗಿನ ಪ್ಯಾಕೆಜಗಳನ್ನು ತೆಗೆಯಲಾಗುವುದು:"
-
-#~ msgid "Colors"
-#~ msgstr "ಬಣ್ಣಗಳು"
-
-#~ msgid "File not found"
-#~ msgstr "ಕಡತ ಇಲ್ಲ"
-
-#~ msgid "Filter:"
-#~ msgstr "ಫಿಲ್ಟರ್:"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "ತೆಗೆಯಬೇಕಾದ ಪ್ಯಾಕೇಜಗಳು"

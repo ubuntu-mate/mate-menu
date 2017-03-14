@@ -1,21 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Bar Bokovza <bokovzabox@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-11 22:31+0000\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
 "PO-Revision-Date: 2015-12-25 20:23+0000\n"
 "Last-Translator: Bar Bokovza <bokovzabox@gmail.com>\n"
 "Language-Team: Hebrew (http://www.transifex.com/mate/MATE/language/he/)\n"
-"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: he\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:70
@@ -23,31 +23,31 @@ msgid "Menu"
 msgstr "תפריט"
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:254
+#: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
 msgstr "לא ניתן להעלות את התוסף:"
 
-#: ../lib/mate-menu.py:326
+#: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
 msgstr "לא ניתן להפעיל את התוסף:"
 
-#: ../lib/mate-menu.py:715
+#: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
 msgstr "תפריט MATE מתקדם"
 
-#: ../lib/mate-menu.py:798
+#: ../lib/mate-menu.py:792
 msgid "Preferences"
 msgstr "העדפות"
 
-#: ../lib/mate-menu.py:801
+#: ../lib/mate-menu.py:795
 msgid "Edit menu"
 msgstr "עריכת תפריט"
 
-#: ../lib/mate-menu.py:804
+#: ../lib/mate-menu.py:798
 msgid "Reload plugins"
 msgstr "העלאת תוספים"
 
-#: ../lib/mate-menu.py:807
+#: ../lib/mate-menu.py:801
 msgid "About"
 msgstr "אודות"
 
@@ -124,7 +124,7 @@ msgstr "טקסט כפתור:"
 msgid "Options"
 msgstr "אפשרויות"
 
-#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:252
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
 msgid "Applications"
 msgstr "אפליקציות"
 
@@ -132,8 +132,8 @@ msgstr "אפליקציות"
 msgid "Theme"
 msgstr "עיצובים"
 
-#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:249
-#: ../mate_menu/plugins/applications.py:250
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
+#: ../mate_menu/plugins/applications.py:253
 msgid "Favorites"
 msgstr "מועדפים"
 
@@ -194,8 +194,8 @@ msgid "Allow Scrollbar"
 msgstr "אפשר בר גלילה"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK+ Bookmarks"
-msgstr "הצג סימניות GTK+"
+msgid "Show GTK Bookmarks"
+msgstr "הצג סימניות GTK"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
@@ -239,24 +239,23 @@ msgid "Toggle Default Items:"
 msgstr "מתג פריטים ברירת מחדל:"
 
 #: ../lib/mate-menu-config.py:114
-#: ../mate_menu/plugins/system_management.py:149
-#: ../mate_menu/plugins/system_management.py:152
-#: ../mate_menu/plugins/system_management.py:155
+#: ../mate_menu/plugins/system_management.py:147
+#: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
 msgstr "מנהל החבילות"
 
 #: ../lib/mate-menu-config.py:115
-#: ../mate_menu/plugins/system_management.py:162
+#: ../mate_menu/plugins/system_management.py:157
 msgid "Control Center"
 msgstr "מרכז הבקרה"
 
 #: ../lib/mate-menu-config.py:116
-#: ../mate_menu/plugins/system_management.py:169
+#: ../mate_menu/plugins/system_management.py:164
 msgid "Terminal"
 msgstr "מסוף"
 
 #: ../lib/mate-menu-config.py:117
-#: ../mate_menu/plugins/system_management.py:179
+#: ../mate_menu/plugins/system_management.py:174
 msgid "Lock Screen"
 msgstr "מסך נעילה"
 
@@ -265,7 +264,7 @@ msgid "Log Out"
 msgstr "התנתק"
 
 #: ../lib/mate-menu-config.py:119
-#: ../mate_menu/plugins/system_management.py:197
+#: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
 msgstr "צא"
 
@@ -301,85 +300,85 @@ msgstr "מסלול"
 msgid "Desktop theme"
 msgstr "עיצוב שולחן העבודה"
 
-#: ../lib/mate-menu-config.py:432 ../lib/mate-menu-config.py:463
+#: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
 msgid "Name:"
 msgstr "שם:"
 
-#: ../lib/mate-menu-config.py:433 ../lib/mate-menu-config.py:464
+#: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
 msgid "Path:"
 msgstr "מסלול:"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:247
+#: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
 msgstr "חיפוש:"
 
-#: ../mate_menu/plugins/applications.py:251
+#: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
 msgstr "כל האפליקציות"
 
-#: ../mate_menu/plugins/applications.py:618
+#: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
 msgstr "חפש באמצעות Google עבור %s"
 
-#: ../mate_menu/plugins/applications.py:625
+#: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "חפש באמצעות Wikipedia עבור %s"
 
-#: ../mate_menu/plugins/applications.py:641
+#: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "חפש את %s במילון"
 
-#: ../mate_menu/plugins/applications.py:648
+#: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
 msgstr "חפש במחשב עבור %s"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:761
+#: ../mate_menu/plugins/applications.py:763
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
 msgstr "הוסף לשולחן העבודה"
 
-#: ../mate_menu/plugins/applications.py:762
+#: ../mate_menu/plugins/applications.py:764
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
 msgstr "הוסף לפאנל"
 
-#: ../mate_menu/plugins/applications.py:764
-#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:766
+#: ../mate_menu/plugins/applications.py:813
 msgid "Insert space"
 msgstr "הכנס מרווח"
 
-#: ../mate_menu/plugins/applications.py:765
-#: ../mate_menu/plugins/applications.py:813
+#: ../mate_menu/plugins/applications.py:767
+#: ../mate_menu/plugins/applications.py:814
 msgid "Insert separator"
 msgstr "הכנס מפריד"
 
-#: ../mate_menu/plugins/applications.py:767
+#: ../mate_menu/plugins/applications.py:769
 #: ../mate_menu/plugins/applications.py:834
 msgid "Launch when I log in"
 msgstr "הפעל כאשר אני נכנס"
 
-#: ../mate_menu/plugins/applications.py:769
+#: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
 msgstr "הפעל"
 
-#: ../mate_menu/plugins/applications.py:770
+#: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
 msgstr "מחק מהמועדפים"
 
-#: ../mate_menu/plugins/applications.py:772
+#: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
 msgstr "ערוך הגדרות"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:811
+#: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
 msgstr "מחק"
 
@@ -407,54 +406,52 @@ msgstr "חפש במילון"
 msgid "Search Computer"
 msgstr "חפש במחשב"
 
-#: ../mate_menu/plugins/applications.py:1332
+#: ../mate_menu/plugins/applications.py:1329
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"לא ניתן לשמור מועדפים. בדוק אם הנך מחזיק בגישת כתיבה ל- ~/.config/mate-menu"
+msgstr "לא ניתן לשמור מועדפים. בדוק אם הנך מחזיק בגישת כתיבה ל- ~/.config/mate-menu"
 
-#: ../mate_menu/plugins/applications.py:1532
+#: ../mate_menu/plugins/applications.py:1529
 msgid "All"
 msgstr "הכל"
 
-#: ../mate_menu/plugins/applications.py:1532
+#: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
 msgstr "הצג את כל האפליקציות"
 
-#: ../mate_menu/plugins/system_management.py:159
+#: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
 msgstr "התקן, מחר או עדכן חבילות תוכנה"
 
-#: ../mate_menu/plugins/system_management.py:166
+#: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
 msgstr "הגדר את המערכת"
 
-#: ../mate_menu/plugins/system_management.py:176
+#: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
 msgstr "השתמש בשורת הפקודה"
 
-#: ../mate_menu/plugins/system_management.py:187
+#: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
 msgstr "נדרשת סיסמה לשחרור"
 
-#: ../mate_menu/plugins/system_management.py:190
+#: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
 msgstr "התנתק"
 
-#: ../mate_menu/plugins/system_management.py:194
+#: ../mate_menu/plugins/system_management.py:189
 msgid "Log out or switch user"
 msgstr "התנתק או החלף משתמש"
 
-#: ../mate_menu/plugins/system_management.py:201
+#: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "כיבוי, הדלקה מחדש, המתנה ומצב שינה"
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"עיין בכל הדיסקים המקומיים והמרוחקים, ובתיקיות הניתנות לגישה אליהן ממחשב זה"
+msgstr "עיין בכל הדיסקים המקומיים והמרוחקים, ובתיקיות הניתנות לגישה אליהן ממחשב זה"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
@@ -481,22 +478,22 @@ msgstr "פח האשפה ריק"
 msgid "Recent documents"
 msgstr "מסמכים שנראו לאחרונה"
 
-#: ../mate_menu/keybinding.py:199
+#: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr "לחץ להגדיר מאיץ חדש לפתיחת וסגירת התפריט."
 
-#: ../mate_menu/keybinding.py:200
+#: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "לחץ על Esc או לחץ שוב על \"ביטול\" כדי לבטל את הפעולה"
 
-#: ../mate_menu/keybinding.py:201
+#: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "לחץ על Backspace על מנת לנקות קיצורי דרך קיימים."
 
-#: ../mate_menu/keybinding.py:214
+#: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
 msgstr "בחר מאיץ"
 
-#: ../mate_menu/keybinding.py:267
+#: ../mate_menu/keybinding.py:264
 msgid "<not set>"
 msgstr "<לא מוגדר>"

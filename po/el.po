@@ -1,23 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # alexandros_ <alexandros.venn@gmail.com>, 2015
+# Angelos Chraniotis <chraniotis@gmail.com>, 2016
 # Efstathios Iosifidis <iefstathios@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-11 22:31+0000\n"
-"PO-Revision-Date: 2015-07-20 06:35+0000\n"
-"Last-Translator: alexandros_ <alexandros.venn@gmail.com>\n"
-"Language-Team: Greek (http://www.transifex.com/projects/p/MATE/language/"
-"el/)\n"
-"Language: el\n"
+"POT-Creation-Date: 2015-03-17 17:04+0000\n"
+"PO-Revision-Date: 2017-02-07 20:15+0000\n"
+"Last-Translator: Αλέξανδρος Καπετάνιος <alexandros@gnugr.org>\n"
+"Language-Team: Greek (http://www.transifex.com/mate/MATE/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:70
@@ -25,31 +25,31 @@ msgid "Menu"
 msgstr "Μενού"
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:254
+#: ../lib/mate-menu.py:251
 msgid "Couldn't load plugin:"
-msgstr "Αδυναμία φόρτωσης προσθέτου:"
+msgstr "Αδυναμία φόρτωσης πρόσθετου:"
 
-#: ../lib/mate-menu.py:326
+#: ../lib/mate-menu.py:323
 msgid "Couldn't initialize plugin"
-msgstr "Αδυναμία αρχικοποίησης προσθέτου"
+msgstr "Αδυναμία αρχικοποίησης πρόσθετου"
 
-#: ../lib/mate-menu.py:715
+#: ../lib/mate-menu.py:710
 msgid "Advanced MATE Menu"
 msgstr "Μενού του MATE για προχωρημένους"
 
-#: ../lib/mate-menu.py:798
+#: ../lib/mate-menu.py:792
 msgid "Preferences"
 msgstr "Προτιμήσεις"
 
-#: ../lib/mate-menu.py:801
+#: ../lib/mate-menu.py:795
 msgid "Edit menu"
 msgstr "Επεξεργασία μενού"
 
-#: ../lib/mate-menu.py:804
+#: ../lib/mate-menu.py:798
 msgid "Reload plugins"
 msgstr "Επαναφόρτωση προσθέτων"
 
-#: ../lib/mate-menu.py:807
+#: ../lib/mate-menu.py:801
 msgid "About"
 msgstr "Περί"
 
@@ -60,7 +60,7 @@ msgstr "Μενού προτιμήσεων"
 
 #: ../lib/mate-menu-config.py:53
 msgid "Always start with favorites pane"
-msgstr ""
+msgstr "Εκκίνηση πάντα εμφανίζοντας το πάνελ των αγαπημένων"
 
 #: ../lib/mate-menu-config.py:54
 msgid "Show button icon"
@@ -72,15 +72,15 @@ msgstr "Χρήση προσαρμοσμένων χρωμάτων"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Show recent documents plugin"
-msgstr ""
+msgstr "Εμφάνιση πρόσθετου για πρόσφατα έγγραφα"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show applications plugin"
-msgstr ""
+msgstr "Εμφάνιση πρόσθετου εφαρμογών"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show system plugin"
-msgstr ""
+msgstr "Εμφάνιση πρόσθετου για το σύστημα"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show places plugin"
@@ -96,27 +96,27 @@ msgstr "Εμφάνιση εικονιδίων κατηγορίας"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Hover"
-msgstr ""
+msgstr "Αιώρηση"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Remember the last category or search"
-msgstr ""
+msgstr "Απομνημόνευση τελευταίας κατηγορίας ή αναζήτησης"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Swap name and generic name"
-msgstr ""
+msgstr "Ανταλλαγή ονόματος με γενικευμένο όνομα"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Border width:"
-msgstr ""
+msgstr "Πάχος περιγράμματος"
 
 #: ../lib/mate-menu-config.py:68
 msgid "pixels"
-msgstr "pixels"
+msgstr "εικονοστοιχεία"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Opacity:"
-msgstr ""
+msgstr "Αδιαφάνεια"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
@@ -126,7 +126,7 @@ msgstr "Κείμενο κουμπιού:"
 msgid "Options"
 msgstr "Επιλογές"
 
-#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:252
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:255
 msgid "Applications"
 msgstr "Εφαρμογές"
 
@@ -134,8 +134,8 @@ msgstr "Εφαρμογές"
 msgid "Theme"
 msgstr "Θέμα"
 
-#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:249
-#: ../mate_menu/plugins/applications.py:250
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:252
+#: ../mate_menu/plugins/applications.py:253
 msgid "Favorites"
 msgstr "Αγαπημένα"
 
@@ -149,15 +149,15 @@ msgstr "Πρόσθετα"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Background:"
-msgstr ""
+msgstr "Παρασκήνιο:"
 
 #: ../lib/mate-menu-config.py:83
 msgid "Headings:"
-msgstr ""
+msgstr "Επικεφαλίδες:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "Borders:"
-msgstr ""
+msgstr "Περιγράμματα:"
 
 #: ../lib/mate-menu-config.py:85
 msgid "Theme:"
@@ -176,7 +176,7 @@ msgstr "Μέγεθος εικονιδίου:"
 
 #: ../lib/mate-menu-config.py:94
 msgid "Hover delay (ms):"
-msgstr ""
+msgstr "Διάρκεια αιώρησης (ms)"
 
 #: ../lib/mate-menu-config.py:95
 msgid "Button icon:"
@@ -193,11 +193,11 @@ msgstr "Τοποθεσίες"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr ""
+msgstr "Να επιτρέπεται η γραμμή κύλισης"
 
 #: ../lib/mate-menu-config.py:100
-msgid "Show GTK+ Bookmarks"
-msgstr "Εμφάνιση σελιδοδεικτών GTK+"
+msgid "Show GTK Bookmarks"
+msgstr "Εμφάνιση σελιδοδεικτών GTK"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
@@ -205,7 +205,7 @@ msgstr "Ύψος:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr ""
+msgstr "Εναλλαγή προεπιλεγμένων τοποθεσιών::"
 
 #: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:153
 msgid "Computer"
@@ -238,38 +238,37 @@ msgstr "Σύστημα"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr ""
+msgstr "Εναλλαγή προεπιλεγμένων αντικειμένων:"
 
 #: ../lib/mate-menu-config.py:114
-#: ../mate_menu/plugins/system_management.py:149
-#: ../mate_menu/plugins/system_management.py:152
-#: ../mate_menu/plugins/system_management.py:155
+#: ../mate_menu/plugins/system_management.py:147
+#: ../mate_menu/plugins/system_management.py:150
 msgid "Package Manager"
 msgstr "Διαχειριστής πακέτων"
 
 #: ../lib/mate-menu-config.py:115
-#: ../mate_menu/plugins/system_management.py:162
+#: ../mate_menu/plugins/system_management.py:157
 msgid "Control Center"
 msgstr "Κέντρο Ελέγχου"
 
 #: ../lib/mate-menu-config.py:116
-#: ../mate_menu/plugins/system_management.py:169
+#: ../mate_menu/plugins/system_management.py:164
 msgid "Terminal"
 msgstr "Τερματικό"
 
 #: ../lib/mate-menu-config.py:117
-#: ../mate_menu/plugins/system_management.py:179
+#: ../mate_menu/plugins/system_management.py:174
 msgid "Lock Screen"
 msgstr "Κλείδωμα οθόνης"
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
-msgstr "Έξοδος"
+msgstr "Αποσύνδεση"
 
 #: ../lib/mate-menu-config.py:119
-#: ../mate_menu/plugins/system_management.py:197
+#: ../mate_menu/plugins/system_management.py:192
 msgid "Quit"
-msgstr "Έξοδος"
+msgstr "Τερματισμός"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
@@ -303,85 +302,85 @@ msgstr "Διαδρομή"
 msgid "Desktop theme"
 msgstr "Θέμα επιφάνειας εργασίας"
 
-#: ../lib/mate-menu-config.py:432 ../lib/mate-menu-config.py:463
+#: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
 msgid "Name:"
 msgstr "Όνομα:"
 
-#: ../lib/mate-menu-config.py:433 ../lib/mate-menu-config.py:464
+#: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
 msgid "Path:"
 msgstr "Διαδρομή:"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:247
+#: ../mate_menu/plugins/applications.py:250
 msgid "Search:"
 msgstr "Αναζήτηση:"
 
-#: ../mate_menu/plugins/applications.py:251
+#: ../mate_menu/plugins/applications.py:254
 msgid "All applications"
 msgstr "Όλες οι εφαρμογές"
 
-#: ../mate_menu/plugins/applications.py:618
+#: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search Google for %s"
 msgstr "Αναζήτηση στο Google για %s"
 
-#: ../mate_menu/plugins/applications.py:625
+#: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "Αναζήτηση στην Wikipedia για %s"
 
-#: ../mate_menu/plugins/applications.py:641
+#: ../mate_menu/plugins/applications.py:644
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr ""
+msgstr "Αναζήτηση %s στο Λεξικό"
 
-#: ../mate_menu/plugins/applications.py:648
+#: ../mate_menu/plugins/applications.py:651
 #, python-format
 msgid "Search Computer for %s"
 msgstr "Αναζήτηση στον υπολογιστή για %s"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:761
+#: ../mate_menu/plugins/applications.py:763
 #: ../mate_menu/plugins/applications.py:830
 msgid "Add to desktop"
 msgstr "Προσθήκη στην επιφάνεια εργασίας"
 
-#: ../mate_menu/plugins/applications.py:762
+#: ../mate_menu/plugins/applications.py:764
 #: ../mate_menu/plugins/applications.py:831
 msgid "Add to panel"
-msgstr ""
+msgstr "Προσθήκη στο πάνελ"
 
-#: ../mate_menu/plugins/applications.py:764
-#: ../mate_menu/plugins/applications.py:812
-msgid "Insert space"
-msgstr ""
-
-#: ../mate_menu/plugins/applications.py:765
+#: ../mate_menu/plugins/applications.py:766
 #: ../mate_menu/plugins/applications.py:813
-msgid "Insert separator"
-msgstr ""
+msgid "Insert space"
+msgstr "Εισαγωγή διαστήματος"
 
 #: ../mate_menu/plugins/applications.py:767
-#: ../mate_menu/plugins/applications.py:834
-msgid "Launch when I log in"
-msgstr ""
+#: ../mate_menu/plugins/applications.py:814
+msgid "Insert separator"
+msgstr "Εισαγωγή διαχωριστικού"
 
 #: ../mate_menu/plugins/applications.py:769
+#: ../mate_menu/plugins/applications.py:834
+msgid "Launch when I log in"
+msgstr "Εκκίνηση κατά τη σύνδεσή μου στο σύστημα"
+
+#: ../mate_menu/plugins/applications.py:771
 #: ../mate_menu/plugins/applications.py:836
 msgid "Launch"
-msgstr ""
+msgstr "Εκκίνηση"
 
-#: ../mate_menu/plugins/applications.py:770
+#: ../mate_menu/plugins/applications.py:772
 msgid "Remove from favorites"
 msgstr "Αφαίρεση από τα αγαπημένα"
 
-#: ../mate_menu/plugins/applications.py:772
+#: ../mate_menu/plugins/applications.py:774
 #: ../mate_menu/plugins/applications.py:839
 msgid "Edit properties"
-msgstr "Επεξεργασία προτιμήσεων"
+msgstr "Επεξεργασία ιδιοτήτων"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:811
+#: ../mate_menu/plugins/applications.py:812
 msgid "Remove"
 msgstr "Αφαίρεση"
 
@@ -409,52 +408,52 @@ msgstr "Αναζήτηση στο λεξικό"
 msgid "Search Computer"
 msgstr "Αναζήτηση στον υπολογιστή"
 
-#: ../mate_menu/plugins/applications.py:1332
+#: ../mate_menu/plugins/applications.py:1329
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
+msgstr "Αδυναμία αποθήκευσης αγαπημένων. Ελέγξτε εάν έχετε δικαιώματα εγγραφής στο ~/.config/mate-menu"
 
-#: ../mate_menu/plugins/applications.py:1532
+#: ../mate_menu/plugins/applications.py:1529
 msgid "All"
 msgstr "Όλα"
 
-#: ../mate_menu/plugins/applications.py:1532
+#: ../mate_menu/plugins/applications.py:1529
 msgid "Show all applications"
 msgstr "Εμφάνιση όλων των εφαρμογών"
 
-#: ../mate_menu/plugins/system_management.py:159
+#: ../mate_menu/plugins/system_management.py:154
 msgid "Install, remove and upgrade software packages"
-msgstr ""
+msgstr "Εγκατάσταση, κατάργηση και αναβάθμιση πακέτων λογισμικού"
 
-#: ../mate_menu/plugins/system_management.py:166
+#: ../mate_menu/plugins/system_management.py:161
 msgid "Configure your system"
 msgstr "Ρύθμιση του συστήματός σας"
 
-#: ../mate_menu/plugins/system_management.py:176
+#: ../mate_menu/plugins/system_management.py:171
 msgid "Use the command line"
 msgstr "Χρήση της γραμμής εντολών"
 
-#: ../mate_menu/plugins/system_management.py:187
+#: ../mate_menu/plugins/system_management.py:182
 msgid "Requires password to unlock"
 msgstr "Απαιτείται κωδικός για να ξεκλειδώσει"
 
-#: ../mate_menu/plugins/system_management.py:190
+#: ../mate_menu/plugins/system_management.py:185
 msgid "Logout"
 msgstr "Αποσύνδεση"
 
-#: ../mate_menu/plugins/system_management.py:194
+#: ../mate_menu/plugins/system_management.py:189
 msgid "Log out or switch user"
 msgstr "Αποσύνδεση ή εναλλαγή χρήστη"
 
-#: ../mate_menu/plugins/system_management.py:201
+#: ../mate_menu/plugins/system_management.py:196
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr ""
+msgstr "Απενεργοποίηση, επανεκκίνηση, αναστολή ή αδρανοποίηση"
 
 #: ../mate_menu/plugins/places.py:161
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
+msgstr "Περιήγηση σε όλους τους τοπικούς ή απομακρυσμένους δίσκους και φακέλους, στους οποίους έχει πρόσβαση αυτός ο υπολογιστής"
 
 #: ../mate_menu/plugins/places.py:172
 msgid "Open your personal folder"
@@ -462,41 +461,41 @@ msgstr "Άνοιγμα του προσωπικού καταλόγου"
 
 #: ../mate_menu/plugins/places.py:185
 msgid "Browse bookmarked and local network locations"
-msgstr ""
+msgstr "Περιήγηση σε σελιδοδείκτες ή τοποθεσίες τοπικού δικτύου"
 
 #: ../mate_menu/plugins/places.py:206
 msgid "Browse items placed on the desktop"
-msgstr ""
+msgstr "Περιήγηση σε αντικείμενα της επιφάνειας εργασίας"
 
 #: ../mate_menu/plugins/places.py:219
 msgid "Browse deleted files"
-msgstr ""
+msgstr "Περιήγηση σε διεγραμμένα αρχεία"
 
 #: ../mate_menu/plugins/places.py:272
 msgid "Empty trash"
-msgstr "Άδειασμα κάδου"
+msgstr "Άδειασμα κάδου ανακύκλωσης"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
 msgstr "Πρόσφατα έγγραφα"
 
-#: ../mate_menu/keybinding.py:199
+#: ../mate_menu/keybinding.py:196
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
+msgstr "Κάντε κλικ για ορισμό πλήκτρου ταχείας πρόσβασης για το άνοιγμα και το κλείσιμο του μενού."
 
-#: ../mate_menu/keybinding.py:200
+#: ../mate_menu/keybinding.py:197
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr ""
+msgstr "Πατήστε το πλήκτρο Esc (Escape) ή ξανακάντε κλικ για να ακυρωθεί αυτή η λειτουργία."
 
-#: ../mate_menu/keybinding.py:201
+#: ../mate_menu/keybinding.py:198
 msgid "Press Backspace to clear the existing keybinding."
-msgstr ""
+msgstr "Πατήστε το πλήκτρο Βackspace για την εκκαθάριση του τρέχοντος συνδυασμού πλήκτρων."
 
-#: ../mate_menu/keybinding.py:214
+#: ../mate_menu/keybinding.py:211
 msgid "Pick an accelerator"
-msgstr ""
+msgstr "Επιλέξτε έναν επιταχυντή"
 
-#: ../mate_menu/keybinding.py:267
+#: ../mate_menu/keybinding.py:264
 msgid "<not set>"
-msgstr "<not set>"
+msgstr "<μη ορισμένο>"
