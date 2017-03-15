@@ -3,7 +3,7 @@ location:/usr/share/applications/thunderbird.desktop
 location:/usr/share/applications/pidgin.desktop
 location:/usr/share/applications/rhythmbox.desktop
 separator
-location:/usr/share/applications/galculator.desktop
+location:/usr/share/applications/mate-calc.desktop
 location:/usr/share/applications/pluma.desktop
 location:/usr/share/applications/mate-terminal.desktop
 location:/usr/share/applications/mate-volume-control.desktop
