@@ -19,7 +19,7 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
-__VERSION__='17.04.1'
+__VERSION__='17.04.2'
 
 import gc
 import gi
@@ -739,7 +739,10 @@ class MenuWin( object ):
         Execute( os.path.join( "/", "usr", "lib", "mate-menu", "mate-menu-config.py" ) )
 
     def showMenuEditor( self, action, userdata = None ):
-        Execute( "mozo" )
+        try:
+            Execute("menulibre")
+        except:
+            Execute("mozo")
 
     def showMenu( self, widget=None, event=None ):
         if event == None or event.button == 1:
