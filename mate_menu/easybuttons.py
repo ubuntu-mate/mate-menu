@@ -567,6 +567,7 @@ class CategoryButton( easyButton ):
     def __init__( self, iconName, iconSize, labels , f ):
         easyButton.__init__( self, iconName, iconSize, labels )
         self.filter = f
+        self.set_focus_on_click(False)
 
 
 iconManager = IconManager()
