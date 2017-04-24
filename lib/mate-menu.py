@@ -120,7 +120,6 @@ class MainWindow( object ):
         self.settings.connect( "changed::custom-heading-color", self.toggleCustomHeadingColor )
         self.settings.connect( "changed::custom-color", self.toggleCustomBackgroundColor )
         self.settings.connect( "changed::border-width", self.toggleBorderWidth )
-        self.settings.connect( "changed::opacity", self.toggleOpacity )
 
         self.getSetGSettingEntries()
 
@@ -161,10 +160,6 @@ class MainWindow( object ):
         self.borderwidth = settings.get_int(key)
         self.SetupMateMenuBorder()
 
-    def toggleOpacity( self, settings, key, args = None ):
-        self.opacity = settings.get_int(key)
-        self.SetupMateMenuOpacity()
-
     def toggleUseCustomColor( self, settings, key, args = None ):
         self.usecustomcolor = settings.get_boolean(key)
         self.loadTheme()
@@ -188,7 +183,6 @@ class MainWindow( object ):
         self.customheadingcolor   = self.settings.get_string( "custom-heading-color" )
         self.custombordercolor    = self.settings.get_string( "custom-border-color" )
         self.borderwidth          = self.settings.get_int( "border-width" )
-        self.opacity              = self.settings.get_int( "opacity" )
         self.offset               = self.settings.get_int( "offset" )
         self.enableTooltips       = self.settings.get_boolean( "tooltips-enabled" )
         self.startWithFavorites   = self.settings.get_boolean( "start-with-favorites" )
@@ -204,13 +198,6 @@ class MainWindow( object ):
         elif color is not None:
             self.window.override_background_color( context.get_state(), color )
         self.border.set_padding( self.borderwidth, self.borderwidth, self.borderwidth, self.borderwidth )
-
-    def SetupMateMenuOpacity( self ):
-        print "Opacity is: " + str(self.opacity)
-        opacity = float(self.opacity) / float(100)
-        print "Setting opacity to: " + str(opacity)
-        if opacity is not 1:
-            self.window.set_opacity(opacity)
 
     def PopulatePlugins( self ):
         self.panesToColor = [ ]
@@ -459,7 +446,7 @@ class MainWindow( object ):
         # Hack for opacity not showing on first composited draw
         if self.firstTime:
             self.firstTime = False
-            self.SetupMateMenuOpacity()
+            self.window.set_opacity(1.0)
 
         self.window.get_window().focus( Gdk.CURRENT_TIME )
 
