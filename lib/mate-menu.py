@@ -598,23 +598,23 @@ class MenuWin( object ):
             pass
 
         if self.applet.get_orient() == MatePanelApplet.AppletOrient.UP or self.applet.get_orient() == MatePanelApplet.AppletOrient.DOWN:
-            self.button_box = Gtk.Box( orientation=Gtk.Orientation.HORIZONTAL )
-            self.button_box.pack_start( self.button_icon, False, False, 0 )
-            self.button_box.pack_start( self.systemlabel, False, False, 0 )
+            self.button_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
+            self.button_box.pack_start(self.button_icon, False, False, 0)
+            self.button_box.pack_start(self.systemlabel, False, False, 0)
             self.button_icon.set_padding( 5, 0 )
         # if we have a vertical panel
         elif self.applet.get_orient() == MatePanelApplet.AppletOrient.LEFT:
-            self.button_box = Gtk.Box( orientation=Gtk.Orientation.VERTICAL )
-            self.systemlabel.set_angle( 270 )
-            self.button_box.pack_start( self.button_icon , False, False, 0)
-            self.button_box.pack_start( self.systemlabel , False, False, 0)
-            self.button_icon.set_padding( 0, 5 )
-        elif self.applet.get_orient( orientation=Gtk.Orientation.VERTICAL ) == MatePanelApplet.AppletOrient.RIGHT:
-            self.button_box = Gtk.Box()
-            self.systemlabel.set_angle( 90 )
-            self.button_box.pack_start( self.systemlabel , False, False, 0)
-            self.button_box.pack_start( self.button_icon , False, False, 0)
-            self.button_icon.set_padding( 0, 5 )
+            self.button_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
+            self.systemlabel.set_angle(270)
+            self.button_box.pack_start(self.button_icon , False, False, 0)
+            self.button_box.pack_start(self.systemlabel , False, False, 0)
+            self.button_icon.set_padding(0, 5)
+        elif self.applet.get_orient() == MatePanelApplet.AppletOrient.RIGHT:
+            self.button_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
+            self.systemlabel.set_angle(90)
+            self.button_box.pack_start(self.button_icon , False, False, 0)
+            self.button_box.pack_start(self.systemlabel , False, False, 0)
+            self.button_icon.set_padding(0, 5)
 
         self.button_box.set_homogeneous( False )
         self.button_box.show_all()
