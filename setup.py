@@ -30,7 +30,9 @@ import DistUtilsExtra.command.build_i18n
 import DistUtilsExtra.command.clean_i18n
 
 # to update i18n .mo files (and merge .pot file into .po files) run on Linux:
-# ,,python setup.py build_i18n -m''
+#     tx pull -a
+#     python setup.py build_i18n -m
+#     tx push -s
 
 # silence pyflakes, __VERSION__ is properly assigned below...
 __VERSION__ = '0.0.0.0'
