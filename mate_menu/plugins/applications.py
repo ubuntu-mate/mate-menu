@@ -1241,7 +1241,7 @@ class pluginclass( object ):
     def onFavButtonDragReorderGet( self, widget, context, selection, targetType, eventTime ):
         if targetType == self.TARGET_TYPE_FAV:
             self.drag_origin = widget.position
-            selection.set( selection.target, 8, str(widget.position))
+            selection.set(Gdk.SELECTION_CLIPBOARD, 8, str(widget.position))            
 
     def onFavButtonDragReorder( self, widget, context, x, y, selection, targetType, time  ):
         if targetType == self.TARGET_TYPE_FAV:
