@@ -59,19 +59,6 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         self.raw_keyval = None
         self.keytext = ""
 
-    def is_hotkey(self, key, modifier):
-        keymatch = False
-        modmatch = False
-        modifier = modifier & ~Gdk.ModifierType.SUPER_MASK
-        modint = int(modifier)
-        if self.get_keycode(key) == self.keycode:
-            keymatch = True
-        for ignored_mask in self.ignored_masks:
-            if self.modifiers | ignored_mask == modint | ignored_mask:
-                modmatch = True
-                break
-        return keymatch and modmatch
-
     def map_modifiers(self):
         gdk_modifiers =(Gdk.ModifierType.CONTROL_MASK, Gdk.ModifierType.SHIFT_MASK, Gdk.ModifierType.MOD1_MASK,
                          Gdk.ModifierType.MOD2_MASK, Gdk.ModifierType.MOD3_MASK, Gdk.ModifierType.MOD4_MASK, Gdk.ModifierType.MOD5_MASK,
@@ -80,9 +67,6 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         for modifier in gdk_modifiers:
             if "Mod" not in Gtk.accelerator_name(0, modifier) or "Mod4" in Gtk.accelerator_name(0, modifier):
                 self.known_modifiers_mask |= modifier
-
-    def get_keycode(self, keyval):
-        return self.keymap.get_entries_for_keyval(keyval).keys[0].keycode
 
     def grab(self, key):
         accelerator = key
@@ -94,7 +78,11 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
             return False
 
         self.keytext = key
-        self.keycode = self.get_keycode(keyval)
+        try:
+            self.keycode = self.keymap.get_entries_for_keyval(keyval).keys[0].keycode
+        except AttributeError:
+            # In older Gtk3 the get_entries_for_keyval() returns an unnamed tuple...
+            self.keycode = self.keymap.get_entries_for_keyval(keyval)[1][0].keycode
         self.modifiers = int(modifiers)
 
         catch = error.CatchError(error.BadAccess)
