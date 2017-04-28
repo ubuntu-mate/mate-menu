@@ -732,6 +732,7 @@ class pluginclass( object ):
 
                 mTree.show_all()
                 self.mateMenuWin.stopHiding()
+                mTree.attach_to_widget(widget, None)
                 mTree.popup(None, None, None, None, event.button, event.time)
             else:
                 mTree = Gtk.Menu()
@@ -751,6 +752,7 @@ class pluginclass( object ):
                 insertSpaceMenuItem.connect( "activate", self.onFavoritesInsertSpace, widget, insertBefore )
                 insertSeparatorMenuItem.connect( "activate", self.onFavoritesInsertSeparator, widget, insertBefore )
                 self.mateMenuWin.stopHiding()
+                mTree.attach_to_widget(widget, None)
                 mTree.popup(None, None, None, None, event.button, event.time)
 
     def menuPopup( self, widget, event ):
@@ -797,6 +799,7 @@ class pluginclass( object ):
                 favoriteMenuItem.connect( "toggled", self.onAddToFavorites, widget )
 
             self.mateMenuWin.stopHiding()
+            mTree.attach_to_widget(widget, None)
             mTree.popup(None, None, None, None, event.button, event.time)
 
     def searchPopup( self, widget=None, event=None ):
@@ -837,9 +840,9 @@ class pluginclass( object ):
         menu.show_all()
 
         self.mateMenuWin.stopHiding()
+        menu.attach_to_widget(self.searchButton, None)
         menu.popup(None, None, None, None, event.button, event.time)
 
-        #menu.attach_to_widget(self.searchButton, None)
         #menu.reposition()
         #menu.reposition()
         #self.mateMenuWin.grab()
