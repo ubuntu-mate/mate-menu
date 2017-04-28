@@ -762,8 +762,13 @@ class MenuWin( object ):
         ourHeight = self.mainwin.window.get_size()[1] + self.mainwin.offset
 
         # Get the dimensions/position of the widgetToAlignWith
-        entryX = self.applet.get_window().get_origin().x
-        entryY = self.applet.get_window().get_origin().y
+        try:
+            entryX = self.applet.get_window().get_origin().x
+            entryY = self.applet.get_window().get_origin().y
+        except AttributeError:
+            # In older Gtk3 get_origin returns an unnamed tuple so the code above fails
+            entryX = self.applet.get_window().get_origin()[1]
+            entryY = self.applet.get_window().get_origin()[2]
 
         entryWidth, entryHeight =  self.applet.get_allocation().width, self.applet.get_allocation().height
         entryHeight = entryHeight + self.mainwin.offset
