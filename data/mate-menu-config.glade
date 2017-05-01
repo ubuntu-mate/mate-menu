@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
-  <requires lib="gtk+" version="3.0"/>
+  <requires lib="gtk+" version="3.14"/>
   <object class="GtkAdjustment" id="adjustment1">
     <property name="upper">10</property>
     <property name="step_increment">1</property>
@@ -210,6 +210,9 @@
       <action-widget response="-5">okButton</action-widget>
       <action-widget response="-6">cancelButton</action-widget>
     </action-widgets>
+    <child>
+      <placeholder/>
+    </child>
   </object>
   <object class="GtkFileChooserDialog" id="fileChooserDialog">
     <property name="can_focus">False</property>
@@ -276,6 +279,9 @@
       <action-widget response="-5">button1</action-widget>
       <action-widget response="0">button2</action-widget>
     </action-widgets>
+    <child>
+      <placeholder/>
+    </child>
   </object>
   <object class="GtkListStore" id="model1">
     <columns>
@@ -1794,6 +1800,9 @@
           </packing>
         </child>
       </object>
+    </child>
+    <child type="titlebar">
+      <placeholder/>
     </child>
   </object>
 </interface>

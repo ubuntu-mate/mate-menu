@@ -161,7 +161,7 @@ class KeybindingWidget(Gtk.Box):
     def __init__(self, desc):
         super(KeybindingWidget, self).__init__()
         self.desc = desc
-        self.label = Gtk.Label(desc)
+        self.label = Gtk.Label(label=desc)
         if self.desc != "":
             self.pack_start(self.label, False, False, 0)
         self.button = Gtk.Button()
@@ -177,8 +177,14 @@ class KeybindingWidget(Gtk.Box):
         self.teaching = False
 
     def clicked(self, widget):
+        display = widget.get_display()
         if not self.teaching:
-            Gdk.keyboard_grab(self.get_window(), False, Gdk.CURRENT_TIME)
+            if Gtk.check_version(3, 20, 0) is None:
+                seat = display.get_default_seat()
+                seat.grab(widget.get_window(), Gdk.SeatCapabilities.KEYBOARD, False,
+                          None, None, None, None)
+            else:
+                Gdk.keyboard_grab(self.get_window(), False, Gdk.CURRENT_TIME)
 
             self.button.set_label(_("Pick an accelerator"))
             self.event_id = self.connect( "key-release-event", self.on_key_release )
@@ -186,13 +192,13 @@ class KeybindingWidget(Gtk.Box):
         else:
             if self.event_id:
                 self.disconnect(self.event_id)
-            self.ungrab()
+            self.ungrab(display)
             self.set_button_text()
             self.teaching = False
 
     def on_key_release(self, widget, event):
         self.disconnect(self.event_id)
-        self.ungrab()
+        self.ungrab(widget.get_display())
         self.event_id = None
         if event.keyval == Gdk.KEY_Escape:
             self.set_button_text()
@@ -227,8 +233,12 @@ class KeybindingWidget(Gtk.Box):
         self.value = value
         self.set_button_text()
 
-    def ungrab(self):
-        Gdk.keyboard_ungrab(Gdk.CURRENT_TIME)
+    def ungrab(self, display):
+        if Gtk.check_version(3, 20, 0) is None:
+            seat = display.get_default_seat()
+            seat.ungrab()
+        else:
+            Gdk.keyboard_ungrab(Gdk.CURRENT_TIME)
 
     def set_button_text(self):
         if self.value == "":

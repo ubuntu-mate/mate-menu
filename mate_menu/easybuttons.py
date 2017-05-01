@@ -142,8 +142,9 @@ class easyButton( Gtk.Button ):
         self.set_relief( Gtk.ReliefStyle.NONE )
         self.set_size_request( buttonWidth, buttonHeight )
 
-        Align1 = Gtk.Alignment.new( 0, 0.5, 1.0, 0 )
         HBox1 = Gtk.Box( orientation=Gtk.Orientation.HORIZONTAL )
+        HBox1.set_valign(Gtk.Align.CENTER)
+        HBox1.set_hexpand(True)
         self.labelBox = Gtk.Box( orientation=Gtk.Orientation.VERTICAL, spacing=2 )
 
 
@@ -169,9 +170,7 @@ class easyButton( Gtk.Button ):
         self.labelBox.show()
         HBox1.pack_start( self.labelBox , True, True, 0)
         HBox1.show()
-        Align1.add( HBox1 )
-        Align1.show()
-        self.add( Align1 )
+        self.add( HBox1 )
 
         self.connectSelf( "destroy", self.onDestroy )
         self.connect( "released", self.onRelease )
@@ -206,7 +205,11 @@ class easyButton( Gtk.Button ):
             label.set_attributes( labelStyle )
 
         label.set_ellipsize( Pango.EllipsizeMode.END )
-        label.set_alignment( 0.0, 1.0 )
+        if Gtk.check_version(3, 16, 0) is None:
+            label.set_xalign(0.0)
+            label.set_yalign(1.0)
+        else:
+            label.set_alignment( 0.0, 1.0 )
         label.set_max_width_chars(0)
         label.show()
         self.labelBox.pack_start( label , True, True, 0)

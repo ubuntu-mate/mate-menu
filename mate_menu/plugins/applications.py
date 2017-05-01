@@ -700,16 +700,16 @@ class pluginclass( object ):
                                  Gdk.EventMask.BUTTON_PRESS_MASK | Gdk.EventMask.BUTTON_RELEASE_MASK)
                 #i18n
 
-                desktopMenuItem = Gtk.MenuItem(_("Add to desktop"))
-                panelMenuItem = Gtk.MenuItem(_("Add to panel"))
+                desktopMenuItem = Gtk.MenuItem(label=_("Add to desktop"))
+                panelMenuItem = Gtk.MenuItem(label=_("Add to panel"))
                 separator1 = Gtk.SeparatorMenuItem()
-                insertSpaceMenuItem = Gtk.MenuItem(_("Insert space"))
-                insertSeparatorMenuItem = Gtk.MenuItem(_("Insert separator"))
+                insertSpaceMenuItem = Gtk.MenuItem(label=_("Insert space"))
+                insertSeparatorMenuItem = Gtk.MenuItem(label=_("Insert separator"))
                 separator2 = Gtk.SeparatorMenuItem()
-                launchMenuItem = Gtk.MenuItem(_("Launch"))
-                removeFromFavMenuItem = Gtk.MenuItem(_("Remove from favorites"))
+                launchMenuItem = Gtk.MenuItem(label=_("Launch"))
+                removeFromFavMenuItem = Gtk.MenuItem(label=_("Remove from favorites"))
                 separator3 = Gtk.SeparatorMenuItem()
-                propsMenuItem = Gtk.MenuItem(_("Edit properties"))
+                propsMenuItem = Gtk.MenuItem(label=_("Edit properties"))
 
                 desktopMenuItem.connect("activate", self.add_to_desktop, widget)
                 panelMenuItem.connect("activate", self.add_to_panel, widget)
@@ -733,16 +733,19 @@ class pluginclass( object ):
                 mTree.show_all()
                 self.mateMenuWin.stopHiding()
                 mTree.attach_to_widget(widget, None)
-                mTree.popup(None, None, None, None, event.button, event.time)
+                if Gtk.check_version(3, 22, 0) is None:
+                    mTree.popup_at_pointer(event)
+                else:
+                    mTree.popup(None, None, None, None, event.button, event.time)
             else:
                 mTree = Gtk.Menu()
                 mTree.set_events(Gdk.EventMask.POINTER_MOTION_MASK | Gdk.EventMask.POINTER_MOTION_HINT_MASK |
                                  Gdk.EventMask.BUTTON_PRESS_MASK | Gdk.EventMask.BUTTON_RELEASE_MASK)
 
                 #i18n
-                removeMenuItem = Gtk.MenuItem(_("Remove"))
-                insertSpaceMenuItem = Gtk.MenuItem(_("Insert space"))
-                insertSeparatorMenuItem = Gtk.MenuItem(_("Insert separator"))
+                removeMenuItem = Gtk.MenuItem(label=_("Remove"))
+                insertSpaceMenuItem = Gtk.MenuItem(label=_("Insert space"))
+                insertSeparatorMenuItem = Gtk.MenuItem(label=_("Insert separator"))
                 mTree.append(removeMenuItem)
                 mTree.append(insertSpaceMenuItem)
                 mTree.append(insertSeparatorMenuItem)
@@ -753,20 +756,23 @@ class pluginclass( object ):
                 insertSeparatorMenuItem.connect( "activate", self.onFavoritesInsertSeparator, widget, insertBefore )
                 self.mateMenuWin.stopHiding()
                 mTree.attach_to_widget(widget, None)
-                mTree.popup(None, None, None, None, event.button, event.time)
+                if Gtk.check_version(3, 22, 0) is None:
+                    mTree.popup_at_pointer(event)
+                else:
+                    mTree.popup(None, None, None, None, event.button, event.time)
 
     def menuPopup( self, widget, event ):
         if event.button == 3:
             mTree = Gtk.Menu()
             #i18n
-            desktopMenuItem = Gtk.MenuItem(_("Add to desktop"))
-            panelMenuItem = Gtk.MenuItem(_("Add to panel"))
+            desktopMenuItem = Gtk.MenuItem(label=_("Add to desktop"))
+            panelMenuItem = Gtk.MenuItem(label=_("Add to panel"))
             separator1 = Gtk.SeparatorMenuItem()
-            favoriteMenuItem = Gtk.CheckMenuItem(_("Show in my favorites"))
-            launchMenuItem = Gtk.MenuItem(_("Launch"))
-            deleteMenuItem = Gtk.MenuItem(_("Delete from menu"))
+            favoriteMenuItem = Gtk.CheckMenuItem(label=_("Show in my favorites"))
+            launchMenuItem = Gtk.MenuItem(label=_("Launch"))
+            deleteMenuItem = Gtk.MenuItem(label=_("Delete from menu"))
             separator2 = Gtk.SeparatorMenuItem()
-            propsMenuItem = Gtk.MenuItem(_("Edit properties"))
+            propsMenuItem = Gtk.MenuItem(label=_("Edit properties"))
 
             mTree.append(desktopMenuItem)
             mTree.append(panelMenuItem)
@@ -800,19 +806,22 @@ class pluginclass( object ):
 
             self.mateMenuWin.stopHiding()
             mTree.attach_to_widget(widget, None)
-            mTree.popup(None, None, None, None, event.button, event.time)
+            if Gtk.check_version(3, 22, 0) is None:
+                mTree.popup_at_pointer(event)
+            else:
+                mTree.popup(None, None, None, None, event.button, event.time)
 
     def searchPopup( self, widget=None, event=None ):
         menu = Gtk.Menu()
 
-        menuItem = Gtk.ImageMenuItem(_("Search Google"))
+        menuItem = Gtk.ImageMenuItem(label=_("Search Google"))
         img = Gtk.Image()
         img.set_from_file('/usr/share/mate-menu/icons/search_engines/google.ico')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_google)
         menu.append(menuItem)
 
-        menuItem = Gtk.ImageMenuItem(_("Search Wikipedia"))
+        menuItem = Gtk.ImageMenuItem(label=_("Search Wikipedia"))
         img = Gtk.Image()
         img.set_from_file('/usr/share/mate-menu/icons/search_engines/wikipedia.ico')
         menuItem.set_image(img)
@@ -822,14 +831,14 @@ class pluginclass( object ):
         menuItem = Gtk.SeparatorMenuItem()
         menu.append(menuItem)
 
-        menuItem = Gtk.ImageMenuItem(_("Lookup Dictionary"))
+        menuItem = Gtk.ImageMenuItem(label=_("Lookup Dictionary"))
         img = Gtk.Image()
         img.set_from_file('/usr/share/mate-menu/icons/dictionary.png')
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_dictionary)
         menu.append(menuItem)
 
-        menuItem = Gtk.ImageMenuItem(_("Search Computer"))
+        menuItem = Gtk.ImageMenuItem(label=_("Search Computer"))
         img = Gtk.Image()
         img.set_from_icon_name("edit-find", Gtk.IconSize.INVALID)
         img.set_pixel_size( self.iconSize )
@@ -841,7 +850,10 @@ class pluginclass( object ):
 
         self.mateMenuWin.stopHiding()
         menu.attach_to_widget(self.searchButton, None)
-        menu.popup(None, None, None, None, event.button, event.time)
+        if Gtk.check_version(3, 22, 0) is None:
+            menu.popup_at_widget(widget, Gdk.Gravity.SOUTH_WEST, Gdk.Gravity.NORTH_WEST, event)
+        else:
+            menu.popup(None, None, None, None, event.button, event.time)
 
         #menu.reposition()
         #menu.reposition()
