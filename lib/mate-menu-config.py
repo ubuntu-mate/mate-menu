@@ -79,13 +79,6 @@ class mateMenuConfig( object ):
         self.builder.get_object("mainbuttonLabel").set_text(_("Main button"))
         self.builder.get_object("pluginsLabel").set_text(_("Plugins"))
 
-        self.builder.get_object("searchEngineTitleLabel").set_text(_("Search Engines:"))
-        self.builder.get_object("enable_ddg").set_label(_("DuckDuckGo"))
-        self.builder.get_object("enable_google").set_label(_("Google"))
-        self.builder.get_object("enable_wikipedia").set_label(_("Wikipedia"))
-        self.builder.get_object("enable_dictionary").set_label(_("Dictionary"))
-        self.builder.get_object("enable_computer").set_label(_("Computer"))
-
         self.builder.get_object("backgroundColorLabel").set_text(_("Background:"))
         self.builder.get_object("headingColorLabel").set_text(_("Headings:"))
         self.builder.get_object("borderColorLabel").set_text(_("Borders:"))
@@ -140,11 +133,6 @@ class mateMenuConfig( object ):
         self.hover = self.builder.get_object( "hover" )
         self.hoverDelay = self.builder.get_object( "hoverDelay" )
         self.rememberFilter = self.builder.get_object( "remember_filter" )
-        self.enableDdg = self.builder.get_object( "enable_ddg" )
-        self.enableGoogle = self.builder.get_object( "enable_google" )
-        self.enableWikipedia = self.builder.get_object( "enable_wikipedia" )
-        self.enableDictionary = self.builder.get_object( "enable_dictionary" )
-        self.enableComputer = self.builder.get_object( "enable_computer" )
         self.iconSize = self.builder.get_object( "iconSize" )
         self.favIconSize = self.builder.get_object( "favIconSize" )
         self.placesIconSize = self.builder.get_object( "placesIconSize" )
@@ -221,12 +209,6 @@ class mateMenuConfig( object ):
         self.bindGSettingsValueToWidget( self.settingsApplications, "int", "favicon-size", self.favIconSize, "value-changed", self.favIconSize.set_value, self.favIconSize.get_value )
         self.bindGSettingsValueToWidget( self.settingsApplications, "int", "fav-cols", self.favCols, "value-changed", self.favCols.set_value, self.favCols.get_value )
         self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "remember-filter", self.rememberFilter, "toggled", self.rememberFilter.set_active, self.rememberFilter.get_active)
-
-        self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "enable-ddg", self.enableDdg, "toggled", self.enableDdg.set_active, self.enableDdg.get_active)
-        self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "enable-google", self.enableGoogle, "toggled", self.enableGoogle.set_active, self.enableGoogle.get_active)
-        self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "enable-wikipedia", self.enableWikipedia, "toggled", self.enableWikipedia.set_active, self.enableWikipedia.get_active)
-        self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "enable-dictionary", self.enableDictionary, "toggled", self.enableDictionary.set_active, self.enableDictionary.get_active)
-        self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "enable-computer", self.enableComputer, "toggled", self.enableComputer.set_active, self.enableComputer.get_active)
 
         self.bindGSettingsValueToWidget( self.settingsPlaces, "int", "icon-size", self.placesIconSize, "value-changed", self.placesIconSize.set_value, self.placesIconSize.get_value )
         self.bindGSettingsValueToWidget( self.settingsSystem, "int", "icon-size", self.systemIconSize, "value-changed", self.systemIconSize.set_value, self.systemIconSize.get_value )

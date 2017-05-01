@@ -110,36 +110,6 @@
       <description></description>
     </key>
 
-    <key type="b" name="enable-ddg">
-      <default>true</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="b" name="enable-google">
-      <default>true</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="b" name="enable-wikipedia">
-      <default>true</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="b" name="enable-dictionary">
-      <default>true</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="b" name="enable-computer">
-      <default>true</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
   </schema>
 
 </schemalist>
