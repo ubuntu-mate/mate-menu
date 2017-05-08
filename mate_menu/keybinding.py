@@ -179,7 +179,7 @@ class KeybindingWidget(Gtk.Box):
     def clicked(self, widget):
         display = widget.get_display()
         if not self.teaching:
-            if Gtk.check_version(3, 20, 0) is None:
+            if (Gtk.MAJOR_VERSION, Gtk.MINOR_VERSION) >= (3, 20):
                 seat = display.get_default_seat()
                 seat.grab(widget.get_window(), Gdk.SeatCapabilities.KEYBOARD, False,
                           None, None, None, None)
@@ -234,7 +234,7 @@ class KeybindingWidget(Gtk.Box):
         self.set_button_text()
 
     def ungrab(self, display):
-        if Gtk.check_version(3, 20, 0) is None:
+        if (Gtk.MAJOR_VERSION, Gtk.MINOR_VERSION) >= (3, 20):
             seat = display.get_default_seat()
             seat.ungrab()
         else:

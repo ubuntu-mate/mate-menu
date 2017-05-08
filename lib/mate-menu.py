@@ -791,7 +791,7 @@ class MenuWin( object ):
 
         # Get the monitor dimensions
         display = self.applet.get_display()
-        if Gtk.check_version(3, 22, 0) is None:
+        if (Gtk.MAJOR_VERSION, Gtk.MINOR_VERSION) >= (3, 22):
             monitor = display.get_monitor_at_window(self.applet.get_window())
             monitorGeometry = monitor.get_geometry()
         else:

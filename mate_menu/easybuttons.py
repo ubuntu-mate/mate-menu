@@ -205,7 +205,7 @@ class easyButton( Gtk.Button ):
             label.set_attributes( labelStyle )
 
         label.set_ellipsize( Pango.EllipsizeMode.END )
-        if Gtk.check_version(3, 16, 0) is None:
+        if (Gtk.MAJOR_VERSION, Gtk.MINOR_VERSION) >= (3, 16):
             label.set_xalign(0.0)
             label.set_yalign(1.0)
         else:
