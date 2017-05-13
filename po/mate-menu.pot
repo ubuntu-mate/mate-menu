@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-03 12:57-0400\n"
+"POT-Creation-Date: 2017-05-14 00:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,36 +17,36 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../lib/mate-menu.py:70
+#: ../lib/mate-menu.py:69
 msgid "Menu"
 msgstr ""
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:244
+#: ../lib/mate-menu.py:236
 msgid "Couldn't load plugin:"
 msgstr ""
 
-#: ../lib/mate-menu.py:319
+#: ../lib/mate-menu.py:309
 msgid "Couldn't initialize plugin"
 msgstr ""
 
-#: ../lib/mate-menu.py:724
+#: ../lib/mate-menu.py:740
 msgid "Advanced MATE Menu"
 msgstr ""
 
-#: ../lib/mate-menu.py:806
+#: ../lib/mate-menu.py:834
 msgid "Preferences"
 msgstr ""
 
-#: ../lib/mate-menu.py:809
+#: ../lib/mate-menu.py:837
 msgid "Edit menu"
 msgstr ""
 
-#: ../lib/mate-menu.py:812
+#: ../lib/mate-menu.py:840
 msgid "Reload plugins"
 msgstr ""
 
-#: ../lib/mate-menu.py:815
+#: ../lib/mate-menu.py:843
 msgid "About"
 msgstr ""
 
@@ -331,27 +331,27 @@ msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:703
-#: ../mate_menu/plugins/applications.py:760
+#: ../mate_menu/plugins/applications.py:768
 msgid "Add to desktop"
 msgstr ""
 
 #: ../mate_menu/plugins/applications.py:704
-#: ../mate_menu/plugins/applications.py:761
+#: ../mate_menu/plugins/applications.py:769
 msgid "Add to panel"
 msgstr ""
 
 #: ../mate_menu/plugins/applications.py:706
-#: ../mate_menu/plugins/applications.py:743
+#: ../mate_menu/plugins/applications.py:747
 msgid "Insert space"
 msgstr ""
 
 #: ../mate_menu/plugins/applications.py:707
-#: ../mate_menu/plugins/applications.py:744
+#: ../mate_menu/plugins/applications.py:748
 msgid "Insert separator"
 msgstr ""
 
 #: ../mate_menu/plugins/applications.py:709
-#: ../mate_menu/plugins/applications.py:764
+#: ../mate_menu/plugins/applications.py:772
 msgid "Launch"
 msgstr ""
 
@@ -360,50 +360,50 @@ msgid "Remove from favorites"
 msgstr ""
 
 #: ../mate_menu/plugins/applications.py:712
-#: ../mate_menu/plugins/applications.py:767
+#: ../mate_menu/plugins/applications.py:775
 msgid "Edit properties"
 msgstr ""
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:742
+#: ../mate_menu/plugins/applications.py:746
 msgid "Remove"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:763
+#: ../mate_menu/plugins/applications.py:771
 msgid "Show in my favorites"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:765
+#: ../mate_menu/plugins/applications.py:773
 msgid "Delete from menu"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:805
+#: ../mate_menu/plugins/applications.py:817
 msgid "Search Google"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:824
 msgid "Search Wikipedia"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:822
+#: ../mate_menu/plugins/applications.py:834
 msgid "Lookup Dictionary"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:829
+#: ../mate_menu/plugins/applications.py:841
 msgid "Search Computer"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:1230
+#: ../mate_menu/plugins/applications.py:1245
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:1437
+#: ../mate_menu/plugins/applications.py:1452
 msgid "All"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:1437
+#: ../mate_menu/plugins/applications.py:1452
 msgid "Show all applications"
 msgstr ""
 
@@ -465,22 +465,22 @@ msgstr ""
 msgid "Recent documents"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:170
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:171
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:184
+#: ../mate_menu/keybinding.py:172
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:197
+#: ../mate_menu/keybinding.py:191
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:249
+#: ../mate_menu/keybinding.py:247
 msgid "<not set>"
 msgstr ""
