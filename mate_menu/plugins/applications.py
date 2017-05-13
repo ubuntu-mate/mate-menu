@@ -733,7 +733,7 @@ class pluginclass( object ):
                 mTree.show_all()
                 self.mateMenuWin.stopHiding()
                 mTree.attach_to_widget(widget, None)
-                if Gtk.check_version(3, 22, 0) is None:
+                if (Gtk.MAJOR_VERSION, Gtk.MINOR_VERSION) >= (3, 22):
                     mTree.popup_at_pointer(event)
                 else:
                     mTree.popup(None, None, None, None, event.button, event.time)
@@ -756,7 +756,7 @@ class pluginclass( object ):
                 insertSeparatorMenuItem.connect( "activate", self.onFavoritesInsertSeparator, widget, insertBefore )
                 self.mateMenuWin.stopHiding()
                 mTree.attach_to_widget(widget, None)
-                if Gtk.check_version(3, 22, 0) is None:
+                if (Gtk.MAJOR_VERSION, Gtk.MINOR_VERSION) >= (3, 22):
                     mTree.popup_at_pointer(event)
                 else:
                     mTree.popup(None, None, None, None, event.button, event.time)
@@ -806,7 +806,7 @@ class pluginclass( object ):
 
             self.mateMenuWin.stopHiding()
             mTree.attach_to_widget(widget, None)
-            if Gtk.check_version(3, 22, 0) is None:
+            if (Gtk.MAJOR_VERSION, Gtk.MINOR_VERSION) >= (3, 22):
                 mTree.popup_at_pointer(event)
             else:
                 mTree.popup(None, None, None, None, event.button, event.time)
@@ -850,7 +850,7 @@ class pluginclass( object ):
 
         self.mateMenuWin.stopHiding()
         menu.attach_to_widget(self.searchButton, None)
-        if Gtk.check_version(3, 22, 0) is None:
+        if (Gtk.MAJOR_VERSION, Gtk.MINOR_VERSION) >= (3, 22):
             menu.popup_at_widget(widget, Gdk.Gravity.SOUTH_WEST, Gdk.Gravity.NORTH_WEST, event)
         else:
             menu.popup(None, None, None, None, event.button, event.time)
