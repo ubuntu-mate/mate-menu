@@ -172,6 +172,8 @@ class easyButton( Gtk.Button ):
         HBox1.show()
         self.add( HBox1 )
 
+        self.connectSelf( "focus-in-event", self.onFocusIn )
+        self.connectSelf( "focus-out-event", self.onFocusOut )
         self.connectSelf( "destroy", self.onDestroy )
         self.connect( "released", self.onRelease )
         # Reload icons when the theme changed
@@ -179,6 +181,12 @@ class easyButton( Gtk.Button ):
 
     def connectSelf( self, event, callback ):
         self.connections.append( self.connect( event, callback ) )
+
+    def onFocusIn( self, widget, event ):
+        self.set_state_flags( Gtk.StateFlags.PRELIGHT, False )
+
+    def onFocusOut( self, widget, event ):
+        self.unset_state_flags( Gtk.StateFlags.PRELIGHT )
 
     def onRelease( self, widget ):
         widget.get_style_context().set_state( Gtk.StateFlags.NORMAL )
@@ -340,9 +348,11 @@ class ApplicationLauncher( easyButton ):
 
 
     def onFocusIn( self, widget, event ):
+        super(ApplicationLauncher, self).onFocusIn( widget, event )
         self.set_relief( Gtk.ReliefStyle.HALF )
 
     def onFocusOut( self, widget, event ):
+        super(ApplicationLauncher, self).onFocusOut( widget, event )
         self.set_relief( Gtk.ReliefStyle.NONE )
 
     def setupLabels( self ):

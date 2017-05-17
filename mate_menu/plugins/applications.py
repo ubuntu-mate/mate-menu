@@ -142,6 +142,8 @@ class SuggestionButton ( Gtk.Button ):
         Align1.show()
         self.add( Align1 )
         self.show()
+        self.connect( "focus-in-event", self.onFocusIn )
+        self.connect( "focus-out-event", self.onFocusOut )
 
     def set_image(self, path):
         self.image.set_from_file(path)
@@ -151,6 +153,12 @@ class SuggestionButton ( Gtk.Button ):
 
     def set_icon_size (self, size):
         self.image.set_pixel_size( size )
+
+    def onFocusIn( self, widget, event ):
+        self.set_state_flags( Gtk.StateFlags.PRELIGHT, False )
+
+    def onFocusOut( self, widget, event ):
+        self.unset_state_flags( Gtk.StateFlags.PRELIGHT )
 
 class pluginclass( object ):
     TARGET_TYPE_TEXT = 80
@@ -496,7 +504,11 @@ class pluginclass( object ):
         self.searchEntry.connect( "changed", self.Filter )
         self.searchEntry.connect( "activate", self.Search )
         self.showAllAppsButton.connect( "clicked", lambda widget: self.changeTab( 1 ) )
+        self.showAllAppsButton.connect( "focus-in-event", self.onFocusIn )
+        self.showAllAppsButton.connect( "focus-out-event", self.onFocusOut )
         self.showFavoritesButton.connect( "clicked", lambda widget: self.changeTab( 0 ) )
+        self.showFavoritesButton.connect( "focus-in-event", self.onFocusIn )
+        self.showFavoritesButton.connect( "focus-out-event", self.onFocusOut )
         self.buildButtonList()
 
     def blockOnPopup( self, *args ):
@@ -507,6 +519,12 @@ class pluginclass( object ):
         if event.button == 3:
             self.mateMenuWin.stopHiding()
         return False
+
+    def onFocusIn( self, widget, event ):
+        widget.set_state_flags( Gtk.StateFlags.PRELIGHT, False )
+
+    def onFocusOut( self, widget, event ):
+        widget.unset_state_flags( Gtk.StateFlags.PRELIGHT )
 
     def focusSearchEntry( self, clear = True ):
         # grab_focus() does select all text,
@@ -552,6 +570,7 @@ class pluginclass( object ):
         suggestionButton.set_text(_("Search Google for %s") % text)
         suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/google.ico")
         self.applicationsBox.add(suggestionButton)
+        self.applicationsBox.get_children()[-1].grab_focus()
         self.suggestions.append(suggestionButton)
 
         suggestionButton = SuggestionButton("list-add", self.iconSize, "")
