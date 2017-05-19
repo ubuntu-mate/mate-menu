@@ -641,11 +641,8 @@ class pluginclass( object ):
                             i.hide()
                         else:
                             shownList.append(i)
-                            
-                            #if this is the first matching item focus it
-                            if not showns:
-                                i.grab_focus()
-
+                            # Remove application from list so that we can re-add it in order
+                            self.applicationsBox.remove(i)
                             showns = True
                 if (not showns and os.path.exists("/usr/share/mate-menu/icons/mate-logo.svg")):
                     if len(text) >= 3:
@@ -657,6 +654,16 @@ class pluginclass( object ):
                 else:
                     self.current_suggestion = None
                     self.current_results = []
+                    # Sort applications by relevance, and alphabetical within that
+                    shownList = sorted(shownList, key=lambda app: app.appName)
+                    shownList = sorted(shownList, key=lambda app: app.relevance, reverse=True)
+                    focused = False
+                    for i in shownList:
+                        self.applicationsBox.add(i)
+                        if not focused:
+                            # Grab focus of the first app shown
+                            i.grab_focus()
+                            focused = True
 
                 for i in self.categoriesBox.get_children():
                     i.set_relief( Gtk.ReliefStyle.NONE )
