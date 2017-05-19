@@ -582,7 +582,7 @@ class pluginclass( object ):
             suggestionButton.set_text(_("Search DuckDuckGo for %s") % text)
             suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/ddg.ico")
             self.applicationsBox.add(suggestionButton)
-            if not focused
+            if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
                 focused = True
             self.suggestions.append(suggestionButton)
@@ -593,7 +593,7 @@ class pluginclass( object ):
             suggestionButton.set_text(_("Search Google for %s") % text)
             suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/google.ico")
             self.applicationsBox.add(suggestionButton)
-            if not focused
+            if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
                 focused = True
             self.suggestions.append(suggestionButton)
@@ -604,7 +604,7 @@ class pluginclass( object ):
             suggestionButton.set_text(_("Search Wikipedia for %s") % text)
             suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/wikipedia.ico")
             self.applicationsBox.add(suggestionButton)
-            if not focused
+            if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
                 focused = True
             self.suggestions.append(suggestionButton)
@@ -625,7 +625,7 @@ class pluginclass( object ):
             suggestionButton.set_text(_("Lookup %s in Dictionary") % text)
             suggestionButton.set_image("/usr/share/mate-menu/icons/dictionary.png")
             self.applicationsBox.add(suggestionButton)
-            if not focused
+            if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
                 focused = True
             self.suggestions.append(suggestionButton)
@@ -635,7 +635,7 @@ class pluginclass( object ):
             suggestionButton.connect("clicked", self.Search)
             suggestionButton.set_text(_("Search Computer for %s") % text)
             self.applicationsBox.add(suggestionButton)
-            if not focused
+            if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
                 focused = True
             self.suggestions.append(suggestionButton)
