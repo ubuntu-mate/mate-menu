@@ -19,22 +19,20 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
-__VERSION__='17.10.1'
+__VERSION__='17.10.2'
 
 import gc
 import gi
 import gettext
 import os
-import platform
 import subprocess
 import sys
 import traceback
-import signal
+import setproctitle
 
 gi.require_version("Gtk", "3.0")
 gi.require_version('MatePanelApplet', '4.0')
 
-from ctypes import *
 from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
 from gi.repository import MatePanelApplet
 from gi.repository import Gio
@@ -47,21 +45,9 @@ except Exception, e:
     print e
     sys.exit( 1 )
 
-signal.signal(signal.SIGINT, signal.SIG_DFL)
 
 # Rename the process
-architecture = platform.uname()[4]
-if architecture in 'x86_64':
-    libc = CDLL('libc.so.6')
-    libc.prctl(15, 'mate-menu', 0, 0, 0)
-else:
-    import dl
-    if os.path.exists('/lib/libc.so.6'):
-        libc = dl.open('/lib/libc.so.6')
-        libc.call('prctl', 15, 'mate-menu', 0, 0, 0)
-    elif os.path.exists('/lib/i386-linux-gnu/libc.so.6'):
-        libc = dl.open('/lib/i386-linux-gnu/libc.so.6')
-        libc.call('prctl', 15, 'mate-menu', 0, 0, 0)
+setproctitle.setproctitle('mate-menu')
 
 # i18n
 gettext.install("mate-menu", "/usr/share/locale")
