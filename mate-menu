@@ -19,6 +19,8 @@
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 import os
+import shutil
+import subprocess
 import sys
 
 if len(sys.argv) > 1:
@@ -36,8 +38,14 @@ if len(sys.argv) > 1:
                      "org.mate.mate-menu.plugins.applications",
                      "org.mate.mate-menu.plugins.recent",
                      "org.mate.mate-menu.plugins.system_management"):
-            os.system("gsettings reset-recursively " + path)
-        os.system("rm -rf \"" + os.path.join(configPath, "mate-menu") + "\"")
+            devnull = open(os.devnull, 'wb')
+            subprocess.call(['gsettings', 'reset-recursively', path], stdout=devnull, stderr=devnull)
+            devnull.close()
+
+        config_files = os.path.join(configPath, 'mate-menu')
+        if os.path.isdir(config_files):
+            shutil.rmtree(config_files)
+
         print("All MATE Menu settings are now restored to default")
 else:
     os.system("/usr/lib/mate-menu/mate-menu.py")
