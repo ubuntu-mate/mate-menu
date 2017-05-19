@@ -44,8 +44,7 @@ try:
     import mate_menu.pointerMonitor as pointerMonitor
 except Exception, e:
     print e
-    sys.exit( 1 )
-
+    sys.exit(1)
 
 signal.signal(signal.SIGINT, signal.SIG_DFL)
 
