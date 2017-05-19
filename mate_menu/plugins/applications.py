@@ -930,7 +930,7 @@ class pluginclass( object ):
 
     def delete_from_menu(self, widget, desktopEntry):
         try:
-            os.system("rm \"%s\" &" % desktopEntry.desktopFile)
+            os.remove(desktopEntry.desktopFile)
         except Exception, detail:
             print detail
 
@@ -1031,7 +1031,7 @@ class pluginclass( object ):
             
             self.mateMenuWin.hide()
             fullstring = self.searchtool.replace( "%s", text )
-            os.system(fullstring + " &")
+            subprocess.Popen([fullstring])
 
     def SearchWithButton( self, widget, event ):
         self.Search( widget )
