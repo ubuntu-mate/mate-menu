@@ -21,6 +21,7 @@
 import gettext
 import os
 import shutil
+import subprocess
 from gi.repository import GLib, Gio, Gtk
 from mate_menu.easybuttons import *
 from mate_menu.easygsettings import EasyGSettings
@@ -261,10 +262,8 @@ class pluginclass( object ):
 
     def launch_gtk_bookmark (self, widget, path):
         self.mateMenuWin.hide()
-
-        #FIXME: Check for caja on the path and fall back to xdg-open
-        os.system("caja \"%s\" &" % path)
-        #os.system("xdg-open \"%s\" &" % path)
+        #FIXME: Check for xdg-open and fallback to caja
+        subprocess.Popen(['caja', path])
 
     def trashPopup( self, widget, event ):
         if event.button == 3:
