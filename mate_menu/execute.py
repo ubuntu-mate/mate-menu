@@ -19,6 +19,7 @@
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 import os
+import subprocess
 
 def RemoveArgs(Execline):
 	NewExecline = []
@@ -45,7 +46,7 @@ def Execute( cmd , commandCwd=None):
 			print "running manually..."
 			try:
 				os.chdir(cwd)
-				os.system(cmd + " &")
+				subprocess.Popen([cmd])
 				return True
 			except Exception, detail:
 				print detail
@@ -56,8 +57,7 @@ def Execute( cmd , commandCwd=None):
 	try:
 		os.chdir( cwd )
 		string = ' '.join(cmd)
-		string = string + " &"
-		os.system(string)
+		subprocess.Popen([string])
 		return True
 	except Exception, detail:
 		print detail
