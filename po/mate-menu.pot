@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-17 13:17-0400\n"
+"POT-Creation-Date: 2017-05-19 11:16-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,36 +17,36 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../lib/mate-menu.py:69
+#: ../lib/mate-menu.py:57
 msgid "Menu"
 msgstr ""
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:236
+#: ../lib/mate-menu.py:224
 msgid "Couldn't load plugin:"
 msgstr ""
 
-#: ../lib/mate-menu.py:309
+#: ../lib/mate-menu.py:297
 msgid "Couldn't initialize plugin"
 msgstr ""
 
-#: ../lib/mate-menu.py:740
+#: ../lib/mate-menu.py:728
 msgid "Advanced MATE Menu"
 msgstr ""
 
-#: ../lib/mate-menu.py:834
+#: ../lib/mate-menu.py:822
 msgid "Preferences"
 msgstr ""
 
-#: ../lib/mate-menu.py:837
+#: ../lib/mate-menu.py:825
 msgid "Edit menu"
 msgstr ""
 
-#: ../lib/mate-menu.py:840
+#: ../lib/mate-menu.py:828
 msgid "Reload plugins"
 msgstr ""
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:831
 msgid "About"
 msgstr ""
 
@@ -393,17 +393,17 @@ msgstr ""
 msgid "Search Computer"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:1264
+#: ../mate_menu/plugins/applications.py:1265
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:1471
+#: ../mate_menu/plugins/applications.py:1470
 msgid "All"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:1471
+#: ../mate_menu/plugins/applications.py:1470
 msgid "Show all applications"
 msgstr ""
 
@@ -456,7 +456,7 @@ msgstr ""
 msgid "Browse deleted files"
 msgstr ""
 
-#: ../mate_menu/plugins/places.py:273
+#: ../mate_menu/plugins/places.py:271
 msgid "Empty trash"
 msgstr ""
 
