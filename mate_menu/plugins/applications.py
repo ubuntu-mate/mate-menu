@@ -245,6 +245,11 @@ class pluginclass( object ):
             self.settings.bindGSettingsEntryToVar( "bool", "do-not-filter", self, "donotfilterapps" )
             self.settings.bindGSettingsEntryToVar( "string", "search-command", self, "searchtool" )
             self.settings.bindGSettingsEntryToVar( "int", "default-tab", self, "defaultTab" )
+            self.settings.bindGSettingsEntryToVar( "bool", "enable-ddg", self, "enableddg" )
+            self.settings.bindGSettingsEntryToVar( "bool", "enable-google", self, "enablegoogle" )
+            self.settings.bindGSettingsEntryToVar( "bool", "enable-wikipedia", self, "enablewikipedia" )
+            self.settings.bindGSettingsEntryToVar( "bool", "enable-dictionary", self, "enabledictionary" )
+            self.settings.bindGSettingsEntryToVar( "bool", "enable-computer", self, "enablecomputer" )
         except Exception, detail:
             print detail
         self.currentFavCol = 0
@@ -432,6 +437,11 @@ class pluginclass( object ):
         self.categoryhoverdelay = self.settings.get( "int", "category-hover-delay")
         self.showapplicationcomments = self.settings.get( "bool", "show-application-comments")
         self.rememberFilter = self.settings.get( "bool", "remember-filter")
+        self.enableddg = self.settings.get( "bool", "enable-ddg")
+        self.enablegoogle = self.settings.get( "bool", "enable-google")
+        self.enablewikipedia = self.settings.get( "bool", "enable-wikipedia")
+        self.enabledictionary = self.settings.get( "bool", "enable-dictionary")
+        self.enablecomputer = self.settings.get( "bool", "enable-computer")
 
         self.lastActiveTab =  self.settings.get( "int", "last-active-tab")
         self.defaultTab = self.settings.get( "int", "default-tab")
@@ -564,21 +574,40 @@ class pluginclass( object ):
     def add_search_suggestions(self, text):
 
         text = "<b>%s</b>" % text
+        focused = False
 
-        suggestionButton = SuggestionButton("list-add", self.iconSize, "")
-        suggestionButton.connect("clicked", self.search_google)
-        suggestionButton.set_text(_("Search Google for %s") % text)
-        suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/google.ico")
-        self.applicationsBox.add(suggestionButton)
-        self.applicationsBox.get_children()[-1].grab_focus()
-        self.suggestions.append(suggestionButton)
+        if self.enableddg:
+            suggestionButton = SuggestionButton("list-add", self.iconSize, "")
+            suggestionButton.connect("clicked", self.search_ddg)
+            suggestionButton.set_text(_("Search DuckDuckGo for %s") % text)
+            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/ddg.ico")
+            self.applicationsBox.add(suggestionButton)
+            if not focused:
+                self.applicationsBox.get_children()[-1].grab_focus()
+                focused = True
+            self.suggestions.append(suggestionButton)
 
-        suggestionButton = SuggestionButton("list-add", self.iconSize, "")
-        suggestionButton.connect("clicked", self.search_wikipedia)
-        suggestionButton.set_text(_("Search Wikipedia for %s") % text)
-        suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/wikipedia.ico")
-        self.applicationsBox.add(suggestionButton)
-        self.suggestions.append(suggestionButton)
+        if self.enablegoogle:
+            suggestionButton = SuggestionButton("list-add", self.iconSize, "")
+            suggestionButton.connect("clicked", self.search_google)
+            suggestionButton.set_text(_("Search Google for %s") % text)
+            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/google.ico")
+            self.applicationsBox.add(suggestionButton)
+            if not focused:
+                self.applicationsBox.get_children()[-1].grab_focus()
+                focused = True
+            self.suggestions.append(suggestionButton)
+
+        if self.enablewikipedia:
+            suggestionButton = SuggestionButton("list-add", self.iconSize, "")
+            suggestionButton.connect("clicked", self.search_wikipedia)
+            suggestionButton.set_text(_("Search Wikipedia for %s") % text)
+            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/wikipedia.ico")
+            self.applicationsBox.add(suggestionButton)
+            if not focused:
+                self.applicationsBox.get_children()[-1].grab_focus()
+                focused = True
+            self.suggestions.append(suggestionButton)
 
         separator = Gtk.EventBox()
         separator.add(Gtk.Separator( orientation=Gtk.Orientation.HORIZONTAL ))
@@ -590,18 +619,26 @@ class pluginclass( object ):
         self.applicationsBox.add(separator)
         self.suggestions.append(separator)
 
-        suggestionButton = SuggestionButton("list-add", self.iconSize, "")
-        suggestionButton.connect("clicked", self.search_dictionary)
-        suggestionButton.set_text(_("Lookup %s in Dictionary") % text)
-        suggestionButton.set_image("/usr/share/mate-menu/icons/dictionary.png")
-        self.applicationsBox.add(suggestionButton)
-        self.suggestions.append(suggestionButton)
+        if self.enabledictionary:
+            suggestionButton = SuggestionButton("list-add", self.iconSize, "")
+            suggestionButton.connect("clicked", self.search_dictionary)
+            suggestionButton.set_text(_("Lookup %s in Dictionary") % text)
+            suggestionButton.set_image("/usr/share/mate-menu/icons/dictionary.png")
+            self.applicationsBox.add(suggestionButton)
+            if not focused:
+                self.applicationsBox.get_children()[-1].grab_focus()
+                focused = True
+            self.suggestions.append(suggestionButton)
 
-        suggestionButton = SuggestionButton("edit-find", self.iconSize, "")
-        suggestionButton.connect("clicked", self.Search)
-        suggestionButton.set_text(_("Search Computer for %s") % text)
-        self.applicationsBox.add(suggestionButton)
-        self.suggestions.append(suggestionButton)
+        if self.enablecomputer:
+            suggestionButton = SuggestionButton("edit-find", self.iconSize, "")
+            suggestionButton.connect("clicked", self.Search)
+            suggestionButton.set_text(_("Search Computer for %s") % text)
+            self.applicationsBox.add(suggestionButton)
+            if not focused:
+                self.applicationsBox.get_children()[-1].grab_focus()
+                focused = True
+            self.suggestions.append(suggestionButton)
 
         #self.last_separator = Gtk.EventBox()
         #self.last_separator.add(Gtk.Separator( orientation=Gtk.Orientation.HORIZONTAL ))
@@ -892,6 +929,12 @@ class pluginclass( object ):
         x = rect.x + rect.width
         y = rect.y + rect.height
         return (x, y, False)
+
+    def search_ddg(self, widget):
+        text = self.searchEntry.get_text()
+        text = text.replace(" ", "+")
+        subprocess.call(['xdg-open', 'https://duckduckgo.com/?q=' + text])
+        self.mateMenuWin.hide()
 
     def search_google(self, widget):
         text = self.searchEntry.get_text()
