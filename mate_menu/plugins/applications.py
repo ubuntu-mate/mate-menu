@@ -27,6 +27,7 @@ import os
 import shutil
 import string
 import gettext
+import shlex
 import subprocess
 import filecmp
 from mate_menu.easybuttons import *
@@ -1074,7 +1075,7 @@ class pluginclass( object ):
 
             self.mateMenuWin.hide()
             fullstring = self.searchtool.replace( "%s", text )
-            subprocess.Popen(fullstring.split(' '))
+            subprocess.Popen(shlex.split(fullstring))
 
     def SearchWithButton( self, widget, event ):
         self.Search( widget )
