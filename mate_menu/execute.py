@@ -46,7 +46,7 @@ def Execute( cmd , commandCwd=None):
 			print "running manually..."
 			try:
 				os.chdir(cwd)
-				subprocess.Popen([cmd])
+				subprocess.Popen(cmd.split(' '))
 				return True
 			except Exception, detail:
 				print detail
@@ -57,7 +57,7 @@ def Execute( cmd , commandCwd=None):
 	try:
 		os.chdir( cwd )
 		string = ' '.join(cmd)
-		subprocess.Popen([string])
+		subprocess.Popen(string.split(' '))
 		return True
 	except Exception, detail:
 		print detail

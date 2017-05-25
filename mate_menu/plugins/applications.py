@@ -1071,10 +1071,10 @@ class pluginclass( object ):
                     app_button.execute()
                     self.mateMenuWin.hide()
                     return
-            
+
             self.mateMenuWin.hide()
             fullstring = self.searchtool.replace( "%s", text )
-            subprocess.Popen([fullstring])
+            subprocess.Popen(fullstring.split(' '))
 
     def SearchWithButton( self, widget, event ):
         self.Search( widget )
