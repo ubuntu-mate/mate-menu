@@ -19,6 +19,7 @@
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 import os
+import shlex
 import subprocess
 
 def RemoveArgs(Execline):
@@ -46,7 +47,7 @@ def Execute( cmd , commandCwd=None):
 			print "running manually..."
 			try:
 				os.chdir(cwd)
-				subprocess.Popen(cmd.split(' '))
+				subprocess.Popen(shlex.split(cmd))
 				return True
 			except Exception, detail:
 				print detail
@@ -57,7 +58,7 @@ def Execute( cmd , commandCwd=None):
 	try:
 		os.chdir( cwd )
 		string = ' '.join(cmd)
-		subprocess.Popen(string.split(' '))
+		subprocess.Popen(shlex.split(string))
 		return True
 	except Exception, detail:
 		print detail
