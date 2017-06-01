@@ -369,6 +369,11 @@ class ApplicationLauncher( easyButton ):
         for keyword in keywords:
             keyw = self.strip_accents(keyword)
 
+            # Hide if the term does not match
+            if keyw != "" and appName.find( keyw ) == -1 and appGenericName.find( keyw ) == -1 and appComment.find( keyw ) == -1 and appExec.find( keyw ) == -1:
+                self.hide()
+                return False
+
             # Give better ranking to the actual app name
             if appName == keyw:
                 self.relevance += 32
@@ -383,9 +388,6 @@ class ApplicationLauncher( easyButton ):
                 self.relevance += 2
             if appGenericName.find( keyw ) != -1:
                 self.relevance += 1
-            if keyw != "" and appName.find( keyw ) == -1 and appGenericName.find( keyw ) == -1 and appComment.find( keyw ) == -1 and appExec.find( keyw ) == -1:
-                self.hide()
-                return False
 
         self.show()
         return True
