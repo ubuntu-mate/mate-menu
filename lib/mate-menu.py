@@ -734,9 +734,16 @@ class MenuWin( object ):
         Execute( os.path.join( "/", "usr", "lib", "mate-menu", "mate-menu-config.py" ) )
 
     def showMenuEditor( self, action, userdata = None ):
-        try:
+        def pathExists(filename):
+            if os.path.exists(filename):
+                return True
+            for path in os.environ["PATH"].split(os.pathsep):
+                if os.path.exists(os.path.join(path, filename)):
+                    return True
+
+        if pathExists("menulibre"):
             Execute("menulibre")
-        except:
+        elif pathExists("mozo"):
             Execute("mozo")
 
     def showMenu( self, widget=None, event=None ):
