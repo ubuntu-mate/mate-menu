@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-19 10:46-0400\n"
+"POT-Creation-Date: 2017-05-22 09:09-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -425,11 +425,11 @@ msgid ""
 "menu"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:1514
+#: ../mate_menu/plugins/applications.py:1513
 msgid "All"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:1514
+#: ../mate_menu/plugins/applications.py:1513
 msgid "Show all applications"
 msgstr ""
 

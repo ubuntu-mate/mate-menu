@@ -1207,7 +1207,7 @@ class pluginclass( object ):
                     favButton.drag_source_set (Gdk.ModifierType.BUTTON1_MASK, self.toFav, Gdk.DragAction.COPY)
                     favButton.drag_dest_set(Gtk.DestDefaults.MOTION | Gtk.DestDefaults.HIGHLIGHT | Gtk.DestDefaults.DROP, self.toFav, Gdk.DragAction.COPY)
                     favButton.connect("drag-data-get", self.on_drag_data_get)
-                    favButton.connect("drag-data-received", self.on_drag_data_received)                    
+                    favButton.connect("drag-data-received", self.on_drag_data_received)
                     position += 1
 
             self.favoritesSave()
@@ -1269,7 +1269,7 @@ class pluginclass( object ):
             favButton.connect("drag-data-received", self.on_drag_data_received)
             favButton.drag_dest_set(Gtk.DestDefaults.MOTION | Gtk.DestDefaults.HIGHLIGHT | Gtk.DestDefaults.DROP, self.toFav, Gdk.DragAction.COPY)
             favButton.connect("drag-data-get", self.on_drag_data_get)
-            favButton.drag_source_set (Gdk.ModifierType.BUTTON1_MASK, self.toFav, Gdk.DragAction.COPY)            
+            favButton.drag_source_set (Gdk.ModifierType.BUTTON1_MASK, self.toFav, Gdk.DragAction.COPY)
 
             if position >= 0:
                 self.favoritesReorder( favButton.position, position )
@@ -1316,14 +1316,13 @@ class pluginclass( object ):
 
         return False
 
-    def on_drag_data_received( self, widget, context, x, y, selection, info, time):
+    def on_drag_data_received( self, widget, context, x, y, selection, info, time ):
         if info == self.TARGET_TYPE_FAV:
-            self.favoritesReorder( int(selection.get_data()), widget.position )    
+            self.favoritesReorder( int(selection.get_data()), widget.position )
 
-    def onFavButtonDragReorder( self, widget, context, x, y, selection, targetType, time  ):
+    def on_drag_data_get( self, widget, context, selection, targetType, time ):
         if targetType == self.TARGET_TYPE_FAV:
-            #self.favoritesReorder( int(selection.data), widget.position )
-            self.favoritesReorder( self.drag_origin, widget.position )
+            selection.set(Gdk.SELECTION_CLIPBOARD, 8, str(widget.position))
 
     def on_icon_theme_changed(self, theme):
         self.menuChanged (0, 0)
