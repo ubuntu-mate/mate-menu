@@ -282,6 +282,7 @@ class ApplicationLauncher( easyButton ):
 
         self.desktopFile = desktopFile
         self.startupMonitorId = 0
+        self.relevance = 0
 
         self.loadDesktopEntry( desktopItem )
 
@@ -360,15 +361,33 @@ class ApplicationLauncher( easyButton ):
 
     def filterText( self, text ):
         keywords = text.lower().split()
+        self.relevance = 0
         appName = self.appName.lower()
         appGenericName = self.appGenericName.lower()
         appComment = self.appComment.lower()
         appExec = self.appExec.lower()
         for keyword in keywords:
             keyw = self.strip_accents(keyword)
+
+            # Hide if the term does not match
             if keyw != "" and appName.find( keyw ) == -1 and appGenericName.find( keyw ) == -1 and appComment.find( keyw ) == -1 and appExec.find( keyw ) == -1:
                 self.hide()
                 return False
+
+            # Give better ranking to the actual app name
+            if appName == keyw:
+                self.relevance += 32
+            elif appName.find( keyw ) == 0:
+                self.relevance += 16
+            elif appName.find( keyw ) != -1:
+                self.relevance += 8
+
+            if appExec.find( keyw ) != -1:
+                self.relevance += 4
+            if appComment.find( keyw ) != -1:
+                self.relevance += 2
+            if appGenericName.find( keyw ) != -1:
+                self.relevance += 1
 
         self.show()
         return True
