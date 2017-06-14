@@ -188,8 +188,8 @@ class pluginclass( object ):
                 configPath = os.environ.get("XDG_CONFIG_HOME",
                                             os.path.join( os.environ["HOME"], ".config"))
                 config = ConfigObj(os.path.join(configPath, "user-dirs.dirs"))
-                tmpdesktopDir = config['XDG_DESKTOP_DIR']
-                if os.path.exists(os.path.expandvars(tmpdesktopDir)):
+                tmpdesktopDir = os.path.expandvars(config['XDG_DESKTOP_DIR'])
+                if os.path.exists(tmpdesktopDir):
                     desktopDir = tmpdesktopDir
             except Exception, detail:
                 print detail
