@@ -85,6 +85,15 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
             self.keycode = self.keymap.get_entries_for_keyval(keyval)[1][0].keycode
         self.modifiers = int(modifiers)
 
+        # Request to receive key press/release reports from other windows that may not be using modifiers
+        catch = error.CatchError(error.BadWindow)
+        if self.modifiers:
+            self.window.change_attributes(onerror=catch, event_mask = X.KeyPressMask | X.KeyReleaseMask)
+        else:
+            self.window.change_attributes(onerror=catch, event_mask = X.NoEventMask)
+        if catch.get_error():
+            return False
+
         catch = error.CatchError(error.BadAccess)
         for ignored_mask in self.ignored_masks:
             mod = modifiers | ignored_mask
@@ -145,7 +154,9 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
                         GLib.idle_add(self.idle)
                     self.display.allow_events(X.AsyncKeyboard, event.time)
                 else:
-                    self.display.send_event(self.window, event, X.KeyPressMask | X.KeyReleaseMask, True)
+                    # If we're not using modifiers, send the event up in case another window is listening to it
+                    if not self.modifiers:
+                        self.display.send_event(self.window, event, X.KeyPressMask | X.KeyReleaseMask, True)
                     self.display.allow_events(X.ReplayKeyboard, event.time)
                     wait_for_release = False
             except AttributeError:
