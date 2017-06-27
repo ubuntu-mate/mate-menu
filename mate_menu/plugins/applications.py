@@ -143,6 +143,7 @@ class SuggestionButton ( Gtk.Button ):
         Align1.show()
         self.add( Align1 )
         self.show()
+        self.connect( "enter-notify-event", self.onEnter )
         self.connect( "focus-in-event", self.onFocusIn )
         self.connect( "focus-out-event", self.onFocusOut )
 
@@ -154,6 +155,9 @@ class SuggestionButton ( Gtk.Button ):
 
     def set_icon_size (self, size):
         self.image.set_pixel_size( size )
+
+    def onEnter( self, widget, event ):
+        self.grab_focus()
 
     def onFocusIn( self, widget, event ):
         self.set_state_flags( Gtk.StateFlags.PRELIGHT, False )
@@ -515,9 +519,11 @@ class pluginclass( object ):
         self.searchEntry.connect( "changed", self.Filter )
         self.searchEntry.connect( "activate", self.Search )
         self.showAllAppsButton.connect( "clicked", lambda widget: self.changeTab( 1 ) )
+        self.showAllAppsButton.connect( "enter-notify-event", self.onEnter )
         self.showAllAppsButton.connect( "focus-in-event", self.onFocusIn )
         self.showAllAppsButton.connect( "focus-out-event", self.onFocusOut )
         self.showFavoritesButton.connect( "clicked", lambda widget: self.changeTab( 0 ) )
+        self.showFavoritesButton.connect( "enter-notify-event", self.onEnter )
         self.showFavoritesButton.connect( "focus-in-event", self.onFocusIn )
         self.showFavoritesButton.connect( "focus-out-event", self.onFocusOut )
         self.buildButtonList()
@@ -530,6 +536,9 @@ class pluginclass( object ):
         if event.button == 3:
             self.mateMenuWin.stopHiding()
         return False
+
+    def onEnter( self, widget, event ):
+        widget.grab_focus()
 
     def onFocusIn( self, widget, event ):
         widget.set_state_flags( Gtk.StateFlags.PRELIGHT, False )
