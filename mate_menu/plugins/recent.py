@@ -74,7 +74,11 @@ class pluginclass:
         self.builder.get_object( "RecentTabs" ).set_current_page(1)
 
         #Connect event handlers
-        self.builder.get_object("ClrBtn").connect("clicked", self.clrmenu)
+        clr_btn = self.builder.get_object("ClrBtn")
+        clr_btn.connect("clicked", self.clrmenu)
+        clr_btn.connect("enter-notify-event", self.onEnter)
+        clr_btn.connect("focus-in-event", self.onFocusIn)
+        clr_btn.connect("focus-out-event", self.onFocusOut)
 
     def wake (self) :
         pass
@@ -150,6 +154,9 @@ class pluginclass:
         AButton.remove( AButton.get_children()[0] )
         AButton.set_size_request( 200, -1 )
         AButton.set_relief( Gtk.ReliefStyle.NONE )
+        AButton.connect( "enter-notify-event", self.onEnter )
+        AButton.connect( "focus-in-event", self.onFocusIn )
+        AButton.connect( "focus-out-event", self.onFocusOut )
         AButton.connect( "clicked", self.callback, Name )
         AButton.show()
 
@@ -168,6 +175,15 @@ class pluginclass:
         AButton.show_all()
 
         self.recentBox.pack_start( AButton, False, True, 0 )
+
+    def onEnter(self, widget, event):
+        widget.grab_focus()
+
+    def onFocusIn(self, widget, event):
+        widget.set_state_flags( Gtk.StateFlags.PRELIGHT, False )
+
+    def onFocusOut(self, widget, event):
+        widget.unset_state_flags( Gtk.StateFlags.PRELIGHT )
 
     def callback(self, widget, filename=None):
         self.Win.hide()

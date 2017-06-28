@@ -172,6 +172,7 @@ class easyButton( Gtk.Button ):
         HBox1.show()
         self.add( HBox1 )
 
+        self.connectSelf( "enter-notify-event", self.onEnter )
         self.connectSelf( "focus-in-event", self.onFocusIn )
         self.connectSelf( "focus-out-event", self.onFocusOut )
         self.connectSelf( "destroy", self.onDestroy )
@@ -181,6 +182,9 @@ class easyButton( Gtk.Button ):
 
     def connectSelf( self, event, callback ):
         self.connections.append( self.connect( event, callback ) )
+
+    def onEnter( self, widget, event ):
+        self.grab_focus()
 
     def onFocusIn( self, widget, event ):
         self.set_state_flags( Gtk.StateFlags.PRELIGHT, False )
