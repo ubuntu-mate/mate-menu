@@ -110,6 +110,12 @@
       <description></description>
     </key>
 
+    <key type="b" name="always-show-search">
+      <default>false</default>
+      <summary></summary>
+      <description></description>
+    </key>
+
     <key type="b" name="enable-ddg">
       <default>true</default>
       <summary></summary>

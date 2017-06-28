@@ -79,6 +79,7 @@ class mateMenuConfig( object ):
         self.builder.get_object("mainbuttonLabel").set_text(_("Main button"))
         self.builder.get_object("pluginsLabel").set_text(_("Plugins"))
 
+        self.builder.get_object("always_show_search").set_label(_("Always show search suggestions"))
         self.builder.get_object("searchEngineTitleLabel").set_text(_("Search Engines:"))
         self.builder.get_object("enable_ddg").set_label(_("DuckDuckGo"))
         self.builder.get_object("enable_google").set_label(_("Google"))
@@ -140,6 +141,7 @@ class mateMenuConfig( object ):
         self.hover = self.builder.get_object( "hover" )
         self.hoverDelay = self.builder.get_object( "hoverDelay" )
         self.rememberFilter = self.builder.get_object( "remember_filter" )
+        self.alwaysShowSearch = self.builder.get_object( "always_show_search" )
         self.enableDdg = self.builder.get_object( "enable_ddg" )
         self.enableGoogle = self.builder.get_object( "enable_google" )
         self.enableWikipedia = self.builder.get_object( "enable_wikipedia" )
@@ -222,6 +224,7 @@ class mateMenuConfig( object ):
         self.bindGSettingsValueToWidget( self.settingsApplications, "int", "fav-cols", self.favCols, "value-changed", self.favCols.set_value, self.favCols.get_value )
         self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "remember-filter", self.rememberFilter, "toggled", self.rememberFilter.set_active, self.rememberFilter.get_active)
 
+        self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "always-show-search", self.alwaysShowSearch, "toggled", self.alwaysShowSearch.set_active, self.alwaysShowSearch.get_active)
         self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "enable-ddg", self.enableDdg, "toggled", self.enableDdg.set_active, self.enableDdg.get_active)
         self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "enable-google", self.enableGoogle, "toggled", self.enableGoogle.set_active, self.enableGoogle.get_active)
         self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "enable-wikipedia", self.enableWikipedia, "toggled", self.enableWikipedia.set_active, self.enableWikipedia.get_active)
