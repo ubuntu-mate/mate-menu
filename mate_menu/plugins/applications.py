@@ -246,6 +246,7 @@ class pluginclass( object ):
             self.settings.bindGSettingsEntryToVar( "bool", "do-not-filter", self, "donotfilterapps" )
             self.settings.bindGSettingsEntryToVar( "string", "search-command", self, "searchtool" )
             self.settings.bindGSettingsEntryToVar( "int", "default-tab", self, "defaultTab" )
+            self.settings.bindGSettingsEntryToVar( "bool", "always-show-search", self, "alwaysshowsearch" )
             self.settings.bindGSettingsEntryToVar( "bool", "enable-ddg", self, "enableddg" )
             self.settings.bindGSettingsEntryToVar( "bool", "enable-google", self, "enablegoogle" )
             self.settings.bindGSettingsEntryToVar( "bool", "enable-wikipedia", self, "enablewikipedia" )
@@ -438,6 +439,7 @@ class pluginclass( object ):
         self.categoryhoverdelay = self.settings.get( "int", "category-hover-delay")
         self.showapplicationcomments = self.settings.get( "bool", "show-application-comments")
         self.rememberFilter = self.settings.get( "bool", "remember-filter")
+        self.alwaysshowsearch = self.settings.get( "bool", "always-show-search")
         self.enableddg = self.settings.get( "bool", "enable-ddg")
         self.enablegoogle = self.settings.get( "bool", "enable-google")
         self.enablewikipedia = self.settings.get( "bool", "enable-wikipedia")
@@ -572,10 +574,10 @@ class pluginclass( object ):
             GLib.source_remove( self.filterTimer )
             self.filterTimer = None
 
-    def add_search_suggestions(self, text):
+    def add_search_suggestions(self, text, already_focused = False):
 
         text = "<b>%s</b>" % text
-        focused = False
+        focused = already_focused
 
         if self.enableddg:
             suggestionButton = SuggestionButton("list-add", self.iconSize, "")
@@ -690,8 +692,6 @@ class pluginclass( object ):
                         self.current_suggestion = None
                         self.current_results = []
                 else:
-                    self.current_suggestion = None
-                    self.current_results = []
                     # Sort applications by relevance, and alphabetical within that
                     shownList = sorted(shownList, key=lambda app: app.appName)
                     shownList = sorted(shownList, key=lambda app: app.relevance, reverse=True)
@@ -702,6 +702,12 @@ class pluginclass( object ):
                             # Grab focus of the first app shown
                             i.grab_focus()
                             focused = True
+                    if self.alwaysshowsearch:
+                        self.add_search_suggestions(text, focused)
+                        self.current_suggestion = text
+                    else:
+                        self.current_suggestion = None
+                        self.current_results = []
 
                 for i in self.categoriesBox.get_children():
                     i.set_relief( Gtk.ReliefStyle.NONE )
@@ -877,6 +883,13 @@ class pluginclass( object ):
 
     def searchPopup( self, widget=None, event=None ):
         menu = Gtk.Menu()
+
+        menuItem = Gtk.ImageMenuItem(label=_("Search DuckDuckGo"))
+        img = Gtk.Image()
+        img.set_from_file('/usr/share/mate-menu/icons/search_engines/ddg.ico')
+        menuItem.set_image(img)
+        menuItem.connect("activate", self.search_ddg)
+        menu.append(menuItem)
 
         menuItem = Gtk.ImageMenuItem(label=_("Search Google"))
         img = Gtk.Image()
