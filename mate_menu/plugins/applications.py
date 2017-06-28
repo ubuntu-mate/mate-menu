@@ -547,14 +547,20 @@ class pluginclass( object ):
         widget.unset_state_flags( Gtk.StateFlags.PRELIGHT )
 
     def focusSearchEntry( self, clear = True ):
-        # grab_focus() does select all text,
-        # restoring the original selection is somehow broken, so just select the end
-        # of the existing text, that's the most likely candidate anyhow
-        self.searchEntry.grab_focus()
-        if self.rememberFilter or not clear:
-            self.searchEntry.set_position(-1)
-        else:
-            self.searchEntry.set_text("")
+        def doFocusSearchEntry():
+            # grab_focus() does select all text,
+            # restoring the original selection is somehow broken, so just select the end
+            # of the existing text, that's the most likely candidate anyhow
+            self.searchEntry.grab_focus()
+            if self.rememberFilter or not clear:
+                self.searchEntry.set_position(-1)
+            else:
+                self.searchEntry.set_text("")
+
+        # Focus after a small timeout so that the pointer doesn't steal focus
+        # from the search entry if its position happens to be within the menu
+        # window.
+        GLib.timeout_add(100, doFocusSearchEntry)
 
     def buildButtonList( self ):
         if self.buildingButtonList:
