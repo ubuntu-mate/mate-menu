@@ -822,6 +822,18 @@ class MenuWin( object ):
             if applet_orient == MatePanelApplet.AppletOrient.RIGHT:
                 newX -= entryWidth;
 
+        # Bind to the bottom
+        if newY + ourHeight > (monitorGeometry.y + monitorGeometry.height):
+            newY = (monitorGeometry.y + monitorGeometry.height) - ourHeight
+            if applet_orient == MatePanelApplet.AppletOrient.UP:
+                newY -= entryHeight
+
+        # Bind to the top
+        if newY < monitorGeometry.y:
+            newY = monitorGeometry.y
+            if applet_orient == MatePanelApplet.AppletOrient.DOWN:
+                newY -= entryHeight
+
         # Move window
         self.mainwin.window.move( newX, newY )
 
