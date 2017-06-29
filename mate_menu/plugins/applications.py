@@ -715,7 +715,7 @@ class pluginclass( object ):
                         self.applicationsBox.add(i)
                         if not focused:
                             # Grab focus of the first app shown
-                            i.grab_focus()
+                            GLib.timeout_add(20, i.grab_focus)
                             focused = True
                     if self.alwaysshowsearch:
                         self.add_search_suggestions(text, focused)
