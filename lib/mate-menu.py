@@ -531,7 +531,7 @@ class MenuWin( object ):
             print "Error Report :\n", str(cause)
 
         self.applet.set_can_focus(False)
-        
+
         try:
             self.pointerMonitor = pointerMonitor.PointerMonitor()
             self.pointerMonitor.connect("activate", self.onPointerOutside)
@@ -795,33 +795,34 @@ class MenuWin( object ):
             monitor = screen.get_monitor_at_window(self.applet.get_window())
             monitorGeometry = screen.get_monitor_geometry(monitor)
 
-        if self.applet.get_orient() == MatePanelApplet.AppletOrient.UP or self.applet.get_orient() == MatePanelApplet.AppletOrient.DOWN:
-            if entryX + ourWidth < monitorGeometry.width or entryX + entryWidth / 2 < monitorGeometry.width / 2:
-            # Align to the left of the entry
-                newX = entryX
-            else:
-                # Align to the right of the entry
-                newX = entryX + entryWidth - ourWidth
+        applet_orient = self.applet.get_orient()
+        if applet_orient == MatePanelApplet.AppletOrient.UP:
+            newX = entryX
+            newY = entryY - ourHeight
+        elif applet_orient == MatePanelApplet.AppletOrient.DOWN:
+            newX = entryX
+            newY = entryY + entryHeight
+        elif applet_orient == MatePanelApplet.AppletOrient.RIGHT:
+            newX = entryX + entryWidth
+            newY = entryY
+        elif applet_orient == MatePanelApplet.AppletOrient.LEFT:
+            newX = entryX - ourWidth
+            newY = entryY
 
-            if entryY + entryHeight / 2 < monitorGeometry.height / 2:
-                # Align to the bottom of the entry
-                newY = entryY + entryHeight
-            else:
-                newY = entryY - ourHeight
-        else:
-            if entryX + entryWidth / 2 < monitorGeometry.width / 2:
-                # Align to the left of the entry
-                newX = entryX + entryWidth
-            else:
-                # Align to the right of the entry
-                newX = entryX - ourWidth
+        # Adjust for offset if we reach the end of the screen
+        # Bind to the right side
+        if newX + ourWidth > (monitorGeometry.x + monitorGeometry.width):
+            newX = (monitorGeometry.x + monitorGeometry.width) - ourWidth
+            if applet_orient == MatePanelApplet.AppletOrient.LEFT:
+                newX -= entryWidth
 
-            if entryY + ourHeight < monitorGeometry.height or entryY + entryHeight / 2 < monitorGeometry.height / 2:
-                # Align to the bottom of the entry
-                newY = entryY
-            else:
-                newY = entryY - ourHeight + entryHeight
-        # -"Move window"
+        # Bind to the left side
+        if newX < monitorGeometry.x:
+            newX = monitorGeometry.x
+            if applet_orient == MatePanelApplet.AppletOrient.RIGHT:
+                newX -= entryWidth;
+
+        # Move window
         self.mainwin.window.move( newX, newY )
 
     # this callback is to create a context menu
