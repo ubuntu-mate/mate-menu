@@ -179,8 +179,8 @@ class pluginclass( object ):
                 tmpdesktopDir = os.path.expandvars(config['XDG_DESKTOP_DIR'])
                 if os.path.exists(tmpdesktopDir):
                     desktopDir = tmpdesktopDir
-            except Exception, detail:
-                print detail
+            except Exception as detail:
+                print(detail)
             Button4 = easyButton( "desktop", self.iconsize, [_("Desktop")], -1, -1 )
             Button4.connect("clicked", self.ButtonClicked, "xdg-open \"" + desktopDir + "\"")
             Button4.show()

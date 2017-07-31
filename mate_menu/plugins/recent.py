@@ -207,7 +207,7 @@ class pluginclass:
         FileString=[]
         IconString=[]
         RecentInfo=self.RecManagerInstance.get_items()
-        # print RecentInfo[0].get_icon(Gtk.IconSize.MENU)
+        # print(RecentInfo[0].get_icon(Gtk.IconSize.MENU))
         count=0
         MaxEntries=self.numentries
         if self.numentries == -1:

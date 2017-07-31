@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 # Copyright (C) 2007-2014 Clement Lefebvre <root@linuxmint.com>
@@ -24,6 +24,7 @@ __VERSION__='18.04.3'
 import gc
 import gi
 import gettext
+import importlib
 import os
 import subprocess
 import sys
@@ -42,8 +43,8 @@ try:
     import xdg.Config
     import mate_menu.keybinding as keybinding
     import mate_menu.pointerMonitor as pointerMonitor
-except Exception, e:
-    print e
+except Exception as e:
+    print(e)
     sys.exit(1)
 
 signal.signal(signal.SIGINT, signal.SIG_DFL)
@@ -193,19 +194,19 @@ class MainWindow( object ):
 
         for plugin in self.pluginlist:
             if plugin in self.plugins:
-                print u"Duplicate plugin in list: ", plugin
+                print(u"Duplicate plugin in list: ", plugin)
                 continue
 
             if plugin != "newpane":
                 try:
                     plugin_module = 'mate_menu.plugins.{plugin}'.format(plugin=plugin)
-                    exec("from {plugin_module} import pluginclass".format(plugin_module=plugin_module))
+                    MyPluginClass = importlib.import_module(plugin_module)
                     # If no parameter passed to plugin it is autonomous
-                    if pluginclass.__init__.func_code.co_argcount == 1:
-                        MyPlugin = pluginclass()
+                    if MyPluginClass.pluginclass.__init__.__code__.co_argcount == 1:
+                        MyPlugin = MyPluginClass.pluginclass()
                     else:
                         # pass mateMenu and togglebutton instance so that the plugin can use it
-                        MyPlugin = pluginclass(self, self.toggle)
+                        MyPlugin = MyPluginClass.pluginclass(self, self.toggle)
 
                     if not MyPlugin.icon:
                         MyPlugin.icon = "mate-logo-icon.png"
@@ -217,8 +218,8 @@ class MainWindow( object ):
                     #        ImageBox.add( Image1 )
                     #        Image1.show()
 
-                    #print u"Loading plugin '" + plugin + "' : sucessful"
-                except Exception, e:
+                    #print(u"Loading plugin '" + plugin + "' : sucessful")
+                except Exception as e:
                     MyPlugin = Gtk.EventBox() #Fake class for MyPlugin
                     MyPlugin.heading = _("Couldn't load plugin:") + " " + plugin
                     MyPlugin.content_holder = Gtk.EventBox()
@@ -237,7 +238,7 @@ class MainWindow( object ):
                     MyPlugin.add( MyPlugin.content_holder )
                     MyPlugin.width = 270
                     MyPlugin.icon = 'mate-logo-icon.png'
-                    print u"Unable to load " + plugin + " plugin :-("
+                    print(u"Unable to load " + plugin + " plugin :-(")
 
 
                 self.panesToColor.append( MyPlugin.content_holder )
@@ -351,7 +352,7 @@ class MainWindow( object ):
     def SetupMateMenuBorder(self):
         style = self.window.get_style_context()
         styleProvider = Gtk.CssProvider()
-        styleProvider.load_from_data(".background { border-width: %dpt; }" % self.borderwidth)
+        styleProvider.load_from_data(b".background { border-width: %dpt; }" % self.borderwidth)
         style.add_provider(styleProvider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
 
         self.border.set_margin_top(self.borderwidth)
@@ -524,11 +525,11 @@ class MenuWin( object ):
             self.keybinder.connect("activate", self.onBindingPress)
             self.keybinder.start()
             self.settings.connect( "changed::hot-key", self.hotkeyChanged )
-            print "Binding to Hot Key: " + self.hotkeyText
-        except Exception, cause:
+            print("Binding to Hot Key: " + self.hotkeyText)
+        except Exception as cause:
             self.keybinder = None
-            print "** WARNING ** - Keybinder Error"
-            print "Error Report :\n", str(cause)
+            print("** WARNING ** - Keybinder Error")
+            print("Error Report :\n", str(cause))
 
         self.applet.set_can_focus(False)
 
@@ -536,9 +537,9 @@ class MenuWin( object ):
             self.pointerMonitor = pointerMonitor.PointerMonitor()
             self.pointerMonitor.connect("activate", self.onPointerOutside)
             self.mainwin.window.connect( "realize", self.onRealize )
-        except Exception, cause:
-            print "** WARNING ** - Pointer Monitor Error"
-            print "Error Report :\n", str(cause)
+        except Exception as cause:
+            print("** WARNING ** - Pointer Monitor Error")
+            print("Error Report :\n", str(cause))
 
     def onWindowMap( self, *args ):
         self.applet.get_style_context().set_state( Gtk.StateFlags.SELECTED )
@@ -593,7 +594,7 @@ class MenuWin( object ):
         try:
             process = subprocess.Popen(['lsb_release', '-d'], stdout=subprocess.PIPE)
             out, err = process.communicate()
-            tooltip = out.replace('Description:', '').strip()
+            tooltip = str(out).replace('Description:', '').strip()
             self.systemlabel.set_tooltip_text(tooltip)
             self.button_icon.set_tooltip_text(tooltip)
         except OSError:
