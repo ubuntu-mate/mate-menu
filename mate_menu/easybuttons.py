@@ -24,8 +24,8 @@ import shutil
 import xdg.DesktopEntry
 import xdg.Menu
 
-from execute import *
-from filemonitor import monitor as filemonitor
+from .execute import *
+from .filemonitor import monitor as filemonitor
 from gi.repository import Gtk, Gdk, GLib
 from gi.repository import Pango
 from gi.repository import GObject
@@ -162,7 +162,7 @@ class easyButton( Gtk.Button ):
 
         if labels:
             for label in labels:
-                if isinstance( label, basestring ):
+                if isinstance( label, str ):
                     self.addLabel( label )
                 elif isinstance( label, list ):
                     self.addLabel( label[0], label[1] )

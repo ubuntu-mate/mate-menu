@@ -125,7 +125,7 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         self.grab(self.keytext)
 
     def get_mask_combinations(self, mask):
-        return [x for x in xrange(mask+1) if not (x & ~mask)]
+        return [x for x in range(mask+1) if not (x & ~mask)]
 
     def idle(self):
         self.emit("activate")
