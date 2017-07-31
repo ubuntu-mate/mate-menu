@@ -26,7 +26,7 @@ from gi.repository import GLib, Gio, Gtk
 from mate_menu.easybuttons import *
 from mate_menu.easygsettings import EasyGSettings
 from mate_menu.execute import Execute
-from urllib import unquote
+from urllib.parse import unquote
 
 # i18n
 gettext.install("mate-menu", "/usr/share/locale")

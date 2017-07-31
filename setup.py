@@ -130,6 +130,5 @@ setup(
     install_requires = [ 'setuptools', 'configobj' ],
     scripts = [ 'mate-menu' ],
     cmdclass = cmdclass,
-    # use_2to3 = True,
     zip_safe = True,
 )
