@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 # Copyright (C) 2007-2014 Clement Lefebvre <root@linuxmint.com>
@@ -297,7 +297,7 @@ class mateMenuConfig( object ):
         theme_name = self.settings.get ("string", "theme-name")
         process = subprocess.Popen(['find', '/usr/share/themes', '-name', 'gtkrc'], stdout=subprocess.PIPE)
         out, err = process.communicate()
-        themes = out.split("\n")
+        themes = out.decode("utf-8").split("\n")
         model = Gtk.ListStore(str, str)
         self.builder.get_object("themesCombo").set_model(model)
         selected_theme = model.append([_("Desktop theme"), "default"])
@@ -419,7 +419,7 @@ class mateMenuConfig( object ):
         return self.gdkRGBAToString( color )
 
     def gdkRGBAToString( self, gdkRGBA ):
-        return "#%.2X%.2X%.2X" % ( gdkRGBA.red * 256, gdkRGBA.green * 256, gdkRGBA.blue * 256 )
+        return "#%.2X%.2X%.2X" % ( int(gdkRGBA.red * 256), int(gdkRGBA.green * 256), int(gdkRGBA.blue * 256) )
 
     def moveUp( self, upButton ):
 

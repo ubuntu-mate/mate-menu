@@ -138,5 +138,5 @@ def WriteDesktopFile(DroppedFile,FileData,ListToAdd):
 	fileHandle.close()
 
 	WriteListFile(ListToAdd,DroppedFile,"a")
-	print "Added to places.list"
+	print("Added to places.list")
 """

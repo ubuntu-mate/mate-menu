@@ -61,10 +61,10 @@ class IconManager(GObject.GObject):
         contents = frozenset(os.listdir(self.iconDir)) - frozenset(('applications', 'applications.list'))
         for fn in contents:
             if os.path.isfile(os.path.join(self.iconDir, fn)):
-                print "Removing file : " + os.path.join(self.iconDir, fn)
+                print("Removing file : " + os.path.join(self.iconDir, fn))
                 os.remove(os.path.join(self.iconDir, fn))
             else:
-                print os.path.join(self.iconDir, fn) + " is not a file, skipping delete."
+                print(os.path.join(self.iconDir, fn) + " is not a file, skipping delete.")
 
         self.defaultTheme.append_search_path(self.iconDir)
 
@@ -121,8 +121,8 @@ class IconManager(GObject.GObject):
                 image = None
 
             return image
-        except Exception, e:
-            print "Exception " + e.__class__.__name__ + ": " + e.message
+        except Exception as e:
+            print("Exception " + e.__class__.__name__ + ": " + e.message)
             return None
 
     def themeChanged( self, theme ):
@@ -340,8 +340,8 @@ class ApplicationLauncher( easyButton ):
             if os.path.exists (self.startupFilePath):
                 self.startupMonitorId = filemonitor.addMonitor( self.startupFilePath, self.startupFileChanged )
 
-        except Exception, e:
-            print e
+        except Exception as e:
+            print(e)
             self.appName            = ""
             self.appGenericName     = ""
             self.appComment         = ""
@@ -490,7 +490,7 @@ class ApplicationLauncher( easyButton ):
         base = os.path.basename( self.desktopFile )
         for dir in self.appDirs:
             if os.path.exists( os.path.join( dir, base ) ):
-                # print os.path.join( dir, base ), self.desktopFile
+                # print(os.path.join( dir, base ), self.desktopFile)
                 self.loadDesktopEntry( xdg.DesktopEntry.DesktopEntry( os.path.join( dir, base ) ) )
                 for child in self.labelBox:
                     child.destroy()
@@ -540,8 +540,8 @@ class MenuApplicationLauncher( ApplicationLauncher ):
                     #appComment = "<b>%s</b>" % (appComment);
                 appName = "<b>%s</b>" % (appName);
                 appComment = "<b>%s</b>" % (appComment);
-            except Exception, detail:
-                print detail
+            except Exception as detail:
+                print(detail)
                 pass
 
         if self.showComment and self.appComment != "":

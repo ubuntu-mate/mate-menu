@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 
 # Copyright (C) 2007-2014 Clement Lefebvre <root@linuxmint.com>
 # Copyright (C) 2015-2016 Martin Wimpress <code@ubuntu-mate.org>
@@ -37,8 +37,8 @@ if len(sys.argv) > 1:
         for path in ("org.mate.mate-menu", "org.mate.mate-menu.plugins.places",
                      "org.mate.mate-menu.plugins.applications",
                      "org.mate.mate-menu.plugins.recent",
-                     "org.mate.mate-menu.plugins.system_management"):            
-            subprocess.call(['gsettings', 'reset-recursively', path])            
+                     "org.mate.mate-menu.plugins.system_management"):
+            subprocess.call(['gsettings', 'reset-recursively', path])
 
         config_files = os.path.join(configPath, 'mate-menu')
         if os.path.isdir(config_files):
@@ -47,4 +47,4 @@ if len(sys.argv) > 1:
         print("All MATE Menu settings are now restored to default")
 else:
     matemenu = os.path.join('/','usr','lib','mate-menu','mate-menu.py')
-    subprocess.call([matemenu])    
+    subprocess.call([matemenu])
