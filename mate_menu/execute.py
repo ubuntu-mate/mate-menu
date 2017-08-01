@@ -42,7 +42,7 @@ def Execute( cmd , commandCwd=None):
 		if (os.path.exists(tmpCwd)):
 			cwd = tmpCwd
 
-	if isinstance( cmd, str ) or isinstance( cmd, unicode):
+	if isinstance( cmd, str ):
 		if (cmd.find("/home/") >= 0) or (cmd.find("xdg-su") >= 0) or (cmd.find("\"") >= 0):
 			print("running manually...")
 			try:

@@ -1182,7 +1182,7 @@ class pluginclass( object ):
         try:
             ButtonIcon = None
             # For Folders and Network Shares
-            location = string.join( location.split( "%20" ) )
+            location = " ".join( location.split( "%20" ) )
 
             if location.startswith( "file" ):
                 ButtonIcon = "mate-fs-directory"

@@ -21,6 +21,7 @@
 import os
 import re
 import shutil
+import unidecode
 import xdg.DesktopEntry
 import xdg.Menu
 
@@ -396,14 +397,8 @@ class ApplicationLauncher( easyButton ):
         self.show()
         return True
 
-    def strip_accents(self, string):
-        value = string
-        if isinstance(string, unicode):
-            try:
-                value = string.encode('UTF8', 'ignore')
-            except:
-                pass
-        return value
+    def strip_accents(self, value):
+        return unidecode.unidecode(value)
 
     def getTooltip( self ):
         tooltip = self.appName
