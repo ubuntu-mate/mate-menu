@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mate-menu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-14 00:28+0100\n"
+"POT-Creation-Date: 2017-09-23 19:04+0100\n"
 "PO-Revision-Date: 2013-05-01 06:28+0000\n"
 "Last-Translator: Iftekhar Mohammad <Unknown>\n"
 "Language-Team: Bengali <bn@li.org>\n"
@@ -18,36 +18,36 @@ msgstr ""
 "X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
 "X-Generator: Launchpad (build 17355)\n"
 
-#: ../lib/mate-menu.py:69
+#: ../lib/mate-menu.py:57
 msgid "Menu"
 msgstr "মেন্যু"
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:236
+#: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
 msgstr "প্লাগ-ইন লোড করা সম্ভব হয়নি"
 
-#: ../lib/mate-menu.py:309
+#: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
 msgstr "প্লাগিন শুরু করা সম্ভব হয় নি"
 
-#: ../lib/mate-menu.py:740
+#: ../lib/mate-menu.py:729
 msgid "Advanced MATE Menu"
 msgstr ""
 
-#: ../lib/mate-menu.py:834
+#: ../lib/mate-menu.py:843
 msgid "Preferences"
 msgstr "পছন্দসমূহ"
 
-#: ../lib/mate-menu.py:837
+#: ../lib/mate-menu.py:846
 msgid "Edit menu"
 msgstr "মেন্যু সম্পাদনা"
 
-#: ../lib/mate-menu.py:840
+#: ../lib/mate-menu.py:849
 msgid "Reload plugins"
 msgstr "প্লাগ-ইন রি-লোড করুন"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:852
 msgid "About"
 msgstr "পরিচিতি"
 
@@ -120,7 +120,7 @@ msgstr "বাটন টেক্সটঃ"
 msgid "Options"
 msgstr "অপশনসমূহ"
 
-#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:189
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
 msgstr "অ্যাপ্লিকেশনসমূহ"
 
@@ -128,8 +128,8 @@ msgstr "অ্যাপ্লিকেশনসমূহ"
 msgid "Theme"
 msgstr "থিম"
 
-#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:186
-#: ../mate_menu/plugins/applications.py:187
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
+#: ../mate_menu/plugins/applications.py:200
 msgid "Favorites"
 msgstr "পছন্দসমূহ"
 
@@ -142,259 +142,298 @@ msgid "Plugins"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:82
+msgid "Always show search suggestions"
+msgstr ""
+
+#: ../lib/mate-menu-config.py:83
+#, fuzzy
+msgid "Search Engines:"
+msgstr "গুগলে অনুসন্ধান"
+
+#: ../lib/mate-menu-config.py:84
+msgid "DuckDuckGo"
+msgstr ""
+
+#: ../lib/mate-menu-config.py:85
+#, fuzzy
+msgid "Google"
+msgstr "গুগলে অনুসন্ধান"
+
+#: ../lib/mate-menu-config.py:86
+#, fuzzy
+msgid "Wikipedia"
+msgstr "উইকিপিডিয়াতে অনুসন্ধান"
+
+#: ../lib/mate-menu-config.py:87
+#, fuzzy
+msgid "Dictionary"
+msgstr "ডিকশনারি দেখুন"
+
+#: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
+#: ../mate_menu/plugins/places.py:149
+msgid "Computer"
+msgstr "কম্পিউটার"
+
+#: ../lib/mate-menu-config.py:90
 msgid "Background:"
 msgstr "ব্যাকগ্রাউন্ড"
 
-#: ../lib/mate-menu-config.py:83
+#: ../lib/mate-menu-config.py:91
 msgid "Headings:"
 msgstr "শিরোনাম:"
 
-#: ../lib/mate-menu-config.py:84
+#: ../lib/mate-menu-config.py:92
 msgid "Borders:"
 msgstr "সীমানা:"
 
-#: ../lib/mate-menu-config.py:85
+#: ../lib/mate-menu-config.py:93
 msgid "Theme:"
 msgstr "থিম:"
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
-#: ../lib/mate-menu-config.py:89
+#: ../lib/mate-menu-config.py:97
 msgid "Number of columns:"
 msgstr "কলামসমূহের সংখ্যা:"
 
-#: ../lib/mate-menu-config.py:90 ../lib/mate-menu-config.py:91
-#: ../lib/mate-menu-config.py:92 ../lib/mate-menu-config.py:93
+#: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
+#: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
 msgstr "আইকন সাইজ:"
 
-#: ../lib/mate-menu-config.py:94
+#: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
 msgstr "হোভার ডিলে (এমএস):"
 
-#: ../lib/mate-menu-config.py:95
+#: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
 msgstr "বাটন আইকন:"
 
-#: ../lib/mate-menu-config.py:96
+#: ../lib/mate-menu-config.py:104
 msgid "Search command:"
 msgstr "অনুসন্ধান কমান্ড:"
 
 #. Set 'heading' property for plugin
-#: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:54
+#: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
 msgid "Places"
 msgstr "প্লেসেস"
 
-#: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
+#: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
 msgstr "স্ক্রোলবার অনুমোদন"
 
-#: ../lib/mate-menu-config.py:100
+#: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
 msgstr "GTK+ বুকমার্কগুলো প্রদর্শন কর"
 
-#: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
+#: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
 msgstr "উচ্চতা:"
 
-#: ../lib/mate-menu-config.py:102
+#: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
 msgstr "ডিফল্ট প্লেসেস টোগল করুন"
 
-#: ../lib/mate-menu-config.py:103 ../mate_menu/plugins/places.py:149
-msgid "Computer"
-msgstr "কম্পিউটার"
-
-#: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
 msgid "Home Folder"
 msgstr "হোম ফোল্ডার"
 
-#: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
 msgid "Network"
 msgstr "নেটওয়ার্ক"
 
-#: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
 msgid "Desktop"
 msgstr "ডেস্কটপ"
 
-#: ../lib/mate-menu-config.py:107 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
 msgid "Trash"
 msgstr "ট্রাশ"
 
-#: ../lib/mate-menu-config.py:108
+#: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
 msgstr "কাস্টম প্লেসেসঃ"
 
 #. Set 'heading' property for plugin
-#: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
+#: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
 msgid "System"
 msgstr "সিস্টেম"
 
-#: ../lib/mate-menu-config.py:113
+#: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
 msgstr "ডিফল্ট আইটেমগুলো টোগল করুন"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/system_management.py:153
+#: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
 msgstr "প্যাকেজ ম্যানেজার"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/system_management.py:172
+#: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
 msgstr "কন্ট্রোল সেন্টার"
 
-#: ../lib/mate-menu-config.py:116 ../mate_menu/plugins/system_management.py:179
+#: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
 msgstr "টার্মিন্যাল"
 
-#: ../lib/mate-menu-config.py:117 ../mate_menu/plugins/system_management.py:193
+#: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
 msgstr "লক স্ক্রিন"
 
-#: ../lib/mate-menu-config.py:118
+#: ../lib/mate-menu-config.py:126
 msgid "Log Out"
 msgstr "লগ আউট"
 
-#: ../lib/mate-menu-config.py:119 ../mate_menu/plugins/system_management.py:211
+#: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
 msgstr "বন্ধ"
 
-#: ../lib/mate-menu-config.py:121
+#: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
 msgstr "প্লেস সম্পাদনা"
 
-#: ../lib/mate-menu-config.py:122
+#: ../lib/mate-menu-config.py:130
 msgid "New Place"
 msgstr "নতুন প্লেস"
 
-#: ../lib/mate-menu-config.py:123
+#: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
 msgstr "একটি ফোল্ডার নির্বাচন করুন"
 
-#: ../lib/mate-menu-config.py:151
+#: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
 msgstr "কিবোর্ড শর্টকাটঃ"
 
-#: ../lib/mate-menu-config.py:157
+#: ../lib/mate-menu-config.py:171
 msgid "Images"
 msgstr "ছবি"
 
-#: ../lib/mate-menu-config.py:265
+#: ../lib/mate-menu-config.py:286
 msgid "Name"
 msgstr "নাম"
 
-#: ../lib/mate-menu-config.py:266
+#: ../lib/mate-menu-config.py:287
 msgid "Path"
 msgstr "পথ"
 
-#: ../lib/mate-menu-config.py:282
+#: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
 msgstr "ডেস্কটপ থিম"
 
-#: ../lib/mate-menu-config.py:423 ../lib/mate-menu-config.py:454
+#: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
 msgstr "নামঃ"
 
-#: ../lib/mate-menu-config.py:424 ../lib/mate-menu-config.py:455
+#: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
 msgstr "পথঃ"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:184
+#: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
 msgstr "অনুসন্ধানঃ"
 
-#: ../mate_menu/plugins/applications.py:188
+#: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
 msgstr "সকল অ্যাপ্লিকেশনসমূহ"
 
-#: ../mate_menu/plugins/applications.py:552
+#: ../mate_menu/plugins/applications.py:600
+#, fuzzy, python-format
+msgid "Search DuckDuckGo for %s"
+msgstr "%s গুগলে অনুসন্ধান করুন"
+
+#: ../mate_menu/plugins/applications.py:611
 #, python-format
 msgid "Search Google for %s"
 msgstr "%s গুগলে অনুসন্ধান করুন"
 
-#: ../mate_menu/plugins/applications.py:559
+#: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "%s উইকিপিডিয়াতে অনুসন্ধান করুন"
 
-#: ../mate_menu/plugins/applications.py:576
+#: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "%s অভিধানে দেখুন"
 
-#: ../mate_menu/plugins/applications.py:583
+#: ../mate_menu/plugins/applications.py:654
 #, python-format
 msgid "Search Computer for %s"
 msgstr "%s কম্পিউটারে অনুসন্ধান করুন"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:703
-#: ../mate_menu/plugins/applications.py:768
+#: ../mate_menu/plugins/applications.py:788
+#: ../mate_menu/plugins/applications.py:853
 msgid "Add to desktop"
 msgstr "ডেস্কটপে যোগ করুন"
 
-#: ../mate_menu/plugins/applications.py:704
-#: ../mate_menu/plugins/applications.py:769
+#: ../mate_menu/plugins/applications.py:789
+#: ../mate_menu/plugins/applications.py:854
 msgid "Add to panel"
 msgstr "প্যানেলে যোগ করুন"
 
-#: ../mate_menu/plugins/applications.py:706
-#: ../mate_menu/plugins/applications.py:747
+#: ../mate_menu/plugins/applications.py:791
+#: ../mate_menu/plugins/applications.py:832
 msgid "Insert space"
 msgstr "খালি জায়গা বসান"
 
-#: ../mate_menu/plugins/applications.py:707
-#: ../mate_menu/plugins/applications.py:748
+#: ../mate_menu/plugins/applications.py:792
+#: ../mate_menu/plugins/applications.py:833
 msgid "Insert separator"
 msgstr "বিভাজক বসান"
 
-#: ../mate_menu/plugins/applications.py:709
-#: ../mate_menu/plugins/applications.py:772
+#: ../mate_menu/plugins/applications.py:794
+#: ../mate_menu/plugins/applications.py:857
 msgid "Launch"
 msgstr "লঞ্চ"
 
-#: ../mate_menu/plugins/applications.py:710
+#: ../mate_menu/plugins/applications.py:795
 msgid "Remove from favorites"
 msgstr "পছন্দের তালিকা হতে মুছুন"
 
-#: ../mate_menu/plugins/applications.py:712
-#: ../mate_menu/plugins/applications.py:775
+#: ../mate_menu/plugins/applications.py:797
+#: ../mate_menu/plugins/applications.py:860
 msgid "Edit properties"
 msgstr "প্রোপার্টিজ সম্পাদনা করুন"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:746
+#: ../mate_menu/plugins/applications.py:831
 msgid "Remove"
 msgstr "মুছুন"
 
-#: ../mate_menu/plugins/applications.py:771
+#: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
 msgstr "আমার পছন্দের তালিকায় প্রদর্শন"
 
-#: ../mate_menu/plugins/applications.py:773
+#: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
 msgstr "মেন্যু থেকে মুছুন"
 
-#: ../mate_menu/plugins/applications.py:817
+#: ../mate_menu/plugins/applications.py:902
+#, fuzzy
+msgid "Search DuckDuckGo"
+msgstr "গুগলে অনুসন্ধান"
+
+#: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
 msgstr "গুগলে অনুসন্ধান"
 
-#: ../mate_menu/plugins/applications.py:824
+#: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
 msgstr "উইকিপিডিয়াতে অনুসন্ধান"
 
-#: ../mate_menu/plugins/applications.py:834
+#: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
 msgstr "ডিকশনারি দেখুন"
 
-#: ../mate_menu/plugins/applications.py:841
+#: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
 msgstr "কম্পিউটারে অনুসন্ধান"
 
-#: ../mate_menu/plugins/applications.py:1245
+#: ../mate_menu/plugins/applications.py:1344
 #, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
@@ -403,11 +442,11 @@ msgstr ""
 "পছন্দের তালিকায় যোগ করা সম্ভব হয়নি। দেখুন ~/.linuxmint/mintMenu তে আপনার লেখার "
 "অনুমতি আছে কিনা"
 
-#: ../mate_menu/plugins/applications.py:1452
+#: ../mate_menu/plugins/applications.py:1549
 msgid "All"
 msgstr "সকল"
 
-#: ../mate_menu/plugins/applications.py:1452
+#: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
 msgstr "সকল অ্যাপ্লিকেশন প্রদর্শন"
 
@@ -461,7 +500,7 @@ msgstr "ডেস্কটপে অবস্থিত আইটেমগুল�
 msgid "Browse deleted files"
 msgstr "মুছে ফেলা হয়েছে এমন ফাইলগুলো ব্রাউজ করুন"
 
-#: ../mate_menu/plugins/places.py:270
+#: ../mate_menu/plugins/places.py:271
 msgid "Empty trash"
 msgstr "ট্রাশ খালি করুন"
 
@@ -470,23 +509,23 @@ msgstr "ট্রাশ খালি করুন"
 msgid "Recent documents"
 msgstr "সাম্প্রতিক ডকুমেন্টসমূহ"
 
-#: ../mate_menu/keybinding.py:170
+#: ../mate_menu/keybinding.py:181
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr "মেনু খোলার এবং বন্ধ করার জন্য একটি নতুন বেগবর্ধক কী সেট করতে ক্লিক করুন।  "
 
-#: ../mate_menu/keybinding.py:171
+#: ../mate_menu/keybinding.py:182
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "Escape চাপুন অথবা অপারেশন বাতিল আবার ক্লিক করুন।  "
 
-#: ../mate_menu/keybinding.py:172
+#: ../mate_menu/keybinding.py:183
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "বিদ্যমান কিবাইন্ডিং মুছে ফেলতে ব্যাকস্পেস চাপুন."
 
-#: ../mate_menu/keybinding.py:191
+#: ../mate_menu/keybinding.py:202
 msgid "Pick an accelerator"
 msgstr "একটি বেগবর্ধক বাছাই করুন"
 
-#: ../mate_menu/keybinding.py:247
+#: ../mate_menu/keybinding.py:258
 msgid "<not set>"
 msgstr "<সেট করা হয়নি>"
 
