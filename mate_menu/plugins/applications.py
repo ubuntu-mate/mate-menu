@@ -968,7 +968,7 @@ class pluginclass( object ):
     def search_google(self, widget):
         text = self.searchEntry.get_text()
         text = text.replace(" ", "+")
-        subprocess.call(['xdg-open', 'https://www.google.com/?ie=utf-8&sa=Search&q=' + text])
+        subprocess.call(['xdg-open', 'https://www.google.com/search?q=' + text])
         self.mateMenuWin.hide()
 
     def search_wikipedia(self, widget):
