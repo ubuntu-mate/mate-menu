@@ -609,7 +609,7 @@ class pluginclass( object ):
             suggestionButton = SuggestionButton("list-add", self.iconSize, "")
             suggestionButton.connect("clicked", self.search_google)
             suggestionButton.set_text(_("Search Google for %s") % text)
-            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/google.ico")
+            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/google.png")
             self.applicationsBox.add(suggestionButton)
             if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
@@ -620,7 +620,7 @@ class pluginclass( object ):
             suggestionButton = SuggestionButton("list-add", self.iconSize, "")
             suggestionButton.connect("clicked", self.search_wikipedia)
             suggestionButton.set_text(_("Search Wikipedia for %s") % text)
-            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/wikipedia.ico")
+            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/wikipedia.png")
             self.applicationsBox.add(suggestionButton)
             if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
