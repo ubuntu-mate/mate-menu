@@ -97,8 +97,8 @@ data_files = [
   ("share/mate-menu/icons/search_engines",
    [
     "data/icons/ddg.ico",
-    "data/icons/google.ico",
-    "data/icons/wikipedia.ico",
+    "data/icons/google.png",
+    "data/icons/wikipedia.png",
    ]),
   ("lib/mate-menu",
    glob("lib/*.py*"),

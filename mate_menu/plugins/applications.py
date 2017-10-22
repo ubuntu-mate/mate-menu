@@ -908,14 +908,14 @@ class pluginclass( object ):
 
         menuItem = Gtk.ImageMenuItem(label=_("Search Google"))
         img = Gtk.Image()
-        img.set_from_file('/usr/share/mate-menu/icons/search_engines/google.ico')
+        img.set_from_file("/usr/share/mate-menu/icons/search_engines/google.png")
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_google)
         menu.append(menuItem)
 
         menuItem = Gtk.ImageMenuItem(label=_("Search Wikipedia"))
         img = Gtk.Image()
-        img.set_from_file('/usr/share/mate-menu/icons/search_engines/wikipedia.ico')
+        img.set_from_file("/usr/share/mate-menu/icons/search_engines/wikipedia.png")
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_wikipedia)
         menu.append(menuItem)
