@@ -598,7 +598,7 @@ class pluginclass( object ):
             suggestionButton = SuggestionButton("list-add", self.iconSize, "")
             suggestionButton.connect("clicked", self.search_ddg)
             suggestionButton.set_text(_("Search DuckDuckGo for %s") % text)
-            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/ddg.ico")
+            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/ddg.png")
             self.applicationsBox.add(suggestionButton)
             if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
@@ -901,7 +901,7 @@ class pluginclass( object ):
 
         menuItem = Gtk.ImageMenuItem(label=_("Search DuckDuckGo"))
         img = Gtk.Image()
-        img.set_from_file('/usr/share/mate-menu/icons/search_engines/ddg.ico')
+        img.set_from_file("/usr/share/mate-menu/icons/search_engines/ddg.png")
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_ddg)
         menu.append(menuItem)

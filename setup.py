@@ -96,7 +96,7 @@ data_files = [
    ]),
   ("share/mate-menu/icons/search_engines",
    [
-    "data/icons/ddg.ico",
+    "data/icons/ddg.png",
     "data/icons/google.png",
     "data/icons/wikipedia.png",
    ]),
