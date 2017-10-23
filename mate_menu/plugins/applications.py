@@ -598,7 +598,7 @@ class pluginclass( object ):
             suggestionButton = SuggestionButton("list-add", self.iconSize, "")
             suggestionButton.connect("clicked", self.search_ddg)
             suggestionButton.set_text(_("Search DuckDuckGo for %s") % text)
-            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/ddg.ico")
+            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/ddg.png")
             self.applicationsBox.add(suggestionButton)
             if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
@@ -609,7 +609,7 @@ class pluginclass( object ):
             suggestionButton = SuggestionButton("list-add", self.iconSize, "")
             suggestionButton.connect("clicked", self.search_google)
             suggestionButton.set_text(_("Search Google for %s") % text)
-            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/google.ico")
+            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/google.png")
             self.applicationsBox.add(suggestionButton)
             if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
@@ -620,7 +620,7 @@ class pluginclass( object ):
             suggestionButton = SuggestionButton("list-add", self.iconSize, "")
             suggestionButton.connect("clicked", self.search_wikipedia)
             suggestionButton.set_text(_("Search Wikipedia for %s") % text)
-            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/wikipedia.ico")
+            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/wikipedia.png")
             self.applicationsBox.add(suggestionButton)
             if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
@@ -901,21 +901,21 @@ class pluginclass( object ):
 
         menuItem = Gtk.ImageMenuItem(label=_("Search DuckDuckGo"))
         img = Gtk.Image()
-        img.set_from_file('/usr/share/mate-menu/icons/search_engines/ddg.ico')
+        img.set_from_file("/usr/share/mate-menu/icons/search_engines/ddg.png")
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_ddg)
         menu.append(menuItem)
 
         menuItem = Gtk.ImageMenuItem(label=_("Search Google"))
         img = Gtk.Image()
-        img.set_from_file('/usr/share/mate-menu/icons/search_engines/google.ico')
+        img.set_from_file("/usr/share/mate-menu/icons/search_engines/google.png")
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_google)
         menu.append(menuItem)
 
         menuItem = Gtk.ImageMenuItem(label=_("Search Wikipedia"))
         img = Gtk.Image()
-        img.set_from_file('/usr/share/mate-menu/icons/search_engines/wikipedia.ico')
+        img.set_from_file("/usr/share/mate-menu/icons/search_engines/wikipedia.png")
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_wikipedia)
         menu.append(menuItem)
@@ -968,13 +968,13 @@ class pluginclass( object ):
     def search_google(self, widget):
         text = self.searchEntry.get_text()
         text = text.replace(" ", "+")
-        subprocess.call(['xdg-open', 'http://www.google.com/?ie=utf-8&sa=Search&q=' + text])
+        subprocess.call(['xdg-open', 'https://www.google.com/search?q=' + text])
         self.mateMenuWin.hide()
 
     def search_wikipedia(self, widget):
         text = self.searchEntry.get_text()
         text = text.replace(" ", "+")
-        subprocess.call(['xdg-open', 'http://en.wikipedia.org/wiki/Special:Search?search=' + text])
+        subprocess.call(['xdg-open', 'https://en.wikipedia.org/wiki/Special:Search?search=' + text])
         self.mateMenuWin.hide()
 
     def search_dictionary(self, widget):
