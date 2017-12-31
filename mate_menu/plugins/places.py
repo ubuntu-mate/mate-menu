@@ -147,22 +147,14 @@ class pluginclass( object ):
 
         if ( self.showcomputer == True ):
             Button1 = easyButton( "computer", self.iconsize, [_("Computer")], -1, -1 )
-
-            #FIXME: Check for caja on the path and fall back to xdg-open
-            Button1.connect( "clicked", self.ButtonClicked, "caja computer:" )
-            #Button1.connect( "clicked", self.ButtonClicked, "xdg-open /" )
-
+            Button1.connect("clicked", self.ButtonClicked, "xdg-open computer:")
             Button1.show()
             self.placesBtnHolder.pack_start( Button1, False, False, 0)
             self.mateMenuWin.setTooltip( Button1, _("Browse all local and remote disks and folders accessible from this computer") )
 
         if ( self.showhomefolder == True ):
             Button2 = easyButton( "user-home", self.iconsize, [_("Home Folder")], -1, -1 )
-
-            #FIXME: Check for caja on the path and fall back to xdg-open
-            Button2.connect( "clicked", self.ButtonClicked, "caja %s " % os.environ["HOME"] )
-            #Button2.connect( "clicked", self.ButtonClicked, "xdg-open %s " % os.environ["HOME"] )
-
+            Button2.connect( "clicked", self.ButtonClicked, "xdg-open %s " % os.environ["HOME"])
             Button2.show()
             self.placesBtnHolder.pack_start( Button2, False, False, 0)
             self.mateMenuWin.setTooltip( Button2, _("Open your personal folder") )
@@ -171,11 +163,7 @@ class pluginclass( object ):
             mate_settings = Gio.Settings.new("org.mate.interface")
             icon_theme = mate_settings.get_string( "icon-theme" )
             Button3 = easyButton( "network-workgroup", self.iconsize, [_("Network")], -1, -1)
-
-            #FIXME: Check for caja on the path and fall back to xdg-open
-            Button3.connect( "clicked", self.ButtonClicked, "caja network:" )
-            #Button3.connect( "clicked", self.ButtonClicked, "xdg-open network:" )
-
+            Button3.connect("clicked", self.ButtonClicked, "xdg-open network:")
             Button3.show()
             self.placesBtnHolder.pack_start( Button3, False, False, 0)
             self.mateMenuWin.setTooltip( Button3, _("Browse bookmarked and local network locations") )
@@ -194,22 +182,14 @@ class pluginclass( object ):
             except Exception, detail:
                 print detail
             Button4 = easyButton( "desktop", self.iconsize, [_("Desktop")], -1, -1 )
-
-            #FIXME: Check for caja on the path and fall back to xdg-open
-            Button4.connect( "clicked", self.ButtonClicked, "caja \"" + desktopDir + "\"")
-            #Button4.connect( "clicked", self.ButtonClicked, "xdg-open \"" + desktopDir + "\"")
-
+            Button4.connect("clicked", self.ButtonClicked, "xdg-open \"" + desktopDir + "\"")
             Button4.show()
             self.placesBtnHolder.pack_start( Button4, False, False, 0)
             self.mateMenuWin.setTooltip( Button4, _("Browse items placed on the desktop") )
 
         if ( self.showtrash == True ):
             self.trashButton = easyButton( "user-trash", self.iconsize, [_("Trash")], -1, -1 )
-
-            #FIXME: Check for caja on the path and fall back to xdg-open
-            self.trashButton.connect( "clicked", self.ButtonClicked, "caja trash:" )
-            #self.trashButton.connect( "clicked", self.ButtonClicked, "xdg-open trash:" )
-
+            self.trashButton.connect("clicked", self.ButtonClicked, "xdg-open trash:")
             self.trashButton.show()
             self.trashButton.connect( "button-release-event", self.trashPopup )
             self.refreshTrash()
@@ -220,11 +200,7 @@ class pluginclass( object ):
         for index in range( len(self.custompaths) ):
             path = self.custompaths[index]
             path = path.replace("~", os.environ["HOME"])
-
-            #FIXME: Check for caja on the path and fall back to xdg-open
-            command = ( "caja \"" + path + "\"")
-            #command = ( "xdg-open \"" + path + "\"")
-
+            command = ("xdg-open \"" + path + "\"")
             currentbutton = easyButton( "folder", self.iconsize, [self.customnames[index]], -1, -1 )
             currentbutton.connect( "clicked", self.ButtonClicked, command )
             currentbutton.show()
@@ -262,8 +238,7 @@ class pluginclass( object ):
 
     def launch_gtk_bookmark (self, widget, path):
         self.mateMenuWin.hide()
-        #FIXME: Check for xdg-open and fallback to caja
-        subprocess.Popen(['caja', path])
+        subprocess.Popen(['xdg-open', path])
 
     def trashPopup( self, widget, event ):
         if event.button == 3:
