@@ -6,13 +6,14 @@
 # Claes-Göran Nydahl <goldug@gmail.com>, 2016
 # Daniel Gullbransen <daniel@llama.nu>, 2017
 # Kristoffer Grundström <kristoffer.grundstrom1983@gmail.com>, 2015
+# Tobias Lekare <lekare@linux.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2017-11-29 16:55+0000\n"
+"Last-Translator: Tobias Lekare <lekare@linux.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/mate/MATE/language/sv/)\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
@@ -33,23 +34,23 @@ msgstr "Kunde inte ladda insticksprogrammet:"
 msgid "Couldn't initialize plugin"
 msgstr "Kunde inte initialisera insticksprogrammet"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "Avancerad MATE-meny"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Egenskaper"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Redigeringsmeny"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Ladda om insticksprogram"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "Om"
 
@@ -116,7 +117,7 @@ msgstr "pixlar"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Knapp-text:"
+msgstr "Knapptext:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
@@ -141,35 +142,31 @@ msgstr "Huvudknapp"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr "Insticksprogram"
+msgstr "Insticksmoduler"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Visa alltid sökförslag"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Sök på Google"
+msgstr "Sökmotorer:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Sök på Google"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Sök på Wikipedia"
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Slå upp i Dictionary"
+msgstr "Ordbok"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -196,12 +193,12 @@ msgstr "Tema:"
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:97
 msgid "Number of columns:"
-msgstr "Antalet kolumner:"
+msgstr "Antal kolumner:"
 
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
-msgstr "Storlek på ikon:"
+msgstr "Ikonstorlek:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
@@ -209,11 +206,11 @@ msgstr "Hovrings fördröjning (ms):"
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "Knapp-ikon:"
+msgstr "Knappikon:"
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
-msgstr "Sök-kommando:"
+msgstr "Sökkommando:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
@@ -234,21 +231,21 @@ msgstr "Höjd:"
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
-msgstr "Växla Standard Platser:"
+msgstr "Växla Standardplatser:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr "Hem-mapp"
+msgstr "Hemkatalog"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Nätverk"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Skrivbord"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Papperskorg"
 
@@ -274,7 +271,7 @@ msgstr "Pakethanterare"
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
-msgstr "Kontrollcentral"
+msgstr "Kontrollpanel"
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
@@ -282,7 +279,7 @@ msgstr "Terminal"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr "Lås-skärm"
+msgstr "Låsskärm"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
@@ -318,7 +315,7 @@ msgstr "Namn"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr "Genväg"
+msgstr "Sökväg"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
@@ -330,7 +327,7 @@ msgstr "Namn:"
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
-msgstr "Genväg:"
+msgstr "Sökväg:"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
@@ -342,9 +339,9 @@ msgid "All applications"
 msgstr "Alla applikationer"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Sök på Google efter %s"
+msgstr "Sök på DuckDuckGo efter %s"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -354,12 +351,12 @@ msgstr "Sök på Google efter %s"
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Sök på Wikipedia efter %s"
+msgstr "Search Wikipedia for %s"
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Kolla upp %s i Dictionary"
+msgstr "Slå upp %s i Ordbok"
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
@@ -404,7 +401,7 @@ msgstr "Redigera egenskaper"
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
 msgid "Remove"
-msgstr "Radera"
+msgstr "Ta bort"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
@@ -415,9 +412,8 @@ msgid "Delete from menu"
 msgstr "Ta bort från menyn"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Sök på Google"
+msgstr "Sök på DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -429,7 +425,7 @@ msgstr "Sök på Wikipedia"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
-msgstr "Slå upp i Dictionary"
+msgstr "Slå upp i Ordbok"
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
@@ -479,30 +475,30 @@ msgstr "Logga ut eller byt användare"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Stäng ner, starta om, upphäv eller gå ner i viloläge"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
 "Bläddra bland lokala och fjärrdiskar samt mappar som är åtkomliga från den "
 "här datorn"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr "Öppna din privata mapp"
+msgstr "Öppna din personliga mapp"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Bläddra bokmärkta och lokala nätverksplatser"
+msgstr "Bläddra bland bokmärkta och lokala nätverksplatser"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Bläddra i saker som är placerade på skrivbordet"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Bläddra i borttagna filer"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Töm papperskorg"
 
@@ -521,8 +517,7 @@ msgstr "Tryck på ESC eller klicka igen för att avbryta åtgärden."
 
 #: ../mate_menu/keybinding.py:183
 msgid "Press Backspace to clear the existing keybinding."
-msgstr ""
-"Tryck på Borttagningsknappen för att rensa den existerande nyckelbindningen."
+msgstr "Tryck på Backspace för att rensa den existerande tangentbindningen."
 
 #: ../mate_menu/keybinding.py:202
 msgid "Pick an accelerator"
@@ -530,4 +525,4 @@ msgstr "Välj en accelerator"
 
 #: ../mate_menu/keybinding.py:258
 msgid "<not set>"
-msgstr "<inte inställd>"
+msgstr "<not set>"

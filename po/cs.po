@@ -3,8 +3,9 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# Martin Kříž <liberte.czech@gmail.com>, 2015
-# Martin Kříž <liberte.czech@gmail.com>, 2015
+# Lucas Lommer <drom@kdyne.net>, 2017
+# LiberteCzech <liberte.czech@gmail.com>, 2015
+# LiberteCzech <liberte.czech@gmail.com>, 2015
 # Milan Milzou <vonfsro@gmail.com>, 2015
 # Radek kohout <radekpv@seznam.cz>, 2015
 # Stanislav Kučera <inactive+kacernator@transifex.com>, 2015
@@ -13,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2017-12-06 22:47+0000\n"
 "Last-Translator: ToMáš Marný\n"
 "Language-Team: Czech (http://www.transifex.com/mate/MATE/language/cs/)\n"
 "Language: cs\n"
@@ -25,49 +26,49 @@ msgstr ""
 
 #: ../lib/mate-menu.py:57
 msgid "Menu"
-msgstr "Menu"
+msgstr "Nabídka"
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr "Nelze nahrát modul:"
+msgstr "Nelze nahrát zásuvný modul:"
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
-msgstr "Nelze spustit modul"
+msgstr "Nelze inicializovat zásuvný modul"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
-msgstr "Pokročilé MATE Menu"
+msgstr "Pokročilá nabídka MATE"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Předvolby"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
-msgstr "Upravit menu"
+msgstr "Upravit nabídku"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
-msgstr "Znovu načíst moduly"
+msgstr "Znovu nahrát zásuvné moduly"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "O aplikaci"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "Předvolby menu"
+msgstr "Předvolby nabídky"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "Vždy spouštět se seznamem \"Oblíbené\""
+msgstr "Vždy spustit s panelem oblíbených"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr "Zobrazovat ikony na tlačítkách"
+msgstr "Zobrazovat ikony tlačítek"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
@@ -75,35 +76,35 @@ msgstr "Použít vlastní barvy"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
-msgstr "Zobrazit modul posledních dokumentů"
+msgstr "Zobrazit zásuvný modul pro nedávné dokumenty"
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show applications plugin"
-msgstr "Zobrazit modul \"Aplikace\""
+msgstr "Zobrazit zásuvný modul pro aplikace"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show system plugin"
-msgstr "Zobrazit modul \"Systém\""
+msgstr "Zobrazit zásuvný modul pro systém"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show places plugin"
-msgstr "Zobrazit modul \"Místa\""
+msgstr "Zobrazit zásuvný modul pro umístění"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
-msgstr "Zobrazit komentáře aplikace"
+msgstr "Zobrazit komentáře aplikací"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
-msgstr "Zobrazovat ikony kategorie"
+msgstr "Zobrazit ikony kategorií"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "Aktivace bez kliknutí, přejetím myší"
+msgstr "Aktivace bez kliknutí, přejetím kurzoru"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
-msgstr "Pamatovat si poslední kategorii nebo vyhledávání"
+msgstr "Pamatovat si poslední kategorii či hledání"
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
@@ -111,7 +112,7 @@ msgstr "Prohodit název a obecný název"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
-msgstr "Šířka okraje:"
+msgstr "Šířka rámečku:"
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
@@ -123,7 +124,7 @@ msgstr "Text tlačítka:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "Možnosti"
+msgstr "Volby"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
@@ -148,31 +149,27 @@ msgstr "Zásuvné moduly"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Vždy zobrazovat návrhy vyhledávání"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Hledat v Google"
+msgstr "Vyhledávače:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Hledat v Google"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Hledat ve Wikipedii"
+msgstr "Wikipedie"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Hledat ve slovníku"
+msgstr "Slovník"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -189,7 +186,7 @@ msgstr "Nadpisy:"
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
-msgstr "Okraje:"
+msgstr "Rámečky:"
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
@@ -204,7 +201,7 @@ msgstr "Počet sloupců:"
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
-msgstr "Velikost ikon:"
+msgstr "Velikost ikony:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
@@ -216,7 +213,7 @@ msgstr "Ikona tlačítka:"
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
-msgstr "Příkaz pro vyhledávání:"
+msgstr "Příkaz hledání:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
@@ -239,25 +236,25 @@ msgstr "Výška:"
 msgid "Toggle Default Places:"
 msgstr "Přepnout výchozí místa:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Domovská složka"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Síť"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
-msgstr "Plocha"
+msgstr "Pracovní plocha"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Koš"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
-msgstr "Vlastní místa:"
+msgstr "Vlastní umístění:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
@@ -289,7 +286,7 @@ msgstr "Uzamknout obrazovku"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr "Odhlásit se"
+msgstr "Odhlášení"
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
@@ -297,15 +294,15 @@ msgstr "Ukončit"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr "Upravit místo"
+msgstr "Upravit umístění"
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
-msgstr "Nové místo"
+msgstr "Nové umístění"
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr "Vybrat složku"
+msgstr "Zvolte složku"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
@@ -325,7 +322,7 @@ msgstr "Cesta"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
-msgstr "Motiv pracovního prostředí"
+msgstr "Motiv pracovní plochy"
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
@@ -345,35 +342,35 @@ msgid "All applications"
 msgstr "Všechny aplikace"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Vyhledat pomocí Google %s"
+msgstr "Vyhledat %s pomocí DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
 msgid "Search Google for %s"
-msgstr "Vyhledat pomocí Google %s"
+msgstr "Vyhledat %s pomocí Google"
 
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Vyhledat pomocí Wikipedia %s"
+msgstr "Vyhledat %s pomocí Wikipedie"
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Vyhledávání %s ve slovníku"
+msgstr "Vyhledat %s ve slovníku"
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Hledat v počítači %s"
+msgstr "Vyhledat %s v počítači"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:788
 #: ../mate_menu/plugins/applications.py:853
 msgid "Add to desktop"
-msgstr "Přidat na plochu"
+msgstr "Přidat na pracovní plochu"
 
 #: ../mate_menu/plugins/applications.py:789
 #: ../mate_menu/plugins/applications.py:854
@@ -418,33 +415,32 @@ msgid "Delete from menu"
 msgstr "Odstranit z nabídky"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Hledat v Google"
+msgstr "Prohledat DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
-msgstr "Hledat v Google"
+msgstr "Prohledat Google"
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
-msgstr "Hledat ve Wikipedii"
+msgstr "Prohledat Wikipedii"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
-msgstr "Hledat ve slovníku"
+msgstr "Prohledat slovník"
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
-msgstr "Hledat v počítači"
+msgstr "Prohledat počítač"
 
 #: ../mate_menu/plugins/applications.py:1344
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Oblíbené položky nelze uložit. Zkontrolujte, zda máte přístup k zápisu do ~/."
-"config/mate-menu"
+"Nelze uložit oblíbené. Zkontrolujte, zda máte povolen zápis do souboru „~/."
+"config/mate-menu”"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
@@ -456,7 +452,7 @@ msgstr "Zobrazit všechny aplikace"
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "Nainstalovat, odstranit nebo aktualizovat softwarové balíčky"
+msgstr "Instalace, odebrání a aktualizace balíčků software"
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
@@ -468,7 +464,7 @@ msgstr "Používat příkazový řádek"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr "Vyžaduje heslo k odemknutí"
+msgstr "Pro odemčení vyžaduje heslo"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
@@ -482,29 +478,29 @@ msgstr "Odhlásit nebo přepnout uživatele"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Vypnout, restartovat, uspat do paměti, uspat na disk"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
 "Procházet všechny místní a vzdálené disky a složky dostupné z tohoto počítače"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Otevřít osobní složku"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Procházet oblíbená místa a místní síťová umístění"
+msgstr "Procházet místa v oblíbených a umístění v místní síti"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Procházet položky umístěné na ploše"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Procházet smazané soubory"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Vyprázdnit koš"
 
@@ -515,11 +511,13 @@ msgstr "Nedávné dokumenty"
 
 #: ../mate_menu/keybinding.py:181
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr "Kliknutím nastavíte novou zkratku pro otevírání a zavírání nabídky.  "
+msgstr ""
+"Klepnutím nastavíte novou klávesovou zkratku pro otevření a zavření "
+"nabídky.  "
 
 #: ../mate_menu/keybinding.py:182
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Stiskněte klávesu Escape nebo klikněte znovu pro zrušení operace."
+msgstr "Stiskem klávesy Escape či opětovným klepnutím zrušíte operaci.  "
 
 #: ../mate_menu/keybinding.py:183
 msgid "Press Backspace to clear the existing keybinding."

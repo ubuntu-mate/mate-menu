@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# Allan Nordhøy <epost@anotheragency.no>, 2016-2017
+# Allan Nordhøy <epost@anotheragency.no>, 2016-2018
 # Kenneth Jenssen <kennethjenssen@yahoo.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2018-01-04 12:04+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/mate/MATE/language/"
 "nb/)\n"
 "Language: nb\n"
@@ -33,23 +33,23 @@ msgstr "Kan ikke laste programtillegg:"
 msgid "Couldn't initialize plugin"
 msgstr "Kunne ikke klargjøre programtillegg"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
-msgstr "Avansert MATE meny"
+msgstr "Avansert MATE-meny"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Innstillinger"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Rediger meny"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Gjeninnlast programtillegg"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "Om"
 
@@ -68,7 +68,7 @@ msgstr "Vis knappeikon"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
-msgstr "Bruk egenvalgte farger"
+msgstr "Bruk egne farger"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
@@ -116,7 +116,7 @@ msgstr "piksler"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Tekst på knapp:"
+msgstr "Knappetekst:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
@@ -145,31 +145,27 @@ msgstr "Programtillegg"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Alltid vis søkeforslag"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Søk på Google"
+msgstr "Søkemotorer:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Søk på Google"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Søk på WIkipedia"
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Slå opp i ordbok"
+msgstr "Ordbok"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -209,7 +205,7 @@ msgstr "Forsinkelse for pekersveving (ms):"
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "Knappeminiatyrbilder:"
+msgstr "Knappeikon:"
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
@@ -236,25 +232,25 @@ msgstr "Høyde:"
 msgid "Toggle Default Places:"
 msgstr "Veksle forvalgte steder:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Hjemmemappe"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Nettverk"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Skrivebord"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
-msgstr "Søppelkurv"
+msgstr "Papirkurv"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
-msgstr "Mine steder:"
+msgstr "Egendefinerte steder:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
@@ -274,11 +270,11 @@ msgstr "Pakkebehandler"
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
-msgstr "Kontrollpanel"
+msgstr "Kontrollsenter"
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
-msgstr "Terminalemulator"
+msgstr "Terminal"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
@@ -302,11 +298,11 @@ msgstr "Nytt sted"
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr "Velg ei mappe"
+msgstr "Velg en mappe"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
-msgstr "Skrivebordssnarvei"
+msgstr "Tastatursnarvei:"
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
@@ -339,12 +335,12 @@ msgstr "Søk:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
-msgstr "Alle programmene"
+msgstr "Alle programmer"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Søk på Google etter %s"
+msgstr "Søk på DuckDuckGo etter %s"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -399,7 +395,7 @@ msgstr "Fjern fra favoritter"
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
 msgid "Edit properties"
-msgstr "Rediger innstillinger"
+msgstr "Rediger egenskaper"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
@@ -415,9 +411,8 @@ msgid "Delete from menu"
 msgstr "Slett fra menyen"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Søk på Google"
+msgstr "Søk på DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -469,7 +464,7 @@ msgstr "Krever passord for å låse opp"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr "Utlogging"
+msgstr "Logg ut"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
@@ -479,30 +474,30 @@ msgstr "Logg ut eller bytt bruker"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Slå av, omstart, hvil eller dvalgang"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Utforsk alle lokale og eksterne disker og mapper som er tilgjengelig fra "
-"denne maskinen"
+"Bla gjennom alle lokale og eksterne disker og mapper som kan nås fra denne "
+"datamaskinen"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Åpne din personlige mappe"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Utforsk bokmerkede og lokale nettverkssteder"
+msgstr "Bla gjennom nettverksplasseringer i bokmerker og lokalt"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Se igjennom elementer plassert på skrivebordet"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Utforsk slettede filer"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Tøm papirkurv"
 
@@ -521,7 +516,7 @@ msgstr "Trykk på Esc eller klikk igjen for å avbryte operasjonen."
 
 #: ../mate_menu/keybinding.py:183
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Trykk på backspace for å fjerne eksisterende hurtigtast."
+msgstr "Trykk ← for å tømme eksisterende hurtigtast."
 
 #: ../mate_menu/keybinding.py:202
 msgid "Pick an accelerator"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mate-menu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
 "PO-Revision-Date: 2013-11-06 17:37+0000\n"
 "Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
 "Language-Team: Afrikaans <af@li.org>\n"
@@ -31,23 +31,23 @@ msgstr "Kan nie plugin laai nie:"
 msgid "Couldn't initialize plugin"
 msgstr "Kan nie plugin inisialiseer nie"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr ""
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Voorkeure"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Kieslys"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Herlaai plugins"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "Aangaande"
 
@@ -234,19 +234,19 @@ msgstr "Hoogte:"
 msgid "Toggle Default Places:"
 msgstr "Skakel Verstek Plakke:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Tuis Gids"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Netwerk"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Werkskerm"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Asblik"
 
@@ -478,30 +478,30 @@ msgstr "Teken uit of verander gebruiker"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Skakel af, herlaai bedryfstelsel, skors of hiberneer"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
 "Blaai deur alle plaaslike en afgeleë skywe en gidse wat toeganklik is vanaf "
 "hierdie rekenaar"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Maak jou persoonlike gids oop"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
 msgstr "Blaai deur geboekmerkte en plaaslike netwerk plekke"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Blaai deur items op die werkskerm geplaas"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Blaai deur uitgeveede lêers"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Verwyder gemors"
 

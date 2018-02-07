@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 08:47+0000\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2017-11-29 19:44+0000\n"
 "Last-Translator: Ivica  Kolić <ikoli@yahoo.com>\n"
 "Language-Team: Croatian (http://www.transifex.com/mate/MATE/language/hr/)\n"
 "Language: hr\n"
@@ -27,29 +27,29 @@ msgstr "Izbornik"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr "Nije bilo moguće učitati priključak"
+msgstr "Nije bilo moguće učitati priključak:"
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
 msgstr "Nije bilo moguće pokrenuti priljučak"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "Napredni MATE izbornik"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Prilagodbe"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Uredi izbornik"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Ponovno učitaj proključke"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "O programu"
 
@@ -92,7 +92,7 @@ msgstr "Prikaži komentare aplikacija"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
-msgstr "Prikaži kategoriju sličica"
+msgstr "Prikažii kone kategorija"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
@@ -112,7 +112,7 @@ msgstr "Širina ruba:"
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
-msgstr "točaka"
+msgstr "pikseli"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
@@ -120,7 +120,7 @@ msgstr "Tekst gumba:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "Mogućnosti"
+msgstr "Opcije"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
@@ -145,31 +145,27 @@ msgstr "Priključci"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Uvijek pokaži sugestije pretraživanja"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Pretraži Google"
+msgstr "Tražilice:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Pretraži Google"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Pretraži Wikipediju"
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Pogledaj u rječniku"
+msgstr "Rječnik"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -236,19 +232,19 @@ msgstr "Visina:"
 msgid "Toggle Default Places:"
 msgstr "Prebaci na zadana mjesta:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Osobna mapa"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Mreža"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Radna površina"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Smeće"
 
@@ -270,7 +266,7 @@ msgstr "Prebaci na zadane stavke:"
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr "Paketni upravitelj"
+msgstr "Upravitelj paketima"
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
@@ -286,7 +282,7 @@ msgstr "Zaključaj zaslon"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr "Odjavi se"
+msgstr "Odjava"
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
@@ -342,9 +338,9 @@ msgid "All applications"
 msgstr "Sve aplikacije"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Pretraži Google za %s"
+msgstr "Pretraži  DuckDuckGo za %s"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -415,9 +411,8 @@ msgid "Delete from menu"
 msgstr "Izbriši iz izbornika"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Pretraži Google"
+msgstr "Pretraži  DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -469,7 +464,7 @@ msgstr "Zahtijeva zaporku za otključavanje"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr "Odjavi se"
+msgstr "Odjava"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
@@ -479,29 +474,29 @@ msgstr "Odjavi se ili izmijeni korisnika"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Isključi, ponovno pokreni, obustavi ili hiberniraj"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Pregledaj sve mjesne i udaljene diskove i mape dostupne s ovog računala"
+"Pregledaj sve lokalne i udaljene diskove i mape dostupne s ovog računala"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr "Otvori svoju osobnu mapu"
+msgstr "Otvorite svoju osobnu mapu"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Pregledaj zabilježene i mjesne mrežne lokacije"
+msgstr "Pregledaj zabilježene položaje i položaje mjesne mreže"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Pregledaj stavke smještene na radnoj površini"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Pregledaj izbrisane datoteke"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Isprazni smeće"
 
@@ -530,4 +525,4 @@ msgstr "Odaberi ubrzivač"
 
 #: ../mate_menu/keybinding.py:258
 msgid "<not set>"
-msgstr "<nije postavljeno>"
+msgstr "<not set>"

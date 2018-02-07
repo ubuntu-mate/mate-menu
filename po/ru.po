@@ -3,16 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Aleksey Kabanov <ak099@mail.ru>, 2017-2018
 # Dmitriy Kulikov <kulikov@dima.perm.ru>, 2017
 # Dmitry Mandryk <dmandryk@gmail.com>, 2015
 # Konstantin <kilolife@gmail.com>, 2015
+# Yaroslav Shevchenko <yvshevchenko@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Dmitriy Kulikov <kulikov@dima.perm.ru>\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2018-01-26 12:47+0000\n"
+"Last-Translator: Aleksey Kabanov <ak099@mail.ru>\n"
 "Language-Team: Russian (http://www.transifex.com/mate/MATE/language/ru/)\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -29,31 +31,31 @@ msgstr "Меню"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr "Не могу загрузить плагин:"
+msgstr "Не удалось загрузить плагин:"
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
-msgstr "Не могу инициализировать плагин"
+msgstr "Не удалось инициализировать плагин"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "Расширенное меню MATE"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Настройки"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Редактировать меню"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Перезагрузить плагины"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
-msgstr "Информация о"
+msgstr "О программе"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
@@ -62,15 +64,15 @@ msgstr "Свойства меню"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "Всегда стартовать с панели избранного"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr "Показывать изображение на кнопке"
+msgstr "Показывать значок на кнопке"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
-msgstr "Использовать цвета заданные пользователем"
+msgstr "Использовать цвета, заданные пользователем"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
@@ -90,15 +92,15 @@ msgstr "Показывать плагин \"Места\""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
-msgstr "Показывать комментарии к приложению"
+msgstr "Показывать плагин \"Приложения\""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
-msgstr "Показать иконки категорий"
+msgstr "Показывать значки категорий"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "Поверх"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
@@ -106,7 +108,7 @@ msgstr "Запомнить последнюю категорию или поис
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
-msgstr "Поменять название на описание"
+msgstr "Поменять местами название и описание"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
@@ -122,7 +124,7 @@ msgstr "Текст на кнопке"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "Опции"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
@@ -130,7 +132,7 @@ msgstr "Приложения"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr "Оформление"
+msgstr "Тема"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
@@ -147,31 +149,27 @@ msgstr "Плагины"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Всегда показывать предложения поиска"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Искать в Google"
+msgstr "Поисковые сервисы:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Искать в Google"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Искать в Wikipedia"
+msgstr "Википедия"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Поиск в словаре"
+msgstr "Словарь"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -211,7 +209,7 @@ msgstr "Задержка при наведении (мс):"
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "Размер значка:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
@@ -224,11 +222,11 @@ msgstr "Места"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
-msgstr "Разрешить прокрутку"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
-msgstr "Показывать Избранное GTK+"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
@@ -238,19 +236,19 @@ msgstr "Высота:"
 msgid "Toggle Default Places:"
 msgstr "Отображать отмеченные места:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Домашний каталог"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Сеть"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Рабочий стол"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Корзина"
 
@@ -304,7 +302,7 @@ msgstr "Создать"
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr "Выберите каталог"
+msgstr "Выберите папку"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
@@ -312,7 +310,7 @@ msgstr "Сочетание клавиш:"
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr "Изображение"
+msgstr "Изображения"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
@@ -337,16 +335,16 @@ msgstr "Размещение:"
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr "Искать:"
+msgstr "Поиск:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
 msgstr "Все приложения"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Искать в Google %s"
+msgstr "Искать в DuckDuckGo %s"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -361,7 +359,7 @@ msgstr "Искать в Википедии %s"
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Искать %s в словаре"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
@@ -382,7 +380,7 @@ msgstr "Добавить на панель"
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
 msgid "Insert space"
-msgstr "Вставить пробел"
+msgstr "Вставить отступ"
 
 #: ../mate_menu/plugins/applications.py:792
 #: ../mate_menu/plugins/applications.py:833
@@ -417,9 +415,8 @@ msgid "Delete from menu"
 msgstr "Удалить из меню"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Искать в Google"
+msgstr "Искать в DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -427,11 +424,11 @@ msgstr "Искать в Google"
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
-msgstr "Искать в Wikipedia"
+msgstr "Искать в Википедии"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
-msgstr "Поиск в словаре"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
@@ -442,8 +439,8 @@ msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Не могу сохранить избранное. Проверьте, есть ли у вас доступ для записи в ~/."
-"config/mate-menu"
+"Не удалось сохранить избранное. Проверьте, есть ли у вас доступ для записи в "
+"~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
@@ -467,7 +464,7 @@ msgstr "Использовать командную строку"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr "Запросить пароль для разблокировки"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
@@ -479,51 +476,52 @@ msgstr "Завершить сеанс или сменить пользовате
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Выключить, перезагрузить, приостановить или спящий режим"
+msgstr "Выключить, перезагрузить, ждущий или спящий режим"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
 "Просмотреть все локальные и удалённые диски и папки, доступные с этого "
 "компьютера"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Открыть вашу личную папку"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
 msgstr "Просмотреть закладки и локальные сетевые адреса"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Обзор элементов на рабочем столе"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "Посмотреть удаленные файлы"
+msgstr "Посмотреть удалённые файлы"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Очистить корзину"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Последние документы"
+msgstr "Недавние документы"
 
 #: ../mate_menu/keybinding.py:181
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr "Кликните для указания новой горячей клавиши открытия\\закрытия меню."
+msgstr ""
+"Щёлкните, чтобы выбрать новую комбинацию клавиш для открытия и закрытия меню."
 
 #: ../mate_menu/keybinding.py:182
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Нажмите Escape или кликните снова чтобы прервать операцию."
+msgstr "Нажмите Escape или щёлкните снова, чтобы прервать операцию."
 
 #: ../mate_menu/keybinding.py:183
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Нажмите Backspace, чтобы очистить существующую привязку клавиш."
+msgstr "Нажмите Backspace, чтобы очистить существующую комбинацию клавиш."
 
 #: ../mate_menu/keybinding.py:202
 msgid "Pick an accelerator"
@@ -531,4 +529,4 @@ msgstr "Выберите горячую клавишу"
 
 #: ../mate_menu/keybinding.py:258
 msgid "<not set>"
-msgstr "<not set>"
+msgstr ""

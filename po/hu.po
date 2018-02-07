@@ -3,14 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Balázs Meskó <meskobalazs@gmail.com>, 2017
+# Falu <info@falu.me>, 2017
+# KAMI KAMI <kami911@gmail.com>, 2017
 # Rezső Páder <rezso@rezso.net>, 2015,2017
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2017-12-01 01:00+0000\n"
+"Last-Translator: Rezső Páder <rezso@rezso.net>\n"
 "Language-Team: Hungarian (http://www.transifex.com/mate/MATE/language/hu/)\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -31,30 +34,30 @@ msgstr "Nem sikerült betölteni a bővítményt:"
 msgid "Couldn't initialize plugin"
 msgstr "Nem sikerült beállítani a bővítményt"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
-msgstr "Haladó MATE menü"
+msgstr "Speciális MATE menü"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Beállítások"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Menü szerkesztése"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Bővítmények újratöltése"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "Névjegy"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "A menü beállításai"
+msgstr "Menübeállítások"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
@@ -62,7 +65,7 @@ msgstr "Induláskor a kedvencek megjelenítése"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr "Ikon megjelenítése a menügombon"
+msgstr "Gomb ikon megjelenítése"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
@@ -86,7 +89,7 @@ msgstr "Helyek bővítmény megjelenítése"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
-msgstr "Alkalmazásleírások megjelenítése"
+msgstr "Alkalmazás megjegyzések megjelenítése"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
@@ -94,11 +97,11 @@ msgstr "Kategóriaikonok megjelenítése"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "Kategóriatartalom automatikus megjelenítése"
+msgstr "Tartalom automatikus megjelenítése"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
-msgstr "Utolsó kategória vagy keresés megjegyzése"
+msgstr "Legutóbbi kategória vagy keresés megjegyzése"
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
@@ -114,7 +117,7 @@ msgstr "képpont"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Menügomb felirata:"
+msgstr "Gomb felirata:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
@@ -143,31 +146,27 @@ msgstr "Bővítmények"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Keresési javaslatok megjelenítése"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Keresés a Google keresővel"
+msgstr "Keresőmotorok:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Keresés a Google keresővel"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Keresés a Wikipédián"
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Keresés a szótárban"
+msgstr "Szótár"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -234,19 +233,19 @@ msgstr "Magasság:"
 msgid "Toggle Default Places:"
 msgstr "Alapértelmezett helyek megjelenítése:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Saját mappa"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Hálózat"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Asztal"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Kuka"
 
@@ -340,9 +339,9 @@ msgid "All applications"
 msgstr "Minden alkalmazás"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "%s keresése a Google keresővel"
+msgstr "%s keresése a DuckDuckGo keresővel"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -413,9 +412,8 @@ msgid "Delete from menu"
 msgstr "Törlés a menüből"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Keresés a Google keresővel"
+msgstr "Keresés a DuckDuckGo keresővel"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -477,29 +475,29 @@ msgstr "Kijelentkezés vagy felhasználóváltás"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Leállítás, újraindítás, felfüggesztés vagy hibernálás"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
 "A számítógépről elérhető összes helyi és távoli lemez és mappa tallózása"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Saját mappa megnyitása"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
 msgstr "Könyvjelzőzött vagy helyi hálózati kapcsolatok tallózása"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Az asztalra helyezett elemek tallózása"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Törölt fájlok tallózása"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Kuka ürítése"
 
@@ -531,4 +529,4 @@ msgstr "Gyorsbillentyű választása"
 
 #: ../mate_menu/keybinding.py:258
 msgid "<not set>"
-msgstr "<nincs beállítva>"
+msgstr "<not set>"

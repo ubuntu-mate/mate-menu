@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mate-menu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
 "PO-Revision-Date: 2014-11-07 01:17+0000\n"
 "Last-Translator: Akerbeltz <fios@akerbeltz.org>\n"
 "Language-Team: Sgioba na gàidhlig\n"
@@ -31,23 +31,23 @@ msgstr "Cha b' urrainn dhuinn am plugan a leanas a luchdadh:"
 msgid "Couldn't initialize plugin"
 msgstr "Cha b' urrainn dhuinn am plugan a thòiseachadh"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "Clàr-taice MATE adhartach"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Roghainnean"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Clàr-taice deasachaidh"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Ath-luchdaich na plugain"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "Mu dhèidhinn"
 
@@ -234,19 +234,19 @@ msgstr "Àirde:"
 msgid "Toggle Default Places:"
 msgstr "Toglaich na h-àitichean bunaiteach:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Pasgan na dachaigh"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Lìonra"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Desktop"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "An sgudal"
 
@@ -479,31 +479,31 @@ msgid "Shutdown, restart, suspend or hibernate"
 msgstr ""
 "Dùin sìos, ath-thòisich, cuir 'na dhàil no cuir ann an cadal-geamhraidh"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
 "Rùraich gach diosg is pasgan ionadail is cèin a ruigeas tu on choimpiutair "
 "seo"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Fosgail am pasgan pearsanta agad"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
 msgstr ""
 "Rùraich ionadan ionadail air an lìonra is feadhainn ris a bheil comharra-lìn"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Brabhsaich rudan a tha air an desktop agad"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Brabhsaich faidhlichean a chaidh a sguabadh às"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Falamhaich an sgudal"
 

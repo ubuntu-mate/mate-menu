@@ -6,14 +6,14 @@
 # alexandros_ <alexandros.venn@gmail.com>, 2015
 # Angelos Chraniotis <chraniotis@gmail.com>, 2016
 # Efstathios Iosifidis <iefstathios@gmail.com>, 2015
-# Αλέξανδρος Καπετάνιος <alexandros@gnugr.org>, 2017
+# Αλέξανδρος Καπετάνιος <alexandros@gnugr.org>, 2017-2018
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2018-01-10 22:39+0000\n"
+"Last-Translator: Αλέξανδρος Καπετάνιος <alexandros@gnugr.org>\n"
 "Language-Team: Greek (http://www.transifex.com/mate/MATE/language/el/)\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
@@ -34,23 +34,23 @@ msgstr "Αδυναμία φόρτωσης πρόσθετου:"
 msgid "Couldn't initialize plugin"
 msgstr "Αδυναμία αρχικοποίησης πρόσθετου"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "Μενού του MATE για προχωρημένους"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Προτιμήσεις"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Επεξεργασία μενού"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Επαναφόρτωση προσθέτων"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "Περί"
 
@@ -113,7 +113,7 @@ msgstr "Πάχος περιγράμματος"
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
-msgstr "εικονοστοιχεία"
+msgstr "pixels"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
@@ -146,31 +146,27 @@ msgstr "Πρόσθετα"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Εμφάνιση πάντα των προτάσεων αναζήτησης"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Αναζήτηση στο Google"
+msgstr "Μηχανές αναζήτησης:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Αναζήτηση στο Google"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Αναζήτηση στην Wikipedia"
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Αναζήτηση στο λεξικό"
+msgstr "Λεξικό"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -237,21 +233,21 @@ msgstr "Ύψος:"
 msgid "Toggle Default Places:"
 msgstr "Εναλλαγή προεπιλεγμένων τοποθεσιών::"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr "Αρχικός Κατάλογος"
+msgstr "Προσωπικός φάκελος"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Δίκτυο"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Επιφάνεια εργασίας"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
-msgstr "Κάδος ανακύκλωσης"
+msgstr "Απορρίμματα"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
@@ -275,7 +271,7 @@ msgstr "Διαχειριστής πακέτων"
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
-msgstr "Κέντρο Ελέγχου"
+msgstr "Κέντρο ελέγχου"
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
@@ -291,7 +287,7 @@ msgstr "Αποσύνδεση"
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr "Τερματισμός"
+msgstr "Έξοδος"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
@@ -303,7 +299,7 @@ msgstr "Νέα τοποθεσία"
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr "Επιλογή φακέλου"
+msgstr "Επιλογή ενός φακέλου"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
@@ -343,9 +339,9 @@ msgid "All applications"
 msgstr "Όλες οι εφαρμογές"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Αναζήτηση στο Google για %s"
+msgstr "Αναζήτηση DuckDuckGo για %s"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -416,9 +412,8 @@ msgid "Delete from menu"
 msgstr "Διαγραφή από το μενού"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Αναζήτηση στο Google"
+msgstr "Αναζήτηση DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -462,7 +457,7 @@ msgstr "Ρύθμιση του συστήματός σας"
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr "Χρήση της γραμμής εντολών"
+msgstr "Χρήση γραμμής εντολών"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
@@ -480,30 +475,30 @@ msgstr "Αποσύνδεση ή εναλλαγή χρήστη"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Απενεργοποίηση, επανεκκίνηση, αναστολή ή αδρανοποίηση"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Περιήγηση σε όλους τους τοπικούς ή απομακρυσμένους δίσκους και φακέλους, "
-"στους οποίους έχει πρόσβαση αυτός ο υπολογιστής"
+"Περιήγηση σε όλους τους τοπικούς ή απομακρυσμένους δίσκους και φακέλους "
+"στους οποίους έχει πρόσβαση ο υπολογιστής"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr "Άνοιγμα του προσωπικού καταλόγου"
+msgstr "Άνοιγμα του προσωπικού σας φακέλου"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Περιήγηση σε σελιδοδείκτες ή τοποθεσίες τοπικού δικτύου"
+msgstr "Περιήγηση στους σελιδοδείκτες και το τοπικό δίκτυο"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Περιήγηση σε αντικείμενα της επιφάνειας εργασίας"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Περιήγηση σε διεγραμμένα αρχεία"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Άδειασμα κάδου ανακύκλωσης"
 

@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2017-11-29 12:09+0000\n"
+"Last-Translator: abuyop <abuyop@gmail.com>\n"
 "Language-Team: Malay (http://www.transifex.com/mate/MATE/language/ms/)\n"
 "Language: ms\n"
 "MIME-Version: 1.0\n"
@@ -31,23 +31,23 @@ msgstr "Tidak dapat muatkan pemalam:"
 msgid "Couldn't initialize plugin"
 msgstr "Tidak dapat awalkan pemalam"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "Menu MATE Lanjutan"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Keutamaan"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Sunting menu"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Muat semula pemalam"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "Perihal"
 
@@ -58,7 +58,7 @@ msgstr "Keutamaan menu"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "Sentiasa mula dengan anak tetingkap kegemaran"
+msgstr "Sentiasa bermula dengan anak tetingkap kegemaran"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
@@ -143,31 +143,27 @@ msgstr "Pemalam"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Sentiasa tunjuk cadangan gelintar"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Gelintar Google"
+msgstr "Enjin Gelintar:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Gelintar Google"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Gelintar Wikipedia"
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Carian Kamus"
+msgstr "Kamus"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -180,7 +176,7 @@ msgstr "Latar belakang:"
 
 #: ../lib/mate-menu-config.py:91
 msgid "Headings:"
-msgstr "Kepala:"
+msgstr "Pengepala:"
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
@@ -234,19 +230,19 @@ msgstr "Tinggi:"
 msgid "Toggle Default Places:"
 msgstr "Togol Tempat Lalai:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Folder Rumah"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Rangkaian"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Desktop"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Tong Sampah"
 
@@ -300,7 +296,7 @@ msgstr "Tempat Baharu"
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr "Pilih folder"
+msgstr "Pilih satu folder"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
@@ -340,9 +336,9 @@ msgid "All applications"
 msgstr "Semua aplikasi"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Gelintar Google untuk %s"
+msgstr "Gelintar DuckDuckGo untuk %s"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -413,9 +409,8 @@ msgid "Delete from menu"
 msgstr "Padam dari menu"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Gelintar Google"
+msgstr "Gelintar DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -467,7 +462,7 @@ msgstr "Perlukan kata laluan utuk dibuka"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr "Daftar keluar"
+msgstr "Daftar Keluar"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
@@ -477,30 +472,30 @@ msgstr "Daftar keluar atau tukar pengguna"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Matikan, mula semula, tangguh atau hibernasi"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Layar semua cakera dan folder setempat atau jauh yang boleh dicapai dari "
-"komputer ini"
+"Layar semua cakera jauh dan setempat serta folder boleh capai dari komputer "
+"ini"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Buka folder peribadi anda"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
 msgstr "Layar lokasi rangkaian setempat dan bertanda buku"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Layar item yang ditempatkan pada dekstop"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Layar fail dipadam"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Kosongkan tong sampah"
 
@@ -528,4 +523,4 @@ msgstr "Ambil satu pemecut"
 
 #: ../mate_menu/keybinding.py:258
 msgid "<not set>"
-msgstr "<tidak ditetapkan>"
+msgstr "<not set>"

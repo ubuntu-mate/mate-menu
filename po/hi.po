@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mate-menu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
 "PO-Revision-Date: 2011-09-20 14:12+0000\n"
 "Last-Translator: Ashutosh Kumar Singh <Unknown>\n"
 "Language-Team: Hindi <hi@li.org>\n"
@@ -31,23 +31,23 @@ msgstr "प्लगिन लोड नहीं हो सका:"
 msgid "Couldn't initialize plugin"
 msgstr "प्लगिन इनिशियलाइज़ नहीं हो सका"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr ""
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "वरीयताएँ"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "मेन्यू संपादित करें"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "प्लगइन पुनः लोड करें"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "विवरण"
 
@@ -231,19 +231,19 @@ msgstr "ऊँचाई:"
 msgid "Toggle Default Places:"
 msgstr "डिफ़ॉल्ट स्थान टॉगल करें:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "गृह फ़ोल्डर"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "नेटवर्क"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "डेस्कटॉप"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "कचरा"
 
@@ -474,28 +474,28 @@ msgstr "लॉग आउट या उपयोगकर्ता स्वि�
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "बंद करें, पुनः आरंभ करें, निलंबित करें या सीतनिद्रा में डालें"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr "ब्राउज़ करें सभी स्थानीय और दूरदराज के डिस्क और फ़ोल्डर्स इस कंप्यूटर के पहुंच में"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "अपना व्यक्तिगत फ़ोल्डर खोलें"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
 msgstr "बुकमार्क और स्थानीय नेटवर्क स्थानों ब्राउज़ करें"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "ब्राउज़ करें डेस्कटॉप पर रखे सामान"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "ब्राउज़ करें नष्ट कर दी गयीं फ़ाइलें"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "कचरा खाली करें"
 

@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# Asier Iturralde Sarasola <asier.iturralde@gmail.com>, 2015
+# Asier Iturralde Sarasola <asier.iturralde@gmail.com>, 2015,2018
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2018-01-10 19:22+0000\n"
+"Last-Translator: Asier Iturralde Sarasola <asier.iturralde@gmail.com>\n"
 "Language-Team: Basque (http://www.transifex.com/mate/MATE/language/eu/)\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
@@ -31,23 +31,23 @@ msgstr "Ezin izan da plugina kargatu:"
 msgid "Couldn't initialize plugin"
 msgstr "Ezin izan da plugina hasieratu"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "MATE menu aurreratua"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Hobespenak"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Editatu menua"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Birkargatu pluginak"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "Honi buruz"
 
@@ -143,31 +143,27 @@ msgstr "Pluginak"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Beti erakutsi beti bilaketa proposamenak"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Bilatu Google-en"
+msgstr "Bilatzaileak:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Bilatu Google-en"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Bilatu Wikipedia-n"
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Bilatu Hiztegian"
+msgstr "Hiztegia"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -199,7 +195,7 @@ msgstr "Zutabe kopurua:"
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
-msgstr "Ikono-tamaina:"
+msgstr "Ikonoen tamaina:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
@@ -224,7 +220,7 @@ msgstr "Baimendu korritze-barra"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
-msgstr ""
+msgstr "Erakutsi GTK+ laster-markak"
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
@@ -234,19 +230,19 @@ msgstr "Altuera:"
 msgid "Toggle Default Places:"
 msgstr "Txandakatu leku lehenetsiak:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Karpeta nagusia"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Sarea"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Mahaigaina"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Zakarrontzia"
 
@@ -292,7 +288,7 @@ msgstr "Irten"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr "Editatu Lekua"
+msgstr "Editatu lekua"
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
@@ -316,7 +312,7 @@ msgstr "Izena"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr "Bidea"
+msgstr "Bide-izena"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
@@ -328,7 +324,7 @@ msgstr "Izena:"
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
-msgstr "Bidea:"
+msgstr "Bide-izena:"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
@@ -340,9 +336,9 @@ msgid "All applications"
 msgstr "Aplikazio guztiak"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Bilatu %s Google erabiliz"
+msgstr "Bilatu %s DuckDuckGo erabiliz"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -413,9 +409,8 @@ msgid "Delete from menu"
 msgstr "Kendu menutik"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Bilatu Google-en"
+msgstr "Bilatu DuckDuckGo-n"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -477,30 +472,30 @@ msgstr "Amaitu saioa edo aldatu erabiltzailez"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Itzali, berrabiarazi, eseki edo hibernatu"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
 "Arakatu ordenagailu honetatik atzi daitezkeen lokaleko eta urruneko disko "
 "eta karpeta guztiak"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Ireki karpeta pertsonala"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
 msgstr "Arakatu laster-markatutako eta sare lokaleko kokalekuak"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Arakatu Mahaigaineko elementuak"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Arakatu ezabatutako fitxategiak"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Hustu zakarrontzia"
 
@@ -527,4 +522,4 @@ msgstr "Hautatu laster-tekla bat"
 
 #: ../mate_menu/keybinding.py:258
 msgid "<not set>"
-msgstr "<ezarri gabe>"
+msgstr "<not set>"

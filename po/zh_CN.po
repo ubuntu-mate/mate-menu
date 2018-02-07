@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# liushuyu011 <liushuyu011@gmail.com>, 2017
+# Mingcong Bai <jeffbai@aosc.xyz>, 2017
 # 玉堂白鹤 <yjwork@qq.com>, 2015,2017
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: 玉堂白鹤 <yjwork@qq.com>\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2017-12-01 16:19+0000\n"
+"Last-Translator: Mingcong Bai <jeffbai@aosc.xyz>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/mate/MATE/language/"
 "zh_CN/)\n"
 "Language: zh_CN\n"
@@ -26,29 +28,29 @@ msgstr "菜单"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr "无法加载插件："
+msgstr "无法载入插件："
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
 msgstr "无法初始化插件"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "高级 MATE 菜单"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "首选项"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "编辑菜单"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "重载插件"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "关于"
 
@@ -95,15 +97,15 @@ msgstr "显示分类图标"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "停留"
+msgstr "悬停"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
-msgstr "记住最后的分类或搜索"
+msgstr "记住最近使用的分类或搜索"
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
-msgstr "交换名和通用名"
+msgstr "互换应用名称和通用名"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
@@ -144,31 +146,27 @@ msgstr "插件"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "总是显示搜索建议"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "搜索谷歌"
+msgstr "搜索引擎："
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "搜索谷歌"
+msgstr "谷歌"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "搜索维基百科"
+msgstr "维基百科"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "查询字典"
+msgstr "字典"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -221,7 +219,7 @@ msgstr "位置"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
-msgstr "允许滚动条"
+msgstr "允许显示滚动条"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
@@ -235,19 +233,19 @@ msgstr "高度："
 msgid "Toggle Default Places:"
 msgstr "切换默认位置："
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "主文件夹"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "网络"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "桌面"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "回收站"
 
@@ -334,16 +332,16 @@ msgstr "路径："
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr "查找："
+msgstr "搜索："
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
 msgstr "所有应用程序"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "在谷歌上搜索 %s"
+msgstr "在 DuckDuckGo 上搜索 %s"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -363,7 +361,7 @@ msgstr "在字典里查找 %s "
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
 msgid "Search Computer for %s"
-msgstr "在电脑里搜索 %s"
+msgstr "在本机搜索 %s"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:788
@@ -379,7 +377,7 @@ msgstr "添加至面板"
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
 msgid "Insert space"
-msgstr "插入空格"
+msgstr "插入空白"
 
 #: ../mate_menu/plugins/applications.py:792
 #: ../mate_menu/plugins/applications.py:833
@@ -407,24 +405,23 @@ msgstr "移除"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
-msgstr "显示在我的收藏夹"
+msgstr "在收藏夹中显示"
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
-msgstr "从菜单中删除"
+msgstr "从菜单删除"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "搜索谷歌"
+msgstr "在 DuckDuckGo 搜索"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
-msgstr "搜索谷歌"
+msgstr "在谷歌搜索"
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
-msgstr "搜索维基百科"
+msgstr "在维基百科搜索"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
@@ -432,7 +429,7 @@ msgstr "查询字典"
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
-msgstr "搜索计算机"
+msgstr "本机搜索"
 
 #: ../mate_menu/plugins/applications.py:1344
 msgid ""
@@ -476,28 +473,28 @@ msgstr "注销或切换用户"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "关机，重启，挂起或休眠"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr "浏览可从本计算机访问的所有本地和远程磁盘和文件夹"
+msgstr "浏览可从本机访问的所有本地和远程磁盘和文件夹"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr "打开您的个人文件夹"
+msgstr "打开个人文件夹"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
 msgstr "浏览收藏和本地网络位置"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "浏览放置在桌面上的项目"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "浏览删除的文件"
+msgstr "浏览已删除的文件"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "清空回收站"
 
@@ -508,7 +505,7 @@ msgstr "最近文档"
 
 #: ../mate_menu/keybinding.py:181
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr "点击已设置一个新的加速器来打开和关闭菜单。"
+msgstr "点击以设置一个新键盘快捷键来打开和关闭菜单。"
 
 #: ../mate_menu/keybinding.py:182
 msgid "Press Escape or click again to cancel the operation.  "
@@ -516,12 +513,12 @@ msgstr "按下 Esc 键或再次点击以取消操作。"
 
 #: ../mate_menu/keybinding.py:183
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "按下 Backspace 键以清除已存在的组合键"
+msgstr "按下 Backspace 键以清除已存在的组合键。"
 
 #: ../mate_menu/keybinding.py:202
 msgid "Pick an accelerator"
-msgstr "选择一个加速器"
+msgstr "选择快捷键"
 
 #: ../mate_menu/keybinding.py:258
 msgid "<not set>"
-msgstr "<没有设置>"
+msgstr "<not set>"

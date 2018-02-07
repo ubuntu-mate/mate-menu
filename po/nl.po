@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2017-11-28 12:27+0000\n"
 "Last-Translator: Pjotr <pjotrvertaalt@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/mate/MATE/language/nl/)\n"
 "Language: nl\n"
@@ -30,31 +30,31 @@ msgstr "Menu"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr "Kon invoegtoepassing niet laden:"
+msgstr "Kon invoegsel niet laden:"
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
-msgstr "Kon invoegtoepassing niet starten"
+msgstr "Kon invoegsel niet starten"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "Geavanceerd MATE-menu"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Voorkeuren"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Menu bewerken"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
-msgstr "Invoegtoepassingen herladen"
+msgstr "Invoegsels herladen"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
-msgstr "Info"
+msgstr "Over"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
@@ -63,7 +63,7 @@ msgstr "Menuvoorkeuren"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "Start altijd met het favorietenpaneel"
+msgstr "Altijd starten met favorietenpaneel"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
@@ -71,27 +71,27 @@ msgstr "Toon knoppictogram"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
-msgstr "Aangepaste kleuren gebruiken"
+msgstr "Gebruik aangepaste kleuren"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
-msgstr "Toon 'recente documenten'-invoegtoepassing"
+msgstr "Toon invoegsel voor recente documenten"
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show applications plugin"
-msgstr "Toon invoegtoepassing voor programma's"
+msgstr "Toon invoegsel voor toepassingen"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show system plugin"
-msgstr "Toon systeem-invoegtoepassing"
+msgstr "Toon invoegsel voor systeem"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show places plugin"
-msgstr "Toon locaties-invoegtoepassing"
+msgstr "Toon invoegsel voor locaties"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
-msgstr "Toon toepassingcommentaren"
+msgstr "Toon omschrijvingen voor toepassingen"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
@@ -103,11 +103,11 @@ msgstr "Zweven"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
-msgstr "Onthoud de laatste categorie of zoekterm"
+msgstr "Onthoud de laatste categorie of zoekopdracht"
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
-msgstr "Naam en generieke naam omwisselen"
+msgstr "Wissel naam en generieke naam om"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
@@ -144,35 +144,31 @@ msgstr "Hoofdknop"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr "Invoegtoepassingen"
+msgstr "Invoegsels"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Zoeksuggesties altijd tonen"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Zoeken op Google"
+msgstr "Zoekmachines:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Zoeken op Google"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Zoeken op Wikipedia"
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Opzoeken in woordenboek"
+msgstr "Dictionary"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -204,7 +200,7 @@ msgstr "Aantal kolommen:"
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
-msgstr "Pictogramomvang:"
+msgstr "Pictogramgrootte:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
@@ -239,19 +235,19 @@ msgstr "Hoogte:"
 msgid "Toggle Default Places:"
 msgstr "Standaardlocaties omschakelen:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Persoonlijke map"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Netwerk"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Bureaublad"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Prullenbak"
 
@@ -273,11 +269,11 @@ msgstr "Standaardelementen omschakelen:"
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr "Pakketbeheerder"
+msgstr "Pakketbeheer"
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
-msgstr "Configuratiecentrum"
+msgstr "Instellingencentrum"
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
@@ -345,29 +341,29 @@ msgid "All applications"
 msgstr "Alle toepassingen"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Zoek naar %s op Google"
+msgstr "Doorzoek DuckDuckGo op %s"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
 msgid "Search Google for %s"
-msgstr "Zoek naar %s op Google"
+msgstr "Doorzoek Google op %s"
 
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Zoek naar %s op Wikipedia"
+msgstr "Doorzoek Wikipedia op %s"
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "%s opzoeken in woordenboek"
+msgstr "Doorzoek Dictionary op %s"
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Zoek naar %s op computer"
+msgstr "Doorzoek computer op %s"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:788
@@ -378,7 +374,7 @@ msgstr "Toevoegen aan bureaublad"
 #: ../mate_menu/plugins/applications.py:789
 #: ../mate_menu/plugins/applications.py:854
 msgid "Add to panel"
-msgstr "Toevoegen aan paneel"
+msgstr "Toevoegen aan werkbalk"
 
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
@@ -397,7 +393,7 @@ msgstr "Starten"
 
 #: ../mate_menu/plugins/applications.py:795
 msgid "Remove from favorites"
-msgstr "Verwijderen uit favorieten"
+msgstr "Verwijder uit favorieten"
 
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
@@ -415,40 +411,39 @@ msgstr "Toon in mijn favorieten"
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
-msgstr "Verwijderen uit menu"
+msgstr "Verwijder uit menu"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Zoeken op Google"
+msgstr "Doorzoek DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
-msgstr "Zoeken op Google"
+msgstr "Doorzoek Google"
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
-msgstr "Zoeken op Wikipedia"
+msgstr "Doorzoek Wikipedia"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
-msgstr "Opzoeken in woordenboek"
+msgstr "Doorzoek Dictionary"
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
-msgstr "Zoeken op computer"
+msgstr "Doorzoek computer"
 
 #: ../mate_menu/plugins/applications.py:1344
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Kon favorieten niet opslaan. Controleer of u schrijftoegang hebt tot ~/."
-"config/mate-menu"
+"Kon favorieten niet opslaan. Kijk na of u schrijfrecht heeft voor ~/.config/"
+"mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
-msgstr "Alles"
+msgstr "Alle"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
@@ -456,11 +451,11 @@ msgstr "Toon alle toepassingen"
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "Installeren, verwijderen en opwaarderen van programmatuurpakketten"
+msgstr "Programmatuurpakketten installeren, verwijderen en opwaarderen"
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr "Configureer uw systeem"
+msgstr "Stel uw systeem in"
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
@@ -468,7 +463,7 @@ msgstr "Gebruik de opdrachtregel"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr "Wachtwoord nodig om te ontgrendelen"
+msgstr "Vereist wachtwoord om te ontgrendelen"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
@@ -476,38 +471,38 @@ msgstr "Afmelden"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr "Afmelden of van gebruiker wisselen"
+msgstr "Afmelden of gebruiker wisselen"
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Afsluiten, herstarten, pauzestand of slaapstand"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Blader door alle lokale schijven, schijven op afstand en mappen die "
-"toegankelijk zijn vanaf deze computer"
+"Doorzoek alle schijven en mappen die benaderbaar zijn vanuit deze computer, "
+"ook als ze op afstand zijn"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Open uw persoonlijke map"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Blader door bladwijzers en lokale netwerklocaties"
+msgstr "Verken gebladwijzerde en plaatselijke netwerklocaties"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "Blader door elementen die op het bureaublad zijn geplaatst"
+msgstr "Verken elementen die op uw bureaublad staan"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "Verwijderde bestanden doorbladeren"
+msgstr "Verken verwijderde bestanden"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr "Prullenbak ledigen"
+msgstr "Prullenbak leegmaken"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
@@ -517,16 +512,16 @@ msgstr "Recente documenten"
 #: ../mate_menu/keybinding.py:181
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
-"Klik om een nieuwe sneltoets in te stellen voor het openen en sluiten van "
+"Klik om een nieuwe sneltoets in te schakelen voor het openen en sluiten van "
 "het menu."
 
 #: ../mate_menu/keybinding.py:182
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Druk op Escape of klik nogmaals om de bewerking te annuleren."
+msgstr "Druk op Esc of klik opnieuw om de bewerking af te breken."
 
 #: ../mate_menu/keybinding.py:183
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Druk op Backspace om de bestaande sneltoets te wissen."
+msgstr "Druk op Backspace om de bestaande toetsbinding te verwijderen."
 
 #: ../mate_menu/keybinding.py:202
 msgid "Pick an accelerator"

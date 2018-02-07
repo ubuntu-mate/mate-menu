@@ -5,13 +5,14 @@
 # Translators:
 # Charles Monzat <superboa@hotmail.fr>, 2017
 # Étienne Deparis <etienne@depar.is>, 2017
+# Nicolas Dobigeon <dobigeon@gmail.com>, 2017
 # Tubuntu <tubuntu@testimonium.be>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2017-12-05 14:29+0000\n"
 "Last-Translator: Étienne Deparis <etienne@depar.is>\n"
 "Language-Team: French (http://www.transifex.com/mate/MATE/language/fr/)\n"
 "Language: fr\n"
@@ -33,23 +34,23 @@ msgstr "Impossible de charger le greffon :"
 msgid "Couldn't initialize plugin"
 msgstr "Impossible d'initialiser le greffon"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "Menu MATE avancé"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Préférences"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Modifier le menu"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Recharger les greffons"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "À propos"
 
@@ -96,7 +97,7 @@ msgstr "Afficher les icônes des catégories"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "Afficher les catégories au survol de la souris"
+msgstr "Survol"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
@@ -145,31 +146,27 @@ msgstr "Greffons"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Toujours afficher les suggestions de recherche"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Rechercher sur Google"
+msgstr "Moteurs de recherche :"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Rechercher sur Google"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Rechercher sur Wikipédia"
+msgstr "Wikipédia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Consultation dans le dictionnaire"
+msgstr "Dictionnaire"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -190,7 +187,7 @@ msgstr "Bordures :"
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
-msgstr "Utiliser les couleurs du thème :"
+msgstr "Thème :"
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
@@ -201,7 +198,7 @@ msgstr "Nombre de colonnes :"
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
-msgstr "Taille des icônes :"
+msgstr "Taille des icônes :"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
@@ -222,7 +219,7 @@ msgstr "Emplacements"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
-msgstr "Hauteur variable (affiche une barre de défilement si nécessaire)"
+msgstr "Autoriser la Barre de défilement"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
@@ -230,25 +227,25 @@ msgstr "Afficher les signets GTK+"
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
-msgstr "Hauteur :"
+msgstr "Hauteur :"
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
 msgstr "Sélectionner les emplacements par défaut à afficher :"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Dossier personnel"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Réseau"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Bureau"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Corbeille"
 
@@ -286,7 +283,7 @@ msgstr "Verrouiller l'écran"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr "Déconnexion"
+msgstr "Se déconnecter"
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
@@ -322,29 +319,29 @@ msgstr "Chemin"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
-msgstr "Thème du Bureau"
+msgstr "Thème du bureau"
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
-msgstr "Nom :"
+msgstr "Nom :"
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
-msgstr "Chemin :"
+msgstr "Chemin :"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr "Recherche :"
+msgstr "Recherche :"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
 msgstr "Toutes les applications"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Rechercher %s sur Google"
+msgstr "Rechercher %s sur DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -380,7 +377,7 @@ msgstr "Ajouter au tableau de bord"
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
 msgid "Insert space"
-msgstr "Insérer une espace"
+msgstr "Insérer un espace"
 
 #: ../mate_menu/plugins/applications.py:792
 #: ../mate_menu/plugins/applications.py:833
@@ -415,9 +412,8 @@ msgid "Delete from menu"
 msgstr "Supprimer du menu"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Rechercher sur Google"
+msgstr "Rechercher sur DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -429,7 +425,7 @@ msgstr "Rechercher sur Wikipédia"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
-msgstr "Consultation dans le dictionnaire"
+msgstr "Consulter le dictionnaire"
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
@@ -453,7 +449,7 @@ msgstr "Afficher toutes les applications"
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "Installer, supprimer et mettre à jour les paquets logiciels"
+msgstr "Installer, enlever et mettre à jour les paquets logiciels"
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
@@ -479,30 +475,30 @@ msgstr "Se déconnecter ou changer d'utilisateur"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Éteindre, redémarrer, suspendre ou mettre en veille"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Parcourir tous les disques locaux et distants et tous les répertoires "
-"accessibles par cet ordinateur"
+"Parcourir tous les disques locaux et distants ainsi que les dossiers "
+"accessibles depuis cet ordinateur"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Ouvrir votre dossier personnel"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Parcourir les emplacements référencés dans les signets et locaux"
+msgstr "Parcourir les emplacements mis en signets et du réseau local"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "Parcourir les éléments placés sur le Bureau"
+msgstr "Parcourir les éléments placés sur le bureau"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Parcourir les fichiers supprimés"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Vider la corbeille"
 

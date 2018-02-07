@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# Dušan Kazik <prescott66@gmail.com>, 2017
+# Dušan Kazik <prescott66@gmail.com>, 2017-2018
 # Ján Ďanovský <dagsoftware@yahoo.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2018-01-29 18:56+0000\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak (http://www.transifex.com/mate/MATE/language/sk/)\n"
 "Language: sk\n"
@@ -21,49 +21,49 @@ msgstr ""
 
 #: ../lib/mate-menu.py:57
 msgid "Menu"
-msgstr "Menu"
+msgstr "Ponuka"
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr "Nepodarilo sa načítať modul:"
+msgstr "Nepodarilo sa načítať zásuvný modul:"
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
-msgstr "Nepodarilo sa inicializovať zásuvný modul:"
+msgstr "Nepodarilo sa inicializovať zásuvný modul"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
-msgstr "Pokročilé MATE Menu"
+msgstr "Pokročilá ponuka prostredia MATE"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Nastavenia"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
-msgstr "Upraviť menu"
+msgstr "Upraviť ponuku"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
-msgstr "Znovu načítať moduly"
+msgstr "Znovu načítať zásuvné moduly"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
-msgstr "O programe"
+msgstr "O aplikácii"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "Nastavenia menu"
+msgstr "Nastavenia ponuky"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "Vždy začať so zoznamom obľúbených"
+msgstr "Vždy začať s panelom obľúbených"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr "Zobraziť ikonu tlačítka"
+msgstr "Zobraziť ikonu tačidla"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
@@ -115,19 +115,19 @@ msgstr "pixelov"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Text tlačítka"
+msgstr "Text tlačidla:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "Možnosti"
+msgstr "Voľby"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
-msgstr "Programy"
+msgstr "Aplikácie"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr "Téma"
+msgstr "Motív"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
@@ -136,39 +136,35 @@ msgstr "Obľúbené"
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "Hlavné tlačítko"
+msgstr "Hlavné tlačidlo"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr "Moduly"
+msgstr "Zásuvné moduly"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Vždy zobrazovať návrhy vyhľadávania"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Hľadať na Googli"
+msgstr "Vyhľadávacie nástroje:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Hľadať na Googli"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Hľadať na Wikipedii"
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Hľadať v slovníku"
+msgstr "Slovník"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -189,7 +185,7 @@ msgstr "Okraje:"
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
-msgstr "Téma:"
+msgstr "Motív:"
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
@@ -208,11 +204,11 @@ msgstr "Oneskorenie bezklikovej aktivácie (ms):"
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "Ikona tlačítka:"
+msgstr "Ikona tlačidla:"
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
-msgstr "Príkaz pre vyhľadávanie:"
+msgstr "Príkaz vyhľadávania:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
@@ -235,19 +231,19 @@ msgstr "Výška:"
 msgid "Toggle Default Places:"
 msgstr "Prepnúť zobrazenie predvolených miest:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Domovský priečinok"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Sieť"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
-msgstr "Plocha"
+msgstr "Pracovná plocha"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Kôš"
 
@@ -269,7 +265,7 @@ msgstr "Prepnúť zobrazenie predvolených položiek:"
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr "Správca balíčkov"
+msgstr "Správca balíkov"
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
@@ -281,7 +277,7 @@ msgstr "Terminál"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr "Zamknúť obrazovku"
+msgstr "Uzamknúť obrazovku"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
@@ -341,9 +337,9 @@ msgid "All applications"
 msgstr "Všetky programy"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Hľadať %s na Googli"
+msgstr "Hľadať %s na DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -411,12 +407,11 @@ msgstr "Zobraziť v obľúbených"
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
-msgstr "Odstrániť z menu"
+msgstr "Odstrániť z ponuky"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Hľadať na Googli"
+msgstr "Hľadať na DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -439,12 +434,12 @@ msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Nepodarilo sa uložiť Obľúbené. Skontrolujte, či máte právo na zápis do ~/."
-"config/mate-menu"
+"Nepodarilo sa uložiť obľúbené. Skontrolujte, či máte oprávnenie na zápis do "
+"~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
-msgstr "Všetky"
+msgstr "Všetko"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
@@ -452,11 +447,11 @@ msgstr "Zobraziť všetky programy"
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "Inštalovať, odstrániť alebo aktualizovať softvérové balíčky"
+msgstr "Inštaluje, odstraňuje a aktualizuje softvérové balíky"
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr "Nastavte svoj systém"
+msgstr "Nastavuje váš systém"
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
@@ -468,7 +463,7 @@ msgstr "Na odomknutie sa požaduje heslo"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr "Odhlásiť"
+msgstr "Odhlásenie"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
@@ -478,32 +473,32 @@ msgstr "Odhlásiť alebo prepnúť používateľa"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Vypnúť, reštartovať, uspať alebo hibernovať"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Prehliadať všetky lokálne aj vzdialené disky a priečinky, prístupné z tohto "
+"Prehliadať všetky miestne a vzdialené disky a priečinky dostupné z tohto "
 "počítača"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Otvoriť osobný priečinok"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
 msgstr "Prehliadať záložky a miesta v lokálnej sieti"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Prehliadať položky umiestnené na ploche"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "Prehliadať vymazané súbory"
+msgstr "Prehliadať odstránené súbory"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr "Vysypať kôš"
+msgstr "Vyprázdniť Kôš"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
@@ -512,20 +507,21 @@ msgstr "Nedávne dokumenty"
 
 #: ../mate_menu/keybinding.py:181
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr "Kliknúť pre nastavenie novej skratky pre otvorenie a zatvorenie menu."
+msgstr ""
+"Kliknutím nastavíte novú klávesovú skratku na otvorenie a zavretie ponuky."
 
 #: ../mate_menu/keybinding.py:182
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Stlačte ESC alebo znovu kliknite pre zrušenie operácie."
+msgstr "Stlačením klávesy Escape alebo opätovným kliknutím zrušíte operáciu."
 
 #: ../mate_menu/keybinding.py:183
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Stlačte Backspace na vyčistenie existujúcich skratiek."
+msgstr "Stlačením klávesy Backspace vymažete existujúcu klávesovú skratku."
 
 #: ../mate_menu/keybinding.py:202
 msgid "Pick an accelerator"
-msgstr "Vyberte skratku"
+msgstr "Vyberte klávesovú skratku"
 
 #: ../mate_menu/keybinding.py:258
 msgid "<not set>"
-msgstr "<nenastavené>"
+msgstr "<not set>"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mate-menu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
 "PO-Revision-Date: 2013-05-01 06:28+0000\n"
 "Last-Translator: Iftekhar Mohammad <Unknown>\n"
 "Language-Team: Bengali <bn@li.org>\n"
@@ -31,23 +31,23 @@ msgstr "প্লাগ-ইন লোড করা সম্ভব হয়নি"
 msgid "Couldn't initialize plugin"
 msgstr "প্লাগিন শুরু করা সম্ভব হয় নি"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr ""
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "পছন্দসমূহ"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "মেন্যু সম্পাদনা"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "প্লাগ-ইন রি-লোড করুন"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "পরিচিতি"
 
@@ -234,19 +234,19 @@ msgstr "উচ্চতা:"
 msgid "Toggle Default Places:"
 msgstr "ডিফল্ট প্লেসেস টোগল করুন"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "হোম ফোল্ডার"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "নেটওয়ার্ক"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "ডেস্কটপ"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "ট্রাশ"
 
@@ -478,29 +478,29 @@ msgstr "লগ আউট বা সুইচ ইউজার"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "শাটডাউন, রিস্টার্ট, সাসপেন্ড অথবা হাইবারনেট"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
 "এই কম্পিউটার থেকে এক্সেস করা যায় এমন সব স্থানীয় ও প্রত্যন্ত ফোল্ডারসমূহ ব্রাউজ করুন"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "আপনারব্যক্তিগত ফোল্ডার খুলুন"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
 msgstr "বুকমার্ক করা ও স্থানীয় নেটয়ার্কসমূহ ব্রাউজ করুন"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "ডেস্কটপে অবস্থিত আইটেমগুলো ব্রাউজ করুন"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "মুছে ফেলা হয়েছে এমন ফাইলগুলো ব্রাউজ করুন"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "ট্রাশ খালি করুন"
 

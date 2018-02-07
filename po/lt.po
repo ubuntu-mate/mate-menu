@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2017-11-28 20:35+0000\n"
+"Last-Translator: Moo\n"
 "Language-Team: Lithuanian (http://www.transifex.com/mate/MATE/language/lt/)\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -33,23 +33,23 @@ msgstr "Nepavyko įkelti įskiepio:"
 msgid "Couldn't initialize plugin"
 msgstr "Nepavyko inicijuoti įskiepio"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "Išplėstinis MATE meniu"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Nustatymai"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Taisyti meniu"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Iš naujo įkelti įskiepius"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "Apie"
 
@@ -88,7 +88,7 @@ msgstr "Rodyti vietų įskiepį"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
-msgstr "Rodyti programos komentarus"
+msgstr "Rodyti programų komentarus"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
@@ -100,7 +100,7 @@ msgstr "Užvedant pelę"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
-msgstr "Prisiminti vėliausiąją kategoriją ar paiešką"
+msgstr "Prisiminti paskiausią kategoriją ar paiešką"
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
@@ -112,7 +112,7 @@ msgstr "Rėmelio plotis:"
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
-msgstr "taškų"
+msgstr "pikselių"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
@@ -145,31 +145,27 @@ msgstr "Įskiepiai"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Visada rodyti paieškos pasiūlymus"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Ieškoti Google"
+msgstr "Paieškos sistemos:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Ieškoti Google"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Ieškoti Vikipedijoje"
+msgstr "Vikipedija"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Ieškoti žodyne"
+msgstr "Žodynas"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -201,7 +197,7 @@ msgstr "Stulpelių skaičius:"
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
-msgstr "Piktogramos dydis:"
+msgstr "Piktogramų dydis:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
@@ -236,19 +232,19 @@ msgstr "Aukštis:"
 msgid "Toggle Default Places:"
 msgstr "Perjungti numatytąsias vietas:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Namų aplankas"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Tinklas"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Darbalaukis"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Šiukšlinė"
 
@@ -294,7 +290,7 @@ msgstr "Išeiti"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr "Redaguoti vietą"
+msgstr "Taisyti vietą"
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
@@ -302,7 +298,7 @@ msgstr "Nauja vieta"
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr "Pasirinkite aplanką"
+msgstr "Pasirinkti aplanką"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
@@ -342,19 +338,19 @@ msgid "All applications"
 msgstr "Visos programos"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Ieškoti %s per Google"
+msgstr "Ieškoti %s, naudojant DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
 msgid "Search Google for %s"
-msgstr "Ieškoti %s per Google"
+msgstr "Ieškoti %s, naudojant Google"
 
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Ieškoti %s per Vikipediją"
+msgstr "Ieškoti %s, naudojant Vikipediją"
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
@@ -364,7 +360,7 @@ msgstr "Ieškoti %s žodyne"
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Ieškoti %s kompiuteryje"
+msgstr "Ieškoti kompiuteryje %s"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:788
@@ -415,13 +411,12 @@ msgid "Delete from menu"
 msgstr "Ištrinti iš meniu"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Ieškoti Google"
+msgstr "Ieškoti, naudojant DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
-msgstr "Ieškoti Google"
+msgstr "Ieškoti, naudojant Google"
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
@@ -440,8 +435,8 @@ msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Nepavyko irašyti mėgstamas. Patikrinkite ar turite ~/.config/mate-menu "
-"rašymo leidimą"
+"Nepavyko įrašyti mėgstamas. Patikrinkite ar turite rašymo prieigą prie ~/."
+"config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
@@ -479,30 +474,30 @@ msgstr "Atsijungti arba perjungti naudotoją"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Išjungti, paleisti iš naujo, pristabdyti ar užmigdyti"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
 "Naršyti visus vietinius ir nuotolinius diskus ir aplankus, prieinamus iš šio "
 "kompiuterio"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Atverti jūsų asmeninį aplanką"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
 msgstr "Naršyti pažymėtas ir vietines tinklo vietas"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Naršyti darbalaukyje patalpintus elementus"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Naršyti ištrintus failus"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Išvalyti šiukšlinę"
 
@@ -520,11 +515,12 @@ msgstr ""
 #: ../mate_menu/keybinding.py:182
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
-"Spauskite Gr arba spustelėkite dar kartą, kad atsisakytumėte operacijos."
+"Paspauskite Gr (angl. Escape) arba spustelėkite dar kartą, norėdami "
+"atsisakyti operacijos."
 
 #: ../mate_menu/keybinding.py:183
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Spauskite naikinimo klavišą, kad išvalytumėte dabartinį susiejimą."
+msgstr "Paspauskite naikinimo klavišą, norėdami išvalyti dabartinį susiejimą."
 
 #: ../mate_menu/keybinding.py:202
 msgid "Pick an accelerator"

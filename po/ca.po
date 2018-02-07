@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2017-11-29 06:38+0000\n"
+"Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/mate/MATE/language/ca/)\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -31,25 +31,25 @@ msgstr "No s'ha pogut carregar el connector:"
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
-msgstr "No s'ha pogut inicialitzar el connector:"
+msgstr "No s'ha pogut inicialitzar el connector"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "Menú avançat de MATE"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Preferències"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Edita el menú"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Torna a carregar els connectors"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "Quant a"
 
@@ -60,7 +60,7 @@ msgstr "Preferències del menú"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "Inicia sempre amb el plafó de preferits"
+msgstr "Comença sempre amb el plafó de les preferides"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
@@ -133,7 +133,7 @@ msgstr "Tema"
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
 msgid "Favorites"
-msgstr "Preferits"
+msgstr "Preferides"
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
@@ -145,31 +145,27 @@ msgstr "Connectors"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Mostra sempre els suggeriments de cerca"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Cerca-ho al Google"
+msgstr "Motors de cerca:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Cerca-ho al Google"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Cerca-ho a la Wikipedia"
+msgstr "Viquipèdia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "diccionari de recerca"
+msgstr "Diccionari"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -186,7 +182,7 @@ msgstr "Encapçalaments:"
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
-msgstr "Vores:"
+msgstr "Contorns:"
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
@@ -236,19 +232,19 @@ msgstr "Alçada:"
 msgid "Toggle Default Places:"
 msgstr "Commuta els llocs predeterminats:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Carpeta de l'usuari"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Xarxa"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Escriptori"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Paperera"
 
@@ -342,9 +338,9 @@ msgid "All applications"
 msgstr "Totes les aplicacions"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Cerca %s a Google"
+msgstr "Cerca %s a DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -354,17 +350,17 @@ msgstr "Cerca %s a Google"
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Cerca %s a Wikipedia"
+msgstr "Cerca %s a Viquipèdia"
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Cerca %s al diccionari"
+msgstr "Consulta %s al diccionari"
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Cerca l'ordinador %s"
+msgstr "Cerca %s a l'ordinador"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:788
@@ -394,7 +390,7 @@ msgstr "Llança"
 
 #: ../mate_menu/plugins/applications.py:795
 msgid "Remove from favorites"
-msgstr "Elimina-ho dels preferits"
+msgstr "Suprimeix dels preferits"
 
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
@@ -408,40 +404,39 @@ msgstr "Suprimeix"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
-msgstr "Mostra-ho als meus preferits"
+msgstr "Mostra-ho a les meves preferides"
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
 msgstr "Elimina-ho del menú"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Cerca-ho al Google"
+msgstr "Cerca a DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
-msgstr "Cerca-ho al Google"
+msgstr "Cerca a Google"
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
-msgstr "Cerca-ho a la Wikipedia"
+msgstr "Cerca a la Viquipèdia"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
-msgstr "diccionari de recerca"
+msgstr "Consulta al diccionari"
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
-msgstr "Cerca-ho a l'ordinador"
+msgstr "Cerca a l'ordinador"
 
 #: ../mate_menu/plugins/applications.py:1344
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"No s'ha pogut desar els preferits. Comproveu que teniu l'accés d'escriptura "
-"a ~/.config/mate-menu"
+"No s'han pogut desar les preferides. Comproveu que teniu l'accés "
+"d'escriptura a ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
@@ -457,7 +452,7 @@ msgstr "Instal·la, actualitza i elimina els paquets de programari"
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr "Configura el vostre sistema"
+msgstr "Configura el sistema"
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
@@ -479,30 +474,30 @@ msgstr "Tanca la sessió o canvia d'usuari"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Apaga, reinicia, suspèn o hiverna"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
 "Navegueu per tots els discs i carpetes, locals o remots, que es poden "
 "accedir des d'aquest ordinador"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Obriu la vostra carpeta personal"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
 msgstr "Navegueu pels marcadors i les ubicacions de la xarxa local"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "Navega pels elements a l'escriptori"
+msgstr "Navega pels elements ubicats a l'escriptori"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Navega pels elements eliminats"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Buida la paperera"
 

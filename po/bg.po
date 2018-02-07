@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2017-11-28 11:55+0000\n"
+"Last-Translator: Любомир Василев\n"
 "Language-Team: Bulgarian (http://www.transifex.com/mate/MATE/language/bg/)\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
@@ -32,23 +32,23 @@ msgstr "Приставката не бе заредена:"
 msgid "Couldn't initialize plugin"
 msgstr "Приставката не бе инициализирана"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
-msgstr "Разширено MATE меню"
+msgstr "Разширено меню на MATE"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Настройки"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Редактиране на менюто"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
-msgstr "Презареждане на приставката"
+msgstr "Презареждане на приставките"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "Относно"
 
@@ -59,7 +59,7 @@ msgstr "Настройки на менюто"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "Винаги започвай с любимия плот"
+msgstr "Винаги да се започва с любимия плот"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
@@ -67,7 +67,7 @@ msgstr "Показване на иконката на бутона"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
-msgstr "Използвай собствени цветове"
+msgstr "Използване на персонализирани цветове"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
@@ -99,7 +99,7 @@ msgstr "Отгоре"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
-msgstr "Запомни последната категория или търсене"
+msgstr "Помнене на последната категория или търсене"
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
@@ -111,7 +111,7 @@ msgstr "Ширина на рамката:"
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
-msgstr "пиксели"
+msgstr "пиксела"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
@@ -144,31 +144,27 @@ msgstr "Приставки"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Винаги да се показват предложения при търсене"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Търсене в Гугъл"
+msgstr "Търсещи машини:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Търсене в Гугъл"
+msgstr "Гугъл"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Търсене в Уикипедия"
+msgstr "Уикипедия"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Търсене в речник"
+msgstr "Речник"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -200,7 +196,7 @@ msgstr "Брой колони:"
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
-msgstr "Размер на иконката:"
+msgstr "Размер на иконките:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
@@ -233,21 +229,21 @@ msgstr "Височина:"
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
-msgstr "Превключване на места по подразбиране:"
+msgstr "Превключване на местата по подразбиране:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Домашна папка"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Мрежа"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Работен плот"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Кошче"
 
@@ -285,15 +281,15 @@ msgstr "Заключване на екрана"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr "Излизане от системата"
+msgstr "Излизане"
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr "Напускане"
+msgstr "Изход"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr "Редактиране на местата"
+msgstr "Редактиране на мястото"
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
@@ -341,40 +337,40 @@ msgid "All applications"
 msgstr "Всички приложения"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Търсене на \"%s\" в Гугъл"
+msgstr "Търсене на „%s“ в DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
 msgid "Search Google for %s"
-msgstr "Търсене на \"%s\" в Гугъл"
+msgstr "Търсене на „%s“ в Гугъл"
 
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Търсене на \"%s\" в Уикипедия"
+msgstr "Търсене на „%s“ в Уикипедия"
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Търсене на \"%s\" в речник"
+msgstr "Търсене на „%s“ в речник"
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Търсене на \"%s\" в компютъра"
+msgstr "Търсене на „%s“ в компютъра"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:788
 #: ../mate_menu/plugins/applications.py:853
 msgid "Add to desktop"
-msgstr "Добави към работния плот"
+msgstr "Добавяне на работния плот"
 
 #: ../mate_menu/plugins/applications.py:789
 #: ../mate_menu/plugins/applications.py:854
 msgid "Add to panel"
-msgstr "Добави към панела"
+msgstr "Добавяне в панела"
 
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
@@ -398,7 +394,7 @@ msgstr "Премахване от любими"
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
 msgid "Edit properties"
-msgstr "Редактиране на настройките"
+msgstr "Редактиране на свойствата"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
@@ -414,9 +410,8 @@ msgid "Delete from menu"
 msgstr "Премахване от менюто"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Търсене в Гугъл"
+msgstr "Търсене в DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -439,8 +434,8 @@ msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Не могат да се запазят любими. Проверете дали имате права за писане в ~/."
-"config/mate-menu"
+"Любимите не могат да бъдат запазени. Проверете дали имате права за запис в "
+"~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
@@ -448,7 +443,7 @@ msgstr "Всички"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
-msgstr "Покажи всички приложения"
+msgstr "Показване на всички приложения"
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
@@ -456,11 +451,11 @@ msgstr "Инсталиране, премахване и обновяване н�
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr "Настройване на системата Ви"
+msgstr "Настройване на системата"
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr "Използвай командния ред"
+msgstr "Използване на команден ред"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
@@ -468,40 +463,40 @@ msgstr "Изисква парола за отключване"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr "Изход от системата"
+msgstr "Излизане"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr "Изход от системата или смяна на потребителя"
+msgstr "Излизане или смяна на потребителя"
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Изключване, рестартиране, прекратяване или хибернация"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
 "Преглед на всички локални и отдалечени дискове и папки достъпни от този "
-"компютър"
+"компютър."
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr "Отваряне на вашата лична папка"
+msgstr "Отваряне на личната Ви папка"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
 msgstr "Преглед на локални или отметнати мрежови местоположения"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Преглед на елементите поставени на работния плот"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Преглед на изтритите файлове"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Изпразване на кошчето"
 
@@ -512,8 +507,7 @@ msgstr "Скорошни документи"
 
 #: ../mate_menu/keybinding.py:181
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"Цъкни за избор на нов ускорителен бутон за отваряне и затваряне на менюто."
+msgstr "Щракнете за избор на нов клавиш за отваряне и затваряне на менюто."
 
 #: ../mate_menu/keybinding.py:182
 msgid "Press Escape or click again to cancel the operation.  "
@@ -521,13 +515,12 @@ msgstr "Натиснете Escape или щракнете отново за от
 
 #: ../mate_menu/keybinding.py:183
 msgid "Press Backspace to clear the existing keybinding."
-msgstr ""
-"Натиснете Backspace за премахване на съществуващата настройка на бутона."
+msgstr "Натиснете Backspace за премахване на текущо зададения клавиш."
 
 #: ../mate_menu/keybinding.py:202
 msgid "Pick an accelerator"
-msgstr "Избор на ускорител"
+msgstr "Изберете клавиш"
 
 #: ../mate_menu/keybinding.py:258
 msgid "<not set>"
-msgstr "<не е избрано>"
+msgstr "<not set>"

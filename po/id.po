@@ -3,16 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Andika Triwidada <andika@gmail.com>, 2017
+# Febrian Setianto (Feber) <febrian.setianto@gmail.com>, 2017
 # La Ode Muh. Fadlun Akbar <fadlun.net@gmail.com>, 2015
+# Willy Sudiarto Raharjo <willysr@slackware-id.org>, 2017
 # zk, 2015
 # zk, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2017-11-28 13:58+0000\n"
+"Last-Translator: Willy Sudiarto Raharjo <willysr@slackware-id.org>\n"
 "Language-Team: Indonesian (http://www.transifex.com/mate/MATE/language/id/)\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
@@ -33,30 +36,30 @@ msgstr "Tidak dapat memuat plugin:"
 msgid "Couldn't initialize plugin"
 msgstr "Tidak dapat menginisialisasi plugin"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "Menu MATE Tingkat Lanjut"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Preferensi"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
-msgstr "Sunting menu"
+msgstr "Edit menu"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Muat ulang plugin"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "Tentang"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "Preferensi Menu"
+msgstr "Preferensi menu"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
@@ -72,7 +75,7 @@ msgstr "Gunakan warna tertentu"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
-msgstr "Tampilkan plugin dokumen baru-baru ini"
+msgstr "Tampilkan plugin dokumen terbaru"
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show applications plugin"
@@ -96,7 +99,7 @@ msgstr "Tampilkan ikon kategori"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "Hover"
+msgstr "Melewati"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
@@ -116,7 +119,7 @@ msgstr "piksel"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Teks ditombol:"
+msgstr "Teks tombol:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
@@ -145,31 +148,27 @@ msgstr "Plugin"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Selalu tampilkan saran pencarian"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Pencarian Google"
+msgstr "Mesin Pencari:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Pencarian Google"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Pencarian Wikipedia"
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Cari Di Kamus"
+msgstr "Kamus"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -178,15 +177,15 @@ msgstr "Komputer"
 
 #: ../lib/mate-menu-config.py:90
 msgid "Background:"
-msgstr "Latar:"
+msgstr "Latar Belakang:"
 
 #: ../lib/mate-menu-config.py:91
 msgid "Headings:"
-msgstr "Judul"
+msgstr "Judul:"
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
-msgstr "Bingkai"
+msgstr "Bingkai:"
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
@@ -196,7 +195,7 @@ msgstr "Tema:"
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:97
 msgid "Number of columns:"
-msgstr "Banyaknya kolom:"
+msgstr "Jumlah kolom:"
 
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
@@ -205,11 +204,11 @@ msgstr "Ukuran ikon:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
-msgstr "Waktu tunda hover (ms):"
+msgstr "Waktu tunda lewat (ms):"
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "Ikon di tombol:"
+msgstr "Ikon tombol:"
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
@@ -226,7 +225,7 @@ msgstr "Izinkan Scrollbar"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
-msgstr "Tampilkan Penanda Taut GTK+"
+msgstr "Tampilkan Penanda GTK+"
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
@@ -234,21 +233,21 @@ msgstr "Tinggi:"
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
-msgstr "Jungkit Tempat Baku:"
+msgstr "Toggle Tempat Default:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Folder Rumah"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Jaringan"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Desktop"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Tempat Sampah"
 
@@ -263,7 +262,7 @@ msgstr "Sistem"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
-msgstr "Jungkit Butir Baku:"
+msgstr "Toggle Item Default:"
 
 #: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
@@ -294,7 +293,7 @@ msgstr "Keluar"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr "Sunting Lokasi"
+msgstr "Edit Lokasi"
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
@@ -310,7 +309,7 @@ msgstr "Tombol pintas:"
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr "Gambar"
+msgstr "Citra"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
@@ -335,16 +334,16 @@ msgstr "Lokasi:"
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr "Cari:"
+msgstr "Pencarian:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
 msgstr "Semua aplikasi"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Pencarian Google untuk %s"
+msgstr "Pencarian DuckDuckGo untuk %s"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -399,7 +398,7 @@ msgstr "Hapus dari favorit"
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
 msgid "Edit properties"
-msgstr "Sunting properti"
+msgstr "Edit properti"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
@@ -412,12 +411,11 @@ msgstr "Tampilkan di favorit saya"
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
-msgstr "Hilangkan dari menu"
+msgstr "Hapus dari menu"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Pencarian Google"
+msgstr "Pencarian DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -429,19 +427,19 @@ msgstr "Pencarian Wikipedia"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
-msgstr "Cari Di Kamus"
+msgstr "Pencarian di Kamus"
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
-msgstr "Pencarian Di Komputer"
+msgstr "Pencarian di Komputer"
 
 #: ../mate_menu/plugins/applications.py:1344
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Tidak dapat menyimpan favorit. Cek jika Anda mempunyai hak akses untuk "
-"menulis di ~/.config/mate-menu"
+"Tidak dapat menyimpan favorit. Periksa apakah Anda memiliki akses tulis pada "
+"~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
@@ -453,7 +451,7 @@ msgstr "Tampilkan semua aplikasi"
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "Pasang, hapus dan tingkatkan paket-paket perangkat lunak"
+msgstr "Install, hapus, dan upgrade paket perangkat lunak"
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
@@ -461,11 +459,11 @@ msgstr "Konfigurasi sistem Anda"
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr "Gunakan baris perintah"
+msgstr "Gunakan perintah baris"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr "Butuh sandi untuk membuka kunci"
+msgstr "Membutuhkan kata sandi untuk membuka"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
@@ -477,32 +475,32 @@ msgstr "Keluar atau ganti pengguna"
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Matikan, hidupkan ulang, suspensi atau hibernasi"
+msgstr "Matikan, hidupkan ulang, hentikan sementara atau hibernasi"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Ramban semua diska dan folder lokal dan jarak jauh yang dapat diakses dari "
-"komputer ini"
+"Buka semua disk dan folder lokal dan remote yang dapat diakses dari komputer "
+"ini"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Buka folder pribadi Anda"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Telusuri jaringan lokal maupun yang telah ditandai"
+msgstr "Buka lokasi jaringan lokal yang ditandai"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "Telusuri item yang berada di desktop"
+msgstr "Buka item yang ditempatkan pada desktop"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "Telusuri berkas yang terhapus"
+msgstr "Buka berkas yang terhapus"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Kosongkan tempat sampat"
 
@@ -514,16 +512,15 @@ msgstr "Dokumen baru-baru ini"
 #: ../mate_menu/keybinding.py:181
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
-"Klik untuk menyetel kombinasi tombol papan ketik untuk membuka dan menutup "
-"menu."
+"Klik untuk menentukan kunci akselerator untuk membuka dan menutup menu."
 
 #: ../mate_menu/keybinding.py:182
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Tekan Escape atau klik lagi untuk membatalkan operasi"
+msgstr "Tekan Escape atau klik lagi untuk membatalkan operasi."
 
 #: ../mate_menu/keybinding.py:183
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Tekan Backspace untuk membersihkan kombinasi tombol yang ada."
+msgstr "Tekan Backspace untuk membatalkan kombinasi tombol yang ada."
 
 #: ../mate_menu/keybinding.py:202
 msgid "Pick an accelerator"

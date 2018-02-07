@@ -5,15 +5,17 @@
 # Translators:
 # Ali Orhun Akkirman <divercans@gmail.com>, 2017
 # tarakbumba <tarakbumba@gmail.com>, 2015
+# Butterfly <gokhanlnx@gmail.com>, 2017
+# Emre FIRAT <emrefirat93@gmail.com>, 2017
 # mauron, 2015
-# mauron, 2015
+# mauron, 2015,2017
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-23 19:04+0100\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"PO-Revision-Date: 2017-12-14 12:36+0000\n"
+"Last-Translator: mauron\n"
 "Language-Team: Turkish (http://www.transifex.com/mate/MATE/language/tr/)\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -34,23 +36,23 @@ msgstr "Eklenti yüklenemedi:"
 msgid "Couldn't initialize plugin"
 msgstr "Eklenti başlatılamadı"
 
-#: ../lib/mate-menu.py:729
+#: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
 msgstr "Gelişmiş MATE Menüsü"
 
-#: ../lib/mate-menu.py:843
+#: ../lib/mate-menu.py:845
 msgid "Preferences"
 msgstr "Tercihler"
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:848
 msgid "Edit menu"
 msgstr "Menüyü düzenle"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:851
 msgid "Reload plugins"
 msgstr "Eklentileri tekrar yükle"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:854
 msgid "About"
 msgstr "Hakkında"
 
@@ -93,7 +95,7 @@ msgstr "Uygulama yorumlarını göster"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
-msgstr "Kategori simgelerini göster"
+msgstr "Kategori ikonlarını göster"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
@@ -121,7 +123,7 @@ msgstr "Düğme metni:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "Seçenekler"
+msgstr "Ayarlar"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
@@ -146,31 +148,27 @@ msgstr "Eklentiler"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Arama önerilerini daima göster"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Google'da ara"
+msgstr "Arama Motorları:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Google'da ara"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Vikipedi'de ara"
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Sözlükte ara"
+msgstr "Sözlük"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -210,7 +208,7 @@ msgstr "Üzerinde tutma süresi (ms):"
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "Düğme simgesi:"
+msgstr "Düğme ikonu:"
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
@@ -227,7 +225,7 @@ msgstr "Kaydıma Çubuğuna Müsaade Et"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
-msgstr "GTK+ yerimlerini göster"
+msgstr "GTK+ Yerimlerini Göster"
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
@@ -237,19 +235,19 @@ msgstr "Yükseklik:"
 msgid "Toggle Default Places:"
 msgstr "Varsayılan Yerleri Değiştir:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:160
+#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "Ev Klasörü"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:173
+#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "Ağ"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:196
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "Masaüstü"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:207
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "Çöp kutusu"
 
@@ -343,9 +341,9 @@ msgid "All applications"
 msgstr "Tüm uygulamalar"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Google'da %s unsurunu ara"
+msgstr "DuckDuckGo'da %s unsurunu ara"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -416,9 +414,8 @@ msgid "Delete from menu"
 msgstr "Menüden sil"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Google'da ara"
+msgstr "DuckDuckGo'da Ara"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -480,28 +477,30 @@ msgstr "Çıkış yap ya da kullanıcı değiştir"
 msgid "Shutdown, restart, suspend or hibernate"
 msgstr "Kapat, yeniden başlat, askıya al ya da uyku kipine al"
 
-#: ../mate_menu/plugins/places.py:157
+#: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr "Bu bilgisayardan tüm yerel ve uzaktaki disklere ve klasörlere göz atın"
+msgstr ""
+"Bu bilgisayardan erişilebilen tüm yerel ve uzaktaki disklere ve klasörlere "
+"göz atın"
 
-#: ../mate_menu/plugins/places.py:168
+#: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
 msgstr "Kişisel klasörünüzü açın"
 
-#: ../mate_menu/plugins/places.py:181
+#: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Yer imi oluşturulmuş ve yerel ağ konumlarını göz at"
+msgstr "Yerimlerine ve yerel ağ konumlarına göz atın"
 
-#: ../mate_menu/plugins/places.py:204
+#: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
 msgstr "Masaüstüne konmuş unsurları tara"
 
-#: ../mate_menu/plugins/places.py:217
+#: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
 msgstr "Silinmiş dosyaları tara"
 
-#: ../mate_menu/plugins/places.py:271
+#: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
 msgstr "Çöp kutusunu boşalt"
 
@@ -512,8 +511,7 @@ msgstr "Son kullanılan belgeler"
 
 #: ../mate_menu/keybinding.py:181
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"Menüyü açıp kapatacak için yeni bir hızlandırıcı tuş seçmek için tıklayın."
+msgstr "Menüyü açıp kapatacak yeni bir hızlandırıcı tuş seçmek için tıklayın."
 
 #: ../mate_menu/keybinding.py:182
 msgid "Press Escape or click again to cancel the operation.  "
@@ -529,4 +527,4 @@ msgstr "Bir hızlandırıcı seçin"
 
 #: ../mate_menu/keybinding.py:258
 msgid "<not set>"
-msgstr "<ayarlanmamış>"
+msgstr "<not set>"
