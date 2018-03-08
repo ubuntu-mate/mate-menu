@@ -139,28 +139,29 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         wait_for_release = False
         while self.running:
             event = self.display.next_event()
-            try:
-                self.current_event_time = event.time
-                if event.detail == self.keycode and event.type == X.KeyPress and not wait_for_release:
-                    modifiers = event.state & self.known_modifiers_mask
-                    if modifiers == self.modifiers:
-                        wait_for_release = True
-                        self.display.allow_events(X.AsyncKeyboard, event.time)
-                    else:
-                        self.display.allow_events(X.ReplayKeyboard, event.time)
-                elif event.detail == self.keycode and wait_for_release:
-                    if event.type == X.KeyRelease:
-                        wait_for_release = False
+
+            if self.modifiers:
+                # Use simpler logic when using traditional combined keybindings
+                modifiers = event.state & self.known_modifiers_mask
+                if event.type == X.KeyPress and event.detail == self.keycode and modifiers == self.modifiers:
+                    GLib.idle_add(self.idle)
+
+            else:
+                try:
+                    if event.type == X.KeyPress and event.detail == self.keycode and not wait_for_release:
+                        modifiers = event.state & self.known_modifiers_mask
+                        if modifiers == self.modifiers:
+                            wait_for_release = True
+                    elif event.type == X.KeyRelease and event.detail == self.keycode and wait_for_release:
                         GLib.idle_add(self.idle)
-                    self.display.allow_events(X.AsyncKeyboard, event.time)
-                else:
-                    # If we're not using modifiers, send the event up in case another window is listening to it
-                    if not self.modifiers:
-                        self.display.send_event(self.window, event, X.KeyPressMask | X.KeyReleaseMask, True)
-                    self.display.allow_events(X.ReplayKeyboard, event.time)
-                    wait_for_release = False
-            except AttributeError:
-                continue
+                        wait_for_release = False
+                    else:
+                        self.display.ungrab_keyboard(X.CurrentTime)
+                        # Send the event up in case another window is listening to it
+                        self.display.send_event(event.window, event, X.KeyPressMask | X.KeyReleaseMask, True)
+                        wait_for_release = False
+                except AttributeError:
+                    continue
 
     def stop(self):
         self.running = False
