@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
 "PO-Revision-Date: 2018-01-04 12:04+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/mate/MATE/language/"
@@ -506,22 +506,22 @@ msgstr "Tøm papirkurv"
 msgid "Recent documents"
 msgstr "Nylige dokumenter"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr "Klikk for å sette ny hurtigtast for åpning og lukking av menyen."
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "Trykk på Esc eller klikk igjen for å avbryte operasjonen."
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "Trykk ← for å tømme eksisterende hurtigtast."
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "Velg en hurtigtast"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "<ikke angitt>"

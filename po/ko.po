@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2017-12-25 14:19+0000\n"
-"Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-13 22:05+0000\n"
+"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>\n"
 "Language-Team: Korean (http://www.transifex.com/mate/MATE/language/ko/)\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
@@ -504,22 +504,22 @@ msgstr "휴지통 비우기"
 msgid "Recent documents"
 msgstr "최근 문서"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr "메뉴를 열고 닫을 새 단축키를 지정하시려면 클릭하세요."
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "실행을 멈추시려면 Esc 키를 누르시거나 다시 클릭하세요."
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "설정된 단축키를 지우실 땐 백스페이스키를 누르세요."
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "단축키를 고르세요"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "<not set>"

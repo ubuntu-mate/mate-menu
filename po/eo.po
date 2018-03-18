@@ -1,35 +1,34 @@
-# Esperanto translation for MATE Menu
-# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2014-05-07 14:28+0000\n"
-"Last-Translator: Jon Stevenson <jon.stevenson@gmail.com>\n"
-"Language-Team: Esperanto <eo@li.org>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: fenris <fenris@folksprak.org>\n"
+"Language-Team: Esperanto (http://www.transifex.com/mate/MATE/language/eo/)\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:57
 msgid "Menu"
-msgstr "Menuo"
+msgstr ""
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr "Ne eblis ŝargi kromprogramon:"
+msgstr ""
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
-msgstr "Ne eblis pravalorizi kromprogramon"
+msgstr ""
 
 #: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
@@ -41,11 +40,11 @@ msgstr "Agordoj"
 
 #: ../lib/mate-menu.py:848
 msgid "Edit menu"
-msgstr "Redakti menuon"
+msgstr ""
 
 #: ../lib/mate-menu.py:851
 msgid "Reload plugins"
-msgstr "Reŝargi kromprogramojn"
+msgstr ""
 
 #: ../lib/mate-menu.py:854
 msgid "About"
@@ -54,59 +53,59 @@ msgstr "Pri"
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "Menu-agordoj"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "Ĉiam starti kun aplikaĵofenestro pri preferitaĵoj"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr "Montri butonsimbolon"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
-msgstr "Uzi proprajn kolorojn"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
-msgstr "Monti ĵusdokumentan kromprogramon"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show applications plugin"
-msgstr "Montri aplikaĵan kromprogramon"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show system plugin"
-msgstr "Montri sisteman kromprogramon"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show places plugin"
-msgstr "Montri lokan kromprogramon"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
-msgstr "Montri aplikaĵajn komentojn"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
-msgstr "Montri katagoriajn piktogramojn"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "Musumi"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
-msgstr "Memori la lastan kategorion aŭ serĉon"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
-msgstr "Permuta nomo kaj komuna nomo"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
-msgstr "Bordera larĝo:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
@@ -114,7 +113,7 @@ msgstr "rastrumeroj"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Butonteksto:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
@@ -131,43 +130,39 @@ msgstr "Etoso"
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
 msgid "Favorites"
-msgstr "Preferaĵoj"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "Ĉefa butono"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "Kromaĵoj"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Serĉi ĉe Guglo"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Serĉi ĉe Guglo"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Serĉi ĉe Vikipedio"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Serĉi en vortaro"
+msgstr "Vortaro"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -180,21 +175,21 @@ msgstr "Fono:"
 
 #: ../lib/mate-menu-config.py:91
 msgid "Headings:"
-msgstr "Ĉapoj:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
-msgstr "Borderoj:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
-msgstr "Temo:"
+msgstr ""
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:97
 msgid "Number of columns:"
-msgstr "Nombro da kolumnoj:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
@@ -203,28 +198,28 @@ msgstr "Piktograma grando:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
-msgstr "Ŝveba atendo (ms):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "Butona piktogramo:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
-msgstr "Serĉkomando:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
 msgid "Places"
-msgstr "Lokoj"
+msgstr "Ejoj"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
-msgstr "Permesi rulumkeston"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
-msgstr "Montri GTK+-paĝosignojn"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
@@ -232,11 +227,11 @@ msgstr "Alto:"
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
-msgstr "Baskuligi apriorajn lokojn:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr "Hejma dosierujo"
+msgstr "Hejmujo"
 
 #: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
@@ -252,7 +247,7 @@ msgstr "Rubujo"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
-msgstr "Propraj lokoj:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
@@ -261,18 +256,18 @@ msgstr "Sistemo"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
-msgstr "Baskuligi apriorajn erojn"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr "Pakaĵmastrumilo"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
-msgstr "Stircentro"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
@@ -280,35 +275,35 @@ msgstr "Terminalo"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr "Ŝlosi ekranon"
+msgstr "Ŝlosi la ekranon"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr "Elsaluti"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr "Eliri"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr "Redakti ejon"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
-msgstr "Nova ejo"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr "Elektu dosierujon"
+msgstr "Elekti dosierujon"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
-msgstr "Klavara fulmoklavo:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr "Bildoj"
+msgstr "Bildo"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
@@ -316,11 +311,11 @@ msgstr "Nomo"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr "Pado"
+msgstr "Vojo"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
-msgstr "Labotabla etoso"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
@@ -328,7 +323,7 @@ msgstr "Nomo:"
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
-msgstr "Pado:"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
@@ -337,67 +332,67 @@ msgstr "Serĉi:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
-msgstr "Ĉiuj aplikaĵoj"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Serĉi %s ĉe Guglo"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
 msgid "Search Google for %s"
-msgstr "Serĉi %s ĉe Guglo"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Serĉi %s ĉe Vikipedio"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Serĉi %s en vortaro"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Serĉi %s en komputilo"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:788
 #: ../mate_menu/plugins/applications.py:853
 msgid "Add to desktop"
-msgstr "Aldoni al labortablo"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:789
 #: ../mate_menu/plugins/applications.py:854
 msgid "Add to panel"
-msgstr "Aldoni al panelo"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
 msgid "Insert space"
-msgstr "Enmetu spacon"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:792
 #: ../mate_menu/plugins/applications.py:833
 msgid "Insert separator"
-msgstr "Enmetu disigilon"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:794
 #: ../mate_menu/plugins/applications.py:857
 msgid "Launch"
-msgstr "Lanĉi"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:795
 msgid "Remove from favorites"
-msgstr "Forigi el la plej ŝatataj"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
 msgid "Edit properties"
-msgstr "Redakti ecojn"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
@@ -406,84 +401,80 @@ msgstr "Forigi"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
-msgstr "Montri en mia preferitaĵoj"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
-msgstr "Forigi el menuo"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Serĉi ĉe Guglo"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
-msgstr "Serĉi ĉe Guglo"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
-msgstr "Serĉi ĉe Vikipedio"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
-msgstr "Serĉi en vortaro"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
-msgstr "Serĉi en la komputilo"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1344
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Ne eblis konservi preferitaĵojn. Kontrolu, ĉu vi havas skribaatingon al ~/."
-"linuxmint/mintMenu"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
-msgstr "Ĉiuj"
+msgstr "Ĉio"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
-msgstr "Montri ĉiujn aplikaĵojn"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "Instali, forigi kaj promocii programarajn pakaĵojn"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr "Agordi vian sistemon"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr "Uzi la komandlinion"
+msgstr "Uzi komandolinion"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr "Pasvorto bezonas por malŝlosi"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr "Elsaluti"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr "Elsaluti aŭ ŝanĝi uzanton"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Elŝalti, restartigi, paŭzigi aŭ pasivumigi"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Foliumi ĉiujn lokan kaj foran diskojn kaj dosierujojn atingeblajn de ĉi tiu "
-"komputilo"
+"Foliumu ĉiujn lokajn kaj forajn diskojn kaj dosierujojn atingeblajn de ĉi "
+"tiu komputilo."
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
@@ -491,111 +482,41 @@ msgstr "Malfermi vian personan dosierujon"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Foliumi paĝosignatan kaj lokan retlokojn"
+msgstr "Foliumi legosignitajn kaj lokajn retlokojn"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "Foliumi erojn metitajn en la labortablo"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "Foliumi forigitajn dosierojn"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr "Malplenigi rubujon"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Ĵusaj dokumentoj"
-
-#: ../mate_menu/keybinding.py:181
-msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
-"Alklaku por asigni novan fulmoklavon por malfermi kaj fermi la menuon  "
 
 #: ../mate_menu/keybinding.py:182
-msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Premu Esc aŭ klaku denove por nuligi  "
+msgid "Click to set a new accelerator key for opening and closing the menu.  "
+msgstr ""
 
 #: ../mate_menu/keybinding.py:183
+msgid "Press Escape or click again to cancel the operation.  "
+msgstr ""
+
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Premu Retropaŝo por liberigi la aktuala klavo-bindado"
+msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
-msgstr "Elektu fulmoklavon"
+msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
-msgstr "<sen agordo>"
-
-#~ msgid "Opacity:"
-#~ msgstr "Travideblo:"
-
-#~ msgid "Launch when I log in"
-#~ msgstr "Lanĉi kiam mi ensalutas"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Serĉi instalendajn pakaĵojn"
-
-#~ msgid "Software Manager"
-#~ msgstr "Programarmastrumilo"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Instali pakaĵon '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "Malinstali"
-
-#~ msgid "Find Software"
-#~ msgstr "Trovi programaron"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Trovi lernilon"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Trovi aparataron"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Trovi ideojn"
-
-#~ msgid "Find Users"
-#~ msgstr "Trovi uzantojn"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Foliumi kaj instali disponeblajn programarojn"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Ĉu forigi %s?"
-
-#~ msgid "Colors"
-#~ msgstr "Koloroj"
-
-#~ msgid "File not found"
-#~ msgstr "Ne trovis dosieron"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Baziĝita sur USP el S.Chanderbally"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Bonvole atendu, necesas iom da tempo"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Porspertulaj GNOME-menuo"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Aplikaĵo sukcese forigita"
-
-#~ msgid "No matching package found"
-#~ msgstr "Neniu kongrua pakaĵo trovata"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Ĉu vi volas forigi ĉi tiun menueron?"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Forigotaj pakaĵoj"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "La jenaj pakaĵoj estos forigataj:"
+msgstr ""

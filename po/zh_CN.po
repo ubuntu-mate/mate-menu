@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
 "PO-Revision-Date: 2017-12-01 16:19+0000\n"
 "Last-Translator: Mingcong Bai <jeffbai@aosc.xyz>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/mate/MATE/language/"
@@ -503,22 +503,22 @@ msgstr "清空回收站"
 msgid "Recent documents"
 msgstr "最近文档"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr "点击以设置一个新键盘快捷键来打开和关闭菜单。"
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "按下 Esc 键或再次点击以取消操作。"
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "按下 Backspace 键以清除已存在的组合键。"
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "选择快捷键"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "<not set>"

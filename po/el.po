@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
 "PO-Revision-Date: 2018-01-10 22:39+0000\n"
 "Last-Translator: Αλέξανδρος Καπετάνιος <alexandros@gnugr.org>\n"
 "Language-Team: Greek (http://www.transifex.com/mate/MATE/language/el/)\n"
@@ -507,28 +507,28 @@ msgstr "Άδειασμα κάδου ανακύκλωσης"
 msgid "Recent documents"
 msgstr "Πρόσφατα έγγραφα"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 "Κάντε κλικ για ορισμό πλήκτρου ταχείας πρόσβασης για το άνοιγμα και το "
 "κλείσιμο του μενού."
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
 "Πατήστε το πλήκτρο Esc (Escape) ή ξανακάντε κλικ για να ακυρωθεί αυτή η "
 "λειτουργία."
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 "Πατήστε το πλήκτρο Βackspace για την εκκαθάριση του τρέχοντος συνδυασμού "
 "πλήκτρων."
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "Επιλέξτε έναν επιταχυντή"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "<μη ορισμένο>"

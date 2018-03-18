@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: Ardit Dani <ardit.dani@gmail.com>\n"
 "Language-Team: Albanian (http://www.transifex.com/mate/MATE/language/sq/)\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
@@ -110,7 +110,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
-msgstr ""
+msgstr "piksel"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
@@ -122,7 +122,7 @@ msgstr "Opsionet"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
-msgstr ""
+msgstr "Programe"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
@@ -139,34 +139,31 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "Plugins"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Kërko në Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Kërko në Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Kërko në Wikipedia"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:87
 msgid "Dictionary"
-msgstr ""
+msgstr "Fjalori"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -198,7 +195,7 @@ msgstr "Numri i kolonave:"
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
-msgstr ""
+msgstr "Madhësia e ikonës:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
@@ -215,7 +212,7 @@ msgstr ""
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
 msgid "Places"
-msgstr ""
+msgstr "Rezerva"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
@@ -235,15 +232,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr ""
+msgstr "Kartela personale"
 
 #: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
-msgstr ""
+msgstr "Rrjeti"
 
 #: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
-msgstr ""
+msgstr "Desktopi"
 
 #: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
@@ -271,7 +268,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
-msgstr ""
+msgstr "Qendra e kontrollit"
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
@@ -279,7 +276,7 @@ msgstr "Terminali"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr ""
+msgstr "Blloko Ekranin"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
@@ -287,7 +284,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr ""
+msgstr "Mbyll"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
@@ -299,7 +296,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr ""
+msgstr "Zgjidh kartelën"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
@@ -307,7 +304,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr ""
+msgstr "Figura"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
@@ -315,7 +312,7 @@ msgstr "Emri"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr ""
+msgstr "Pozicioni"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
@@ -327,12 +324,12 @@ msgstr "Emri:"
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
-msgstr ""
+msgstr "Pozicioni:"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr ""
+msgstr "Kërko:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
@@ -412,9 +409,8 @@ msgid "Delete from menu"
 msgstr ""
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Kërko në Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -440,7 +436,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
-msgstr ""
+msgstr "Gjithçka"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
@@ -456,7 +452,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr ""
+msgstr "Përdor rreshtin e komandës"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
@@ -464,7 +460,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr ""
+msgstr "Dil"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
@@ -478,14 +474,16 @@ msgstr ""
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
+"Shfleton të gjithë disqet dhe kartelat lokale dhe në distancë të arritshme "
+"nga ky kompjutër"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr ""
+msgstr "Hap kartelën personale"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr ""
+msgstr "Shfleton pozicionet e rrjetit lokal dhe në libërshënues"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
@@ -497,29 +495,29 @@ msgstr ""
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr ""
+msgstr "Zbraz koshin"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr ""

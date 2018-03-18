@@ -1,35 +1,34 @@
-# Sinhalese translation for MATE Menu
-# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <mail@nuwantha.com>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2012-05-06 14:40+0000\n"
-"Last-Translator: පසිඳු කාවින්ද <pkavinda@gmail.com>\n"
-"Language-Team: Sinhalese <si@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"Language-Team: Sinhala (http://www.transifex.com/mate/MATE/language/si/)\n"
+"Language: si\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:57
 msgid "Menu"
-msgstr "මෙනුව"
+msgstr ""
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr "අනු සම්බන්ධක ලබාගත නොහැක"
+msgstr ""
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
-msgstr "අනු සම්බන්ධක අරම්භ කල නොහැක"
+msgstr ""
 
 #: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
@@ -37,36 +36,36 @@ msgstr ""
 
 #: ../lib/mate-menu.py:845
 msgid "Preferences"
-msgstr "කැමැත්ත"
+msgstr "අභිප්‍රේත"
 
 #: ../lib/mate-menu.py:848
 msgid "Edit menu"
-msgstr "පෙළ සංස්කරණය කිරිම"
+msgstr ""
 
 #: ../lib/mate-menu.py:851
 msgid "Reload plugins"
-msgstr "අනු සම්බන්ධක නැවත ලබාගන්න"
+msgstr ""
 
 #: ../lib/mate-menu.py:854
 msgid "About"
-msgstr "පිළිබඳව"
+msgstr ""
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "පෙළගැසී අති ආකාරෙය"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "සමවිටෙම පිරුයතම කවුළුවෙන් අරම්භ කරන්න"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr "බොත්තමේ චයාරැව පෙන්වන්න"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
-msgstr "කැමති වර්ණ භාවිත කරන්න"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
@@ -86,15 +85,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
-msgstr "මෘදුකාංගය"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
-msgstr "කාන්ඩයේ චයාරෑ පෙන්වන්න"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "නවතී සිටින්න"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
@@ -102,53 +101,52 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
-msgstr "නම සහ භාවිතකෙරෙන නම හුවමාරැ කරන්න"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
-msgstr "දාරයේ පලල"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
-msgstr "තිත්"
+msgstr "පික්සලය"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "පහල කොටෙසේ අති අකුරැ"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "තේරීම්"
+msgstr "විකල්ප"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
-msgstr "මෘදුකාංග"
+msgstr "යෙදුම්"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr "තේමාව"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
 msgid "Favorites"
-msgstr "පිුයතම තේරීම්"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "මූලික බොත්තම"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "ප්ලගීන"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "සොයන්න:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
@@ -164,7 +162,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:87
 msgid "Dictionary"
-msgstr ""
+msgstr "ශබ්ද කෝෂය"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -173,25 +171,25 @@ msgstr "පරිගණකය"
 
 #: ../lib/mate-menu-config.py:90
 msgid "Background:"
-msgstr "පසුතලය"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:91
 msgid "Headings:"
-msgstr "සිරස්"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
-msgstr "දාර"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
-msgstr "තේමාව:"
+msgstr ""
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:97
 msgid "Number of columns:"
-msgstr "තීරැ ගණන:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
@@ -200,15 +198,15 @@ msgstr "චායාරැවේ විශාලත්වය"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
-msgstr "රැදී සිටින කාලය (තත්පර 1/1000):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "බොත්තමේ චායාරැව"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
-msgstr "සෙවීමේ නියෝගය"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
@@ -217,7 +215,7 @@ msgstr "ස්ථාන"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
-msgstr "චලනය කිරීමට අවසර දෙන්න"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
@@ -225,15 +223,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
-msgstr "උස:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
-msgstr "මුල් ස්ථානය මරැකරන්න"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr "පුධන ඇසුරුම"
+msgstr "නිවාස බහලුම"
 
 #: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
@@ -249,63 +247,63 @@ msgstr "ඉවතලන බහලුම"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
-msgstr "වෙනස් කලහකි ස්ථාන"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
 msgid "System"
-msgstr "පද්ධතිය"
+msgstr "පද්දතිය"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
-msgstr "මුල් අයිතම මරැකරන්න"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr "ඇසුරුම් කළමනාකරනය"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
-msgstr "පාලන මධ්‍යස්ථානය"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
-msgstr "පර්යන්තය"
+msgstr "අග්‍රය"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr "තීරය අගුල් දමන්න"
+msgstr "තිරය අගුලු දමන්න"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr "පිටවන්න"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr "ඉවත් වීම"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr "ස්ථානය වෙනස් කරන්න"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
-msgstr "නව ස්ථානය"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr "බහාලුමක් තෝරන්න"
+msgstr "බහලුම තෝරන්න"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
-msgstr "යතුරුපුවරුවේ කෙටි මඟ:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr ""
+msgstr "පිළිඹිබු"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
@@ -313,7 +311,7 @@ msgstr "නම"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr "මාර්ගය"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
@@ -334,12 +332,12 @@ msgstr "සොයන්න:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
-msgstr "සියලුම වැඩසටහන්"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "'%s' සඳහා ද්වාරය සොයන්න"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -349,7 +347,7 @@ msgstr ""
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "%s සඳහා විකීපීඩියාව සොයන්න"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
@@ -365,36 +363,36 @@ msgstr ""
 #: ../mate_menu/plugins/applications.py:788
 #: ../mate_menu/plugins/applications.py:853
 msgid "Add to desktop"
-msgstr "මුහුනත් තලයට එක් කරන්න"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:789
 #: ../mate_menu/plugins/applications.py:854
 msgid "Add to panel"
-msgstr "කවුළුවට එක් කරන්න"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
 msgid "Insert space"
-msgstr "ඉඩක් ඇතුලත් කරන්න"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:792
 #: ../mate_menu/plugins/applications.py:833
 msgid "Insert separator"
-msgstr "ඈත් කඩක් ඇතුලත් කරන්න"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:794
 #: ../mate_menu/plugins/applications.py:857
 msgid "Launch"
-msgstr "ආරම්භ කරන්න"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:795
 msgid "Remove from favorites"
-msgstr "පිුයතම තේරීමෙන් ඉවත් කරන්න"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
 msgid "Edit properties"
-msgstr "ලක්ශන සංස්කරණය කරන්න"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
@@ -403,11 +401,11 @@ msgstr "ඉවත් කරන්න"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
-msgstr "පිුයතම තේරීම්හි පෙන්වන්න"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
-msgstr "පෙළන් ඉවත් කරන්න"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:902
 msgid "Search DuckDuckGo"
@@ -430,171 +428,93 @@ msgid "Search Computer"
 msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1344
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"පිුයතම තේරීම්  ~/.linuxmint/mintMenu හි සුරක්ශිත කළ නොහැක, කරැනකර ඔබට අවසර ඇතිදැයි "
-"පරික්ශා කර බලන්න"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
-msgstr "සියල්ල"
+msgstr "සියළු"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
-msgstr "සියලුම මෘදුකාංග පෙන්වන්න"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "මෘදුකාංග පිහිටුවීම, යාවත්කාල කිරීම සහ ඉවත් කිරීම"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr "පද්ධතිය හැඩගැසීම"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr "විධාන තීරැ භාවිතකරන්න"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr "අගුළු ඇරීමට රහස් වචනය අවශ්‍ය වෙනවා"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr "පිටවෙන්න"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr "පිටවීම හෝ පරිශ්‍රීලක මාරැවීම"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "වසාදමීම, නැවත පටන් ගැනීම, තාවකාලිකව අත්හිටුවීම හෝ තාවකාලිකව වසාදමීම"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr "සියලුම ස්ථානයන් හි ඇති ලිපි-ගොනු ගවේශනය"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr "පුද්ගලික ලිපි-ගොනුව විවුර්ත කිරීම"
+msgstr "ඔබගේ පෞද්ගලික බහලුම් විවෘත කරන්න"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "සළකුණු කළ සහ ප්‍රදේශිය ජාල පිහිටීම් ගවේශනය"
+msgstr "පිටු සළකුණු කළ සහ ප්‍රදේශිය ජාල පිහිටීම් ගවේශනය කරන්න"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "මුහුනත් තලය් අති දැ ගවේශනය"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "මකා අති ලිපි-ගොනු ගවේශනය"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr "ඉවතදමන භාජනය හිස්කරන්න"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "අවසානයට භාවිතා කල ලිපි"
-
-#: ../mate_menu/keybinding.py:181
-msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
 #: ../mate_menu/keybinding.py:182
-msgid "Press Escape or click again to cancel the operation.  "
+msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
 #: ../mate_menu/keybinding.py:183
+msgid "Press Escape or click again to cancel the operation.  "
+msgstr ""
+
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr ""
-
-#~ msgid "Opacity:"
-#~ msgstr "විනිවිද නොපෙනෙන ප්‍රෙමනය"
-
-#~ msgid "Launch when I log in"
-#~ msgstr "අතුලුවූ පසු දියත් කරන්න"
-
-#~ msgid "Software Manager"
-#~ msgstr "මෘදුකාංග කළමනාකරනය"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "'%s' ඇසුරුම පිහිටුවන්න"
-
-#~ msgid "Uninstall"
-#~ msgstr "අස්ථාපනය කරන්න"
-
-#~ msgid "Find Software"
-#~ msgstr "මෘදුකාංග සොයන්න"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "ලබාගතහැකි මෘදුකාංග දැක්වීම සහ පිහිටුවීම"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "සංකීර්ණ Gnome තේරීම පෙළ"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "අනුසාරය: USP from S.Chanderbally"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "මෘදුකාංගය සාර්ථකව ඉවත්කර අත"
-
-#~ msgid "No matching package found"
-#~ msgstr "ගැලපෙන පැකෙජය සොයාගැනීමට නොමැත"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "ඔබට මෙම යොමුව ඉවත් කිරීමට අවශ්ය ද?"
-
-#~ msgid "Remove %s?"
-#~ msgstr "%s ඉවත් කරන්න ද?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "ඉදිරියේ දැක්වෙනෙ පැකේජය ඉවත් කරනු අත:"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "ඉවත් කරනු ලබන පැකේජ"
-
-#~ msgid "Show recent documents"
-#~ msgstr "අවසානයට භාවිතා කල ගොනුව පෙන්වන්න"
-
-#~ msgid "Colors"
-#~ msgstr "වර්ණ"
-
-#~ msgid "Show sidepane"
-#~ msgstr "පැත්තෙහි කොටස පෙන්වන්න"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "කරැනා කර රැදී සිටින්න, මෙය යම් වේලාවක් ගතහැකියි"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "'%s' සඳහා සුරක්ෂිතාගාරය සොයන්න"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "'%s' ඇසුරුම පෙන්වන්න"
-
-#~ msgid "File not found"
-#~ msgstr "ගොනුව හමු නොවුණි"
-
-#~ msgid "Not a .menu file"
-#~ msgstr ".menu ගොනුවක් නොවෙයි"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr ".menu ගොනුවක් නොවෙයි"
-
-#~ msgid "Filter:"
-#~ msgstr "පෙරහන:"

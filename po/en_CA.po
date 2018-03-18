@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2015-03-17 07:52+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
-"Language-Team: English (Canada) (http://www.transifex.com/projects/p/MATE/"
-"language/en_CA/)\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: English (Canada) (http://www.transifex.com/mate/MATE/language/"
+"en_CA/)\n"
 "Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../lib/mate-menu.py:845
 msgid "Preferences"
-msgstr ""
+msgstr "Preferences"
 
 #: ../lib/mate-menu.py:848
 msgid "Edit menu"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../lib/mate-menu.py:854
 msgid "About"
-msgstr ""
+msgstr "About"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
@@ -110,7 +110,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
-msgstr ""
+msgstr "pixels"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
@@ -118,15 +118,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr ""
+msgstr "Options"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
-msgstr ""
+msgstr "Applications"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr ""
+msgstr "Theme"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
@@ -139,7 +139,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "Plugins"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
@@ -163,12 +163,12 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:87
 msgid "Dictionary"
-msgstr ""
+msgstr "Dictionary"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
 msgid "Computer"
-msgstr ""
+msgstr "Computer"
 
 #: ../lib/mate-menu-config.py:90
 msgid "Background:"
@@ -212,7 +212,7 @@ msgstr ""
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
 msgid "Places"
-msgstr ""
+msgstr "Places"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
@@ -232,19 +232,19 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr ""
+msgstr "Home Folder"
 
 #: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
-msgstr ""
+msgstr "Network"
 
 #: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
-msgstr ""
+msgstr "Desktop"
 
 #: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
-msgstr ""
+msgstr "Trash"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
@@ -253,7 +253,7 @@ msgstr ""
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
 msgid "System"
-msgstr ""
+msgstr "System"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
@@ -272,11 +272,11 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr ""
+msgstr "Lock Screen"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
@@ -304,15 +304,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr ""
+msgstr "Images"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr ""
+msgstr "Path"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
@@ -320,16 +320,16 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
-msgstr ""
+msgstr "Name:"
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
-msgstr ""
+msgstr "Path:"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr ""
+msgstr "Search:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
@@ -398,7 +398,7 @@ msgstr ""
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
 msgid "Remove"
-msgstr ""
+msgstr "Remove"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
@@ -436,7 +436,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
-msgstr ""
+msgstr "All"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
@@ -452,7 +452,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr ""
+msgstr "Use the command line"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
@@ -474,14 +474,15 @@ msgstr ""
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
+"Browse all local and remote disks and folders accessible from this computer"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr ""
+msgstr "Open your personal folder"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr ""
+msgstr "Browse bookmarked and local network locations"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
@@ -500,22 +501,22 @@ msgstr ""
 msgid "Recent documents"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr ""

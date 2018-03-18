@@ -1,35 +1,34 @@
-# Telugu translation for MATE Menu
-# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2012-04-28 19:43+0000\n"
-"Last-Translator: Praveen Illa <mail2ipn@gmail.com>\n"
-"Language-Team: Telugu <te@li.org>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Telugu (http://www.transifex.com/mate/MATE/language/te/)\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:57
 msgid "Menu"
-msgstr "మెను"
+msgstr ""
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr "ప్లగిన్‌ను లోడుచేయలేకపోతుంది:"
+msgstr ""
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
-msgstr "ప్లగిన్‌ను ప్రారంభించలేకపోతుంది"
+msgstr ""
 
 #: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
@@ -37,15 +36,15 @@ msgstr ""
 
 #: ../lib/mate-menu.py:845
 msgid "Preferences"
-msgstr "ప్రాధాన్యతలు"
+msgstr "అభిరుచులు"
 
 #: ../lib/mate-menu.py:848
 msgid "Edit menu"
-msgstr "మెనూ సవరించు"
+msgstr ""
 
 #: ../lib/mate-menu.py:851
 msgid "Reload plugins"
-msgstr "ప్లగిన్లను తిరిగినింపు"
+msgstr ""
 
 #: ../lib/mate-menu.py:854
 msgid "About"
@@ -54,47 +53,47 @@ msgstr "గురించి"
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "మెను ప్రాధాన్యతలు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "ఎల్లప్పుడు ప్రియమైన ప్యాన్‌తో ప్రారంభించు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr "బటన్ ప్రతీకను చూపించు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
-msgstr "అనురూపిత రంగులను వాడు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
-msgstr "ఇటీవలి ప్రత్రాల ప్లగిన్ చూపించు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show applications plugin"
-msgstr "అనువర్తనాల ప్లగిన్ చూపించు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show system plugin"
-msgstr "వ్యవస్థ ప్లగిన్ చూపించు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show places plugin"
-msgstr "ప్రదేశముల ప్లగిన్ చూపించు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
-msgstr "అనువర్తన వ్యాఖ్యలను చూపించు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
-msgstr "విభాగాల ప్రతీకలను చూపించు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "హోవర్"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
@@ -102,23 +101,23 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
-msgstr "స్వాప్ పేరు మరియు జెనరిక్ పేరు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
-msgstr "సరిహద్దు వెడల్పు:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
-msgstr "పిక్సెళ్ళు"
+msgstr "పిగ్జెల్స్"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "బటన్ పాఠ్యం:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "ఐచ్ఛికాలు"
+msgstr "ఐచ్చికములు"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
@@ -126,48 +125,44 @@ msgstr "అనువర్తనాలు"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr "అలంకారం"
+msgstr "థీమ్"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
 msgid "Favorites"
-msgstr "ఇష్టమైనవి"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "ప్రధాన బటన్"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "చొప్పింతలు"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "గూగుల్‌లో వెతుకు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "గూగుల్‌లో వెతుకు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "వికీపీడియాలో వెతుకు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "%s ని నిఘంటువులో చూడండి"
+msgstr "నిఘంటువు"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -176,25 +171,25 @@ msgstr "కంప్యూటర్"
 
 #: ../lib/mate-menu-config.py:90
 msgid "Background:"
-msgstr "నేపథ్యం:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:91
 msgid "Headings:"
-msgstr "శీర్షికలు:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
-msgstr "సరిహద్దులు:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
-msgstr "అలంకారం:"
+msgstr ""
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:97
 msgid "Number of columns:"
-msgstr "నిలువు వరుసల సంఖ్య:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
@@ -203,15 +198,15 @@ msgstr "ప్రతీక పరిమాణం:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
-msgstr "హోవర్ ఆలస్యం (ms):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "బటన్ ప్రతీక:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
-msgstr "ఆదేశమును వెతుకు:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
@@ -220,19 +215,19 @@ msgstr "స్థలములు"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
-msgstr "స్క్రోల్ పట్టీని అనుమతించు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
-msgstr "జిటికె ఇష్టాంశాలను చూపించు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
-msgstr "ఎత్తు:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
-msgstr "అప్రమేయ స్థలములను మార్పు:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
@@ -252,7 +247,7 @@ msgstr "చెత్తబుట్ట"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
-msgstr "అనురూపిత స్థలములు:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
@@ -261,14 +256,14 @@ msgstr "వ్యవస్థ"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
-msgstr "అప్రమేయ అంశాలు మార్పు:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr "ప్యాకేజీ నిర్వాహకం"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
@@ -280,150 +275,149 @@ msgstr "టెర్మినల్"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr "తెరకు తాళంవేయి"
+msgstr "స్క్రీన్ లాక్‌చేయుము"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr "నిష్క్రమించు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr "నిష్క్రమించు"
+msgstr "నిష్క్రమించుము"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr "స్థలాన్ని సవరించు"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
-msgstr "కొత్త స్థలం"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr "ఒక సంచయాన్ని ఎంచుకోండి"
+msgstr "సంచయమును ఎంచుకొను"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
-msgstr "కీబోర్డు లఘువు:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr ""
+msgstr "ప్రతిబింబములు"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
-msgstr "పేరు"
+msgstr "నామము"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr "బాట"
+msgstr "త్రోవ"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
-msgstr "డెస్క్‍టాప్ అలంకారం"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
-msgstr "పేరు:"
+msgstr "నామము:"
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
-msgstr "బాట:"
+msgstr "త్రోవ:"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr "వెతుకు:"
+msgstr "శోధన:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
-msgstr "అన్ని అనువర్తనాలు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "%s కొరకు గూగుల్ నందు వెతుకు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
 msgid "Search Google for %s"
-msgstr "%s కొరకు గూగుల్ నందు వెతుకు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "%s కొరకు వికీపీడియాలో వెతుకు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "%s ని నిఘంటువులో చూడండి"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
 msgid "Search Computer for %s"
-msgstr "%s కొరకు కంప్యూటరులో శోధించు"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:788
 #: ../mate_menu/plugins/applications.py:853
 msgid "Add to desktop"
-msgstr "డెస్క్‍టాప్‌కు జతచేయి"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:789
 #: ../mate_menu/plugins/applications.py:854
 msgid "Add to panel"
-msgstr "ప్యానల్‌కు జతచేయి"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
 msgid "Insert space"
-msgstr "ఖాళీని చొప్పించు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:792
 #: ../mate_menu/plugins/applications.py:833
 msgid "Insert separator"
-msgstr "విచ్ఛేదకాన్ని చొప్పించు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:794
 #: ../mate_menu/plugins/applications.py:857
 msgid "Launch"
-msgstr "ప్రారంభించు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:795
 msgid "Remove from favorites"
-msgstr "ఇష్టమైనవాటి నుండి తొలగించు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
 msgid "Edit properties"
-msgstr "లక్షణాలను సవరించు"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
 msgid "Remove"
-msgstr "తీసివేయి"
+msgstr "తీసివేయు"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
-msgstr "నా ఇష్టాంశాలలో చూపించు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
-msgstr "మెనూ నుండి తొలగించు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "గూగుల్‌లో వెతుకు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
-msgstr "గూగుల్‌లో వెతుకు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
-msgstr "వికీపీడియాలో వెతుకు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
@@ -431,57 +425,54 @@ msgstr ""
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
-msgstr "కంప్యూటర్ శోధించు"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1344
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"ఇష్టాంశాలకు భద్రపరుచలేకపోతుంది. మీకు ~/.linuxmint/mintMenu కు వ్రాయడానికి అనుమతివున్నదో లేదో "
-"సరిచూసుకోండి"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
-msgstr "అన్నీ"
+msgstr "అన్ని"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
-msgstr "అన్ని అనువర్తనాలను చూపించు"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "సాఫ్ట్‍వేర్ ప్యాకేజీలను స్థాపించు, తొలగించు మరియు ఉన్నతీకరించు"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr "మీ వ్యవస్థను స్వరూపించు"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr "కమాండు లైనును ఉపయోగించండి"
+msgstr "ఆదేశ లైను ను ఉపయోగించండి"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr "అన్‌లాక్‌చేయుటకు సంకేతపదం అవసరం"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr "లాగౌట్"
+msgstr "లాగ్అవుట్"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr "నిష్క్రమించు లేక వాడుకరిని మార్చు"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "మూసివేయి, పునఃప్రారంభించు, తాత్కాలికంగా నిలిపివేయి లేదా సుప్తావస్థ"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr "ఈ కంప్యూటర్ నుండి వాడుకొనగల అన్ని దూరస్థ మరియు స్థానిక డిస్కులను విహరించండి"
+msgstr "ఈ కంప్యూటర్ నుండి వాడుకొనగల అన్ని దూరస్థ మరియు స్థానిక డిస్కులను అన్వేషించండి"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
@@ -489,101 +480,41 @@ msgstr "మీ వ్యక్తిగత సంచయాన్ని తెర
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "ఇష్టాంశములుగా చేయబడిన మరియు స్థానిక నెట్‌వర్కు స్థానముల కొరకు అన్వేషించు"
+msgstr "బుక్‌మార్కుడ్ మరియు స్థానిక నెట్వర్కు స్థానముల కొరకు అన్వేషించు"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "డెస్కుటాప్ పై ఉన్న అంశాలను విహరించండి"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "తీసివేసిన ఫైళ్ళను అన్వేషించు"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr "చెత్తబుట్టను ఖాళీచేయి"
+msgstr "ఖాళీ చెత్తబుట్ట"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "ఇటీవలి పత్రాలు"
-
-#: ../mate_menu/keybinding.py:181
-msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
 #: ../mate_menu/keybinding.py:182
-msgid "Press Escape or click again to cancel the operation.  "
+msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
 #: ../mate_menu/keybinding.py:183
+msgid "Press Escape or click again to cancel the operation.  "
+msgstr ""
+
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr ""
-
-#~ msgid "Opacity:"
-#~ msgstr "అపారదర్శకత:"
-
-#~ msgid "Launch when I log in"
-#~ msgstr "ప్రవేశించినపుడు ప్రారంభించు"
-
-#~ msgid "Software Manager"
-#~ msgstr "సాప్ట్‍వేర్ నిర్వాహకం"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "ప్యాకేజీ '%s' స్థాపించు"
-
-#~ msgid "Uninstall"
-#~ msgstr "తొలగించు"
-
-#~ msgid "Find Software"
-#~ msgstr "సాప్ట్‍వేర్ కనుగొను"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "ట్యుటోరియల్స్ వెతుకు"
-
-#~ msgid "Find Hardware"
-#~ msgstr "హార్డువేర్ కనుగొను"
-
-#~ msgid "Find Ideas"
-#~ msgstr "ఆలోచనలను కనుగొను"
-
-#~ msgid "Find Users"
-#~ msgstr "వాడుకరులను కనుగొను"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "అందుబాటులోవున్న సాఫ్టువేరును అన్వేషించి స్థాపించు"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "దయచేసి వేచియుండండి, ఇందుకు కొంత సమయం పడుతుంది"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "అనువర్తనం విజయవంతంగా తొలగించబడింది"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "గ్నోమ్ ఉన్నత మెను"
-
-#~ msgid "Remove %s?"
-#~ msgstr "%s తొలగించాలా?"
-
-#~ msgid "No matching package found"
-#~ msgstr "సరిపోలిన ప్యాకేజీ కనపడలేదు"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "తొలగించబడే ప్యాకేజీలు"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "కిందపేర్కొన ప్యాకేజీలు తొలగించబడతాయి:"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "ఈ మెనూ ప్రవేశాన్ని తీసివేయాలనుకుంటున్నారా?"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "ఎస్.చందరబాలి నుండి USP పై ఆధారపడినది"

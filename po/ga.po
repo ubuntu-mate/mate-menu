@@ -1,35 +1,35 @@
-# Irish translation for MATE Menu
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2013-04-28 17:17+0000\n"
-"Last-Translator: Gearóid  Ó Maelearcaidh <gearoid@omaelearcaidh.com>\n"
-"Language-Team: Irish <ga@li.org>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Irish (http://www.transifex.com/mate/MATE/language/ga/)\n"
 "Language: ga\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : "
+"4);\n"
 
 #: ../lib/mate-menu.py:57
 msgid "Menu"
-msgstr "Roghchlár"
+msgstr ""
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr "Níorbh fhéidir bhreiseán a luchtú:"
+msgstr ""
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
-msgstr "Níorbh fhéidir breiseán a thúsú"
+msgstr ""
 
 #: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
@@ -41,80 +41,80 @@ msgstr "Sainroghanna"
 
 #: ../lib/mate-menu.py:848
 msgid "Edit menu"
-msgstr "Roghchlár Cuir in Eagar"
+msgstr ""
 
 #: ../lib/mate-menu.py:851
 msgid "Reload plugins"
-msgstr "Athluchtú breiseáin"
+msgstr ""
 
 #: ../lib/mate-menu.py:854
 msgid "About"
-msgstr "Eolas Faoi"
+msgstr "Maidir leis Seo"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "Sainroghanna roghchláir"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "Tosaigh le pána na gceanán i gcónaí"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr "Taispeáin cnaipe-deilbhín"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
-msgstr "Bain úsáid as dathanna saincheaptha"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
-msgstr "Taispeáin breiseán na ndoiciméad is déanaí"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show applications plugin"
-msgstr "Taispeáin breiseán na bhfeidhmchlár"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show system plugin"
-msgstr "Taispeáin breiseán an chórais"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show places plugin"
-msgstr "Taispeáin breiseán na n-áiteanna"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
-msgstr "Taispeáin trácht faoin bhfeidhmchláir"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
-msgstr "Taispeáin deilbhíní na gcatagóiri"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "Ainligh"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
-msgstr "Cuimhnigh ar an gcatagóír is déanaí nó cuardach"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
-msgstr "Ainm babhtála agus ainm cineálach"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
-msgstr "Leithead na himlíne:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
-msgstr "picteilíní"
+msgstr "picteilín"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Cnaipe téacs:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
@@ -131,43 +131,39 @@ msgstr "Téama"
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
 msgid "Favorites"
-msgstr "Ceanáin"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "Príomh chnaipe"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "Breiseáin"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Cuardaigh ar Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Cuardaigh ar Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Cuardaigh ar Wikipedia"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Cuardaigh Foclóir"
+msgstr "Foclóir"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -176,25 +172,25 @@ msgstr "Ríomhaire"
 
 #: ../lib/mate-menu-config.py:90
 msgid "Background:"
-msgstr "Cúlra:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:91
 msgid "Headings:"
-msgstr "Ceannteidil:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
-msgstr "Imlínte:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
-msgstr "Téama:"
+msgstr ""
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:97
 msgid "Number of columns:"
-msgstr "Líon na gcolún:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
@@ -203,15 +199,15 @@ msgstr "Méid na ndeilbhíní:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
-msgstr "Moill ar ainligh (ms):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "Deilbhín Chnaipe:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
-msgstr "Ordú cuardaigh:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
@@ -220,19 +216,19 @@ msgstr "Áiteanna"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
-msgstr "Ceadaigh Scrollbharra"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
-msgstr "Taispeáin Leabharmharc GTK+"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
-msgstr "Airde:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
-msgstr "Scoránaigh Áiteanna Réámhshocraithe:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
@@ -252,7 +248,7 @@ msgstr "Bruscar"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
-msgstr "Áiteanna Réamhshocraithe:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
@@ -261,14 +257,14 @@ msgstr "Córas"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
-msgstr "Scoránaigh Míreanna Réamhshocraithe:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr "Bainisteoir Pacáistí"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
@@ -280,11 +276,11 @@ msgstr "Teirminéal"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr "Cuir an Scáileán Faoi Ghlas"
+msgstr "Cuir Scáileáin Faoi Ghlas"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr "Logáil Amach"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
@@ -292,11 +288,11 @@ msgstr "Scoir"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr "Cuir Eagar ar Áiteanna"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
-msgstr "Áit nua"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
@@ -304,7 +300,7 @@ msgstr "Roghnaigh fillteán"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
-msgstr "Aicearra méarchláir:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
@@ -316,11 +312,11 @@ msgstr "Ainm"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr "Cosán"
+msgstr "Conair"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
-msgstr "Téama deisce"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
@@ -328,7 +324,7 @@ msgstr "Ainm:"
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
-msgstr "Cosán:"
+msgstr "Conair:"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
@@ -337,67 +333,67 @@ msgstr "Cuardaigh:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
-msgstr "Feidhmchláir uile"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Cuardaigh Google ar %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
 msgid "Search Google for %s"
-msgstr "Cuardaigh Google ar %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Cuardaigh Wikipedia ar %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Cuardaigh ar %s san Fhoclóir"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Cuardaigh Ríomhaire ar %s"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:788
 #: ../mate_menu/plugins/applications.py:853
 msgid "Add to desktop"
-msgstr "Cuir ar an deasc"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:789
 #: ../mate_menu/plugins/applications.py:854
 msgid "Add to panel"
-msgstr "Cuir ar an bpainéal"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
 msgid "Insert space"
-msgstr "Cuir isteach spás"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:792
 #: ../mate_menu/plugins/applications.py:833
 msgid "Insert separator"
-msgstr "Cuir isteach deighilteoir"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:794
 #: ../mate_menu/plugins/applications.py:857
 msgid "Launch"
-msgstr "Lainseáil"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:795
 msgid "Remove from favorites"
-msgstr "Bain ón na ceanáin"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
 msgid "Edit properties"
-msgstr "Cuir airíonna in eagar"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
@@ -406,41 +402,37 @@ msgstr "Bain"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
-msgstr "Taispeáin imeasc mo cheanáin"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
-msgstr "Bain den roghchlár"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Cuardaigh ar Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
-msgstr "Cuardaigh ar Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
-msgstr "Cuardaigh ar Wikipedia"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
-msgstr "Cuardaigh Foclóir"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
-msgstr "Cuardaigh Ríomhaire"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1344
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Níorbh fhéidir ceanáin a shábháil. Seiceáil má tá rochtán scríofa go ~/."
-"linuxmint/mintMenu"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
@@ -448,15 +440,15 @@ msgstr "Uile"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
-msgstr "Taispeáin na feidhmchláir uile"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "Suiteáil, bain agus uasghrádaigh pacáistí bogearraí"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr "Cumraigh do chóras"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
@@ -464,19 +456,19 @@ msgstr "Bain úsáid as líne na n-orduithe"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr "Focal Faire ag teastáil chun díghleasáil"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr "Logáil Amach"
+msgstr "Logáil amach"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr "Logáil amach nó athraigh úsáideoir"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Dún síos, atosaigh, fionraigh nó suanaigh"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:153
 msgid ""
@@ -495,105 +487,37 @@ msgstr "Brábhsáil suíomh líonra leabharmharcáilte agus logánta"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "Brabhsáil rudaí curtha ar an deasc"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "Brabhsáil na comhaid bainte"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr "Folmhaigh an bruscar"
+msgstr "Folmhaigh bruscar"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Cáipéisí is déanaí"
-
-#: ../mate_menu/keybinding.py:181
-msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
-"Cliceáil chun eochair luasaire nua a shocrú chun an roghchlár a oscailt agus "
-"dúnadh.  "
 
 #: ../mate_menu/keybinding.py:182
-msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Brú ar Éalaigh nó cliceáil arís chun an oibríócht a chealú  "
+msgid "Click to set a new accelerator key for opening and closing the menu.  "
+msgstr ""
 
 #: ../mate_menu/keybinding.py:183
+msgid "Press Escape or click again to cancel the operation.  "
+msgstr ""
+
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Brú ar Chúlspás chun an eochair-cheangail a ghlanadh"
+msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
-msgstr "Roghnaigh luasaire"
+msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
-msgstr "<not set>"
-
-#~ msgid "Opacity:"
-#~ msgstr "Teimhneacht:"
-
-#~ msgid "Launch when I log in"
-#~ msgstr "Lainseáil nuair a logáilim isteach"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Cuardaigh ar phacáistí le suiteáil"
-
-#~ msgid "Software Manager"
-#~ msgstr "Bainisteoir bogearraí"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Suiteáil pácáiste '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "Díshuiteáil"
-
-#~ msgid "Find Software"
-#~ msgstr "Aimsigh bogearraí"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Aimsigh Ranganna teagasc"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Aimsigh Crua-earraí"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Aimsigh smaointe agus moltaí"
-
-#~ msgid "Find Users"
-#~ msgstr "Aimsigh úsáideóirí"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Brabhsáil is suiteáil bogearraí atá ar fáil"
-
-#~ msgid "Colors"
-#~ msgstr "Dathanna"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Ar mhaith leat an iontráil seo ón roghchlár a bhaint"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Pácáistí le baint"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Bain %s ?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Bainfear na pacáistí seo a leanas:"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Fan le d' thoil, d'fhéadfadh go dtógadh sé seo tamall maith"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Baineadh an feidhmchlár go rathúil"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Roghchlár Ardsocruithe Gnome"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Bunaithe ar USP ó S.Chanderbally"
-
-#~ msgid "No matching package found"
-#~ msgstr "Níor aimsíodh pacáiste le meaitseáil"
+msgstr ""

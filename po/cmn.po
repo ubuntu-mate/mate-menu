@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2015-03-17 07:52+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
-"Language-Team: Chinese (Mandarin) (http://www.transifex.com/projects/p/MATE/"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: 趙惟倫 <bluebat@member.fsf.org>\n"
+"Language-Team: Chinese (Mandarin) (http://www.transifex.com/mate/MATE/"
 "language/cmn/)\n"
 "Language: cmn\n"
 "MIME-Version: 1.0\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../lib/mate-menu.py:845
 msgid "Preferences"
-msgstr ""
+msgstr "偏好設定"
 
 #: ../lib/mate-menu.py:848
 msgid "Edit menu"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../lib/mate-menu.py:854
 msgid "About"
-msgstr ""
+msgstr "關於"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
@@ -110,7 +110,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
-msgstr ""
+msgstr "像素"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
@@ -118,15 +118,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr ""
+msgstr "選項"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
-msgstr ""
+msgstr "應用程式"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr ""
+msgstr "布景檔"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
@@ -139,7 +139,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "外掛程式"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
@@ -163,16 +163,16 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:87
 msgid "Dictionary"
-msgstr ""
+msgstr "字典"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
 msgid "Computer"
-msgstr ""
+msgstr "電腦"
 
 #: ../lib/mate-menu-config.py:90
 msgid "Background:"
-msgstr ""
+msgstr "背景："
 
 #: ../lib/mate-menu-config.py:91
 msgid "Headings:"
@@ -212,7 +212,7 @@ msgstr ""
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
 msgid "Places"
-msgstr ""
+msgstr "位置"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
@@ -224,7 +224,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
-msgstr ""
+msgstr "高度："
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
@@ -232,19 +232,19 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr ""
+msgstr "家目錄"
 
 #: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
-msgstr ""
+msgstr "網路"
 
 #: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
-msgstr ""
+msgstr "桌面"
 
 #: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
-msgstr ""
+msgstr "回收筒"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
@@ -253,7 +253,7 @@ msgstr ""
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
 msgid "System"
-msgstr ""
+msgstr "系統"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
@@ -268,15 +268,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
-msgstr ""
+msgstr "控制中心"
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
-msgstr ""
+msgstr "終端機"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr ""
+msgstr "鎖定螢幕"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
@@ -284,7 +284,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr ""
+msgstr "結束"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
@@ -296,7 +296,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr ""
+msgstr "選擇資料夾"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
@@ -304,15 +304,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr ""
+msgstr "圖片"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr ""
+msgstr "路徑"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
@@ -320,16 +320,16 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
-msgstr ""
+msgstr "名稱:"
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
-msgstr ""
+msgstr "路徑："
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr ""
+msgstr "搜尋:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
@@ -398,7 +398,7 @@ msgstr ""
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
 msgid "Remove"
-msgstr ""
+msgstr "移除"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
@@ -436,7 +436,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
-msgstr ""
+msgstr "全部"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
@@ -452,7 +452,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr ""
+msgstr "使用命令列"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
@@ -460,7 +460,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr ""
+msgstr "登出"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
@@ -473,15 +473,15 @@ msgstr ""
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
+msgstr "從本電腦瀏覽所有本機及遠端磁碟及資料夾"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr ""
+msgstr "開啟您的個人資料夾"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr ""
+msgstr "瀏覽已記錄及本地網路的位置"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
@@ -493,29 +493,29 @@ msgstr ""
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr ""
+msgstr "清理回收筒"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr ""

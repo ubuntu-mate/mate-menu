@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mate-menu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
 "PO-Revision-Date: 2014-11-07 01:17+0000\n"
 "Last-Translator: Akerbeltz <fios@akerbeltz.org>\n"
 "Language-Team: Sgioba na gàidhlig\n"
@@ -512,25 +512,25 @@ msgstr "Falamhaich an sgudal"
 msgid "Recent documents"
 msgstr "Sgrìobhainnean o chionn goirid"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 "Dèan briogadh gus iuchair luathachaidh ùr a shuidheachadh airson fosgladh 's "
 "dùnadh a' chlàir-thaice.  "
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "Brùth Escape no dèan briogadh a-rithist gus sgur dhen obrachadh.  "
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "Brùth Backspace gus nasgadh nan iuchraichean làithreach fhalamhachadh."
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "Tagh luathaichear"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "<cha deach a shuidheachadh>"
 

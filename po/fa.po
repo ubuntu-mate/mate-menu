@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# Dante Marshal <marshal.devilhunter@gmail.com>, 2018
 # Esmail Abbasi <abbasi2244@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-12 18:43+0000\n"
+"Last-Translator: Dante Marshal <marshal.devilhunter@gmail.com>\n"
 "Language-Team: Persian (http://www.transifex.com/mate/MATE/language/fa/)\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
@@ -110,7 +111,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
-msgstr ""
+msgstr "نقطه"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
@@ -118,15 +119,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr ""
+msgstr "گزینه‌ها"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
-msgstr ""
+msgstr "برنامه‌ها"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr ""
+msgstr "تم"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
@@ -139,7 +140,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "متصل شونده‌ها"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
@@ -163,12 +164,12 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:87
 msgid "Dictionary"
-msgstr ""
+msgstr "لغت‌نامه"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
 msgid "Computer"
-msgstr ""
+msgstr "رایانه"
 
 #: ../lib/mate-menu-config.py:90
 msgid "Background:"
@@ -195,7 +196,7 @@ msgstr ""
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
-msgstr ""
+msgstr "اندازه آیکون"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
@@ -212,7 +213,7 @@ msgstr ""
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
 msgid "Places"
-msgstr ""
+msgstr "محل‌های مهم"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
@@ -232,19 +233,19 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr ""
+msgstr "پوشه‌ی آغازه"
 
 #: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
-msgstr ""
+msgstr "شبکه"
 
 #: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
-msgstr ""
+msgstr "میزکار"
 
 #: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
-msgstr ""
+msgstr "زباله‌دان"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
@@ -253,7 +254,7 @@ msgstr ""
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
 msgid "System"
-msgstr ""
+msgstr "سیستم"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
@@ -272,11 +273,11 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
-msgstr ""
+msgstr "پایانه"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr ""
+msgstr "قفل کردن صفحه"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
@@ -296,7 +297,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr ""
+msgstr "یک پوشه انتخاب کنید"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
@@ -304,15 +305,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr ""
+msgstr "تصویرها"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
-msgstr ""
+msgstr "نام"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr ""
+msgstr "مسیر"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
@@ -320,16 +321,16 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
-msgstr ""
+msgstr "نام:"
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
-msgstr ""
+msgstr "مسیر:"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr ""
+msgstr "جست‌و‌جو :"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
@@ -398,7 +399,7 @@ msgstr ""
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
 msgid "Remove"
-msgstr ""
+msgstr "حذف"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
@@ -436,7 +437,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
-msgstr ""
+msgstr "همه"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
@@ -452,7 +453,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr ""
+msgstr "استفاده از سطر فرمان"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
@@ -460,7 +461,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr ""
+msgstr "خروج"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
@@ -474,10 +475,12 @@ msgstr ""
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
+"مرور تمام دیسک‌ها و پوشه‌های محلی و ریموت که از این کامپیوتر قابل دسترسی "
+"می‌باشند."
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr ""
+msgstr "باز کردن پوشه‌ی شخصی شما"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
@@ -500,22 +503,22 @@ msgstr ""
 msgid "Recent documents"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:182
-msgid "Press Escape or click again to cancel the operation.  "
-msgstr ""
-
 #: ../mate_menu/keybinding.py:183
+msgid "Press Escape or click again to cancel the operation.  "
+msgstr "برای لغو عملیات از دکمه‌ی Escape استفاده یا دوباره کلیک کنید."
+
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr ""

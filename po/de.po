@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2017-11-28 18:13+0000\n"
-"Last-Translator: Tobias Bannert <tobannert@gmail.com>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-13 22:00+0000\n"
+"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>\n"
 "Language-Team: German (http://www.transifex.com/mate/MATE/language/de/)\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -506,26 +506,26 @@ msgstr "Papierkorb leeren"
 msgid "Recent documents"
 msgstr "Zuletzt geöffnete Dokumente"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 "Klicken, um eine neue Tastenkombination für das Öffnen und Schließen des "
 "Menüs einzustellen."
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
 "Die Escape-Taste drücken oder nochmal klicken, um diesen Vorgang abzubrechen."
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 "Die »Rücktaste« drücken, um die vorhandene Tastenkombination zu löschen."
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "Bitte Tastenkombination auswählen"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "<not set>"

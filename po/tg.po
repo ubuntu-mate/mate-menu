@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mate-menu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
 "PO-Revision-Date: 2014-01-15 20:26+0000\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik <tg@li.org>\n"
@@ -510,29 +510,29 @@ msgstr "Холӣ кардани сабад"
 msgid "Recent documents"
 msgstr "Ҳуҷҷатҳои охирин"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 "Барои танзим кардани тугмаи миёнбур барои кушодан ва пӯшидани меню, ин ҷо "
 "зер кунед.  "
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
 "Тугмаи \"Esc\"-ро пахш кунед ё барои бекор кардани ин амал аз нав зер "
 "кунед.  "
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 "Барои тоза кардани тугмабандии мавҷудбуда, тугмаи \"Backspace\"-ро пахш "
 "кунед."
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "Интихоби тугмаи миёнбур"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "<танзимнашуда>"
 

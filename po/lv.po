@@ -1,35 +1,35 @@
-# Latvian translation for MATE Menu
-# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2013-11-22 17:08+0000\n"
-"Last-Translator: Janis Elmeris <Unknown>\n"
-"Language-Team: Latvian <lv@li.org>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Latvian (http://www.transifex.com/mate/MATE/language/lv/)\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
 
 #: ../lib/mate-menu.py:57
 msgid "Menu"
-msgstr "Izvēlne"
+msgstr ""
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr "Nevar ielādēt paplašinājumu"
+msgstr ""
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
-msgstr "Nevar noteikt spraudni"
+msgstr ""
 
 #: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
@@ -41,72 +41,72 @@ msgstr "Iestatījumi"
 
 #: ../lib/mate-menu.py:848
 msgid "Edit menu"
-msgstr "Rediģēt izvēlni"
+msgstr ""
 
 #: ../lib/mate-menu.py:851
 msgid "Reload plugins"
-msgstr "Pārlādēt spraudņus"
+msgstr ""
 
 #: ../lib/mate-menu.py:854
 msgid "About"
-msgstr "Par programmu"
+msgstr "Par"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "Izvēlnes iestatījumi"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "Vienmēr sākt ar izlases paneli"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr "Rādīt pogas ikonu"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
-msgstr "Izmantot pielāgotas krāsas"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
-msgstr "Rādīt neseno dokumentu spraudni"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show applications plugin"
-msgstr "Rādīt lietotņu spraudni"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show system plugin"
-msgstr "Rādīt sistēmas spraudni"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show places plugin"
-msgstr "Rādīt vietu spraudni"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
-msgstr "Rādīt lietotņu komentārus"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
-msgstr "Rādīt kategoriju ikonas"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "Uzbīde"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
-msgstr "Atcerēties pēdējo kategoriju vai meklēšanu"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
-msgstr "Mainīt vietām nosaukumu ar vispārējo nosaukumu"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
-msgstr "Malas platums:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
@@ -114,11 +114,11 @@ msgstr "pikseļi"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Pogas teksts:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "Iespējas"
+msgstr "Opcijas"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
@@ -131,43 +131,39 @@ msgstr "Tēma"
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
 msgid "Favorites"
-msgstr "Izlase"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "Galvenā poga"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "Spraudņi"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Meklēt Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Meklēt Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Meklēt Vikipēdijā"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Skatīt vārdnīcā"
+msgstr "Vārdnīca"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -180,21 +176,21 @@ msgstr "Fons:"
 
 #: ../lib/mate-menu-config.py:91
 msgid "Headings:"
-msgstr "Virsraksti:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
-msgstr "Malas:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
-msgstr "Tēma:"
+msgstr ""
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:97
 msgid "Number of columns:"
-msgstr "Kolonnu skaits:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
@@ -203,15 +199,15 @@ msgstr "Ikonu izmērs:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
-msgstr "Uzbīdes aizture (ms):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "Pogas ikona:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
-msgstr "Meklēšanas komanda:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
@@ -220,11 +216,11 @@ msgstr "Vietas"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
-msgstr "Atļaut ritjoslu"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
-msgstr "Rādīt GTK+  grāmatzīmes"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
@@ -232,7 +228,7 @@ msgstr "Augstums:"
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
-msgstr "Rādīt noklusējuma vietas:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
@@ -252,7 +248,7 @@ msgstr "Miskaste"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
-msgstr "Pielāgotas vietas:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
@@ -261,18 +257,18 @@ msgstr "Sistēma"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
-msgstr "Rādīt noklusējuma vienumus:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr "Pakotņu pārvaldnieks"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
-msgstr "Vadības centrs"
+msgstr "Kontroles centrs"
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
@@ -280,11 +276,11 @@ msgstr "Terminālis"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr "Bloķēt ekrānu"
+msgstr "Noslēgt ekrānu"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr "Izrakstīties"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
@@ -292,23 +288,23 @@ msgstr "Iziet"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr "Rediģēt vietu"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
-msgstr "Jauna vietne"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr "Izvēlēties mapi"
+msgstr "Izvēlieties mapi"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
-msgstr "Tastatūras saīsne:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr "Attēli"
+msgstr " Attēli"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
@@ -320,7 +316,7 @@ msgstr "Ceļš"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
-msgstr "Darbvirsmas tēma"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
@@ -337,110 +333,106 @@ msgstr "Meklēt:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
-msgstr "Visas lietotnes"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Meklēt Google pēc %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
 msgid "Search Google for %s"
-msgstr "Meklēt Google pēc %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Meklēt Vikipēdijā pēc %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Apskatīt %s vārdnīcā"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Meklēt datorā pēc %s"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:788
 #: ../mate_menu/plugins/applications.py:853
 msgid "Add to desktop"
-msgstr "Pievienot darbvirsmai"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:789
 #: ../mate_menu/plugins/applications.py:854
 msgid "Add to panel"
-msgstr "Pievienot panelim"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
 msgid "Insert space"
-msgstr "Ievietot tukšumu"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:792
 #: ../mate_menu/plugins/applications.py:833
 msgid "Insert separator"
-msgstr "Ievietot atdalītāju"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:794
 #: ../mate_menu/plugins/applications.py:857
 msgid "Launch"
-msgstr "Palaist"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:795
 msgid "Remove from favorites"
-msgstr "Izņemt no izlases"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
 msgid "Edit properties"
-msgstr "Rediģēt objekta īpašības"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
 msgid "Remove"
-msgstr "Izņemt"
+msgstr "Aizvākt"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
-msgstr "Rādīt manā izlasē"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
-msgstr "Nodzēst no izvēlnes"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Meklēt Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
-msgstr "Meklēt Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
-msgstr "Meklēt Vikipēdijā"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
-msgstr "Skatīt vārdnīcā"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
-msgstr "Meklēt datorā"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1344
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Nevarēja saglabāt izlasi. Pārbaudi, vai tev ir rakstīšanas piekļuve failam "
-"~/.linuxmint/mintMenu"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
@@ -448,15 +440,15 @@ msgstr "Viss"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
-msgstr "Rādīt visas lietotnes"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "Instalēt, izņemt un atjaunināt programmatūras pakotnes"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr "Konfigurēt savu sistēmu"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
@@ -464,29 +456,30 @@ msgstr "Izmantot komandrindu"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr "Lai atbloķētu, nepieciešama parole"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr "Izrakstīties"
+msgstr "Atteikšanās"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr "Izrakstīties vai nomainīt lietotāju"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Izslēgt, pārstartēt, pārtraukt vai iemidzināt"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Pārlūkot visus no šī datora pieejamos lokālos un attālinātos diskus un mapes"
+"Pārlūkot visus no šīs mašīnas pieejamos lokālos un attālinātos diskus un "
+"mapes"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr "Atvērt savu personisko mapi"
+msgstr "Atvērt jūsu privāto mapi"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
@@ -494,102 +487,37 @@ msgstr "Pārlūkot grāmatzīmēs saglabātās vai lokālā tīkla vietas"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "Pārlūkot uz darbvirsmas novietotos priekšmetus"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "Pārlūkot dzēstās datnes"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr "Iztukšot miskasti"
+msgstr "Miskastes iztukšošana"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Nesenie dokumenti"
-
-#: ../mate_menu/keybinding.py:181
-msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
-"Uzklikšķiniet, lai uzstādītu jaunu akseleratora atslēgu izvēlnes atvēršanai "
-"un aizvēršanai.  "
 
 #: ../mate_menu/keybinding.py:182
-msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Nospiediet Izkļūt vai noklikšķiniet vēlreiz, lai atceltu darbību.  "
+msgid "Click to set a new accelerator key for opening and closing the menu.  "
+msgstr ""
 
 #: ../mate_menu/keybinding.py:183
+msgid "Press Escape or click again to cancel the operation.  "
+msgstr ""
+
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr ""
-
-#~ msgid "Opacity:"
-#~ msgstr "Necaurspīdība:"
-
-#~ msgid "Launch when I log in"
-#~ msgstr "Palaist, kad es ierakstos"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "Meklēt instalējamas pakotnes"
-
-#~ msgid "Software Manager"
-#~ msgstr "Programmatūras pārvaldnieks"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Instalēt pakotni '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "Atinstalēt"
-
-#~ msgid "Find Software"
-#~ msgstr "Meklēt programmatūru"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Meklēt pamācības"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Meklēt aparatūru"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Meklēt idejas"
-
-#~ msgid "Find Users"
-#~ msgstr "Meklēt lietotājus"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Pārlūkot un instalēt pieejamo programmatūru"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Bāzēts uz USP autors S.Chanderbally"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Lietotne veiksmīgi noņemta"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Noņemt %s?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Tiks noņemtas šādas pakotnes:"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Paplašināta Gnome izvēlne"
-
-#~ msgid "No matching package found"
-#~ msgstr "Neviena atbilstoša pakotne netika atrasta"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Vai vēlaties izņemt šo ierakstu?"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Noņemamās pakotnes"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Lūdzu, uzgaidiet, tas aizņems kādu laiku"

@@ -7,11 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2015-03-17 07:52+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
-"Language-Team: Limburgian (http://www.transifex.com/projects/p/MATE/language/"
-"li/)\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>\n"
+"Language-Team: Limburgian (http://www.transifex.com/mate/MATE/language/li/)\n"
 "Language: li\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,7 +48,7 @@ msgstr ""
 
 #: ../lib/mate-menu.py:854
 msgid "About"
-msgstr ""
+msgstr "Euver"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
@@ -122,11 +121,11 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
-msgstr ""
+msgstr "Toepassinge"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
@@ -232,7 +231,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr ""
+msgstr "Heimmap"
 
 #: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
@@ -240,11 +239,11 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
-msgstr ""
+msgstr "Wirkblaad"
 
 #: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
-msgstr ""
+msgstr "Papeerkörf"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
@@ -253,7 +252,7 @@ msgstr ""
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
 msgid "System"
-msgstr ""
+msgstr "Systeem"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
@@ -276,7 +275,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr ""
+msgstr "Bildsjirm vas doon"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
@@ -304,15 +303,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr ""
+msgstr "Aafbiljinge"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr ""
+msgstr "Paad"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
@@ -398,7 +397,7 @@ msgstr ""
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
 msgid "Remove"
-msgstr ""
+msgstr "Ewegdoon"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
@@ -500,22 +499,22 @@ msgstr ""
 msgid "Recent documents"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr ""

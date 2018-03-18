@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2018-01-26 12:47+0000\n"
-"Last-Translator: Aleksey Kabanov <ak099@mail.ru>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-13 22:09+0000\n"
+"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>\n"
 "Language-Team: Russian (http://www.transifex.com/mate/MATE/language/ru/)\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -64,7 +64,7 @@ msgstr "Свойства меню"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr ""
+msgstr "Всегда стартовать с панели избранного"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
@@ -100,7 +100,7 @@ msgstr "Показывать значки категорий"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr ""
+msgstr "Поверх"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
@@ -124,7 +124,7 @@ msgstr "Текст на кнопке"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr ""
+msgstr "Опции"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
@@ -209,7 +209,7 @@ msgstr "Задержка при наведении (мс):"
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr ""
+msgstr "Размер значка:"
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
@@ -222,11 +222,11 @@ msgstr "Места"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
-msgstr ""
+msgstr "Разрешить прокрутку"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
-msgstr ""
+msgstr "Показывать Избранное GTK+"
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
@@ -359,7 +359,7 @@ msgstr "Искать в Википедии %s"
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr ""
+msgstr "Искать %s в словаре"
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
@@ -428,7 +428,7 @@ msgstr "Искать в Википедии"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
-msgstr ""
+msgstr "Поиск в словаре"
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
@@ -464,7 +464,7 @@ msgstr "Использовать командную строку"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr ""
+msgstr "Запросить пароль для разблокировки"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
@@ -510,23 +510,23 @@ msgstr "Очистить корзину"
 msgid "Recent documents"
 msgstr "Недавние документы"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 "Щёлкните, чтобы выбрать новую комбинацию клавиш для открытия и закрытия меню."
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "Нажмите Escape или щёлкните снова, чтобы прервать операцию."
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "Нажмите Backspace, чтобы очистить существующую комбинацию клавиш."
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "Выберите горячую клавишу"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
-msgstr ""
+msgstr "<not set>"

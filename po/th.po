@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-13 22:10+0000\n"
+"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>\n"
 "Language-Team: Thai (http://www.transifex.com/mate/MATE/language/th/)\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
@@ -147,28 +147,24 @@ msgid "Always show search suggestions"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "ค้นหาใน Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "ค้นหาใน Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "ค้นหาใน Wikipedia"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "ค้นหาในพจนานุกรม"
+msgstr "พจนานุกรม"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -341,9 +337,9 @@ msgid "All applications"
 msgstr "แอพพลิเคชั่นทั้งหมด"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "ค้นหา %s ใน Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -414,9 +410,8 @@ msgid "Delete from menu"
 msgstr "ลบออกจากเมนู"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "ค้นหาใน Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -508,22 +503,22 @@ msgstr "เทถังขยะ"
 msgid "Recent documents"
 msgstr "เอกสารล่าสุด"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr "คลิกเพื่อตั้งค่าปุ่มลัดสำหรับเปิดและปิดเมนู"
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "กดปุ่ม Escape หรือคลิกอีกครั้ง เพื่อยกเลิกการกระทำ"
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "กดปุ่ม Backspace เพื่อลบคีย์ลัดที่มีอยู่"
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "เลือกคีย์ด่วน"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "<ไม่ได้ตั้งค่า>"

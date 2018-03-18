@@ -1,35 +1,34 @@
-# Macedonian translation for MATE Menu
-# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2010-10-31 15:17+0000\n"
-"Last-Translator: Dejan Noveski <Unknown>\n"
-"Language-Team: Macedonian <mk@li.org>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: exoos <mince.lesovski@gmail.com>\n"
+"Language-Team: Macedonian (http://www.transifex.com/mate/MATE/language/mk/)\n"
 "Language: mk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Plural-Forms: nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;\n"
 
 #: ../lib/mate-menu.py:57
 msgid "Menu"
-msgstr "Мени"
+msgstr ""
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr "Не може да се вчита компонентата:"
+msgstr ""
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
-msgstr "Не може да се иницијализира компонентата"
+msgstr ""
 
 #: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
@@ -37,15 +36,15 @@ msgstr ""
 
 #: ../lib/mate-menu.py:845
 msgid "Preferences"
-msgstr "Преференци"
+msgstr "Параметри"
 
 #: ../lib/mate-menu.py:848
 msgid "Edit menu"
-msgstr "Промени го менито"
+msgstr ""
 
 #: ../lib/mate-menu.py:851
 msgid "Reload plugins"
-msgstr "Превчитај ги компонентите"
+msgstr ""
 
 #: ../lib/mate-menu.py:854
 msgid "About"
@@ -54,47 +53,47 @@ msgstr "За"
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "Параметри на менито"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "Секогаш почни со панелот со омилени алатки"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr "Прикажи ја иконата на копчето"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
-msgstr "Користи сопствени бои"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
-msgstr "Прикажи плагин за скорешни документи"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show applications plugin"
-msgstr "Прикажи плагин за апликации"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show system plugin"
-msgstr "Прикажи системски плагин"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show places plugin"
-msgstr "Прикажи плагин за места"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
-msgstr "Прикажи коментари за апликацијата"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
-msgstr "Прикажи ги иконите за категории"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "Лебди"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
@@ -102,11 +101,11 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
-msgstr "Смени име и генеричко име"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
-msgstr "Ширина на граница:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
@@ -114,7 +113,7 @@ msgstr "пиксели"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Текст на копче:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
@@ -131,43 +130,39 @@ msgstr "Тема"
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
 msgid "Favorites"
-msgstr "Омилени"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "Главно копче"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "Додатоци"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Пребарувај со Гугл"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Пребарувај со Гугл"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Пребарај на Википедиа"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Побарај го %s во речник"
+msgstr "Речник"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -176,25 +171,25 @@ msgstr "Компјутер"
 
 #: ../lib/mate-menu-config.py:90
 msgid "Background:"
-msgstr "Подлога:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:91
 msgid "Headings:"
-msgstr "Наслови:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
-msgstr "Граници:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
-msgstr "Тема:"
+msgstr ""
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:97
 msgid "Number of columns:"
-msgstr "Број на колони:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
@@ -203,15 +198,15 @@ msgstr "Големина на икони:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
-msgstr "Каснење на лебдење (ms):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "Икона за копчето:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
-msgstr "Команда за пребарување:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
@@ -220,11 +215,11 @@ msgstr "Места"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
-msgstr "Дозволи лента за лизгање"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
-msgstr "Прикажи GTK+ букмарци"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
@@ -232,11 +227,11 @@ msgstr "Висина:"
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
-msgstr "Прикажи/сокриј стандардни места:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr "Домашен директориум"
+msgstr "Домашна папка"
 
 #: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
@@ -252,7 +247,7 @@ msgstr "Корпа"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
-msgstr "Сопствени места:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
@@ -261,14 +256,14 @@ msgstr "Систем"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
-msgstr "Прикажи/сокриј стандардни предмети"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr "Менаџер на пакети"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
@@ -280,23 +275,23 @@ msgstr "Терминал"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr "Заклучи го екранот"
+msgstr "Заклучи екран"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr "Одјави се"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr "Напушти"
+msgstr "Откажи"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr "Промени место"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
-msgstr "Ново место"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
@@ -304,11 +299,11 @@ msgstr "Одберете папка"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
-msgstr "Кратенка од тастатура:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr ""
+msgstr "Слики"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
@@ -320,7 +315,7 @@ msgstr "Патека"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
-msgstr "Десктоп тема"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
@@ -333,71 +328,71 @@ msgstr "Патека:"
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr "Барај:"
+msgstr "Пребарај:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
-msgstr "Сите апликации"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Пребарај %s на Гугл"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
 msgid "Search Google for %s"
-msgstr "Пребарај %s на Гугл"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Пребарај %s на Википедиа"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Побарај го %s во речник"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Пребарај %s во Компјутер"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:788
 #: ../mate_menu/plugins/applications.py:853
 msgid "Add to desktop"
-msgstr "Додај на работната површина"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:789
 #: ../mate_menu/plugins/applications.py:854
 msgid "Add to panel"
-msgstr "Додај во панел"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
 msgid "Insert space"
-msgstr "Вметни празно место"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:792
 #: ../mate_menu/plugins/applications.py:833
 msgid "Insert separator"
-msgstr "Вметни сепаратор"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:794
 #: ../mate_menu/plugins/applications.py:857
 msgid "Launch"
-msgstr "Пушти"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:795
 msgid "Remove from favorites"
-msgstr "Отстрани од омилени"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
 msgid "Edit properties"
-msgstr "Промени особини"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
@@ -406,24 +401,23 @@ msgstr "Отстрани"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
-msgstr "Прикажи во омилени"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
-msgstr "Избриши од мени"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Пребарувај со Гугл"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
-msgstr "Пребарувај со Гугл"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
-msgstr "Пребарај на Википедиа"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
@@ -431,32 +425,29 @@ msgstr ""
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
-msgstr "Пребарај во Компјутер"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1344
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Не може да се зачува во омилени. Проверете дали имате пристап за запишување "
-"во ~/.linuxmint/mintMenu"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
-msgstr "Сите"
+msgstr "Сѐ"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
-msgstr "Прикажи ги сите апликации"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "Инсталирајте, отстранете или надградете софтверски пакети"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr "Конфигурирање на Вашиот систем"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
@@ -464,19 +455,19 @@ msgstr "Користи ја командната линија"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr "Бара лозинка за отклучување"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr "Одјавa"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr "Одјави се или промени корисник"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Исклучи, рестартирај, суспендирај или хибернирај"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:153
 msgid ""
@@ -495,127 +486,37 @@ msgstr "Разгледај обележани и локални мрежни л�
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "Разгледај предмети поставени на работната површина"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "Листај избришани датотеки"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr "Испразни ја корпата"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Скорешни документи"
-
-#: ../mate_menu/keybinding.py:181
-msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
 #: ../mate_menu/keybinding.py:182
-msgid "Press Escape or click again to cancel the operation.  "
+msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
 #: ../mate_menu/keybinding.py:183
+msgid "Press Escape or click again to cancel the operation.  "
+msgstr ""
+
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr ""
-
-#~ msgid "Opacity:"
-#~ msgstr "Непровидност:"
-
-#~ msgid "Launch when I log in"
-#~ msgstr "Пушти кога ќе се логирам"
-
-#~ msgid "Software Manager"
-#~ msgstr "Менаџер на софтвер"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "Инсталирај го пакетот '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "Деинсталирај"
-
-#~ msgid "Find Software"
-#~ msgstr "Барај софтвер"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Барај туторијали"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Барај хардвер"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Барај Идеи"
-
-#~ msgid "Find Users"
-#~ msgstr "Барај корисници"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Листај и инсталирај расположлив софтвер"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Напредно Gnome мени"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Базирано на USP од S.Chanderbally"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Апликацијата е успешно отстранета"
-
-#~ msgid "No matching package found"
-#~ msgstr "Не е пронајден одговарачки пакет"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Дали сакате да ја отстраните ставката од менито?"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Отстрани %s?"
-
-#~ msgid "Show sidepane"
-#~ msgstr "Прикажи ја страничната лента"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Пакети за отстранување"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Следните пакети ќе бидат отстранети:"
-
-#~ msgid "Show recent documents"
-#~ msgstr "Прикажи скорешни документи"
-
-#~ msgid "Colors"
-#~ msgstr "Бои"
-
-#~ msgid "File not found"
-#~ msgstr "Датотеката не е пронајдена"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "Невалидна .menu датотека"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "Не е .menu датотека"
-
-#~ msgid "Filter:"
-#~ msgstr "Филтер:"
-
-#~ msgid "Search repositories for '%s'"
-#~ msgstr "Пребарај ги складиштата за '%s'"
-
-#~ msgid "Search portal for '%s'"
-#~ msgstr "Пребарај го порталот за '%s'"
-
-#~ msgid "Show package '%s'"
-#~ msgstr "Прикажи го пакетот '%s'"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Ве молам причекајте. Акцијата може да потрае"

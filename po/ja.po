@@ -5,13 +5,14 @@
 # Translators:
 # あわしろいくや <ikunya@gmail.com>, 2015
 # Satoru SATOH <ss@gnome.gr.jp>, 2004
+# Rockers <sumorock@hotmail.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-13 22:04+0000\n"
+"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>\n"
 "Language-Team: Japanese (http://www.transifex.com/mate/MATE/language/ja/)\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -144,36 +145,32 @@ msgstr "プラグイン"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "検索候補を常に表示する"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Google で検索"
+msgstr "検索エンジン:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Google で検索"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Wikipedia で検索"
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "辞書を引く"
+msgstr "辞書"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
 msgid "Computer"
-msgstr "コンピューター"
+msgstr "コンピュータ"
 
 #: ../lib/mate-menu-config.py:90
 msgid "Background:"
@@ -200,7 +197,7 @@ msgstr "カラムの数:"
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
-msgstr "アイコンのサイズ"
+msgstr "アイコンのサイズ:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
@@ -212,7 +209,7 @@ msgstr "ボタンアイコン:"
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
-msgstr "検索コマンド"
+msgstr "検索コマンド:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
@@ -225,7 +222,7 @@ msgstr "スクロールバーを表示"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
-msgstr ""
+msgstr "GTK+ ブックマークを表示"
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
@@ -233,11 +230,11 @@ msgstr "高さ:"
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
-msgstr "既定の場所の表示と非表示"
+msgstr "既定の場所の表示と非表示:"
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr "ホームフォルダー"
+msgstr "ホームフォルダ"
 
 #: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
@@ -269,7 +266,7 @@ msgstr "既定のアイテムの表示と非表示:"
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr "パッケージマネージャー"
+msgstr "パッケージマネージャ"
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
@@ -301,7 +298,7 @@ msgstr "新しい場所"
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr "フォルダーを選択"
+msgstr "フォルダを選択"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
@@ -313,7 +310,7 @@ msgstr "画像"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
-msgstr "名称"
+msgstr "名前"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
@@ -325,7 +322,7 @@ msgstr "デスクトップテーマ"
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
-msgstr "名称:"
+msgstr "名前:"
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
@@ -341,9 +338,9 @@ msgid "All applications"
 msgstr "全てのアプリケーション"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Google で %s を検索"
+msgstr "DuckDuckGo で %s を検索"
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -358,7 +355,7 @@ msgstr "Wikipedia で %s を検索"
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "%s で辞書を引く"
+msgstr "辞書 %s を引く"
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
@@ -414,9 +411,8 @@ msgid "Delete from menu"
 msgstr "メニューから削除"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Google で検索"
+msgstr "DuckDuckGo で検索"
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -510,24 +506,24 @@ msgstr "ゴミ箱を空にする"
 msgid "Recent documents"
 msgstr "最近のドキュメント"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 "クリックしてメニューの開閉に使用する新しいアクセラレーターを設定します。"
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
 "エスケープキーを押すかもう一度クリックするとこの操作をキャンセルできます。"
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "バックスペースキーを押すと、現在のキーバインドを消去できます。"
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "アクセラレーターを挿入"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "<セットなし>"

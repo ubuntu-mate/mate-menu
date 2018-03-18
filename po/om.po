@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mate-menu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
 "PO-Revision-Date: 2014-09-07 14:06+0000\n"
 "Last-Translator: gudeta <gudbog@gmail.com>\n"
 "Language-Team: Oromo <om@li.org>\n"
@@ -508,23 +508,23 @@ msgstr "Baattoo gataa qulqulleessi"
 msgid "Recent documents"
 msgstr "Galmee dhiyoo"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr "Qaxxaamurtoota haara hojii baafata cufuuf banuurra oolchuuf caqasi  "
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "Dalaga dhiisuf Escape dhiibi yookin lama cuqaasi  "
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "Keybinding jiran haquuf Backspace dhiibi"
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "Qaxxaamura kaasi"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "Hin qindoofne"
 

@@ -1,35 +1,34 @@
-# Marathi translation for MATE Menu
-# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2010-04-15 19:01+0000\n"
-"Last-Translator: Digvijay Patankar <dbpatankar@gmail.com>\n"
-"Language-Team: Marathi <>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: Vaibhav S Dalvi <vaibhav.dlv@gmail.com>\n"
+"Language-Team: Marathi (http://www.transifex.com/mate/MATE/language/mr/)\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:57
 msgid "Menu"
-msgstr "सूची"
+msgstr ""
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr "प्लगीन लोड नाही करता आले"
+msgstr ""
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
-msgstr "प्लगीन सुरु नाही करता आले."
+msgstr ""
 
 #: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
@@ -45,16 +44,16 @@ msgstr ""
 
 #: ../lib/mate-menu.py:851
 msgid "Reload plugins"
-msgstr "प्लगीन पुन्हा लोड करा."
+msgstr ""
 
 #: ../lib/mate-menu.py:854
 msgid "About"
-msgstr "च्या विषयी"
+msgstr "विषयी"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "सूची प्राधान्यक्रम"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
@@ -62,7 +61,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr "बटन चे चिन्ह दाखव"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
@@ -94,7 +93,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "फिरवा"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
@@ -102,44 +101,44 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
-msgstr "नाव आणि सामान्य नाव यांची अदलाबदल कर"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
-msgstr "सीमारेषेची जाडी"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
-msgstr "पिक्सेल"
+msgstr "बिंदू"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "बटनवरील मजकूर"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "विकल्प"
+msgstr "पर्याय"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
-msgstr "कार्यक्रम"
+msgstr "उपकरणं"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr ""
+msgstr "योजना"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
 msgid "Favorites"
-msgstr "पसंतीचे"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "मुख्य कळ"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "प्लगईन"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
@@ -163,7 +162,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:87
 msgid "Dictionary"
-msgstr ""
+msgstr "शब्दकोश"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -172,15 +171,15 @@ msgstr "संगणक"
 
 #: ../lib/mate-menu-config.py:90
 msgid "Background:"
-msgstr "पृष्ठभूमि:"
+msgstr "पार्श्वभूमी:"
 
 #: ../lib/mate-menu-config.py:91
 msgid "Headings:"
-msgstr "मथळा:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
-msgstr "सीमारेषा:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
@@ -190,12 +189,12 @@ msgstr ""
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:97
 msgid "Number of columns:"
-msgstr "उभ्या ओळींची संख्या:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
-msgstr ""
+msgstr "चिन्ह आकारमान :"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
@@ -203,7 +202,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "बटन चे चिन्ह"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
@@ -212,7 +211,7 @@ msgstr ""
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
 msgid "Places"
-msgstr "ठिकाणे"
+msgstr "ठिकाण"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
@@ -232,11 +231,11 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr "गृह निर्देशिका"
+msgstr "होम फोल्डर"
 
 #: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
-msgstr "संगणक जाळे"
+msgstr "नेटवर्क"
 
 #: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
@@ -264,7 +263,7 @@ msgstr ""
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr "संकुल प्रबंधक"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
@@ -276,15 +275,15 @@ msgstr "टर्मिनल"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr "स्क्रीन सीलबंद कर"
+msgstr "पडदा कुलूपबंद करा"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr "बाहेर निघा"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr "बंद करा"
+msgstr "बाहेर पडा"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
@@ -292,11 +291,11 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
-msgstr "नवीन ठिकाण"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr ""
+msgstr "फोल्डर निवडा"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
@@ -304,15 +303,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr ""
+msgstr "प्रतिमा"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
-msgstr ""
+msgstr "नाव"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr ""
+msgstr "मार्ग"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
@@ -320,20 +319,20 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
-msgstr ""
+msgstr "नाव:"
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
-msgstr ""
+msgstr "मार्ग:"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr ""
+msgstr "शोधा:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
-msgstr "सर्व कार्यक्रम"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:600
 #, python-format
@@ -388,7 +387,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/applications.py:795
 msgid "Remove from favorites"
-msgstr "'माझ्या आवडीचे' या रकान्यातून काढून टाक"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
@@ -398,11 +397,11 @@ msgstr ""
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
 msgid "Remove"
-msgstr "काढून टाक"
+msgstr "काढून टाका"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
-msgstr "'माझ्या आवडीचे' या रकान्यात दाखव"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
@@ -440,11 +439,11 @@ msgstr "सर्व"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
-msgstr "सर्व कार्यक्रम दाखवा"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "कार्यक्रमाचे संकुल स्थापित कर, काढून टाक किंवा उन्नत कर"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
@@ -452,15 +451,15 @@ msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr ""
+msgstr "आदेश पंक्ती वापरा"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr "उघडण्यासाठी पासवर्ड ची आवश्यकता"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr ""
+msgstr "वापरकर्ता बदला"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
@@ -473,97 +472,49 @@ msgstr ""
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
+msgstr "सर्व स्थानीय व दुरस्थ डीस्क व या संगणकावरील प्रवेश प्राप्तीय संचयीकांचे संचार करा"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr "खाजगी निर्देशिका खुली कर"
+msgstr "तुमची व्यक्तिगत फोल्डर उघडा"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr ""
+msgstr "संचार्ह ओळचिन्हे व स्थानिक नेटवर्क स्थळे"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "डेस्कटॉप वरील वस्तू पहा"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "काढून टाकलेल्या फाईल पहा"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr "कचरापेटी रिकामी कर"
+msgstr "रिकामी कचरापेटी"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "नुकती वापरलेली कागदपत्रे"
-
-#: ../mate_menu/keybinding.py:181
-msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
 #: ../mate_menu/keybinding.py:182
-msgid "Press Escape or click again to cancel the operation.  "
+msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
 #: ../mate_menu/keybinding.py:183
+msgid "Press Escape or click again to cancel the operation.  "
+msgstr ""
+
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr ""
-
-#~ msgid "Uninstall"
-#~ msgstr "काढून टाक"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "कृपया थांबा. ही प्रक्रिया वेळ घेऊ शकते"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "कार्यक्रम यशस्वी पणे काढून टाकला"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "स. चंदरबली च्या USP वर आधारित"
-
-#~ msgid "No matching package found"
-#~ msgstr "साधर्म्य असलेले पॅकेज नाही मिळाले"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "सूचीमधील हे अवतरण तुम्हाला काढून टाकायचे आहे?"
-
-#~ msgid "Remove %s?"
-#~ msgstr "%s काढून टाका?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "खालील पॅकेजेस काढून टाकले जातील"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "काढली जाणारी पॅकेजेस"
-
-#~ msgid "Show sidepane"
-#~ msgstr "साईडपेन दाखवा"
-
-#~ msgid "Show recent documents"
-#~ msgstr "नुकतीच वापरलेली कागदपत्रे दाखवा"
-
-#~ msgid "Colors"
-#~ msgstr "रंग"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "प्रगत GNOME सूची"
-
-#~ msgid "File not found"
-#~ msgstr "फाईल सापडली नाही"
-
-#~ msgid "Not a .menu file"
-#~ msgstr "ही .menu फाईल नाही"
-
-#~ msgid "Not a valid .menu file"
-#~ msgstr "ही योग्य .menu फाईल नाही"

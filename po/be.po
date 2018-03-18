@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: Mihail Varantsou <meequz@gmail.com>\n"
 "Language-Team: Belarusian (http://www.transifex.com/mate/MATE/language/be/)\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
@@ -150,28 +150,24 @@ msgid "Always show search suggestions"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Шукаць у Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Шукаць у Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Шукаць у Вікіпедыі"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Шукаць у Слоўніку"
+msgstr "Слоўнік"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -344,9 +340,9 @@ msgid "All applications"
 msgstr "Усе праграмы"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Шукаць %s у Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -417,9 +413,8 @@ msgid "Delete from menu"
 msgstr "Выдаліць з меню"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Шукаць у Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -484,8 +479,7 @@ msgstr "Адключэнне, перазапуск, прыпыненне ці ў
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"Аглядаць лакальныя і адлеглыя дыскі і каталогі, даступныя з гэтага камп'ютара"
+msgstr "Аглядаць усе лакальныя і адлеглыя дыскі і каталогі"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
@@ -493,7 +487,7 @@ msgstr "Адкрыць ваш асабісты каталог"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Аглядаць закладкі і лакальную сетку"
+msgstr "Аглядаць закладкі і сеткавыя каталогі"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
@@ -512,22 +506,22 @@ msgstr "Спустошыць сметніцу"
 msgid "Recent documents"
 msgstr "Ранейшыя дакументы"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr "Пстрыкніце, каб задаць новы скарот для адкрывання і закрывання меню.  "
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "Націсніце Esc ці пстрыкніце зноў, каб скасаваць аперацыю.  "
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "Націсніце backspace, каб скасаваць існы скарот."
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "Націсніце клавішы"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "<не зададзена>"

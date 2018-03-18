@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2017-12-24 08:51+0000\n"
-"Last-Translator: Ammuu5\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-13 22:01+0000\n"
+"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>\n"
 "Language-Team: Finnish (http://www.transifex.com/mate/MATE/language/fi/)\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
@@ -120,7 +120,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr ""
+msgstr "Valinnat"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
@@ -174,11 +174,11 @@ msgstr "Tietokone"
 
 #: ../lib/mate-menu-config.py:90
 msgid "Background:"
-msgstr ""
+msgstr "Tausta:"
 
 #: ../lib/mate-menu-config.py:91
 msgid "Headings:"
-msgstr ""
+msgstr "Otsikot:"
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
@@ -266,7 +266,7 @@ msgstr ""
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr ""
+msgstr "Paketinhallinta"
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
@@ -278,11 +278,11 @@ msgstr "Pääte"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr ""
+msgstr "Lukitusnäyttö"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr ""
+msgstr "Kirjaudu ulos"
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
@@ -331,7 +331,7 @@ msgstr "Polku:"
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr ""
+msgstr "Haku:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
@@ -345,12 +345,12 @@ msgstr ""
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
 msgid "Search Google for %s"
-msgstr ""
+msgstr "Google-haku: %s"
 
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr ""
+msgstr "Wikipedia-haku: %s"
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
@@ -376,7 +376,7 @@ msgstr "Lisää paneeliin"
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
 msgid "Insert space"
-msgstr ""
+msgstr "Lisää välilyönti"
 
 #: ../mate_menu/plugins/applications.py:792
 #: ../mate_menu/plugins/applications.py:833
@@ -395,7 +395,7 @@ msgstr "Poista suosikeista"
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
 msgid "Edit properties"
-msgstr ""
+msgstr "Muokkaa ominaisuuksia"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
@@ -404,11 +404,11 @@ msgstr "Poista"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
-msgstr ""
+msgstr "Näytä suosikeissani"
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
-msgstr ""
+msgstr "Poista valikosta"
 
 #: ../mate_menu/plugins/applications.py:902
 msgid "Search DuckDuckGo"
@@ -416,11 +416,11 @@ msgstr ""
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
-msgstr ""
+msgstr "Hae Googlesta"
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
-msgstr ""
+msgstr "Hae Wikipediasta"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
@@ -442,19 +442,19 @@ msgstr "Kaikki"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
-msgstr ""
+msgstr "Näytä kaikki ohjelmat"
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr ""
+msgstr "Asenna, poista ja päivitä ohjelmapaketteja"
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr ""
+msgstr "Määrittele järjestelmäsi"
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr ""
+msgstr "Käytä komentoriviä"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
@@ -475,15 +475,15 @@ msgstr ""
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
+msgstr "Selaa käytettävissä olevia paikallis- ja etäkansioita"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr ""
+msgstr "Avaa henkilökohtaisen kansiosi"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr ""
+msgstr "Selaa kirjanmerkittyjä ja paikallisia verkkosijainteja"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
@@ -502,22 +502,22 @@ msgstr "Tyhjennä roskakori"
 msgid "Recent documents"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "<not set>"

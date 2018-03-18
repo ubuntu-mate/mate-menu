@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2017-09-22 02:09+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic (http://www.transifex.com/mate/MATE/language/is/)\n"
 "Language: is\n"
 "MIME-Version: 1.0\n"
@@ -146,28 +146,24 @@ msgid "Always show search suggestions"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Leita með Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Leita með Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Leita á Wikipedia"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Uppflettiorðabók"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -340,9 +336,9 @@ msgid "All applications"
 msgstr "Öll forrit"
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Leita með Google að %s"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
@@ -413,9 +409,8 @@ msgid "Delete from menu"
 msgstr "Eyða úr valmynd"
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Leita með Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
@@ -481,8 +476,8 @@ msgstr "Slökkva, endurræsa, svæfa eða setja í dvala"
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Vafra um alla staðværa og fjaraðgangs diska sem hægt er að tengjast frá "
-"þessari tölvu"
+"Flakka um alla staðværa og fjartengda diska (og möppur) sem aðgengilegir eru "
+"frá þessari tölvu"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
@@ -490,7 +485,7 @@ msgstr "Opna einkamöppuna þína"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Flakka um bókamerki og staðsetningar á staðtengdu neti"
+msgstr "Flakka um bókamerktar og staðværar nettengingar"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
@@ -509,23 +504,23 @@ msgstr "Tæma ruslafötu"
 msgid "Recent documents"
 msgstr "Nýleg skjöl"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 "Smella til að setja nýjan flýtilykil fyrir að opnao og loka valmyndinni.  "
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "Smelltu á ESC-lykil eða smelltu aftur til að hætta við aðgerðina.  "
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "Smelltu á Backspace-lykil til að hreinsa út núverandi lyklabindingu."
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "Veldu flýtilykil"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "<ekki stillt>"

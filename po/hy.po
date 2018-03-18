@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# hrexen <davit.mayilyan@protonmail.ch>, 2017
+# Davit Mayilyan <davit.mayilyan@protonmail.ch>, 2017
 # Siranush <ss.m.95@mail.ru>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2017-11-28 21:19+0000\n"
-"Last-Translator: hrexen <davit.mayilyan@protonmail.ch>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: Siranush <ss.m.95@mail.ru>\n"
 "Language-Team: Armenian (http://www.transifex.com/mate/MATE/language/hy/)\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
@@ -26,15 +26,15 @@ msgstr "Ցանկ"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
 msgid "Couldn't load plugin:"
-msgstr ""
+msgstr "Չհաջողվեց բեռնել կոնտակտները․"
 
 #: ../lib/mate-menu.py:296
 msgid "Couldn't initialize plugin"
-msgstr ""
+msgstr "Չհաջողվեց սկզբնարժեքավորել կոնտակտները"
 
 #: ../lib/mate-menu.py:731
 msgid "Advanced MATE Menu"
-msgstr ""
+msgstr "Ընդլայնված MATE Ընտրացանկ"
 
 #: ../lib/mate-menu.py:845
 msgid "Preferences"
@@ -59,55 +59,55 @@ msgstr "Ընտրացանկի նախընտրություններ"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr ""
+msgstr "Միշտ սկսիր ընտրյալների վահանակով"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr ""
+msgstr "Ցույց տալ կոճակի պատկերակը"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
-msgstr ""
+msgstr "Օգտագործել յուրահատուկ գույներ"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
-msgstr ""
+msgstr "Ցույց տալ վերջին փաստաթղթերի կոնտակտները"
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show applications plugin"
-msgstr ""
+msgstr "Ցույց տալ դիմումների կոնտակտները"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show system plugin"
-msgstr ""
+msgstr "Ցույց տալ համակարգի կոնտակտները"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show places plugin"
-msgstr ""
+msgstr "Ցույց տալ տեղերի կոնտակտները"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
-msgstr ""
+msgstr "Ցույց տալ դիմումի մեկնաբանությունները"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
-msgstr ""
+msgstr "Ցույց տալ կատեգորիայի պատկերանշանները"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr ""
+msgstr "Սավառնել"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
-msgstr ""
+msgstr "Հիշել վերջին կատեգորիան կամ որոնել"
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
-msgstr ""
+msgstr "Փոխանակել անունը և ընդհանուր անունը"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
-msgstr ""
+msgstr "Սահմաններ։"
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
@@ -115,11 +115,11 @@ msgstr "պիքսելներ"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr ""
+msgstr "Կոճակի տեքստ:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr ""
+msgstr "Տարբերակներ"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
@@ -127,20 +127,20 @@ msgstr "Դիմումներ"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr ""
+msgstr "Թեմա"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
 #: ../mate_menu/plugins/applications.py:200
 msgid "Favorites"
-msgstr ""
+msgstr "Ընտրյալներ"
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr ""
+msgstr "Գլխավոր կոճակ"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "Կոնտակտներ"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
@@ -164,60 +164,60 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:87
 msgid "Dictionary"
-msgstr ""
+msgstr "Բառարան"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
 msgid "Computer"
-msgstr ""
+msgstr "Համակարգիչ"
 
 #: ../lib/mate-menu-config.py:90
 msgid "Background:"
-msgstr ""
+msgstr "Ֆոն։"
 
 #: ../lib/mate-menu-config.py:91
 msgid "Headings:"
-msgstr ""
+msgstr "Վերնագիր։"
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
-msgstr ""
+msgstr "Սահմաններ։"
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
-msgstr ""
+msgstr "Թեմա։"
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:97
 msgid "Number of columns:"
-msgstr ""
+msgstr "Սյուների քանակը։"
 
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
-msgstr ""
+msgstr "Պտկերակի չափը։"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
-msgstr ""
+msgstr "Սավառնել ուշացումը (մվ):"
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr ""
+msgstr "Կոճակի պատկերանշան։"
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
-msgstr ""
+msgstr "Որոնման հրաման։"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
 msgid "Places"
-msgstr ""
+msgstr "Տեղեր"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
-msgstr ""
+msgstr "Թույլ տալ Ոլորման լուսաշերտը"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
@@ -225,31 +225,31 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
-msgstr ""
+msgstr "Բարձրություն։"
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
-msgstr ""
+msgstr "Փոխանջատիր Լռելայն Տեղեր:"
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr ""
+msgstr "Տուն Թղթապանակ"
 
 #: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
-msgstr ""
+msgstr "Ցանց"
 
 #: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
-msgstr ""
+msgstr "Աշխատանքային սեղան"
 
 #: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
-msgstr ""
+msgstr "Թափոնի զամբյուղ"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
-msgstr ""
+msgstr "Պատվիրված Տեղեր։"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
@@ -258,50 +258,50 @@ msgstr "Համակարգ"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
-msgstr ""
+msgstr "Փոխանջատիր Լռելայն Տարրերը։"
 
 #: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr ""
+msgstr "Փաթեթավորման Կառավարիչ"
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
-msgstr ""
+msgstr "Վերահսկիչ Կենտրոն"
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
-msgstr ""
+msgstr "Տերմինալ"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr ""
+msgstr "Արգելափակել էկրանը"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr ""
+msgstr "Դուրս Գալ"
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr ""
+msgstr "Դադարեցնել"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr ""
+msgstr "Խմբագրել Տեղը"
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
-msgstr ""
+msgstr "Նոր Տեղ"
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr ""
+msgstr "Ընտրեք թղթապանակը"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
-msgstr ""
+msgstr "Ստեղնային դյուրանցում:"
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
@@ -309,32 +309,32 @@ msgstr "Նկարներ"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
-msgstr ""
+msgstr "Անուն"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr ""
+msgstr "Ճանապարհ"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
-msgstr ""
+msgstr "Աշխատանքային սեղանի թեմա"
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
-msgstr ""
+msgstr "Անուն։"
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
-msgstr ""
+msgstr "Ճանապարհ։"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr ""
+msgstr "Որոնել:"
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
-msgstr ""
+msgstr "Բոլոր դիմումները"
 
 #: ../mate_menu/plugins/applications.py:600
 #, python-format
@@ -365,7 +365,7 @@ msgstr "Որոնել համակարգչում %s"
 #: ../mate_menu/plugins/applications.py:788
 #: ../mate_menu/plugins/applications.py:853
 msgid "Add to desktop"
-msgstr ""
+msgstr "Ավելացնել աշխատասեղանին"
 
 #: ../mate_menu/plugins/applications.py:789
 #: ../mate_menu/plugins/applications.py:854
@@ -375,39 +375,39 @@ msgstr "Ավելացնել վահանակին"
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
 msgid "Insert space"
-msgstr ""
+msgstr "Մուտքագրել բացատ"
 
 #: ../mate_menu/plugins/applications.py:792
 #: ../mate_menu/plugins/applications.py:833
 msgid "Insert separator"
-msgstr ""
+msgstr "Մուտքագրել տարանջատիչ"
 
 #: ../mate_menu/plugins/applications.py:794
 #: ../mate_menu/plugins/applications.py:857
 msgid "Launch"
-msgstr ""
+msgstr "Գործարկել "
 
 #: ../mate_menu/plugins/applications.py:795
 msgid "Remove from favorites"
-msgstr ""
+msgstr "Հեռացնել ընտրյալների մեջից"
 
 #: ../mate_menu/plugins/applications.py:797
 #: ../mate_menu/plugins/applications.py:860
 msgid "Edit properties"
-msgstr ""
+msgstr "Խմբագրել հատկությունները"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
 msgid "Remove"
-msgstr ""
+msgstr "Հեռացնել"
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
-msgstr ""
+msgstr "Ցույց տալ իմ ընտրյալներ"
 
 #: ../mate_menu/plugins/applications.py:858
 msgid "Delete from menu"
-msgstr ""
+msgstr "Ջնջել ընտրացանկից"
 
 #: ../mate_menu/plugins/applications.py:902
 msgid "Search DuckDuckGo"
@@ -415,49 +415,51 @@ msgstr ""
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
-msgstr ""
+msgstr "Google Որոնում"
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
-msgstr ""
+msgstr "Wikipedia Որոնում"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
-msgstr ""
+msgstr "Փնտրել Բառարան"
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
-msgstr ""
+msgstr "Համակարգչի Որոնում"
 
 #: ../mate_menu/plugins/applications.py:1344
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
+"Չհաջողվեց պահպանել էջանշանները։ Ստուգեք եթե դուք ունեք գրելու "
+"հնարավորություն ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
-msgstr ""
+msgstr "Բոլորը"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
-msgstr ""
+msgstr "Ցույց տալ բոլոր դիմումները"
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr ""
+msgstr "Տեղադրել, ջնջել և նորացնել ծրագրային փաթեթները"
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr ""
+msgstr "Կարգավորել ձեր համակարգը"
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr ""
+msgstr "Օգտագործել հրամանային տողը"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr ""
+msgstr "Պահանջվում է գաղտնաբառը բացել"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
@@ -465,58 +467,62 @@ msgstr "Դուրս գալ"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr ""
+msgstr "Դուրս գալ կամ փոխանջատել օգտագործողին"
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr ""
+msgstr "Անջատել, վերսկսել, կասեցնել կամ ձմեռել"
 
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
+"Թերթել բոլոր տեղական և հեռավոր սկավառակները և թղթապանակները, որոնք հասանելի "
+"են այս համակարգչում"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr ""
+msgstr "Բացել անձնական պանակը"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr ""
+msgstr "Փնտրել էջանշված և տեղական ցանցային վայրերը"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr ""
+msgstr "Փնտրել աշխատանքային սեղանին տեղադրված տարրերը"
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr ""
+msgstr "Փնտրել ջնջված ֆայլերը"
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr ""
+msgstr "Դատարկ թափոնի զամբյուղ"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr ""
-
-#: ../mate_menu/keybinding.py:181
-msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
+msgstr "Վերջին փաստաթղթերը"
 
 #: ../mate_menu/keybinding.py:182
-msgid "Press Escape or click again to cancel the operation.  "
+msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
+"Սեղմեք սահմանելու նոր արագացուցչի ստեղնը ընտրացանկը բացելու և փակելու համար։"
 
 #: ../mate_menu/keybinding.py:183
+msgid "Press Escape or click again to cancel the operation.  "
+msgstr "Սեղմել Escape կամ սեղմեք կրկին գործողությունը չեղարկելու համար։"
+
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
+"Սեղմել Backspace գոյություն ունեցող պարտավորեցնող ստեղնը մաքրելու համար։"
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
-msgstr ""
+msgstr "Ընտրիր արագացուցիչ"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
-msgstr ""
+msgstr "<not set>"

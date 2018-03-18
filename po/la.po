@@ -1,26 +1,25 @@
-# Latin translation for MATE Menu
-# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
-"PO-Revision-Date: 2013-03-21 23:21+0000\n"
-"Last-Translator: Fernando Romay <ferocrom_32.9@live.com>\n"
-"Language-Team: Latin <la@li.org>\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
+"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"Language-Team: Latin (http://www.transifex.com/mate/MATE/language/la/)\n"
 "Language: la\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:57
 msgid "Menu"
-msgstr "Agendum"
+msgstr ""
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:223
@@ -37,11 +36,11 @@ msgstr ""
 
 #: ../lib/mate-menu.py:845
 msgid "Preferences"
-msgstr "Praelati"
+msgstr "Praeferentiae"
 
 #: ../lib/mate-menu.py:848
 msgid "Edit menu"
-msgstr "agendum ēdere"
+msgstr ""
 
 #: ../lib/mate-menu.py:851
 msgid "Reload plugins"
@@ -49,12 +48,12 @@ msgstr ""
 
 #: ../lib/mate-menu.py:854
 msgid "About"
-msgstr "De hac re"
+msgstr "De Hac Re"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "Praelati de agendō"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
@@ -118,11 +117,11 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "Optiones"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
 msgid "Applications"
-msgstr "Mūnera"
+msgstr "Opportuna"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
@@ -146,28 +145,24 @@ msgid "Always show search suggestions"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Google scīscere"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Google scīscere"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Vicipaediam scīscere"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "Scīscere '%s' cum dictiōnāriō"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
@@ -184,7 +179,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
-msgstr "Fīnēs"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
@@ -194,7 +189,7 @@ msgstr ""
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:97
 msgid "Number of columns:"
-msgstr "Numerus de columnīs"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
@@ -216,7 +211,7 @@ msgstr ""
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
 msgid "Places"
-msgstr "Locī"
+msgstr "Loci"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
@@ -228,7 +223,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
-msgstr "Altitudo"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
@@ -236,7 +231,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr "Collectorium domesticum"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
@@ -244,7 +239,7 @@ msgstr "Reticulum"
 
 #: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
-msgstr "Scriptorium"
+msgstr "Tabula"
 
 #: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
@@ -272,15 +267,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
-msgstr "Centrum Regiminis"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
-msgstr "Terminus"
+msgstr "Termināle"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr "Edere Sub clāve"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
@@ -288,15 +283,15 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr "Desistere"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr "Locus ēdere"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
-msgstr "Locus novus creāre"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
@@ -312,7 +307,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
-msgstr "Nomen"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
@@ -324,7 +319,7 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
-msgstr "Nomen:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
@@ -333,42 +328,42 @@ msgstr ""
 #. i18n
 #: ../mate_menu/plugins/applications.py:197
 msgid "Search:"
-msgstr "Scīscere:"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:201
 msgid "All applications"
-msgstr "Mūni omnia"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:600
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Scīscere pro '%s' cum Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:611
 #, python-format
 msgid "Search Google for %s"
-msgstr "Scīscere pro '%s' cum Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:622
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Scīscere pro '%s' cum Vicipaedia"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Scīscere '%s' cum dictiōnāriō"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Scīscere '%s' cum computatrio"
+msgstr ""
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:788
 #: ../mate_menu/plugins/applications.py:853
 msgid "Add to desktop"
-msgstr "A scriptorio addere"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:789
 #: ../mate_menu/plugins/applications.py:854
@@ -378,7 +373,7 @@ msgstr ""
 #: ../mate_menu/plugins/applications.py:791
 #: ../mate_menu/plugins/applications.py:832
 msgid "Insert space"
-msgstr "Spatium addere"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:792
 #: ../mate_menu/plugins/applications.py:833
@@ -388,7 +383,7 @@ msgstr ""
 #: ../mate_menu/plugins/applications.py:794
 #: ../mate_menu/plugins/applications.py:857
 msgid "Launch"
-msgstr "Incipere"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:795
 msgid "Remove from favorites"
@@ -402,7 +397,7 @@ msgstr ""
 #. i18n
 #: ../mate_menu/plugins/applications.py:831
 msgid "Remove"
-msgstr "Removere"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:856
 msgid "Show in my favorites"
@@ -413,17 +408,16 @@ msgid "Delete from menu"
 msgstr ""
 
 #: ../mate_menu/plugins/applications.py:902
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Google scīscere"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:909
 msgid "Search Google"
-msgstr "Google scīscere"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:916
 msgid "Search Wikipedia"
-msgstr "Vicipaediam scīscere"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
@@ -431,7 +425,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
-msgstr "Compŭtātrum scīscere"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1344
 msgid ""
@@ -441,7 +435,7 @@ msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
-msgstr "Omnes"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "Show all applications"
@@ -498,50 +492,29 @@ msgstr ""
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr "Quisquiliis exinānire"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr ""
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr ""
-
-#~ msgid "Find Software"
-#~ msgstr "Programmaturam invenire"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Hoc removēs?"
-
-#~ msgid "Remove %s?"
-#~ msgstr "%s removēbitur.  Sic aut non?"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "De USP de S.Chanderbally"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Expectā, mūnus longum"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Agendum melior de Gnome"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Mūnus removētur"

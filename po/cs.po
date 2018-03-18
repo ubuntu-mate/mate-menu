@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-07 08:06+0000\n"
+"POT-Creation-Date: 2018-03-18 10:28+0000\n"
 "PO-Revision-Date: 2017-12-06 22:47+0000\n"
 "Last-Translator: ToMáš Marný\n"
 "Language-Team: Czech (http://www.transifex.com/mate/MATE/language/cs/)\n"
@@ -509,24 +509,24 @@ msgstr "Vyprázdnit koš"
 msgid "Recent documents"
 msgstr "Nedávné dokumenty"
 
-#: ../mate_menu/keybinding.py:181
+#: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
 "Klepnutím nastavíte novou klávesovou zkratku pro otevření a zavření "
 "nabídky.  "
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "Stiskem klávesy Escape či opětovným klepnutím zrušíte operaci.  "
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "Stiskněte klávesu Backspace pro vymazání existující klávesové zkratky."
 
-#: ../mate_menu/keybinding.py:202
+#: ../mate_menu/keybinding.py:203
 msgid "Pick an accelerator"
 msgstr "Vyberte klávesovou zkratku"
 
-#: ../mate_menu/keybinding.py:258
+#: ../mate_menu/keybinding.py:259
 msgid "<not set>"
 msgstr "<nenastaveno>"
