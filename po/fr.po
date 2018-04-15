@@ -4,15 +4,15 @@
 #
 # Translators:
 # Charles Monzat <superboa@hotmail.fr>, 2017
-# Étienne Deparis <etienne@depar.is>, 2017
+# Étienne Deparis <etienne@depar.is>, 2017-2018
 # Nicolas Dobigeon <dobigeon@gmail.com>, 2017
 # Tubuntu <tubuntu@testimonium.be>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-18 10:28+0000\n"
-"PO-Revision-Date: 2017-12-05 14:29+0000\n"
+"POT-Creation-Date: 2018-04-15 13:04+0100\n"
+"PO-Revision-Date: 2018-04-10 08:50+0000\n"
 "Last-Translator: Étienne Deparis <etienne@depar.is>\n"
 "Language-Team: French (http://www.transifex.com/mate/MATE/language/fr/)\n"
 "Language: fr\n"
@@ -516,7 +516,7 @@ msgstr ""
 #: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
-"Appuyer sur la touche Échap ou cliquer à nouveau pour annuler l'opération."
+"Appuyer sur la touche Échap. ou cliquer à nouveau pour annuler l'opération."
 
 #: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
