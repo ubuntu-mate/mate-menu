@@ -188,7 +188,7 @@ class pluginclass:
     def callback(self, widget, filename=None):
         self.Win.hide()
 
-        x = os.system("gvfs-open \""+filename+"\"")
+        x = os.system("gio open \""+filename+"\"")
         if x == 256:
             dia = Gtk.Dialog('File not found!',
                              None,  #the toplevel wgt of your app
