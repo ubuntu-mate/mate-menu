@@ -70,16 +70,17 @@ def get_system_item_paths():
 def rel_path(target, base=os.curdir):
 
     if not os.path.exists(target):
-        raise OSError, 'Target does not exist: '+target
+        raise OSError('Target does not exist: '+target)
+
 
     if not os.path.isdir(base):
-        raise OSError, 'Base is not a directory or does not exist: '+base
+        raise OSError('Base is not a directory or does not exist: '+base)
 
     base_list = (os.path.abspath(base)).split(os.sep)
     target_list = (os.path.abspath(target)).split(os.sep)
 
     for i in range(min(len(base_list), len(target_list))):
-        if base_list[i] <> target_list[i]: break
+        if base_list[i] != target_list[i]: break
         else:
             i += 1
 
@@ -256,8 +257,8 @@ class pluginclass( object ):
             self.settings.bindGSettingsEntryToVar( "bool", "enable-wikipedia", self, "enablewikipedia" )
             self.settings.bindGSettingsEntryToVar( "bool", "enable-dictionary", self, "enabledictionary" )
             self.settings.bindGSettingsEntryToVar( "bool", "enable-computer", self, "enablecomputer" )
-        except Exception, detail:
-            print detail
+        except Exception as detail:
+            print(detail)
         self.currentFavCol = 0
         self.favorites = []
 
@@ -310,7 +311,7 @@ class pluginclass( object ):
                     self.panel_position = object_schema.get_int("position") + 1
 
     def __del__( self ):
-        print u"Applications plugin deleted"
+        print(u"Applications plugin deleted")
 
     def wake (self) :
         pass
@@ -731,7 +732,7 @@ class pluginclass( object ):
                 allButton.set_relief( Gtk.ReliefStyle.HALF )
                 self.activeFilter = (0, text, widget)
         else:
-            #print "CATFILTER"
+            #print("CATFILTER")
             self.activeFilter = (1, category, widget)
             if category == "":
                 listedDesktopFiles = []
@@ -1010,8 +1011,8 @@ class pluginclass( object ):
     def delete_from_menu(self, widget, desktopEntry):
         try:
             os.remove(desktopEntry.desktopFile)
-        except Exception, detail:
-            print detail
+        except Exception as detail:
+            print(detail)
 
     def onLaunchApp( self, menu, widget ):
         widget.execute()
@@ -1196,8 +1197,8 @@ class pluginclass( object ):
                 self.mateMenuWin.setTooltip( favButton, favButton.getTooltip() )
                 favButton.type = "location"
                 return favButton
-        except Exception, e:
-            print u"File in favorites not found: '" + location + "'", e
+        except Exception as e:
+            print(u"File in favorites not found: '" + location + "'", e)
 
         return None
 
@@ -1247,8 +1248,8 @@ class pluginclass( object ):
                     position += 1
 
             self.favoritesSave()
-        except Exception, e:
-            print e
+        except Exception as e:
+            print(e)
 
     def favoritesPositionOnGrid( self, favorite ):
         row = 0
@@ -1423,7 +1424,7 @@ class pluginclass( object ):
                     button.destroy()
                     del item
                 except Exception as e:
-                    print e
+                    print(e)
 
             if addedCategories:
                 sortedCategoryList = []
@@ -1432,7 +1433,7 @@ class pluginclass( object ):
                         self.categoriesBox.remove( item["button"] )
                         sortedCategoryList.append( ( str(item["index"]) + item["name"], item["button"] ) )
                     except Exception as e:
-                        print e
+                        print(e)
 
                 # Create new category buttons and add the to the list
                 for item in addedCategories:
@@ -1454,7 +1455,7 @@ class pluginclass( object ):
                         self.categoryList.append( item )
                         sortedCategoryList.append( ( str(item["index"]) + item["name"], item["button"] ) )
                     except Exception as e:
-                        print e
+                        print(e)
 
                 sortedCategoryList.sort()
 
@@ -1462,7 +1463,7 @@ class pluginclass( object ):
                     try:
                         self.categoriesBox.pack_start( item[1], False, False, 0 )
                     except Exception as e:
-                        print e
+                        print(e)
 
             # Find added and removed applications add update the application list
             newApplicationList = self.buildApplicationList()

@@ -29,7 +29,7 @@ def RemoveArgs(Execline):
 		elem = elem.replace("'","")
 		elem = elem.replace("\"", "")
 		if elem not in Specials:
-			print elem
+			print(elem)
 			NewExecline.append(elem)
 	return NewExecline
 
@@ -44,13 +44,13 @@ def Execute( cmd , commandCwd=None):
 
 	if isinstance( cmd, str ) or isinstance( cmd, unicode):
 		if (cmd.find("/home/") >= 0) or (cmd.find("xdg-su") >= 0) or (cmd.find("\"") >= 0):
-			print "running manually..."
+			print("running manually...")
 			try:
 				os.chdir(cwd)
 				subprocess.Popen(shlex.split(cmd))
 				return True
-			except Exception, detail:
-				print detail
+			except Exception as detail:
+				print(detail)
 				return False
 	cmd = cmd.split()
 	cmd = RemoveArgs(cmd)
@@ -60,7 +60,7 @@ def Execute( cmd , commandCwd=None):
 		string = ' '.join(cmd)
 		subprocess.Popen(shlex.split(string))
 		return True
-	except Exception, detail:
-		print detail
+	except Exception as detail:
+		print(detail)
 		return False
 

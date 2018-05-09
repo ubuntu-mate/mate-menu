@@ -42,8 +42,8 @@ try:
     import xdg.Config
     import mate_menu.keybinding as keybinding
     import mate_menu.pointerMonitor as pointerMonitor
-except Exception, e:
-    print e
+except Exception as e:
+    print(e)
     sys.exit(1)
 
 signal.signal(signal.SIGINT, signal.SIG_DFL)
@@ -193,7 +193,7 @@ class MainWindow( object ):
 
         for plugin in self.pluginlist:
             if plugin in self.plugins:
-                print u"Duplicate plugin in list: ", plugin
+                print(u"Duplicate plugin in list: ", plugin)
                 continue
 
             if plugin != "newpane":
@@ -218,7 +218,7 @@ class MainWindow( object ):
                     #        Image1.show()
 
                     #print u"Loading plugin '" + plugin + "' : sucessful"
-                except Exception, e:
+                except Exception as e:
                     MyPlugin = Gtk.EventBox() #Fake class for MyPlugin
                     MyPlugin.heading = _("Couldn't load plugin:") + " " + plugin
                     MyPlugin.content_holder = Gtk.EventBox()
@@ -237,7 +237,7 @@ class MainWindow( object ):
                     MyPlugin.add( MyPlugin.content_holder )
                     MyPlugin.width = 270
                     MyPlugin.icon = 'mate-logo-icon.png'
-                    print u"Unable to load " + plugin + " plugin :-("
+                    print(u"Unable to load " + plugin + " plugin :-(")
 
 
                 self.panesToColor.append( MyPlugin.content_holder )
@@ -524,11 +524,11 @@ class MenuWin( object ):
             self.keybinder.connect("activate", self.onBindingPress)
             self.keybinder.start()
             self.settings.connect( "changed::hot-key", self.hotkeyChanged )
-            print "Binding to Hot Key: " + self.hotkeyText
-        except Exception, cause:
+            print("Binding to Hot Key: " + self.hotkeyText)
+        except Exception as cause:
             self.keybinder = None
-            print "** WARNING ** - Keybinder Error"
-            print "Error Report :\n", str(cause)
+            print("** WARNING ** - Keybinder Error")
+            print("Error Report :\n", str(cause))
 
         self.applet.set_can_focus(False)
 
@@ -536,9 +536,9 @@ class MenuWin( object ):
             self.pointerMonitor = pointerMonitor.PointerMonitor()
             self.pointerMonitor.connect("activate", self.onPointerOutside)
             self.mainwin.window.connect( "realize", self.onRealize )
-        except Exception, cause:
-            print "** WARNING ** - Pointer Monitor Error"
-            print "Error Report :\n", str(cause)
+        except Exception as cause:
+            print("** WARNING ** - Pointer Monitor Error")
+            print("Error Report :\n", str(cause))
 
     def onWindowMap( self, *args ):
         self.applet.get_style_context().set_state( Gtk.StateFlags.SELECTED )

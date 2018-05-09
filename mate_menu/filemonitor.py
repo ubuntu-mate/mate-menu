@@ -48,7 +48,7 @@ if hasInotify:
                 mId = self.wm.add_watch( filename, mask, rec = True)[filename]
                 if mId >= 0:
                     self.callbacks[mId] = ( callback, args )
-            except Exception, detail:
+            except Exception as detail:
                 mId = 0
             return mId
 
