@@ -20,8 +20,9 @@
 
 import gi
 gi.require_version("Gtk", "3.0")
+gi.require_version('MateMenu', '2.0')
 
-from gi.repository import Gtk, Pango, Gdk, Gio, GLib
+from gi.repository import Gtk, Pango, Gdk, Gio, GLib, MateMenu
 
 import os
 import shutil
@@ -34,8 +35,6 @@ from mate_menu.easybuttons import *
 from mate_menu.execute import Execute
 from mate_menu.easygsettings import EasyGSettings
 from mate_menu.easyfiles import *
-
-import matemenu
 
 # i18n
 gettext.install("mate-menu", "/usr/share/locale")
@@ -87,10 +86,32 @@ def rel_path(target, base=os.curdir):
 
     return os.path.join(*rel_list)
 
+def get_contents(item):
+    contents = []
+    item_iter = item.iter()
+    item_type = item_iter.next()
+
+    while item_type != MateMenu.TreeItemType.INVALID:
+        item = None
+        if item_type == MateMenu.TreeItemType.DIRECTORY:
+            item = item_iter.get_directory()
+        elif item_type == MateMenu.TreeItemType.ENTRY:
+            item = item_iter.get_entry()
+        elif item_type == MateMenu.TreeItemType.HEADER:
+            item = item_iter.get_header()
+        elif item_type == MateMenu.TreeItemType.ALIAS:
+            item = item_iter.get_alias()
+        elif item_type == MateMenu.TreeItemType.SEPARATOR:
+            item = item_iter.get_separator()
+        if item:
+            contents.append(item)
+        item_type = item_iter.next()
+    return contents
 
 class Menu:
     def __init__( self, MenuToLookup ):
-        self.tree = matemenu.lookup_tree( MenuToLookup )
+        self.tree = MateMenu.Tree.new( MenuToLookup, MateMenu.TreeFlags.SORT_DISPLAY_NAME)
+        self.tree.load_sync()
         self.directory = self.tree.get_root_directory()
 
     def getMenus( self, parent=None ):
@@ -98,19 +119,19 @@ class Menu:
             #gives top-level "Applications" item
             yield self.tree.root
         else:
-            for menu in parent.get_contents():
-                if menu.get_type() == matemenu.TYPE_DIRECTORY and self.__isVisible( menu ):
+            for menu in get_contents(parent):
+                if isinstance(menu, MateMenu.TreeDirectory) and self.__isVisible( menu ):
                     yield menu
 
     def getItems( self, menu ):
-        for item in menu.get_contents():
-            if item.get_type() == matemenu.TYPE_ENTRY and item.get_desktop_file_id()[-19:] != '-usercustom.desktop' and self.__isVisible( item ):
+        for item in get_contents(menu):
+            if isinstance(item, MateMenu.TreeEntry) and item.get_desktop_file_id()[-19:] != '-usercustom.desktop' and self.__isVisible( item ):
                 yield item
 
     def __isVisible( self, item ):
-        if item.get_type() == matemenu.TYPE_ENTRY:
+        if isinstance(item, MateMenu.TreeEntry):
             return not ( item.get_is_excluded() or item.get_is_nodisplay() )
-        if item.get_type() == matemenu.TYPE_DIRECTORY and len( item.get_contents() ):
+        if isinstance(item, MateMenu.TreeDirectory) and len( get_contents(item) ):
             return True
 
 
@@ -178,6 +199,7 @@ class pluginclass( object ):
         self.mainMenus = [ ]
 
         self.toggleButton = toggleButton
+        self.menuFiles = []
 
         self.builder = Gtk.Builder()
         # The Glade file for the plugin
@@ -285,7 +307,8 @@ class pluginclass( object ):
 
         for mainitems in [ "mate-applications.menu", "mate-settings.menu" ]:
             mymenu = Menu( mainitems )
-            mymenu.tree.add_monitor( self.menuChanged, None )
+            #mymenu.tree.add_monitor( self.menuChanged, None )
+            mymenu.tree.connect("changed", self.menuChanged, None)
 
         self.suggestions = []
         self.current_suggestion = None
@@ -1534,15 +1557,18 @@ class pluginclass( object ):
                     else:
                         launcherNames.append(launcherName)
         except Exception as e:
-            print e
+            print(e)
 
         self.rebuildLock = False
 
     # Reload the menufiles from the filesystem
     def loadMenuFiles( self ):
-        self.menuFiles = []
-        for mainitems in [ "mate-applications.menu", "mate-settings.menu" ]:
-            self.menuFiles.append( Menu( mainitems) )
+        if len(self.menuFiles) == 0:
+            for mainitems in [ "mate-applications.menu", "mate-settings.menu" ]:
+                self.menuFiles.append( Menu( mainitems) )
+
+        for menu in self.menuFiles:
+		    menu.tree.load_sync()
 
     # Build a list of all categories in the menu ( [ { "name", "icon", tooltip" } ]
     def buildCategoryList( self ):
@@ -1551,13 +1577,13 @@ class pluginclass( object ):
         num = 1
 
         for menu in self.menuFiles:
-            for child in menu.directory.get_contents():
-                if child.get_type() == matemenu.TYPE_DIRECTORY:
-                    icon =  str(child.icon)
+            for child in get_contents(menu.directory):
+                if isinstance(child, MateMenu.TreeDirectory):
+                    #icon =  child.get_icon().to_string()
                     #if (icon == "preferences-system"):
-                    #       self.adminMenu = child.name
+                    #       self.adminMenu = child.get_name()
                     #if (icon != "applications-system" and icon != "applications-other"):
-                    newCategoryList.append( { "name": child.name, "icon": child.icon, "tooltip": child.name, "filter": child.name, "index": num } )
+                    newCategoryList.append( { "name": child.get_name(), "icon": child.get_icon().to_string(), "tooltip": child.get_name(), "filter": child.get_name(), "index": num } )
             num += 1
 
         return newCategoryList
@@ -1568,30 +1594,30 @@ class pluginclass( object ):
         newApplicationsList = []
 
         def find_applications_recursively(app_list, directory, catName):
-            for item in directory.get_contents():
-                if item.get_type() == matemenu.TYPE_ENTRY:
-                    #print "=======>>> " + str(item.name) + " = " + str(catName)
+            for item in get_contents(directory):
+                if isinstance(item, MateMenu.TreeEntry):
+                    #print("=======>>> " + str(item.get_name()) + " = " + str(catName))
                     app_list.append( { "entry": item, "category": catName } )
-                elif item.get_type() == matemenu.TYPE_DIRECTORY:
+                elif isinstance(item, MateMenu.TreeDirectory):
                     find_applications_recursively(app_list, item, catName)
 
         for menu in self.menuFiles:
             directory = menu.directory
-            for entry in directory.get_contents():
-                if entry.get_type() == matemenu.TYPE_DIRECTORY and len(entry.get_contents()):
+            for entry in get_contents(directory):
+                if isinstance(entry, MateMenu.TreeDirectory) and len(get_contents(entry)):
                     #Entry is a top-level category
-                    #catName = entry.name
-                    #icon = str(entry.icon)
+                    #catName = entry.get_name()
+                    #icon = entry.get_icon().to_string()
                     #if (icon == "applications-system" or icon == "applications-other"):
                     #       catName = self.adminMenu
-                    for item in entry.get_contents():
-                        if item.get_type() == matemenu.TYPE_DIRECTORY:
-                            find_applications_recursively(newApplicationsList, item, entry.name)
-                        elif item.get_type() == matemenu.TYPE_ENTRY:
-                            newApplicationsList.append( { "entry": item, "category": entry.name } )
-                #elif entry.get_type() == matemenu.TYPE_ENTRY:
+                    for item in get_contents(entry):
+                        if isinstance(item, MateMenu.TreeDirectory):
+                            find_applications_recursively(newApplicationsList, item, entry.get_name())
+                        elif isinstance(item, MateMenu.TreeEntry):
+                            newApplicationsList.append( { "entry": item, "category": entry.get_name() } )
+                #elif isinstance(entry, MateMenu.TreeEntry):
                 #       if not (entry.get_is_excluded() or entry.get_is_nodisplay()):
-                #               print "=======>>> " + item.name + " = top level"
+                #               print("=======>>> " + item.get_name() + " = top level")
                 #               newApplicationsList.append( { "entry": item, "category": "" } )
 
         return newApplicationsList
