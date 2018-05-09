@@ -233,7 +233,7 @@ class easyButton( Gtk.Button ):
 
         icon = iconManager.getIcon( self.iconName, iconSize )
         if icon is None:
-            icon = iconManager.getIcon( "application-default-icon", iconSize )
+            icon = iconManager.getIcon( "gtk-missing-image", iconSize )
 
         return icon
 
