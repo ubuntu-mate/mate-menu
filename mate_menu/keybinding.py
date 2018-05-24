@@ -99,10 +99,17 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
             mod = modifiers | ignored_mask
             result = self.window.grab_key(self.keycode, mod, True, X.GrabModeAsync, X.GrabModeAsync, onerror=catch)
         self.display.flush()
-        # sync has been blocking. Don't know why.
-        #self.display.sync()
         if catch.get_error():
             return False
+
+        catch = error.CatchError(error.BadCursor)
+        if not self.modifiers:
+           # We grab Super+click so that we can forward it to the window manager and allow Super+click bindings (window move, resize, etc.)
+           self.window.grab_button(X.AnyButton, X.Mod4Mask, True, X.ButtonPressMask, X.GrabModeSync, X.GrabModeAsync, X.NONE, X.NONE)
+        self.display.flush()
+        if catch.get_error():
+            return False
+
         return True
 
     def ungrab(self):
@@ -134,6 +141,19 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
     def activate(self):
         GLib.idle_add(self.run)
 
+    # Get which window manager we're currently using (Marco, Compiz, Metacity, etc...)
+    def get_wm(self):
+        name = ''
+        wm_check = self.display.get_atom('_NET_SUPPORTING_WM_CHECK')
+        win_id = self.window.get_full_property(wm_check, X.AnyPropertyType)
+        if win_id:
+            w = self.display.create_resource_object("window", win_id.value[0])
+            wm_name = self.display.get_atom('_NET_WM_NAME')
+            prop = w.get_full_property(wm_name, X.AnyPropertyType)
+            if prop:
+                name = prop.value
+        return name.lower()
+
     def run(self):
         self.running = True
         wait_for_release = False
@@ -148,13 +168,31 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
 
             else:
                 try:
+                    # KeyPress
                     if event.type == X.KeyPress and event.detail == self.keycode and not wait_for_release:
                         modifiers = event.state & self.known_modifiers_mask
                         if modifiers == self.modifiers:
                             wait_for_release = True
+
+                    # KeyRelease
                     elif event.type == X.KeyRelease and event.detail == self.keycode and wait_for_release:
                         GLib.idle_add(self.idle)
                         wait_for_release = False
+
+                    # Modifiers are often used with mouse events - don't let the system swallow those
+                    elif event.type == X.ButtonPress:
+                        self.display.allow_events(X.ReplayPointer, X.CurrentTime)
+                        # Compiz would rather not have the event sent to it and just read it from the replayed queue
+                        wm = self.get_wm()
+                        if wm != "compiz":
+                            self.display.ungrab_keyboard(X.CurrentTime)
+                            self.display.ungrab_pointer(X.CurrentTime)
+                            query_pointer = self.window.query_pointer()
+                            self.display.send_event(query_pointer.child, event, X.ButtonPressMask, True)
+                        wait_for_release = False
+
+                    # If the user presses another key in between the KeyPress and the KeyRelease, they
+                    # meant to use a different shortcut
                     else:
                         self.display.ungrab_keyboard(X.CurrentTime)
                         # Send the event up in case another window is listening to it
