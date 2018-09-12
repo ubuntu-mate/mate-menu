@@ -34,7 +34,7 @@ def RemoveArgs(Execline):
 	return NewExecline
 
 # Actually execute the command
-def Execute( cmd , commandCwd=None):
+def ExecuteCommand(cmd , commandCwd=None):
 	if not commandCwd:
 		cwd = os.path.expanduser( "~" );
 	else:
@@ -64,3 +64,11 @@ def Execute( cmd , commandCwd=None):
 		print(detail)
 		return False
 
+# Execute cmd using the double fork method
+def Execute(cmd, commandCwd=None):
+	child_pid = os.fork()
+	if child_pid == 0:
+		ExecuteCommand(cmd, commandCwd)
+		os._exit(0)
+	else:
+		os.wait()
