@@ -307,7 +307,6 @@ class pluginclass( object ):
 
         for mainitems in [ "mate-applications.menu", "mate-settings.menu" ]:
             mymenu = Menu( mainitems )
-            #mymenu.tree.add_monitor( self.menuChanged, None )
             mymenu.tree.connect("changed", self.menuChanged, None)
 
         self.suggestions = []
@@ -1557,7 +1556,7 @@ class pluginclass( object ):
                     else:
                         launcherNames.append(launcherName)
         except Exception as e:
-            print(e)
+            print e
 
         self.rebuildLock = False
 
@@ -1566,9 +1565,6 @@ class pluginclass( object ):
         if len(self.menuFiles) == 0:
             for mainitems in [ "mate-applications.menu", "mate-settings.menu" ]:
                 self.menuFiles.append( Menu( mainitems) )
-
-        for menu in self.menuFiles:
-		    menu.tree.load_sync()
 
     # Build a list of all categories in the menu ( [ { "name", "icon", tooltip" } ]
     def buildCategoryList( self ):
@@ -1579,11 +1575,9 @@ class pluginclass( object ):
         for menu in self.menuFiles:
             for child in get_contents(menu.directory):
                 if isinstance(child, MateMenu.TreeDirectory):
-                    #icon =  child.get_icon().to_string()
-                    #if (icon == "preferences-system"):
-                    #       self.adminMenu = child.get_name()
-                    #if (icon != "applications-system" and icon != "applications-other"):
-                    newCategoryList.append( { "name": child.get_name(), "icon": child.get_icon().to_string(), "tooltip": child.get_name(), "filter": child.get_name(), "index": num } )
+                    name = child.get_name()
+                    icon = child.get_icon().to_string()
+                    newCategoryList.append( { "name": name, "icon": icon, "tooltip": name, "filter": name, "index": num } )
             num += 1
 
         return newCategoryList
