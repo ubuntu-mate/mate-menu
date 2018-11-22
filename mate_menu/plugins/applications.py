@@ -308,6 +308,7 @@ class pluginclass( object ):
         for mainitems in [ "mate-applications.menu", "mate-settings.menu" ]:
             mymenu = Menu( mainitems )
             mymenu.tree.connect("changed", self.menuChanged, None)
+            self.menuFiles.append(mymenu)
 
         self.suggestions = []
         self.current_suggestion = None
@@ -1562,9 +1563,14 @@ class pluginclass( object ):
 
     # Reload the menufiles from the filesystem
     def loadMenuFiles( self ):
-        if len(self.menuFiles) == 0:
-            for mainitems in [ "mate-applications.menu", "mate-settings.menu" ]:
-                self.menuFiles.append( Menu( mainitems) )
+        if len(self.menuFiles) > 0:
+            for menu in self.menuFiles:
+                menu.tree.disconnect_by_func(self.menuChanged)
+            self.menuFiles = []
+        for mainitems in [ "mate-applications.menu", "mate-settings.menu" ]:
+            mymenu = Menu( mainitems )
+            mymenu.tree.connect("changed", self.menuChanged, None)
+            self.menuFiles.append(mymenu)
 
     # Build a list of all categories in the menu ( [ { "name", "icon", tooltip" } ]
     def buildCategoryList( self ):
