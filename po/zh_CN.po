@@ -1,24 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # liushuyu011 <liushuyu011@gmail.com>, 2017
-# Mingcong Bai <jeffbai@aosc.xyz>, 2017
+# Mingcong Bai <jeffbai@aosc.xyz>, 2017-2018
 # 玉堂白鹤 <yjwork@qq.com>, 2015,2017
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-15 13:04+0100\n"
-"PO-Revision-Date: 2017-12-01 16:19+0000\n"
+"PO-Revision-Date: 2018-12-26 05:34+0000\n"
 "Last-Translator: Mingcong Bai <jeffbai@aosc.xyz>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/mate/MATE/language/"
-"zh_CN/)\n"
-"Language: zh_CN\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/mate/MATE/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:57
@@ -262,22 +261,26 @@ msgstr "系统"
 msgid "Toggle Default Items:"
 msgstr "切换默认项目："
 
-#: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
+#: ../lib/mate-menu-config.py:122
+#: ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
 msgstr "包管理器"
 
-#: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
+#: ../lib/mate-menu-config.py:123
+#: ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
 msgstr "控制中心"
 
-#: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
+#: ../lib/mate-menu-config.py:124
+#: ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
 msgstr "终端"
 
-#: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
+#: ../lib/mate-menu-config.py:125
+#: ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
 msgstr "锁定屏幕"
 
@@ -285,7 +288,8 @@ msgstr "锁定屏幕"
 msgid "Log Out"
 msgstr "注销"
 
-#: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
+#: ../lib/mate-menu-config.py:127
+#: ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
 msgstr "退出"
 
@@ -505,7 +509,7 @@ msgstr "最近文档"
 
 #: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr "点击以设置一个新键盘快捷键来打开和关闭菜单。"
+msgstr "点击以设置用于打开和关闭菜单的键盘快捷键。"
 
 #: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "

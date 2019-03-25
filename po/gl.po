@@ -1,22 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
-# Miguel Anxo Bouzada <mbouzada@gmail.com>, 2015,2018
+# Miguel Anxo Bouzada <mbouzada@gmail.com>, 2015,2018-2019
 # Miguel Salgado Herrero <gallegomsh@gmail.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-15 13:04+0100\n"
-"PO-Revision-Date: 2018-03-20 18:55+0000\n"
+"PO-Revision-Date: 2019-03-25 08:53+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician (http://www.transifex.com/mate/MATE/language/gl/)\n"
-"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: gl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:57
@@ -75,7 +75,7 @@ msgstr "Amosar o engadido de documentos recentes"
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show applications plugin"
-msgstr "Amosar o engadido de aplicacións"
+msgstr "Amosar o engadido de aplicativos"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show system plugin"
@@ -260,22 +260,26 @@ msgstr "Sistema"
 msgid "Toggle Default Items:"
 msgstr "Alternar elementos predeterminados:"
 
-#: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
+#: ../lib/mate-menu-config.py:122
+#: ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
 msgstr "Xestor de paquetes"
 
-#: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
+#: ../lib/mate-menu-config.py:123
+#: ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
 msgstr "Centro de control"
 
-#: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
+#: ../lib/mate-menu-config.py:124
+#: ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
 msgstr "Terminal"
 
-#: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
+#: ../lib/mate-menu-config.py:125
+#: ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
 msgstr "Bloquear a pantalla"
 
@@ -283,7 +287,8 @@ msgstr "Bloquear a pantalla"
 msgid "Log Out"
 msgstr "Saír da sesión"
 
-#: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
+#: ../lib/mate-menu-config.py:127
+#: ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
 msgstr "Saír"
 
@@ -354,7 +359,7 @@ msgstr "Buscar «%s» na Wikipedia"
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Buscar «%s» no dicionario"
+msgstr "Buscar «%s» no Dicionario"
 
 #: ../mate_menu/plugins/applications.py:654
 #, python-format
@@ -423,7 +428,7 @@ msgstr "Buscar na Wikipedia"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Lookup Dictionary"
-msgstr "Buscar no dicionario"
+msgstr "Buscar no Dicionario"
 
 #: ../mate_menu/plugins/applications.py:933
 msgid "Search Computer"
@@ -433,9 +438,7 @@ msgstr "Buscar neste equipo"
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"Non foi posíbel gardar favoritos. Comprobe que ten acceso a ~/.config/mate-"
-"menu"
+msgstr "Non foi posíbel gardar favoritos. Comprobe que ten acceso a ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1549
 msgid "All"
@@ -476,9 +479,7 @@ msgstr "Apagar, reiniciar, suspender ou hibernar"
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"Explorar todos os ficheiros locais e remotos e cartafoles accesíbeis desde "
-"este computador"
+msgstr "Explorar todos os ficheiros locais e remotos e cartafoles accesíbeis dende este computador"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
@@ -486,15 +487,15 @@ msgstr "Abrir o seu cartafol persoal"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Examinar localizacións en marcadores e en redes locais"
+msgstr "Navegar polas localizacións en marcadores e en redes locais"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "Examinar elementos colocados en el escritorio"
+msgstr "Navegar polos elementos colocados no escritorio"
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "Examinar ficheiros eliminados"
+msgstr "Navegar polos ficheiros eliminados"
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
@@ -507,14 +508,11 @@ msgstr "Documentos recentes"
 
 #: ../mate_menu/keybinding.py:182
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"Prema para estabelecer unha nova tecla aceleradora para abrir e pechar o "
-"menú."
+msgstr "Prema para estabelecer unha nova tecla aceleradora para abrir e pechar o menú."
 
 #: ../mate_menu/keybinding.py:183
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr ""
-"Prema na tecla Escape ou prema de novo o botón para cancelar la operación."
+msgstr "Prema na tecla Escape ou prema de novo o botón para cancelar la operación."
 
 #: ../mate_menu/keybinding.py:184
 msgid "Press Backspace to clear the existing keybinding."
