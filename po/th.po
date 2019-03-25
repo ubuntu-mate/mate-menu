@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-15 13:04+0100\n"
+"POT-Creation-Date: 2019-03-25 15:19+0000\n"
 "PO-Revision-Date: 2018-03-13 22:10+0000\n"
 "Last-Translator: Wolfgang Ulbrich <mate@raveit.de>\n"
 "Language-Team: Thai (http://www.transifex.com/mate/MATE/language/th/)\n"
@@ -19,36 +19,36 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../lib/mate-menu.py:57
+#: ../lib/mate-menu.py:58
 msgid "Menu"
 msgstr "เมนู"
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:223
+#: ../lib/mate-menu.py:224
 msgid "Couldn't load plugin:"
 msgstr "ไม่สามารถโหลดปลั๊กอิน:"
 
-#: ../lib/mate-menu.py:296
+#: ../lib/mate-menu.py:297
 msgid "Couldn't initialize plugin"
 msgstr "ไม่สามารถเริ่มทำงานปลั๊กอิน"
 
-#: ../lib/mate-menu.py:731
+#: ../lib/mate-menu.py:732
 msgid "Advanced MATE Menu"
 msgstr "เมนูขั้นสูงของ MATE"
 
-#: ../lib/mate-menu.py:845
+#: ../lib/mate-menu.py:846
 msgid "Preferences"
 msgstr "การตั้งค่า"
 
-#: ../lib/mate-menu.py:848
+#: ../lib/mate-menu.py:849
 msgid "Edit menu"
 msgstr "แก้ไขเมนู"
 
-#: ../lib/mate-menu.py:851
+#: ../lib/mate-menu.py:852
 msgid "Reload plugins"
 msgstr "รีโหลดปลั๊กอิน"
 
-#: ../lib/mate-menu.py:854
+#: ../lib/mate-menu.py:855
 msgid "About"
 msgstr "เกี่ยวกับ"
 
@@ -121,7 +121,7 @@ msgstr "ข้อความปุ่ม:"
 msgid "Options"
 msgstr "ตัวเลือก"
 
-#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:224
 msgid "Applications"
 msgstr "แอพพลิเคชั่น"
 
@@ -129,8 +129,8 @@ msgstr "แอพพลิเคชั่น"
 msgid "Theme"
 msgstr "ชุดตกแต่ง"
 
-#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
-#: ../mate_menu/plugins/applications.py:200
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:221
+#: ../mate_menu/plugins/applications.py:222
 msgid "Favorites"
 msgstr "รายการโปรด"
 
@@ -328,108 +328,108 @@ msgid "Path:"
 msgstr "พาธ:"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:197
+#: ../mate_menu/plugins/applications.py:219
 msgid "Search:"
 msgstr "ค้นหา:"
 
-#: ../mate_menu/plugins/applications.py:201
+#: ../mate_menu/plugins/applications.py:223
 msgid "All applications"
 msgstr "แอพพลิเคชั่นทั้งหมด"
 
-#: ../mate_menu/plugins/applications.py:600
+#: ../mate_menu/plugins/applications.py:623
 #, python-format
 msgid "Search DuckDuckGo for %s"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:611
+#: ../mate_menu/plugins/applications.py:634
 #, python-format
 msgid "Search Google for %s"
 msgstr "ค้นหา %s ใน Google"
 
-#: ../mate_menu/plugins/applications.py:622
+#: ../mate_menu/plugins/applications.py:645
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "ค้นหา %s ใน Wikipedia"
 
-#: ../mate_menu/plugins/applications.py:643
+#: ../mate_menu/plugins/applications.py:666
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "ค้นหา %s ในพจนานุกรม"
 
-#: ../mate_menu/plugins/applications.py:654
+#: ../mate_menu/plugins/applications.py:677
 #, python-format
 msgid "Search Computer for %s"
 msgstr "ค้นหา %s ในเครื่องคอมพิวเตอร์"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:788
-#: ../mate_menu/plugins/applications.py:853
+#: ../mate_menu/plugins/applications.py:811
+#: ../mate_menu/plugins/applications.py:876
 msgid "Add to desktop"
 msgstr "เพิ่มลงในหน้าจอเดสก์ท็อป"
 
-#: ../mate_menu/plugins/applications.py:789
-#: ../mate_menu/plugins/applications.py:854
+#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:877
 msgid "Add to panel"
 msgstr "เพิ่มลงในพาเนล"
 
-#: ../mate_menu/plugins/applications.py:791
-#: ../mate_menu/plugins/applications.py:832
+#: ../mate_menu/plugins/applications.py:814
+#: ../mate_menu/plugins/applications.py:855
 msgid "Insert space"
 msgstr "แทรกช่องว่าง"
 
-#: ../mate_menu/plugins/applications.py:792
-#: ../mate_menu/plugins/applications.py:833
+#: ../mate_menu/plugins/applications.py:815
+#: ../mate_menu/plugins/applications.py:856
 msgid "Insert separator"
 msgstr "แทรก separator"
 
-#: ../mate_menu/plugins/applications.py:794
-#: ../mate_menu/plugins/applications.py:857
+#: ../mate_menu/plugins/applications.py:817
+#: ../mate_menu/plugins/applications.py:880
 msgid "Launch"
 msgstr "เรียกใช้"
 
-#: ../mate_menu/plugins/applications.py:795
+#: ../mate_menu/plugins/applications.py:818
 msgid "Remove from favorites"
 msgstr "ลบออกจากรายการโปรด"
 
-#: ../mate_menu/plugins/applications.py:797
-#: ../mate_menu/plugins/applications.py:860
+#: ../mate_menu/plugins/applications.py:820
+#: ../mate_menu/plugins/applications.py:883
 msgid "Edit properties"
 msgstr "แก้ไขคุณสมบัติ"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:831
+#: ../mate_menu/plugins/applications.py:854
 msgid "Remove"
 msgstr "ลบ"
 
-#: ../mate_menu/plugins/applications.py:856
+#: ../mate_menu/plugins/applications.py:879
 msgid "Show in my favorites"
 msgstr "แสดงในรายการโปรดของฉัน"
 
-#: ../mate_menu/plugins/applications.py:858
+#: ../mate_menu/plugins/applications.py:881
 msgid "Delete from menu"
 msgstr "ลบออกจากเมนู"
 
-#: ../mate_menu/plugins/applications.py:902
+#: ../mate_menu/plugins/applications.py:925
 msgid "Search DuckDuckGo"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:909
+#: ../mate_menu/plugins/applications.py:932
 msgid "Search Google"
 msgstr "ค้นหาใน Google"
 
-#: ../mate_menu/plugins/applications.py:916
+#: ../mate_menu/plugins/applications.py:939
 msgid "Search Wikipedia"
 msgstr "ค้นหาใน Wikipedia"
 
-#: ../mate_menu/plugins/applications.py:926
+#: ../mate_menu/plugins/applications.py:949
 msgid "Lookup Dictionary"
 msgstr "ค้นหาในพจนานุกรม"
 
-#: ../mate_menu/plugins/applications.py:933
+#: ../mate_menu/plugins/applications.py:956
 msgid "Search Computer"
 msgstr "ค้นหาในคอมพิวเตอร์"
 
-#: ../mate_menu/plugins/applications.py:1344
+#: ../mate_menu/plugins/applications.py:1367
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
@@ -437,11 +437,11 @@ msgstr ""
 "ไม่สามารถบันทึกรายการโปรดได้ ให้คุณลองตรวจดูว่าคุณมีสิทธิ์เข้าถีง ~/.config/mate-menu "
 "หรือเปล่า"
 
-#: ../mate_menu/plugins/applications.py:1549
+#: ../mate_menu/plugins/applications.py:1577
 msgid "All"
 msgstr "ทั้งหมด"
 
-#: ../mate_menu/plugins/applications.py:1549
+#: ../mate_menu/plugins/applications.py:1577
 msgid "Show all applications"
 msgstr "แสดงแอพพลิเคชั่นทั้งหมด"
 
@@ -503,22 +503,22 @@ msgstr "เทถังขยะ"
 msgid "Recent documents"
 msgstr "เอกสารล่าสุด"
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:220
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr "คลิกเพื่อตั้งค่าปุ่มลัดสำหรับเปิดและปิดเมนู"
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:221
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "กดปุ่ม Escape หรือคลิกอีกครั้ง เพื่อยกเลิกการกระทำ"
 
-#: ../mate_menu/keybinding.py:184
+#: ../mate_menu/keybinding.py:222
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "กดปุ่ม Backspace เพื่อลบคีย์ลัดที่มีอยู่"
 
-#: ../mate_menu/keybinding.py:203
+#: ../mate_menu/keybinding.py:241
 msgid "Pick an accelerator"
 msgstr "เลือกคีย์ด่วน"
 
-#: ../mate_menu/keybinding.py:259
+#: ../mate_menu/keybinding.py:297
 msgid "<not set>"
 msgstr "<ไม่ได้ตั้งค่า>"

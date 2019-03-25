@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mate-menu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-15 13:04+0100\n"
+"POT-Creation-Date: 2019-03-25 15:19+0000\n"
 "PO-Revision-Date: 2014-09-07 14:06+0000\n"
 "Last-Translator: gudeta <gudbog@gmail.com>\n"
 "Language-Team: Oromo <om@li.org>\n"
@@ -18,36 +18,36 @@ msgstr ""
 "X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
 "X-Generator: Launchpad (build 17355)\n"
 
-#: ../lib/mate-menu.py:57
+#: ../lib/mate-menu.py:58
 msgid "Menu"
 msgstr "Baafata"
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:223
+#: ../lib/mate-menu.py:224
 msgid "Couldn't load plugin:"
 msgstr "Ittisuuqa naqachuu hindandeenye"
 
-#: ../lib/mate-menu.py:296
+#: ../lib/mate-menu.py:297
 msgid "Couldn't initialize plugin"
 msgstr "Ittisuuqa kaasuu hindandeenye"
 
-#: ../lib/mate-menu.py:731
+#: ../lib/mate-menu.py:732
 msgid "Advanced MATE Menu"
 msgstr ""
 
-#: ../lib/mate-menu.py:845
+#: ../lib/mate-menu.py:846
 msgid "Preferences"
 msgstr "Fedhiilee"
 
-#: ../lib/mate-menu.py:848
+#: ../lib/mate-menu.py:849
 msgid "Edit menu"
 msgstr "Baafata gulaali"
 
-#: ../lib/mate-menu.py:851
+#: ../lib/mate-menu.py:852
 msgid "Reload plugins"
 msgstr "Ittisuuqa lamnaqadhu"
 
-#: ../lib/mate-menu.py:854
+#: ../lib/mate-menu.py:855
 msgid "About"
 msgstr "Waayee"
 
@@ -120,7 +120,7 @@ msgstr "Qabduu barruu"
 msgid "Options"
 msgstr "Filmaata"
 
-#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:224
 msgid "Applications"
 msgstr "Dhimbaaftota"
 
@@ -128,8 +128,8 @@ msgstr "Dhimbaaftota"
 msgid "Theme"
 msgstr "Dhamsa"
 
-#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
-#: ../mate_menu/plugins/applications.py:200
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:221
+#: ../mate_menu/plugins/applications.py:222
 msgid "Favorites"
 msgstr "Jaalatamaa"
 
@@ -331,109 +331,109 @@ msgid "Path:"
 msgstr "Bakkumsa"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:197
+#: ../mate_menu/plugins/applications.py:219
 msgid "Search:"
 msgstr "Soqi"
 
-#: ../mate_menu/plugins/applications.py:201
+#: ../mate_menu/plugins/applications.py:223
 msgid "All applications"
 msgstr "Dhimbaastu hunda"
 
-#: ../mate_menu/plugins/applications.py:600
+#: ../mate_menu/plugins/applications.py:623
 #, fuzzy, python-format
 msgid "Search DuckDuckGo for %s"
 msgstr "Google soqi %s dhaaf"
 
-#: ../mate_menu/plugins/applications.py:611
+#: ../mate_menu/plugins/applications.py:634
 #, python-format
 msgid "Search Google for %s"
 msgstr "Google soqi %s dhaaf"
 
-#: ../mate_menu/plugins/applications.py:622
+#: ../mate_menu/plugins/applications.py:645
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "Wikipedia soqi %s dhaaf"
 
-#: ../mate_menu/plugins/applications.py:643
+#: ../mate_menu/plugins/applications.py:666
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "%s galmee jechaa keesa ilaali"
 
-#: ../mate_menu/plugins/applications.py:654
+#: ../mate_menu/plugins/applications.py:677
 #, python-format
 msgid "Search Computer for %s"
 msgstr "%s dhaaf kompiyutara soqi"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:788
-#: ../mate_menu/plugins/applications.py:853
+#: ../mate_menu/plugins/applications.py:811
+#: ../mate_menu/plugins/applications.py:876
 msgid "Add to desktop"
 msgstr "Minjaalati dabali"
 
-#: ../mate_menu/plugins/applications.py:789
-#: ../mate_menu/plugins/applications.py:854
+#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:877
 msgid "Add to panel"
 msgstr "Moggaargiitti dabali"
 
-#: ../mate_menu/plugins/applications.py:791
-#: ../mate_menu/plugins/applications.py:832
+#: ../mate_menu/plugins/applications.py:814
+#: ../mate_menu/plugins/applications.py:855
 msgid "Insert space"
 msgstr "Iddoduwa galchi"
 
-#: ../mate_menu/plugins/applications.py:792
-#: ../mate_menu/plugins/applications.py:833
+#: ../mate_menu/plugins/applications.py:815
+#: ../mate_menu/plugins/applications.py:856
 msgid "Insert separator"
 msgstr "Gargareessaa galchi"
 
-#: ../mate_menu/plugins/applications.py:794
-#: ../mate_menu/plugins/applications.py:857
+#: ../mate_menu/plugins/applications.py:817
+#: ../mate_menu/plugins/applications.py:880
 msgid "Launch"
 msgstr "Kaasisi"
 
-#: ../mate_menu/plugins/applications.py:795
+#: ../mate_menu/plugins/applications.py:818
 msgid "Remove from favorites"
 msgstr "Jaallamtoota keessaa buqqisi"
 
-#: ../mate_menu/plugins/applications.py:797
-#: ../mate_menu/plugins/applications.py:860
+#: ../mate_menu/plugins/applications.py:820
+#: ../mate_menu/plugins/applications.py:883
 msgid "Edit properties"
 msgstr "Amaloota gulaali"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:831
+#: ../mate_menu/plugins/applications.py:854
 msgid "Remove"
 msgstr "Buqqisi"
 
-#: ../mate_menu/plugins/applications.py:856
+#: ../mate_menu/plugins/applications.py:879
 msgid "Show in my favorites"
 msgstr "Jaallamtoota koo keessatti agarsiisii"
 
-#: ../mate_menu/plugins/applications.py:858
+#: ../mate_menu/plugins/applications.py:881
 msgid "Delete from menu"
 msgstr "Baafata keessaa haqi"
 
-#: ../mate_menu/plugins/applications.py:902
+#: ../mate_menu/plugins/applications.py:925
 #, fuzzy
 msgid "Search DuckDuckGo"
 msgstr "Google soqi"
 
-#: ../mate_menu/plugins/applications.py:909
+#: ../mate_menu/plugins/applications.py:932
 msgid "Search Google"
 msgstr "Google soqi"
 
-#: ../mate_menu/plugins/applications.py:916
+#: ../mate_menu/plugins/applications.py:939
 msgid "Search Wikipedia"
 msgstr "Wikipedia soqi"
 
-#: ../mate_menu/plugins/applications.py:926
+#: ../mate_menu/plugins/applications.py:949
 msgid "Lookup Dictionary"
 msgstr "galmee wabii godhi"
 
-#: ../mate_menu/plugins/applications.py:933
+#: ../mate_menu/plugins/applications.py:956
 msgid "Search Computer"
 msgstr "kompiitara soqi"
 
-#: ../mate_menu/plugins/applications.py:1344
+#: ../mate_menu/plugins/applications.py:1367
 #, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
@@ -442,11 +442,11 @@ msgstr ""
 "Jaallatamtooka olkaa'uu hindandeenye. ~/.linuxmint/mintMenu keessatti akka "
 "mirga barreessuu qabdu mirkaneessi"
 
-#: ../mate_menu/plugins/applications.py:1549
+#: ../mate_menu/plugins/applications.py:1577
 msgid "All"
 msgstr "Hunda"
 
-#: ../mate_menu/plugins/applications.py:1549
+#: ../mate_menu/plugins/applications.py:1577
 msgid "Show all applications"
 msgstr "Dhimbaasota hunda agarsiisi"
 
@@ -508,23 +508,23 @@ msgstr "Baattoo gataa qulqulleessi"
 msgid "Recent documents"
 msgstr "Galmee dhiyoo"
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:220
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr "Qaxxaamurtoota haara hojii baafata cufuuf banuurra oolchuuf caqasi  "
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:221
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "Dalaga dhiisuf Escape dhiibi yookin lama cuqaasi  "
 
-#: ../mate_menu/keybinding.py:184
+#: ../mate_menu/keybinding.py:222
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "Keybinding jiran haquuf Backspace dhiibi"
 
-#: ../mate_menu/keybinding.py:203
+#: ../mate_menu/keybinding.py:241
 msgid "Pick an accelerator"
 msgstr "Qaxxaamura kaasi"
 
-#: ../mate_menu/keybinding.py:259
+#: ../mate_menu/keybinding.py:297
 msgid "<not set>"
 msgstr "Hin qindoofne"
 

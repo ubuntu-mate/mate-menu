@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-15 13:04+0100\n"
+"POT-Creation-Date: 2019-03-25 15:19+0000\n"
 "PO-Revision-Date: 2017-12-14 12:36+0000\n"
 "Last-Translator: mauron\n"
 "Language-Team: Turkish (http://www.transifex.com/mate/MATE/language/tr/)\n"
@@ -23,36 +23,36 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../lib/mate-menu.py:57
+#: ../lib/mate-menu.py:58
 msgid "Menu"
 msgstr "Menü"
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:223
+#: ../lib/mate-menu.py:224
 msgid "Couldn't load plugin:"
 msgstr "Eklenti yüklenemedi:"
 
-#: ../lib/mate-menu.py:296
+#: ../lib/mate-menu.py:297
 msgid "Couldn't initialize plugin"
 msgstr "Eklenti başlatılamadı"
 
-#: ../lib/mate-menu.py:731
+#: ../lib/mate-menu.py:732
 msgid "Advanced MATE Menu"
 msgstr "Gelişmiş MATE Menüsü"
 
-#: ../lib/mate-menu.py:845
+#: ../lib/mate-menu.py:846
 msgid "Preferences"
 msgstr "Tercihler"
 
-#: ../lib/mate-menu.py:848
+#: ../lib/mate-menu.py:849
 msgid "Edit menu"
 msgstr "Menüyü düzenle"
 
-#: ../lib/mate-menu.py:851
+#: ../lib/mate-menu.py:852
 msgid "Reload plugins"
 msgstr "Eklentileri tekrar yükle"
 
-#: ../lib/mate-menu.py:854
+#: ../lib/mate-menu.py:855
 msgid "About"
 msgstr "Hakkında"
 
@@ -125,7 +125,7 @@ msgstr "Düğme metni:"
 msgid "Options"
 msgstr "Ayarlar"
 
-#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:202
+#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:224
 msgid "Applications"
 msgstr "Uygulamalar"
 
@@ -133,8 +133,8 @@ msgstr "Uygulamalar"
 msgid "Theme"
 msgstr "Tema"
 
-#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:199
-#: ../mate_menu/plugins/applications.py:200
+#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:221
+#: ../mate_menu/plugins/applications.py:222
 msgid "Favorites"
 msgstr "Favoriler"
 
@@ -332,108 +332,108 @@ msgid "Path:"
 msgstr "Yol:"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:197
+#: ../mate_menu/plugins/applications.py:219
 msgid "Search:"
 msgstr "Ara:"
 
-#: ../mate_menu/plugins/applications.py:201
+#: ../mate_menu/plugins/applications.py:223
 msgid "All applications"
 msgstr "Tüm uygulamalar"
 
-#: ../mate_menu/plugins/applications.py:600
+#: ../mate_menu/plugins/applications.py:623
 #, python-format
 msgid "Search DuckDuckGo for %s"
 msgstr "DuckDuckGo'da %s unsurunu ara"
 
-#: ../mate_menu/plugins/applications.py:611
+#: ../mate_menu/plugins/applications.py:634
 #, python-format
 msgid "Search Google for %s"
 msgstr "Google'da %s unsurunu ara"
 
-#: ../mate_menu/plugins/applications.py:622
+#: ../mate_menu/plugins/applications.py:645
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "Vikipedi'de %s unsurunu ara"
 
-#: ../mate_menu/plugins/applications.py:643
+#: ../mate_menu/plugins/applications.py:666
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "Sözlükte %s unsurunu ara"
 
-#: ../mate_menu/plugins/applications.py:654
+#: ../mate_menu/plugins/applications.py:677
 #, python-format
 msgid "Search Computer for %s"
 msgstr "Bilgisayarda %s unsurunu ara"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:788
-#: ../mate_menu/plugins/applications.py:853
+#: ../mate_menu/plugins/applications.py:811
+#: ../mate_menu/plugins/applications.py:876
 msgid "Add to desktop"
 msgstr "Masaüstüne ekle"
 
-#: ../mate_menu/plugins/applications.py:789
-#: ../mate_menu/plugins/applications.py:854
+#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:877
 msgid "Add to panel"
 msgstr "Panele ekle"
 
-#: ../mate_menu/plugins/applications.py:791
-#: ../mate_menu/plugins/applications.py:832
+#: ../mate_menu/plugins/applications.py:814
+#: ../mate_menu/plugins/applications.py:855
 msgid "Insert space"
 msgstr "Boşluk ekle"
 
-#: ../mate_menu/plugins/applications.py:792
-#: ../mate_menu/plugins/applications.py:833
+#: ../mate_menu/plugins/applications.py:815
+#: ../mate_menu/plugins/applications.py:856
 msgid "Insert separator"
 msgstr "Ayırıcı ekle"
 
-#: ../mate_menu/plugins/applications.py:794
-#: ../mate_menu/plugins/applications.py:857
+#: ../mate_menu/plugins/applications.py:817
+#: ../mate_menu/plugins/applications.py:880
 msgid "Launch"
 msgstr "Başlat"
 
-#: ../mate_menu/plugins/applications.py:795
+#: ../mate_menu/plugins/applications.py:818
 msgid "Remove from favorites"
 msgstr "Favorilerden kaldır"
 
-#: ../mate_menu/plugins/applications.py:797
-#: ../mate_menu/plugins/applications.py:860
+#: ../mate_menu/plugins/applications.py:820
+#: ../mate_menu/plugins/applications.py:883
 msgid "Edit properties"
 msgstr "Özellikleri düzenle"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:831
+#: ../mate_menu/plugins/applications.py:854
 msgid "Remove"
 msgstr "Kaldır"
 
-#: ../mate_menu/plugins/applications.py:856
+#: ../mate_menu/plugins/applications.py:879
 msgid "Show in my favorites"
 msgstr "Favorilerimde göster"
 
-#: ../mate_menu/plugins/applications.py:858
+#: ../mate_menu/plugins/applications.py:881
 msgid "Delete from menu"
 msgstr "Menüden sil"
 
-#: ../mate_menu/plugins/applications.py:902
+#: ../mate_menu/plugins/applications.py:925
 msgid "Search DuckDuckGo"
 msgstr "DuckDuckGo'da Ara"
 
-#: ../mate_menu/plugins/applications.py:909
+#: ../mate_menu/plugins/applications.py:932
 msgid "Search Google"
 msgstr "Google'da ara"
 
-#: ../mate_menu/plugins/applications.py:916
+#: ../mate_menu/plugins/applications.py:939
 msgid "Search Wikipedia"
 msgstr "Vikipedi'de ara"
 
-#: ../mate_menu/plugins/applications.py:926
+#: ../mate_menu/plugins/applications.py:949
 msgid "Lookup Dictionary"
 msgstr "Sözlükte ara"
 
-#: ../mate_menu/plugins/applications.py:933
+#: ../mate_menu/plugins/applications.py:956
 msgid "Search Computer"
 msgstr "Bilgisayarda ara"
 
-#: ../mate_menu/plugins/applications.py:1344
+#: ../mate_menu/plugins/applications.py:1367
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
@@ -441,11 +441,11 @@ msgstr ""
 "Favoriler kaydedilemedi. ~/.config/mate-menu dosyasına yazma iziniz olup "
 "olmadığını kontrol edin."
 
-#: ../mate_menu/plugins/applications.py:1549
+#: ../mate_menu/plugins/applications.py:1577
 msgid "All"
 msgstr "Hepsi"
 
-#: ../mate_menu/plugins/applications.py:1549
+#: ../mate_menu/plugins/applications.py:1577
 msgid "Show all applications"
 msgstr "Tüm uygulamaları göster"
 
@@ -509,22 +509,22 @@ msgstr "Çöp kutusunu boşalt"
 msgid "Recent documents"
 msgstr "Son kullanılan belgeler"
 
-#: ../mate_menu/keybinding.py:182
+#: ../mate_menu/keybinding.py:220
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr "Menüyü açıp kapatacak yeni bir hızlandırıcı tuş seçmek için tıklayın."
 
-#: ../mate_menu/keybinding.py:183
+#: ../mate_menu/keybinding.py:221
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr "İşlemi iptal etmek için Escape tuşuna basın ya da tekrar tıklayın."
 
-#: ../mate_menu/keybinding.py:184
+#: ../mate_menu/keybinding.py:222
 msgid "Press Backspace to clear the existing keybinding."
 msgstr "Mevcut kısayolu silmek için geri silme tuşuna basın."
 
-#: ../mate_menu/keybinding.py:203
+#: ../mate_menu/keybinding.py:241
 msgid "Pick an accelerator"
 msgstr "Bir hızlandırıcı seçin"
 
-#: ../mate_menu/keybinding.py:259
+#: ../mate_menu/keybinding.py:297
 msgid "<not set>"
 msgstr "<not set>"
