@@ -592,7 +592,7 @@ class MenuWin( object ):
         self.do_image(self.buttonIcon, False)
         self.systemlabel = Gtk.Label(label= "%s " % self.buttonText )
         try:
-            process = subprocess.Popen(['lsb_release', '-d'], stdout=subprocess.PIPE)
+            process = subprocess.Popen(['lsb_release', '-d'], stdout=subprocess.PIPE, text=True)
             out, err = process.communicate()
             tooltip = str(out).replace('Description:', '').strip()
             self.systemlabel.set_tooltip_text(tooltip)
