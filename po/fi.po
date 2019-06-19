@@ -4,15 +4,16 @@
 #
 # Translators:
 # Ammuu5, 2017
-# nomen omen <vapoursoft@gmail.com>, 2017
+# Kimmo Kujansuu <mrkujansuu@gmail.com>, 2019
+# nomen omen, 2017-2018
 # Riku Viitanen <riisseli4@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-25 15:19+0000\n"
-"PO-Revision-Date: 2018-03-13 22:01+0000\n"
-"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>\n"
+"POT-Creation-Date: 2019-06-19 21:10+0100\n"
+"PO-Revision-Date: 2019-04-16 22:01+0000\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: Finnish (http://www.transifex.com/mate/MATE/language/fi/)\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
@@ -60,7 +61,7 @@ msgstr "Valikon asetukset"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr ""
+msgstr "Aloita aina suosikkit ruudusta"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
@@ -96,7 +97,7 @@ msgstr "Näytä luokka-kuvakkeet"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr ""
+msgstr "Valinta"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
@@ -104,7 +105,7 @@ msgstr "Muista viimeisin luokka tai haku"
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
-msgstr ""
+msgstr "Vaihda nimi ja yleinen nimi"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
@@ -116,7 +117,7 @@ msgstr "pikseliä"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr ""
+msgstr "Painike teksti:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
@@ -201,7 +202,7 @@ msgstr "Kuvakkeen koko:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
-msgstr ""
+msgstr "Valinnan viive (ms):"
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
@@ -222,7 +223,7 @@ msgstr "Salli vierityspalkki"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
-msgstr ""
+msgstr "Näytä GTK+ kirjanmerkit"
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
@@ -230,7 +231,7 @@ msgstr "Korkeus:"
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
-msgstr ""
+msgstr "Vaihda oletussijainteja:"
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
@@ -250,7 +251,7 @@ msgstr "Roskakori"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
-msgstr ""
+msgstr "Muokautetut sijainnit:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
@@ -259,7 +260,7 @@ msgstr "Järjestelmä"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
-msgstr ""
+msgstr "Vaihda oletus arvot:"
 
 #: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
@@ -340,7 +341,7 @@ msgstr "Kaikki sovellukset"
 #: ../mate_menu/plugins/applications.py:623
 #, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr ""
+msgstr "Etsi DuckDuckGo:sta %s"
 
 #: ../mate_menu/plugins/applications.py:634
 #, python-format
@@ -355,12 +356,12 @@ msgstr "Wikipedia-haku: %s"
 #: ../mate_menu/plugins/applications.py:666
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr ""
+msgstr "Etsi %ssanakirjasta"
 
 #: ../mate_menu/plugins/applications.py:677
 #, python-format
 msgid "Search Computer for %s"
-msgstr ""
+msgstr "Etsi tietokone %s"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:811
@@ -412,7 +413,7 @@ msgstr "Poista valikosta"
 
 #: ../mate_menu/plugins/applications.py:925
 msgid "Search DuckDuckGo"
-msgstr ""
+msgstr "Etsi DuckDuckGo:lla"
 
 #: ../mate_menu/plugins/applications.py:932
 msgid "Search Google"
@@ -424,17 +425,19 @@ msgstr "Hae Wikipediasta"
 
 #: ../mate_menu/plugins/applications.py:949
 msgid "Lookup Dictionary"
-msgstr ""
+msgstr "Etsi sanakirjasta"
 
 #: ../mate_menu/plugins/applications.py:956
 msgid "Search Computer"
-msgstr ""
+msgstr "Etsi tietokone"
 
 #: ../mate_menu/plugins/applications.py:1367
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
+"Suosikkeja ei voitu tallentaa. Tarkista, onko sinulla kirjoitusoikeudet ~/."
+"config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1577
 msgid "All"
@@ -458,7 +461,7 @@ msgstr "Käytä komentoriviä"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr ""
+msgstr "Salasana vaaditaan lukituksen avaamiseksi"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
@@ -466,11 +469,11 @@ msgstr "Kirjaudu ulos"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr ""
+msgstr "Kirjaudu ulos tai vaihda käyttäjää"
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr ""
+msgstr "Sammuta, käynnistä, keskeytä tai lepotila"
 
 #: ../mate_menu/plugins/places.py:153
 msgid ""
@@ -487,7 +490,7 @@ msgstr "Selaa kirjanmerkittyjä ja paikallisia verkkosijainteja"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr ""
+msgstr "Selaa työpöytä kohteita"
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
@@ -500,23 +503,27 @@ msgstr "Tyhjennä roskakori"
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr ""
+msgstr "Viimeaikaiset asiakirjat"
 
 #: ../mate_menu/keybinding.py:220
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
+"Napsauta, jos haluat asettaa uuden kiihdytyspainikkeen valikon avaamiseksi "
+"ja sulkemiseksi."
 
 #: ../mate_menu/keybinding.py:221
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
+"Peruuta toiminto painamalla Esc-painiketta tai napsauttamalla uudelleen."
 
 #: ../mate_menu/keybinding.py:222
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
+"Voit poistaa olemassa olevan näppäinlukon painamalla askelpalautin-näppäintä."
 
 #: ../mate_menu/keybinding.py:241
 msgid "Pick an accelerator"
-msgstr ""
+msgstr "Valitse kiihdytin"
 
 #: ../mate_menu/keybinding.py:297
 msgid "<not set>"

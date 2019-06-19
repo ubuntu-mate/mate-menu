@@ -1,592 +1,525 @@
-# Oromo translation for MATE Menu
-# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-19 21:10+0100\n"
-"PO-Revision-Date: 2014-09-07 14:06+0000\n"
-"Last-Translator: gudeta <gudbog@gmail.com>\n"
-"Language-Team: Oromo <om@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-06-16 22:44+0000\n"
+"Last-Translator: Ольга Смирнова\n"
+"Language-Team: Interlingue (http://www.transifex.com/mate/MATE/language/"
+"ie/)\n"
+"Language: ie\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../lib/mate-menu.py:58
 msgid "Menu"
-msgstr "Baafata"
+msgstr "Menú"
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:224
 msgid "Couldn't load plugin:"
-msgstr "Ittisuuqa naqachuu hindandeenye"
+msgstr "Ne successar cargar un plugin:"
 
 #: ../lib/mate-menu.py:297
 msgid "Couldn't initialize plugin"
-msgstr "Ittisuuqa kaasuu hindandeenye"
+msgstr "Ne successar inicialisar un plugin"
 
 #: ../lib/mate-menu.py:732
 msgid "Advanced MATE Menu"
-msgstr ""
+msgstr "Menú avansat de MATE"
 
 #: ../lib/mate-menu.py:846
 msgid "Preferences"
-msgstr "Fedhiilee"
+msgstr "Preferenties"
 
 #: ../lib/mate-menu.py:849
 msgid "Edit menu"
-msgstr "Baafata gulaali"
+msgstr "Redacter li menú"
 
 #: ../lib/mate-menu.py:852
 msgid "Reload plugins"
-msgstr "Ittisuuqa lamnaqadhu"
+msgstr "Recargar plugines"
 
 #: ../lib/mate-menu.py:855
 msgid "About"
-msgstr "Waayee"
+msgstr "Pri"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "Fedhiilee baafataa"
+msgstr "Preferenties del menú"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "Yoomiyyuu heerata jaallatamoon jalqabi"
+msgstr "Lansar con li panel Preferat"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr "Saajoo qabduu agarsiisi"
+msgstr "Monstrar li icone"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Use custom colors"
-msgstr "Halluu ofiinqophii(maamiloo) fayyadami"
+msgstr "Usar colores personalisat"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
-msgstr "Ittisuuqa dokumentii dhiyoo agarsiidi"
+msgstr "Monstrar recent documentes"
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show applications plugin"
-msgstr "Ittisuuqa hojjisiiftuu agarsiisi"
+msgstr "Monstrar applicationes"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show system plugin"
-msgstr "Ittisuuqa sirnaa agarsiisi"
+msgstr "Monstrar li sistema"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show places plugin"
-msgstr "Ittisuuqa iddoo agarsiisi"
+msgstr "Monstrar locs"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
-msgstr "Ilaalacha hojjisiftuu agarsiisi"
+msgstr "Monstrar comentas de programma"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
-msgstr "Sajoo akaakuu agarsiisi"
+msgstr "Monstrar icones de categorie"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
-msgstr "Qubachiisi"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
-msgstr "Akaaku soqa darbe yaada'u"
+msgstr "Memorar li ultim categorie o sercha"
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
-msgstr "Maqaafi maqaa idilaa wal-jijjiiri"
+msgstr "Intercambiar standard e géneric nómines"
 
 #: ../lib/mate-menu-config.py:70
 msgid "Border width:"
-msgstr "Yabbina Daangaa"
+msgstr "Largore de borde:"
 
 #: ../lib/mate-menu-config.py:71
 msgid "pixels"
-msgstr "pikselii"
+msgstr "pixeles"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Button text:"
-msgstr "Qabduu barruu"
+msgstr "Textu de buton:"
 
 #: ../lib/mate-menu-config.py:74
 msgid "Options"
-msgstr "Filmaata"
+msgstr "Optiones"
 
 #: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:224
 msgid "Applications"
-msgstr "Dhimbaaftota"
+msgstr "Applicationes"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Theme"
-msgstr "Dhamsa"
+msgstr "Tema"
 
 #: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:221
 #: ../mate_menu/plugins/applications.py:222
 msgid "Favorites"
-msgstr "Jaalatamaa"
+msgstr "Preferat"
 
 #: ../lib/mate-menu-config.py:79
 msgid "Main button"
-msgstr "qabduu ijoo"
+msgstr "Buton principal"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr ""
+msgstr "Plugines"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Sempre monstrar suggestiones de sercha"
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Google soqi"
+msgstr "Provisores de sercha:"
 
 #: ../lib/mate-menu-config.py:84
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Google"
-msgstr "Google soqi"
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:86
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Wikipedia soqi"
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:87
-#, fuzzy
 msgid "Dictionary"
-msgstr "galmee wabii godhi"
+msgstr "Dictionarium"
 
 #: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
 #: ../mate_menu/plugins/places.py:149
 msgid "Computer"
-msgstr "Kompiyutara"
+msgstr "Computator"
 
 #: ../lib/mate-menu-config.py:90
 msgid "Background:"
-msgstr "duubbee"
+msgstr "Fundes:"
 
 #: ../lib/mate-menu-config.py:91
 msgid "Headings:"
-msgstr "matadureewwan"
+msgstr "Rubricas:"
 
 #: ../lib/mate-menu-config.py:92
 msgid "Borders:"
-msgstr "daangaawwan"
+msgstr "Bordes:"
 
 #: ../lib/mate-menu-config.py:93
 msgid "Theme:"
-msgstr "Dhamsa:"
+msgstr "Tema:"
 
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:97
 msgid "Number of columns:"
-msgstr "Baay'ina tarree"
+msgstr "Númere de columnes:"
 
 #: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
 #: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
 msgid "Icon size:"
-msgstr "Hammamtaa sajoo"
+msgstr "Dimension de icones:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Hover delay (ms):"
-msgstr "Turiinsa qubannaa"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:103
 msgid "Button icon:"
-msgstr "Sajoo qabduu:"
+msgstr "Icone de buton:"
 
 #: ../lib/mate-menu-config.py:104
 msgid "Search command:"
-msgstr "ajaja barbaadi:"
+msgstr "Comande de sercha:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
 msgid "Places"
-msgstr "Iddowwan"
+msgstr "Locs"
 
 #: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
 msgid "Allow Scrollbar"
-msgstr "kabala maraa hayyami"
+msgstr "Permisser li barre de rulament"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Show GTK+ Bookmarks"
-msgstr "toorbarruu GTK+ agarsiisi"
+msgstr "Monstrar marca-págines de GTK"
 
 #: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
 msgid "Height:"
-msgstr "Hojjaa:"
+msgstr "Altore:"
 
 #: ../lib/mate-menu-config.py:110
 msgid "Toggle Default Places:"
-msgstr "Iddoowwan durtiitti jijjiiri"
+msgstr "Predefinit locs:"
 
 #: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr "Ukaankaa manaa"
+msgstr "Hem-fólder"
 
 #: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
 msgid "Network"
-msgstr "Cimdaa"
+msgstr "Rete"
 
 #: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
-msgstr "Minjaala'aa(Desktooppii)"
+msgstr "Pupitre"
 
 #: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
 msgid "Trash"
-msgstr "Bakkagataa"
+msgstr "Paper-corb"
 
 #: ../lib/mate-menu-config.py:116
 msgid "Custom Places:"
-msgstr "Iddoowwan maamiloo"
+msgstr "Personal locs:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
 msgid "System"
-msgstr "Sirna"
+msgstr "Sistema"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Toggle Default Items:"
-msgstr "Akkuma durtiitti jijjiiri"
+msgstr "Predefinit elementes:"
 
 #: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr "Mosaggii qarqabaa"
+msgstr "Gerente de paccages"
 
 #: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
-msgstr "Wiirtuu to'annaa"
+msgstr "Centre de control"
 
 #: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
-msgstr "Buufata/terminal"
+msgstr "Terminal"
 
 #: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr "Argiitii qulfeessi"
+msgstr "Serrar li ecran"
 
 #: ../lib/mate-menu-config.py:126
 msgid "Log Out"
-msgstr "Bahi"
+msgstr "Cluder li session"
 
 #: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr "Cufi"
+msgstr "Surtir"
 
 #: ../lib/mate-menu-config.py:129
 msgid "Edit Place"
-msgstr "Iddoo gulaali"
+msgstr "Redacter li loco"
 
 #: ../lib/mate-menu-config.py:130
 msgid "New Place"
-msgstr "Iddoo haaraa"
+msgstr "Crear un loco"
 
 #: ../lib/mate-menu-config.py:131
 msgid "Select a folder"
-msgstr "Ukaanka filadhu"
+msgstr "Selecte un fólder"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
-msgstr "Qaxxaamura keyboard"
+msgstr "Rapid-taste:"
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
-msgstr "Fakkiiwwan"
+msgstr "Images"
 
 #: ../lib/mate-menu-config.py:286
 msgid "Name"
-msgstr "Maqaa"
+msgstr "Nómine"
 
 #: ../lib/mate-menu-config.py:287
 msgid "Path"
-msgstr "Bakkumsa"
+msgstr "Rute"
 
 #: ../lib/mate-menu-config.py:303
 msgid "Desktop theme"
-msgstr "Dhamsa minjaala'aa"
+msgstr "Tema del Pupitre"
 
 #: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
 msgid "Name:"
-msgstr "Maqaa"
+msgstr "Nómine: "
 
 #: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
 msgid "Path:"
-msgstr "Bakkumsa"
+msgstr "Rute:"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:219
 msgid "Search:"
-msgstr "Soqi"
+msgstr "Serchar:"
 
 #: ../mate_menu/plugins/applications.py:223
 msgid "All applications"
-msgstr "Dhimbaastu hunda"
+msgstr "Omni applicationes"
 
 #: ../mate_menu/plugins/applications.py:623
-#, fuzzy, python-format
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Google soqi %s dhaaf"
+msgstr "Serchar DuckDuckGo por %s"
 
 #: ../mate_menu/plugins/applications.py:634
 #, python-format
 msgid "Search Google for %s"
-msgstr "Google soqi %s dhaaf"
+msgstr "Serchar Google por %s"
 
 #: ../mate_menu/plugins/applications.py:645
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Wikipedia soqi %s dhaaf"
+msgstr "Serchar Wikipedia por %s"
 
 #: ../mate_menu/plugins/applications.py:666
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "%s galmee jechaa keesa ilaali"
+msgstr "Serchar %s in in dictionarium"
 
 #: ../mate_menu/plugins/applications.py:677
 #, python-format
 msgid "Search Computer for %s"
-msgstr "%s dhaaf kompiyutara soqi"
+msgstr "Serchar li computator por %s"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:811
 #: ../mate_menu/plugins/applications.py:876
 msgid "Add to desktop"
-msgstr "Minjaalati dabali"
+msgstr "Adjuncter al Pupitre"
 
 #: ../mate_menu/plugins/applications.py:812
 #: ../mate_menu/plugins/applications.py:877
 msgid "Add to panel"
-msgstr "Moggaargiitti dabali"
+msgstr "Adjuncter a panel"
 
 #: ../mate_menu/plugins/applications.py:814
 #: ../mate_menu/plugins/applications.py:855
 msgid "Insert space"
-msgstr "Iddoduwa galchi"
+msgstr "Inserter interspacie"
 
 #: ../mate_menu/plugins/applications.py:815
 #: ../mate_menu/plugins/applications.py:856
 msgid "Insert separator"
-msgstr "Gargareessaa galchi"
+msgstr "Inserter un separator"
 
 #: ../mate_menu/plugins/applications.py:817
 #: ../mate_menu/plugins/applications.py:880
 msgid "Launch"
-msgstr "Kaasisi"
+msgstr "Lansar"
 
 #: ../mate_menu/plugins/applications.py:818
 msgid "Remove from favorites"
-msgstr "Jaallamtoota keessaa buqqisi"
+msgstr "Remover ex li preferat"
 
 #: ../mate_menu/plugins/applications.py:820
 #: ../mate_menu/plugins/applications.py:883
 msgid "Edit properties"
-msgstr "Amaloota gulaali"
+msgstr "Modificar proprietás"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:854
 msgid "Remove"
-msgstr "Buqqisi"
+msgstr "Remover"
 
 #: ../mate_menu/plugins/applications.py:879
 msgid "Show in my favorites"
-msgstr "Jaallamtoota koo keessatti agarsiisii"
+msgstr "Monstrar in mi preferet"
 
 #: ../mate_menu/plugins/applications.py:881
 msgid "Delete from menu"
-msgstr "Baafata keessaa haqi"
+msgstr "Deleter ex li menú"
 
 #: ../mate_menu/plugins/applications.py:925
-#, fuzzy
 msgid "Search DuckDuckGo"
-msgstr "Google soqi"
+msgstr "Serchar per DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:932
 msgid "Search Google"
-msgstr "Google soqi"
+msgstr "Serchar per Google"
 
 #: ../mate_menu/plugins/applications.py:939
 msgid "Search Wikipedia"
-msgstr "Wikipedia soqi"
+msgstr "Serchar in Wikipedia"
 
 #: ../mate_menu/plugins/applications.py:949
 msgid "Lookup Dictionary"
-msgstr "galmee wabii godhi"
+msgstr "Serchar in un dictionarium"
 
 #: ../mate_menu/plugins/applications.py:956
 msgid "Search Computer"
-msgstr "kompiitara soqi"
+msgstr "Serchar li computator"
 
 #: ../mate_menu/plugins/applications.py:1367
-#, fuzzy
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Jaallatamtooka olkaa'uu hindandeenye. ~/.linuxmint/mintMenu keessatti akka "
-"mirga barreessuu qabdu mirkaneessi"
+"Ne successat gardar li preferet. Assecurar que vu posse scrir in ~/.config/"
+"mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1577
 msgid "All"
-msgstr "Hunda"
+msgstr "Omni"
 
 #: ../mate_menu/plugins/applications.py:1577
 msgid "Show all applications"
-msgstr "Dhimbaasota hunda agarsiisi"
+msgstr "Monstrar omni applicationes"
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "Ijaarsa, buqqaasuu fi olkaasa mosaajjii qarqabaalee,"
+msgstr "Installar, remover e actialisar paccages de programmas"
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr "Sirna kee qindeessi"
+msgstr "Configurar vor sistema"
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr "Xurree ajajaa fayyadami"
+msgstr "Usar li linea de comandes"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr "Banuuf iggitni barbaachisa"
+msgstr "Besonar li contrasigne por desserrar"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr "Bahi"
+msgstr "Cluder li session"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr "Bahi yookin fayyadamaa jijjiiri"
+msgstr "Cluder li session o cambiar li usator"
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Cufi, Lamkaasi, ykn riphi"
+msgstr "Extinter, restartar, suspender o hivernar"
 
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr "Baxxee gahinsa kompiyutara kana jiran"
+msgstr ""
+"Navigar local e lontan discos e fólderes accessibil per ti-ci computator"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr "Ukaanka matayyaa bani"
+msgstr "Aperter vor fólder personal"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Iddoowwan cimdaa qe'ee fi torbarruu sakatta'i"
+msgstr "Navigar connexiones del local rete"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "Maalimaa minjaala'aa irra jiran sakatta'i"
+msgstr "Navigar elementes mettet sur li Pupitre"
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "fayilii haqaman sakkata'i"
+msgstr "Navigar deletet files"
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr "Baattoo gataa qulqulleessi"
+msgstr "Vacuar li Paper-corb"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Galmee dhiyoo"
+msgstr "Documentes recent"
 
 #: ../mate_menu/keybinding.py:220
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr "Qaxxaamurtoota haara hojii baafata cufuuf banuurra oolchuuf caqasi  "
+msgstr ""
+"Fa un clic por assignar un nov rapid-taste por aperter e cluder li menú.  "
 
 #: ../mate_menu/keybinding.py:221
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Dalaga dhiisuf Escape dhiibi yookin lama cuqaasi  "
+msgstr "Presse Escape o fa un clic denov por interrupter li operation.  "
 
 #: ../mate_menu/keybinding.py:222
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Keybinding jiran haquuf Backspace dhiibi"
+msgstr "Press li retroclave por vacuar li selectet rapid-taste."
 
 #: ../mate_menu/keybinding.py:241
 msgid "Pick an accelerator"
-msgstr "Qaxxaamura kaasi"
+msgstr "Selecte un rapid-taste"
 
 #: ../mate_menu/keybinding.py:297
 msgid "<not set>"
-msgstr "Hin qindoofne"
-
-#~ msgid "Opacity:"
-#~ msgstr "Opasiti"
-
-#~ msgid "Launch when I log in"
-#~ msgstr "Yaroo ani seenu kaasisi"
-
-#~ msgid "Search for packages to install"
-#~ msgstr "qarqaba ijaartu soqi"
-
-#~ msgid "Software Manager"
-#~ msgstr "Mosaggii taliigaa"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "%s dhimbaaftuu ijaari"
-
-#~ msgid "Uninstall"
-#~ msgstr "Buqqaasi"
-
-#~ msgid "Find Software"
-#~ msgstr "Mosaaji argadhu"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Barnoota(tutorial) argadhu"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Hardware argadhu"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Yaada argadhu"
-
-#~ msgid "Find Users"
-#~ msgstr "Fayyadamoota argadhu"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Mosajjii jiran barbaadii ijaari"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Baafata Gnome Olaanaa"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Eegi, yaroo muraasa fudhachuu danda'a"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Hojjisiiftuun haquun milkaa'eera"
-
-#~ msgid "No matching package found"
-#~ msgstr "qarqabni homtuu hinargame"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "galmee baafata kana haquu barbaadda?"
-
-#~ msgid "Remove %s?"
-#~ msgstr "%s Haquu?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "qarqabni itti aanu kun ni haqama:"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Qarqaba haqamuuf qophaa'an"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "BWW kan S.Chandarbaalii"
+msgstr "<ne assignat>"

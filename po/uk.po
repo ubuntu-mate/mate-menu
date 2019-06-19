@@ -5,22 +5,25 @@
 # Translators:
 # Bohdan Kovalchuk <neostanniy@gmail.com>, 2017
 # zubr139, 2017
-# Микола Ткач <znadibnyk@gmail.com>, 2015-2016
-# Микола Ткач <znadibnyk@gmail.com>, 2017
+# Микола Ткач <chistomov@gmail.com>, 2019
+# Микола Ткач <chistomov@gmail.com>, 2015-2016
+# Микола Ткач <chistomov@gmail.com>, 2017-2018
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-25 15:19+0000\n"
-"PO-Revision-Date: 2018-03-13 22:10+0000\n"
-"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>\n"
+"POT-Creation-Date: 2019-06-19 21:10+0100\n"
+"PO-Revision-Date: 2019-05-30 15:51+0000\n"
+"Last-Translator: Микола Ткач <chistomov@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/mate/MATE/language/uk/)\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #: ../lib/mate-menu.py:58
 msgid "Menu"
@@ -29,11 +32,11 @@ msgstr "Меню"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:224
 msgid "Couldn't load plugin:"
-msgstr "Неможливо завантажити втулку:"
+msgstr "Неможливо завантажити втулок:"
 
 #: ../lib/mate-menu.py:297
 msgid "Couldn't initialize plugin"
-msgstr "Неможливо ініціалізувати втулку"
+msgstr "Неможливо ініціалізувати втулок"
 
 #: ../lib/mate-menu.py:732
 msgid "Advanced MATE Menu"
@@ -49,7 +52,7 @@ msgstr "Редагувати меню"
 
 #: ../lib/mate-menu.py:852
 msgid "Reload plugins"
-msgstr "Перезавантажити втулки"
+msgstr "Перезавантажити втулоки"
 
 #: ../lib/mate-menu.py:855
 msgid "About"
@@ -74,19 +77,19 @@ msgstr "Використовувати власні кольори"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
-msgstr "Показувати втулку «Нещодавні документи»"
+msgstr "Показувати втулок «Нещодавні документи»"
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show applications plugin"
-msgstr "Показувати втулку «Застосунки»"
+msgstr "Показувати втулок «Застосунки»"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show system plugin"
-msgstr "Показувати втулку «Система»"
+msgstr "Показувати втулок «Система»"
 
 #: ../lib/mate-menu-config.py:62
 msgid "Show places plugin"
-msgstr "Показувати втулку «Місця»"
+msgstr "Показувати втулок «Місця»"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show application comments"
@@ -94,7 +97,7 @@ msgstr "Показувати коментарі до застосунків"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Show category icons"
-msgstr "Показувати піктограми катеґорій"
+msgstr "Показувати піктограми категорій"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Hover"
@@ -102,7 +105,7 @@ msgstr "Поверх"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Remember the last category or search"
-msgstr "Запам'ятовувати останню катеґорію чи пошуковий запит"
+msgstr "Запам'ятовувати останню категорію чи пошуковий запит"
 
 #: ../lib/mate-menu-config.py:68
 msgid "Swap name and generic name"
@@ -143,7 +146,7 @@ msgstr "Головна кнопка"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Plugins"
-msgstr "Втулки"
+msgstr "Втулоки"
 
 #: ../lib/mate-menu-config.py:82
 msgid "Always show search suggestions"
@@ -304,7 +307,7 @@ msgstr "Вибрати теку"
 
 #: ../lib/mate-menu-config.py:165
 msgid "Keyboard shortcut:"
-msgstr "Скорочення клявіш:"
+msgstr "Скорочення клавіш:"
 
 #: ../lib/mate-menu-config.py:171
 msgid "Images"
@@ -397,7 +400,7 @@ msgstr "Вилучити з улюбленого"
 #: ../mate_menu/plugins/applications.py:820
 #: ../mate_menu/plugins/applications.py:883
 msgid "Edit properties"
-msgstr "Редагувати властивости"
+msgstr "Редагувати властивості"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:854
@@ -450,7 +453,7 @@ msgstr "Показати усі застосунки"
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "Встановлення, вилучення та оновлення пакунків проґрам"
+msgstr "Встановлення, вилучення та оновлення пакунків програм"
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
@@ -511,7 +514,7 @@ msgstr "Нещодавні документи"
 #: ../mate_menu/keybinding.py:220
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
-"Клацніть для вказування нової гарячої клявіші відкриття\\закриття меню."
+"Клацніть для вказування нової гарячої клавіші відкриття\\закриття меню."
 
 #: ../mate_menu/keybinding.py:221
 msgid "Press Escape or click again to cancel the operation.  "
@@ -523,7 +526,7 @@ msgstr "Натисніть Backspace, щоб очистити існуючу п�
 
 #: ../mate_menu/keybinding.py:241
 msgid "Pick an accelerator"
-msgstr "Виберіть гарячу клявішу"
+msgstr "Виберіть гарячу клавішу"
 
 #: ../mate_menu/keybinding.py:297
 msgid "<not set>"
