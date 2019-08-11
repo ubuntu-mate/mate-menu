@@ -53,6 +53,8 @@ class pluginclass:
         self.recentBox = self.builder.get_object("RecentBox")
         self.recentVBox = self.builder.get_object( "vbox1" )
 
+        self.itemstocolor = [ self.builder.get_object("viewport1"), self.builder.get_object("viewport2") ]
+
         #Specify plugin width
         self.width = 250
 
@@ -77,8 +79,6 @@ class pluginclass:
         clr_btn = self.builder.get_object("ClrBtn")
         clr_btn.connect("clicked", self.clrmenu)
         clr_btn.connect("enter-notify-event", self.onEnter)
-        clr_btn.connect("focus-in-event", self.onFocusIn)
-        clr_btn.connect("focus-out-event", self.onFocusOut)
 
     def wake (self) :
         pass
@@ -164,7 +164,7 @@ class pluginclass:
 
         ButtonIcon = Gtk.Image()
         ButtonIcon.set_size_request( 20, -1 )
-        ButtonIcon.set_from_pixbuf(RecentImage)
+        ButtonIcon.set_from_gicon(RecentImage, Gtk.IconSize.MENU)
         Box1.add( ButtonIcon )
 
         Label1 = Gtk.Label( DispName )
@@ -180,9 +180,11 @@ class pluginclass:
         widget.grab_focus()
 
     def onFocusIn(self, widget, event):
+        widget.set_relief( Gtk.ReliefStyle.HALF )
         widget.set_state_flags( Gtk.StateFlags.PRELIGHT, False )
 
     def onFocusOut(self, widget, event):
+        widget.set_relief( Gtk.ReliefStyle.NONE )
         widget.unset_state_flags( Gtk.StateFlags.PRELIGHT )
 
     def callback(self, widget, filename=None):
@@ -207,14 +209,13 @@ class pluginclass:
         FileString=[]
         IconString=[]
         RecentInfo=self.RecManagerInstance.get_items()
-        # print(RecentInfo[0].get_icon(Gtk.IconSize.MENU))
         count=0
         MaxEntries=self.numentries
         if self.numentries == -1:
             MaxEntries=len(RecentInfo)
         for items in RecentInfo:
             FileString.append(items.get_uri_display())
-            IconString.append(items.get_icon(Gtk.IconSize.MENU))
+            IconString.append(items.get_gicon())
             count+=1
             if count >= MaxEntries:
                 break
