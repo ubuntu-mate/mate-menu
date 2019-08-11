@@ -173,6 +173,8 @@ class easyButton( Gtk.Button ):
         HBox1.show()
         self.add( HBox1 )
 
+        self.set_events(Gdk.EventMask.POINTER_MOTION_MASK)
+        self.connectSelf( "motion-notify-event", self.onMotion )
         self.connectSelf( "enter-notify-event", self.onEnter )
         self.connectSelf( "focus-in-event", self.onFocusIn )
         self.connectSelf( "focus-out-event", self.onFocusOut )
@@ -184,8 +186,16 @@ class easyButton( Gtk.Button ):
     def connectSelf( self, event, callback ):
         self.connections.append( self.connect( event, callback ) )
 
+    def onMotion( self, widget, event ):
+        # Only grab if mouse is actually hovering
+        if self.mouse_entered:
+            self.grab_focus()
+            self.mouse_entered = False
+
     def onEnter( self, widget, event ):
-        self.grab_focus()
+        # Prevent false "enter" notifications by determining
+        # whether the mouse is actually hovering on the button.
+        self.mouse_entered = True
 
     def onFocusIn( self, widget, event ):
         self.set_state_flags( Gtk.StateFlags.PRELIGHT, False )

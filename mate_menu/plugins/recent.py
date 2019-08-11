@@ -76,6 +76,7 @@ class pluginclass:
         #Connect event handlers
         clr_btn = self.builder.get_object("ClrBtn")
         clr_btn.connect("clicked", self.clrmenu)
+        clr_btn.connect("motion-notify-event", self.onMotion)
         clr_btn.connect("enter-notify-event", self.onEnter)
         clr_btn.connect("focus-in-event", self.onFocusIn)
         clr_btn.connect("focus-out-event", self.onFocusOut)
@@ -154,6 +155,8 @@ class pluginclass:
         AButton.remove( AButton.get_children()[0] )
         AButton.set_size_request( 200, -1 )
         AButton.set_relief( Gtk.ReliefStyle.NONE )
+        AButton.set_events( Gdk.EventMask.POINTER_MOTION_MASK )
+        AButton.connect( "motion-notify-event", self.onMotion )
         AButton.connect( "enter-notify-event", self.onEnter )
         AButton.connect( "focus-in-event", self.onFocusIn )
         AButton.connect( "focus-out-event", self.onFocusOut )
@@ -176,8 +179,16 @@ class pluginclass:
 
         self.recentBox.pack_start( AButton, False, True, 0 )
 
+    def onMotion(self, widget, event):
+        # Only grab if mouse is actually hovering
+        if self.mouse_entered:
+            widget.grab_focus()
+            self.mouse_entered = False
+
     def onEnter(self, widget, event):
-        widget.grab_focus()
+        # Prevent false "enter" notifications by determining
+        # whether the mouse is actually hovering on the button.
+        self.mouse_entered = True
 
     def onFocusIn(self, widget, event):
         widget.set_state_flags( Gtk.StateFlags.PRELIGHT, False )
