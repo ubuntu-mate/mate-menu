@@ -68,7 +68,6 @@ class MainWindow( object ):
 
         self.settings = settings
         self.data_path = os.path.join( '/', 'usr', 'share', 'mate-menu' )
-        self.icon = "/usr/share/mate-menu/icons/mate-logo.svg"
 
         self.toggle = toggleButton
         # Load UI file and extract widgets
@@ -208,9 +207,6 @@ class MainWindow( object ):
                         # pass mateMenu and togglebutton instance so that the plugin can use it
                         MyPlugin = MyPluginClass.pluginclass(self, self.toggle)
 
-                    if not MyPlugin.icon:
-                        MyPlugin.icon = "mate-logo-icon.png"
-
                     #if hasattr( MyPlugin, "hideseparator" ) and not MyPlugin.hideseparator:
                     #    Image1 = Gtk.Image()
                     #    Image1.set_from_pixbuf( seperatorImage )
@@ -237,7 +233,6 @@ class MainWindow( object ):
                     MyPlugin.content_holder.add( errorLabel )
                     MyPlugin.add( MyPlugin.content_holder )
                     MyPlugin.width = 270
-                    MyPlugin.icon = 'mate-logo-icon.png'
                     print(u"Unable to load " + plugin + " plugin :-(")
 
 
@@ -259,20 +254,17 @@ class MainWindow( object ):
                         heading = Gtk.Box( orientation=Gtk.Orientation.HORIZONTAL )
                         Label1.set_margin_top(10)
                         Label1.set_margin_bottom(5)
-                        #heading.set_relief( Gtk.ReliefStyle.NONE )
                         heading.set_size_request( MyPlugin.width, -1 )
-                        #heading.set_sensitive(False)
-                        #heading.connect( "button_press_event", self.TogglePluginView, VBox1, MyPlugin.icon, MyPlugin.heading, MyPlugin )
 
                     heading.add(Label1)
                     heading.show()
                     VBox1.pack_start( heading, False, False, 0 )
                 VBox1.show()
-                #Add plugin to Plugin Box under heading button
+                # Add plugin to Plugin Box under heading button
                 MyPlugin.content_holder.get_parent().remove(MyPlugin.content_holder)
                 VBox1.add( MyPlugin.content_holder )
 
-                #Add plugin to main window
+                # Add plugin to main window
                 PaneLadder.pack_start( VBox1 , True, True, 0)
                 PaneLadder.show()
 
@@ -487,25 +479,26 @@ class MenuWin( object ):
         self.data_path = os.path.join('/','usr','share','mate-menu')
         self.applet = applet
         self.settings = Gio.Settings.new("org.mate.mate-menu")
+        self.icon = "start-here"
+
         self.loadSettings()
 
         self.createPanelButton()
 
         self.mate_settings = Gio.Settings.new("org.mate.interface")
         self.mate_settings.connect( "changed::gtk-theme", self.changeTheme )
+        self.mate_settings.connect( "changed::icon-theme", self.changeTheme )
 
         self.settings.connect( "changed::applet-text", self.reloadSettings )
         self.settings.connect( "changed::theme-name", self.changeTheme )
         self.settings.connect( "changed::hot-key", self.reloadSettings )
-        self.settings.connect( "changed::applet-icon", self.reloadSettings )
         self.settings.connect( "changed::hide-applet-icon", self.reloadSettings )
-        self.settings.connect( "changed::applet-icon-size", self.reloadSettings )
 
         self.applet.set_flags( MatePanelApplet.AppletFlags.EXPAND_MINOR )
         self.applet.connect( "button-press-event", self.showMenu )
         self.applet.connect( "change-orient", self.changeOrientation )
-        self.applet.connect("enter-notify-event", self.enter_notify)
-        self.applet.connect("leave-notify-event", self.leave_notify)
+        self.applet.connect( "change-size", self.reloadSettings )
+
         self.mainwin = MainWindow(self.button_box, self.settings)
         self.mainwin.window.connect( "map-event", self.onWindowMap )
         self.mainwin.window.connect( "unmap-event", self.onWindowUnmap )
@@ -515,8 +508,7 @@ class MenuWin( object ):
         self.applyTheme()
         self.mainwin.loadTheme()
 
-        if self.mainwin.icon:
-            Gtk.Window.set_default_icon_name( self.mainwin.icon )
+        Gtk.Window.set_default_icon_name( self.icon )
 
         try:
             self.keybinder = keybinding.GlobalKeyBinding()
@@ -567,29 +559,19 @@ class MenuWin( object ):
         self.toggleMenu()
         return True
 
-    def enter_notify(self, applet, event):
-        self.do_image(self.buttonIcon, True)
-
-    def leave_notify(self, applet, event):
-		# Hack for mate-panel-test-applets focus issue (this can be commented)
-        if event.state & Gdk.ModifierType.BUTTON1_MASK and applet.get_style_context().get_state() & Gtk.StateFlags.SELECTED:
-            if event.x >= 0 and event.y >= 0 and event.x < applet.get_window().get_width() and event.y < applet.get_window().get_height():
-                self.mainwin.stopHiding()
-
-        self.do_image(self.buttonIcon, False)
-
-    def do_image(self, image_file, saturate):
-        if image_file.endswith(".svg"):
-            pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(image_file, -1, 22)
+    def do_load_icon(self, icon_name):
+        icon_theme = Gtk.IconTheme.get_default()
+        icon_size = self.applet.get_size() - 8
+        scale_factor = self.button_icon.get_scale_factor()
+        surface = icon_theme.load_surface(icon_name, icon_size, scale_factor, None, Gtk.IconLookupFlags.FORCE_SIZE)
+        if surface is not None:
+            self.button_icon.set_from_surface(surface)
         else:
-            pixbuf = GdkPixbuf.Pixbuf.new_from_file(image_file)
-        if saturate:
-            GdkPixbuf.Pixbuf.saturate_and_pixelate(pixbuf, pixbuf, 1.5, False)
-        self.button_icon.set_from_pixbuf(pixbuf)
+            self.button_icon.set_from_icon_name(icon_name, Gtk.IconSize.MENU)
 
     def createPanelButton( self ):
         self.button_icon = Gtk.Image()
-        self.do_image(self.buttonIcon, False)
+        self.do_load_icon(self.icon)
         self.systemlabel = Gtk.Label(label= "%s " % self.buttonText )
         try:
             process = subprocess.Popen(['lsb_release', '-d'], stdout=subprocess.PIPE, text=True)
@@ -623,7 +605,6 @@ class MenuWin( object ):
 
         self.button_box.set_homogeneous( False )
         self.button_box.show_all()
-        self.sizeButton()
 
         self.applet.add( self.button_box )
         self.applet.set_background_widget( self.applet )
@@ -634,10 +615,6 @@ class MenuWin( object ):
         self.buttonText =  self.settings.get_string( "applet-text" )
         self.theme_name =  self.settings.get_string( "theme-name" )
         self.hotkeyText =  self.settings.get_string( "hot-key" )
-        if not os.path.exists(self.settings.get_string("applet-icon")):
-            self.settings.reset("applet-icon")
-        self.buttonIcon =  self.settings.get_string( "applet-icon" )
-        self.iconSize = self.settings.get_int( "applet-icon-size" )
 
     def changeTheme(self, *args):
         self.reloadSettings()
@@ -646,6 +623,7 @@ class MenuWin( object ):
 
     def applyTheme(self):
         style_settings = Gtk.Settings.get_default()
+
         desktop_theme = self.mate_settings.get_string('gtk-theme')
         if self.theme_name == "default":
             style_settings.set_property("gtk-theme-name", desktop_theme)
@@ -654,6 +632,9 @@ class MenuWin( object ):
                 style_settings.set_property("gtk-theme-name", self.theme_name)
             except:
                 style_settings.set_property("gtk-theme-name", desktop_theme)
+
+        icon_theme = self.mate_settings.get_string('icon-theme')
+        style_settings.set_property("gtk-icon-theme-name", icon_theme)
 
     def changeOrientation( self, *args, **kargs ):
 
@@ -692,34 +673,11 @@ class MenuWin( object ):
     def updateButton( self ):
         self.systemlabel.set_text( self.buttonText )
         self.button_icon.clear()
-        self.do_image(self.buttonIcon, False)
-        self.sizeButton()
+        self.do_load_icon(self.icon)
 
     def hotkeyChanged (self, schema, key):
         self.hotkeyText =  self.settings.get_string( "hot-key" )
         self.keybinder.rebind(self.hotkeyText)
-
-    def sizeButton( self ):
-        if self.hideIcon:
-            self.button_icon.hide()
-        else:
-            self.button_icon.show()
-        # This code calculates width and height for the button_box
-        # and takes the orientation and scale factor in account
-        bi_req = self.button_icon.get_preferred_size()[1]
-        bi_scale = self.button_icon.get_scale_factor()
-        sl_req = self.systemlabel.get_preferred_size()[1]
-        sl_scale = self.systemlabel.get_scale_factor()
-        if self.applet.get_orient() == MatePanelApplet.AppletOrient.UP or self.applet.get_orient() == MatePanelApplet.AppletOrient.DOWN:
-            if self.hideIcon:
-                self.applet.set_size_request( sl_req.width / sl_scale + 2, bi_req.height )
-            else:
-                self.applet.set_size_request( sl_req.width / sl_scale + bi_req.width / bi_scale + 5, bi_req.height )
-        else:
-            if self.hideIcon:
-                self.applet.set_size_request( bi_req.width, sl_req.height / sl_scale + 2 )
-            else:
-                self.applet.set_size_request( bi_req.width, sl_req.height / sl_scale + bi_req.height / bi_scale + 5 )
 
     def reloadSettings( self, *args ):
         self.loadSettings()
@@ -727,10 +685,15 @@ class MenuWin( object ):
 
     def showAboutDialog( self, action, userdata = None ):
         about = Gtk.AboutDialog()
-        about.set_name("MATE Menu")
+        about.set_program_name("Advanced MATE Menu")
         about.set_version(__VERSION__)
-        about.set_comments( _("Advanced MATE Menu") )
-        about.set_logo( GdkPixbuf.Pixbuf.new_from_file("/usr/share/mate-menu/icons/mate-logo.svg") )
+        about.set_comments( _("An Advanced Menu for the MATE Desktop") )
+        icon_theme = Gtk.IconTheme.get_default ()
+        pixbuf = icon_theme.load_icon ( self.icon, 256, 0 )
+        if pixbuf:
+            about.set_logo ( pixbuf )
+        else:
+            about.set_logo_icon_name ( self.icon )
         about.connect( "response", lambda dialog, r: dialog.destroy() )
         about.show()
 

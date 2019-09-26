@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="gtk+" version="3.14"/>
   <object class="GtkAdjustment" id="adjustment1">
@@ -63,6 +64,9 @@
     <property name="window_position">center-on-parent</property>
     <property name="destroy_with_parent">True</property>
     <property name="type_hint">dialog</property>
+    <child>
+      <placeholder/>
+    </child>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox2">
         <property name="visible">True</property>
@@ -210,9 +214,6 @@
       <action-widget response="-5">okButton</action-widget>
       <action-widget response="-6">cancelButton</action-widget>
     </action-widgets>
-    <child>
-      <placeholder/>
-    </child>
   </object>
   <object class="GtkFileChooserDialog" id="fileChooserDialog">
     <property name="can_focus">False</property>
@@ -222,6 +223,9 @@
     <property name="destroy_with_parent">True</property>
     <property name="type_hint">dialog</property>
     <property name="action">select-folder</property>
+    <child>
+      <placeholder/>
+    </child>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox20">
         <property name="visible">True</property>
@@ -279,9 +283,6 @@
       <action-widget response="-5">button1</action-widget>
       <action-widget response="0">button2</action-widget>
     </action-widgets>
-    <child>
-      <placeholder/>
-    </child>
   </object>
   <object class="GtkListStore" id="model1">
     <columns>
@@ -300,6 +301,9 @@
     <property name="border_width">6</property>
     <property name="window_position">center</property>
     <property name="destroy_with_parent">True</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
     <child>
       <object class="GtkBox" id="vbox1">
         <property name="visible">True</property>
@@ -375,50 +379,10 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLabel" id="label4">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="label" translatable="yes">Button icon:</property>
-                      </object>
-                      <packing>
-                        <property name="left_attach">0</property>
-                        <property name="top_attach">3</property>
-                      </packing>
+                      <placeholder/>
                     </child>
                     <child>
-                      <object class="GtkBox" id="hbox4">
-                        <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="spacing">7</property>
-                        <child>
-                          <object class="GtkFileChooserButton" id="button_icon_chooser">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                          </object>
-                          <packing>
-                            <property name="expand">True</property>
-                            <property name="fill">True</property>
-                            <property name="position">0</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkImage" id="image_button_icon">
-                            <property name="visible">True</property>
-                            <property name="can_focus">False</property>
-                            <property name="stock">gtk-missing-image</property>
-                          </object>
-                          <packing>
-                            <property name="expand">True</property>
-                            <property name="fill">True</property>
-                            <property name="position">1</property>
-                          </packing>
-                        </child>
-                      </object>
-                      <packing>
-                        <property name="left_attach">1</property>
-                        <property name="top_attach">3</property>
-                      </packing>
+                      <placeholder/>
                     </child>
                     <child>
                       <placeholder/>
@@ -1049,6 +1013,12 @@
                         <property name="left_attach">0</property>
                         <property name="top_attach">9</property>
                       </packing>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
                     </child>
                     <child>
                       <placeholder/>
@@ -1915,9 +1885,6 @@
           </packing>
         </child>
       </object>
-    </child>
-    <child type="titlebar">
-      <placeholder/>
     </child>
   </object>
 </interface>

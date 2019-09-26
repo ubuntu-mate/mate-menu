@@ -86,8 +86,6 @@ data_files = [
     ),
     ("share/mate-menu/icons".format(prefix=sys.prefix),
         [
-            "data/icons/mate-logo.svg",
-            "data/icons/mate-logo-dark.svg",
             "data/icons/dictionary.png",
         ]
     ),

@@ -26,12 +26,6 @@
       <description></description>
     </key>
 
-    <key type="i" name="applet-icon-size">
-      <default>22</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
     <key type="i" name="border-width">
       <default>1</default>
       <summary></summary>
@@ -58,12 +52,6 @@
 
     <key type="s" name="hot-key">
       <default>"Super_L"</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="s" name="applet-icon">
-      <default>"/usr/share/mate-menu/icons/mate-logo.svg"</default>
       <summary></summary>
       <description></description>
     </key>

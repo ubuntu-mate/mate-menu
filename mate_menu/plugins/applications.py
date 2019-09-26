@@ -716,7 +716,7 @@ class pluginclass( object ):
                             # Remove application from list so that we can re-add it in order
                             self.applicationsBox.remove(i)
                             showns = True
-                if (not showns and os.path.exists("/usr/share/mate-menu/icons/mate-logo.svg")):
+                if not showns:
                     if len(text) >= 3:
                         self.add_search_suggestions(text)
                         self.current_suggestion = text
