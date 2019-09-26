@@ -51,7 +51,7 @@ class mateMenuConfig( object ):
 
         #i18n
         self.mainWindow.set_title(_("Menu preferences"))
-        self.mainWindow.set_icon_from_file("/usr/share/mate-menu/icons/mate-logo.svg")
+        self.mainWindow.set_icon_name("start-here")
 
         self.builder.get_object("startWithFavorites").set_label(_("Always start with favorites pane"))
         self.builder.get_object("showButtonIcon").set_label(_("Show button icon"))
@@ -100,7 +100,6 @@ class mateMenuConfig( object ):
         self.builder.get_object("placesIconSizeLabel").set_text(_("Icon size:"))
         self.builder.get_object("systemIconSizeLabel").set_text(_("Icon size:"))
         self.builder.get_object("hoverLabel").set_text(_("Hover delay (ms):"))
-        self.builder.get_object("label4").set_text(_("Button icon:"))
         self.builder.get_object("label5").set_text(_("Search command:"))
 
         self.builder.get_object("placesLabel").set_text(_("Places"))
@@ -131,7 +130,7 @@ class mateMenuConfig( object ):
         self.folderChooserDialogTitle = (_("Select a folder"))
 
         self.startWithFavorites = self.builder.get_object( "startWithFavorites" )
-        self.showAppComments = self.builder.get_object( "showAppComments" )        
+        self.showAppComments = self.builder.get_object( "showAppComments" )
         self.showCategoryIcons = self.builder.get_object( "showCategoryIcons" )
         self.showRecentPlugin = self.builder.get_object( "showRecentPlugin" )
         self.showApplicationsPlugin = self.builder.get_object( "showApplicationsPlugin" )
@@ -165,8 +164,6 @@ class mateMenuConfig( object ):
         self.hotkeyWidget = keybinding.KeybindingWidget(_("Keyboard shortcut:") )
         grid = self.builder.get_object( "main_grid" )
         grid.attach(self.hotkeyWidget, 0, 2, 2, 1)
-        self.buttonIcon = self.builder.get_object( "buttonIcon" )
-        self.buttonIconChooser = self.builder.get_object( "button_icon_chooser" )
         self.image_filter = Gtk.FileFilter()
         self.image_filter.set_name(_("Images"))
         self.image_filter.add_pattern("*.png")
@@ -176,9 +173,6 @@ class mateMenuConfig( object ):
         self.image_filter.add_pattern("*.ico")
         self.image_filter.add_pattern("*.xpm")
         self.image_filter.add_pattern("*.svg")
-        self.buttonIconChooser.add_filter(self.image_filter)
-        self.buttonIconChooser.set_filter(self.image_filter)
-        self.buttonIconImage = self.builder.get_object("image_button_icon")
         self.searchCommand = self.builder.get_object( "search_command" )
         self.computertoggle = self.builder.get_object( "computercheckbutton" )
         self.homefoldertoggle = self.builder.get_object( "homecheckbutton" )
@@ -242,7 +236,6 @@ class mateMenuConfig( object ):
         self.bindGSettingsValueToWidget( self.settings, "bool", "hide-applet-icon", self.showButtonIcon, "toggled", self.setShowButtonIcon, self.getShowButtonIcon )
         self.bindGSettingsValueToWidget( self.settings, "string", "applet-text", self.buttonText, "changed", self.buttonText.set_text, self.buttonText.get_text )
         self.bindGSettingsValueToWidget( self.settings, "string", "hot-key", self.hotkeyWidget, "accel-edited", self.hotkeyWidget.set_val, self.hotkeyWidget.get_val )
-        self.bindGSettingsValueToWidget( self.settings, "string", "applet-icon", self.buttonIconChooser, "file-set", self.setButtonIcon, self.buttonIconChooser.get_filename )
         self.bindGSettingsValueToWidget( self.settingsApplications, "string", "search-command", self.searchCommand, "changed", self.searchCommand.set_text, self.searchCommand.get_text )
 
         self.getPluginsToggle()
@@ -362,11 +355,6 @@ class mateMenuConfig( object ):
     def setShowButtonIcon( self, value ):
         self.showButtonIcon.set_active(not value )
 
-    def setButtonIcon( self, value ):
-        self.buttonIconChooser.set_filename(value)
-        pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(value, -1, 22)
-        self.buttonIconImage.set_from_pixbuf(pixbuf)
-
     def getShowButtonIcon( self ):
         return not self.showButtonIcon.get_active()
 
@@ -446,7 +434,7 @@ class mateMenuConfig( object ):
         newPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         newPlaceDialog.set_transient_for(self.mainWindow)
-        newPlaceDialog.set_icon_from_file("/usr/share/mate-menu/icons/mate-logo.svg")
+        newPlaceDialog.set_icon_name("start-here")
         newPlaceDialog.set_title(self.newPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         newPlaceDialog.set_default_response(Gtk.ResponseType.OK)
@@ -477,7 +465,7 @@ class mateMenuConfig( object ):
         editPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         editPlaceDialog.set_transient_for(self.mainWindow)
-        editPlaceDialog.set_icon_from_file("/usr/share/mate-menu/icons/mate-logo.svg")
+        editPlaceDialog.set_icon_name("start-here")
         editPlaceDialog.set_title(self.editPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         editPlaceDialog.set_default_response(Gtk.ResponseType.OK)
