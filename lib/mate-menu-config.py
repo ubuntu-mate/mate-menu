@@ -55,7 +55,6 @@ class mateMenuConfig( object ):
 
         self.builder.get_object("startWithFavorites").set_label(_("Always start with favorites pane"))
         self.builder.get_object("showButtonIcon").set_label(_("Show button icon"))
-        self.builder.get_object("useCustomColors").set_label(_("Use custom colors"))
         self.builder.get_object("showRecentPlugin").set_label(_("Show recent documents plugin"))
         self.builder.get_object("showApplicationsPlugin").set_label(_("Show applications plugin"))
         self.builder.get_object("showSystemPlugin").set_label(_("Show system plugin"))
@@ -74,7 +73,6 @@ class mateMenuConfig( object ):
         self.builder.get_object("label1").set_text(_("Options"))
         self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 
-        self.builder.get_object("colorsLabel").set_text(_("Theme"))
         self.builder.get_object("favLabel").set_text(_("Favorites"))
         self.builder.get_object("mainbuttonLabel").set_text(_("Main button"))
         self.builder.get_object("pluginsLabel").set_text(_("Plugins"))
@@ -86,11 +84,6 @@ class mateMenuConfig( object ):
         self.builder.get_object("enable_wikipedia").set_label(_("Wikipedia"))
         self.builder.get_object("enable_dictionary").set_label(_("Dictionary"))
         self.builder.get_object("enable_computer").set_label(_("Computer"))
-
-        self.builder.get_object("backgroundColorLabel").set_text(_("Background:"))
-        self.builder.get_object("headingColorLabel").set_text(_("Headings:"))
-        self.builder.get_object("borderColorLabel").set_text(_("Borders:"))
-        self.builder.get_object("themeLabel").set_text(_("Theme:"))
 
         #self.builder.get_object("applicationsLabel").set_text(_("Applications"))
         #self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
@@ -152,13 +145,6 @@ class mateMenuConfig( object ):
         self.systemIconSize = self.builder.get_object( "systemIconSize" )
         self.favCols = self.builder.get_object( "numFavCols" )
         self.borderWidth = self.builder.get_object( "borderWidth" )
-        self.useCustomColors = self.builder.get_object( "useCustomColors" )
-        self.backgroundColor = self.builder.get_object( "backgroundColor" )
-        self.borderColor = self.builder.get_object( "borderColor" )
-        self.headingColor = self.builder.get_object( "headingColor" )
-        self.backgroundColorLabel = self.builder.get_object( "backgroundColorLabel" )
-        self.borderColorLabel = self.builder.get_object( "borderColorLabel" )
-        self.headingColorLabel = self.builder.get_object( "headingColorLabel" )
         self.showButtonIcon = self.builder.get_object( "showButtonIcon" )
         self.buttonText = self.builder.get_object( "buttonText" )
         self.hotkeyWidget = keybinding.KeybindingWidget(_("Keyboard shortcut:") )
@@ -204,8 +190,6 @@ class mateMenuConfig( object ):
         self.settingsPlaces = EasyGSettings( "org.mate.mate-menu.plugins.places" )
         self.settingsSystem = EasyGSettings( "org.mate.mate-menu.plugins.system_management" )
 
-        self.useCustomColors.connect( "toggled", self.toggleUseCustomColors )
-
         self.bindGSettingsValueToWidget( self.settings, "bool", "start-with-favorites", self.startWithFavorites, "toggled", self.startWithFavorites.set_active, self.startWithFavorites.get_active )
         self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "show-application-comments", self.showAppComments, "toggled", self.showAppComments.set_active, self.showAppComments.get_active )
         self.bindGSettingsValueToWidget( self.settingsApplications, "bool", "show-category-icons", self.showCategoryIcons, "toggled", self.showCategoryIcons.set_active, self.showCategoryIcons.get_active )
@@ -229,10 +213,6 @@ class mateMenuConfig( object ):
         self.bindGSettingsValueToWidget( self.settingsSystem, "int", "icon-size", self.systemIconSize, "value-changed", self.systemIconSize.set_value, self.systemIconSize.get_value )
 
         self.bindGSettingsValueToWidget( self.settings, "int", "border-width", self.borderWidth, "value-changed", self.borderWidth.set_value, self.borderWidth.get_value_as_int )
-        self.bindGSettingsValueToWidget( self.settings, "bool", "use-custom-color", self.useCustomColors, "toggled", self.useCustomColors.set_active, self.useCustomColors.get_active )
-        self.bindGSettingsValueToWidget( self.settings, "color", "custom-color", self.backgroundColor, "color-set", self.backgroundColor.set_rgba, self.getBackgroundColor )
-        self.bindGSettingsValueToWidget( self.settings, "color", "custom-heading-color", self.headingColor, "color-set", self.headingColor.set_rgba, self.getHeadingColor )
-        self.bindGSettingsValueToWidget( self.settings, "color", "custom-border-color", self.borderColor, "color-set", self.borderColor.set_rgba, self.getBorderColor )
         self.bindGSettingsValueToWidget( self.settings, "bool", "hide-applet-icon", self.showButtonIcon, "toggled", self.setShowButtonIcon, self.getShowButtonIcon )
         self.bindGSettingsValueToWidget( self.settings, "string", "applet-text", self.buttonText, "changed", self.buttonText.set_text, self.buttonText.get_text )
         self.bindGSettingsValueToWidget( self.settings, "string", "hot-key", self.hotkeyWidget, "accel-edited", self.hotkeyWidget.set_val, self.hotkeyWidget.get_val )
@@ -286,36 +266,7 @@ class mateMenuConfig( object ):
         self.builder.get_object("downButton").connect("clicked", self.moveDown)
         self.builder.get_object("removeButton").connect("clicked", self.removePlace)
 
-        #Detect themes and show theme here
-        theme_name = self.settings.get ("string", "theme-name")
-        process = subprocess.Popen(['find', '/usr/share/themes', '-name', 'gtkrc'], stdout=subprocess.PIPE)
-        out, err = process.communicate()
-        themes = out.decode("utf-8").split("\n")
-        model = Gtk.ListStore(str, str)
-        self.builder.get_object("themesCombo").set_model(model)
-        selected_theme = model.append([_("Desktop theme"), "default"])
-        for theme in sorted(themes):
-            if theme.startswith("/usr/share/themes") and theme.endswith("/gtk-2.0/gtkrc"):
-                theme = theme.replace("/usr/share/themes/", "")
-                theme = theme.replace("gtk-2.0", "")
-                theme = theme.replace("gtkrc", "")
-                theme = theme.replace("/", "")
-                theme = theme.strip()
-                iter = model.append([theme, theme])
-                if theme == theme_name:
-                    selected_theme = iter
-        self.builder.get_object("themesCombo").set_active_iter(selected_theme)
-        self.builder.get_object("themesCombo").connect("changed", self.set_theme)
-
-        self.toggleUseCustomColors(self.useCustomColors)
         self.mainWindow.present()
-        self.getBackgroundColor()
-
-    def set_theme(self, widget):
-        model = widget.get_model()
-        iter = widget.get_active_iter()
-        theme_name = model.get_value(iter, 1)
-        self.settings.set( "string", "theme-name", theme_name)
 
     def getPluginsToggle(self):
         array = self.settings.get ("list-string", "plugins-list")
@@ -360,12 +311,7 @@ class mateMenuConfig( object ):
 
     def bindGSettingsValueToWidget( self, settings, setting_type, key, widget, changeEvent, setter, getter ):
         settings.notifyAdd( key, self.callSetter, args = [ setting_type, setter ] )
-        if setting_type == "color":
-            color = Gdk.RGBA()
-            color.parse( settings.get( setting_type, key ) )
-            setter( color )
-        else:
-            setter( settings.get( setting_type, key ) )
+        setter( settings.get( setting_type, key ) )
         widget.connect( changeEvent, lambda *args: self.callGetter( settings, setting_type, key, getter ) )
 
     def callSetter( self, settings, key, args ):
@@ -375,36 +321,12 @@ class mateMenuConfig( object ):
             args[1]( settings.get_string(key) )
         elif args[0] == "int":
             args[1]( settings.get_int(key) )
-        elif args[0] == "color":
-            color = Gdk.RGBA()
-            color.parse( settings.get_string(key) )
-            args[1]( color )
 
     def callGetter( self, settings, setting_type, key, getter ):
         if (setting_type == "int"):
             settings.set( setting_type, key, int(getter()))
         else:
             settings.set( setting_type, key, getter())
-
-    def toggleUseCustomColors( self, widget ):
-        self.backgroundColor.set_sensitive( widget.get_active() )
-        self.borderColor.set_sensitive( widget.get_active() )
-        self.headingColor.set_sensitive(  widget.get_active() )
-        self.backgroundColorLabel.set_sensitive( widget.get_active() )
-        self.borderColorLabel.set_sensitive( widget.get_active() )
-        self.headingColorLabel.set_sensitive(  widget.get_active() )
-
-    def getBackgroundColor( self ):
-        color = self.backgroundColor.get_rgba()
-        return self.gdkRGBAToString( color )
-
-    def getBorderColor( self ):
-        color = self.borderColor.get_rgba()
-        return self.gdkRGBAToString( color )
-
-    def getHeadingColor( self ):
-        color = self.headingColor.get_rgba()
-        return self.gdkRGBAToString( color )
 
     def gdkRGBAToString( self, gdkRGBA ):
         return "#%.2X%.2X%.2X" % ( int(gdkRGBA.red * 256), int(gdkRGBA.green * 256), int(gdkRGBA.blue * 256) )

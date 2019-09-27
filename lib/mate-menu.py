@@ -104,10 +104,6 @@ class MainWindow( object ):
         self.settings.connect( "changed::plugins-list", self.RegenPlugins )
         self.settings.connect( "changed::start-with-favorites", self.toggleStartWithFavorites )
         self.settings.connect( "changed::tooltips-enabled", self.toggleTooltipsEnabled )
-        self.settings.connect( "changed::use-custom-color", self.toggleUseCustomColor )
-        self.settings.connect( "changed::custom-border-color", self.toggleCustomBorderColor )
-        self.settings.connect( "changed::custom-heading-color", self.toggleCustomHeadingColor )
-        self.settings.connect( "changed::custom-color", self.toggleCustomBackgroundColor )
         self.settings.connect( "changed::border-width", self.toggleBorderWidth )
 
         self.getSetGSettingEntries()
@@ -149,28 +145,8 @@ class MainWindow( object ):
         self.borderwidth = settings.get_int(key)
         self.SetupMateMenuBorder()
 
-    def toggleUseCustomColor( self, settings, key, args = None ):
-        self.usecustomcolor = settings.get_boolean(key)
-        self.loadTheme()
-
-    def toggleCustomBorderColor( self, settings, key, args = None ):
-        self.custombordercolor = settings.get_string(key)
-        self.SetupMateMenuBorder()
-
-    def toggleCustomBackgroundColor( self, settings, key, args = None):
-        self.customcolor = settings.get_string(key)
-        self.SetPaneColors( self.panesToColor )
-
-    def toggleCustomHeadingColor( self, settings, key, args = None ):
-        self.customheadingcolor = settings.get_string(key)
-        self.SetHeadingStyle( self.headingsToColor )
-
     def getSetGSettingEntries( self ):
         self.pluginlist           = self.settings.get_strv( "plugins-list" )
-        self.usecustomcolor       = self.settings.get_boolean( "use-custom-color" )
-        self.customcolor          = self.settings.get_string( "custom-color" )
-        self.customheadingcolor   = self.settings.get_string( "custom-heading-color" )
-        self.custombordercolor    = self.settings.get_string( "custom-border-color" )
         self.borderwidth          = self.settings.get_int( "border-width" )
         self.offset               = self.settings.get_int( "offset" )
         self.enableTooltips       = self.settings.get_boolean( "tooltips-enabled" )
@@ -355,26 +331,14 @@ class MainWindow( object ):
     def SetPaneColors( self, items, color = None ):
         for item in items:
             context = item.get_style_context()
-            if self.usecustomcolor:
-                bgColor = Gdk.RGBA()
-                bgColor.parse( self.customcolor )
-                item.override_background_color( context.get_state(), bgColor )
-            elif color is not None:
+            if color is not None:
                 item.override_background_color( context.get_state(), color )
 
     def SetHeadingStyle( self, items ):
-        if self.usecustomcolor:
-            color = self.customheadingcolor
-        else:
-            color = None
-
         for item in items:
             item.set_use_markup(True)
             text = item.get_text()
-            if color == None:
-                markup = '<span size="12000" weight="bold">%s</span>' % (text)
-            else:
-                markup = '<span size="12000" weight="bold" color="%s">%s</span>' % (color, text)
+            markup = '<span size="12000" weight="bold">%s</span>' % (text)
             item.set_markup( markup )
 
     def tooltipsEnable( self, enable = True ):
@@ -413,16 +377,10 @@ class MainWindow( object ):
         #print(NAME + " reloaded")
 
     def onWindowDraw(self, widget, cr):
-        if self.usecustomcolor:
-            borderColor = Gdk.RGBA()
-            borderColor.parse(self.custombordercolor)
-            Gdk.cairo_set_source_rgba(cr, borderColor)
-            cr.paint()
-        else:
-            style = widget.get_style_context()
-            req = widget.get_preferred_size()[0]
-            Gtk.render_background(style, cr, 0, 0, req.width, req.height)
-            Gtk.render_frame(style, cr, 0, 0, req.width, req.height)
+        style = widget.get_style_context()
+        req = widget.get_preferred_size()[0]
+        Gtk.render_background(style, cr, 0, 0, req.width, req.height)
+        Gtk.render_frame(style, cr, 0, 0, req.width, req.height)
         return False
 
     def onWindowKeyPress( self, widget, event ):
@@ -490,7 +448,6 @@ class MenuWin( object ):
         self.mate_settings.connect( "changed::icon-theme", self.changeTheme )
 
         self.settings.connect( "changed::applet-text", self.reloadSettings )
-        self.settings.connect( "changed::theme-name", self.changeTheme )
         self.settings.connect( "changed::hot-key", self.reloadSettings )
         self.settings.connect( "changed::hide-applet-icon", self.reloadSettings )
 
@@ -613,7 +570,6 @@ class MenuWin( object ):
     def loadSettings( self, *args, **kargs ):
         self.hideIcon   =  self.settings.get_boolean( "hide-applet-icon" )
         self.buttonText =  self.settings.get_string( "applet-text" )
-        self.theme_name =  self.settings.get_string( "theme-name" )
         self.hotkeyText =  self.settings.get_string( "hot-key" )
 
     def changeTheme(self, *args):
@@ -625,13 +581,7 @@ class MenuWin( object ):
         style_settings = Gtk.Settings.get_default()
 
         desktop_theme = self.mate_settings.get_string('gtk-theme')
-        if self.theme_name == "default":
-            style_settings.set_property("gtk-theme-name", desktop_theme)
-        else:
-            try:
-                style_settings.set_property("gtk-theme-name", self.theme_name)
-            except:
-                style_settings.set_property("gtk-theme-name", desktop_theme)
+        style_settings.set_property("gtk-theme-name", desktop_theme)
 
         icon_theme = self.mate_settings.get_string('icon-theme')
         style_settings.set_property("gtk-icon-theme-name", icon_theme)
