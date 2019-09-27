@@ -8,12 +8,6 @@
       <description></description>
     </key>
 
-    <key type="b" name="use-custom-color">
-      <default>false</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
     <key type="b" name="tooltips-enabled">
       <default>true</default>
       <summary></summary>
@@ -44,12 +38,6 @@
       <description></description>
     </key>
 
-    <key type="s" name="theme-name">
-      <default>"default"</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
     <key type="s" name="hot-key">
       <default>"Super_L"</default>
       <summary></summary>
@@ -58,24 +46,6 @@
 
     <key type="as" name="plugins-list">
       <default>['places', 'system_management', 'newpane', 'applications']</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="s" name="custom-color">
-      <default>"#EEEEEE"</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="s" name="custom-heading-color">
-      <default>"#001155"</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="s" name="custom-border-color">
-      <default>"#001155"</default>
       <summary></summary>
       <description></description>
     </key>
