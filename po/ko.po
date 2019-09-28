@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-19 21:10+0100\n"
+"POT-Creation-Date: 2019-09-28 21:06+0100\n"
 "PO-Revision-Date: 2018-03-13 22:05+0000\n"
 "Last-Translator: Wolfgang Ulbrich <mate@raveit.de>\n"
 "Language-Team: Korean (http://www.transifex.com/mate/MATE/language/ko/)\n"
@@ -24,31 +24,31 @@ msgid "Menu"
 msgstr "메뉴"
 
 #. Fake class for MyPlugin
-#: ../lib/mate-menu.py:224
+#: ../lib/mate-menu.py:196
 msgid "Couldn't load plugin:"
 msgstr "플러그인을 불러올 수 없습니다:"
 
-#: ../lib/mate-menu.py:297
+#: ../lib/mate-menu.py:265
 msgid "Couldn't initialize plugin"
 msgstr "플러그인을 초기화할 수 없습니다"
 
-#: ../lib/mate-menu.py:732
-msgid "Advanced MATE Menu"
-msgstr "고급 마테 메뉴"
+#: ../lib/mate-menu.py:640
+msgid "An Advanced Menu for the MATE Desktop"
+msgstr ""
 
-#: ../lib/mate-menu.py:846
+#: ../lib/mate-menu.py:759
 msgid "Preferences"
 msgstr "기본 설정"
 
-#: ../lib/mate-menu.py:849
+#: ../lib/mate-menu.py:762
 msgid "Edit menu"
 msgstr "메뉴 편집"
 
-#: ../lib/mate-menu.py:852
+#: ../lib/mate-menu.py:765
 msgid "Reload plugins"
 msgstr "플러그인 다시 부르기"
 
-#: ../lib/mate-menu.py:855
+#: ../lib/mate-menu.py:768
 msgid "About"
 msgstr "소개"
 
@@ -66,264 +66,232 @@ msgid "Show button icon"
 msgstr "버튼 아이콘 표시"
 
 #: ../lib/mate-menu-config.py:58
-msgid "Use custom colors"
-msgstr "사용자 정의 색상 사용"
-
-#: ../lib/mate-menu-config.py:59
 msgid "Show recent documents plugin"
 msgstr "최근 문서 플러그인 표시"
 
-#: ../lib/mate-menu-config.py:60
+#: ../lib/mate-menu-config.py:59
 msgid "Show applications plugin"
 msgstr "애플리케이션 플러그인 표시"
 
-#: ../lib/mate-menu-config.py:61
+#: ../lib/mate-menu-config.py:60
 msgid "Show system plugin"
 msgstr "시스템 플러그인 표시"
 
-#: ../lib/mate-menu-config.py:62
+#: ../lib/mate-menu-config.py:61
 msgid "Show places plugin"
 msgstr "위치 플러그인 표시"
 
-#: ../lib/mate-menu-config.py:64
+#: ../lib/mate-menu-config.py:63
 msgid "Show application comments"
 msgstr "애플리케이션 설명 표시"
 
-#: ../lib/mate-menu-config.py:65
+#: ../lib/mate-menu-config.py:64
 msgid "Show category icons"
 msgstr "카테고리 아이콘 표시"
 
-#: ../lib/mate-menu-config.py:66
+#: ../lib/mate-menu-config.py:65
 msgid "Hover"
 msgstr "호버"
 
-#: ../lib/mate-menu-config.py:67
+#: ../lib/mate-menu-config.py:66
 msgid "Remember the last category or search"
 msgstr "마지막 카테고리나 검색 내용 기록"
 
-#: ../lib/mate-menu-config.py:68
+#: ../lib/mate-menu-config.py:67
 msgid "Swap name and generic name"
 msgstr "스왑 이름 및 일반 이름"
 
-#: ../lib/mate-menu-config.py:70
+#: ../lib/mate-menu-config.py:69
 msgid "Border width:"
 msgstr "테두리 폭:"
 
-#: ../lib/mate-menu-config.py:71
+#: ../lib/mate-menu-config.py:70
 msgid "pixels"
 msgstr "픽셀"
 
-#: ../lib/mate-menu-config.py:73
+#: ../lib/mate-menu-config.py:72
 msgid "Button text:"
 msgstr "버튼 문자:"
 
-#: ../lib/mate-menu-config.py:74
+#: ../lib/mate-menu-config.py:73
 msgid "Options"
 msgstr "옵션"
 
-#: ../lib/mate-menu-config.py:75 ../mate_menu/plugins/applications.py:224
+#: ../lib/mate-menu-config.py:74 ../mate_menu/plugins/applications.py:224
 msgid "Applications"
 msgstr "프로그램"
 
-#: ../lib/mate-menu-config.py:77
-msgid "Theme"
-msgstr "테마"
-
-#: ../lib/mate-menu-config.py:78 ../mate_menu/plugins/applications.py:221
+#: ../lib/mate-menu-config.py:76 ../mate_menu/plugins/applications.py:221
 #: ../mate_menu/plugins/applications.py:222
 msgid "Favorites"
 msgstr "즐겨찾기"
 
-#: ../lib/mate-menu-config.py:79
+#: ../lib/mate-menu-config.py:77
 msgid "Main button"
 msgstr "메인 버튼"
 
-#: ../lib/mate-menu-config.py:80
+#: ../lib/mate-menu-config.py:78
 msgid "Plugins"
 msgstr "플러그인"
 
-#: ../lib/mate-menu-config.py:82
+#: ../lib/mate-menu-config.py:80
 msgid "Always show search suggestions"
 msgstr "검색 제안을 항상 표시하기"
 
-#: ../lib/mate-menu-config.py:83
+#: ../lib/mate-menu-config.py:81
 msgid "Search Engines:"
 msgstr "검색 엔진:"
 
-#: ../lib/mate-menu-config.py:84
+#: ../lib/mate-menu-config.py:82
 msgid "DuckDuckGo"
 msgstr "DuckDuckGo"
 
-#: ../lib/mate-menu-config.py:85
+#: ../lib/mate-menu-config.py:83
 msgid "Google"
 msgstr "구글"
 
-#: ../lib/mate-menu-config.py:86
+#: ../lib/mate-menu-config.py:84
 msgid "Wikipedia"
 msgstr "위키피디아"
 
-#: ../lib/mate-menu-config.py:87
+#: ../lib/mate-menu-config.py:85
 msgid "Dictionary"
 msgstr "사전"
 
-#: ../lib/mate-menu-config.py:88 ../lib/mate-menu-config.py:111
+#: ../lib/mate-menu-config.py:86 ../lib/mate-menu-config.py:103
 #: ../mate_menu/plugins/places.py:149
 msgid "Computer"
 msgstr "컴퓨터"
 
-#: ../lib/mate-menu-config.py:90
-msgid "Background:"
-msgstr "배경:"
-
-#: ../lib/mate-menu-config.py:91
-msgid "Headings:"
-msgstr "제목:"
-
-#: ../lib/mate-menu-config.py:92
-msgid "Borders:"
-msgstr "테두리:"
-
-#: ../lib/mate-menu-config.py:93
-msgid "Theme:"
-msgstr "테마:"
-
 #. self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
-#: ../lib/mate-menu-config.py:97
+#: ../lib/mate-menu-config.py:90
 msgid "Number of columns:"
 msgstr "세로 열 수:"
 
-#: ../lib/mate-menu-config.py:98 ../lib/mate-menu-config.py:99
-#: ../lib/mate-menu-config.py:100 ../lib/mate-menu-config.py:101
+#: ../lib/mate-menu-config.py:91 ../lib/mate-menu-config.py:92
+#: ../lib/mate-menu-config.py:93 ../lib/mate-menu-config.py:94
 msgid "Icon size:"
 msgstr "아이콘 크기:"
 
-#: ../lib/mate-menu-config.py:102
+#: ../lib/mate-menu-config.py:95
 msgid "Hover delay (ms):"
 msgstr "호버 지연 시간 (ms):"
 
-#: ../lib/mate-menu-config.py:103
-msgid "Button icon:"
-msgstr "버튼 아이콘:"
-
-#: ../lib/mate-menu-config.py:104
+#: ../lib/mate-menu-config.py:96
 msgid "Search command:"
 msgstr "명령어 검색:"
 
 #. Set 'heading' property for plugin
-#: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:54
+#: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:54
 msgid "Places"
 msgstr "위치"
 
-#: ../lib/mate-menu-config.py:107 ../lib/mate-menu-config.py:119
+#: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
 msgstr "스크롤바 허용"
 
-#: ../lib/mate-menu-config.py:108
+#: ../lib/mate-menu-config.py:100
 msgid "Show GTK+ Bookmarks"
 msgstr "GTK+ 책갈피 보이기"
 
-#: ../lib/mate-menu-config.py:109 ../lib/mate-menu-config.py:120
+#: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
 msgstr "높이:"
 
-#: ../lib/mate-menu-config.py:110
+#: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
 msgstr "기본 위치 표시:"
 
-#: ../lib/mate-menu-config.py:112 ../mate_menu/plugins/places.py:156
+#: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
 msgstr "홈 폴더"
 
-#: ../lib/mate-menu-config.py:113 ../mate_menu/plugins/places.py:165
+#: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:165
 msgid "Network"
 msgstr "네트워크"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/places.py:184
+#: ../lib/mate-menu-config.py:106 ../mate_menu/plugins/places.py:184
 msgid "Desktop"
 msgstr "바탕화면"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/places.py:191
+#: ../lib/mate-menu-config.py:107 ../mate_menu/plugins/places.py:191
 msgid "Trash"
 msgstr "휴지통"
 
-#: ../lib/mate-menu-config.py:116
+#: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
 msgstr "지정 위치:"
 
 #. Set 'heading' property for plugin
-#: ../lib/mate-menu-config.py:118 ../mate_menu/plugins/system_management.py:55
+#: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
 msgid "System"
 msgstr "시스템"
 
-#: ../lib/mate-menu-config.py:121
+#: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
 msgstr "기본 항목 표시:"
 
-#: ../lib/mate-menu-config.py:122 ../mate_menu/plugins/system_management.py:153
+#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
 msgstr "패키지 관리자"
 
-#: ../lib/mate-menu-config.py:123 ../mate_menu/plugins/system_management.py:172
+#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
 msgstr "제어 센터"
 
-#: ../lib/mate-menu-config.py:124 ../mate_menu/plugins/system_management.py:179
+#: ../lib/mate-menu-config.py:116 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
 msgstr "터미널"
 
-#: ../lib/mate-menu-config.py:125 ../mate_menu/plugins/system_management.py:193
+#: ../lib/mate-menu-config.py:117 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
 msgstr "화면 잠그기"
 
-#: ../lib/mate-menu-config.py:126
+#: ../lib/mate-menu-config.py:118
 msgid "Log Out"
 msgstr "로그아웃"
 
-#: ../lib/mate-menu-config.py:127 ../mate_menu/plugins/system_management.py:211
+#: ../lib/mate-menu-config.py:119 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
 msgstr "끝내기"
 
-#: ../lib/mate-menu-config.py:129
+#: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
 msgstr "위치 편집"
 
-#: ../lib/mate-menu-config.py:130
+#: ../lib/mate-menu-config.py:122
 msgid "New Place"
 msgstr "새 위치"
 
-#: ../lib/mate-menu-config.py:131
+#: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
 msgstr "폴더 선택"
 
-#: ../lib/mate-menu-config.py:165
+#: ../lib/mate-menu-config.py:150
 msgid "Keyboard shortcut:"
 msgstr "키보드 바로 가기:"
 
-#: ../lib/mate-menu-config.py:171
+#: ../lib/mate-menu-config.py:154
 msgid "Images"
 msgstr "이미지"
 
-#: ../lib/mate-menu-config.py:286
+#: ../lib/mate-menu-config.py:259
 msgid "Name"
 msgstr "이름"
 
-#: ../lib/mate-menu-config.py:287
+#: ../lib/mate-menu-config.py:260
 msgid "Path"
 msgstr "경로"
 
-#: ../lib/mate-menu-config.py:303
-msgid "Desktop theme"
-msgstr "데스크톱 테마"
-
-#: ../lib/mate-menu-config.py:444 ../lib/mate-menu-config.py:475
+#: ../lib/mate-menu-config.py:354 ../lib/mate-menu-config.py:385
 msgid "Name:"
 msgstr "이름:"
 
-#: ../lib/mate-menu-config.py:445 ../lib/mate-menu-config.py:476
+#: ../lib/mate-menu-config.py:355 ../lib/mate-menu-config.py:386
 msgid "Path:"
 msgstr "경로:"
 
@@ -336,100 +304,100 @@ msgstr "검색:"
 msgid "All applications"
 msgstr "모든 애플리케이션"
 
-#: ../mate_menu/plugins/applications.py:623
+#: ../mate_menu/plugins/applications.py:617
 #, python-format
 msgid "Search DuckDuckGo for %s"
 msgstr "DuckDuckGo로 %s 검색"
 
-#: ../mate_menu/plugins/applications.py:634
+#: ../mate_menu/plugins/applications.py:628
 #, python-format
 msgid "Search Google for %s"
 msgstr "구글로 %s 검색"
 
-#: ../mate_menu/plugins/applications.py:645
+#: ../mate_menu/plugins/applications.py:639
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "위키피디아로 %s검색 "
 
-#: ../mate_menu/plugins/applications.py:666
+#: ../mate_menu/plugins/applications.py:660
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "사전에서 %s 찾기"
 
-#: ../mate_menu/plugins/applications.py:677
+#: ../mate_menu/plugins/applications.py:671
 #, python-format
 msgid "Search Computer for %s"
 msgstr "컴퓨터로 %s검색 "
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:811
-#: ../mate_menu/plugins/applications.py:876
+#: ../mate_menu/plugins/applications.py:805
+#: ../mate_menu/plugins/applications.py:870
 msgid "Add to desktop"
 msgstr "바탕화면에 추가"
 
-#: ../mate_menu/plugins/applications.py:812
-#: ../mate_menu/plugins/applications.py:877
+#: ../mate_menu/plugins/applications.py:806
+#: ../mate_menu/plugins/applications.py:871
 msgid "Add to panel"
 msgstr "패널에 추가"
 
-#: ../mate_menu/plugins/applications.py:814
-#: ../mate_menu/plugins/applications.py:855
+#: ../mate_menu/plugins/applications.py:808
+#: ../mate_menu/plugins/applications.py:849
 msgid "Insert space"
 msgstr "빈칸 추가"
 
-#: ../mate_menu/plugins/applications.py:815
-#: ../mate_menu/plugins/applications.py:856
+#: ../mate_menu/plugins/applications.py:809
+#: ../mate_menu/plugins/applications.py:850
 msgid "Insert separator"
 msgstr "분리선 추가"
 
-#: ../mate_menu/plugins/applications.py:817
-#: ../mate_menu/plugins/applications.py:880
+#: ../mate_menu/plugins/applications.py:811
+#: ../mate_menu/plugins/applications.py:874
 msgid "Launch"
 msgstr "실행"
 
-#: ../mate_menu/plugins/applications.py:818
+#: ../mate_menu/plugins/applications.py:812
 msgid "Remove from favorites"
 msgstr "즐겨찾기에서 제거"
 
-#: ../mate_menu/plugins/applications.py:820
-#: ../mate_menu/plugins/applications.py:883
+#: ../mate_menu/plugins/applications.py:814
+#: ../mate_menu/plugins/applications.py:877
 msgid "Edit properties"
 msgstr "속성 편집"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:854
+#: ../mate_menu/plugins/applications.py:848
 msgid "Remove"
 msgstr "제거"
 
-#: ../mate_menu/plugins/applications.py:879
+#: ../mate_menu/plugins/applications.py:873
 msgid "Show in my favorites"
 msgstr "즐겨찾기에 표시"
 
-#: ../mate_menu/plugins/applications.py:881
+#: ../mate_menu/plugins/applications.py:875
 msgid "Delete from menu"
 msgstr "메뉴에서 제거"
 
-#: ../mate_menu/plugins/applications.py:925
+#: ../mate_menu/plugins/applications.py:919
 msgid "Search DuckDuckGo"
 msgstr "DuckDuckGo 검색"
 
-#: ../mate_menu/plugins/applications.py:932
+#: ../mate_menu/plugins/applications.py:926
 msgid "Search Google"
 msgstr "구글 검색"
 
-#: ../mate_menu/plugins/applications.py:939
+#: ../mate_menu/plugins/applications.py:933
 msgid "Search Wikipedia"
 msgstr "위키피디아 검색"
 
-#: ../mate_menu/plugins/applications.py:949
+#: ../mate_menu/plugins/applications.py:943
 msgid "Lookup Dictionary"
 msgstr "사전에서 찾기"
 
-#: ../mate_menu/plugins/applications.py:956
+#: ../mate_menu/plugins/applications.py:950
 msgid "Search Computer"
 msgstr "컴퓨터에서 검색"
 
-#: ../mate_menu/plugins/applications.py:1367
+#: ../mate_menu/plugins/applications.py:1361
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
@@ -437,11 +405,11 @@ msgstr ""
 "즐겨찾기를 저장할 수 없습니다. ~/.config/mate-menu에 쓰기 권한이 있나 확인해 "
 "주세요"
 
-#: ../mate_menu/plugins/applications.py:1577
+#: ../mate_menu/plugins/applications.py:1571
 msgid "All"
 msgstr "모두"
 
-#: ../mate_menu/plugins/applications.py:1577
+#: ../mate_menu/plugins/applications.py:1571
 msgid "Show all applications"
 msgstr "모든 애플리케이션 보이기"
 
@@ -523,3 +491,30 @@ msgstr "단축키를 고르세요"
 #: ../mate_menu/keybinding.py:297
 msgid "<not set>"
 msgstr "<not set>"
+
+#~ msgid "Advanced MATE Menu"
+#~ msgstr "고급 마테 메뉴"
+
+#~ msgid "Use custom colors"
+#~ msgstr "사용자 정의 색상 사용"
+
+#~ msgid "Theme"
+#~ msgstr "테마"
+
+#~ msgid "Background:"
+#~ msgstr "배경:"
+
+#~ msgid "Headings:"
+#~ msgstr "제목:"
+
+#~ msgid "Borders:"
+#~ msgstr "테두리:"
+
+#~ msgid "Theme:"
+#~ msgstr "테마:"
+
+#~ msgid "Button icon:"
+#~ msgstr "버튼 아이콘:"
+
+#~ msgid "Desktop theme"
+#~ msgstr "데스크톱 테마"
