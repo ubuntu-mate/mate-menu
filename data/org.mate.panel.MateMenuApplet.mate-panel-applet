@@ -2,11 +2,11 @@
 Id=MateMenuAppletFactory
 InProcess=false
 Location=/usr/lib/mate-menu/mate-menu.py
-Name=MATE Menu Applet Factory
+Name=Advanced MATE Menu Applet Factory
 Description=Advanced MATE Menu
 
 [MateMenuApplet]
-Name=MATE Menu
+Name=Advanced MATE Menu
 Description=Advanced MATE Menu
 Icon=start-here
 MateComponentId=OAFIID:MATE_MateMenuApplet;
