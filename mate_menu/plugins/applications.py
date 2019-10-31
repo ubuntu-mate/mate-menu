@@ -49,10 +49,12 @@ class PackageDescriptor():
 def get_user_item_path():
     item_dir = None
 
-    if os.environ.has_key('XDG_DATA_HOME'):
+    if 'XDG_DATA_HOME' in os.environ:
         item_dir = os.path.join(os.environ['XDG_DATA_HOME'], 'applications')
-    else:
+    elif 'HOME' in os.environ:
         item_dir = os.path.join(os.environ['HOME'], '.local', 'share', 'applications')
+    else:
+        item_dir = os.path.join('/', 'tmp', 'applications')
 
     if not os.path.isdir(item_dir):
         os.makedirs(item_dir)
@@ -61,7 +63,7 @@ def get_user_item_path():
 
 def get_system_item_paths():
     item_dirs = []
-    if os.environ.has_key('XDG_DATA_DIRS'):
+    if 'XDG_DATA_DIRS' in os.environ:
         item_dirs = os.environ['XDG_DATA_DIRS'].split(":")
     item_dirs.append(os.path.join('/usr', 'share'))
     return item_dirs
