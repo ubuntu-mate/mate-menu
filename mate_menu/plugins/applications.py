@@ -22,7 +22,7 @@ import gi
 gi.require_version("Gtk", "3.0")
 gi.require_version('MateMenu', '2.0')
 
-from gi.repository import Gtk, Pango, Gdk, Gio, GLib, MateMenu
+from gi.repository import Gtk, Pango, Gdk, GdkPixbuf, Gio, GLib, MateMenu
 
 import os
 import shutil
@@ -168,14 +168,15 @@ class SuggestionButton ( Gtk.Button ):
         self.connect( "focus-in-event", self.onFocusIn )
         self.connect( "focus-out-event", self.onFocusOut )
 
-    def set_image(self, path):
-        self.image.set_from_file(path)
+    def set_image(self, path, icon_size):
+        scale = self.get_scale_factor()
+        size = icon_size * scale
+        pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(path, size, size)
+        surface = Gdk.cairo_surface_create_from_pixbuf (pixbuf, scale)
+        self.image.set_from_surface(surface)
 
     def set_text( self, text):
         self.label.set_markup(text)
-
-    def set_icon_size (self, size):
-        self.image.set_pixel_size( size )
 
     def onEnter( self, widget, event ):
         self.grab_focus()
@@ -610,12 +611,13 @@ class pluginclass( object ):
 
         text = "<b>%s</b>" % text
         focused = already_focused
+        prefix = "/usr/share/mate-menu/icons/search_engines/%s"
 
         if self.enableddg:
             suggestionButton = SuggestionButton("list-add", self.iconSize, "")
             suggestionButton.connect("clicked", self.search_ddg)
             suggestionButton.set_text(_("Search DuckDuckGo for %s") % text)
-            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/ddg.png")
+            suggestionButton.set_image(prefix % "ddg.png", self.iconSize)
             self.applicationsBox.add(suggestionButton)
             if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
@@ -626,7 +628,7 @@ class pluginclass( object ):
             suggestionButton = SuggestionButton("list-add", self.iconSize, "")
             suggestionButton.connect("clicked", self.search_google)
             suggestionButton.set_text(_("Search Google for %s") % text)
-            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/google.png")
+            suggestionButton.set_image(prefix % "google.png", self.iconSize)
             self.applicationsBox.add(suggestionButton)
             if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
@@ -637,7 +639,7 @@ class pluginclass( object ):
             suggestionButton = SuggestionButton("list-add", self.iconSize, "")
             suggestionButton.connect("clicked", self.search_wikipedia)
             suggestionButton.set_text(_("Search Wikipedia for %s") % text)
-            suggestionButton.set_image("/usr/share/mate-menu/icons/search_engines/wikipedia.png")
+            suggestionButton.set_image(prefix % "wikipedia.png", self.iconSize)
             self.applicationsBox.add(suggestionButton)
             if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
@@ -655,10 +657,9 @@ class pluginclass( object ):
         self.suggestions.append(separator)
 
         if self.enabledictionary:
-            suggestionButton = SuggestionButton("list-add", self.iconSize, "")
+            suggestionButton = SuggestionButton("accessories-dictionary", self.iconSize, "")
             suggestionButton.connect("clicked", self.search_dictionary)
             suggestionButton.set_text(_("Lookup %s in Dictionary") % text)
-            suggestionButton.set_image("/usr/share/mate-menu/icons/dictionary.png")
             self.applicationsBox.add(suggestionButton)
             if not focused:
                 self.applicationsBox.get_children()[-1].grab_focus()
@@ -674,16 +675,6 @@ class pluginclass( object ):
                 self.applicationsBox.get_children()[-1].grab_focus()
                 focused = True
             self.suggestions.append(suggestionButton)
-
-        #self.last_separator = Gtk.EventBox()
-        #self.last_separator.add(Gtk.Separator( orientation=Gtk.Orientation.HORIZONTAL ))
-        #self.last_separator.set_margin_top( 5 )
-        #self.last_separator.set_margin_bottom( 5 )
-        #self.last_separator.type = "separator"
-        #self.mateMenuWin.SetPaneColors( [  self.last_separator ] )
-        #self.last_separator.show_all()
-        #self.applicationsBox.add(self.last_separator)
-        #self.suggestions.append(self.last_separator)
 
     def Filter( self, widget, category = None ):
         self.filterTimer = None
@@ -913,27 +904,32 @@ class pluginclass( object ):
             else:
                 mTree.popup(None, None, None, None, event.button, event.time)
 
+    def createImageMenuItem( self, label, icon_path ):
+        menuItem = Gtk.ImageMenuItem(label=_(label))
+        img = Gtk.Image()
+        scale = img.get_scale_factor()
+        size = 16 * scale # Gtk.IconSize.MENU icons are always 16px
+
+        pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_size(icon_path, size, size)
+        surface = Gdk.cairo_surface_create_from_pixbuf (pixbuf, scale)
+        img.set_from_surface(surface)
+
+        menuItem.set_image(img)
+        return menuItem
+
     def searchPopup( self, widget=None, event=None ):
         menu = Gtk.Menu()
+        prefix = "/usr/share/mate-menu/icons/search_engines/%s"
 
-        menuItem = Gtk.ImageMenuItem(label=_("Search DuckDuckGo"))
-        img = Gtk.Image()
-        img.set_from_file("/usr/share/mate-menu/icons/search_engines/ddg.png")
-        menuItem.set_image(img)
+        menuItem = self.createImageMenuItem(_("Search DuckDuckGo"), prefix % "ddg.png")
         menuItem.connect("activate", self.search_ddg)
         menu.append(menuItem)
 
-        menuItem = Gtk.ImageMenuItem(label=_("Search Google"))
-        img = Gtk.Image()
-        img.set_from_file("/usr/share/mate-menu/icons/search_engines/google.png")
-        menuItem.set_image(img)
+        menuItem = self.createImageMenuItem(_("Search Google"), prefix % "google.png")
         menuItem.connect("activate", self.search_google)
         menu.append(menuItem)
 
-        menuItem = Gtk.ImageMenuItem(label=_("Search Wikipedia"))
-        img = Gtk.Image()
-        img.set_from_file("/usr/share/mate-menu/icons/search_engines/wikipedia.png")
-        menuItem.set_image(img)
+        menuItem = self.createImageMenuItem(_("Search Wikipedia"), prefix % "wikipedia.png")
         menuItem.connect("activate", self.search_wikipedia)
         menu.append(menuItem)
 
@@ -942,15 +938,14 @@ class pluginclass( object ):
 
         menuItem = Gtk.ImageMenuItem(label=_("Lookup Dictionary"))
         img = Gtk.Image()
-        img.set_from_file('/usr/share/mate-menu/icons/dictionary.png')
+        img.set_from_icon_name("accessories-dictionary", Gtk.IconSize.MENU)
         menuItem.set_image(img)
         menuItem.connect("activate", self.search_dictionary)
         menu.append(menuItem)
 
         menuItem = Gtk.ImageMenuItem(label=_("Search Computer"))
         img = Gtk.Image()
-        img.set_from_icon_name("edit-find", Gtk.IconSize.INVALID)
-        img.set_pixel_size( self.iconSize )
+        img.set_from_icon_name("edit-find", Gtk.IconSize.MENU)
         menuItem.set_image(img)
         menuItem.connect("activate", self.Search)
         menu.append(menuItem)
@@ -964,9 +959,6 @@ class pluginclass( object ):
         else:
             menu.popup(None, None, None, None, event.button, event.time)
 
-        #menu.reposition()
-        #menu.reposition()
-        #self.mateMenuWin.grab()
         self.focusSearchEntry(clear = False)
         return True
 
