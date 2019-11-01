@@ -84,11 +84,6 @@ data_files = [
             "data/plugins/recent.glade",
         ]
     ),
-    ("share/mate-menu/icons".format(prefix=sys.prefix),
-        [
-            "data/icons/dictionary.png",
-        ]
-    ),
     ("share/mate-menu/icons/search_engines".format(prefix=sys.prefix),
         [
             "data/icons/ddg.png",
