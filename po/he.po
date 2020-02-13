@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-28 21:06+0100\n"
-"PO-Revision-Date: 2019-07-31 12:03+0000\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"POT-Creation-Date: 2020-02-13 22:41+0000\n"
+"PO-Revision-Date: 2019-09-28 20:08+0000\n"
+"Last-Translator: Martin Wimpress <code@flexion.org>\n"
 "Language-Team: Hebrew (http://www.transifex.com/mate/MATE/language/he/)\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
@@ -118,12 +118,12 @@ msgstr "טקסט כפתור:"
 msgid "Options"
 msgstr "אפשרויות"
 
-#: ../lib/mate-menu-config.py:74 ../mate_menu/plugins/applications.py:224
+#: ../lib/mate-menu-config.py:74 ../mate_menu/plugins/applications.py:227
 msgid "Applications"
 msgstr "אפליקציות"
 
-#: ../lib/mate-menu-config.py:76 ../mate_menu/plugins/applications.py:221
-#: ../mate_menu/plugins/applications.py:222
+#: ../lib/mate-menu-config.py:76 ../mate_menu/plugins/applications.py:224
+#: ../mate_menu/plugins/applications.py:225
 msgid "Favorites"
 msgstr "מועדפים"
 
@@ -297,119 +297,119 @@ msgid "Path:"
 msgstr "מסלול:"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:219
+#: ../mate_menu/plugins/applications.py:222
 msgid "Search:"
 msgstr "חיפוש:"
 
-#: ../mate_menu/plugins/applications.py:223
+#: ../mate_menu/plugins/applications.py:226
 msgid "All applications"
 msgstr "כל האפליקציות"
 
-#: ../mate_menu/plugins/applications.py:617
+#: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search DuckDuckGo for %s"
 msgstr "חיפוש ב־DuckDuckGo אחר %s"
 
-#: ../mate_menu/plugins/applications.py:628
+#: ../mate_menu/plugins/applications.py:632
 #, python-format
 msgid "Search Google for %s"
 msgstr "חפש באמצעות Google עבור %s"
 
-#: ../mate_menu/plugins/applications.py:639
+#: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "חפש באמצעות Wikipedia עבור %s"
 
-#: ../mate_menu/plugins/applications.py:660
+#: ../mate_menu/plugins/applications.py:664
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "חפש את %s במילון"
 
-#: ../mate_menu/plugins/applications.py:671
+#: ../mate_menu/plugins/applications.py:674
 #, python-format
 msgid "Search Computer for %s"
 msgstr "חפש במחשב עבור %s"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:805
-#: ../mate_menu/plugins/applications.py:870
+#: ../mate_menu/plugins/applications.py:798
+#: ../mate_menu/plugins/applications.py:863
 msgid "Add to desktop"
 msgstr "הוסף לשולחן העבודה"
 
-#: ../mate_menu/plugins/applications.py:806
-#: ../mate_menu/plugins/applications.py:871
+#: ../mate_menu/plugins/applications.py:799
+#: ../mate_menu/plugins/applications.py:864
 msgid "Add to panel"
 msgstr "הוסף לפאנל"
 
-#: ../mate_menu/plugins/applications.py:808
-#: ../mate_menu/plugins/applications.py:849
+#: ../mate_menu/plugins/applications.py:801
+#: ../mate_menu/plugins/applications.py:842
 msgid "Insert space"
 msgstr "הכנס מרווח"
 
-#: ../mate_menu/plugins/applications.py:809
-#: ../mate_menu/plugins/applications.py:850
+#: ../mate_menu/plugins/applications.py:802
+#: ../mate_menu/plugins/applications.py:843
 msgid "Insert separator"
 msgstr "הכנס מפריד"
 
-#: ../mate_menu/plugins/applications.py:811
-#: ../mate_menu/plugins/applications.py:874
+#: ../mate_menu/plugins/applications.py:804
+#: ../mate_menu/plugins/applications.py:867
 msgid "Launch"
 msgstr "הפעל"
 
-#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:805
 msgid "Remove from favorites"
 msgstr "מחק מהמועדפים"
 
-#: ../mate_menu/plugins/applications.py:814
-#: ../mate_menu/plugins/applications.py:877
+#: ../mate_menu/plugins/applications.py:807
+#: ../mate_menu/plugins/applications.py:870
 msgid "Edit properties"
 msgstr "ערוך הגדרות"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:848
+#: ../mate_menu/plugins/applications.py:841
 msgid "Remove"
 msgstr "הסר"
 
-#: ../mate_menu/plugins/applications.py:873
+#: ../mate_menu/plugins/applications.py:866
 msgid "Show in my favorites"
 msgstr "הצג במועדפים"
 
-#: ../mate_menu/plugins/applications.py:875
+#: ../mate_menu/plugins/applications.py:868
 msgid "Delete from menu"
 msgstr "מחק מהתפריט"
 
-#: ../mate_menu/plugins/applications.py:919
+#: ../mate_menu/plugins/applications.py:926
 msgid "Search DuckDuckGo"
 msgstr "חיפוש ב־DuckDuckGo"
 
-#: ../mate_menu/plugins/applications.py:926
+#: ../mate_menu/plugins/applications.py:930
 msgid "Search Google"
 msgstr "חפש ב-Google"
 
-#: ../mate_menu/plugins/applications.py:933
+#: ../mate_menu/plugins/applications.py:934
 msgid "Search Wikipedia"
 msgstr "חפש ב-Wikipedia"
 
-#: ../mate_menu/plugins/applications.py:943
+#: ../mate_menu/plugins/applications.py:941
 msgid "Lookup Dictionary"
 msgstr "חפש במילון"
 
-#: ../mate_menu/plugins/applications.py:950
+#: ../mate_menu/plugins/applications.py:948
 msgid "Search Computer"
 msgstr "חפש במחשב"
 
-#: ../mate_menu/plugins/applications.py:1361
+#: ../mate_menu/plugins/applications.py:1355
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
 "לא ניתן לשמור מועדפים. בדוק אם הנך מחזיק בגישת כתיבה ל- ~/.config/mate-menu"
 
-#: ../mate_menu/plugins/applications.py:1571
+#: ../mate_menu/plugins/applications.py:1565
 msgid "All"
 msgstr "הכל"
 
-#: ../mate_menu/plugins/applications.py:1571
+#: ../mate_menu/plugins/applications.py:1565
 msgid "Show all applications"
 msgstr "הצג את כל האפליקציות"
 
@@ -491,30 +491,3 @@ msgstr "בחר מאיץ"
 #: ../mate_menu/keybinding.py:297
 msgid "<not set>"
 msgstr "<לא מוגדר>"
-
-#~ msgid "Advanced MATE Menu"
-#~ msgstr "תפריט MATE מתקדם"
-
-#~ msgid "Use custom colors"
-#~ msgstr "השתמש בצבעים מותאמים אישית"
-
-#~ msgid "Theme"
-#~ msgstr "ערכת נושא"
-
-#~ msgid "Background:"
-#~ msgstr "רקע:"
-
-#~ msgid "Headings:"
-#~ msgstr "כותרות:"
-
-#~ msgid "Borders:"
-#~ msgstr "מסגרות:"
-
-#~ msgid "Theme:"
-#~ msgstr "עיצוב:"
-
-#~ msgid "Button icon:"
-#~ msgstr "סמליל כפתור:"
-
-#~ msgid "Desktop theme"
-#~ msgstr "עיצוב שולחן העבודה"

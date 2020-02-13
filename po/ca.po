@@ -4,14 +4,14 @@
 #
 # Translators:
 # Francesc Famadas <kiski97@gmail.com>, 2015
-# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2016-2017
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2016-2019
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-28 21:06+0100\n"
-"PO-Revision-Date: 2018-03-11 10:30+0000\n"
+"POT-Creation-Date: 2020-02-13 22:41+0000\n"
+"PO-Revision-Date: 2019-09-29 14:56+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/mate/MATE/language/ca/)\n"
 "Language: ca\n"
@@ -35,7 +35,7 @@ msgstr "No s'ha pogut inicialitzar el connector"
 
 #: ../lib/mate-menu.py:640
 msgid "An Advanced Menu for the MATE Desktop"
-msgstr ""
+msgstr "Un menú avançat per a l'escriptori MATE"
 
 #: ../lib/mate-menu.py:759
 msgid "Preferences"
@@ -118,12 +118,12 @@ msgstr "Text del botó:"
 msgid "Options"
 msgstr "Opcions"
 
-#: ../lib/mate-menu-config.py:74 ../mate_menu/plugins/applications.py:224
+#: ../lib/mate-menu-config.py:74 ../mate_menu/plugins/applications.py:227
 msgid "Applications"
 msgstr "Aplicacions"
 
-#: ../lib/mate-menu-config.py:76 ../mate_menu/plugins/applications.py:221
-#: ../mate_menu/plugins/applications.py:222
+#: ../lib/mate-menu-config.py:76 ../mate_menu/plugins/applications.py:224
+#: ../mate_menu/plugins/applications.py:225
 msgid "Favorites"
 msgstr "Preferides"
 
@@ -270,7 +270,7 @@ msgstr "Lloc nou"
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr "Selecciona una carpeta"
+msgstr "Seleccioneu una carpeta"
 
 #: ../lib/mate-menu-config.py:150
 msgid "Keyboard shortcut:"
@@ -297,108 +297,108 @@ msgid "Path:"
 msgstr "Camí:"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:219
+#: ../mate_menu/plugins/applications.py:222
 msgid "Search:"
 msgstr "Cerca:"
 
-#: ../mate_menu/plugins/applications.py:223
+#: ../mate_menu/plugins/applications.py:226
 msgid "All applications"
 msgstr "Totes les aplicacions"
 
-#: ../mate_menu/plugins/applications.py:617
+#: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search DuckDuckGo for %s"
 msgstr "Cerca %s a DuckDuckGo"
 
-#: ../mate_menu/plugins/applications.py:628
+#: ../mate_menu/plugins/applications.py:632
 #, python-format
 msgid "Search Google for %s"
 msgstr "Cerca %s a Google"
 
-#: ../mate_menu/plugins/applications.py:639
+#: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "Cerca %s a Viquipèdia"
 
-#: ../mate_menu/plugins/applications.py:660
+#: ../mate_menu/plugins/applications.py:664
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "Consulta %s al diccionari"
 
-#: ../mate_menu/plugins/applications.py:671
+#: ../mate_menu/plugins/applications.py:674
 #, python-format
 msgid "Search Computer for %s"
 msgstr "Cerca %s a l'ordinador"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:805
-#: ../mate_menu/plugins/applications.py:870
+#: ../mate_menu/plugins/applications.py:798
+#: ../mate_menu/plugins/applications.py:863
 msgid "Add to desktop"
 msgstr "Afegeix-ho a l'escriptori"
 
-#: ../mate_menu/plugins/applications.py:806
-#: ../mate_menu/plugins/applications.py:871
+#: ../mate_menu/plugins/applications.py:799
+#: ../mate_menu/plugins/applications.py:864
 msgid "Add to panel"
 msgstr "Afegeix-ho al tauler"
 
-#: ../mate_menu/plugins/applications.py:808
-#: ../mate_menu/plugins/applications.py:849
+#: ../mate_menu/plugins/applications.py:801
+#: ../mate_menu/plugins/applications.py:842
 msgid "Insert space"
 msgstr "Posa un espai"
 
-#: ../mate_menu/plugins/applications.py:809
-#: ../mate_menu/plugins/applications.py:850
+#: ../mate_menu/plugins/applications.py:802
+#: ../mate_menu/plugins/applications.py:843
 msgid "Insert separator"
 msgstr "Posa un separador"
 
-#: ../mate_menu/plugins/applications.py:811
-#: ../mate_menu/plugins/applications.py:874
+#: ../mate_menu/plugins/applications.py:804
+#: ../mate_menu/plugins/applications.py:867
 msgid "Launch"
 msgstr "Llança"
 
-#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:805
 msgid "Remove from favorites"
 msgstr "Suprimeix dels preferits"
 
-#: ../mate_menu/plugins/applications.py:814
-#: ../mate_menu/plugins/applications.py:877
+#: ../mate_menu/plugins/applications.py:807
+#: ../mate_menu/plugins/applications.py:870
 msgid "Edit properties"
 msgstr "Edita les propietats"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:848
+#: ../mate_menu/plugins/applications.py:841
 msgid "Remove"
 msgstr "Suprimeix"
 
-#: ../mate_menu/plugins/applications.py:873
+#: ../mate_menu/plugins/applications.py:866
 msgid "Show in my favorites"
 msgstr "Mostra-ho a les meves preferides"
 
-#: ../mate_menu/plugins/applications.py:875
+#: ../mate_menu/plugins/applications.py:868
 msgid "Delete from menu"
 msgstr "Elimina-ho del menú"
 
-#: ../mate_menu/plugins/applications.py:919
+#: ../mate_menu/plugins/applications.py:926
 msgid "Search DuckDuckGo"
 msgstr "Cerca a DuckDuckGo"
 
-#: ../mate_menu/plugins/applications.py:926
+#: ../mate_menu/plugins/applications.py:930
 msgid "Search Google"
 msgstr "Cerca a Google"
 
-#: ../mate_menu/plugins/applications.py:933
+#: ../mate_menu/plugins/applications.py:934
 msgid "Search Wikipedia"
 msgstr "Cerca a la Viquipèdia"
 
-#: ../mate_menu/plugins/applications.py:943
+#: ../mate_menu/plugins/applications.py:941
 msgid "Lookup Dictionary"
 msgstr "Consulta al diccionari"
 
-#: ../mate_menu/plugins/applications.py:950
+#: ../mate_menu/plugins/applications.py:948
 msgid "Search Computer"
 msgstr "Cerca a l'ordinador"
 
-#: ../mate_menu/plugins/applications.py:1361
+#: ../mate_menu/plugins/applications.py:1355
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
@@ -406,11 +406,11 @@ msgstr ""
 "No s'han pogut desar les preferides. Comproveu que teniu l'accés "
 "d'escriptura a ~/.config/mate-menu"
 
-#: ../mate_menu/plugins/applications.py:1571
+#: ../mate_menu/plugins/applications.py:1565
 msgid "All"
 msgstr "Tot"
 
-#: ../mate_menu/plugins/applications.py:1571
+#: ../mate_menu/plugins/applications.py:1565
 msgid "Show all applications"
 msgstr "Mostra totes les notificacions"
 
@@ -481,8 +481,7 @@ msgstr ""
 
 #: ../mate_menu/keybinding.py:221
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr ""
-"Premeu la tecla d'escapament o feu clic de nou per cancel·lar l'operació."
+msgstr "Premeu la tecla Esc o torneu a fer clic per cancel·lar l'operació."
 
 #: ../mate_menu/keybinding.py:222
 msgid "Press Backspace to clear the existing keybinding."
@@ -496,30 +495,3 @@ msgstr "Tria un accelerador"
 #: ../mate_menu/keybinding.py:297
 msgid "<not set>"
 msgstr "<sense establir>"
-
-#~ msgid "Advanced MATE Menu"
-#~ msgstr "Menú avançat de MATE"
-
-#~ msgid "Use custom colors"
-#~ msgstr "Utilitza els colors personalitzats"
-
-#~ msgid "Theme"
-#~ msgstr "Tema"
-
-#~ msgid "Background:"
-#~ msgstr "Fons:"
-
-#~ msgid "Headings:"
-#~ msgstr "Encapçalaments:"
-
-#~ msgid "Borders:"
-#~ msgstr "Contorns:"
-
-#~ msgid "Theme:"
-#~ msgstr "Tema:"
-
-#~ msgid "Button icon:"
-#~ msgstr "Icona del botó:"
-
-#~ msgid "Desktop theme"
-#~ msgstr "Tema d'escriptori"

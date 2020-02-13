@@ -7,13 +7,14 @@
 # Diogo Oliveira <diogodesigns@gmail.com>, 2015
 # José Vieira <jvieira33@sapo.pt>, 2017
 # ogalho Carlos Dias Martins <ogalho@gmail.com>, 2017
+# Rui <xymarior@yandex.com>, 2018
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-28 21:06+0100\n"
-"PO-Revision-Date: 2017-12-16 22:45+0000\n"
-"Last-Translator: José Vieira <jvieira33@sapo.pt>\n"
+"POT-Creation-Date: 2020-02-13 22:41+0000\n"
+"PO-Revision-Date: 2019-09-28 20:08+0000\n"
+"Last-Translator: Martin Wimpress <code@flexion.org>\n"
 "Language-Team: Portuguese (http://www.transifex.com/mate/MATE/language/pt/)\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
@@ -119,12 +120,12 @@ msgstr "Texto do botão:"
 msgid "Options"
 msgstr "Opções"
 
-#: ../lib/mate-menu-config.py:74 ../mate_menu/plugins/applications.py:224
+#: ../lib/mate-menu-config.py:74 ../mate_menu/plugins/applications.py:227
 msgid "Applications"
 msgstr "Aplicações"
 
-#: ../lib/mate-menu-config.py:76 ../mate_menu/plugins/applications.py:221
-#: ../mate_menu/plugins/applications.py:222
+#: ../lib/mate-menu-config.py:76 ../mate_menu/plugins/applications.py:224
+#: ../mate_menu/plugins/applications.py:225
 msgid "Favorites"
 msgstr "Favoritos"
 
@@ -138,7 +139,7 @@ msgstr "Suplementos"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Always show search suggestions"
-msgstr "Mostrar sempre sugestões de busca/pesquisa"
+msgstr "Mostrar sempre sugestões de pesquisa"
 
 #: ../lib/mate-menu-config.py:81
 msgid "Search Engines:"
@@ -298,108 +299,108 @@ msgid "Path:"
 msgstr "Caminho:"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:219
+#: ../mate_menu/plugins/applications.py:222
 msgid "Search:"
 msgstr "Procurar:"
 
-#: ../mate_menu/plugins/applications.py:223
+#: ../mate_menu/plugins/applications.py:226
 msgid "All applications"
 msgstr "Todas as aplicações"
 
-#: ../mate_menu/plugins/applications.py:617
+#: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Buscar por %s com o DuckDuckGo "
+msgstr "Procurar por %s com o DuckDuckGo "
 
-#: ../mate_menu/plugins/applications.py:628
+#: ../mate_menu/plugins/applications.py:632
 #, python-format
 msgid "Search Google for %s"
-msgstr "Buscar por %s com o Google"
+msgstr "Procurar por %s com o Google"
 
-#: ../mate_menu/plugins/applications.py:639
+#: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "Procurar na Wikipedia por %s"
 
-#: ../mate_menu/plugins/applications.py:660
+#: ../mate_menu/plugins/applications.py:664
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "Procurar %s no Dicionário"
 
-#: ../mate_menu/plugins/applications.py:671
+#: ../mate_menu/plugins/applications.py:674
 #, python-format
 msgid "Search Computer for %s"
 msgstr "Procurar no Computador por %s"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:805
-#: ../mate_menu/plugins/applications.py:870
+#: ../mate_menu/plugins/applications.py:798
+#: ../mate_menu/plugins/applications.py:863
 msgid "Add to desktop"
 msgstr "Adicionar à área de trabalho"
 
-#: ../mate_menu/plugins/applications.py:806
-#: ../mate_menu/plugins/applications.py:871
+#: ../mate_menu/plugins/applications.py:799
+#: ../mate_menu/plugins/applications.py:864
 msgid "Add to panel"
 msgstr "Adicionar ao painel"
 
-#: ../mate_menu/plugins/applications.py:808
-#: ../mate_menu/plugins/applications.py:849
+#: ../mate_menu/plugins/applications.py:801
+#: ../mate_menu/plugins/applications.py:842
 msgid "Insert space"
 msgstr "Inserir espaço"
 
-#: ../mate_menu/plugins/applications.py:809
-#: ../mate_menu/plugins/applications.py:850
+#: ../mate_menu/plugins/applications.py:802
+#: ../mate_menu/plugins/applications.py:843
 msgid "Insert separator"
 msgstr "Inserir separador"
 
-#: ../mate_menu/plugins/applications.py:811
-#: ../mate_menu/plugins/applications.py:874
+#: ../mate_menu/plugins/applications.py:804
+#: ../mate_menu/plugins/applications.py:867
 msgid "Launch"
 msgstr "Iniciar"
 
-#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:805
 msgid "Remove from favorites"
 msgstr "Remover dos favoritos"
 
-#: ../mate_menu/plugins/applications.py:814
-#: ../mate_menu/plugins/applications.py:877
+#: ../mate_menu/plugins/applications.py:807
+#: ../mate_menu/plugins/applications.py:870
 msgid "Edit properties"
 msgstr "Editar as propriedades"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:848
+#: ../mate_menu/plugins/applications.py:841
 msgid "Remove"
 msgstr "Remover"
 
-#: ../mate_menu/plugins/applications.py:873
+#: ../mate_menu/plugins/applications.py:866
 msgid "Show in my favorites"
 msgstr "Mostrar nos meus favoritos"
 
-#: ../mate_menu/plugins/applications.py:875
+#: ../mate_menu/plugins/applications.py:868
 msgid "Delete from menu"
 msgstr "Eliminar do menu"
 
-#: ../mate_menu/plugins/applications.py:919
-msgid "Search DuckDuckGo"
-msgstr "Buscar com o DuckDuckGo"
-
 #: ../mate_menu/plugins/applications.py:926
+msgid "Search DuckDuckGo"
+msgstr "Procurar com o DuckDuckGo"
+
+#: ../mate_menu/plugins/applications.py:930
 msgid "Search Google"
 msgstr "Procurar com o Google"
 
-#: ../mate_menu/plugins/applications.py:933
+#: ../mate_menu/plugins/applications.py:934
 msgid "Search Wikipedia"
 msgstr "Procurar na Wkipedia"
 
-#: ../mate_menu/plugins/applications.py:943
+#: ../mate_menu/plugins/applications.py:941
 msgid "Lookup Dictionary"
 msgstr "Procurar no Dicionário"
 
-#: ../mate_menu/plugins/applications.py:950
+#: ../mate_menu/plugins/applications.py:948
 msgid "Search Computer"
 msgstr "Procurar no Computador"
 
-#: ../mate_menu/plugins/applications.py:1361
+#: ../mate_menu/plugins/applications.py:1355
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
@@ -407,11 +408,11 @@ msgstr ""
 "Impossível guardar os favoritos. Verifique se tem acesso de escrita para ~/."
 "config/mate-menu"
 
-#: ../mate_menu/plugins/applications.py:1571
+#: ../mate_menu/plugins/applications.py:1565
 msgid "All"
 msgstr "Tudo"
 
-#: ../mate_menu/plugins/applications.py:1571
+#: ../mate_menu/plugins/applications.py:1565
 msgid "Show all applications"
 msgstr "Mostrar todas as aplicações"
 
@@ -496,30 +497,3 @@ msgstr "Escolher um acelerador"
 #: ../mate_menu/keybinding.py:297
 msgid "<not set>"
 msgstr "<not set>"
-
-#~ msgid "Advanced MATE Menu"
-#~ msgstr "Menu Avançado do MATE"
-
-#~ msgid "Use custom colors"
-#~ msgstr "Usar cores personalizadas"
-
-#~ msgid "Theme"
-#~ msgstr "Tema"
-
-#~ msgid "Background:"
-#~ msgstr "Fundo:"
-
-#~ msgid "Headings:"
-#~ msgstr "Títulos:"
-
-#~ msgid "Borders:"
-#~ msgstr "Margens:"
-
-#~ msgid "Theme:"
-#~ msgstr "Tema:"
-
-#~ msgid "Button icon:"
-#~ msgstr "Ícone do botão:"
-
-#~ msgid "Desktop theme"
-#~ msgstr "Tema da área de trabalho"

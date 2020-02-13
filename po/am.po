@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-28 21:06+0100\n"
-"PO-Revision-Date: 2017-11-28 17:45+0000\n"
-"Last-Translator: samson <sambelet@yahoo.com>\n"
+"POT-Creation-Date: 2020-02-13 22:41+0000\n"
+"PO-Revision-Date: 2019-09-28 20:08+0000\n"
+"Last-Translator: Martin Wimpress <code@flexion.org>\n"
 "Language-Team: Amharic (http://www.transifex.com/mate/MATE/language/am/)\n"
 "Language: am\n"
 "MIME-Version: 1.0\n"
@@ -116,12 +116,12 @@ msgstr "ቁልፍ ጽሁፍ:"
 msgid "Options"
 msgstr "ምርጫዎች"
 
-#: ../lib/mate-menu-config.py:74 ../mate_menu/plugins/applications.py:224
+#: ../lib/mate-menu-config.py:74 ../mate_menu/plugins/applications.py:227
 msgid "Applications"
 msgstr "መተግበሪያዎች "
 
-#: ../lib/mate-menu-config.py:76 ../mate_menu/plugins/applications.py:221
-#: ../mate_menu/plugins/applications.py:222
+#: ../lib/mate-menu-config.py:76 ../mate_menu/plugins/applications.py:224
+#: ../mate_menu/plugins/applications.py:225
 msgid "Favorites"
 msgstr "የምወዳቸው"
 
@@ -295,118 +295,118 @@ msgid "Path:"
 msgstr "መንገድ:"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:219
+#: ../mate_menu/plugins/applications.py:222
 msgid "Search:"
 msgstr "መፈለጊያ:"
 
-#: ../mate_menu/plugins/applications.py:223
+#: ../mate_menu/plugins/applications.py:226
 msgid "All applications"
 msgstr "ሁሉንም መተግበሪያዎች"
 
-#: ../mate_menu/plugins/applications.py:617
+#: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search DuckDuckGo for %s"
 msgstr "መፈለጊያ በ ደክ ደክ ጎ ውስጥ ለ %s"
 
-#: ../mate_menu/plugins/applications.py:628
+#: ../mate_menu/plugins/applications.py:632
 #, python-format
 msgid "Search Google for %s"
 msgstr "ጉግል ውስጥ መፈለጊያ %s"
 
-#: ../mate_menu/plugins/applications.py:639
+#: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Search Wikipedia for %s"
 msgstr "ዊኪፒዲያ ውስጥ መፈለጊያ %s"
 
-#: ../mate_menu/plugins/applications.py:660
+#: ../mate_menu/plugins/applications.py:664
 #, python-format
 msgid "Lookup %s in Dictionary"
 msgstr "መፈለጊያ %s መዝገበ ቃላት ውስጥ"
 
-#: ../mate_menu/plugins/applications.py:671
+#: ../mate_menu/plugins/applications.py:674
 #, python-format
 msgid "Search Computer for %s"
 msgstr "ኮምፒዩተር ውስጥ መፈለጊያ %s"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:805
-#: ../mate_menu/plugins/applications.py:870
+#: ../mate_menu/plugins/applications.py:798
+#: ../mate_menu/plugins/applications.py:863
 msgid "Add to desktop"
 msgstr "ወደ ዴስክቶፕ መጨመሪያ"
 
-#: ../mate_menu/plugins/applications.py:806
-#: ../mate_menu/plugins/applications.py:871
+#: ../mate_menu/plugins/applications.py:799
+#: ../mate_menu/plugins/applications.py:864
 msgid "Add to panel"
 msgstr "ወደ ክፍል መጨመሪያ"
 
-#: ../mate_menu/plugins/applications.py:808
-#: ../mate_menu/plugins/applications.py:849
+#: ../mate_menu/plugins/applications.py:801
+#: ../mate_menu/plugins/applications.py:842
 msgid "Insert space"
 msgstr "ክፍተት ማስገቢያ"
 
-#: ../mate_menu/plugins/applications.py:809
-#: ../mate_menu/plugins/applications.py:850
+#: ../mate_menu/plugins/applications.py:802
+#: ../mate_menu/plugins/applications.py:843
 msgid "Insert separator"
 msgstr "መለያያ ማስገቢያ "
 
-#: ../mate_menu/plugins/applications.py:811
-#: ../mate_menu/plugins/applications.py:874
+#: ../mate_menu/plugins/applications.py:804
+#: ../mate_menu/plugins/applications.py:867
 msgid "Launch"
 msgstr "ማስጀመሪያ"
 
-#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:805
 msgid "Remove from favorites"
 msgstr "ከ ምወዳቸው ውስጥ ማስወገጃ"
 
-#: ../mate_menu/plugins/applications.py:814
-#: ../mate_menu/plugins/applications.py:877
+#: ../mate_menu/plugins/applications.py:807
+#: ../mate_menu/plugins/applications.py:870
 msgid "Edit properties"
 msgstr "ባህሪዎች ማረሚያ"
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:848
+#: ../mate_menu/plugins/applications.py:841
 msgid "Remove"
 msgstr "ማስወገጃ"
 
-#: ../mate_menu/plugins/applications.py:873
+#: ../mate_menu/plugins/applications.py:866
 msgid "Show in my favorites"
 msgstr "በምወዳቸው ውስጥ ማሳያ"
 
-#: ../mate_menu/plugins/applications.py:875
+#: ../mate_menu/plugins/applications.py:868
 msgid "Delete from menu"
 msgstr "ከ ዝርዝር ውስጥ ማጥፊያ"
 
-#: ../mate_menu/plugins/applications.py:919
+#: ../mate_menu/plugins/applications.py:926
 msgid "Search DuckDuckGo"
 msgstr "መፈለጊያ በ ደክ ደክ ጎ ውስጥ"
 
-#: ../mate_menu/plugins/applications.py:926
+#: ../mate_menu/plugins/applications.py:930
 msgid "Search Google"
 msgstr "ጉግል ውስጥ መፈለጊያ"
 
-#: ../mate_menu/plugins/applications.py:933
+#: ../mate_menu/plugins/applications.py:934
 msgid "Search Wikipedia"
 msgstr "ዊኪፒዲያ ውስጥ መፈለጊያ"
 
-#: ../mate_menu/plugins/applications.py:943
+#: ../mate_menu/plugins/applications.py:941
 msgid "Lookup Dictionary"
 msgstr "መዝገበ ቃላት ውስጥ መፈለጊያ"
 
-#: ../mate_menu/plugins/applications.py:950
+#: ../mate_menu/plugins/applications.py:948
 msgid "Search Computer"
 msgstr "ኮምፒዩተር ውስጥ መፈለጊያ"
 
-#: ../mate_menu/plugins/applications.py:1361
+#: ../mate_menu/plugins/applications.py:1355
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr "የ ምወዳቸውን ማስቀመጥ አልተቻለም ፍቃድ እንዳለዎት ይመርምሩ ወደ ~/.config/mate-menu"
 
-#: ../mate_menu/plugins/applications.py:1571
+#: ../mate_menu/plugins/applications.py:1565
 msgid "All"
 msgstr "ሁሉንም"
 
-#: ../mate_menu/plugins/applications.py:1571
+#: ../mate_menu/plugins/applications.py:1565
 msgid "Show all applications"
 msgstr "ሁሉንም መተግበሪያዎች ማሳያ"
 
@@ -487,30 +487,3 @@ msgstr "አፍጣኝ ይምረጡ"
 #: ../mate_menu/keybinding.py:297
 msgid "<not set>"
 msgstr "<not set>"
-
-#~ msgid "Advanced MATE Menu"
-#~ msgstr "የ ረቀቀ የ ሜት ዝርዝር"
-
-#~ msgid "Use custom colors"
-#~ msgstr "ቀለም ማስተካከያ ይጠቀሙ:"
-
-#~ msgid "Theme"
-#~ msgstr "ገጽታ"
-
-#~ msgid "Background:"
-#~ msgstr "መደብ:"
-
-#~ msgid "Headings:"
-#~ msgstr "ራስጌዎች:"
-
-#~ msgid "Borders:"
-#~ msgstr "ድንበሮች:"
-
-#~ msgid "Theme:"
-#~ msgstr "ገጽታ"
-
-#~ msgid "Button icon:"
-#~ msgstr "ቁልፍ ምልክት:"
-
-#~ msgid "Desktop theme"
-#~ msgstr "የ ዴስክቶፕ ገጽታ"

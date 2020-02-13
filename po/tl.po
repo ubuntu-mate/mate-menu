@@ -1,35 +1,34 @@
-# Tagalog translation for MATE Menu
-# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
-# This file is distributed under the same license as the package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 #
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-menu\n"
+"Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-28 21:06+0100\n"
-"PO-Revision-Date: 2011-08-24 16:03+0000\n"
-"Last-Translator: Libni Pacheco <Unknown>\n"
-"Language-Team: Tagalog <tl@li.org>\n"
+"POT-Creation-Date: 2020-02-13 22:41+0000\n"
+"PO-Revision-Date: 2019-09-28 20:08+0000\n"
+"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"Language-Team: Tagalog (http://www.transifex.com/mate/MATE/language/tl/)\n"
 "Language: tl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-25 10:21+0000\n"
-"X-Generator: Launchpad (build 17355)\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../lib/mate-menu.py:58
 msgid "Menu"
-msgstr "Menu"
+msgstr ""
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:196
 msgid "Couldn't load plugin:"
-msgstr "Hindi mai-load ang plugin:"
+msgstr ""
 
 #: ../lib/mate-menu.py:265
 msgid "Couldn't initialize plugin"
-msgstr "Hindi ma-initialize ang plugin"
+msgstr ""
 
 #: ../lib/mate-menu.py:640
 msgid "An Advanced Menu for the MATE Desktop"
@@ -37,60 +36,60 @@ msgstr ""
 
 #: ../lib/mate-menu.py:759
 msgid "Preferences"
-msgstr "Mga Kagustuhan"
+msgstr ""
 
 #: ../lib/mate-menu.py:762
 msgid "Edit menu"
-msgstr "Baguhin ang menu"
+msgstr ""
 
 #: ../lib/mate-menu.py:765
 msgid "Reload plugins"
-msgstr "I-karga muli ang mga plugin"
+msgstr ""
 
 #: ../lib/mate-menu.py:768
 msgid "About"
-msgstr "Tungkol dito"
+msgstr ""
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr "Kagustuhan para sa menu"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr "Laging magsimula gamit ang favorites pane"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr "Ipakita ang icon ng pindutan"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show recent documents plugin"
-msgstr "Ipakita ang plugin para sa mga document na ginamit kamakailan"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show applications plugin"
-msgstr "Ipakita ang plugin para sa mga application"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show system plugin"
-msgstr "Ipakita ang plugin para sa system"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show places plugin"
-msgstr "Ipakita ang plugin para sa \"places\""
+msgstr ""
 
 #: ../lib/mate-menu-config.py:63
 msgid "Show application comments"
-msgstr "Ipakita ang mga komento sa application"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show category icons"
-msgstr "Ipakita ang mga icon ng kategorya"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:65
 msgid "Hover"
-msgstr "Itapat"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:66
 msgid "Remember the last category or search"
@@ -98,36 +97,36 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:67
 msgid "Swap name and generic name"
-msgstr "Pagpalitin ang pangalan at generic na pangalan"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:69
 msgid "Border width:"
-msgstr "Kapal ng border:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:70
 msgid "pixels"
-msgstr "mga pixel"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:72
 msgid "Button text:"
-msgstr "Sulat ng pindutan"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:73
 msgid "Options"
-msgstr "Mga Pagpipilian"
+msgstr ""
 
-#: ../lib/mate-menu-config.py:74 ../mate_menu/plugins/applications.py:224
+#: ../lib/mate-menu-config.py:74 ../mate_menu/plugins/applications.py:227
 msgid "Applications"
-msgstr "Mga Application"
+msgstr ""
 
-#: ../lib/mate-menu-config.py:76 ../mate_menu/plugins/applications.py:221
-#: ../mate_menu/plugins/applications.py:222
+#: ../lib/mate-menu-config.py:76 ../mate_menu/plugins/applications.py:224
+#: ../mate_menu/plugins/applications.py:225
 msgid "Favorites"
-msgstr "Mga Paborito"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:77
 msgid "Main button"
-msgstr "Pangunahing pindutan (Main button)"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:78
 msgid "Plugins"
@@ -138,28 +137,24 @@ msgid "Always show search suggestions"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:81
-#, fuzzy
 msgid "Search Engines:"
-msgstr "Maghanap sa Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:82
 msgid "DuckDuckGo"
 msgstr ""
 
 #: ../lib/mate-menu-config.py:83
-#, fuzzy
 msgid "Google"
-msgstr "Maghanap sa Google"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:84
-#, fuzzy
 msgid "Wikipedia"
-msgstr "Maghanap sa Wikipedia"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:85
-#, fuzzy
 msgid "Dictionary"
-msgstr "Hanapin ang %s sa Diksyunaryo"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:86 ../lib/mate-menu-config.py:103
 #: ../mate_menu/plugins/places.py:149
@@ -170,7 +165,7 @@ msgstr "Computer"
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:90
 msgid "Number of columns:"
-msgstr "Bilang ng mga kolum:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:91 ../lib/mate-menu-config.py:92
 #: ../lib/mate-menu-config.py:93 ../lib/mate-menu-config.py:94
@@ -179,36 +174,36 @@ msgstr "Laki ng icon:"
 
 #: ../lib/mate-menu-config.py:95
 msgid "Hover delay (ms):"
-msgstr "Delay ng pagtapat (ms):"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr "Command para sa paghahanap:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:54
 msgid "Places"
-msgstr "Mga Lugar (Places)"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr "Payagan ang Scrollbar"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK+ Bookmarks"
-msgstr "Ipakita ang mga GTK+ Bookmark"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
-msgstr "Taas:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "I-toggle ang mga Default na mga Lugar:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr "Folder para sa Home"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:165
 msgid "Network"
@@ -224,59 +219,59 @@ msgstr "Basura"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr "Mga Custom na Lugar:"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
 msgid "System"
-msgstr "System"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "I-toggle ang mga Default na Item:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr "Tagapamahala ng Package"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
-msgstr "Control Center"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:116 ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
-msgstr "Terminal"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:117 ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
-msgstr "I-lock ang Screen"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
-msgstr "Mag Log Out"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:119 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr "Tapusin at Umalis"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr "Baguhin ang Lugar"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr "Bagong Lugar"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr "Pumili ng Folder"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:150
 msgid "Keyboard shortcut:"
-msgstr "Shortcut sa Keyboard:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:154
 msgid "Images"
@@ -284,199 +279,193 @@ msgstr ""
 
 #: ../lib/mate-menu-config.py:259
 msgid "Name"
-msgstr "Pangalan"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:260
 msgid "Path"
-msgstr "Landas (Path)"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:354 ../lib/mate-menu-config.py:385
 msgid "Name:"
-msgstr "Pangalan:"
+msgstr ""
 
 #: ../lib/mate-menu-config.py:355 ../lib/mate-menu-config.py:386
 msgid "Path:"
-msgstr "Landas (Path):"
+msgstr ""
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:219
+#: ../mate_menu/plugins/applications.py:222
 msgid "Search:"
-msgstr "Maghanap:"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:223
+#: ../mate_menu/plugins/applications.py:226
 msgid "All applications"
-msgstr "Lahat ng mga Application"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:617
-#, fuzzy, python-format
+#: ../mate_menu/plugins/applications.py:621
+#, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr "Hanapin sa Google ang %s"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:628
+#: ../mate_menu/plugins/applications.py:632
 #, python-format
 msgid "Search Google for %s"
-msgstr "Hanapin sa Google ang %s"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:639
+#: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr "Hanapin sa Wikipedia ang %s"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:660
+#: ../mate_menu/plugins/applications.py:664
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr "Hanapin ang %s sa Diksyunaryo"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:671
+#: ../mate_menu/plugins/applications.py:674
 #, python-format
 msgid "Search Computer for %s"
-msgstr "Hanapin sa Computer ang %s"
+msgstr ""
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:805
-#: ../mate_menu/plugins/applications.py:870
+#: ../mate_menu/plugins/applications.py:798
+#: ../mate_menu/plugins/applications.py:863
 msgid "Add to desktop"
-msgstr "Idagdag sa Desktop"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:806
-#: ../mate_menu/plugins/applications.py:871
+#: ../mate_menu/plugins/applications.py:799
+#: ../mate_menu/plugins/applications.py:864
 msgid "Add to panel"
-msgstr "Idagdag sa Panel"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:808
-#: ../mate_menu/plugins/applications.py:849
+#: ../mate_menu/plugins/applications.py:801
+#: ../mate_menu/plugins/applications.py:842
 msgid "Insert space"
-msgstr "Maglagay ng space"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:809
-#: ../mate_menu/plugins/applications.py:850
+#: ../mate_menu/plugins/applications.py:802
+#: ../mate_menu/plugins/applications.py:843
 msgid "Insert separator"
-msgstr "Maglagay ng separator"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:811
-#: ../mate_menu/plugins/applications.py:874
+#: ../mate_menu/plugins/applications.py:804
+#: ../mate_menu/plugins/applications.py:867
 msgid "Launch"
-msgstr "Simulan"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:812
+#: ../mate_menu/plugins/applications.py:805
 msgid "Remove from favorites"
-msgstr "Tanggalin sa mga paborito"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:814
-#: ../mate_menu/plugins/applications.py:877
+#: ../mate_menu/plugins/applications.py:807
+#: ../mate_menu/plugins/applications.py:870
 msgid "Edit properties"
-msgstr "Baguhin ang mga property"
+msgstr ""
 
 #. i18n
-#: ../mate_menu/plugins/applications.py:848
+#: ../mate_menu/plugins/applications.py:841
 msgid "Remove"
-msgstr "Alisin"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:873
+#: ../mate_menu/plugins/applications.py:866
 msgid "Show in my favorites"
-msgstr "Ipakita sa mga paborito"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:875
+#: ../mate_menu/plugins/applications.py:868
 msgid "Delete from menu"
-msgstr "Tanggalin sa menu"
-
-#: ../mate_menu/plugins/applications.py:919
-#, fuzzy
-msgid "Search DuckDuckGo"
-msgstr "Maghanap sa Google"
+msgstr ""
 
 #: ../mate_menu/plugins/applications.py:926
+msgid "Search DuckDuckGo"
+msgstr ""
+
+#: ../mate_menu/plugins/applications.py:930
 msgid "Search Google"
-msgstr "Maghanap sa Google"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:933
+#: ../mate_menu/plugins/applications.py:934
 msgid "Search Wikipedia"
-msgstr "Maghanap sa Wikipedia"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:943
+#: ../mate_menu/plugins/applications.py:941
 msgid "Lookup Dictionary"
 msgstr ""
 
-#: ../mate_menu/plugins/applications.py:950
+#: ../mate_menu/plugins/applications.py:948
 msgid "Search Computer"
-msgstr "Maghanap sa Computer"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:1361
-#, fuzzy
+#: ../mate_menu/plugins/applications.py:1355
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
-"Hindi mai-save ang mga paborito. Siguraduhing pwede kang magsulat sa ~/."
-"linuxmint/mintMenu"
 
-#: ../mate_menu/plugins/applications.py:1571
+#: ../mate_menu/plugins/applications.py:1565
 msgid "All"
-msgstr "Lahat"
+msgstr ""
 
-#: ../mate_menu/plugins/applications.py:1571
+#: ../mate_menu/plugins/applications.py:1565
 msgid "Show all applications"
-msgstr "Ipakita lahat ang mga application"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "Mag-install, magtanggal at mag-upgrade ng mga software package"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr "Ayusin ang iyong system"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr "Gamitin ang command line"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr "Kailangan ng password para mabuksan"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr "Mag-logout"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr "Mag-logout o magpalit ng user"
+msgstr ""
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "I-shutdown, i-restart, i-suspend o mag-hibernate"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"Tingnan ang lahat ng local at remote na mga disk at mga folder na kayang i-"
-"access ng computer na ito"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr "Buksan ang iyong personal folder"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "Tingnan ang mga nai-bookmark na local network locations"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr "Tingnan ang mga item na inilagay sa desktop"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr "Tingnan ang mga binurang file"
+msgstr ""
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr "Linisin ang basura"
+msgstr ""
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr "Mga document kamakailan"
+msgstr ""
 
 #: ../mate_menu/keybinding.py:220
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
@@ -497,87 +486,3 @@ msgstr ""
 #: ../mate_menu/keybinding.py:297
 msgid "<not set>"
 msgstr ""
-
-#~ msgid "Use custom colors"
-#~ msgstr "Gumamit ng nais na kulay"
-
-#~ msgid "Theme"
-#~ msgstr "Tema"
-
-#~ msgid "Background:"
-#~ msgstr "Background:"
-
-#~ msgid "Headings:"
-#~ msgstr "Mga heading:"
-
-#~ msgid "Borders:"
-#~ msgstr "Mga border:"
-
-#~ msgid "Theme:"
-#~ msgstr "Tema:"
-
-#~ msgid "Button icon:"
-#~ msgstr "Icon ng pindutan:"
-
-#~ msgid "Desktop theme"
-#~ msgstr "Tema ng Desktop"
-
-#~ msgid "Opacity:"
-#~ msgstr "Opacity:"
-
-#~ msgid "Launch when I log in"
-#~ msgstr "Simulan kapag nag-log in ako"
-
-#~ msgid "Software Manager"
-#~ msgstr "Tagapamahala ng Software"
-
-#~ msgid "Install package '%s'"
-#~ msgstr "I-install ang package na '%s'"
-
-#~ msgid "Uninstall"
-#~ msgstr "I-uninstall"
-
-#~ msgid "Find Software"
-#~ msgstr "Maghanap ng Software"
-
-#~ msgid "Find Tutorials"
-#~ msgstr "Maghanap ng mga Tutorial"
-
-#~ msgid "Find Hardware"
-#~ msgstr "Maghanap ng Hardware"
-
-#~ msgid "Find Ideas"
-#~ msgstr "Maghanap ng mga ideya"
-
-#~ msgid "Find Users"
-#~ msgstr "Mgahanap ng mga User"
-
-#~ msgid "Browse and install available software"
-#~ msgstr "Maghanap at mag-install ng mga available na software"
-
-#~ msgid "Based on USP from S.Chanderbally"
-#~ msgstr "Hango sa USP ni S.Chanderbally"
-
-#~ msgid "Please wait, this can take some time"
-#~ msgstr "Mangyaring maghintay, ito ay maaaring tumagal ng ilang minuto"
-
-#~ msgid "Advanced Gnome Menu"
-#~ msgstr "Advance na Menu para sa Gnome"
-
-#~ msgid "Application removed successfully"
-#~ msgstr "Natanggal ng maayos ang application"
-
-#~ msgid "Do you want to remove this menu entry?"
-#~ msgstr "Gusto mo bang tanggalin ang menu entry na ito?"
-
-#~ msgid "Packages to be removed"
-#~ msgstr "Mga package na tatanggalin"
-
-#~ msgid "Remove %s?"
-#~ msgstr "Tanggalin ang %s?"
-
-#~ msgid "The following packages will be removed:"
-#~ msgstr "Ang mga sumusunod na package ay tatanggalin:"
-
-#~ msgid "No matching package found"
-#~ msgstr "Walang package na magmamatch ang nakita"
