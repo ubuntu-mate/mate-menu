@@ -408,7 +408,7 @@ class ApplicationLauncher( easyButton ):
         return True
 
     def strip_accents(self, value):
-        return unidecode.unidecode(value)
+        return value
 
     def getTooltip( self ):
         tooltip = self.appName
