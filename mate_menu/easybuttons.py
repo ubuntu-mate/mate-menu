@@ -21,7 +21,6 @@
 import os
 import re
 import shutil
-import unidecode
 import xdg.DesktopEntry
 import xdg.Menu
 
@@ -329,10 +328,10 @@ class ApplicationLauncher( easyButton ):
 
     def loadDesktopEntry( self, desktopItem ):
         try:
-            self.appName = self.strip_accents(desktopItem.getName())
-            self.appGenericName = self.strip_accents(desktopItem.getGenericName())
-            self.appComment = self.strip_accents(desktopItem.getComment())
-            self.appExec = self.strip_accents(desktopItem.getExec().replace('\\\\', '\\'))
+            self.appName = desktopItem.getName()
+            self.appGenericName = desktopItem.getGenericName()
+            self.appComment = desktopItem.getComment()
+            self.appExec = desktopItem.getExec().replace('\\\\', '\\')
             self.appIconName = desktopItem.getIcon()
             self.appCategories = desktopItem.getCategories()
             self.appMateDocPath = desktopItem.get( "X-MATE-DocPath" ) or ""
@@ -382,7 +381,7 @@ class ApplicationLauncher( easyButton ):
         appComment = self.appComment.lower()
         appExec = self.appExec.lower()
         for keyword in keywords:
-            keyw = self.strip_accents(keyword)
+            keyw = keyword
 
             # Hide if the term does not match
             if keyw != "" and appName.find( keyw ) == -1 and appGenericName.find( keyw ) == -1 and appComment.find( keyw ) == -1 and appExec.find( keyw ) == -1:
@@ -406,9 +405,6 @@ class ApplicationLauncher( easyButton ):
 
         self.show()
         return True
-
-    def strip_accents(self, value):
-        return value
 
     def getTooltip( self ):
         tooltip = self.appName

@@ -117,7 +117,7 @@ setup(
     #     '': '.',
     # },
     data_files = data_files,
-    install_requires = [ 'setuptools', 'configobj', 'unidecode' ],
+    install_requires = [ 'setuptools', 'configobj' ],
     scripts = [ 'mate-menu' ],
     cmdclass = cmdclass,
     zip_safe = True,
