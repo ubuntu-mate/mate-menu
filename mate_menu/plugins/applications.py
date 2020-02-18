@@ -32,7 +32,6 @@ import shlex
 import subprocess
 import filecmp
 from mate_menu.easybuttons import *
-from mate_menu.execute import Execute
 from mate_menu.easygsettings import EasyGSettings
 from mate_menu.easyfiles import *
 

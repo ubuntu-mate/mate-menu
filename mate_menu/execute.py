@@ -19,8 +19,8 @@
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 import os
-import shlex
-import subprocess
+
+from gi.repository import Gdk, Gtk, Gio
 
 def RemoveArgs(Execline):
 	NewExecline = []
@@ -33,21 +33,34 @@ def RemoveArgs(Execline):
 			NewExecline.append(elem)
 	return NewExecline
 
-# Actually execute the command
-def ExecuteCommand(cmd , commandCwd=None):
-	if not commandCwd:
-		cwd = os.path.expanduser( "~" );
-	else:
+# Actually launch the application
+def Launch(cmd, cwd=None):
+	if cwd:
+		cmd = cwd + ' ' + cmd
+
+	app_info = Gio.AppInfo.create_from_commandline(cmd,
+						       None,
+						       Gio.AppInfoCreateFlags.SUPPORTS_STARTUP_NOTIFICATION)
+
+	display = Gdk.Display.get_default()
+	context = display.get_app_launch_context()
+	context.set_desktop(-1) # use default screen & desktop
+	context.set_timestamp(Gtk.get_current_event_time())
+
+	app_info.launch(None, context)
+
+def Execute(cmd , commandCwd=None):
+	if commandCwd:
 		tmpCwd = os.path.expanduser( commandCwd );
 		if (os.path.exists(tmpCwd)):
 			cwd = tmpCwd
+	else:
+		cwd = None
 
 	if isinstance( cmd, str ):
 		if (cmd.find("/home/") >= 0) or (cmd.find("xdg-su") >= 0) or (cmd.find("\"") >= 0):
-			print("running manually...")
 			try:
-				os.chdir(cwd)
-				subprocess.Popen(shlex.split(cmd))
+				Launch(cmd, cwd)
 				return True
 			except Exception as detail:
 				print(detail)
@@ -56,19 +69,9 @@ def ExecuteCommand(cmd , commandCwd=None):
 	cmd = RemoveArgs(cmd)
 
 	try:
-		os.chdir( cwd )
 		string = ' '.join(cmd)
-		subprocess.Popen(shlex.split(string))
+		Launch(string, cwd)
 		return True
 	except Exception as detail:
 		print(detail)
 		return False
-
-# Execute cmd using the double fork method
-def Execute(cmd, commandCwd=None):
-	child_pid = os.fork()
-	if child_pid == 0:
-		ExecuteCommand(cmd, commandCwd)
-		os._exit(0)
-	else:
-		os.wait()
