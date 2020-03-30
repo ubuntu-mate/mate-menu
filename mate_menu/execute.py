@@ -36,7 +36,7 @@ def RemoveArgs(Execline):
 # Actually launch the application
 def Launch(cmd, cwd=None):
 	if cwd:
-		cmd = cwd + ' ' + cmd
+		os.chdir(cwd)
 
 	app_info = Gio.AppInfo.create_from_commandline(cmd,
 						       None,
