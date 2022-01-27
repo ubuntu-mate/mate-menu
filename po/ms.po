@@ -1,21 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
-# abuyop <abuyop@gmail.com>, 2015,2017,2019
+# abuyop <abuyop@gmail.com>, 2015,2017,2019,2021
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 22:41+0000\n"
-"PO-Revision-Date: 2019-10-13 00:54+0000\n"
+"PO-Revision-Date: 2021-03-22 03:13+0000\n"
 "Last-Translator: abuyop <abuyop@gmail.com>\n"
 "Language-Team: Malay (http://www.transifex.com/mate/MATE/language/ms/)\n"
-"Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ms\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:58
@@ -25,11 +25,11 @@ msgstr "Menu"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:196
 msgid "Couldn't load plugin:"
-msgstr "Tidak dapat muatkan pemalam:"
+msgstr "Tidak dapat memuatkan palam:"
 
 #: ../lib/mate-menu.py:265
 msgid "Couldn't initialize plugin"
-msgstr "Tidak dapat awalkan pemalam"
+msgstr "Tidak dapat mengasalkan palam"
 
 #: ../lib/mate-menu.py:640
 msgid "An Advanced Menu for the MATE Desktop"
@@ -45,7 +45,7 @@ msgstr "Sunting menu"
 
 #: ../lib/mate-menu.py:765
 msgid "Reload plugins"
-msgstr "Muat semula pemalam"
+msgstr "Muat semula palam"
 
 #: ../lib/mate-menu.py:768
 msgid "About"
@@ -66,19 +66,19 @@ msgstr "Tunjuk ikon butang"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show recent documents plugin"
-msgstr "Tunjuk pemalam dokumen baru-baru ini"
+msgstr "Tunjuk palam dokumen baru-baru ini"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show applications plugin"
-msgstr "Tunjuk pemalam aplikasi"
+msgstr "Tunjuk palam aplikasi"
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show system plugin"
-msgstr "Tunjuk pemalam sistem"
+msgstr "Tunjuk palam sistem"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show places plugin"
-msgstr "Tunjuk pemalam tempat"
+msgstr "Tunjuk palam tempat"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Show application comments"
@@ -131,7 +131,7 @@ msgstr "Butang utama"
 
 #: ../lib/mate-menu-config.py:78
 msgid "Plugins"
-msgstr "Pemalam"
+msgstr "Palam"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Always show search suggestions"
@@ -231,22 +231,26 @@ msgstr "Sistem"
 msgid "Toggle Default Items:"
 msgstr "Togol Item Lalai;"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/system_management.py:153
+#: ../lib/mate-menu-config.py:114
+#: ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
 msgstr "Pengurus Pakej"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/system_management.py:172
+#: ../lib/mate-menu-config.py:115
+#: ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
 msgstr "Pusat Kawalan"
 
-#: ../lib/mate-menu-config.py:116 ../mate_menu/plugins/system_management.py:179
+#: ../lib/mate-menu-config.py:116
+#: ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
 msgstr "Terminal"
 
-#: ../lib/mate-menu-config.py:117 ../mate_menu/plugins/system_management.py:193
+#: ../lib/mate-menu-config.py:117
+#: ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
 msgstr "Kunci Skrin"
 
@@ -254,7 +258,8 @@ msgstr "Kunci Skrin"
 msgid "Log Out"
 msgstr "Daftar Keluar"
 
-#: ../lib/mate-menu-config.py:119 ../mate_menu/plugins/system_management.py:211
+#: ../lib/mate-menu-config.py:119
+#: ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
 msgstr "Keluar"
 
@@ -400,9 +405,7 @@ msgstr "Gelintar Komputer"
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"Tidak dapat simpan kegemaran. Periksa sama ada anda telah membuat capaian "
-"tulis kepada  ~/.config/mate-menu"
+msgstr "Tidak dapat simpan kegemaran. Periksa sama ada anda telah membuat capaian tulis kepada  ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1565
 msgid "All"
@@ -443,9 +446,7 @@ msgstr "Matikan, mula semula, tangguh atau hibernasi"
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"Layar semua cakera jauh dan setempat serta folder boleh capai dari komputer "
-"ini"
+msgstr "Layar semua cakera jauh dan setempat serta folder boleh capai dari komputer ini"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
@@ -474,8 +475,7 @@ msgstr "Dokumen baru-baru ini"
 
 #: ../mate_menu/keybinding.py:220
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"Klik untuk tetapkan kekunci pemecut baharu untuk membuka dan menutup menu."
+msgstr "Klik untuk tetapkan kekunci pemecut baharu untuk membuka dan menutup menu."
 
 #: ../mate_menu/keybinding.py:221
 msgid "Press Escape or click again to cancel the operation.  "

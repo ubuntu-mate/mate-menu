@@ -1,30 +1,30 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Bode Xeroso <timote2098@gmail.com>, 2017
 # Fabiano Pontes <fabiano.pontesc@gmail.com>, 2017
 # Fabio Beneditto <kamikazenh@gmail.com>, 2016
 # Jonatas da Silva Teixeira <jonatasteixeira@id.uff.br>, 2017
-# Marcelo Ghelman <marcelo.ghelman@gmail.com>, 2015-2017
-# Marcio Andre Padula <padula1000@gmail.com>, 2015
+# Marcelo Ghelman <marcelo.ghelman@gmail.com>, 2015-2017,2020
+# 3f37d448649cd548fa5a733e33387c2a_dee4ccf, 2015
 # 710a500dd1d5560bb05c8b24814b8c26, 2017
 # Paulo Henrique de Sousa <simbios.devs@gmail.com>, 2016
+# Rafael Sachetto <rsachetto@gmail.com>, 2021
 # Roger Araújo <roger.rf@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 22:41+0000\n"
-"PO-Revision-Date: 2019-09-28 20:08+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/mate/MATE/"
-"language/pt_BR/)\n"
-"Language: pt_BR\n"
+"PO-Revision-Date: 2021-07-14 14:09+0000\n"
+"Last-Translator: Rafael Sachetto <rsachetto@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/mate/MATE/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../lib/mate-menu.py:58
@@ -42,7 +42,7 @@ msgstr "Não foi possível iniciar o plugin"
 
 #: ../lib/mate-menu.py:640
 msgid "An Advanced Menu for the MATE Desktop"
-msgstr ""
+msgstr "Um menu avançado para o MATE Desktop"
 
 #: ../lib/mate-menu.py:759
 msgid "Preferences"
@@ -240,22 +240,26 @@ msgstr "Sistema"
 msgid "Toggle Default Items:"
 msgstr "Alternar itens padrão:"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/system_management.py:153
+#: ../lib/mate-menu-config.py:114
+#: ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
 msgstr "Gerenciador de pacotes"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/system_management.py:172
+#: ../lib/mate-menu-config.py:115
+#: ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
 msgstr "Centro de controle"
 
-#: ../lib/mate-menu-config.py:116 ../mate_menu/plugins/system_management.py:179
+#: ../lib/mate-menu-config.py:116
+#: ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
 msgstr "Terminal"
 
-#: ../lib/mate-menu-config.py:117 ../mate_menu/plugins/system_management.py:193
+#: ../lib/mate-menu-config.py:117
+#: ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
 msgstr "Bloquear tela"
 
@@ -263,7 +267,8 @@ msgstr "Bloquear tela"
 msgid "Log Out"
 msgstr "Encerrar sessão"
 
-#: ../lib/mate-menu-config.py:119 ../mate_menu/plugins/system_management.py:211
+#: ../lib/mate-menu-config.py:119
+#: ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
 msgstr "Sair"
 
@@ -409,9 +414,7 @@ msgstr "Pesquisar no computador"
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"Não foi possível salvar nos favoritos. Verifique se você tem permissão de "
-"gravação no arquivo ~/.config/mate-menu"
+msgstr "Não foi possível salvar nos favoritos. Verifique se você tem permissão de gravação no arquivo ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1565
 msgid "All"
@@ -452,9 +455,7 @@ msgstr "Desligar, reiniciar, suspender ou hibernar"
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"Navegar em todos os discos e pastas, locais e remotos, acessíveis a partir "
-"deste computador"
+msgstr "Navegar em todos os discos e pastas, locais e remotos, acessíveis a partir deste computador"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
@@ -483,12 +484,11 @@ msgstr "Documentos recentes"
 
 #: ../mate_menu/keybinding.py:220
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"Clique para definir uma nova tecla aceleradora para abrir e fechar o menu.  "
+msgstr "Clique para definir uma nova tecla aceleradora para abrir e fechar o menu.  "
 
 #: ../mate_menu/keybinding.py:221
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Tecle Escape ou clique novamente para cancelar a operação.  "
+msgstr "Tecle Esc ou clique novamente para cancelar a operação.  "
 
 #: ../mate_menu/keybinding.py:222
 msgid "Press Backspace to clear the existing keybinding."

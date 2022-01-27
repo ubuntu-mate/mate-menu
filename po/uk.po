@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Bohdan Kovalchuk <neostanniy@gmail.com>, 2017
 # zubr139, 2017
-# Микола Ткач <chistomov@gmail.com>, 2019
+# Микола Ткач <chistomov@gmail.com>, 2019,2021
 # Микола Ткач <chistomov@gmail.com>, 2015-2016
 # Микола Ткач <chistomov@gmail.com>, 2017-2018
 msgid ""
@@ -13,17 +13,14 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 22:41+0000\n"
-"PO-Revision-Date: 2019-12-01 13:50+0000\n"
+"PO-Revision-Date: 2021-03-26 04:16+0000\n"
 "Last-Translator: Микола Ткач <chistomov@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/mate/MATE/language/uk/)\n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
-"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
-"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
-"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #: ../lib/mate-menu.py:58
 msgid "Menu"
@@ -207,7 +204,7 @@ msgstr "Висота:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr "Відображати позначені місця:"
+msgstr "Показувати позначені місця:"
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
@@ -236,24 +233,28 @@ msgstr "Система"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr "Відображати позначені елементи"
+msgstr "Показувати позначені елементи"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/system_management.py:153
+#: ../lib/mate-menu-config.py:114
+#: ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
 msgstr "Керування пакунками"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/system_management.py:172
+#: ../lib/mate-menu-config.py:115
+#: ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
 msgstr "Центр керування"
 
-#: ../lib/mate-menu-config.py:116 ../mate_menu/plugins/system_management.py:179
+#: ../lib/mate-menu-config.py:116
+#: ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
 msgstr "Термінал"
 
-#: ../lib/mate-menu-config.py:117 ../mate_menu/plugins/system_management.py:193
+#: ../lib/mate-menu-config.py:117
+#: ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
 msgstr "Заблокувати екран"
 
@@ -261,7 +262,8 @@ msgstr "Заблокувати екран"
 msgid "Log Out"
 msgstr "Завершити сеанс"
 
-#: ../lib/mate-menu-config.py:119 ../mate_menu/plugins/system_management.py:211
+#: ../lib/mate-menu-config.py:119
+#: ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
 msgstr "Вийти"
 
@@ -275,11 +277,11 @@ msgstr "Створити"
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr "Вибрати теку"
+msgstr "Обрати теку"
 
 #: ../lib/mate-menu-config.py:150
 msgid "Keyboard shortcut:"
-msgstr "Скорочення клавіш:"
+msgstr "Скорочення клавішів:"
 
 #: ../lib/mate-menu-config.py:154
 msgid "Images"
@@ -407,9 +409,7 @@ msgstr "Пошук на комп’ютері"
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"Не можу зберегти улюблене. Перевірте, чи є в Вас доступ для запису у ~/."
-"config/mate-menu"
+msgstr "Не можу зберегти улюблене. Перевірте, чи є у Вас доступ для запису в ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1565
 msgid "All"
@@ -417,11 +417,11 @@ msgstr "Усі"
 
 #: ../mate_menu/plugins/applications.py:1565
 msgid "Show all applications"
-msgstr "Показати усі застосунки"
+msgstr "Показати всі застосунки"
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr "Встановлення, вилучення та оновлення пакунків програм"
+msgstr "Встановлення, вилучення й оновлення пакунків програм"
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
@@ -441,18 +441,16 @@ msgstr "Завершити сеанс"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr "Завершити сеанс або змінити користувача"
+msgstr "Завершити сеанс, або змінити користувача"
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr "Вимкнути, перезавантажити, призупинити або режим сну"
+msgstr "Вимкнути, перезавантажити, призупинити, або режим сну"
 
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"Переглянути усі локальні та віддалені диски і теки, доступні з цього "
-"комп’ютера"
+msgstr "Переглянути всі локальні та віддалені диски та теки, доступні з цього комп’ютера"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
@@ -481,20 +479,19 @@ msgstr "Нещодавні документи"
 
 #: ../mate_menu/keybinding.py:220
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"Клацніть для вказування нової гарячої клавіші відкриття\\закриття меню."
+msgstr "Кнапайте для вказування нового гарячого клавіша відкриття\\закриття меню."
 
 #: ../mate_menu/keybinding.py:221
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr "Натисніть Escape або клацніть знову щоб скасувати операцію."
+msgstr "Натисніть Escape, або клацніть знову щоб скасувати операцію."
 
 #: ../mate_menu/keybinding.py:222
 msgid "Press Backspace to clear the existing keybinding."
-msgstr "Натисніть Backspace, щоб очистити існуючу прив’язку клявіш."
+msgstr "Натисніть Backspace, щоб очистити наявну прив’язку клавішів."
 
 #: ../mate_menu/keybinding.py:241
 msgid "Pick an accelerator"
-msgstr "Виберіть гарячу клавішу"
+msgstr "Оберіть гарячий клавіш"
 
 #: ../mate_menu/keybinding.py:297
 msgid "<not set>"

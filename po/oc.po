@@ -1,23 +1,24 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Cédric Valmary <cvalmary@yahoo.fr>, 2015-2016
-# Quentin, 2020
+# Quentin PAGÈS, 2020
+# Quentin PAGÈS, 2020-2021
+# Quentin PAGÈS, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 22:41+0000\n"
-"PO-Revision-Date: 2020-02-10 21:03+0000\n"
-"Last-Translator: Quentin\n"
-"Language-Team: Occitan (post 1500) (http://www.transifex.com/mate/MATE/"
-"language/oc/)\n"
-"Language: oc\n"
+"PO-Revision-Date: 2021-11-19 09:56+0000\n"
+"Last-Translator: Quentin PAGÈS\n"
+"Language-Team: Occitan (post 1500) (http://www.transifex.com/mate/MATE/language/oc/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: oc\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../lib/mate-menu.py:58
@@ -27,15 +28,15 @@ msgstr "Menú"
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:196
 msgid "Couldn't load plugin:"
-msgstr "Impossible de cargar l'empeuton ;"
+msgstr "Impossible de cargar l'empeuton :"
 
 #: ../lib/mate-menu.py:265
 msgid "Couldn't initialize plugin"
-msgstr ""
+msgstr "Inicializacion impossibla del plugin"
 
 #: ../lib/mate-menu.py:640
 msgid "An Advanced Menu for the MATE Desktop"
-msgstr ""
+msgstr "Un menú avançat per l’environament de burèu MATE"
 
 #: ../lib/mate-menu.py:759
 msgid "Preferences"
@@ -60,7 +61,7 @@ msgstr "Preferéncias del menú"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr ""
+msgstr "Totjorn començar amb lo panèl dels favorits"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
@@ -76,19 +77,19 @@ msgstr "Afichar l'empeuton de las aplicacions"
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show system plugin"
-msgstr ""
+msgstr "Afichar los plugin sistèma"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show places plugin"
-msgstr ""
+msgstr "Afichar los plugin d’emplaçaments"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Show application comments"
-msgstr ""
+msgstr "Afichar los comentaris d’aplicacion"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show category icons"
-msgstr ""
+msgstr "Mostrar las icònas de categoria"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Hover"
@@ -96,11 +97,11 @@ msgstr "Susvòl de cursor"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Remember the last category or search"
-msgstr ""
+msgstr "Se remembrar de la darrièra categoria o recèrca"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Swap name and generic name"
-msgstr ""
+msgstr "Intervertir nom e nom generic"
 
 #: ../lib/mate-menu-config.py:69
 msgid "Border width:"
@@ -137,7 +138,7 @@ msgstr "Empeutons"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "Totjorn afichar las suggestions de recèrca"
 
 #: ../lib/mate-menu-config.py:81
 msgid "Search Engines:"
@@ -177,11 +178,11 @@ msgstr "Talha de l'icòna :"
 
 #: ../lib/mate-menu-config.py:95
 msgid "Hover delay (ms):"
-msgstr ""
+msgstr "Relambi de subrevòl (ms) :"
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr ""
+msgstr "Recercar comanda :"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:54
@@ -190,11 +191,11 @@ msgstr "Acorchis"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr ""
+msgstr "Autorizar barra de desfilament"
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK+ Bookmarks"
-msgstr ""
+msgstr "Afichar los marcapaginas GTK"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
@@ -202,11 +203,11 @@ msgstr "Nautor :"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr ""
+msgstr "Alternar los emplaçaments per defaut :"
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr "Dorsièr personal"
+msgstr "Dossièr personal"
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:165
 msgid "Network"
@@ -222,7 +223,7 @@ msgstr "Escobilhièr"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr ""
+msgstr "Emplaçaments personalizats :"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
@@ -231,24 +232,28 @@ msgstr "Sistèma"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr ""
+msgstr "Alternar los elements per defaut :"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/system_management.py:153
+#: ../lib/mate-menu-config.py:114
+#: ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr ""
+msgstr "Gestionari de paquets"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/system_management.py:172
+#: ../lib/mate-menu-config.py:115
+#: ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
 msgstr "Centre de contraròtle"
 
-#: ../lib/mate-menu-config.py:116 ../mate_menu/plugins/system_management.py:179
+#: ../lib/mate-menu-config.py:116
+#: ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
 msgstr "Terminal"
 
-#: ../lib/mate-menu-config.py:117 ../mate_menu/plugins/system_management.py:193
+#: ../lib/mate-menu-config.py:117
+#: ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
 msgstr "Varrolhar l'ecran"
 
@@ -256,7 +261,8 @@ msgstr "Varrolhar l'ecran"
 msgid "Log Out"
 msgstr "Desconnexion"
 
-#: ../lib/mate-menu-config.py:119 ../mate_menu/plugins/system_management.py:211
+#: ../lib/mate-menu-config.py:119
+#: ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
 msgstr "Quitar"
 
@@ -308,7 +314,7 @@ msgstr "Totas las aplicacions"
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr ""
+msgstr "Recercar %s amb DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:632
 #, python-format
@@ -328,7 +334,7 @@ msgstr "Consultar %s dins Diccionari"
 #: ../mate_menu/plugins/applications.py:674
 #, python-format
 msgid "Search Computer for %s"
-msgstr ""
+msgstr "Recercar %s dins l’ordenador"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:798
@@ -372,7 +378,7 @@ msgstr "Suprimir"
 
 #: ../mate_menu/plugins/applications.py:866
 msgid "Show in my favorites"
-msgstr ""
+msgstr "Afichar dins mos favorits"
 
 #: ../mate_menu/plugins/applications.py:868
 msgid "Delete from menu"
@@ -380,7 +386,7 @@ msgstr "Suprimir del menú"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Search DuckDuckGo"
-msgstr ""
+msgstr "Recèrca DuckDuckGo"
 
 #: ../mate_menu/plugins/applications.py:930
 msgid "Search Google"
@@ -402,7 +408,7 @@ msgstr "Recèrca sus l'ordenador"
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
+msgstr "Salvagarda impossibla dels favorits. Verificatz qu’avètz l’accès en escritura a  ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1565
 msgid "All"
@@ -410,11 +416,11 @@ msgstr "Totes"
 
 #: ../mate_menu/plugins/applications.py:1565
 msgid "Show all applications"
-msgstr ""
+msgstr "Mostrar totas las aplicacions"
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr ""
+msgstr "Installar, suprimir e actualizar los paquets logicials"
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
@@ -426,7 +432,7 @@ msgstr "Utilizar la linha de comanda"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr ""
+msgstr "Requerís un senhal per desverrolhar"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
@@ -434,22 +440,20 @@ msgstr "Desconnexion"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr ""
+msgstr "Se desconnectar o cambiar d’utilizaire"
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr ""
+msgstr "Atudar, reaviar, metre en velha o ivernar"
 
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"Explorar totes los discs e repertòris locals e distants que son accessibles "
-"a partir de l'ordenador"
+msgstr "Percórrer totes los disques e repertòris locals e distants que son accessibles a partir de l'ordenador"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr "Dobrir vòstre dorsièr personal"
+msgstr "Dobrir vòstre dossièr personal"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
@@ -457,11 +461,11 @@ msgstr "Explorar los emplaçaments dins los favorits e la ret locala"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr ""
+msgstr "Percórrer los elements plaçats al burèu"
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr ""
+msgstr "Percórrer los fichièrs suprimits"
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
@@ -474,15 +478,15 @@ msgstr "Documents recents"
 
 #: ../mate_menu/keybinding.py:220
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
+msgstr "Clicatz per definir una tòca d’acceleracion novèla per dobrir e tampar lo menú. "
 
 #: ../mate_menu/keybinding.py:221
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr ""
+msgstr "Quichatz Escapar o clicatz de nòu per anullar l’operacion. "
 
 #: ../mate_menu/keybinding.py:222
 msgid "Press Backspace to clear the existing keybinding."
-msgstr ""
+msgstr "Quichatz sus Retorn arrièr per escafar l'acorchi de clavièr."
 
 #: ../mate_menu/keybinding.py:241
 msgid "Pick an accelerator"
@@ -490,4 +494,4 @@ msgstr "Causir un acorchi"
 
 #: ../mate_menu/keybinding.py:297
 msgid "<not set>"
-msgstr ""
+msgstr "<pas definit>"

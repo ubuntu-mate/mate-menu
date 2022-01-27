@@ -1,22 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2015
 # 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2016-2017
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 22:41+0000\n"
-"PO-Revision-Date: 2019-09-28 20:08+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"PO-Revision-Date: 2021-05-17 06:13+0000\n"
+"Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/mate/MATE/language/ko/)\n"
-"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:58
@@ -34,7 +35,7 @@ msgstr "플러그인을 초기화할 수 없습니다"
 
 #: ../lib/mate-menu.py:640
 msgid "An Advanced Menu for the MATE Desktop"
-msgstr ""
+msgstr "마테 데스크톱 고급 메뉴"
 
 #: ../lib/mate-menu.py:759
 msgid "Preferences"
@@ -232,22 +233,26 @@ msgstr "시스템"
 msgid "Toggle Default Items:"
 msgstr "기본 항목 표시:"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/system_management.py:153
+#: ../lib/mate-menu-config.py:114
+#: ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
 msgstr "패키지 관리자"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/system_management.py:172
+#: ../lib/mate-menu-config.py:115
+#: ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
 msgstr "제어 센터"
 
-#: ../lib/mate-menu-config.py:116 ../mate_menu/plugins/system_management.py:179
+#: ../lib/mate-menu-config.py:116
+#: ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
 msgstr "터미널"
 
-#: ../lib/mate-menu-config.py:117 ../mate_menu/plugins/system_management.py:193
+#: ../lib/mate-menu-config.py:117
+#: ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
 msgstr "화면 잠그기"
 
@@ -255,7 +260,8 @@ msgstr "화면 잠그기"
 msgid "Log Out"
 msgstr "로그아웃"
 
-#: ../lib/mate-menu-config.py:119 ../mate_menu/plugins/system_management.py:211
+#: ../lib/mate-menu-config.py:119
+#: ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
 msgstr "끝내기"
 
@@ -401,9 +407,7 @@ msgstr "컴퓨터에서 검색"
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"즐겨찾기를 저장할 수 없습니다. ~/.config/mate-menu에 쓰기 권한이 있나 확인해 "
-"주세요"
+msgstr "즐겨찾기를 저장할 수 없습니다. ~/.config/mate-menu에 쓰기 권한이 있나 확인해 주세요"
 
 #: ../mate_menu/plugins/applications.py:1565
 msgid "All"
@@ -444,8 +448,7 @@ msgstr "끄기, 다시 시작, 대기 또는 휴면"
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"이 컴퓨터에서 접근할 수 있는 모든 로컬 및 원격 디스크와 폴더를 살펴봅니다"
+msgstr "이 컴퓨터에서 접근할 수 있는 모든 로컬 및 원격 디스크와 폴더를 살펴봅니다"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"

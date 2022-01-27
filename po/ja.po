@@ -1,9 +1,10 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # あわしろいくや <ikunya@gmail.com>, 2015
+# Green, 2021
 # Satoru SATOH <ss@gnome.gr.jp>, 2004
 # Rockers <sumorock@hotmail.com>, 2018
 msgid ""
@@ -11,13 +12,13 @@ msgstr ""
 "Project-Id-Version: MATE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 22:41+0000\n"
-"PO-Revision-Date: 2019-09-28 20:08+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"PO-Revision-Date: 2021-05-14 03:51+0000\n"
+"Last-Translator: Green\n"
 "Language-Team: Japanese (http://www.transifex.com/mate/MATE/language/ja/)\n"
-"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../lib/mate-menu.py:58
@@ -35,7 +36,7 @@ msgstr "プラグインを初期化できません"
 
 #: ../lib/mate-menu.py:640
 msgid "An Advanced Menu for the MATE Desktop"
-msgstr ""
+msgstr "MATE デスクトップの上級者向けメニュー"
 
 #: ../lib/mate-menu.py:759
 msgid "Preferences"
@@ -233,22 +234,26 @@ msgstr "システム"
 msgid "Toggle Default Items:"
 msgstr "既定のアイテムの表示と非表示:"
 
-#: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/system_management.py:153
+#: ../lib/mate-menu-config.py:114
+#: ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
 msgstr "パッケージマネージャ"
 
-#: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/system_management.py:172
+#: ../lib/mate-menu-config.py:115
+#: ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
 msgstr "コントロールセンター"
 
-#: ../lib/mate-menu-config.py:116 ../mate_menu/plugins/system_management.py:179
+#: ../lib/mate-menu-config.py:116
+#: ../mate_menu/plugins/system_management.py:179
 msgid "Terminal"
 msgstr "端末"
 
-#: ../lib/mate-menu-config.py:117 ../mate_menu/plugins/system_management.py:193
+#: ../lib/mate-menu-config.py:117
+#: ../mate_menu/plugins/system_management.py:193
 msgid "Lock Screen"
 msgstr "画面のロック"
 
@@ -256,7 +261,8 @@ msgstr "画面のロック"
 msgid "Log Out"
 msgstr "ログアウト"
 
-#: ../lib/mate-menu-config.py:119 ../mate_menu/plugins/system_management.py:211
+#: ../lib/mate-menu-config.py:119
+#: ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
 msgstr "終了"
 
@@ -402,9 +408,7 @@ msgstr "コンピューターを検索"
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
-msgstr ""
-"お気に入りを保存できませんでした。~/.config/mate-menuに書き込めるか確認してく"
-"ださい"
+msgstr "お気に入りを保存できませんでした。~/.config/mate-menuに書き込めるか確認してください"
 
 #: ../mate_menu/plugins/applications.py:1565
 msgid "All"
@@ -445,9 +449,7 @@ msgstr "終了、再起動、サスペンドまたはハイバネート"
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
-msgstr ""
-"このコンピューターからアクセスできるすべてのローカルとリモートにあるディスク"
-"とフォルダーを閲覧する"
+msgstr "このコンピューターからアクセスできるすべてのローカルとリモートにあるディスクとフォルダーを閲覧する"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
@@ -476,13 +478,11 @@ msgstr "最近のドキュメント"
 
 #: ../mate_menu/keybinding.py:220
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
-msgstr ""
-"クリックしてメニューの開閉に使用する新しいアクセラレーターを設定します。"
+msgstr "クリックしてメニューの開閉に使用する新しいアクセラレーターを設定します。"
 
 #: ../mate_menu/keybinding.py:221
 msgid "Press Escape or click again to cancel the operation.  "
-msgstr ""
-"エスケープキーを押すかもう一度クリックするとこの操作をキャンセルできます。"
+msgstr "ESC キーを押すかもう一度クリックすると、この操作をキャンセルできます。"
 
 #: ../mate_menu/keybinding.py:222
 msgid "Press Backspace to clear the existing keybinding."
