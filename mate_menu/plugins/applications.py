@@ -1454,11 +1454,11 @@ class pluginclass( object ):
                             startId = item["button"].connect( "enter", self.StartFilter, item["filter"] )
                             stopId = item["button"].connect( "leave", self.StopFilter )
                             item["button"].mouseOverHandlerIds = ( startId, stopId )
+                            item["button"].connect( "focus-in-event", self.categoryBtnFocus, item["filter"] )
                         else:
                             item["button"].mouseOverHandlerIds = None
 
                         item["button"].connect( "clicked", self.FilterAndClear, item["filter"] )
-                        item["button"].connect( "focus-in-event", self.categoryBtnFocus, item["filter"] )
                         item["button"].show()
 
                         self.categoryList.append( item )
