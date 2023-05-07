@@ -1569,7 +1569,11 @@ class pluginclass( object ):
             for child in get_contents(menu.directory):
                 if isinstance(child, MateMenu.TreeDirectory):
                     name = child.get_name()
-                    icon = child.get_icon().to_string()
+                    icon = child.get_icon()
+                    if ( icon == None ):
+                        icon = "applications-other"
+                    else:
+                        icon = icon.to_string()
                     newCategoryList.append( { "name": name, "icon": icon, "tooltip": name, "filter": name, "index": num } )
             num += 1
 
