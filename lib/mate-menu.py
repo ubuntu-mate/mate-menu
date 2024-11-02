@@ -351,6 +351,7 @@ class MainWindow( object ):
 
     def RegenPlugins( self, *args, **kargs ):
         #print("Reloading Plugins...")
+        self.tooltipsWidgets = []
         for item in self.paneholder:
             item.destroy()
 
