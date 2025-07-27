@@ -563,6 +563,7 @@ class MenuWin( object ):
             self.button_icon.set_margin_top(5)
             self.button_icon.set_margin_bottom(5)
 
+        self.button_box.get_style_context().add_class( "mate-menu" )
         self.button_box.set_homogeneous( False )
         self.button_box.show_all()
 
