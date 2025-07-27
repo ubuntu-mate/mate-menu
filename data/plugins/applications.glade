@@ -154,6 +154,9 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="homogeneous">True</property>
+                        <style>
+                            <class name="mint-title"/>
+                        </style>
                         <child>
                           <object class="GtkLabel" id="label2">
                             <property name="visible">True</property>
@@ -238,6 +241,9 @@
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
                             <property name="hscrollbar_policy">never</property>
+                            <style>
+                                <class name="mint-categories-list"/>
+                            </style>
                             <child>
                               <object class="GtkViewport" id="viewport1">
                                 <property name="visible">True</property>
@@ -281,6 +287,9 @@
                             <property name="can_focus">False</property>
                             <property name="can_default">True</property>
                             <property name="hscrollbar_policy">never</property>
+                            <style>
+                                <class name="mint-applications-list"/>
+                            </style>
                             <child>
                               <object class="GtkViewport" id="viewport3">
                                 <property name="visible">True</property>
@@ -332,6 +341,9 @@
                 <property name="height_request">30</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <style>
+                    <class name="mint-search"/>
+                </style>
                 <child>
                   <object class="GtkLabel" id="searchLabel">
                     <property name="visible">True</property>

@@ -216,6 +216,7 @@ class MainWindow( object ):
                 MyPlugin.content_holder.show()
 
                 VBox1 = Gtk.Box( orientation=Gtk.Orientation.VERTICAL )
+                VBox1.get_style_context().add_class( "mint-" + plugin.replace( "_", "-" ) )
                 if MyPlugin.heading != "":
                     Label1 = Gtk.Label(label= MyPlugin.heading )
                     Label1.set_margin_start(10)
@@ -232,6 +233,7 @@ class MainWindow( object ):
                         Label1.set_margin_bottom(5)
                         heading.set_size_request( MyPlugin.width, -1 )
 
+                    heading.get_style_context().add_class( "mint-title" )
                     heading.add(Label1)
                     heading.show()
                     VBox1.pack_start( heading, False, False, 0 )
@@ -561,6 +563,7 @@ class MenuWin( object ):
             self.button_icon.set_margin_top(5)
             self.button_icon.set_margin_bottom(5)
 
+        self.button_box.get_style_context().add_class( "mate-menu" )
         self.button_box.set_homogeneous( False )
         self.button_box.show_all()
 
