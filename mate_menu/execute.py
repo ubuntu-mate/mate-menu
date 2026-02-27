@@ -35,19 +35,27 @@ def RemoveArgs(Execline):
 
 # Actually launch the application
 def Launch(cmd, cwd=None):
-	if cwd:
-		os.chdir(cwd)
+	# Save the current working directory to restore it after launching
+	# This prevents the Path= directive from affecting the entire MATE session
+	saved_cwd = os.getcwd()
 
-	app_info = Gio.AppInfo.create_from_commandline(cmd,
-						       None,
-						       Gio.AppInfoCreateFlags.SUPPORTS_STARTUP_NOTIFICATION)
+	try:
+		if cwd:
+			os.chdir(cwd)
 
-	display = Gdk.Display.get_default()
-	context = display.get_app_launch_context()
-	context.set_desktop(-1) # use default screen & desktop
-	context.set_timestamp(Gtk.get_current_event_time())
+		app_info = Gio.AppInfo.create_from_commandline(cmd,
+							       None,
+							       Gio.AppInfoCreateFlags.SUPPORTS_STARTUP_NOTIFICATION)
 
-	app_info.launch(None, context)
+		display = Gdk.Display.get_default()
+		context = display.get_app_launch_context()
+		context.set_desktop(-1) # use default screen & desktop
+		context.set_timestamp(Gtk.get_current_event_time())
+
+		app_info.launch(None, context)
+	finally:
+		# Always restore the original working directory
+		os.chdir(saved_cwd)
 
 def Execute(cmd , commandCwd=None):
 	if commandCwd:
