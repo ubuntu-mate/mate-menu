@@ -1,107 +1,108 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Georgian translation for mate-menu.
+# Copyright (C) 2026 mate-menu's authors.
+# This file is distributed under the same license as the mate-menu package.
+# Ekaterine Papava <papava.e@gtu.ge>, 2026.
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
+"Project-Id-Version: mate-menu\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-13 22:41+0000\n"
-"PO-Revision-Date: 2019-09-28 20:08+0000\n"
-"Last-Translator: Martin Wimpress <code@flexion.org>\n"
+"PO-Revision-Date: 2026-05-18 14:32+0200\n"
+"Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: Georgian (http://www.transifex.com/mate/MATE/language/ka/)\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Poedit 3.9\n"
 
 #: ../lib/mate-menu.py:58
 msgid "Menu"
-msgstr ""
+msgstr "მენიუ"
 
 #. Fake class for MyPlugin
 #: ../lib/mate-menu.py:196
 msgid "Couldn't load plugin:"
-msgstr ""
+msgstr "დამატების ჩატვირთვის შეცდომა:"
 
 #: ../lib/mate-menu.py:265
 msgid "Couldn't initialize plugin"
-msgstr ""
+msgstr "დამატების ინიციალიზაციის შეცდომა"
 
 #: ../lib/mate-menu.py:640
 msgid "An Advanced Menu for the MATE Desktop"
-msgstr ""
+msgstr "უკეთესი მენიუ სამუშაო გარემოსთვის MATE"
 
 #: ../lib/mate-menu.py:759
 msgid "Preferences"
-msgstr "პარამეტრები"
+msgstr "მორგება"
 
 #: ../lib/mate-menu.py:762
 msgid "Edit menu"
-msgstr ""
+msgstr "მენიუს ჩასწორება"
 
 #: ../lib/mate-menu.py:765
 msgid "Reload plugins"
-msgstr ""
+msgstr "დამატებების თავიდან ჩატვირთვა"
 
 #: ../lib/mate-menu.py:768
 msgid "About"
-msgstr "პროგრამის შესახებ"
+msgstr "შესახებ"
 
 #. i18n
 #: ../lib/mate-menu-config.py:53
 msgid "Menu preferences"
-msgstr ""
+msgstr "მენიუს მროგება"
 
 #: ../lib/mate-menu-config.py:56
 msgid "Always start with favorites pane"
-msgstr ""
+msgstr "ყოველთვის რჩეული პანელით გაშვება"
 
 #: ../lib/mate-menu-config.py:57
 msgid "Show button icon"
-msgstr ""
+msgstr "ღილაკის ხატულას ჩვენება"
 
 #: ../lib/mate-menu-config.py:58
 msgid "Show recent documents plugin"
-msgstr ""
+msgstr "უახლესი დოკუმენტების დამატების ჩვენება"
 
 #: ../lib/mate-menu-config.py:59
 msgid "Show applications plugin"
-msgstr ""
+msgstr "აპლიკაციების დამატების ჩვენება"
 
 #: ../lib/mate-menu-config.py:60
 msgid "Show system plugin"
-msgstr ""
+msgstr "სისტემის დამატების ჩვენება"
 
 #: ../lib/mate-menu-config.py:61
 msgid "Show places plugin"
-msgstr ""
+msgstr "ადგილების დამატების ჩვენება"
 
 #: ../lib/mate-menu-config.py:63
 msgid "Show application comments"
-msgstr ""
+msgstr "აპლიკაციის კომენტარების ჩვენება"
 
 #: ../lib/mate-menu-config.py:64
 msgid "Show category icons"
-msgstr ""
+msgstr "კატეგორიის ხატულების ჩვენება"
 
 #: ../lib/mate-menu-config.py:65
 msgid "Hover"
-msgstr ""
+msgstr "გადატარება"
 
 #: ../lib/mate-menu-config.py:66
 msgid "Remember the last category or search"
-msgstr ""
+msgstr "ბოლო კატეგორიის ან ძიების დამახსოვრება"
 
 #: ../lib/mate-menu-config.py:67
 msgid "Swap name and generic name"
-msgstr ""
+msgstr "ზოგადი სახელისა და სახელის შენაცვლება"
 
 #: ../lib/mate-menu-config.py:69
 msgid "Border width:"
-msgstr ""
+msgstr "საზღვრის სიგანე:"
 
 #: ../lib/mate-menu-config.py:70
 msgid "pixels"
@@ -109,48 +110,48 @@ msgstr "პიქსელი"
 
 #: ../lib/mate-menu-config.py:72
 msgid "Button text:"
-msgstr ""
+msgstr "ღილაკის ტექსტი:"
 
 #: ../lib/mate-menu-config.py:73
 msgid "Options"
-msgstr "სესიის პარამეტრები"
+msgstr "მორგება"
 
 #: ../lib/mate-menu-config.py:74 ../mate_menu/plugins/applications.py:227
 msgid "Applications"
-msgstr "პროგრამები"
+msgstr "აპლიკაციები"
 
 #: ../lib/mate-menu-config.py:76 ../mate_menu/plugins/applications.py:224
 #: ../mate_menu/plugins/applications.py:225
 msgid "Favorites"
-msgstr ""
+msgstr "რჩეულები"
 
 #: ../lib/mate-menu-config.py:77
 msgid "Main button"
-msgstr ""
+msgstr "მთავარი ღილაკი"
 
 #: ../lib/mate-menu-config.py:78
 msgid "Plugins"
-msgstr "პლაგინები"
+msgstr "დამატებები"
 
 #: ../lib/mate-menu-config.py:80
 msgid "Always show search suggestions"
-msgstr ""
+msgstr "ძებნის მინიშნებების ყოველთვის ჩვენება"
 
 #: ../lib/mate-menu-config.py:81
 msgid "Search Engines:"
-msgstr ""
+msgstr "საძიებო სისტემები:"
 
 #: ../lib/mate-menu-config.py:82
 msgid "DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo"
 
 #: ../lib/mate-menu-config.py:83
 msgid "Google"
-msgstr ""
+msgstr "Google"
 
 #: ../lib/mate-menu-config.py:84
 msgid "Wikipedia"
-msgstr ""
+msgstr "Wikipedia"
 
 #: ../lib/mate-menu-config.py:85
 msgid "Dictionary"
@@ -165,45 +166,45 @@ msgstr "კომპიუტერი"
 #. self.builder.get_object("favoritesLabel").set_text(_("Favorites"))
 #: ../lib/mate-menu-config.py:90
 msgid "Number of columns:"
-msgstr ""
+msgstr "სვეტების რიცხვი:"
 
 #: ../lib/mate-menu-config.py:91 ../lib/mate-menu-config.py:92
 #: ../lib/mate-menu-config.py:93 ../lib/mate-menu-config.py:94
 msgid "Icon size:"
-msgstr ""
+msgstr "ხატულების ზომა:"
 
 #: ../lib/mate-menu-config.py:95
 msgid "Hover delay (ms):"
-msgstr ""
+msgstr "დაყოვნება თაგუნას ზედ გაჩერებისას (მწმ):"
 
 #: ../lib/mate-menu-config.py:96
 msgid "Search command:"
-msgstr ""
+msgstr "ძებნის ბრძანება:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:98 ../mate_menu/plugins/places.py:54
 msgid "Places"
-msgstr "მდებარეობა"
+msgstr "ადგილები"
 
 #: ../lib/mate-menu-config.py:99 ../lib/mate-menu-config.py:111
 msgid "Allow Scrollbar"
-msgstr ""
+msgstr "ჩოჩიას დაშვება"
 
 #: ../lib/mate-menu-config.py:100
 msgid "Show GTK+ Bookmarks"
-msgstr ""
+msgstr "GTK-ის სანიშნეების ჩვენება"
 
 #: ../lib/mate-menu-config.py:101 ../lib/mate-menu-config.py:112
 msgid "Height:"
-msgstr ""
+msgstr "სიმაღლე:"
 
 #: ../lib/mate-menu-config.py:102
 msgid "Toggle Default Places:"
-msgstr ""
+msgstr "ნაგულისხმევი ადგილების გადართვა:"
 
 #: ../lib/mate-menu-config.py:104 ../mate_menu/plugins/places.py:156
 msgid "Home Folder"
-msgstr "სახლის დასტა"
+msgstr "საწყისი საქაღალდე"
 
 #: ../lib/mate-menu-config.py:105 ../mate_menu/plugins/places.py:165
 msgid "Network"
@@ -215,11 +216,11 @@ msgstr "სამუშაო მაგიდა"
 
 #: ../lib/mate-menu-config.py:107 ../mate_menu/plugins/places.py:191
 msgid "Trash"
-msgstr "სანაგვე ყუთი"
+msgstr "ნაგვის ყუთი"
 
 #: ../lib/mate-menu-config.py:108
 msgid "Custom Places:"
-msgstr ""
+msgstr "მორგებული ადგილები:"
 
 #. Set 'heading' property for plugin
 #: ../lib/mate-menu-config.py:110 ../mate_menu/plugins/system_management.py:55
@@ -228,14 +229,14 @@ msgstr "სისტემა"
 
 #: ../lib/mate-menu-config.py:113
 msgid "Toggle Default Items:"
-msgstr ""
+msgstr "ნაგულისხმები ჩანაწერების გადართვა:"
 
 #: ../lib/mate-menu-config.py:114 ../mate_menu/plugins/system_management.py:153
 #: ../mate_menu/plugins/system_management.py:156
 #: ../mate_menu/plugins/system_management.py:159
 #: ../mate_menu/plugins/system_management.py:162
 msgid "Package Manager"
-msgstr ""
+msgstr "პაკეტების მმართველი"
 
 #: ../lib/mate-menu-config.py:115 ../mate_menu/plugins/system_management.py:172
 msgid "Control Center"
@@ -251,31 +252,31 @@ msgstr "ეკრანის დაბლოკვა"
 
 #: ../lib/mate-menu-config.py:118
 msgid "Log Out"
-msgstr ""
+msgstr "გასვლა"
 
 #: ../lib/mate-menu-config.py:119 ../mate_menu/plugins/system_management.py:211
 msgid "Quit"
-msgstr ""
+msgstr "გასვლა"
 
 #: ../lib/mate-menu-config.py:121
 msgid "Edit Place"
-msgstr ""
+msgstr "ადგილის ჩასწორება"
 
 #: ../lib/mate-menu-config.py:122
 msgid "New Place"
-msgstr ""
+msgstr "ახალი ადგილი"
 
 #: ../lib/mate-menu-config.py:123
 msgid "Select a folder"
-msgstr ""
+msgstr "აირჩიეთ საქაღალდე"
 
 #: ../lib/mate-menu-config.py:150
 msgid "Keyboard shortcut:"
-msgstr ""
+msgstr "კლავიატურის მალსახმობი:"
 
 #: ../lib/mate-menu-config.py:154
 msgid "Images"
-msgstr "სურათები"
+msgstr "გამოსახულებები"
 
 #: ../lib/mate-menu-config.py:259
 msgid "Name"
@@ -283,7 +284,7 @@ msgstr "სახელი"
 
 #: ../lib/mate-menu-config.py:260
 msgid "Path"
-msgstr "გეზი"
+msgstr "ბილიკი"
 
 #: ../lib/mate-menu-config.py:354 ../lib/mate-menu-config.py:385
 msgid "Name:"
@@ -291,76 +292,76 @@ msgstr "სახელი:"
 
 #: ../lib/mate-menu-config.py:355 ../lib/mate-menu-config.py:386
 msgid "Path:"
-msgstr "გეზი:"
+msgstr "ბილიკი:"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:222
 msgid "Search:"
-msgstr "მოძებნე:"
+msgstr "ძებნა:"
 
 #: ../mate_menu/plugins/applications.py:226
 msgid "All applications"
-msgstr ""
+msgstr "ყველა აპლიკაცია"
 
 #: ../mate_menu/plugins/applications.py:621
 #, python-format
 msgid "Search DuckDuckGo for %s"
-msgstr ""
+msgstr "%s-ის DuckDuckGo-ით მოძებნა"
 
 #: ../mate_menu/plugins/applications.py:632
 #, python-format
 msgid "Search Google for %s"
-msgstr ""
+msgstr "%s-ის მოძებნა Google-ში"
 
 #: ../mate_menu/plugins/applications.py:643
 #, python-format
 msgid "Search Wikipedia for %s"
-msgstr ""
+msgstr "%s-ის Wikipedia -ით მოძებნა"
 
 #: ../mate_menu/plugins/applications.py:664
 #, python-format
 msgid "Lookup %s in Dictionary"
-msgstr ""
+msgstr "%s-ის მოძებნა ლექსიკონში"
 
 #: ../mate_menu/plugins/applications.py:674
 #, python-format
 msgid "Search Computer for %s"
-msgstr ""
+msgstr "კომპიუტერში %s-ის მოძებნა"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:798
 #: ../mate_menu/plugins/applications.py:863
 msgid "Add to desktop"
-msgstr ""
+msgstr "სამუშაო მაგიდაზე დამატება"
 
 #: ../mate_menu/plugins/applications.py:799
 #: ../mate_menu/plugins/applications.py:864
 msgid "Add to panel"
-msgstr ""
+msgstr "პანელზე დამატება"
 
 #: ../mate_menu/plugins/applications.py:801
 #: ../mate_menu/plugins/applications.py:842
 msgid "Insert space"
-msgstr ""
+msgstr "ადგილის დამატება"
 
 #: ../mate_menu/plugins/applications.py:802
 #: ../mate_menu/plugins/applications.py:843
 msgid "Insert separator"
-msgstr ""
+msgstr "გამყოფის ჩასმა"
 
 #: ../mate_menu/plugins/applications.py:804
 #: ../mate_menu/plugins/applications.py:867
 msgid "Launch"
-msgstr ""
+msgstr "გაშვება"
 
 #: ../mate_menu/plugins/applications.py:805
 msgid "Remove from favorites"
-msgstr ""
+msgstr "რჩეულებიდან წაშლა"
 
 #: ../mate_menu/plugins/applications.py:807
 #: ../mate_menu/plugins/applications.py:870
 msgid "Edit properties"
-msgstr ""
+msgstr "თვისებების ჩასწორება"
 
 #. i18n
 #: ../mate_menu/plugins/applications.py:841
@@ -369,37 +370,39 @@ msgstr "წაშლა"
 
 #: ../mate_menu/plugins/applications.py:866
 msgid "Show in my favorites"
-msgstr ""
+msgstr "სანიშნებში ჩვენება"
 
 #: ../mate_menu/plugins/applications.py:868
 msgid "Delete from menu"
-msgstr ""
+msgstr "მენიუდან წაშლა"
 
 #: ../mate_menu/plugins/applications.py:926
 msgid "Search DuckDuckGo"
-msgstr ""
+msgstr "DuckDuckGo-ით ძებნა"
 
 #: ../mate_menu/plugins/applications.py:930
 msgid "Search Google"
-msgstr ""
+msgstr "Google-ში მოძებნა"
 
 #: ../mate_menu/plugins/applications.py:934
 msgid "Search Wikipedia"
-msgstr ""
+msgstr "Wikipedia-ით ძებნა"
 
 #: ../mate_menu/plugins/applications.py:941
 msgid "Lookup Dictionary"
-msgstr ""
+msgstr "ლექსიკონში ძებნა"
 
 #: ../mate_menu/plugins/applications.py:948
 msgid "Search Computer"
-msgstr ""
+msgstr "კომპიუტერში ძებნა"
 
 #: ../mate_menu/plugins/applications.py:1355
 msgid ""
 "Couldn't save favorites. Check if you have write access to ~/.config/mate-"
 "menu"
 msgstr ""
+"რჩეულების შენახვა შეუძლებელია. შეამოწმეთ, გაქვთ, თუ არა ჩაწერის უფლება "
+"ფაილში ~/.config/mate-menu"
 
 #: ../mate_menu/plugins/applications.py:1565
 msgid "All"
@@ -407,83 +410,88 @@ msgstr "ყველა"
 
 #: ../mate_menu/plugins/applications.py:1565
 msgid "Show all applications"
-msgstr ""
+msgstr "ყველა აპლიკაციის ჩვენება"
 
 #: ../mate_menu/plugins/system_management.py:167
 msgid "Install, remove and upgrade software packages"
-msgstr ""
+msgstr "პროგრამების პაკეტების დაყენება, წაშლა და განახლება"
 
 #: ../mate_menu/plugins/system_management.py:176
 msgid "Configure your system"
-msgstr ""
+msgstr "მოირგეთ თქვენი სისტემა"
 
 #: ../mate_menu/plugins/system_management.py:190
 msgid "Use the command line"
-msgstr "ბრზანების ხაზის გამოყენება"
+msgstr "ბრძანების სტრიქონის გამოყენება"
 
 #: ../mate_menu/plugins/system_management.py:201
 msgid "Requires password to unlock"
-msgstr ""
+msgstr "განბლოკვისთვის პაროლის მოთხოვნა"
 
 #: ../mate_menu/plugins/system_management.py:204
 msgid "Logout"
-msgstr ""
+msgstr "გასვლა"
 
 #: ../mate_menu/plugins/system_management.py:208
 msgid "Log out or switch user"
-msgstr ""
+msgstr "მომხმარებლის გასვლა ან გადართვა"
 
 #: ../mate_menu/plugins/system_management.py:215
 msgid "Shutdown, restart, suspend or hibernate"
-msgstr ""
+msgstr "გამორთვა, გადატვირთვა, ძილი ან პროგრამული ძილი"
 
 #: ../mate_menu/plugins/places.py:153
 msgid ""
 "Browse all local and remote disks and folders accessible from this computer"
 msgstr ""
-"თქვენი კომპიუტერიდან ლოკალური ან დაშორებული დისკების, დასტების დათვალიერება"
+"დაათვალიერეთ თქვენი კომპიუტერიდან ხელმისაწვდომი ყველა ლოკალური და დაშორებული "
+"დისკები და საქაღალდეები"
 
 #: ../mate_menu/plugins/places.py:160
 msgid "Open your personal folder"
-msgstr "პირადი დასტის გახსნა"
+msgstr "თქვენი პირადი საქაღალდის გახსნა"
 
 #: ../mate_menu/plugins/places.py:169
 msgid "Browse bookmarked and local network locations"
-msgstr "ლოკალური და ქსელური მისამართების დათვალიერება"
+msgstr "ლოკალური და ქსელური მისამართების დათვალიერებადა"
 
 #: ../mate_menu/plugins/places.py:188
 msgid "Browse items placed on the desktop"
-msgstr ""
+msgstr "სამუშაო მაგიდაზე განლაგებული ელემენტების მოძებნა"
 
 #: ../mate_menu/plugins/places.py:197
 msgid "Browse deleted files"
-msgstr ""
+msgstr "წაშლილი ფაილების მოძებნა"
 
 #: ../mate_menu/plugins/places.py:246
 msgid "Empty trash"
-msgstr ""
+msgstr "სანაგვე ყუთის დაცარიელება"
 
 #. Set 'heading' property for plugin
 #: ../mate_menu/plugins/recent.py:48
 msgid "Recent documents"
-msgstr ""
+msgstr "ახლახანს გასნილი დოკუმენტები"
 
 #: ../mate_menu/keybinding.py:220
 msgid "Click to set a new accelerator key for opening and closing the menu.  "
 msgstr ""
+"დააწკაპუნეთ ახალი მალსახმობი ღილაკის დასაყენებლად ამ მენიუს გახსნისა და "
+"დახურვისთვის. "
 
 #: ../mate_menu/keybinding.py:221
 msgid "Press Escape or click again to cancel the operation.  "
 msgstr ""
+"ოპერაციის გაუქმებისთვის დააჭირეთ Escape-ს ან კიდევ ერთხელ დააწკაპუნეთ  "
 
 #: ../mate_menu/keybinding.py:222
 msgid "Press Backspace to clear the existing keybinding."
 msgstr ""
+"არსებული კლავიატურის მალსახმობის გასასუფთავებლად დააჭირეთ ღილაკს Backspace."
 
 #: ../mate_menu/keybinding.py:241
 msgid "Pick an accelerator"
-msgstr ""
+msgstr "აირჩიეთ ამაჩქარებელი"
 
 #: ../mate_menu/keybinding.py:297
 msgid "<not set>"
-msgstr ""
+msgstr "<დაყენებული არაა>"
