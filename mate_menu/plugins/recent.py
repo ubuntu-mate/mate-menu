@@ -24,7 +24,6 @@ gi.require_version("Gtk", "3.0")
 
 from gi.repository import Gtk, Pango
 from mate_menu.easygsettings import EasyGSettings
-from mate_menu.execute import Execute
 from mate_menu.easyfiles import *
 from mate_menu.easybuttons import *
 
@@ -42,13 +41,13 @@ class pluginclass:
         self.builder.add_from_file (os.path.join( '/', 'usr', 'share', 'mate-menu',  'plugins', 'recent.glade' ))
 
         #Set 'window' property for the plugin (Must be the root widget)
-        self.window = self.builder.get_object( "window1" )
+        self.window = self.builder.get_object( "mainWindow" )
 
         #Set 'heading' property for plugin
         self.heading = _("Recent documents")
 
         #This should be the first item added to the window in glade
-        self.content_holder = self.builder.get_object( "eventbox1" )
+        self.content_holder = self.builder.get_object( "Recent" )
 
         self.recentBox = self.builder.get_object("RecentBox")
         self.recentVBox = self.builder.get_object( "vbox1" )
@@ -232,24 +231,6 @@ class pluginclass:
                 break
         return FileString,  IconString
 
-
-    def ButtonClicked( self, widget, event, Exec ):
-        self.press_x = event.x
-        self.press_y = event.y
-        self.Exec = Exec
-
-    def ButtonReleased( self, w, ev, ev2 ):
-        if ev.button == 1:
-            if not hasattr( self, "press_x" ) or \
-                    not w.drag_check_threshold( int( self.press_x ),
-                                                                             int( self.press_y ),
-                                                                             int( ev.x ),
-                                                                             int( ev.y ) ):
-                if self.Win.pinmenu == False:
-                    self.Win.wTree.get_widget( "window1" ).hide()
-                if "applications" in self.Win.plugins:
-                    self.Win.plugins["applications"].wTree.get_widget( "entry1" ).grab_focus()
-                Execute( w, self.Exec )
 
     def do_plugin(self):
         self.DoRecent()
