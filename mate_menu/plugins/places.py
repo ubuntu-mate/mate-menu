@@ -68,7 +68,7 @@ class pluginclass( object ):
         self.settings.notifyAdd( "show-home_folder", self.RegenPlugin )
         self.settings.notifyAdd( "show-network", self.RegenPlugin )
         self.settings.notifyAdd( "show-trash", self.RegenPlugin )
-        self.settings.notifyAdd( "custom-names", self.RegenPlugin )
+        self.settings.notifyAdd( "custom-paths", self.RegenPlugin )
         self.settings.notifyAdd( "allow-scrollbar", self.RegenPlugin )
         self.settings.notifyAdd( "show-gtk-bookmarks", self.RegenPlugin )
         self.settings.notifyAdd( "height", self.changePluginSize )
@@ -124,11 +124,8 @@ class pluginclass( object ):
         self.showdesktop = self.settings.get( "bool", "show-desktop" )
         self.showtrash = self.settings.get( "bool", "show-trash" )
 
-        # Get paths for custom items
+        # Get paths for custom items; the path is used as the entry label
         self.custompaths = self.settings.get( "list-string", "custom-paths" )
-
-        # Get names for custom items
-        self.customnames = self.settings.get( "list-string", "custom-names" )
 
         # Plugin icon
         self.icon = self.settings.get( "string", "icon" )
@@ -201,7 +198,7 @@ class pluginclass( object ):
             path = self.custompaths[index]
             path = path.replace("~", os.environ["HOME"])
             command = ("xdg-open \"" + path + "\"")
-            currentbutton = easyButton( "folder", self.iconsize, [self.customnames[index]], -1, -1 )
+            currentbutton = easyButton( "folder", self.iconsize, [self.custompaths[index]], -1, -1 )
             currentbutton.connect( "clicked", self.ButtonClicked, command )
             currentbutton.show()
             self.placesBtnHolder.pack_start( currentbutton, False, False, 0)
