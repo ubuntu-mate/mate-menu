@@ -80,11 +80,7 @@
       <description></description>
     </key>
 
-     <key type="as" name="custom-names">
-      <default>[]</default>
-      <summary></summary>
-      <description></description>
-    </key>
+
 
     <key type="s" name="icon">
       <default>"mate-fs-directory.png"</default>

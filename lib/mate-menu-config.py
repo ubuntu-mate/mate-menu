@@ -242,22 +242,19 @@ class mateMenuConfig( object ):
         self.bindGSettingsValueToWidget( self.settingsSystem, "bool", "allow-scrollbar", self.allowSystemScrollbarToggle, "toggled", self.allowSystemScrollbarToggle.set_active, self.allowSystemScrollbarToggle.get_active )
 
         self.customplacepaths = self.settingsPlaces.get( "list-string", "custom-paths" )
-        self.customplacenames = self.settingsPlaces.get( "list-string", "custom-names" )
 
-        self.customplacestreemodel = Gtk.ListStore( str, str)
+        self.customplacestreemodel = Gtk.ListStore( str )
         self.cell = Gtk.CellRendererText()
 
         for count in range( len(self.customplacepaths) ):
-            self.customplacestreemodel.append( [ self.customplacenames[count], self.customplacepaths[count] ] )
+            self.customplacestreemodel.append( [ self.customplacepaths[count] ] )
 
         self.customplacestreemodel.connect("row-inserted", self.updatePlacesGSettings)
         self.customplacestreemodel.connect("row-deleted", self.updatePlacesGSettings)
         self.customplacestreemodel.connect("rows-reordered", self.updatePlacesGSettings)
         self.customplacestreemodel.connect("row-changed", self.updatePlacesGSettings)
         self.customplacestree.set_model( self.customplacestreemodel )
-        self.namescolumn = Gtk.TreeViewColumn( _("Name"), self.cell, text = 0 )
-        self.placescolumn = Gtk.TreeViewColumn( _("Path"), self.cell, text = 1 )
-        self.customplacestree.append_column( self.namescolumn )
+        self.placescolumn = Gtk.TreeViewColumn( _("Path"), self.cell, text = 0 )
         self.customplacestree.append_column( self.placescolumn )
         self.builder.get_object("newButton").connect("clicked", self.newPlace)
         self.builder.get_object("editButton").connect("clicked", self.editPlace)
@@ -350,7 +347,6 @@ class mateMenuConfig( object ):
         return
 
     def newPlace(self, newButton):
-        self.builder.get_object("label2").set_text(_("Name:"))
         self.builder.get_object("label1").set_text(_("Path:"))
         newPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
@@ -359,7 +355,6 @@ class mateMenuConfig( object ):
         newPlaceDialog.set_title(self.newPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         newPlaceDialog.set_default_response(Gtk.ResponseType.OK)
-        newPlaceName = self.builder.get_object( "nameEntryBox" )
         newPlacePath = self.builder.get_object( "pathEntryBox" )
         folderButton = self.builder.get_object( "folderButton" )
         def chooseFolder(folderButton):
@@ -375,13 +370,11 @@ class mateMenuConfig( object ):
         response = newPlaceDialog.run()
         newPlaceDialog.hide()
         if (response == Gtk.ResponseType.OK ):
-            name = newPlaceName.get_text()
             path = newPlacePath.get_text()
-            if (name != "" and path !=""):
-                self.customplacestreemodel.append( (name, path) )
+            if (path != ""):
+                self.customplacestreemodel.append( (path,) )
 
     def editPlace(self, editButton):
-        self.builder.get_object("label2").set_text(_("Name:"))
         self.builder.get_object("label1").set_text(_("Path:"))
         editPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
@@ -390,7 +383,6 @@ class mateMenuConfig( object ):
         editPlaceDialog.set_title(self.editPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         editPlaceDialog.set_default_response(Gtk.ResponseType.OK)
-        editPlaceName = self.builder.get_object( "nameEntryBox" )
         editPlacePath = self.builder.get_object( "pathEntryBox" )
         folderButton = self.builder.get_object( "folderButton" )
         treeselection = self.customplacestree.get_selection()
@@ -398,10 +390,8 @@ class mateMenuConfig( object ):
 
         if (currentiter != None):
 
-            initName = self.customplacestreemodel.get_value(currentiter, 0)
-            initPath = self.customplacestreemodel.get_value(currentiter, 1)
+            initPath = self.customplacestreemodel.get_value(currentiter, 0)
 
-            editPlaceName.set_text(initName)
             editPlacePath.set_text(initPath)
             def chooseFolder(folderButton):
                 currentPath = editPlacePath.get_text()
@@ -415,11 +405,9 @@ class mateMenuConfig( object ):
             response = editPlaceDialog.run()
             editPlaceDialog.hide()
             if (response == Gtk.ResponseType.OK):
-                name = editPlaceName.get_text()
                 path = editPlacePath.get_text()
-                if (name != "" and path != ""):
-                    self.customplacestreemodel.set_value(currentiter, 0, name)
-                    self.customplacestreemodel.set_value(currentiter, 1, path)
+                if (path != ""):
+                    self.customplacestreemodel.set_value(currentiter, 0, path)
 
     def moveDown(self, downButton):
 
@@ -459,16 +447,13 @@ class mateMenuConfig( object ):
     def updatePlacesGSettings(self, treemodel, path, iter = None, new_order = None):
 
         # Do only if not partway though an append operation; Append = insert+change+change and each creates a signal
-        if ((iter == None) or (self.customplacestreemodel.get_value(iter, 1) != None)):
+        if ((iter == None) or (self.customplacestreemodel.get_value(iter, 0) != None)):
             treeiter = self.customplacestreemodel.get_iter_first()
-            customplacenames = [ ]
             customplacepaths = [ ]
             while( treeiter != None ):
-                customplacenames = customplacenames + [ self.customplacestreemodel.get_value(treeiter, 0 ) ]
-                customplacepaths = customplacepaths + [ self.customplacestreemodel.get_value(treeiter, 1 ) ]
+                customplacepaths = customplacepaths + [ self.customplacestreemodel.get_value(treeiter, 0 ) ]
                 treeiter = self.customplacestreemodel.iter_next(treeiter)
             self.settingsPlaces.set( "list-string", "custom-paths", customplacepaths)
-            self.settingsPlaces.set( "list-string", "custom-names", customplacenames)
 
 
 window = mateMenuConfig()
