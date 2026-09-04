@@ -70,7 +70,6 @@ class mateMenuConfig( object ):
         self.builder.get_object("label25").set_text(_("pixels"))
 
         self.builder.get_object("buttonTextLabel").set_text(_("Button text:"))
-        self.builder.get_object("label1").set_text(_("Options"))
         self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 
         self.builder.get_object("favLabel").set_text(_("Favorites"))
