@@ -26,12 +26,6 @@
       <description></description>
     </key>
 
-    <key type="i" name="offset">
-      <default>0</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
     <key type="s" name="applet-text">
       <default>"Menu"</default>
       <summary></summary>

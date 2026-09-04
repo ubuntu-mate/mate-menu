@@ -148,7 +148,6 @@ class MainWindow( object ):
     def getSetGSettingEntries( self ):
         self.pluginlist           = self.settings.get_strv( "plugins-list" )
         self.borderwidth          = self.settings.get_int( "border-width" )
-        self.offset               = self.settings.get_int( "offset" )
         self.enableTooltips       = self.settings.get_boolean( "tooltips-enabled" )
         self.startWithFavorites   = self.settings.get_boolean( "start-with-favorites" )
 
@@ -688,7 +687,7 @@ class MenuWin( object ):
     def positionMenu( self ):
         # Get our own dimensions & position
         ourWidth  = self.mainwin.window.get_size()[0]
-        ourHeight = self.mainwin.window.get_size()[1] + self.mainwin.offset
+        ourHeight = self.mainwin.window.get_size()[1]
 
         # Get the dimensions/position of the widgetToAlignWith
         try:
@@ -700,7 +699,6 @@ class MenuWin( object ):
             entryY = self.applet.get_window().get_origin()[2]
 
         entryWidth, entryHeight =  self.applet.get_allocation().width, self.applet.get_allocation().height
-        entryHeight = entryHeight + self.mainwin.offset
 
         # Get the monitor dimensions
         display = self.applet.get_display()
@@ -726,7 +724,6 @@ class MenuWin( object ):
             newX = entryX - ourWidth
             newY = entryY
 
-        # Adjust for offset if we reach the end of the screen
         # Bind to the right side
         if newX + ourWidth > (monitorGeometry.x + monitorGeometry.width):
             newX = (monitorGeometry.x + monitorGeometry.width) - ourWidth
