@@ -78,12 +78,39 @@ class pluginclass( object ):
 
         self.content_holder.set_size_request( self.width, self.height )
 
+        self.setupBookmarksMonitor()
+
+    def setupBookmarksMonitor( self ):
+        bookmarksFile = os.path.join( GLib.get_user_config_dir(), "gtk-3.0", "bookmarks" )
+        if not os.path.exists( bookmarksFile ):
+            bookmarksFile = os.path.join( os.path.expanduser( "~" ), ".gtk-bookmarks" )
+        self.bookmarksMonitorFile = Gio.File.new_for_path( bookmarksFile )
+        self.bookmarksMonitor = self.bookmarksMonitorFile.monitor_file( Gio.FileMonitorFlags.NONE, None )
+        self.bookmarksMonitorId = self.bookmarksMonitor.connect( "changed", self.onBookmarksChanged )
+        self.bookmarksDebounceId = 0
+
+    def onBookmarksChanged( self, monitor, file, other_file, event ):
+        if self.bookmarksDebounceId:
+            GLib.source_remove( self.bookmarksDebounceId )
+        self.bookmarksDebounceId = GLib.timeout_add( 300, self.onBookmarksDebounce )
+
+    def onBookmarksDebounce( self, *args ):
+        self.bookmarksDebounceId = 0
+        self.RegenPlugin()
+        return False
+
     def wake (self) :
         if ( self.showtrash == True ):
             self.refreshTrash()
 
     def destroy( self ):
         self.settings.notifyRemoveAll()
+        if hasattr( self, "bookmarksMonitor" ):
+            if self.bookmarksDebounceId:
+                GLib.source_remove( self.bookmarksDebounceId )
+                self.bookmarksDebounceId = 0
+            self.bookmarksMonitor.disconnect( self.bookmarksMonitorId )
+            self.bookmarksMonitor.cancel()
 
     def changePluginSize( self, settings, key, args = None):
         self.allowScrollbar = self.settings.get( "bool", "allow-scrollbar" )
