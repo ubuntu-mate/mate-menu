@@ -557,6 +557,9 @@ class MenuWin( object ):
         self.button_box.set_homogeneous( False )
         self.button_box.show_all()
 
+        if self.hideIcon:
+            self.button_icon.hide()
+
         self.applet.add( self.button_box )
         self.applet.set_background_widget( self.applet )
 
@@ -618,6 +621,10 @@ class MenuWin( object ):
         self.systemlabel.set_text( self.buttonText )
         self.button_icon.clear()
         self.do_load_icon(self.icon)
+        if self.hideIcon:
+            self.button_icon.hide()
+        else:
+            self.button_icon.show()
 
     def hotkeyChanged (self, schema, key):
         self.hotkeyText =  self.settings.get_string( "hot-key" )
