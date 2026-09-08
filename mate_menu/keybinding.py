@@ -58,6 +58,7 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         self.map_modifiers()
         self.raw_keyval = None
         self.keytext = ""
+        self.button_grabbed = False
 
     def map_modifiers(self):
         gdk_modifiers =(Gdk.ModifierType.CONTROL_MASK, Gdk.ModifierType.SHIFT_MASK, Gdk.ModifierType.MOD1_MASK,
@@ -113,11 +114,17 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
             print("** WARNING ** - Could not bind to hot key " + key + ": " + str(catch.get_error()))
             return False
 
+        # Track whether the Super+click grab is active so it can be released on rebind
+        self.button_grabbed = not self.modifiers
         return True
 
     def ungrab(self):
         if self.keycode:
             self.window.ungrab_key(self.keycode, X.AnyModifier, self.window)
+        if self.button_grabbed:
+            self.window.ungrab_button(X.AnyButton, X.Mod4Mask)
+            self.button_grabbed = False
+        self.display.flush()
 
     def rebind(self, key):
         self.ungrab()
