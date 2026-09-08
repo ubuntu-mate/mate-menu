@@ -92,6 +92,7 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         else:
             self.window.change_attributes(onerror=catch, event_mask = X.NoEventMask)
         if catch.get_error():
+            print("** WARNING ** - Could not bind to hot key " + key + ": " + str(catch.get_error()))
             return False
 
         catch = error.CatchError(error.BadAccess)
@@ -100,6 +101,7 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
             result = self.window.grab_key(self.keycode, mod, True, X.GrabModeAsync, X.GrabModeAsync, onerror=catch)
         self.display.flush()
         if catch.get_error():
+            print("** WARNING ** - Could not bind to hot key " + key + ": " + str(catch.get_error()))
             return False
 
         catch = error.CatchError(error.BadCursor)
@@ -108,6 +110,7 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
            self.window.grab_button(X.AnyButton, X.Mod4Mask, True, X.ButtonPressMask, X.GrabModeSync, X.GrabModeAsync, X.NONE, X.NONE)
         self.display.flush()
         if catch.get_error():
+            print("** WARNING ** - Could not bind to hot key " + key + ": " + str(catch.get_error()))
             return False
 
         return True
