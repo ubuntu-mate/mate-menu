@@ -221,15 +221,9 @@ class MainWindow( object ):
                     self.headingsToColor.append( Label1 )
                     Label1.show()
 
-                    if not hasattr( MyPlugin, 'sticky' ) or MyPlugin.sticky == True:
-                        heading = Gtk.EventBox()
-                        heading.set_visible_window( False )
-                        heading.set_size_request( MyPlugin.width, 30 )
-                    else:
-                        heading = Gtk.Box( orientation=Gtk.Orientation.HORIZONTAL )
-                        Label1.set_margin_top(10)
-                        Label1.set_margin_bottom(5)
-                        heading.set_size_request( MyPlugin.width, -1 )
+                    heading = Gtk.EventBox()
+                    heading.set_visible_window( False )
+                    heading.set_size_request( MyPlugin.width, 30 )
 
                     heading.add(Label1)
                     heading.show()

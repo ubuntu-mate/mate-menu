@@ -2,18 +2,6 @@
 <schemalist>
   <schema id="org.mate.mate-menu.plugins.places" path="/org/mate/mate-menu/plugins/places/">
 
-    <key type="b" name="sticky">
-      <default>false</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="b" name="minimized">
-      <default>false</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
     <key type="b" name="allow-scrollbar">
       <default>false</default>
       <summary></summary>
@@ -76,14 +64,6 @@
 
     <key type="as" name="custom-paths">
       <default>[]</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-
-
-    <key type="s" name="icon">
-      <default>"mate-fs-directory.png"</default>
       <summary></summary>
       <description></description>
     </key>

@@ -73,7 +73,6 @@ class pluginclass( object ):
         self.settings.notifyAdd( "allow-scrollbar", self.RegenPlugin )
         self.settings.notifyAdd( "height", self.changePluginSize )
         self.settings.notifyAdd( "width", self.changePluginSize )
-        self.settings.bindGSettingsEntryToVar( "bool", "sticky", self, "sticky" )
 
         self.GetGSettingsEntries()
 
@@ -125,12 +124,6 @@ class pluginclass( object ):
         self.showLockScreen = self.settings.get( "bool", "show-lock-screen")
         self.showLogout = self.settings.get( "bool", "show-logout")
         self.showQuit = self.settings.get( "bool", "show-quit")
-
-        # Plugin icon
-        self.icon = self.settings.get( "string", "icon" )
-        # Allow plugin to be minimized to the left plugin pane
-        self.sticky = self.settings.get( "bool", "sticky")
-        self.minimized = self.settings.get( "bool", "minimized")
 
     def ClearAll(self):
         for child in self.systemBtnHolder.get_children():

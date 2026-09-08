@@ -154,12 +154,6 @@ class pluginclass( object ):
         # Get paths for custom items; the path is used as the entry label
         self.custompaths = self.settings.get( "list-string", "custom-paths" )
 
-        # Plugin icon
-        self.icon = self.settings.get( "string", "icon" )
-        # Allow plugin to be minimized to the left plugin pane
-        self.sticky = self.settings.get( "bool", "sticky")
-        self.minimized = self.settings.get( "bool", "minimized")
-
     def ClearAll(self):
         for child in self.placesBtnHolder.get_children():
             child.destroy()

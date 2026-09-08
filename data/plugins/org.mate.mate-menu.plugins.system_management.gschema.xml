@@ -62,24 +62,6 @@
       <description></description>
     </key>
 
-    <key type="b" name="sticky">
-      <default>false</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="b" name="minimized">
-      <default>false</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="s" name="icon">
-      <default>"preferences-system"</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
   </schema>
 
 </schemalist>

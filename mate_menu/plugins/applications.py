@@ -441,30 +441,6 @@ class pluginclass( object ):
             self.favoritesBox.remove( fav )
             self.favoritesPositionOnGrid( fav )
 
-    def RegenPlugin( self, *args, **kargs ):
-        # save old config - this is necessary because the app will notified when it sets the default values and you don't want the to reload itself several times
-        oldcategories_mouse_over = self.categories_mouse_over
-        oldiconsize = self.iconSize
-        oldfaviconsize = self.faviconsize
-        oldswapgeneric = self.swapgeneric
-        oldshowcategoryicons = self.showcategoryicons
-        oldcategoryhoverdelay = self.categoryhoverdelay
-        oldsticky = self.sticky
-        oldminimized = self.minimized
-        oldicon = self.icon
-        oldhideseparator = self.hideseparator
-        oldshowapplicationcomments = self.showapplicationcomments
-
-        self.GetGSettingsEntries()
-
-        # if the config hasn't changed return
-        if oldcategories_mouse_over == self.categories_mouse_over and oldiconsize == self.iconSize and oldfaviconsize == self.faviconsize and oldswapgeneric == self.swapgeneric and oldshowcategoryicons == self.showcategoryicons and oldcategoryhoverdelay == self.categoryhoverdelay and oldsticky == self.sticky and oldminimized == self.minimized and oldicon == self.icon and oldhideseparator == self.hideseparator and oldshowapplicationcomments == self.showapplicationcomments:
-            return
-
-        self.Todos()
-        self.buildFavorites()
-        self.RebuildPlugin()
-
     def GetGSettingsEntries( self ):
 
         self.categories_mouse_over = self.settings.get( "bool", "categories-mouse-over")
@@ -489,25 +465,11 @@ class pluginclass( object ):
         self.lastActiveTab =  self.settings.get( "int", "last-active-tab")
         self.defaultTab = self.settings.get( "int", "default-tab")
 
-
-        # Allow plugin to be minimized to the left plugin pane
-        self.sticky = self.settings.get( "bool", "sticky")
-        self.minimized = self.settings.get( "bool", "minimized")
-
         # Search tool
         self.searchtool = self.settings.get( "string", "search-command")
         if self.searchtool == "beagle-search SEARCH_STRING":
             self.searchtool = "mate-search-tool --named \"%s\" --start"
             self.settings.set( "string", "search-command", "mate-search-tool --named \"%s\" --start" )
-
-        # Plugin icon
-        self.icon = self.settings.get( "string", "icon" )
-
-    def SetHidden( self, state ):
-        if state == True:
-            self.settings.set( "bool", "minimized", True )
-        else:
-            self.settings.set( "bool", "minimized", False )
 
     def RebuildPlugin(self):
         self.content_holder.set_size_request( self.width, self.height )

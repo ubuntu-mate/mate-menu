@@ -57,9 +57,6 @@ class pluginclass:
         #Specify plugin width
         self.width = 250
 
-        #Plugin icon
-        self.icon = 'folder.png'
-
         self.settings = EasyGSettings ("org.mate.mate-menu.plugins.recent")
 
         self.settings.notifyAdd( 'height', self.RegenPlugin )
@@ -101,19 +98,7 @@ class pluginclass:
         self.recentw = self.settings.get( 'int', 'width' )
         self.numentries = self.settings.get( 'int', 'num-recent-docs' )
         self.recentfontsize = self.settings.get( 'int', 'recent-font-size' )
-
-        # Plugin icon
-        self.icon = self.settings.get( "string", 'icon' )
-        # Allow plugin to be minimized to the left plugin pane
-        self.sticky = self.settings.get( "bool", "sticky" )
-        self.minimized = self.settings.get( "bool", "minimized" )
         self.RebuildPlugin()
-
-    def SetHidden( self, state ):
-        if state == True:
-            self.settings.set( "bool", "minimized", True )
-        else:
-            self.settings.set( "bool", "minimized", False )
 
 
     def RebuildPlugin(self):
