@@ -70,15 +70,16 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
                 self.known_modifiers_mask |= modifier
 
     def grab(self, key):
+        self.keytext = key
         accelerator = key
         accelerator = accelerator.replace("<Super>", "<Mod4>")
         keyval, modifiers = Gtk.accelerator_parse(accelerator)
         if not accelerator or (not keyval and not modifiers):
             self.keycode = None
             self.modifiers = None
+            print("** WARNING ** - Could not bind to hot key " + key + ": not a valid accelerator")
             return False
 
-        self.keytext = key
         try:
             self.keycode = self.keymap.get_entries_for_keyval(keyval).keys[0].keycode
         except AttributeError:
