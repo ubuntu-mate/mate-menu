@@ -567,6 +567,9 @@ class pluginclass( object ):
         self.updateBoxes(False)
 
     def categoryBtnFocus( self, widget, event, category ):
+        # Only filter when the mouse-over option is enabled
+        if not self.categories_mouse_over:
+            return
         self.scrollItemIntoView( widget )
         self.StartFilter( widget, category )
 
@@ -1427,11 +1430,11 @@ class pluginclass( object ):
                             startId = item["button"].connect( "enter", self.StartFilter, item["filter"] )
                             stopId = item["button"].connect( "leave", self.StopFilter )
                             item["button"].mouseOverHandlerIds = ( startId, stopId )
-                            item["button"].connect( "focus-in-event", self.categoryBtnFocus, item["filter"] )
                         else:
                             item["button"].mouseOverHandlerIds = None
 
                         item["button"].connect( "clicked", self.FilterAndClear, item["filter"] )
+                        item["button"].connect( "focus-in-event", self.categoryBtnFocus, item["filter"] )
                         item["button"].show()
 
                         self.categoryList.append( item )
