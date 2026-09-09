@@ -33,7 +33,8 @@ import mate_menu.keybinding as keybinding
 signal.signal(signal.SIGINT, signal.SIG_DFL)
 
 # i18n
-gettext.install("mate-menu", "/usr/share/locale")
+import mate_menu.config as config
+gettext.install("mate-menu", config.LOCALE_DIR)
 
 from mate_menu.easygsettings import EasyGSettings
 
@@ -41,7 +42,7 @@ class mateMenuConfig( object ):
 
     def __init__( self ):
 
-        self.data_path =  os.path.join('/', 'usr', 'share', 'mate-menu' )
+        self.data_path = config.DATA_DIR
 
         # Load glade file and extract widgets
         self.builder = Gtk.Builder()

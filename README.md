@@ -19,7 +19,22 @@ It's a fairly straightforward Python project, so installing is easy:
 
 ```sh
 python3 setup.py build
-sudo python3 setup.py install
+sudo python3 setup.py install --prefix=/usr
+```
+
+For non-standard prefixes (e.g., `/usr/local`):
+
+```sh
+python3 setup.py build
+sudo python3 setup.py install --prefix=/usr/local
+```
+
+The install prefix is recorded at install time (in `mate_menu/_prefix.py`), so
+runtime path lookups follow wherever the package was actually installed. To
+override at runtime (e.g., for testing or custom deployments), set `PREFIX`:
+
+```sh
+PREFIX=/opt/mate-menu mate-menu
 ```
 
 ## Usage

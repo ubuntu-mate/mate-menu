@@ -28,9 +28,10 @@ from gi.repository import Gtk
 from mate_menu.easybuttons import *
 from mate_menu.execute import Execute
 from mate_menu.easygsettings import EasyGSettings
+from mate_menu import config
 
 # i18n
-gettext.install("mate-menu", "/usr/share/locale")
+gettext.install("mate-menu", config.LOCALE_DIR)
 
 class pluginclass( object ):
 
@@ -40,7 +41,7 @@ class pluginclass( object ):
         self.toggleButton = toggleButton
 
         self.builder = Gtk.Builder()
-        self.builder.add_from_file( os.path.join( '/', 'usr', 'share', 'mate-menu',  'plugins', 'system_management.glade' ))
+        self.builder.add_from_file( os.path.join( config.DATA_DIR, 'plugins', 'system_management.glade' ))
 
         self.systemBtnHolder    = self.builder.get_object( "system_button_holder" )
         self.editableBtnHolder  = self.builder.get_object( "editable_button_holder" )
