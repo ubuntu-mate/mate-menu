@@ -55,9 +55,6 @@ class PointerMonitor(GObject.GObject, threading.Thread):
         self.emit("activate")
         return False
 
-    def activate(self):
-        GLib.idle_add(self.run)
-
     def run(self):
         self.running = True
         while self.running:
