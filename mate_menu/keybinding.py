@@ -166,16 +166,24 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         self.running = True
         wait_for_release = False
         while self.running:
-            event = self.display.next_event()
+            try:
+                event = self.display.next_event()
+            except (error.DisplayError, ConnectionError):
+                # The X server connection is gone, stop the monitor thread
+                print("** WARNING ** - Lost the X server connection, no longer listening for the hot key")
+                break
+            except Exception as e:
+                print("** WARNING ** - Keybinding error: " + str(e))
+                continue
 
-            if self.modifiers:
-                # Use simpler logic when using traditional combined keybindings
-                modifiers = event.state & self.known_modifiers_mask
-                if event.type == X.KeyPress and event.detail == self.keycode and modifiers == self.modifiers:
-                    GLib.idle_add(self.idle)
+            try:
+                if self.modifiers:
+                    # Use simpler logic when using traditional combined keybindings
+                    modifiers = event.state & self.known_modifiers_mask
+                    if event.type == X.KeyPress and event.detail == self.keycode and modifiers == self.modifiers:
+                        GLib.idle_add(self.idle)
 
-            else:
-                try:
+                else:
                     # KeyPress
                     if event.type == X.KeyPress and event.detail == self.keycode and not wait_for_release:
                         modifiers = event.state & self.known_modifiers_mask
@@ -206,8 +214,10 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
                         # Send the event up in case another window is listening to it
                         self.display.send_event(event.window, event, X.KeyPressMask | X.KeyReleaseMask, True)
                         wait_for_release = False
-                except AttributeError:
-                    continue
+            except AttributeError:
+                continue
+            except Exception as e:
+                print("** WARNING ** - Keybinding error: " + str(e))
 
     def stop(self):
         self.running = False
