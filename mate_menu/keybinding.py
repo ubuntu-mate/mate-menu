@@ -74,7 +74,7 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         accelerator = key
         accelerator = accelerator.replace("<Super>", "<Mod4>")
         keyval, modifiers = Gtk.accelerator_parse(accelerator)
-        if not accelerator or (not keyval and not modifiers):
+        if not accelerator or not keyval:
             self.keycode = None
             self.modifiers = None
             print("** WARNING ** - Could not bind to hot key " + key + ": not a valid accelerator")
