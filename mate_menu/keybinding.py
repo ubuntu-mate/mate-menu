@@ -56,7 +56,6 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         self.window = self.screen.root
         self.ignored_masks = self.get_mask_combinations(X.LockMask | X.Mod2Mask | X.Mod5Mask)
         self.map_modifiers()
-        self.raw_keyval = None
         self.keytext = ""
         self.button_grabbed = False
 
@@ -106,7 +105,7 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
             print("** WARNING ** - Could not bind to hot key " + key + ": " + str(catch.get_error()))
             return False
 
-        catch = error.CatchError(error.BadCursor)
+        catch = error.CatchError(error.BadAccess)
         if not self.modifiers:
            # We grab Super+click so that we can forward it to the window manager and allow Super+click bindings (window move, resize, etc.)
            self.window.grab_button(X.AnyButton, X.Mod4Mask, True, X.ButtonPressMask, X.GrabModeSync, X.GrabModeAsync, X.NONE, X.NONE)
