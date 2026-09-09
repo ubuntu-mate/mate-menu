@@ -12,4 +12,3 @@ mate_menu/easybuttons.py
 mate_menu/execute.py
 mate_menu/filemonitor.py
 mate_menu/keybinding.py
-mate_menu/pointerMonitor.py

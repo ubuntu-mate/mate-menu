@@ -42,7 +42,6 @@ from gi.repository import Gio
 try:
     import xdg.Config
     import mate_menu.keybinding as keybinding
-    import mate_menu.pointerMonitor as pointerMonitor
 except Exception as e:
     print(e)
     sys.exit(1)
@@ -476,14 +475,6 @@ class MenuWin( object ):
 
         self.applet.set_can_focus(False)
 
-        try:
-            self.pointerMonitor = pointerMonitor.PointerMonitor()
-            self.pointerMonitor.connect("activate", self.onPointerOutside)
-            self.mainwin.window.connect( "realize", self.onRealize )
-        except Exception as cause:
-            print("** WARNING ** - Pointer Monitor Error")
-            print("Error Report :\n", str(cause))
-
     def onWindowMap( self, *args ):
         self.applet.get_style_context().set_state( Gtk.StateFlags.SELECTED )
         if self.keybinder is not None:
@@ -495,16 +486,6 @@ class MenuWin( object ):
         if self.keybinder is not None:
             self.keybinder.set_focus_window()
         return False
-
-    def onRealize( self, *args):
-        self.pointerMonitor.addWindowToMonitor( self.mainwin.window.get_window() )
-        self.pointerMonitor.addWindowToMonitor( self.applet.get_window() )
-        self.pointerMonitor.start()
-        return False
-
-    def onPointerOutside(self, *args):
-        self.mainwin.hide()
-        return True
 
     def onBindingPress(self, binder):
         self.toggleMenu()
