@@ -149,9 +149,6 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         self.emit("activate")
         return False
 
-    def activate(self):
-        GLib.idle_add(self.run)
-
     # Get which window manager we're currently using (Marco, Compiz, Metacity, etc...)
     def get_wm(self):
         name = ''
