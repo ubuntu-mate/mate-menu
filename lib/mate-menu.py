@@ -52,7 +52,8 @@ signal.signal(signal.SIGINT, signal.SIG_DFL)
 setproctitle.setproctitle('mate-menu')
 
 # i18n
-gettext.install("mate-menu", "/usr/share/locale")
+import mate_menu.config as config
+gettext.install("mate-menu", config.LOCALE_DIR)
 
 NAME = _("Menu")
 
@@ -66,7 +67,7 @@ class MainWindow( object ):
     def __init__(self, toggleButton, settings):
 
         self.settings = settings
-        self.data_path = os.path.join( '/', 'usr', 'share', 'mate-menu' )
+        self.data_path = config.DATA_DIR
 
         self.toggle = toggleButton
         # Load UI file and extract widgets
@@ -427,7 +428,7 @@ class MainWindow( object ):
 
 class MenuWin( object ):
     def __init__( self, applet, iid ):
-        self.data_path = os.path.join('/','usr','share','mate-menu')
+        self.data_path = config.DATA_DIR
         self.applet = applet
         self.settings = Gio.Settings.new("org.mate.mate-menu")
         self.icon = "start-here"
@@ -630,7 +631,7 @@ class MenuWin( object ):
         about.show()
 
     def showPreferences( self, action, userdata = None ):
-        Execute( os.path.join( "/", "usr", "lib", "mate-menu", "mate-menu-config.py" ) )
+        Execute( os.path.join( config.LIB_DIR, "mate-menu-config.py" ) )
 
     def showMenuEditor( self, action, userdata = None ):
         def pathExists(filename):

@@ -26,6 +26,7 @@ from gi.repository import Gtk, Pango
 from mate_menu.easygsettings import EasyGSettings
 from mate_menu.easyfiles import *
 from mate_menu.easybuttons import *
+from mate_menu import config
 
 class pluginclass:
     """This is the main class for the plugin"""
@@ -38,7 +39,7 @@ class pluginclass:
 
         self.builder = Gtk.Builder()
         #The Glade file for the plugin
-        self.builder.add_from_file (os.path.join( '/', 'usr', 'share', 'mate-menu',  'plugins', 'recent.glade' ))
+        self.builder.add_from_file (os.path.join( config.DATA_DIR, 'plugins', 'recent.glade' ))
 
         #Set 'window' property for the plugin (Must be the root widget)
         self.window = self.builder.get_object( "mainWindow" )
