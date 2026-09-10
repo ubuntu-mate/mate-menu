@@ -509,12 +509,18 @@ class MenuWin( object ):
         icon_size = self.applet.get_size() - 8
         scale_factor = self.button_icon.get_scale_factor()
         icon = Gio.ThemedIcon.new_with_default_fallbacks(icon_name)
-        icon_info = icon_theme.lookup_by_gicon_for_scale(icon, icon_size, scale_factor, Gtk.IconLookupFlags.FORCE_SIZE)
+        icon_info = icon_theme.lookup_by_gicon_for_scale(icon, icon_size, scale_factor, 0)
         try:
-            surface = icon_info.load_surface(None) if icon_info is not None else None
+            pixbuf = icon_info.load_icon() if icon_info is not None else None
         except Exception:
-            surface = None
-        if surface is not None:
+            pixbuf = None
+        if pixbuf is not None:
+            # Fit the icon into the panel height while preserving its aspect
+            # ratio, so that non-square icons are rendered without distortion
+            target = icon_size * scale_factor
+            scale = target / pixbuf.get_height()
+            pixbuf = pixbuf.scale_simple(round(pixbuf.get_width() * scale), round(pixbuf.get_height() * scale), GdkPixbuf.InterpType.BILINEAR)
+            surface = Gdk.cairo_surface_create_from_pixbuf(pixbuf, scale_factor, None)
             self.button_icon.set_from_surface(surface)
         else:
             self.button_icon.set_from_icon_name(icon_name, Gtk.IconSize.MENU)
