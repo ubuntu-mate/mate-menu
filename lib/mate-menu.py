@@ -443,7 +443,7 @@ class MenuWin( object ):
         self.data_path = config.DATA_DIR
         self.applet = applet
         self.settings = Gio.Settings.new("org.mate.mate-menu")
-        self.icon = "start-here"
+        self.icon = "start-here-mate"
 
         self.loadSettings()
 
@@ -508,7 +508,12 @@ class MenuWin( object ):
         icon_theme = Gtk.IconTheme.get_default()
         icon_size = self.applet.get_size() - 8
         scale_factor = self.button_icon.get_scale_factor()
-        surface = icon_theme.load_surface(icon_name, icon_size, scale_factor, None, Gtk.IconLookupFlags.FORCE_SIZE)
+        icon = Gio.ThemedIcon.new_with_default_fallbacks(icon_name)
+        icon_info = icon_theme.lookup_by_gicon_for_scale(icon, icon_size, scale_factor, Gtk.IconLookupFlags.FORCE_SIZE)
+        try:
+            surface = icon_info.load_surface(None) if icon_info is not None else None
+        except Exception:
+            surface = None
         if surface is not None:
             self.button_icon.set_from_surface(surface)
         else:
