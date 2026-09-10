@@ -381,6 +381,18 @@ class MainWindow( object ):
         if event.keyval == Gdk.KEY_Escape:
             self.hide()
             return True
+
+        # This forwards text input to the search box regardless what is focused in the menu
+        if ( "applications" in self.plugins ) and ( hasattr( self.plugins["applications"], "focusSearchEntry" ) ):
+            plugin = self.plugins["applications"]
+            if not plugin.searchEntry.is_focus():
+                # Only look at text, backspace, and space (this avoids swallowing keyboard navigation)
+                if event.string.strip() != "" or event.keyval in ( Gdk.KEY_BackSpace, Gdk.KEY_space ):
+                    plugin.searchEntry.grab_focus()
+                    plugin.searchEntry.set_position( -1 )
+                    plugin.searchEntry.event( event )
+                    return True
+
         return False
 
     def show( self ):
