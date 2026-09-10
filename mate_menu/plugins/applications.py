@@ -90,6 +90,10 @@ def rel_path(target, base=os.curdir):
 
 def get_contents(item):
     contents = []
+    if item is None:
+        # The menu tree failed to load; treat it as empty instead of
+        # blowing up when the rest of the code iterates the contents
+        return contents
     item_iter = item.iter()
     item_type = item_iter.next()
 
@@ -113,8 +117,14 @@ def get_contents(item):
 class Menu:
     def __init__( self, MenuToLookup ):
         self.tree = MateMenu.Tree.new( MenuToLookup, MateMenu.TreeFlags.SORT_DISPLAY_NAME)
-        self.tree.load_sync()
-        self.directory = self.tree.get_root_directory()
+        self.directory = None
+        try:
+            self.tree.load_sync()
+            self.directory = self.tree.get_root_directory()
+        except GLib.Error:
+            # The menu failed to load (broken .menu file, missing entries,
+            # ...); leave the root as None and treat the tree as empty
+            self.directory = None
 
     def getMenus( self, parent=None ):
         if parent == None:
