@@ -306,9 +306,6 @@ class pluginclass( object ):
         self.categoriesBox.set_size_request( self.width / 3, -1 )
         self.applicationsBox.set_size_request( self.width / 2, -1 )
 
-        self.buildingButtonList = False
-        self.stopBuildingButtonList = False
-
         self.categoryList = []
         self.applicationList = []
 
@@ -536,7 +533,7 @@ class pluginclass( object ):
         self.showFavoritesButton.connect( "enter-notify-event", self.onEnter )
         self.showFavoritesButton.connect( "focus-in-event", self.onFocusIn )
         self.showFavoritesButton.connect( "focus-out-event", self.onFocusOut )
-        self.buildButtonList()
+        self.updateBoxes(False)
 
     def blockOnPopup( self, *args ):
         self.mateMenuWin.stopHiding()
@@ -565,16 +562,6 @@ class pluginclass( object ):
             self.searchEntry.set_position(-1)
         else:
             self.searchEntry.set_text("")
-
-    def buildButtonList( self ):
-        if self.buildingButtonList:
-            self.stopBuildingButtonList = True
-            GLib.timeout_add( 100, self.buildButtonList )
-            return
-
-        self.stopBuildingButtonList = False
-
-        self.updateBoxes(False)
 
     def categoryBtnFocus( self, widget, event, category ):
         # Only filter when the mouse-over option is enabled
