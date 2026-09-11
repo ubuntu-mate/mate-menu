@@ -205,6 +205,8 @@ class pluginclass:
         FileString=[]
         IconString=[]
         RecentInfo=self.RecManagerInstance.get_items()
+        # Sort by most recently modified so re-opened files stay at the top
+        RecentInfo.sort(key=lambda x: x.get_modified(), reverse=True)
         count=0
         MaxEntries=self.numentries
         if self.numentries == -1:
