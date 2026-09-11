@@ -1503,7 +1503,12 @@ class pluginclass( object ):
                     self.applicationsBox.remove( item["button"] )
                     sortedApplicationList.append( ( item["button"].appName, item["button"] ) )
                 for item in addedApplications:
-                    item["button"] = MenuApplicationLauncher( item["entry"].get_desktop_file_path(), self.iconSize, item["category"], self.showapplicationcomments, highlight=(True and menu_has_changed) )
+                    try:
+                        item["button"] = MenuApplicationLauncher( item["entry"].get_desktop_file_path(), self.iconSize, item["category"], self.showapplicationcomments, highlight=(True and menu_has_changed) )
+                    except Exception as e:
+                        # Keep the rest of the menu if a single .desktop file fails to parse
+                        print(e)
+                        continue
                     if item["button"].appExec:
                         self.mateMenuWin.setTooltip( item["button"], item["button"].getTooltip() )
                         item["button"].connect( "button-press-event", self.menuPopup )
