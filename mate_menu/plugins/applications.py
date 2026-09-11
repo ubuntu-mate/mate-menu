@@ -1350,11 +1350,15 @@ class pluginclass( object ):
 
     def on_drag_data_received( self, widget, context, x, y, selection, info, time ):
         if info == self.TARGET_TYPE_FAV:
-            self.favoritesReorder( int(selection.get_data()), widget.position )
+            try:
+                oldposition = int(selection.get_data().decode())
+            except (UnicodeDecodeError, ValueError):
+                return
+            self.favoritesReorder(oldposition, widget.position)
 
     def on_drag_data_get( self, widget, context, selection, targetType, time ):
         if targetType == self.TARGET_TYPE_FAV:
-            selection.set(Gdk.SELECTION_CLIPBOARD, 8, str(widget.position))
+            selection.set(Gdk.SELECTION_CLIPBOARD, 8, str(widget.position).encode())
 
     def on_icon_theme_changed(self, theme):
         self.menuChanged (0, 0)
