@@ -315,7 +315,6 @@ class pluginclass( object ):
         #dirty ugly hack, to get favorites drag origin position
         self.drag_origin = None
 
-        self.rebuildLock = False
         self.activeFilter = (1, "", self.searchEntry)
 
         self.adminMenu = None
@@ -1371,12 +1370,6 @@ class pluginclass( object ):
         self.menuChangedTimer = GLib.timeout_add( 1000, self.updateBoxes, True )
 
     def updateBoxes( self, menu_has_changed ):
-        # FIXME: This is really bad!
-        if self.rebuildLock:
-            return
-
-        self.rebuildLock = True
-
         self.menuChangedTimer = None
 
         try:
@@ -1540,8 +1533,6 @@ class pluginclass( object ):
                         launcherNames.append(launcherName)
         except Exception as e:
             print(e)
-
-        self.rebuildLock = False
 
     # Reload the menufiles from the filesystem
     def loadMenuFiles( self ):
