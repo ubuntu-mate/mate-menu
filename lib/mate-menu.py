@@ -532,10 +532,13 @@ class MenuWin( object ):
             process = subprocess.Popen(['lsb_release', '-d'], stdout=subprocess.PIPE, text=True)
             out, err = process.communicate()
             tooltip = str(out).replace('Description:', '').strip()
+            self.accessible_description = tooltip
             self.systemlabel.set_tooltip_text(tooltip)
             self.button_icon.set_tooltip_text(tooltip)
         except OSError:
-            pass
+            self.accessible_description = None
+
+        self.updateAccessibleNames()
 
         if self.applet.get_orient() == MatePanelApplet.AppletOrient.UP or self.applet.get_orient() == MatePanelApplet.AppletOrient.DOWN:
             self.button_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
@@ -621,6 +624,24 @@ class MenuWin( object ):
         self.applet.add( self.button_box )
 
 
+    def updateAccessibleNames( self ):
+        self.applet.get_accessible().set_name( NAME )
+        self.button_icon.get_accessible().set_name( NAME )
+        self.systemlabel.get_accessible().set_name( self.buttonText )
+
+        # This sets the accessible name on the GtkPlug (for out-of-process applets)
+        toplevel = self.applet.get_toplevel()
+        if toplevel is not self.applet:
+            toplevel.get_accessible().set_name( NAME )
+
+        description = getattr(self, "accessible_description", None)
+        if description:
+            self.applet.get_accessible().set_description( description )
+            self.button_icon.get_accessible().set_description( description )
+            self.systemlabel.get_accessible().set_description( description )
+            if toplevel is not self.applet:
+                toplevel.get_accessible().set_description( description )
+
     def updateButton( self ):
         self.systemlabel.set_text( self.buttonText )
         self.button_icon.clear()
@@ -629,6 +650,7 @@ class MenuWin( object ):
             self.button_icon.hide()
         else:
             self.button_icon.show()
+        self.updateAccessibleNames()
 
     def hotkeyChanged (self, schema, key):
         self.hotkeyText =  self.settings.get_string( "hot-key" )
