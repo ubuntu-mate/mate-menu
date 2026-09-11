@@ -83,7 +83,6 @@ class MainWindow( object ):
         self.headingsToColor = [ ]
 
         self.window.realize()
-        self.window.get_window().set_decorations(Gdk.WMDecoration.BORDER)
         self.window.set_title('Advanced MATE Menu')
         self.window.set_app_paintable(True)
 
