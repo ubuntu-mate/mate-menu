@@ -166,7 +166,10 @@ class InstallWithSchemas(install):
         # Account for --root option (used for packaging)
         root = self.root or ''
         prefix = self.prefix or sys.prefix
-        schema_dir = os.path.join(root, prefix.lstrip('/'), 'share', 'glib-2.0', 'schemas')
+        if root == '':
+            schema_dir = os.path.join(prefix, 'share', 'glib-2.0', 'schemas')
+        else:
+            schema_dir = os.path.join(root, prefix.lstrip('/'), 'share', 'glib-2.0', 'schemas')
         if os.path.isdir(schema_dir):
             print(f"Compiling GSettings schemas in {schema_dir}...")
             try:
@@ -175,6 +178,8 @@ class InstallWithSchemas(install):
                 print(f"Warning: Failed to compile schemas: {e}", file=sys.stderr)
             except FileNotFoundError:
                 print("Warning: glib-compile-schemas not found", file=sys.stderr)
+        else:
+            print(f"Skipping schema compilation: {schema_dir} does not exist", file=sys.stderr)
 
 if sys.argv[1] == "build":
     import compileall
