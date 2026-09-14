@@ -33,7 +33,6 @@ import subprocess
 import filecmp
 from mate_menu.easybuttons import *
 from mate_menu.easygsettings import EasyGSettings
-from mate_menu.easyfiles import *
 from mate_menu import config
 
 # i18n

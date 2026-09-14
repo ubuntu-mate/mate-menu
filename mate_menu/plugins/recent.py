@@ -24,7 +24,6 @@ gi.require_version("Gtk", "3.0")
 
 from gi.repository import Gtk, Pango
 from mate_menu.easygsettings import EasyGSettings
-from mate_menu.easyfiles import *
 from mate_menu.easybuttons import *
 from mate_menu import config
 
