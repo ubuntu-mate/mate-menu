@@ -7,7 +7,6 @@ mate_menu/plugins/system_management.py
 mate_menu/plugins/places.py
 mate_menu/plugins/recent.py
 mate_menu/easygsettings.py
-mate_menu/easyfiles.py
 mate_menu/easybuttons.py
 mate_menu/execute.py
 mate_menu/filemonitor.py
