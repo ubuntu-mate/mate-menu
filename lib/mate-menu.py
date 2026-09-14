@@ -75,7 +75,6 @@ class MainWindow( object ):
         builder.add_from_file(os.path.join( self.data_path, "mate-menu.glade" ))
         self.window     = builder.get_object( "mainWindow" )
         self.paneholder = builder.get_object( "paneholder" )
-        self.border     = builder.get_object( "border" )
 
         builder.connect_signals(self)
 
@@ -102,7 +101,6 @@ class MainWindow( object ):
         self.settings.connect( "changed::plugins-list", self.RegenPlugins )
         self.settings.connect( "changed::start-with-favorites", self.toggleStartWithFavorites )
         self.settings.connect( "changed::tooltips-enabled", self.toggleTooltipsEnabled )
-        self.settings.connect( "changed::border-width", self.toggleBorderWidth )
 
         self.getSetGSettingEntries()
 
@@ -138,13 +136,8 @@ class MainWindow( object ):
     def toggleStartWithFavorites( self, settings, key, args = None ):
         self.startWithFavorites = settings.get_boolean(key)
 
-    def toggleBorderWidth( self, settings, key,  args = None ):
-        self.borderwidth = settings.get_int(key)
-        self.SetupMateMenuBorder()
-
     def getSetGSettingEntries( self ):
         self.pluginlist           = self.settings.get_strv( "plugins-list" )
-        self.borderwidth          = self.settings.get_int( "border-width" )
         self.enableTooltips       = self.settings.get_boolean( "tooltips-enabled" )
         self.startWithFavorites   = self.settings.get_boolean( "start-with-favorites" )
 
@@ -276,20 +269,6 @@ class MainWindow( object ):
         self.paneholder.pack_start( PluginPane, False, False, 0 )
         self.tooltipsEnable( False )
 
-    def loadTheme( self ):
-        self.SetupMateMenuBorder()
-
-    def SetupMateMenuBorder(self):
-        style = self.window.get_style_context()
-        styleProvider = Gtk.CssProvider()
-        styleProvider.load_from_data(b".background { border-width: %dpt; }" % self.borderwidth)
-        style.add_provider(styleProvider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
-
-        self.border.set_margin_top(self.borderwidth)
-        self.border.set_margin_bottom(self.borderwidth)
-        self.border.set_margin_start(self.borderwidth)
-        self.border.set_margin_end(self.borderwidth)
-
     def tooltipsEnable( self, enable = True ):
         for widget in self.tooltipsWidgets:
             widget.set_has_tooltip( enable )
@@ -322,7 +301,6 @@ class MainWindow( object ):
 
         self.getSetGSettingEntries()
         self.PopulatePlugins()
-        self.loadTheme()
 
         #print(NAME + " reloaded")
 
@@ -413,7 +391,6 @@ class MenuWin( object ):
 
         self.mainwin.window.set_name("mate-menu")
         self.applyTheme()
-        self.mainwin.loadTheme()
 
         Gtk.Window.set_default_icon_name( self.icon )
 
