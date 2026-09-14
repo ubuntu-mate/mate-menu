@@ -67,9 +67,6 @@ class mateMenuConfig( object ):
         self.builder.get_object("remember_filter").set_label(_("Remember the last category or search"))
         self.builder.get_object("swapGeneric").set_label(_("Swap name and generic name"))
 
-        self.builder.get_object("label11").set_text(_("Border width:"))
-        self.builder.get_object("label25").set_text(_("pixels"))
-
         self.builder.get_object("buttonTextLabel").set_text(_("Button text:"))
         self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 
@@ -144,7 +141,6 @@ class mateMenuConfig( object ):
         self.placesIconSize = self.builder.get_object( "placesIconSize" )
         self.systemIconSize = self.builder.get_object( "systemIconSize" )
         self.favCols = self.builder.get_object( "numFavCols" )
-        self.borderWidth = self.builder.get_object( "borderWidth" )
         self.showButtonIcon = self.builder.get_object( "showButtonIcon" )
         self.buttonText = self.builder.get_object( "buttonText" )
         self.hotkeyWidget = keybinding.KeybindingWidget(_("Keyboard shortcut:") )
@@ -212,7 +208,6 @@ class mateMenuConfig( object ):
         self.bindGSettingsValueToWidget( self.settingsPlaces, "int", "icon-size", self.placesIconSize, "value-changed", self.placesIconSize.set_value, self.placesIconSize.get_value )
         self.bindGSettingsValueToWidget( self.settingsSystem, "int", "icon-size", self.systemIconSize, "value-changed", self.systemIconSize.set_value, self.systemIconSize.get_value )
 
-        self.bindGSettingsValueToWidget( self.settings, "int", "border-width", self.borderWidth, "value-changed", self.borderWidth.set_value, self.borderWidth.get_value_as_int )
         self.bindGSettingsValueToWidget( self.settings, "bool", "hide-applet-icon", self.showButtonIcon, "toggled", self.setShowButtonIcon, self.getShowButtonIcon )
         self.bindGSettingsValueToWidget( self.settings, "string", "applet-text", self.buttonText, "changed", self.buttonText.set_text, self.buttonText.get_text )
         self.bindGSettingsValueToWidget( self.settings, "string", "hot-key", self.hotkeyWidget, "accel-edited", self.hotkeyWidget.set_val, self.hotkeyWidget.get_val )

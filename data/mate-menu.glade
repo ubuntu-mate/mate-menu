@@ -12,17 +12,11 @@
     <property name="decorated">False</property>
     <property name="deletable">False</property>
     <child>
-      <object class="GtkAlignment" id="border">
+      <object class="GtkBox" id="paneholder">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <child>
-          <object class="GtkBox" id="paneholder">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <child>
-              <placeholder/>
-            </child>
-          </object>
+          <placeholder/>
         </child>
       </object>
     </child>
