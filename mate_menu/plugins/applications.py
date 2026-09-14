@@ -1362,31 +1362,14 @@ class pluginclass( object ):
 
             # Find added and removed categories than update the category list
             newCategoryList = self.buildCategoryList()
-            addedCategories = []
-            removedCategories = []
 
-            # TODO: optimize this!!!
-            if not self.categoryList:
-                addedCategories = newCategoryList
-            else:
-                for item in newCategoryList:
-                    found = False
-                    for item2 in self.categoryList:
-                        pass
-                        if item["name"] == item2["name"] and item["icon"] == item2["icon"] and item["tooltip"] == item2["tooltip"] and item["index"] == item2["index"]:
-                            found = True
-                            break
-                    if not found:
-                        addedCategories.append(item)
+            def categoryKey(item):
+                return (item["name"], item["icon"], item["tooltip"], item["index"])
 
-                for item in self.categoryList:
-                    found = False
-                    for item2 in newCategoryList:
-                        if item["name"] == item2["name"] and item["icon"] == item2["icon"] and item["tooltip"] == item2["tooltip"] and item["index"] == item2["index"]:
-                            found = True
-                            break
-                    if not found:
-                        removedCategories.append( item )
+            oldKeys = {categoryKey(item) for item in self.categoryList}
+            newKeys = {categoryKey(item) for item in newCategoryList}
+            addedCategories = [item for item in newCategoryList if categoryKey(item) not in oldKeys]
+            removedCategories = [item for item in self.categoryList if categoryKey(item) not in newKeys]
 
             if self.showcategoryicons == True:
                 categoryIconSize = self.iconSize
@@ -1443,38 +1426,16 @@ class pluginclass( object ):
 
             # Find added and removed applications add update the application list
             newApplicationList = self.buildApplicationList()
-            addedApplications = []
-            removedApplications = []
 
-            # TODO: optimize this!!!
-            if not self.applicationList:
-                addedApplications = newApplicationList
-            else:
-                for item in newApplicationList:
-                    found = False
-                    for item2 in self.applicationList:
-                        if item["entry"].get_desktop_file_path() == item2["entry"].get_desktop_file_path():
-                            found = True
-                            break
-                    if not found:
-                        addedApplications.append(item)
+            oldPaths = {item["entry"].get_desktop_file_path() for item in self.applicationList}
+            newPaths = {item["entry"].get_desktop_file_path() for item in newApplicationList}
+            addedApplications = [item for item in newApplicationList
+                                 if item["entry"].get_desktop_file_path() not in oldPaths]
 
-                key = 0
-                for item in self.applicationList:
-                    found = False
-                    for item2 in newApplicationList:
-                        if item["entry"].get_desktop_file_path() == item2["entry"].get_desktop_file_path():
-                            found = True
-                            break
-                    if not found:
-                        removedApplications.append(key)
-                    else:
-                        # don't increment the key if this item is going to be removed
-                        # because when it is removed the index of all later items is
-                        # going to be decreased
-                        key += 1
+            removedApplications = [key for key, item in enumerate(self.applicationList)
+                                   if item["entry"].get_desktop_file_path() not in newPaths]
 
-            for key in removedApplications:
+            for key in sorted(removedApplications, reverse=True):
                 self.applicationList[key]["button"].destroy()
                 del self.applicationList[key]
 
