@@ -79,10 +79,12 @@ class MainWindow( object ):
 
         builder.connect_signals(self)
 
-        self.headings = [ ]
-
         self.window.realize()
         self.window.set_title('Advanced MATE Menu')
+
+        self.styleProvider = Gtk.CssProvider()
+        self.styleProvider.load_from_data(b".menu-heading { font-size: 1.2em; font-weight: bold; }")
+        Gtk.StyleContext.add_provider_for_screen(Gdk.Screen.get_default(), self.styleProvider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
 
         self.window.connect("key-press-event", self.onWindowKeyPress)
         self.window.connect("focus-in-event", self.onWindowFocusIn)
@@ -149,7 +151,6 @@ class MainWindow( object ):
         self.globalEnableTooltips = self.panelSettings.get_boolean( "tooltips-enabled" )
 
     def PopulatePlugins( self ):
-        self.headings = [ ]
         PluginPane = Gtk.EventBox()
         PluginPane.show()
         PaneLadder = Gtk.Box( orientation=Gtk.Orientation.VERTICAL )
@@ -210,7 +211,7 @@ class MainWindow( object ):
                 if MyPlugin.heading != "":
                     Label1 = Gtk.Label(label= MyPlugin.heading )
                     Label1.set_margin_start(10)
-                    self.headings.append( Label1 )
+                    Label1.get_style_context().add_class( "menu-heading" )
                     Label1.show()
 
                     heading = Gtk.EventBox()
@@ -239,8 +240,6 @@ class MainWindow( object ):
                         MyPlugin.do_plugin()
                     if hasattr( MyPlugin, 'height' ):
                         MyPlugin.content_holder.set_size_request( -1, MyPlugin.height )
-                    if hasattr( MyPlugin, 'headingstocolor' ):
-                        self.headings.extend( MyPlugin.headingstocolor )
                 except:
                     # create traceback
                     info = sys.exc_info()
@@ -279,7 +278,6 @@ class MainWindow( object ):
 
     def loadTheme( self ):
         self.SetupMateMenuBorder()
-        self.SetHeadingStyle( self.headings )
 
     def SetupMateMenuBorder(self):
         style = self.window.get_style_context()
@@ -291,13 +289,6 @@ class MainWindow( object ):
         self.border.set_margin_bottom(self.borderwidth)
         self.border.set_margin_start(self.borderwidth)
         self.border.set_margin_end(self.borderwidth)
-
-    def SetHeadingStyle( self, items ):
-        for item in items:
-            item.set_use_markup(True)
-            text = item.get_text()
-            markup = '<span size="12000" weight="bold">%s</span>' % (text)
-            item.set_markup( markup )
 
     def tooltipsEnable( self, enable = True ):
         for widget in self.tooltipsWidgets:
