@@ -222,7 +222,7 @@ class MainWindow( object ):
 
                     heading = Gtk.EventBox()
                     heading.set_visible_window( False )
-                    heading.set_size_request( MyPlugin.width, 30 )
+                    heading.set_size_request( MyPlugin.width, 37 )
 
                     heading.add(Label1)
                     heading.show()
