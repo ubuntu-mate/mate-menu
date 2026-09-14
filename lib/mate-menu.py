@@ -79,8 +79,7 @@ class MainWindow( object ):
 
         builder.connect_signals(self)
 
-        self.panesToColor = [ ]
-        self.headingsToColor = [ ]
+        self.headings = [ ]
 
         self.window.realize()
         self.window.set_title('Advanced MATE Menu')
@@ -153,15 +152,13 @@ class MainWindow( object ):
         self.globalEnableTooltips = self.panelSettings.get_boolean( "tooltips-enabled" )
 
     def PopulatePlugins( self ):
-        self.panesToColor = [ ]
-        self.headingsToColor = [ ]
+        self.headings = [ ]
         PluginPane = Gtk.EventBox()
         PluginPane.show()
         PaneLadder = Gtk.Box( orientation=Gtk.Orientation.VERTICAL )
         PluginPane.add( PaneLadder )
         ImageBox = Gtk.EventBox()
         ImageBox.show()
-        self.panesToColor.extend( [ PluginPane, ImageBox ] )
 
         self.plugins = {}
 
@@ -210,14 +207,13 @@ class MainWindow( object ):
                     print(u"Unable to load " + plugin + " plugin :-(")
 
 
-                self.panesToColor.append( MyPlugin.content_holder )
                 MyPlugin.content_holder.show()
 
                 VBox1 = Gtk.Box( orientation=Gtk.Orientation.VERTICAL )
                 if MyPlugin.heading != "":
                     Label1 = Gtk.Label(label= MyPlugin.heading )
                     Label1.set_margin_start(10)
-                    self.headingsToColor.append( Label1 )
+                    self.headings.append( Label1 )
                     Label1.show()
 
                     heading = Gtk.EventBox()
@@ -246,10 +242,8 @@ class MainWindow( object ):
                         MyPlugin.do_plugin()
                     if hasattr( MyPlugin, 'height' ):
                         MyPlugin.content_holder.set_size_request( -1, MyPlugin.height )
-                    if hasattr( MyPlugin, 'itemstocolor' ):
-                        self.panesToColor.extend( MyPlugin.itemstocolor )
                     if hasattr( MyPlugin, 'headingstocolor' ):
-                        self.headingsToColor.extend( MyPlugin.headingstocolor )
+                        self.headings.extend( MyPlugin.headingstocolor )
                 except:
                     # create traceback
                     info = sys.exc_info()
@@ -268,7 +262,6 @@ class MainWindow( object ):
                 PaneLadder = Gtk.Box( orientation=Gtk.Orientation.VERTICAL )
                 PluginPane.add( PaneLadder )
                 ImageBox = Gtk.EventBox()
-                self.panesToColor.extend( [ PluginPane, ImageBox ] )
                 ImageBox.show()
                 PluginPane.show_all()
 
@@ -287,27 +280,9 @@ class MainWindow( object ):
         self.paneholder.pack_start( PluginPane, False, False, 0 )
         self.tooltipsEnable( False )
 
-    # A little bit hacky but works.
-    def getDefaultColors( self ):
-        widget = Gtk.EventBox()
-        widget.show()
-
-        context = widget.get_style_context()
-        context.set_state( Gtk.StateFlags.NORMAL )
-        context.add_class( Gtk.STYLE_CLASS_DEFAULT )
-        context.add_class( Gtk.STYLE_CLASS_BACKGROUND )
-
-        fgColor = context.get_color( context.get_state() )
-        bgColor = context.get_background_color( context.get_state() )
-        borderColor = context.get_border_color( context.get_state() )
-
-        return { "fg": fgColor, "bg": bgColor, "border": borderColor }
-
     def loadTheme( self ):
-        colors = self.getDefaultColors()
         self.SetupMateMenuBorder()
-        self.SetPaneColors(self.panesToColor, colors["bg"])
-        self.SetHeadingStyle( self.headingsToColor )
+        self.SetHeadingStyle( self.headings )
 
     def SetupMateMenuBorder(self):
         style = self.window.get_style_context()
@@ -319,12 +294,6 @@ class MainWindow( object ):
         self.border.set_margin_bottom(self.borderwidth)
         self.border.set_margin_start(self.borderwidth)
         self.border.set_margin_end(self.borderwidth)
-
-    def SetPaneColors( self, items, color = None ):
-        for item in items:
-            context = item.get_style_context()
-            if color is not None:
-                item.override_background_color( context.get_state(), color )
 
     def SetHeadingStyle( self, items ):
         for item in items:
@@ -577,9 +546,8 @@ class MenuWin( object ):
         self.hotkeyText =  self.settings.get_string( "hot-key" )
 
     def changeTheme(self, *args):
-        self.reloadSettings()
         self.applyTheme()
-        self.mainwin.loadTheme()
+        self.reloadSettings()
 
     def applyTheme(self):
         style_settings = Gtk.Settings.get_default()
