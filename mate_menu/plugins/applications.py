@@ -252,9 +252,6 @@ class pluginclass( object ):
         # This should be the first item added to the window in glade
         self.content_holder =self.builder.get_object( "Applications" )
 
-        # Items to get custom colors
-        self.itemstocolor = [self.builder.get_object( "viewport1" ),self.builder.get_object( "viewport2" ),self.builder.get_object( "viewport3" ) ]
-
         # Unset all timers
         self.filterTimer = None
         self.menuChangedTimer = None

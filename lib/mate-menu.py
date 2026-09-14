@@ -83,9 +83,7 @@ class MainWindow( object ):
 
         self.window.realize()
         self.window.set_title('Advanced MATE Menu')
-        self.window.set_app_paintable(True)
 
-        self.window.connect("draw", self.onWindowDraw)
         self.window.connect("key-press-event", self.onWindowKeyPress)
         self.window.connect("focus-in-event", self.onWindowFocusIn)
         self.loseFocusId = self.window.connect("focus-out-event", self.onWindowFocusOut)
@@ -113,7 +111,6 @@ class MainWindow( object ):
             self.tooltipsEnable( False )
 
         self.PopulatePlugins();
-        self.firstTime = True;
 
     def on_window1_destroy (self, widget, data=None):
         Gtk.main_quit()
@@ -338,13 +335,6 @@ class MainWindow( object ):
 
         #print(NAME + " reloaded")
 
-    def onWindowDraw(self, widget, cr):
-        style = widget.get_style_context()
-        req = widget.get_preferred_size()[0]
-        Gtk.render_background(style, cr, 0, 0, req.width, req.height)
-        Gtk.render_frame(style, cr, 0, 0, req.width, req.height)
-        return False
-
     def onWindowKeyPress( self, widget, event ):
         if event.keyval == Gdk.KEY_Escape:
             self.hide()
@@ -365,11 +355,6 @@ class MainWindow( object ):
 
     def show( self ):
         self.window.present()
-
-        # Hack for opacity not showing on first composited draw
-        if self.firstTime:
-            self.firstTime = False
-            self.window.set_opacity(1.0)
 
         self.window.get_window().focus( Gdk.CURRENT_TIME )
 
@@ -435,7 +420,7 @@ class MenuWin( object ):
         self.mainwin.window.connect( "unmap-event", self.onWindowUnmap )
         self.mainwin.window.connect( "size-allocate", lambda *args: self.positionMenu() )
 
-        self.mainwin.window.set_name("mate-menu") # Name used in Gtk RC files
+        self.mainwin.window.set_name("mate-menu")
         self.applyTheme()
         self.mainwin.loadTheme()
 

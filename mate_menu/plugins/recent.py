@@ -53,8 +53,6 @@ class pluginclass:
         self.recentBox = self.builder.get_object("RecentBox")
         self.recentVBox = self.builder.get_object( "vbox1" )
 
-        self.itemstocolor = [ self.builder.get_object("viewport1"), self.builder.get_object("viewport2") ]
-
         #Specify plugin width
         self.width = 250
 
