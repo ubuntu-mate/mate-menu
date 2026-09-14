@@ -18,119 +18,40 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
-import os
-import os.path
-import threading
-import time
-from gi.repository import GLib
-
-try:
-    import pyinotify
-    hasInotify = True
-except ImportError:
-    hasInotify = False
-
-if hasInotify:
-    class FileMonitor(object):
-        def __init__( self ):
-            self.monitorId = 0
-            self.wm = pyinotify.WatchManager()
-            self.wdds = {}
-            self.callbacks = {}
-            self.notifier = pyinotify.ThreadedNotifier(self.wm, self.fileChanged)
-            self.notifier.setDaemon( True )
-            self.notifier.start()
+from gi.repository import Gio, GLib
 
 
-        def addMonitor( self, filename, callback, args = None ):
-            try:
-                mask = pyinotify.IN_DELETE | pyinotify.IN_CREATE | pyinotify.IN_MODIFY
-                mId = self.wm.add_watch( filename, mask, rec = True)[filename]
-                if mId >= 0:
-                    self.callbacks[mId] = ( callback, args )
-            except Exception as detail:
-                mId = 0
-            return mId
+class FileMonitor ( object ):
+    """ Watches files for changes without spawning threads or background
+        pollers: each monitored file gets a standard Gio file monitor, and
+        the change callback is dispatched on the GTK main loop
+    """
+    def __init__ ( self ):
+        self.monitorId = 0
+        self.monitors = { }
 
-        def removeMonitor( self, monitorId ):
-            if monitorId in self.callbacks:
-                self.wm.rm_watch( monitorId )
-                del self.callbacks[monitorId]
+    def addMonitor ( self, filename, callback, args = None ):
+        self.monitorId += 1
+        monitorId = self.monitorId
 
-        def fileChanged(self, event ):
-            if event.wd in self.callbacks:
-                callback = self.callbacks[event.wd]
-                if callback[1]:
-                    GLib.idle_add( callback[0], callback[1] )
-                else:
-                    GLib.idle_add( callback[0] )
-else:
+        gio_file = Gio.File.new_for_path( filename )
+        monitor = gio_file.monitor_file( Gio.FileMonitorFlags.NONE, None )
+        changedId = monitor.connect( "changed", self.fileChanged, callback, args )
+        self.monitors[ monitorId ] = ( monitor, changedId )
 
-    class _MonitoredFile( object ):
-        def __init__( self, filename, callback, monitorId, args ):
-            self.filename = filename
-            self.callback = callback
-            self.monitorId = monitorId
-            self.args = args
-            self.exists = os.path.exists( self.filename )
-            if self.exists:
-                self.mtime = os.stat( filename ).st_mtime
-            else:
-                self.mtime = 0
+        return monitorId
 
-        def hasChanged( self ):
-            if os.path.exists( self.filename ):
-                if not self.exists:
-                    self.exists = True
-                    self.mtime = os.stat( self.filename ).st_mtime
-                    return True
-                else:
-                    mtime = os.stat( self.filename ).st_mtime
-                    if mtime != self.mtime:
-                        self.mtime = mtime
-                        return True
-            else:
-                if self.exists:
-                    self.exists = False
-                    return True
+    def removeMonitor ( self, monitorId ):
+        if monitorId in self.monitors:
+            monitor, changedId = self.monitors.pop( monitorId )
+            monitor.disconnect( changedId )
+            monitor.cancel()
 
-            return False
+    def fileChanged ( self, monitor, file, other_file, event, callback, args ):
+        if args:
+            GLib.idle_add( callback, args )
+        else:
+            GLib.idle_add( callback )
 
-    class MonitorThread(threading.Thread):
-        def __init__(self, monitor):
-            threading.Thread.__init__ ( self )
-            self.monitor = monitor
-
-        def run(self):
-            while(1):
-                self.monitor.checkFiles()
-                time.sleep(1)
-
-    class FileMonitor(object):
-        def __init__( self ):
-            self.monitorId = 0
-            self.monitoredFiles = []
-            self.monitorThread = MonitorThread( self )
-            self.monitorThread.setDaemon( True )
-            self.monitorThread.start()
-
-        def addMonitor( self, filename, callback, args = None ):
-            self.monitorId += 1
-            self.monitoredFiles.append( _MonitoredFile( filename, callback, self.monitorId, args ) )
-            return self.monitorId
-
-        def removeMonitor( self, monitorId ):
-            for monitored in self.monitoredFiles:
-                if monitorId == monitored.monitorId:
-                    self.monitoredFiles.remove( monitored )
-                    break
-
-        def checkFiles( self ):
-            for monitored in self.monitoredFiles:
-                if monitored.hasChanged():
-                    if monitored.args:
-                        GLib.idle_add( monitored.callback, monitored.args )
-                    else:
-                        GLib.idle_add( monitored.callback )
 
 monitor = FileMonitor()
