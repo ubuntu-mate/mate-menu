@@ -19,7 +19,7 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
-__VERSION__='22.04.2'
+__VERSION__='26.10.0'
 
 import gc
 import gi
