@@ -27,7 +27,7 @@ import gi
 import threading
 gi.require_version("Gtk", "3.0")
 
-from gi.repository import Gtk, Gdk, GdkX11, GObject, GLib
+from gi.repository import Gtk, Gdk, GObject, GLib
 from Xlib.display import Display
 from Xlib import X, error
 
@@ -48,7 +48,7 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
     def __init__(self):
         GObject.GObject.__init__ (self)
         threading.Thread.__init__ (self)
-        self.setDaemon (True)
+        self.daemon = True
 
         self.keymap = Gdk.Keymap.get_for_display(Gdk.Display.get_default())
         self.display = Display()
@@ -242,6 +242,7 @@ class KeybindingWidget(Gtk.Box):
         self.pack_start(self.button, False, False, 4)
 
         self.show_all()
+        self.value = ""
         self.event_id = None
         self.teaching = False
 

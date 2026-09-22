@@ -64,7 +64,7 @@ class pluginclass( object ):
         self.settings.notifyAdd( "icon-size", self.RegenPlugin )
         self.settings.notifyAdd( "show-computer", self.RegenPlugin )
         self.settings.notifyAdd( "show-desktop", self.RegenPlugin )
-        self.settings.notifyAdd( "show-home_folder", self.RegenPlugin )
+        self.settings.notifyAdd( "show-home-folder", self.RegenPlugin )
         self.settings.notifyAdd( "show-network", self.RegenPlugin )
         self.settings.notifyAdd( "show-trash", self.RegenPlugin )
         self.settings.notifyAdd( "custom-paths", self.RegenPlugin )

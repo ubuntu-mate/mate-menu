@@ -374,7 +374,7 @@ class pluginclass( object ):
             self.applicationsBox.set_size_request( self.width / 2, -1 )
 
         elif key == "height":
-            self.heigth = settings.get_int(key)
+            self.height = settings.get_int(key)
         self.content_holder.set_size_request( self.width, self.height )
 
     def changeSwapGenericName( self, settings, key, args ):

@@ -22,19 +22,19 @@
 import gettext
 import gi
 import os
-import subprocess
 import signal
 
 gi.require_version("Gtk", "3.0")
 
-from gi.repository import Gtk, Gdk, GdkPixbuf
+from gi.repository import Gtk
 import mate_menu.keybinding as keybinding
 
 signal.signal(signal.SIGINT, signal.SIG_DFL)
 
-# i18n
 import mate_menu.config as config
 import mate_menu.icons as icons
+
+# i18n
 gettext.install("mate-menu", config.LOCALE_DIR)
 
 from mate_menu.easygsettings import EasyGSettings
@@ -52,7 +52,6 @@ class mateMenuConfig( object ):
         self.builder.add_from_file (os.path.join(self.data_path, "mate-menu-config.glade" ))
         self.mainWindow=self.builder.get_object("mainWindow")
 
-        #i18n
         self.mainWindow.set_title(_("Menu preferences"))
         self.mainWindow.set_icon_name(self.icon)
 

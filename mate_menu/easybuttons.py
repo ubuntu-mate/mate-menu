@@ -19,7 +19,6 @@
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 import os
-import re
 import shutil
 import xdg.DesktopEntry
 import xdg.Menu
