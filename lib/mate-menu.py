@@ -35,7 +35,7 @@ import setproctitle
 gi.require_version("Gtk", "3.0")
 gi.require_version('MatePanelApplet', '4.0')
 
-from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
+from gi.repository import Gtk, GdkPixbuf, Gdk, GLib
 from gi.repository import MatePanelApplet
 from gi.repository import Gio
 
@@ -51,9 +51,10 @@ signal.signal(signal.SIGINT, signal.SIG_DFL)
 # Rename the process
 setproctitle.setproctitle('mate-menu')
 
-# i18n
 import mate_menu.config as config
 import mate_menu.icons as icons
+
+# i18n
 gettext.install("mate-menu", config.LOCALE_DIR)
 
 NAME = _("Menu")
