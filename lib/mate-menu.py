@@ -53,6 +53,7 @@ setproctitle.setproctitle('mate-menu')
 
 # i18n
 import mate_menu.config as config
+import mate_menu.icons as icons
 gettext.install("mate-menu", config.LOCALE_DIR)
 
 NAME = _("Menu")
@@ -365,7 +366,7 @@ class MenuWin( object ):
         self.data_path = config.DATA_DIR
         self.applet = applet
         self.settings = Gio.Settings.new("org.mate.mate-menu")
-        self.icon = "start-here-mate"
+        self.icon = icons.resolvedIconName("start-here-mate")
 
         self.loadSettings()
 
@@ -430,7 +431,7 @@ class MenuWin( object ):
         icon_size = self.applet.get_size() - 8
         scale_factor = self.button_icon.get_scale_factor()
         icon = Gio.ThemedIcon.new_with_default_fallbacks(icon_name)
-        icon_info = icon_theme.lookup_by_gicon_for_scale(icon, icon_size, scale_factor, 0)
+        icon_info = icon_theme.lookup_by_gicon_for_scale(icon, icon_size, scale_factor, Gtk.IconLookupFlags.USE_BUILTIN)
         try:
             pixbuf = icon_info.load_icon() if icon_info is not None else None
         except Exception:
@@ -583,15 +584,11 @@ class MenuWin( object ):
 
     def showAboutDialog( self, action, userdata = None ):
         about = Gtk.AboutDialog()
+        about.set_icon_name ( self.icon )
         about.set_program_name("Advanced MATE Menu")
         about.set_version(__VERSION__)
         about.set_comments( _("An Advanced Menu for the MATE Desktop") )
-        icon_theme = Gtk.IconTheme.get_default ()
-        pixbuf = icon_theme.load_icon ( self.icon, 256, 0 )
-        if pixbuf:
-            about.set_logo ( pixbuf )
-        else:
-            about.set_logo_icon_name ( self.icon )
+        about.set_logo_icon_name ( self.icon )
         about.connect( "response", lambda dialog, r: dialog.destroy() )
         about.show()
 

@@ -34,6 +34,7 @@ signal.signal(signal.SIGINT, signal.SIG_DFL)
 
 # i18n
 import mate_menu.config as config
+import mate_menu.icons as icons
 gettext.install("mate-menu", config.LOCALE_DIR)
 
 from mate_menu.easygsettings import EasyGSettings
@@ -43,6 +44,7 @@ class mateMenuConfig( object ):
     def __init__( self ):
 
         self.data_path = config.DATA_DIR
+        self.icon = icons.resolvedIconName("start-here-mate")
 
         # Load glade file and extract widgets
         self.builder = Gtk.Builder()
@@ -52,7 +54,7 @@ class mateMenuConfig( object ):
 
         #i18n
         self.mainWindow.set_title(_("Menu preferences"))
-        self.mainWindow.set_icon_name("start-here-mate")
+        self.mainWindow.set_icon_name(self.icon)
 
         self.builder.get_object("startWithFavorites").set_label(_("Always start with favorites pane"))
         self.builder.get_object("showButtonIcon").set_label(_("Show button icon"))
@@ -347,7 +349,7 @@ class mateMenuConfig( object ):
         newPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         newPlaceDialog.set_transient_for(self.mainWindow)
-        newPlaceDialog.set_icon_name("start-here-mate")
+        newPlaceDialog.set_icon_name(self.icon)
         newPlaceDialog.set_title(self.newPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         newPlaceDialog.set_default_response(Gtk.ResponseType.OK)
@@ -375,7 +377,7 @@ class mateMenuConfig( object ):
         editPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         editPlaceDialog.set_transient_for(self.mainWindow)
-        editPlaceDialog.set_icon_name("start-here-mate")
+        editPlaceDialog.set_icon_name(self.icon)
         editPlaceDialog.set_title(self.editPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         editPlaceDialog.set_default_response(Gtk.ResponseType.OK)
