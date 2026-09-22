@@ -1,6 +1,7 @@
-.bzr
-.bzrignore
 build
 dist
 *.egg-info
 *.pyc
+*.glade~
+data/org.mate.panel.MateMenuApplet.mate-panel-applet
+data/org.mate.panel.applet.MateMenuAppletFactory.service

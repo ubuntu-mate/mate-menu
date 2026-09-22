@@ -33,10 +33,10 @@ import subprocess
 import filecmp
 from mate_menu.easybuttons import *
 from mate_menu.easygsettings import EasyGSettings
-from mate_menu.easyfiles import *
+from mate_menu import config
 
 # i18n
-gettext.install("mate-menu", "/usr/share/locale")
+gettext.install("mate-menu", config.LOCALE_DIR)
 
 class PackageDescriptor():
     def __init__(self, name, summary, description):
@@ -64,7 +64,7 @@ def get_system_item_paths():
     item_dirs = []
     if 'XDG_DATA_DIRS' in os.environ:
         item_dirs = os.environ['XDG_DATA_DIRS'].split(":")
-    item_dirs.append(os.path.join('/usr', 'share'))
+    item_dirs.append(os.path.join(config.PREFIX, 'share'))
     return item_dirs
 
 def rel_path(target, base=os.curdir):
@@ -89,6 +89,10 @@ def rel_path(target, base=os.curdir):
 
 def get_contents(item):
     contents = []
+    if item is None:
+        # The menu tree failed to load; treat it as empty instead of
+        # blowing up when the rest of the code iterates the contents
+        return contents
     item_iter = item.iter()
     item_type = item_iter.next()
 
@@ -112,8 +116,14 @@ def get_contents(item):
 class Menu:
     def __init__( self, MenuToLookup ):
         self.tree = MateMenu.Tree.new( MenuToLookup, MateMenu.TreeFlags.SORT_DISPLAY_NAME)
-        self.tree.load_sync()
-        self.directory = self.tree.get_root_directory()
+        self.directory = None
+        try:
+            self.tree.load_sync()
+            self.directory = self.tree.get_root_directory()
+        except GLib.Error:
+            # The menu failed to load (broken .menu file, missing entries,
+            # ...); leave the root as None and treat the tree as empty
+            self.directory = None
 
     def getMenus( self, parent=None ):
         if parent == None:
@@ -207,7 +217,7 @@ class pluginclass( object ):
 
         self.builder = Gtk.Builder()
         # The Glade file for the plugin
-        self.builder.add_from_file ( os.path.join( '/', 'usr', 'share', 'mate-menu',  'plugins', 'applications.glade' ))
+        self.builder.add_from_file ( os.path.join( config.DATA_DIR, 'plugins', 'applications.glade' ))
 
         # Read GLADE file
         self.searchEntry =self.builder.get_object( "searchEntry" )
@@ -227,7 +237,8 @@ class pluginclass( object ):
         self.builder.get_object("label7").set_text(_("All applications"))
         self.builder.get_object("label2").set_text(_("Applications"))
 
-        self.headingstocolor = [self.builder.get_object("label6"),self.builder.get_object("label2")]
+        self.builder.get_object("label6").get_style_context().add_class("menu-heading")
+        self.builder.get_object("label2").get_style_context().add_class("menu-heading")
 
         self.numApps = 0
         # These properties are NECESSARY to maintain consistency
@@ -240,9 +251,6 @@ class pluginclass( object ):
 
         # This should be the first item added to the window in glade
         self.content_holder =self.builder.get_object( "Applications" )
-
-        # Items to get custom colors
-        self.itemstocolor = [self.builder.get_object( "viewport1" ),self.builder.get_object( "viewport2" ),self.builder.get_object( "viewport3" ) ]
 
         # Unset all timers
         self.filterTimer = None
@@ -295,16 +303,12 @@ class pluginclass( object ):
         self.categoriesBox.set_size_request( self.width / 3, -1 )
         self.applicationsBox.set_size_request( self.width / 2, -1 )
 
-        self.buildingButtonList = False
-        self.stopBuildingButtonList = False
-
         self.categoryList = []
         self.applicationList = []
 
         #dirty ugly hack, to get favorites drag origin position
         self.drag_origin = None
 
-        self.rebuildLock = False
         self.activeFilter = (1, "", self.searchEntry)
 
         self.adminMenu = None
@@ -370,7 +374,7 @@ class pluginclass( object ):
             self.applicationsBox.set_size_request( self.width / 2, -1 )
 
         elif key == "height":
-            self.heigth = settings.get_int(key)
+            self.height = settings.get_int(key)
         self.content_holder.set_size_request( self.width, self.height )
 
     def changeSwapGenericName( self, settings, key, args ):
@@ -441,30 +445,6 @@ class pluginclass( object ):
             self.favoritesBox.remove( fav )
             self.favoritesPositionOnGrid( fav )
 
-    def RegenPlugin( self, *args, **kargs ):
-        # save old config - this is necessary because the app will notified when it sets the default values and you don't want the to reload itself several times
-        oldcategories_mouse_over = self.categories_mouse_over
-        oldiconsize = self.iconSize
-        oldfaviconsize = self.faviconsize
-        oldswapgeneric = self.swapgeneric
-        oldshowcategoryicons = self.showcategoryicons
-        oldcategoryhoverdelay = self.categoryhoverdelay
-        oldsticky = self.sticky
-        oldminimized = self.minimized
-        oldicon = self.icon
-        oldhideseparator = self.hideseparator
-        oldshowapplicationcomments = self.showapplicationcomments
-
-        self.GetGSettingsEntries()
-
-        # if the config hasn't changed return
-        if oldcategories_mouse_over == self.categories_mouse_over and oldiconsize == self.iconSize and oldfaviconsize == self.faviconsize and oldswapgeneric == self.swapgeneric and oldshowcategoryicons == self.showcategoryicons and oldcategoryhoverdelay == self.categoryhoverdelay and oldsticky == self.sticky and oldminimized == self.minimized and oldicon == self.icon and oldhideseparator == self.hideseparator and oldshowapplicationcomments == self.showapplicationcomments:
-            return
-
-        self.Todos()
-        self.buildFavorites()
-        self.RebuildPlugin()
-
     def GetGSettingsEntries( self ):
 
         self.categories_mouse_over = self.settings.get( "bool", "categories-mouse-over")
@@ -489,25 +469,11 @@ class pluginclass( object ):
         self.lastActiveTab =  self.settings.get( "int", "last-active-tab")
         self.defaultTab = self.settings.get( "int", "default-tab")
 
-
-        # Allow plugin to be minimized to the left plugin pane
-        self.sticky = self.settings.get( "bool", "sticky")
-        self.minimized = self.settings.get( "bool", "minimized")
-
         # Search tool
         self.searchtool = self.settings.get( "string", "search-command")
         if self.searchtool == "beagle-search SEARCH_STRING":
             self.searchtool = "mate-search-tool --named \"%s\" --start"
             self.settings.set( "string", "search-command", "mate-search-tool --named \"%s\" --start" )
-
-        # Plugin icon
-        self.icon = self.settings.get( "string", "icon" )
-
-    def SetHidden( self, state ):
-        if state == True:
-            self.settings.set( "bool", "minimized", True )
-        else:
-            self.settings.set( "bool", "minimized", False )
 
     def RebuildPlugin(self):
         self.content_holder.set_size_request( self.width, self.height )
@@ -564,7 +530,7 @@ class pluginclass( object ):
         self.showFavoritesButton.connect( "enter-notify-event", self.onEnter )
         self.showFavoritesButton.connect( "focus-in-event", self.onFocusIn )
         self.showFavoritesButton.connect( "focus-out-event", self.onFocusOut )
-        self.buildButtonList()
+        self.updateBoxes(False)
 
     def blockOnPopup( self, *args ):
         self.mateMenuWin.stopHiding()
@@ -594,17 +560,10 @@ class pluginclass( object ):
         else:
             self.searchEntry.set_text("")
 
-    def buildButtonList( self ):
-        if self.buildingButtonList:
-            self.stopBuildingButtonList = True
-            GLib.timeout_add( 100, self.buildButtonList )
-            return
-
-        self.stopBuildingButtonList = False
-
-        self.updateBoxes(False)
-
     def categoryBtnFocus( self, widget, event, category ):
+        # Only filter when the mouse-over option is enabled
+        if not self.categories_mouse_over:
+            return
         self.scrollItemIntoView( widget )
         self.StartFilter( widget, category )
 
@@ -623,7 +582,7 @@ class pluginclass( object ):
 
         text = "<b>%s</b>" % text
         focused = already_focused
-        prefix = "/usr/share/mate-menu/icons/search_engines/%s"
+        prefix = os.path.join(config.DATA_DIR, "icons", "search_engines", "%s")
 
         if self.enableddg:
             suggestionButton = SuggestionButton("list-add", self.iconSize, "")
@@ -931,7 +890,7 @@ class pluginclass( object ):
 
     def searchPopup( self, widget=None, event=None ):
         menu = Gtk.Menu()
-        prefix = "/usr/share/mate-menu/icons/search_engines/%s"
+        prefix = os.path.join(config.DATA_DIR, "icons", "search_engines", "%s")
 
         menuItem = self.createImageMenuItem(_("Search DuckDuckGo"), prefix % "ddg.png")
         menuItem.connect("activate", self.search_ddg)
@@ -1067,7 +1026,7 @@ class pluginclass( object ):
         self.mateMenuWin.hide()
         Gdk.flush()
 
-        editProcess = subprocess.Popen(["/usr/bin/mate-desktop-item-edit", filePath])
+        editProcess = subprocess.Popen([shutil.which("mate-desktop-item-edit"), filePath])
         subprocess.Popen.communicate(editProcess)
 
         if newFileFlag:
@@ -1192,7 +1151,7 @@ class pluginclass( object ):
             if location == "x-nautilus-desktop:///computer":
                 location = "/usr/share/applications/nautilus-computer.desktop"
             elif location == "x-nautilus-desktop:///home":
-                location =  "/usr/share/applications/nautilus-home.desktop"
+                location = "/usr/share/applications/nautilus-home.desktop"
             elif location == "x-nautilus-desktop:///network":
                 location = "/usr/share/applications/network-scheme.desktop"
             elif location.startswith( "x-nautilus-desktop:///" ):
@@ -1226,8 +1185,7 @@ class pluginclass( object ):
         try:
             self.checkMateMenuFolder()
             if not os.path.isfile(self.favoritesPath):
-                # XXX: should the hardcoded path be removed?
-                shutil.copyfile("/usr/share/mate-menu/applications.list", self.favoritesPath)
+                shutil.copyfile(os.path.join(config.DATA_DIR, "applications.list"), self.favoritesPath)
 
             applicationsFile = open(self.favoritesPath, "r")
             applicationsList = applicationsFile.readlines()
@@ -1375,11 +1333,15 @@ class pluginclass( object ):
 
     def on_drag_data_received( self, widget, context, x, y, selection, info, time ):
         if info == self.TARGET_TYPE_FAV:
-            self.favoritesReorder( int(selection.get_data()), widget.position )
+            try:
+                oldposition = int(selection.get_data().decode())
+            except (UnicodeDecodeError, ValueError):
+                return
+            self.favoritesReorder(oldposition, widget.position)
 
     def on_drag_data_get( self, widget, context, selection, targetType, time ):
         if targetType == self.TARGET_TYPE_FAV:
-            selection.set(Gdk.SELECTION_CLIPBOARD, 8, str(widget.position))
+            selection.set(Gdk.SELECTION_CLIPBOARD, 8, str(widget.position).encode())
 
     def on_icon_theme_changed(self, theme):
         self.menuChanged (0, 0)
@@ -1392,12 +1354,6 @@ class pluginclass( object ):
         self.menuChangedTimer = GLib.timeout_add( 1000, self.updateBoxes, True )
 
     def updateBoxes( self, menu_has_changed ):
-        # FIXME: This is really bad!
-        if self.rebuildLock:
-            return
-
-        self.rebuildLock = True
-
         self.menuChangedTimer = None
 
         try:
@@ -1406,31 +1362,14 @@ class pluginclass( object ):
 
             # Find added and removed categories than update the category list
             newCategoryList = self.buildCategoryList()
-            addedCategories = []
-            removedCategories = []
 
-            # TODO: optimize this!!!
-            if not self.categoryList:
-                addedCategories = newCategoryList
-            else:
-                for item in newCategoryList:
-                    found = False
-                    for item2 in self.categoryList:
-                        pass
-                        if item["name"] == item2["name"] and item["icon"] == item2["icon"] and item["tooltip"] == item2["tooltip"] and item["index"] == item2["index"]:
-                            found = True
-                            break
-                    if not found:
-                        addedCategories.append(item)
+            def categoryKey(item):
+                return (item["name"], item["icon"], item["tooltip"], item["index"])
 
-                for item in self.categoryList:
-                    found = False
-                    for item2 in newCategoryList:
-                        if item["name"] == item2["name"] and item["icon"] == item2["icon"] and item["tooltip"] == item2["tooltip"] and item["index"] == item2["index"]:
-                            found = True
-                            break
-                    if not found:
-                        removedCategories.append( item )
+            oldKeys = {categoryKey(item) for item in self.categoryList}
+            newKeys = {categoryKey(item) for item in newCategoryList}
+            addedCategories = [item for item in newCategoryList if categoryKey(item) not in oldKeys]
+            removedCategories = [item for item in self.categoryList if categoryKey(item) not in newKeys]
 
             if self.showcategoryicons == True:
                 categoryIconSize = self.iconSize
@@ -1465,11 +1404,11 @@ class pluginclass( object ):
                             startId = item["button"].connect( "enter", self.StartFilter, item["filter"] )
                             stopId = item["button"].connect( "leave", self.StopFilter )
                             item["button"].mouseOverHandlerIds = ( startId, stopId )
-                            item["button"].connect( "focus-in-event", self.categoryBtnFocus, item["filter"] )
                         else:
                             item["button"].mouseOverHandlerIds = None
 
                         item["button"].connect( "clicked", self.FilterAndClear, item["filter"] )
+                        item["button"].connect( "focus-in-event", self.categoryBtnFocus, item["filter"] )
                         item["button"].show()
 
                         self.categoryList.append( item )
@@ -1487,38 +1426,16 @@ class pluginclass( object ):
 
             # Find added and removed applications add update the application list
             newApplicationList = self.buildApplicationList()
-            addedApplications = []
-            removedApplications = []
 
-            # TODO: optimize this!!!
-            if not self.applicationList:
-                addedApplications = newApplicationList
-            else:
-                for item in newApplicationList:
-                    found = False
-                    for item2 in self.applicationList:
-                        if item["entry"].get_desktop_file_path() == item2["entry"].get_desktop_file_path():
-                            found = True
-                            break
-                    if not found:
-                        addedApplications.append(item)
+            oldPaths = {item["entry"].get_desktop_file_path() for item in self.applicationList}
+            newPaths = {item["entry"].get_desktop_file_path() for item in newApplicationList}
+            addedApplications = [item for item in newApplicationList
+                                 if item["entry"].get_desktop_file_path() not in oldPaths]
 
-                key = 0
-                for item in self.applicationList:
-                    found = False
-                    for item2 in newApplicationList:
-                        if item["entry"].get_desktop_file_path() == item2["entry"].get_desktop_file_path():
-                            found = True
-                            break
-                    if not found:
-                        removedApplications.append(key)
-                    else:
-                        # don't increment the key if this item is going to be removed
-                        # because when it is removed the index of all later items is
-                        # going to be decreased
-                        key += 1
+            removedApplications = [key for key, item in enumerate(self.applicationList)
+                                   if item["entry"].get_desktop_file_path() not in newPaths]
 
-            for key in removedApplications:
+            for key in sorted(removedApplications, reverse=True):
                 self.applicationList[key]["button"].destroy()
                 del self.applicationList[key]
 
@@ -1528,7 +1445,12 @@ class pluginclass( object ):
                     self.applicationsBox.remove( item["button"] )
                     sortedApplicationList.append( ( item["button"].appName, item["button"] ) )
                 for item in addedApplications:
-                    item["button"] = MenuApplicationLauncher( item["entry"].get_desktop_file_path(), self.iconSize, item["category"], self.showapplicationcomments, highlight=(True and menu_has_changed) )
+                    try:
+                        item["button"] = MenuApplicationLauncher( item["entry"].get_desktop_file_path(), self.iconSize, item["category"], self.showapplicationcomments, highlight=(True and menu_has_changed) )
+                    except Exception as e:
+                        # Keep the rest of the menu if a single .desktop file fails to parse
+                        print(e)
+                        continue
                     if item["button"].appExec:
                         self.mateMenuWin.setTooltip( item["button"], item["button"].getTooltip() )
                         item["button"].connect( "button-press-event", self.menuPopup )
@@ -1557,8 +1479,6 @@ class pluginclass( object ):
         except Exception as e:
             print(e)
 
-        self.rebuildLock = False
-
     # Reload the menufiles from the filesystem
     def loadMenuFiles( self ):
         if len(self.menuFiles) > 0:
@@ -1580,7 +1500,11 @@ class pluginclass( object ):
             for child in get_contents(menu.directory):
                 if isinstance(child, MateMenu.TreeDirectory):
                     name = child.get_name()
-                    icon = child.get_icon().to_string()
+                    icon = child.get_icon()
+                    if ( icon == None ):
+                        icon = "applications-other"
+                    else:
+                        icon = icon.to_string()
                     newCategoryList.append( { "name": name, "icon": icon, "tooltip": name, "filter": name, "index": num } )
             num += 1
 

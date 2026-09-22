@@ -1,7 +1,7 @@
 [Applet Factory]
 Id=MateMenuAppletFactory
 InProcess=false
-Location=/usr/lib/mate-menu/mate-menu.py
+Location=@PREFIX@/lib/mate-menu/mate-menu.py
 Name=Advanced MATE Menu Applet Factory
 Description=Advanced MATE Menu
 

@@ -80,26 +80,8 @@
       <description></description>
     </key>
 
-    <key type="b" name="sticky">
-      <default>false</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="b" name="minimized">
-      <default>false</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
     <key type="s" name="search-command">
       <default>"mate-search-tool --named \"%s\" --start"</default>
-      <summary></summary>
-      <description></description>
-    </key>
-
-    <key type="s" name="icon">
-      <default>"applications-accessories"</default>
       <summary></summary>
       <description></description>
     </key>

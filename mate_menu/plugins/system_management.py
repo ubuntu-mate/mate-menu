@@ -28,9 +28,10 @@ from gi.repository import Gtk
 from mate_menu.easybuttons import *
 from mate_menu.execute import Execute
 from mate_menu.easygsettings import EasyGSettings
+from mate_menu import config
 
 # i18n
-gettext.install("mate-menu", "/usr/share/locale")
+gettext.install("mate-menu", config.LOCALE_DIR)
 
 class pluginclass( object ):
 
@@ -40,7 +41,7 @@ class pluginclass( object ):
         self.toggleButton = toggleButton
 
         self.builder = Gtk.Builder()
-        self.builder.add_from_file( os.path.join( '/', 'usr', 'share', 'mate-menu',  'plugins', 'system_management.glade' ))
+        self.builder.add_from_file( os.path.join( config.DATA_DIR, 'plugins', 'system_management.glade' ))
 
         self.systemBtnHolder    = self.builder.get_object( "system_button_holder" )
         self.editableBtnHolder  = self.builder.get_object( "editable_button_holder" )
@@ -57,9 +58,6 @@ class pluginclass( object ):
         # This should be the first item added to the window in glade
         self.content_holder = self.builder.get_object( "System" )
 
-        # Items to get custom colors
-        self.itemstocolor = [ self.builder.get_object( "viewport2" ) ]
-
         # Gconf stuff
         self.settings = EasyGSettings( "org.mate.mate-menu.plugins.system_management" )
 
@@ -73,7 +71,6 @@ class pluginclass( object ):
         self.settings.notifyAdd( "allow-scrollbar", self.RegenPlugin )
         self.settings.notifyAdd( "height", self.changePluginSize )
         self.settings.notifyAdd( "width", self.changePluginSize )
-        self.settings.bindGSettingsEntryToVar( "bool", "sticky", self, "sticky" )
 
         self.GetGSettingsEntries()
 
@@ -125,12 +122,6 @@ class pluginclass( object ):
         self.showLockScreen = self.settings.get( "bool", "show-lock-screen")
         self.showLogout = self.settings.get( "bool", "show-logout")
         self.showQuit = self.settings.get( "bool", "show-quit")
-
-        # Plugin icon
-        self.icon = self.settings.get( "string", "icon" )
-        # Allow plugin to be minimized to the left plugin pane
-        self.sticky = self.settings.get( "bool", "sticky")
-        self.minimized = self.settings.get( "bool", "minimized")
 
     def ClearAll(self):
         for child in self.systemBtnHolder.get_children():

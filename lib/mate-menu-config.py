@@ -22,18 +22,20 @@
 import gettext
 import gi
 import os
-import subprocess
 import signal
 
 gi.require_version("Gtk", "3.0")
 
-from gi.repository import Gtk, Gdk, GdkPixbuf
+from gi.repository import Gtk
 import mate_menu.keybinding as keybinding
 
 signal.signal(signal.SIGINT, signal.SIG_DFL)
 
+import mate_menu.config as config
+import mate_menu.icons as icons
+
 # i18n
-gettext.install("mate-menu", "/usr/share/locale")
+gettext.install("mate-menu", config.LOCALE_DIR)
 
 from mate_menu.easygsettings import EasyGSettings
 
@@ -41,7 +43,8 @@ class mateMenuConfig( object ):
 
     def __init__( self ):
 
-        self.data_path =  os.path.join('/', 'usr', 'share', 'mate-menu' )
+        self.data_path = config.DATA_DIR
+        self.icon = icons.resolvedIconName("start-here-mate")
 
         # Load glade file and extract widgets
         self.builder = Gtk.Builder()
@@ -49,9 +52,8 @@ class mateMenuConfig( object ):
         self.builder.add_from_file (os.path.join(self.data_path, "mate-menu-config.glade" ))
         self.mainWindow=self.builder.get_object("mainWindow")
 
-        #i18n
         self.mainWindow.set_title(_("Menu preferences"))
-        self.mainWindow.set_icon_name("start-here")
+        self.mainWindow.set_icon_name(self.icon)
 
         self.builder.get_object("startWithFavorites").set_label(_("Always start with favorites pane"))
         self.builder.get_object("showButtonIcon").set_label(_("Show button icon"))
@@ -66,11 +68,7 @@ class mateMenuConfig( object ):
         self.builder.get_object("remember_filter").set_label(_("Remember the last category or search"))
         self.builder.get_object("swapGeneric").set_label(_("Swap name and generic name"))
 
-        self.builder.get_object("label11").set_text(_("Border width:"))
-        self.builder.get_object("label25").set_text(_("pixels"))
-
         self.builder.get_object("buttonTextLabel").set_text(_("Button text:"))
-        self.builder.get_object("label1").set_text(_("Options"))
         self.builder.get_object("applicationsLabel").set_text(_("Applications"))
 
         self.builder.get_object("favLabel").set_text(_("Favorites"))
@@ -144,7 +142,6 @@ class mateMenuConfig( object ):
         self.placesIconSize = self.builder.get_object( "placesIconSize" )
         self.systemIconSize = self.builder.get_object( "systemIconSize" )
         self.favCols = self.builder.get_object( "numFavCols" )
-        self.borderWidth = self.builder.get_object( "borderWidth" )
         self.showButtonIcon = self.builder.get_object( "showButtonIcon" )
         self.buttonText = self.builder.get_object( "buttonText" )
         self.hotkeyWidget = keybinding.KeybindingWidget(_("Keyboard shortcut:") )
@@ -212,7 +209,6 @@ class mateMenuConfig( object ):
         self.bindGSettingsValueToWidget( self.settingsPlaces, "int", "icon-size", self.placesIconSize, "value-changed", self.placesIconSize.set_value, self.placesIconSize.get_value )
         self.bindGSettingsValueToWidget( self.settingsSystem, "int", "icon-size", self.systemIconSize, "value-changed", self.systemIconSize.set_value, self.systemIconSize.get_value )
 
-        self.bindGSettingsValueToWidget( self.settings, "int", "border-width", self.borderWidth, "value-changed", self.borderWidth.set_value, self.borderWidth.get_value_as_int )
         self.bindGSettingsValueToWidget( self.settings, "bool", "hide-applet-icon", self.showButtonIcon, "toggled", self.setShowButtonIcon, self.getShowButtonIcon )
         self.bindGSettingsValueToWidget( self.settings, "string", "applet-text", self.buttonText, "changed", self.buttonText.set_text, self.buttonText.get_text )
         self.bindGSettingsValueToWidget( self.settings, "string", "hot-key", self.hotkeyWidget, "accel-edited", self.hotkeyWidget.set_val, self.hotkeyWidget.get_val )
@@ -243,22 +239,19 @@ class mateMenuConfig( object ):
         self.bindGSettingsValueToWidget( self.settingsSystem, "bool", "allow-scrollbar", self.allowSystemScrollbarToggle, "toggled", self.allowSystemScrollbarToggle.set_active, self.allowSystemScrollbarToggle.get_active )
 
         self.customplacepaths = self.settingsPlaces.get( "list-string", "custom-paths" )
-        self.customplacenames = self.settingsPlaces.get( "list-string", "custom-names" )
 
-        self.customplacestreemodel = Gtk.ListStore( str, str)
+        self.customplacestreemodel = Gtk.ListStore( str )
         self.cell = Gtk.CellRendererText()
 
         for count in range( len(self.customplacepaths) ):
-            self.customplacestreemodel.append( [ self.customplacenames[count], self.customplacepaths[count] ] )
+            self.customplacestreemodel.append( [ self.customplacepaths[count] ] )
 
         self.customplacestreemodel.connect("row-inserted", self.updatePlacesGSettings)
         self.customplacestreemodel.connect("row-deleted", self.updatePlacesGSettings)
         self.customplacestreemodel.connect("rows-reordered", self.updatePlacesGSettings)
         self.customplacestreemodel.connect("row-changed", self.updatePlacesGSettings)
         self.customplacestree.set_model( self.customplacestreemodel )
-        self.namescolumn = Gtk.TreeViewColumn( _("Name"), self.cell, text = 0 )
-        self.placescolumn = Gtk.TreeViewColumn( _("Path"), self.cell, text = 1 )
-        self.customplacestree.append_column( self.namescolumn )
+        self.placescolumn = Gtk.TreeViewColumn( _("Path"), self.cell, text = 0 )
         self.customplacestree.append_column( self.placescolumn )
         self.builder.get_object("newButton").connect("clicked", self.newPlace)
         self.builder.get_object("editButton").connect("clicked", self.editPlace)
@@ -351,16 +344,14 @@ class mateMenuConfig( object ):
         return
 
     def newPlace(self, newButton):
-        self.builder.get_object("label2").set_text(_("Name:"))
         self.builder.get_object("label1").set_text(_("Path:"))
         newPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         newPlaceDialog.set_transient_for(self.mainWindow)
-        newPlaceDialog.set_icon_name("start-here")
+        newPlaceDialog.set_icon_name(self.icon)
         newPlaceDialog.set_title(self.newPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         newPlaceDialog.set_default_response(Gtk.ResponseType.OK)
-        newPlaceName = self.builder.get_object( "nameEntryBox" )
         newPlacePath = self.builder.get_object( "pathEntryBox" )
         folderButton = self.builder.get_object( "folderButton" )
         def chooseFolder(folderButton):
@@ -376,22 +367,19 @@ class mateMenuConfig( object ):
         response = newPlaceDialog.run()
         newPlaceDialog.hide()
         if (response == Gtk.ResponseType.OK ):
-            name = newPlaceName.get_text()
             path = newPlacePath.get_text()
-            if (name != "" and path !=""):
-                self.customplacestreemodel.append( (name, path) )
+            if (path != ""):
+                self.customplacestreemodel.append( (path,) )
 
     def editPlace(self, editButton):
-        self.builder.get_object("label2").set_text(_("Name:"))
         self.builder.get_object("label1").set_text(_("Path:"))
         editPlaceDialog = self.builder.get_object( "editPlaceDialog" )
         folderChooserDialog = self.builder.get_object( "fileChooserDialog" )
         editPlaceDialog.set_transient_for(self.mainWindow)
-        editPlaceDialog.set_icon_name("start-here")
+        editPlaceDialog.set_icon_name(self.icon)
         editPlaceDialog.set_title(self.editPlaceDialogTitle)
         folderChooserDialog.set_title(self.folderChooserDialogTitle)
         editPlaceDialog.set_default_response(Gtk.ResponseType.OK)
-        editPlaceName = self.builder.get_object( "nameEntryBox" )
         editPlacePath = self.builder.get_object( "pathEntryBox" )
         folderButton = self.builder.get_object( "folderButton" )
         treeselection = self.customplacestree.get_selection()
@@ -399,10 +387,8 @@ class mateMenuConfig( object ):
 
         if (currentiter != None):
 
-            initName = self.customplacestreemodel.get_value(currentiter, 0)
-            initPath = self.customplacestreemodel.get_value(currentiter, 1)
+            initPath = self.customplacestreemodel.get_value(currentiter, 0)
 
-            editPlaceName.set_text(initName)
             editPlacePath.set_text(initPath)
             def chooseFolder(folderButton):
                 currentPath = editPlacePath.get_text()
@@ -416,11 +402,9 @@ class mateMenuConfig( object ):
             response = editPlaceDialog.run()
             editPlaceDialog.hide()
             if (response == Gtk.ResponseType.OK):
-                name = editPlaceName.get_text()
                 path = editPlacePath.get_text()
-                if (name != "" and path != ""):
-                    self.customplacestreemodel.set_value(currentiter, 0, name)
-                    self.customplacestreemodel.set_value(currentiter, 1, path)
+                if (path != ""):
+                    self.customplacestreemodel.set_value(currentiter, 0, path)
 
     def moveDown(self, downButton):
 
@@ -460,16 +444,13 @@ class mateMenuConfig( object ):
     def updatePlacesGSettings(self, treemodel, path, iter = None, new_order = None):
 
         # Do only if not partway though an append operation; Append = insert+change+change and each creates a signal
-        if ((iter == None) or (self.customplacestreemodel.get_value(iter, 1) != None)):
+        if ((iter == None) or (self.customplacestreemodel.get_value(iter, 0) != None)):
             treeiter = self.customplacestreemodel.get_iter_first()
-            customplacenames = [ ]
             customplacepaths = [ ]
             while( treeiter != None ):
-                customplacenames = customplacenames + [ self.customplacestreemodel.get_value(treeiter, 0 ) ]
-                customplacepaths = customplacepaths + [ self.customplacestreemodel.get_value(treeiter, 1 ) ]
+                customplacepaths = customplacepaths + [ self.customplacestreemodel.get_value(treeiter, 0 ) ]
                 treeiter = self.customplacestreemodel.iter_next(treeiter)
             self.settingsPlaces.set( "list-string", "custom-paths", customplacepaths)
-            self.settingsPlaces.set( "list-string", "custom-names", customplacenames)
 
 
 window = mateMenuConfig()

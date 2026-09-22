@@ -27,7 +27,7 @@ import gi
 import threading
 gi.require_version("Gtk", "3.0")
 
-from gi.repository import Gtk, Gdk, GdkX11, GObject, GLib
+from gi.repository import Gtk, Gdk, GObject, GLib
 from Xlib.display import Display
 from Xlib import X, error
 
@@ -48,16 +48,16 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
     def __init__(self):
         GObject.GObject.__init__ (self)
         threading.Thread.__init__ (self)
-        self.setDaemon (True)
+        self.daemon = True
 
-        self.keymap = Gdk.Keymap().get_default()
+        self.keymap = Gdk.Keymap.get_for_display(Gdk.Display.get_default())
         self.display = Display()
         self.screen = self.display.screen()
         self.window = self.screen.root
         self.ignored_masks = self.get_mask_combinations(X.LockMask | X.Mod2Mask | X.Mod5Mask)
         self.map_modifiers()
-        self.raw_keyval = None
         self.keytext = ""
+        self.button_grabbed = False
 
     def map_modifiers(self):
         gdk_modifiers =(Gdk.ModifierType.CONTROL_MASK, Gdk.ModifierType.SHIFT_MASK, Gdk.ModifierType.MOD1_MASK,
@@ -69,15 +69,16 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
                 self.known_modifiers_mask |= modifier
 
     def grab(self, key):
+        self.keytext = key
         accelerator = key
         accelerator = accelerator.replace("<Super>", "<Mod4>")
         keyval, modifiers = Gtk.accelerator_parse(accelerator)
-        if not accelerator or (not keyval and not modifiers):
+        if not accelerator or not keyval:
             self.keycode = None
             self.modifiers = None
+            print("** WARNING ** - Could not bind to hot key " + key + ": not a valid accelerator")
             return False
 
-        self.keytext = key
         try:
             self.keycode = self.keymap.get_entries_for_keyval(keyval).keys[0].keycode
         except AttributeError:
@@ -92,6 +93,7 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         else:
             self.window.change_attributes(onerror=catch, event_mask = X.NoEventMask)
         if catch.get_error():
+            print("** WARNING ** - Could not bind to hot key " + key + ": " + str(catch.get_error()))
             return False
 
         catch = error.CatchError(error.BadAccess)
@@ -100,21 +102,29 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
             result = self.window.grab_key(self.keycode, mod, True, X.GrabModeAsync, X.GrabModeAsync, onerror=catch)
         self.display.flush()
         if catch.get_error():
+            print("** WARNING ** - Could not bind to hot key " + key + ": " + str(catch.get_error()))
             return False
 
-        catch = error.CatchError(error.BadCursor)
+        catch = error.CatchError(error.BadAccess)
         if not self.modifiers:
            # We grab Super+click so that we can forward it to the window manager and allow Super+click bindings (window move, resize, etc.)
            self.window.grab_button(X.AnyButton, X.Mod4Mask, True, X.ButtonPressMask, X.GrabModeSync, X.GrabModeAsync, X.NONE, X.NONE)
         self.display.flush()
         if catch.get_error():
+            print("** WARNING ** - Could not bind to hot key " + key + ": " + str(catch.get_error()))
             return False
 
+        # Track whether the Super+click grab is active so it can be released on rebind
+        self.button_grabbed = not self.modifiers
         return True
 
     def ungrab(self):
         if self.keycode:
             self.window.ungrab_key(self.keycode, X.AnyModifier, self.window)
+        if self.button_grabbed:
+            self.window.ungrab_button(X.AnyButton, X.Mod4Mask)
+            self.button_grabbed = False
+        self.display.flush()
 
     def rebind(self, key):
         self.ungrab()
@@ -138,9 +148,6 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         self.emit("activate")
         return False
 
-    def activate(self):
-        GLib.idle_add(self.run)
-
     # Get which window manager we're currently using (Marco, Compiz, Metacity, etc...)
     def get_wm(self):
         name = ''
@@ -158,16 +165,24 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
         self.running = True
         wait_for_release = False
         while self.running:
-            event = self.display.next_event()
+            try:
+                event = self.display.next_event()
+            except (error.DisplayError, ConnectionError):
+                # The X server connection is gone, stop the monitor thread
+                print("** WARNING ** - Lost the X server connection, no longer listening for the hot key")
+                break
+            except Exception as e:
+                print("** WARNING ** - Keybinding error: " + str(e))
+                continue
 
-            if self.modifiers:
-                # Use simpler logic when using traditional combined keybindings
-                modifiers = event.state & self.known_modifiers_mask
-                if event.type == X.KeyPress and event.detail == self.keycode and modifiers == self.modifiers:
-                    GLib.idle_add(self.idle)
+            try:
+                if self.modifiers:
+                    # Use simpler logic when using traditional combined keybindings
+                    modifiers = event.state & self.known_modifiers_mask
+                    if event.type == X.KeyPress and event.detail == self.keycode and modifiers == self.modifiers:
+                        GLib.idle_add(self.idle)
 
-            else:
-                try:
+                else:
                     # KeyPress
                     if event.type == X.KeyPress and event.detail == self.keycode and not wait_for_release:
                         modifiers = event.state & self.known_modifiers_mask
@@ -198,8 +213,10 @@ class GlobalKeyBinding(GObject.GObject, threading.Thread):
                         # Send the event up in case another window is listening to it
                         self.display.send_event(event.window, event, X.KeyPressMask | X.KeyReleaseMask, True)
                         wait_for_release = False
-                except AttributeError:
-                    continue
+            except AttributeError:
+                continue
+            except Exception as e:
+                print("** WARNING ** - Keybinding error: " + str(e))
 
     def stop(self):
         self.running = False
@@ -225,6 +242,7 @@ class KeybindingWidget(Gtk.Box):
         self.pack_start(self.button, False, False, 4)
 
         self.show_all()
+        self.value = ""
         self.event_id = None
         self.teaching = False
 

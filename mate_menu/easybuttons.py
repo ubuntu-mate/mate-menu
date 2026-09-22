@@ -19,14 +19,13 @@
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 import os
-import re
 import shutil
 import xdg.DesktopEntry
 import xdg.Menu
 
 from .execute import *
 from .filemonitor import monitor as filemonitor
-from gi.repository import Gtk, Gdk, GLib
+from gi.repository import Gtk, Gdk, GLib, Gio
 from gi.repository import Pango
 from gi.repository import GObject
 
@@ -47,29 +46,7 @@ class IconManager(GObject.GObject):
             theme.set_custom_theme( d )
             return theme
 
-        # This takes to much time and there are only a very few applications that use icons from different themes
-        #self.themes = map(  createTheme, [ d for d in os.listdir( "/usr/share/icons" ) if os.path.isdir( os.path.join( "/usr/share/icons", d ) ) ] )
-
         self.defaultTheme = Gtk.IconTheme.get_default()
-
-        # Setup and clean up the temp icon dir
-        configDir = GLib.get_user_config_dir()
-        self.iconDir = os.path.join(configDir, "mate-menu")
-        if not os.path.exists(self.iconDir):
-            os.makedirs(self.iconDir)
-        # Skip over files and dirs belonging to the applications plugin
-        contents = frozenset(os.listdir(self.iconDir)) - frozenset(('applications', 'applications.list'))
-        for fn in contents:
-            if os.path.isfile(os.path.join(self.iconDir, fn)):
-                print("Removing file : " + os.path.join(self.iconDir, fn))
-                os.remove(os.path.join(self.iconDir, fn))
-            else:
-                print(os.path.join(self.iconDir, fn) + " is not a file, skipping delete.")
-
-        self.defaultTheme.append_search_path(self.iconDir)
-
-        # Themes with the same content as the default them aren't needed
-        #self.themes = [ theme for theme in self.themes if  theme.list_icons() != defaultTheme.list_icons() ]
 
         self.themes = [ self.defaultTheme ]
 
@@ -86,26 +63,25 @@ class IconManager(GObject.GObject):
         try:
             iconFileName = ""
             realIconName = ""
-            needTempFile = False
-            #[ iconWidth, iconHeight ] = self.getIconSize( iconSize )
             if iconSize <= 0:
                 return None
 
             elif os.path.isabs( iconName ):
-                iconFileName = iconName
-                needTempFile = True
+                # Icons referenced by an absolute path are handled by the same
+                # icon helper pipeline as theme icons, so scaling and display
+                # resolution work the same.
+                if not os.path.exists( iconName ):
+                    return None
+                image = Gtk.Image()
+                image.set_pixel_size( iconSize )
+                image.set_from_gicon( Gio.FileIcon.new( Gio.File.new_for_path( iconName ) ), Gtk.IconSize.DND )
+                return image
+
             else:
                 if iconName[-4:] in [".png", ".xpm", ".svg", ".gif"]:
                     realIconName = iconName[:-4]
                 else:
                     realIconName = iconName
-
-            if iconFileName and needTempFile and os.path.exists( iconFileName ):
-                tmpIconName = iconFileName.replace("/", "-")
-                realIconName = tmpIconName[:-4]
-                if not os.path.exists(os.path.join(self.iconDir, tmpIconName)):
-                    shutil.copyfile(iconFileName, os.path.join(self.iconDir, tmpIconName))
-                    self.defaultTheme.append_search_path(self.iconDir)
 
             image = Gtk.Image()
             icon_found = False
@@ -316,9 +292,10 @@ class ApplicationLauncher( easyButton ):
         self.drag_source_set( Gdk.ModifierType.BUTTON1_MASK, targets, Gdk.DragAction.COPY )
 
         icon = self.getIcon( Gtk.IconSize.DND )
-        if icon:
+        if icon and icon.get_storage_type() == Gtk.ImageType.ICON_NAME:
             iconName, s = icon.get_icon_name()
-            self.drag_source_set_icon_name( iconName )
+            if iconName:
+                self.drag_source_set_icon_name( iconName )
 
         self.connectSelf( "focus-in-event", self.onFocusIn )
         self.connectSelf( "focus-out-event", self.onFocusOut )
@@ -448,9 +425,10 @@ class ApplicationLauncher( easyButton ):
         easyButton.iconChanged( self )
 
         icon = self.getIcon( Gtk.IconSize.DND )
-        if icon:
+        if icon and icon.get_storage_type() == Gtk.ImageType.ICON_NAME:
             iconName, size = icon.get_icon_name()
-            self.drag_source_set_icon_name( iconName )
+            if iconName:
+                self.drag_source_set_icon_name( iconName )
 
     def startupFileChanged( self, *args ):
         self.inStartup = os.path.exists( self.startupFilePath )

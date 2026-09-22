@@ -28,8 +28,10 @@ from mate_menu.easygsettings import EasyGSettings
 from mate_menu.execute import Execute
 from urllib.parse import unquote
 
+from mate_menu import config
+
 # i18n
-gettext.install("mate-menu", "/usr/share/locale")
+gettext.install("mate-menu", config.LOCALE_DIR)
 
 class pluginclass( object ):
 
@@ -40,7 +42,7 @@ class pluginclass( object ):
 
         # Read UI file
         builder = Gtk.Builder()
-        builder.add_from_file( os.path.join( '/', 'usr', 'share', 'mate-menu',  'plugins', 'places.glade' ))
+        builder.add_from_file( os.path.join( config.DATA_DIR, 'plugins', 'places.glade' ))
 
         self.placesBtnHolder    = builder.get_object( "places_button_holder" )
         self.editableBtnHolder  = builder.get_object( "editable_button_holder" )
@@ -56,19 +58,16 @@ class pluginclass( object ):
         # This should be the first item added to the window in glade
         self.content_holder = builder.get_object( "Places" )
 
-        # Items to get custom colors
-        self.itemstocolor = [ builder.get_object( "viewport2" ) ]
-
         # Settings
         self.settings = EasyGSettings("org.mate.mate-menu.plugins.places")
 
         self.settings.notifyAdd( "icon-size", self.RegenPlugin )
         self.settings.notifyAdd( "show-computer", self.RegenPlugin )
         self.settings.notifyAdd( "show-desktop", self.RegenPlugin )
-        self.settings.notifyAdd( "show-home_folder", self.RegenPlugin )
+        self.settings.notifyAdd( "show-home-folder", self.RegenPlugin )
         self.settings.notifyAdd( "show-network", self.RegenPlugin )
         self.settings.notifyAdd( "show-trash", self.RegenPlugin )
-        self.settings.notifyAdd( "custom-names", self.RegenPlugin )
+        self.settings.notifyAdd( "custom-paths", self.RegenPlugin )
         self.settings.notifyAdd( "allow-scrollbar", self.RegenPlugin )
         self.settings.notifyAdd( "show-gtk-bookmarks", self.RegenPlugin )
         self.settings.notifyAdd( "height", self.changePluginSize )
@@ -78,12 +77,39 @@ class pluginclass( object ):
 
         self.content_holder.set_size_request( self.width, self.height )
 
+        self.setupBookmarksMonitor()
+
+    def setupBookmarksMonitor( self ):
+        bookmarksFile = os.path.join( GLib.get_user_config_dir(), "gtk-3.0", "bookmarks" )
+        if not os.path.exists( bookmarksFile ):
+            bookmarksFile = os.path.join( os.path.expanduser( "~" ), ".gtk-bookmarks" )
+        self.bookmarksMonitorFile = Gio.File.new_for_path( bookmarksFile )
+        self.bookmarksMonitor = self.bookmarksMonitorFile.monitor_file( Gio.FileMonitorFlags.NONE, None )
+        self.bookmarksMonitorId = self.bookmarksMonitor.connect( "changed", self.onBookmarksChanged )
+        self.bookmarksDebounceId = 0
+
+    def onBookmarksChanged( self, monitor, file, other_file, event ):
+        if self.bookmarksDebounceId:
+            GLib.source_remove( self.bookmarksDebounceId )
+        self.bookmarksDebounceId = GLib.timeout_add( 300, self.onBookmarksDebounce )
+
+    def onBookmarksDebounce( self, *args ):
+        self.bookmarksDebounceId = 0
+        self.RegenPlugin()
+        return False
+
     def wake (self) :
         if ( self.showtrash == True ):
             self.refreshTrash()
 
     def destroy( self ):
         self.settings.notifyRemoveAll()
+        if hasattr( self, "bookmarksMonitor" ):
+            if self.bookmarksDebounceId:
+                GLib.source_remove( self.bookmarksDebounceId )
+                self.bookmarksDebounceId = 0
+            self.bookmarksMonitor.disconnect( self.bookmarksMonitorId )
+            self.bookmarksMonitor.cancel()
 
     def changePluginSize( self, settings, key, args = None):
         self.allowScrollbar = self.settings.get( "bool", "allow-scrollbar" )
@@ -124,17 +150,8 @@ class pluginclass( object ):
         self.showdesktop = self.settings.get( "bool", "show-desktop" )
         self.showtrash = self.settings.get( "bool", "show-trash" )
 
-        # Get paths for custom items
+        # Get paths for custom items; the path is used as the entry label
         self.custompaths = self.settings.get( "list-string", "custom-paths" )
-
-        # Get names for custom items
-        self.customnames = self.settings.get( "list-string", "custom-names" )
-
-        # Plugin icon
-        self.icon = self.settings.get( "string", "icon" )
-        # Allow plugin to be minimized to the left plugin pane
-        self.sticky = self.settings.get( "bool", "sticky")
-        self.minimized = self.settings.get( "bool", "minimized")
 
     def ClearAll(self):
         for child in self.placesBtnHolder.get_children():
@@ -201,7 +218,7 @@ class pluginclass( object ):
             path = self.custompaths[index]
             path = path.replace("~", os.environ["HOME"])
             command = ("xdg-open \"" + path + "\"")
-            currentbutton = easyButton( "folder", self.iconsize, [self.customnames[index]], -1, -1 )
+            currentbutton = easyButton( "folder", self.iconsize, [self.custompaths[index]], -1, -1 )
             currentbutton.connect( "clicked", self.ButtonClicked, command )
             currentbutton.show()
             self.placesBtnHolder.pack_start( currentbutton, False, False, 0)

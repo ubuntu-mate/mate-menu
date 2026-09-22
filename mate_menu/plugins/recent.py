@@ -24,9 +24,8 @@ gi.require_version("Gtk", "3.0")
 
 from gi.repository import Gtk, Pango
 from mate_menu.easygsettings import EasyGSettings
-from mate_menu.execute import Execute
-from mate_menu.easyfiles import *
 from mate_menu.easybuttons import *
+from mate_menu import config
 
 class pluginclass:
     """This is the main class for the plugin"""
@@ -39,27 +38,22 @@ class pluginclass:
 
         self.builder = Gtk.Builder()
         #The Glade file for the plugin
-        self.builder.add_from_file (os.path.join( '/', 'usr', 'share', 'mate-menu',  'plugins', 'recent.glade' ))
+        self.builder.add_from_file (os.path.join( config.DATA_DIR, 'plugins', 'recent.glade' ))
 
         #Set 'window' property for the plugin (Must be the root widget)
-        self.window = self.builder.get_object( "window1" )
+        self.window = self.builder.get_object( "mainWindow" )
 
         #Set 'heading' property for plugin
         self.heading = _("Recent documents")
 
         #This should be the first item added to the window in glade
-        self.content_holder = self.builder.get_object( "eventbox1" )
+        self.content_holder = self.builder.get_object( "Recent" )
 
         self.recentBox = self.builder.get_object("RecentBox")
         self.recentVBox = self.builder.get_object( "vbox1" )
 
-        self.itemstocolor = [ self.builder.get_object("viewport1"), self.builder.get_object("viewport2") ]
-
         #Specify plugin width
         self.width = 250
-
-        #Plugin icon
-        self.icon = 'folder.png'
 
         self.settings = EasyGSettings ("org.mate.mate-menu.plugins.recent")
 
@@ -102,19 +96,7 @@ class pluginclass:
         self.recentw = self.settings.get( 'int', 'width' )
         self.numentries = self.settings.get( 'int', 'num-recent-docs' )
         self.recentfontsize = self.settings.get( 'int', 'recent-font-size' )
-
-        # Plugin icon
-        self.icon = self.settings.get( "string", 'icon' )
-        # Allow plugin to be minimized to the left plugin pane
-        self.sticky = self.settings.get( "bool", "sticky" )
-        self.minimized = self.settings.get( "bool", "minimized" )
         self.RebuildPlugin()
-
-    def SetHidden( self, state ):
-        if state == True:
-            self.settings.set( "bool", "minimized", True )
-        else:
-            self.settings.set( "bool", "minimized", False )
 
 
     def RebuildPlugin(self):
@@ -220,6 +202,8 @@ class pluginclass:
         FileString=[]
         IconString=[]
         RecentInfo=self.RecManagerInstance.get_items()
+        # Sort by most recently modified so re-opened files stay at the top
+        RecentInfo.sort(key=lambda x: x.get_modified(), reverse=True)
         count=0
         MaxEntries=self.numentries
         if self.numentries == -1:
@@ -232,24 +216,6 @@ class pluginclass:
                 break
         return FileString,  IconString
 
-
-    def ButtonClicked( self, widget, event, Exec ):
-        self.press_x = event.x
-        self.press_y = event.y
-        self.Exec = Exec
-
-    def ButtonReleased( self, w, ev, ev2 ):
-        if ev.button == 1:
-            if not hasattr( self, "press_x" ) or \
-                    not w.drag_check_threshold( int( self.press_x ),
-                                                                             int( self.press_y ),
-                                                                             int( ev.x ),
-                                                                             int( ev.y ) ):
-                if self.Win.pinmenu == False:
-                    self.Win.wTree.get_widget( "window1" ).hide()
-                if "applications" in self.Win.plugins:
-                    self.Win.plugins["applications"].wTree.get_widget( "entry1" ).grab_focus()
-                Execute( w, self.Exec )
 
     def do_plugin(self):
         self.DoRecent()

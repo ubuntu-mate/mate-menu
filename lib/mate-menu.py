@@ -19,7 +19,7 @@
 # Free Software Foundation, Inc.,
 # 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
-__VERSION__='22.04.1'
+__VERSION__='26.10.0'
 
 import gc
 import gi
@@ -35,14 +35,13 @@ import setproctitle
 gi.require_version("Gtk", "3.0")
 gi.require_version('MatePanelApplet', '4.0')
 
-from gi.repository import Gtk, GdkPixbuf, Gdk, GObject
+from gi.repository import Gtk, GdkPixbuf, Gdk, GLib
 from gi.repository import MatePanelApplet
 from gi.repository import Gio
 
 try:
     import xdg.Config
     import mate_menu.keybinding as keybinding
-    import mate_menu.pointerMonitor as pointerMonitor
 except Exception as e:
     print(e)
     sys.exit(1)
@@ -52,8 +51,11 @@ signal.signal(signal.SIGINT, signal.SIG_DFL)
 # Rename the process
 setproctitle.setproctitle('mate-menu')
 
+import mate_menu.config as config
+import mate_menu.icons as icons
+
 # i18n
-gettext.install("mate-menu", "/usr/share/locale")
+gettext.install("mate-menu", config.LOCALE_DIR)
 
 NAME = _("Menu")
 
@@ -67,7 +69,7 @@ class MainWindow( object ):
     def __init__(self, toggleButton, settings):
 
         self.settings = settings
-        self.data_path = os.path.join( '/', 'usr', 'share', 'mate-menu' )
+        self.data_path = config.DATA_DIR
 
         self.toggle = toggleButton
         # Load UI file and extract widgets
@@ -75,19 +77,16 @@ class MainWindow( object ):
         builder.add_from_file(os.path.join( self.data_path, "mate-menu.glade" ))
         self.window     = builder.get_object( "mainWindow" )
         self.paneholder = builder.get_object( "paneholder" )
-        self.border     = builder.get_object( "border" )
 
         builder.connect_signals(self)
 
-        self.panesToColor = [ ]
-        self.headingsToColor = [ ]
-
         self.window.realize()
-        self.window.get_window().set_decorations(Gdk.WMDecoration.BORDER)
         self.window.set_title('Advanced MATE Menu')
-        self.window.set_app_paintable(True)
 
-        self.window.connect("draw", self.onWindowDraw)
+        self.styleProvider = Gtk.CssProvider()
+        self.styleProvider.load_from_data(b".menu-heading { font-size: 1.2em; font-weight: bold; }")
+        Gtk.StyleContext.add_provider_for_screen(Gdk.Screen.get_default(), self.styleProvider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
+
         self.window.connect("key-press-event", self.onWindowKeyPress)
         self.window.connect("focus-in-event", self.onWindowFocusIn)
         self.loseFocusId = self.window.connect("focus-out-event", self.onWindowFocusOut)
@@ -104,7 +103,6 @@ class MainWindow( object ):
         self.settings.connect( "changed::plugins-list", self.RegenPlugins )
         self.settings.connect( "changed::start-with-favorites", self.toggleStartWithFavorites )
         self.settings.connect( "changed::tooltips-enabled", self.toggleTooltipsEnabled )
-        self.settings.connect( "changed::border-width", self.toggleBorderWidth )
 
         self.getSetGSettingEntries()
 
@@ -115,7 +113,6 @@ class MainWindow( object ):
             self.tooltipsEnable( False )
 
         self.PopulatePlugins();
-        self.firstTime = True;
 
     def on_window1_destroy (self, widget, data=None):
         Gtk.main_quit()
@@ -141,29 +138,20 @@ class MainWindow( object ):
     def toggleStartWithFavorites( self, settings, key, args = None ):
         self.startWithFavorites = settings.get_boolean(key)
 
-    def toggleBorderWidth( self, settings, key,  args = None ):
-        self.borderwidth = settings.get_int(key)
-        self.SetupMateMenuBorder()
-
     def getSetGSettingEntries( self ):
         self.pluginlist           = self.settings.get_strv( "plugins-list" )
-        self.borderwidth          = self.settings.get_int( "border-width" )
-        self.offset               = self.settings.get_int( "offset" )
         self.enableTooltips       = self.settings.get_boolean( "tooltips-enabled" )
         self.startWithFavorites   = self.settings.get_boolean( "start-with-favorites" )
 
         self.globalEnableTooltips = self.panelSettings.get_boolean( "tooltips-enabled" )
 
     def PopulatePlugins( self ):
-        self.panesToColor = [ ]
-        self.headingsToColor = [ ]
         PluginPane = Gtk.EventBox()
         PluginPane.show()
         PaneLadder = Gtk.Box( orientation=Gtk.Orientation.VERTICAL )
         PluginPane.add( PaneLadder )
         ImageBox = Gtk.EventBox()
         ImageBox.show()
-        self.panesToColor.extend( [ PluginPane, ImageBox ] )
 
         self.plugins = {}
 
@@ -212,25 +200,18 @@ class MainWindow( object ):
                     print(u"Unable to load " + plugin + " plugin :-(")
 
 
-                self.panesToColor.append( MyPlugin.content_holder )
                 MyPlugin.content_holder.show()
 
                 VBox1 = Gtk.Box( orientation=Gtk.Orientation.VERTICAL )
                 if MyPlugin.heading != "":
                     Label1 = Gtk.Label(label= MyPlugin.heading )
                     Label1.set_margin_start(10)
-                    self.headingsToColor.append( Label1 )
+                    Label1.get_style_context().add_class( "menu-heading" )
                     Label1.show()
 
-                    if not hasattr( MyPlugin, 'sticky' ) or MyPlugin.sticky == True:
-                        heading = Gtk.EventBox()
-                        heading.set_visible_window( False )
-                        heading.set_size_request( MyPlugin.width, 30 )
-                    else:
-                        heading = Gtk.Box( orientation=Gtk.Orientation.HORIZONTAL )
-                        Label1.set_margin_top(10)
-                        Label1.set_margin_bottom(5)
-                        heading.set_size_request( MyPlugin.width, -1 )
+                    heading = Gtk.EventBox()
+                    heading.set_visible_window( False )
+                    heading.set_size_request( MyPlugin.width, 37 )
 
                     heading.add(Label1)
                     heading.show()
@@ -254,10 +235,6 @@ class MainWindow( object ):
                         MyPlugin.do_plugin()
                     if hasattr( MyPlugin, 'height' ):
                         MyPlugin.content_holder.set_size_request( -1, MyPlugin.height )
-                    if hasattr( MyPlugin, 'itemstocolor' ):
-                        self.panesToColor.extend( MyPlugin.itemstocolor )
-                    if hasattr( MyPlugin, 'headingstocolor' ):
-                        self.headingsToColor.extend( MyPlugin.headingstocolor )
                 except:
                     # create traceback
                     info = sys.exc_info()
@@ -276,7 +253,6 @@ class MainWindow( object ):
                 PaneLadder = Gtk.Box( orientation=Gtk.Orientation.VERTICAL )
                 PluginPane.add( PaneLadder )
                 ImageBox = Gtk.EventBox()
-                self.panesToColor.extend( [ PluginPane, ImageBox ] )
                 ImageBox.show()
                 PluginPane.show_all()
 
@@ -294,52 +270,6 @@ class MainWindow( object ):
         self.paneholder.pack_start( ImageBox, False, False, 0 )
         self.paneholder.pack_start( PluginPane, False, False, 0 )
         self.tooltipsEnable( False )
-
-    # A little bit hacky but works.
-    def getDefaultColors( self ):
-        widget = Gtk.EventBox()
-        widget.show()
-
-        context = widget.get_style_context()
-        context.set_state( Gtk.StateFlags.NORMAL )
-        context.add_class( Gtk.STYLE_CLASS_DEFAULT )
-        context.add_class( Gtk.STYLE_CLASS_BACKGROUND )
-
-        fgColor = context.get_color( context.get_state() )
-        bgColor = context.get_background_color( context.get_state() )
-        borderColor = context.get_border_color( context.get_state() )
-
-        return { "fg": fgColor, "bg": bgColor, "border": borderColor }
-
-    def loadTheme( self ):
-        colors = self.getDefaultColors()
-        self.SetupMateMenuBorder()
-        self.SetPaneColors(self.panesToColor, colors["bg"])
-        self.SetHeadingStyle( self.headingsToColor )
-
-    def SetupMateMenuBorder(self):
-        style = self.window.get_style_context()
-        styleProvider = Gtk.CssProvider()
-        styleProvider.load_from_data(b".background { border-width: %dpt; }" % self.borderwidth)
-        style.add_provider(styleProvider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
-
-        self.border.set_margin_top(self.borderwidth)
-        self.border.set_margin_bottom(self.borderwidth)
-        self.border.set_margin_start(self.borderwidth)
-        self.border.set_margin_end(self.borderwidth)
-
-    def SetPaneColors( self, items, color = None ):
-        for item in items:
-            context = item.get_style_context()
-            if color is not None:
-                item.override_background_color( context.get_state(), color )
-
-    def SetHeadingStyle( self, items ):
-        for item in items:
-            item.set_use_markup(True)
-            text = item.get_text()
-            markup = '<span size="12000" weight="bold">%s</span>' % (text)
-            item.set_markup( markup )
 
     def tooltipsEnable( self, enable = True ):
         for widget in self.tooltipsWidgets:
@@ -373,30 +303,29 @@ class MainWindow( object ):
 
         self.getSetGSettingEntries()
         self.PopulatePlugins()
-        self.loadTheme()
 
         #print(NAME + " reloaded")
-
-    def onWindowDraw(self, widget, cr):
-        style = widget.get_style_context()
-        req = widget.get_preferred_size()[0]
-        Gtk.render_background(style, cr, 0, 0, req.width, req.height)
-        Gtk.render_frame(style, cr, 0, 0, req.width, req.height)
-        return False
 
     def onWindowKeyPress( self, widget, event ):
         if event.keyval == Gdk.KEY_Escape:
             self.hide()
             return True
+
+        # This forwards text input to the search box regardless what is focused in the menu
+        if ( "applications" in self.plugins ) and ( hasattr( self.plugins["applications"], "focusSearchEntry" ) ):
+            plugin = self.plugins["applications"]
+            if not plugin.searchEntry.is_focus():
+                # Only look at text, backspace, and space (this avoids swallowing keyboard navigation)
+                if event.string.strip() != "" or event.keyval in ( Gdk.KEY_BackSpace, Gdk.KEY_space ):
+                    plugin.searchEntry.grab_focus()
+                    plugin.searchEntry.set_position( -1 )
+                    plugin.searchEntry.event( event )
+                    return True
+
         return False
 
     def show( self ):
         self.window.present()
-
-        # Hack for opacity not showing on first composited draw
-        if self.firstTime:
-            self.firstTime = False
-            self.window.set_opacity(1.0)
 
         self.window.get_window().focus( Gdk.CURRENT_TIME )
 
@@ -435,10 +364,10 @@ class MainWindow( object ):
 
 class MenuWin( object ):
     def __init__( self, applet, iid ):
-        self.data_path = os.path.join('/','usr','share','mate-menu')
+        self.data_path = config.DATA_DIR
         self.applet = applet
         self.settings = Gio.Settings.new("org.mate.mate-menu")
-        self.icon = "start-here"
+        self.icon = icons.resolvedIconName("start-here-mate")
 
         self.loadSettings()
 
@@ -462,9 +391,8 @@ class MenuWin( object ):
         self.mainwin.window.connect( "unmap-event", self.onWindowUnmap )
         self.mainwin.window.connect( "size-allocate", lambda *args: self.positionMenu() )
 
-        self.mainwin.window.set_name("mate-menu") # Name used in Gtk RC files
+        self.mainwin.window.set_name("mate-menu")
         self.applyTheme()
-        self.mainwin.loadTheme()
 
         Gtk.Window.set_default_icon_name( self.icon )
 
@@ -483,14 +411,6 @@ class MenuWin( object ):
 
         self.applet.set_can_focus(False)
 
-        try:
-            self.pointerMonitor = pointerMonitor.PointerMonitor()
-            self.pointerMonitor.connect("activate", self.onPointerOutside)
-            self.mainwin.window.connect( "realize", self.onRealize )
-        except Exception as cause:
-            print("** WARNING ** - Pointer Monitor Error")
-            print("Error Report :\n", str(cause))
-
     def onWindowMap( self, *args ):
         self.applet.get_style_context().set_state( Gtk.StateFlags.SELECTED )
         if self.keybinder is not None:
@@ -503,16 +423,6 @@ class MenuWin( object ):
             self.keybinder.set_focus_window()
         return False
 
-    def onRealize( self, *args):
-        self.pointerMonitor.addWindowToMonitor( self.mainwin.window.get_window() )
-        self.pointerMonitor.addWindowToMonitor( self.applet.get_window() )
-        self.pointerMonitor.start()
-        return False
-
-    def onPointerOutside(self, *args):
-        self.mainwin.hide()
-        return True
-
     def onBindingPress(self, binder):
         self.toggleMenu()
         return True
@@ -521,8 +431,19 @@ class MenuWin( object ):
         icon_theme = Gtk.IconTheme.get_default()
         icon_size = self.applet.get_size() - 8
         scale_factor = self.button_icon.get_scale_factor()
-        surface = icon_theme.load_surface(icon_name, icon_size, scale_factor, None, Gtk.IconLookupFlags.FORCE_SIZE)
-        if surface is not None:
+        icon = Gio.ThemedIcon.new_with_default_fallbacks(icon_name)
+        icon_info = icon_theme.lookup_by_gicon_for_scale(icon, icon_size, scale_factor, Gtk.IconLookupFlags.USE_BUILTIN)
+        try:
+            pixbuf = icon_info.load_icon() if icon_info is not None else None
+        except Exception:
+            pixbuf = None
+        if pixbuf is not None:
+            # Fit the icon into the panel height while preserving its aspect
+            # ratio, so that non-square icons are rendered without distortion
+            target = icon_size * scale_factor
+            scale = target / pixbuf.get_height()
+            pixbuf = pixbuf.scale_simple(round(pixbuf.get_width() * scale), round(pixbuf.get_height() * scale), GdkPixbuf.InterpType.BILINEAR)
+            surface = Gdk.cairo_surface_create_from_pixbuf(pixbuf, scale_factor, None)
             self.button_icon.set_from_surface(surface)
         else:
             self.button_icon.set_from_icon_name(icon_name, Gtk.IconSize.MENU)
@@ -535,10 +456,13 @@ class MenuWin( object ):
             process = subprocess.Popen(['lsb_release', '-d'], stdout=subprocess.PIPE, text=True)
             out, err = process.communicate()
             tooltip = str(out).replace('Description:', '').strip()
+            self.accessible_description = tooltip
             self.systemlabel.set_tooltip_text(tooltip)
             self.button_icon.set_tooltip_text(tooltip)
         except OSError:
-            pass
+            self.accessible_description = None
+
+        self.updateAccessibleNames()
 
         if self.applet.get_orient() == MatePanelApplet.AppletOrient.UP or self.applet.get_orient() == MatePanelApplet.AppletOrient.DOWN:
             self.button_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
@@ -564,6 +488,9 @@ class MenuWin( object ):
         self.button_box.set_homogeneous( False )
         self.button_box.show_all()
 
+        if self.hideIcon:
+            self.button_icon.hide()
+
         self.applet.add( self.button_box )
         self.applet.set_background_widget( self.applet )
 
@@ -574,9 +501,8 @@ class MenuWin( object ):
         self.hotkeyText =  self.settings.get_string( "hot-key" )
 
     def changeTheme(self, *args):
-        self.reloadSettings()
         self.applyTheme()
-        self.mainwin.loadTheme()
+        self.reloadSettings()
 
     def applyTheme(self):
         style_settings = Gtk.Settings.get_default()
@@ -621,10 +547,33 @@ class MenuWin( object ):
         self.applet.add( self.button_box )
 
 
+    def updateAccessibleNames( self ):
+        self.applet.get_accessible().set_name( NAME )
+        self.button_icon.get_accessible().set_name( NAME )
+        self.systemlabel.get_accessible().set_name( self.buttonText )
+
+        # This sets the accessible name on the GtkPlug (for out-of-process applets)
+        toplevel = self.applet.get_toplevel()
+        if toplevel is not self.applet:
+            toplevel.get_accessible().set_name( NAME )
+
+        description = getattr(self, "accessible_description", None)
+        if description:
+            self.applet.get_accessible().set_description( description )
+            self.button_icon.get_accessible().set_description( description )
+            self.systemlabel.get_accessible().set_description( description )
+            if toplevel is not self.applet:
+                toplevel.get_accessible().set_description( description )
+
     def updateButton( self ):
         self.systemlabel.set_text( self.buttonText )
         self.button_icon.clear()
         self.do_load_icon(self.icon)
+        if self.hideIcon:
+            self.button_icon.hide()
+        else:
+            self.button_icon.show()
+        self.updateAccessibleNames()
 
     def hotkeyChanged (self, schema, key):
         self.hotkeyText =  self.settings.get_string( "hot-key" )
@@ -636,20 +585,16 @@ class MenuWin( object ):
 
     def showAboutDialog( self, action, userdata = None ):
         about = Gtk.AboutDialog()
+        about.set_icon_name ( self.icon )
         about.set_program_name("Advanced MATE Menu")
         about.set_version(__VERSION__)
         about.set_comments( _("An Advanced Menu for the MATE Desktop") )
-        icon_theme = Gtk.IconTheme.get_default ()
-        pixbuf = icon_theme.load_icon ( self.icon, 256, 0 )
-        if pixbuf:
-            about.set_logo ( pixbuf )
-        else:
-            about.set_logo_icon_name ( self.icon )
+        about.set_logo_icon_name ( self.icon )
         about.connect( "response", lambda dialog, r: dialog.destroy() )
         about.show()
 
     def showPreferences( self, action, userdata = None ):
-        Execute( os.path.join( "/", "usr", "lib", "mate-menu", "mate-menu-config.py" ) )
+        Execute( os.path.join( config.LIB_DIR, "mate-menu-config.py" ) )
 
     def showMenuEditor( self, action, userdata = None ):
         def pathExists(filename):
@@ -688,7 +633,7 @@ class MenuWin( object ):
     def positionMenu( self ):
         # Get our own dimensions & position
         ourWidth  = self.mainwin.window.get_size()[0]
-        ourHeight = self.mainwin.window.get_size()[1] + self.mainwin.offset
+        ourHeight = self.mainwin.window.get_size()[1]
 
         # Get the dimensions/position of the widgetToAlignWith
         try:
@@ -700,7 +645,6 @@ class MenuWin( object ):
             entryY = self.applet.get_window().get_origin()[2]
 
         entryWidth, entryHeight =  self.applet.get_allocation().width, self.applet.get_allocation().height
-        entryHeight = entryHeight + self.mainwin.offset
 
         # Get the monitor dimensions
         display = self.applet.get_display()
@@ -726,7 +670,6 @@ class MenuWin( object ):
             newX = entryX - ourWidth
             newY = entryY
 
-        # Adjust for offset if we reach the end of the screen
         # Bind to the right side
         if newX + ourWidth > (monitorGeometry.x + monitorGeometry.width):
             newX = (monitorGeometry.x + monitorGeometry.width) - ourWidth
@@ -762,9 +705,6 @@ class MenuWin( object ):
         action_group.add_action(action)
         action = Gtk.Action(name="MateMenuEdit", label=_("Edit menu"), tooltip=None, stock_id=Gtk.STOCK_EDIT)
         action.connect("activate", self.showMenuEditor)
-        action_group.add_action(action)
-        action = Gtk.Action(name="MateMenuReload", label=_("Reload plugins"), tooltip=None, icon_name="view-refresh")
-        action.connect("activate", self.mainwin.RegenPlugins)
         action_group.add_action(action)
         action = Gtk.Action(name="MateMenuAbout", label=_("About"), tooltip=None, icon_name="help-about")
         action.connect("activate", self.showAboutDialog)
