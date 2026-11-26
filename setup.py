@@ -162,14 +162,14 @@ class InstallWithSchemas(install):
         # data at runtime, regardless of where the interpreter lives
         self.write_prefix_module()
 
-        # Compile GSettings schemas
-        # Account for --root option (used for packaging)
-        root = self.root or ''
+        # Compile GSettings schemas, but not when installing into a staging
+        # root for a package: gschemas.compiled belongs to the system and the
+        # package manager recompiles it after installing the package
+        if self.root:
+            print("Skipping schema compilation: installing into a staging root")
+            return
         prefix = self.prefix or sys.prefix
-        if root == '':
-            schema_dir = os.path.join(prefix, 'share', 'glib-2.0', 'schemas')
-        else:
-            schema_dir = os.path.join(root, prefix.lstrip('/'), 'share', 'glib-2.0', 'schemas')
+        schema_dir = os.path.join(prefix, 'share', 'glib-2.0', 'schemas')
         if os.path.isdir(schema_dir):
             print(f"Compiling GSettings schemas in {schema_dir}...")
             try:
